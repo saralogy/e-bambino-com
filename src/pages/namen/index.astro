@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Static build: the query-string filter cannot be evaluated server-side, so all
+// names ship in the HTML and filtering happens client-side (see script below).
+const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'de'));
+---
+
+<Layout
+  title="Baby-Namen"
+  description="Italienische Baby-Namen mit Bedeutung, Herkunft, Varianten und Beliebtheit in Deutschland, Österreich und der Schweiz."
+>
+  <section class="bg-gradient-to-b from-primary-50 to-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Italienische Baby-Namen</h1>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl">
+        Jeder Name mit Bedeutung, Herkunft und verlässlichen Varianten — geprüft und ohne Klickfarmen.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-2 text-sm" role="group" aria-label="Namen nach Geschlecht filtern">
+        <button type="button" data-filter="alle" class="fbtn border border-primary-600 bg-primary-600 text-white px-4 py-2 rounded-full">
+          Alle
+        </button>
+        <button type="button" data-filter="mädchen" class="fbtn border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-full hover:border-primary-400">
+          Mädchen
+        </button>
+        <button type="button" data-filter="jungen" class="fbtn border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-full hover:border-primary-400">
+          Jungen
+        </button>
+      </div>
+
+      <p id="count" class="mt-4 text-sm text-gray-500" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ul id="namen-list" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {namen.map((n) => (
+          <li data-typ={n.data.typ ?? ''}>
+            <a
+              href={`/namen/${n.slug}/`}
+              class="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition"
+            >
+              <div class="flex items-center gap-3">
+                <span class="text-3xl" aria-hidden="true">{n.data.typ === 'mädchen' ? '👧' : '👦'}</span>
+                <h2 class="text-2xl font-bold text-gray-900 group-hover:text-primary-700 transition-colors">
+                  {n.data.title}
+                </h2>
+              </div>
+              {n.data.bedeutung && <p class="mt-3 text-primary-700">{n.data.bedeutung}</p>}
+              <p class="mt-3 flex-1 text-sm text-gray-600">{n.data.description}</p>
+              {n.data.herkunft && <p class="mt-4 text-xs text-gray-400">{n.data.herkunft}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <p id="empty" class="hidden py-8 text-gray-500">Hier ist noch kein Name eingetragen.</p>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const btns = Array.from(document.querySelectorAll<HTMLButtonElement>('.fbtn'));
+  const items = Array.from(document.querySelectorAll<HTMLLIElement>('#namen-list > li'));
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+
+  function apply(filter: string) {
+    let visible = 0;
+    for (const li of items) {
+      const match = filter === 'alle' || li.dataset.typ === filter;
+      li.classList.toggle('hidden', !match);
+      if (match) visible++;
+    }
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'Name' : 'Namen'}`;
+    empty?.classList.toggle('hidden', visible > 0);
+
+    for (const b of btns) {
+      const on = b.dataset.filter === filter;
+      b.classList.toggle('bg-primary-600', on);
+      b.classList.toggle('text-white', on);
+      b.classList.toggle('border-primary-600', on);
+      b.classList.toggle('bg-white', !on);
+      b.classList.toggle('text-gray-700', !on);
+      b.classList.toggle('border-gray-300', !on);
+      b.setAttribute('aria-pressed', String(on));
+    }
+  }
+
+  for (const b of btns) {
+    b.addEventListener('click', () => apply(b.dataset.filter ?? 'alle'));
+  }
+
+  // Read the filter from the URL on load so /namen/?typ=mädchen still works as a shareable link.
+  const initial = new URLSearchParams(location.search).get('typ');
+  apply(initial === 'mädchen' || initial === 'jungen' ? initial : 'alle');
+</script>

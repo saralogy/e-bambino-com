@@ -1,0 +1,90 @@
+---
+// Header.astro — sticky site header with primary nav + language switch
+const navItems = [
+  { label: 'Fragen', href: '/fragen/' },
+  { label: 'Namen', href: '/namen/' },
+  { label: 'Checklisten', href: '/checklisten/' },
+  { label: 'Finanzielle Hilfen', href: '/finanz/' },
+  { label: 'Ratgeber', href: '/ratgeber/' },
+  { label: 'Über uns', href: '/ueber-uns/' },
+];
+
+const current = Astro.url.pathname;
+const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="flex-shrink-0 flex items-center" aria-label="e-bambino Startseite">
+        <span class="text-2xl font-bold text-primary-600">e-bambino</span>
+        <span class="ml-1 text-sm text-gray-400">.com</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-1" aria-label="Hauptnavigation">
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              class:list={[
+                'px-3 py-2 text-sm font-medium rounded-md transition-colors',
+                isActive(item.href)
+                  ? 'text-primary-700 bg-primary-50'
+                  : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50',
+              ]}
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-1 text-sm" aria-label="Sprache wählen">
+        <span class="px-2 py-1 rounded bg-gray-100 text-gray-900 font-semibold" aria-current="true">DE</span>
+        <span class="px-2 py-1 rounded text-gray-400 cursor-not-allowed" title="Italienische Version folgt">IT</span>
+      </div>
+
+      <button
+        id="menu-btn"
+        type="button"
+        class="lg:hidden p-2 -mr-2 text-gray-700 hover:text-primary-600"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Menü öffnen"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t" role="dialog" aria-label="Mobile Navigation">
+    <nav class="px-2 pt-2 pb-3 space-y-1" aria-label="Mobile Navigation">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'block px-3 py-2.5 text-base font-medium rounded-md',
+              isActive(item.href) ? 'text-primary-700 bg-primary-50' : 'text-gray-700 hover:bg-gray-50',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const open = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  });
+</script>

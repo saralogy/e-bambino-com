@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { TAXONOMY } from '../../data/taxonomie';
+import { shipGate } from '../../lib/shipgate';
+
+export async function getStaticPaths() {
+  // A hub with no publishable pages is not generated at all, so we never ship
+  // an empty category shell.
+  const alle = await getCollection('fragen');
+  return TAXONOMY.filter((hub) => alle.some((e) => e.data.hub === hub.slug && shipGate(e.data).ship)).map((hub) => ({
+    params: { hub: hub.slug },
+    props: { hub },
+  }));
+}
+
+const { hub } = Astro.props;
+const fragen = (await getCollection('fragen', (e) => e.data.hub === hub.slug))
+  .filter((e) => shipGate(e.data).ship)
+  .sort((a, b) => a.data.frage.localeCompare(b.data.frage, 'de'));
+
+const byType = fragen.reduce<Record<string, typeof fragen>>((acc, e) => {
+  (acc[e.data.frageTyp] ??= []).push(e);
+  return acc;
+}, {});
+
+const TYPE_ORDER = ['was', 'wie', 'ist-sind', 'kann', 'sonstiges'] as const;
+---
+
+<Layout
+  title={hub.label}
+  description={`${hub.answer.slice(0, 140)}`}
+>
+  <section class="bg-gradient-to-b from-primary-50 to-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-xs font-medium uppercase tracking-wider text-primary-700 mb-3">Fragen & Antworten</p>
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">{hub.label}</h1>
+      <p class="mt-5 text-lg leading-relaxed text-gray-600 max-w-3xl">{hub.answer}</p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {fragen.length === 0 ? (
+        <p class="text-gray-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
+      ) : (
+        <div class="space-y-12">
+          {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
+            <div>
+              <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-1">{byType[t][0].data.frageTyp === t ? '' : ''}{t === 'ist-sind' ? 'Merkmale & Optionen' : t === 'was' ? 'Bedürfnisse & Grundlagen' : t === 'wie' ? 'Anleitung' : t === 'kann' ? 'Erlaubnis & Sicherheit' : 'Warum, wann & wie viel'}</h2>
+              <ul class="mt-4 divide-y divide-gray-200 border-t border-gray-200">
+                {byType[t].map((e) => (
+                  <li>
+                    <a
+                      href={`/${hub.slug}/${e.data.slug}/`}
+                      class="group flex items-start justify-between gap-4 py-4 hover:bg-gray-50 rounded-lg px-3 -mx-3 transition"
+                    >
+                      <span class="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">
+                        {e.data.frage}
+                      </span>
+                      <span class="shrink-0 text-gray-300 group-hover:text-primary-400 transition-colors" aria-hidden="true">→</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</Layout>

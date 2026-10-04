@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const ratgeber = await getCollection('ratgeber');
+---
+
+<Layout
+  title="Ratgeber"
+  description="Fachlich geprüfte Ratgeber zu Schlaf, Ernährung und Entwicklung — mit offengelegten Quellen."
+>
+  <section class="bg-gradient-to-b from-secondary-50 to-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Ratgeber</h1>
+      <p class="text-xl text-gray-600">Fachlich geprüfte Artikel zu Entwicklung, Gesundheit und Alltag</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {ratgeber.map(r => (
+          <a href={`/ratgeber/${r.slug}/`} class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border">
+            <h3 class="text-xl font-semibold mb-2">{r.data.title}</h3>
+            <p class="text-gray-600 text-sm">{r.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

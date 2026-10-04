@@ -1,0 +1,41 @@
+User-Agent: *
+Allow: /
+
+# AI Bots - Allow for EU AI Act compliance
+User-Agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+
+User-Agent: CCBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+# Search Engine Bots
+User-Agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /admin/
+
+# Prevent duplicate content
+User-Agent: *
+Disallow: /admin/
+Disallow: /_astro/
+Disallow: /keystatic/
+
+# Sitemap
+Sitemap: https://e-bambino.com/sitemap-index.xml

@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const finanz = await getCollection('finanz');
+---
+
+<Layout
+  title="Finanzielle Hilfen"
+  description="Elterngeld, Kindergeld und weitere finanzielle Unterstützung für Familien — mit Beträgen, Fristen und Antragsunterlagen."
+>
+  <section class="bg-gradient-to-b from-primary-50 to-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Finanzielle Hilfen</h1>
+      <p class="text-xl text-gray-600">Elterngeld, Kindergeld und weitere Unterstützung</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {finanz.map(f => (
+          <a href={`/finanz/${f.slug}/`} class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border">
+            <h3 class="text-xl font-semibold mb-2">{f.data.title}</h3>
+            <p class="text-gray-600 text-sm">{f.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

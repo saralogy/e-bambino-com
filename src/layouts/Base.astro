@@ -1,0 +1,50 @@
+---
+// Base.astro — single root layout for the whole site.
+// All other layouts/pages compose on top of this.
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+import SEO from '../components/SEO.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const {
+  title,
+  description = 'e-bambino.com — der italienische Familienratgeber für DACH & EU. Baby-Namen, Checklisten, finanzielle Hilfen und Ratgeber. Von Menschen geprüft.',
+  image,
+  canonical,
+  type = 'website',
+  noindex = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <SEO {title} {description} {image} {canonical} {type} />
+  </head>
+  <body class="bg-white text-gray-800 antialiased flex flex-col min-h-screen">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded"
+      >Zum Inhalt springen</a
+    >
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const quellen = [
+  {
+    org: 'AWMF',
+    voll: 'Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften',
+    url: 'https://register.awmf.org',
+    fuer: 'Medizinische Leitlinien, Schwangerschaft, Säuglingspflege, Ernährung',
+  },
+  {
+    org: 'RKI',
+    voll: 'Robert Koch-Institut',
+    url: 'https://www.rki.de',
+    fuer: 'Infektionskrankheiten, Impfempfehlungen, Gesundheitsberichterstattung',
+  },
+  {
+    org: 'BMFSFJ',
+    voll: 'Bundesministerium für Familie, Senioren, Frauen und Jugend',
+    url: 'https://www.bmfsfj.de',
+    fuer: 'Elterngeld, Kindergeld, Familienleistungen, gesetzliche Grundlagen',
+  },
+  {
+    org: 'Destatis',
+    voll: 'Statistisches Bundesamt',
+    url: 'https://www.destatis.de',
+    fuer: 'Namensstatistik, Geburten, Bevölkerungsentwicklung',
+  },
+  {
+    org: 'Statistik Austria',
+    voll: 'Statistik Austria — Bundesamt für Statistik',
+    url: 'https://www.statistik.at',
+    fuer: 'Namensvergabe und Bevölkerungsstatistik Österreich',
+  },
+  {
+    org: 'BFS',
+    voll: 'Bundesamt für Statistik — Schweiz',
+    url: 'https://www.bfs.admin.ch',
+    fuer: 'Namensstatistik und Bevölkerungsdaten Schweiz',
+  },
+  {
+    org: 'Deutsche Rentenversicherung',
+    voll: 'Deutsche Rentenversicherung',
+    url: 'https://www.deutsche-rentenversicherung.de',
+    fuer: 'Sozialleistungen, Kinderzuschlag, Familienversicherung',
+  },
+  {
+    org: 'Istat',
+    voll: 'Instituto Nazionale di Statistica (Italien)',
+    url: 'https://www.istat.it',
+    fuer: 'Namensstatistik Italien, als Referenz für den italienischen Namensraum',
+  },
+];
+---
+
+<Layout
+  title="Quellen"
+  description="Die vollständige Liste der Quellen, aus denen e-bambino.com seine Inhalte prüft — von AWMF bis Destatis und BFS."
+>
+  <section class="bg-gradient-to-b from-secondary-50 to-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Unsere Quellen</h1>
+      <p class="mt-4 text-lg text-gray-600">
+        Jede Zahl auf dieser Website stammt aus einer der folgenden Quellen. Alles andere streichen wir.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ul class="space-y-4">
+        {quellen.map((q) => (
+          <li class="rounded-xl border border-gray-200 bg-white p-6">
+            <div class="flex flex-wrap items-baseline gap-x-3">
+              <a
+                href={q.url}
+                rel="noopener noreferrer external"
+                target="_blank"
+                class="font-semibold text-primary-700 hover:text-primary-800 underline underline-offset-2"
+              >
+                {q.org}
+              </a>
+              <span class="text-sm text-gray-500">{q.voll}</span>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              <span class="font-medium text-gray-700">Wofür:</span> {q.fuer}
+            </p>
+          </li>
+        ))}
+      </ul>
+
+      <div class="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
+        <h2 class="font-semibold text-gray-900">Was wir nicht als Quelle nutzen</h2>
+        <p class="mt-2 text-sm text-gray-600">
+          Kein SEO-Affiliate-Netzwerk, keine unbenannten Blogs, keine Wikipedia-Abschnitte ohne
+          Primärquelle, keine Zahlen aus Foren oder sozialen Medien. Wenn eine Angabe sich nicht
+          gegen eine Primärquelle prüfen lässt, kommt sie nicht auf die Seite.
+        </p>
+      </div>
+
+      <p class="mt-8 text-sm text-gray-500">
+        Fehlt eine Quelle oder finden Sie einen Fehler? Schreiben Sie uns an
+        <a href="mailto:kontakt@e-bambino.com" class="text-primary-600 underline underline-offset-2">kontakt@e-bambino.com</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

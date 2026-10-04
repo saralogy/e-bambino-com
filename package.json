@@ -1,0 +1,23 @@
+{
+  "name": "e-bambino.com",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "German-language family media site for DACH/EU markets",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.0",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.16.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-feature-settings: 'kern';
+  }
+}
+
+@layer components {
+  /* Long-form article typography for rendered Markdown/MDX */
+  .prose {
+    @apply text-gray-700 leading-relaxed;
+  }
+  .prose > * + * {
+    @apply mt-5;
+  }
+  .prose h2 {
+    @apply text-2xl font-bold text-gray-900 mt-12 mb-4 tracking-tight;
+  }
+  .prose h3 {
+    @apply text-xl font-semibold text-gray-900 mt-9 mb-3;
+  }
+  .prose h4 {
+    @apply text-lg font-semibold text-gray-900 mt-7 mb-2;
+  }
+  .prose a {
+    @apply text-primary-600 underline underline-offset-2 hover:text-primary-700;
+  }
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+  .prose ul {
+    @apply list-disc pl-6 space-y-1.5;
+  }
+  .prose ol {
+    @apply list-decimal pl-6 space-y-1.5;
+  }
+  .prose li::marker {
+    @apply text-primary-500;
+  }
+  .prose table {
+    @apply w-full text-sm border-collapse my-6;
+  }
+  .prose thead {
+    @apply bg-gray-50;
+  }
+  .prose th {
+    @apply text-left font-semibold text-gray-900 border border-gray-200 px-3 py-2;
+  }
+  .prose td {
+    @apply border border-gray-200 px-3 py-2 align-top;
+  }
+  .prose blockquote {
+    @apply border-l-4 border-primary-300 bg-primary-50/50 py-3 pl-5 pr-4 italic rounded-r;
+  }
+  .prose code {
+    @apply bg-gray-100 text-gray-800 rounded px-1.5 py-0.5 text-[0.9em];
+  }
+  .prose hr {
+    @apply border-gray-200 my-10;
+  }
+  .prose img {
+    @apply rounded-xl;
+  }
+}

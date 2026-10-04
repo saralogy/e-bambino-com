@@ -1,0 +1,62 @@
+---
+// Footer.astro — site footer with categories, legal links and the AI Act note
+const year = new Date().getFullYear();
+
+const kategorien = [
+  { label: 'Fragen & Antworten', href: '/fragen/' },
+  { label: 'Baby-Namen', href: '/namen/' },
+  { label: 'Checklisten', href: '/checklisten/' },
+  { label: 'Finanzielle Hilfen', href: '/finanz/' },
+  { label: 'Ratgeber', href: '/ratgeber/' },
+];
+
+const rechtliches = [
+  { label: 'Impressum', href: '/impressum/' },
+  { label: 'Datenschutz', href: '/datenschutz/' },
+  { label: 'Quellen', href: '/quellen/' },
+];
+---
+
+<footer class="bg-gray-900 text-white mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <p class="text-xl font-bold text-primary-400 mb-3">e-bambino.com</p>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Der italienische Familienratgeber für DACH &amp; EU. Namen, Checklisten und finanzielle Hilfen —
+          verständlich, geprüft, auf Deutsch.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">Kategorien</h2>
+        <ul class="space-y-2">
+          {kategorien.map((k) => <li><a href={k.href} class="text-gray-400 hover:text-primary-400 text-sm">{k.label}</a></li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">Rechtliches</h2>
+        <ul class="space-y-2">
+          {rechtliches.map((k) => <li><a href={k.href} class="text-gray-400 hover:text-primary-400 text-sm">{k.label}</a></li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">Kontakt</h2>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="mailto:kontakt@e-bambino.com" class="hover:text-primary-400">kontakt@e-bambino.com</a></li>
+          <li><a href="/ueber-uns/" class="hover:text-primary-400">Über uns &amp; Redaktion</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-gray-800 text-center space-y-2">
+      <p class="text-gray-500 text-sm">© {year} e-bambino.com. Alle Rechte vorbehalten.</p>
+      <p class="text-gray-600 text-xs">
+        Inhalte von menschlichen Redakteuren erstellt und geprüft — im Einklang mit EU AI Act Art. 50.
+        Keine medizinische Beratung.
+      </p>
+    </div>
+  </div>
+</footer>

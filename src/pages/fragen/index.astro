@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { TAXONOMY, TOTALS } from '../../data/taxonomie';
+import { shipGate } from '../../lib/shipgate';
+
+const alleFragen = await getCollection('fragen');
+const fragen = alleFragen.filter((e) => shipGate(e.data).ship);
+const perHub = TAXONOMY.map((h) => ({
+  ...h,
+  count: fragen.filter((f) => f.data.hub === h.slug).length,
+})).filter((h) => h.count > 0);
+
+const newest = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 8);
+const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
+
+const TYPE_LABEL: Record<string, string> = {
+  was: 'Bedürfnis',
+  wie: 'Anleitung',
+  'ist-sind': 'Merkmale & Optionen',
+  kann: 'Erlaubnis & Sicherheit',
+  sonstiges: 'Warum & wann',
+};
+---
+
+<Layout
+  title="Fragen & Antworten"
+  description="Die häufigsten Fragen zu Babybekleidung, Windeln, Ernährung, Baden, Stillen, Mobilität, Spielzeug und Sicherheit — verständlich beantwortet."
+>
+  <section class="bg-gradient-to-b from-primary-50 to-white py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">
+        Fragen & Antworten rund um dein Baby
+      </h1>
+      <p class="mt-5 text-lg text-gray-600 max-w-2xl mx-auto">
+        {TOTALS.hubs} Themenbereiche, {fragen.length} Fragen mit direkter Antwort. Von Menschen erstellt und
+        geprüft, mit offengelegten Quellen.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-6">Themenbereiche</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {perHub.map((h) => (
+          <a
+            href={`/${h.slug}/`}
+            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition"
+          >
+            <h3 class="font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">{h.label}</h3>
+            <p class="mt-2 flex-1 text-sm text-gray-600">{h.answer.slice(0, 130)}…</p>
+            <span class="mt-4 text-sm font-medium text-primary-600">{h.count} {h.count === 1 ? 'Frage' : 'Fragen'}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-6">Zuletzt ergänzt</h2>
+      <ul class="divide-y divide-gray-200 border-t border-gray-200">
+        {newest.map((e) => (
+          <li>
+            <a href={`/${e.data.hub}/${e.data.slug}/`} class="group flex flex-wrap items-baseline justify-between gap-2 py-4 hover:bg-gray-100/60 rounded-lg px-3 -mx-3 transition">
+              <span class="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">{e.data.frage}</span>
+              <span class="text-xs text-gray-500">
+                {TYPE_LABEL[e.data.frageTyp]} · <time datetime={e.data.date.toISOString()}>{dtf.format(e.data.date)}</time>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>

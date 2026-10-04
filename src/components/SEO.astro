@@ -1,0 +1,56 @@
+---
+// SEO.astro — meta tags, Open Graph, Twitter card, JSON-LD.
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+}
+
+const SITE = 'https://e-bambino.com';
+const {
+  title,
+  description = 'e-bambino.com — der italienische Familienratgeber für DACH & EU.',
+  image = `${SITE}/og-default.png`,
+  canonical = Astro.url.href,
+  type = 'website',
+} = Astro.props;
+
+const fullTitle = title ? `${title} | e-bambino` : 'e-bambino | Italienischer Familienratgeber für DACH & EU';
+
+// JSON-LD must be serialised with set:html — a bare object literal is not valid there.
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': type === 'article' ? 'Article' : 'WebSite',
+  name: fullTitle,
+  description,
+  url: canonical,
+  inLanguage: 'de',
+  publisher: {
+    '@type': 'Organization',
+    name: 'e-bambino',
+    url: SITE,
+    logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
+  },
+});
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<meta property="og:site_name" content="e-bambino" />
+<meta property="og:type" content={type} />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={image} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+
+<script type="application/ld+json" set:html={jsonLd} />

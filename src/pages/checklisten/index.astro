@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const checklisten = await getCollection('checklisten');
+---
+
+<Layout
+  title="Checklisten"
+  description="Praktische Checklisten für Klinik, Urlaub, Einschulung und Alltag — zum Abhaken statt zum Nachschlagen."
+>
+  <section class="bg-gradient-to-b from-secondary-50 to-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Checklisten</h1>
+      <p class="text-xl text-gray-600">Praktische Listen für Klinik, Urlaub und Alltag</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {checklisten.map(cl => (
+          <a href={`/checklisten/${cl.slug}/`} class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border">
+            <h3 class="text-xl font-semibold mb-2">{cl.data.title}</h3>
+            <p class="text-gray-600 text-sm">{cl.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const [namen, checklisten, finanz, ratgeber] = await Promise.all([
+  getCollection('namen'),
+  getCollection('checklisten'),
+  getCollection('finanz'),
+  getCollection('ratgeber'),
+]);
+
+const pillars = [
+  {
+    title: 'Baby-Namen',
+    href: '/namen/',
+    icon: '👶',
+    blurb: 'Italienische Namen mit Bedeutung, Herkunft, Varianten und Ranglisten für Deutschland, Österreich und die Schweiz.',
+  },
+  {
+    title: 'Checklisten',
+    href: '/checklisten/',
+    icon: '✅',
+    blurb: 'Kliniktasche, Urlaub, Einschulung — zum Abhaken statt zum Nachschlagen.',
+  },
+  {
+    title: 'Finanzielle Hilfen',
+    href: '/finanz/',
+    icon: '💰',
+    blurb: 'Elterngeld, Kindergeld, Kinderzuschlag: Beträge, Fristen und die Dokumente für den Antrag.',
+  },
+  {
+    title: 'Ratgeber',
+    href: '/ratgeber/',
+    icon: '📚',
+    blurb: 'Schlaf, Ernährung, Entwicklung — mit Quellen, auf die Sie sich verlassen können.',
+  },
+];
+
+const trust = [
+  { label: 'Von Menschen geprüft', sub: 'EU AI Act Art. 50' },
+  { label: 'Quellen offengelegt', sub: 'AWMF · RKI · Destatis' },
+  { label: 'Aktualisiert', sub: 'mit Datum' },
+  { label: 'Keine Werbung', sub: 'für Sie neutral' },
+];
+
+const newest = [
+  ...namen.map((e) => ({ title: e.data.title, href: `/namen/${e.slug}/`, kind: 'Name', date: e.data.date })),
+  ...checklisten.map((e) => ({ title: e.data.title, href: `/checklisten/${e.slug}/`, kind: 'Checkliste', date: e.data.date })),
+  ...finanz.map((e) => ({ title: e.data.title, href: `/finanz/${e.slug}/`, kind: 'Finanzen', date: e.data.date })),
+  ...ratgeber.map((e) => ({ title: e.data.title, href: `/ratgeber/${e.slug}/`, kind: 'Ratgeber', date: e.data.date })),
+]
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+  .slice(0, 6);
+
+const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+
+<Layout>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-primary-50 via-white to-white py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 bg-primary-50 rounded-full px-4 py-1.5 mb-6">
+        🇮🇹 Italienisch · 🇩🇪 Deutsch · 🇦🇹🇨🇭 DACH
+      </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+        Der italienische Familienratgeber für <span class="text-primary-600">DACH &amp; EU</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        Baby-Namen, Checklisten und finanzielle Hilfen — verständlich erklärt, von Menschen geprüft,
+        ohne Werbung und ohne Fachchinesisch.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
+        <a
+          href="/namen/"
+          class="bg-primary-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+        >
+          Namen entdecken
+        </a>
+        <a
+          href="/checklisten/"
+          class="bg-white text-primary-700 border border-gray-300 px-7 py-3 rounded-lg font-semibold hover:border-primary-400 hover:bg-primary-50/50 transition-colors"
+        >
+          Checklisten ansehen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="border-y border-gray-200 bg-gray-50/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <dl class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        {trust.map((t) => (
+          <div>
+            <dt class="font-semibold text-gray-900 text-sm">{t.label}</dt>
+            <dd class="text-gray-500 text-xs mt-0.5">{t.sub}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Pillars -->
+  <section class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Was Sie hier finden</h2>
+      <p class="mt-3 text-gray-600 max-w-2xl">
+        Vier Bereiche, ein Anspruch: nachvollziehbar nützlich. Keine Definitionssammlung, sondern
+        Antworten auf die Fragen, die Eltern tatsächlich stellen.
+      </p>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {pillars.map((p) => (
+          <a
+            href={p.href}
+            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition"
+          >
+            <span class="text-3xl" aria-hidden="true">{p.icon}</span>
+            <h3 class="mt-4 font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
+              {p.title}
+            </h3>
+            <p class="mt-2 text-sm text-gray-600 flex-1">{p.blurb}</p>
+            <span class="mt-4 text-sm font-medium text-primary-600">Alle ansehen →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Newest content -->
+  <section class="bg-gray-50 py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Zuletzt aktualisiert</h2>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((n) => (
+          <a href={n.href} class="group rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition">
+            <div class="flex items-center gap-2 text-xs">
+              <span class="font-medium uppercase tracking-wider text-primary-600">{n.kind}</span>
+              <span class="text-gray-400">·</span>
+              <time datetime={n.date.toISOString()} class="text-gray-500">{dtf.format(n.date)}</time>
+            </div>
+            <h3 class="mt-2 font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">{n.title}</h3>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary-700 py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white">Ihr Baby bekommt einen Namen — wir helfen beim Finden.</h2>
+      <p class="mt-4 text-primary-100">
+        Stöbern Sie durch italienische Namen mit echter Bedeutung, oder holen Sie sich die Checkliste
+        für die Klinik. Kostenlos, ohne Anmeldung.
+      </p>
+      <a
+        href="/namen/"
+        class="mt-8 inline-block bg-white text-primary-700 px-7 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+      >
+        Zu den Namen
+      </a>
+    </div>
+  </section>
+</Layout>

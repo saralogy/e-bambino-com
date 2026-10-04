@@ -1,0 +1,38 @@
+# .gitignore
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production
+/dist
+/.vercel
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Hermes
+.hermes/

@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 — Seite nicht gefunden" description="Diese Seite existiert nicht (404)." noindex>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <p class="text-6xl font-bold text-primary-200">404</p>
+    <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900">Diese Seite gibt es nicht</h1>
+    <p class="mt-4 text-gray-600">
+      Möglicherweise wurde sie verschoben oder entfernt. Diese Bereiche gibt es:
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3 justify-center">
+      <a href="/namen/" class="bg-primary-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary-700">Namen</a>
+      <a href="/checklisten/" class="bg-white border border-gray-300 px-5 py-2.5 rounded-lg font-medium text-gray-800 hover:border-primary-400">Checklisten</a>
+      <a href="/finanz/" class="bg-white border border-gray-300 px-5 py-2.5 rounded-lg font-medium text-gray-800 hover:border-primary-400">Finanzielle Hilfen</a>
+      <a href="/ratgeber/" class="bg-white border border-gray-300 px-5 py-2.5 rounded-lg font-medium text-gray-800 hover:border-primary-400">Ratgeber</a>
+    </div>
+  </div>
+</Layout>
