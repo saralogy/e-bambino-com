@@ -25,48 +25,92 @@ const byType = fragen.reduce<Record<string, typeof fragen>>((acc, e) => {
 }, {});
 
 const TYPE_ORDER = ['was', 'wie', 'ist-sind', 'kann', 'sonstiges'] as const;
+
+const TYPE_TITLE: Record<string, string> = {
+  was: 'Bedürfnisse & Grundlagen',
+  wie: 'Anleitung',
+  'ist-sind': 'Merkmale & Optionen',
+  kann: 'Erlaubnis & Sicherheit',
+  sonstiges: 'Warum, wann & wie viel',
+};
 ---
 
-<Layout
-  title={hub.label}
-  description={`${hub.answer.slice(0, 140)}`}
->
-  <section class="bg-gradient-to-b from-primary-50 to-white py-14">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-xs font-medium uppercase tracking-wider text-primary-700 mb-3">Fragen & Antworten</p>
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">{hub.label}</h1>
-      <p class="mt-5 text-lg leading-relaxed text-gray-600 max-w-3xl">{hub.answer}</p>
+<Layout title={hub.label} description={hub.answer.slice(0, 155)}>
+  <section class="bg-warm-wash">
+    <div class="shell py-16 sm:py-20">
+      <nav class="mb-8 flex items-center gap-2 text-sm text-mist-500" aria-label="Brotkrumen">
+        <a href="/" class="transition-colors hover:text-plum">Start</a>
+        <span aria-hidden="true">/</span>
+        <a href="/fragen/" class="transition-colors hover:text-plum">Fragen</a>
+      </nav>
+
+      <p class="eyebrow rise">
+        <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+        {fragen.length} {fragen.length === 1 ? 'Frage' : 'Fragen'}
+      </p>
+      <h1 class="display-1 mt-5 max-w-3xl text-balance rise rise-delay-1">{hub.label}</h1>
+      <p class="lede measure mt-6 text-pretty rise rise-delay-2">{hub.answer}</p>
     </div>
   </section>
 
-  <section class="py-14">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      {fragen.length === 0 ? (
-        <p class="text-gray-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
+  <section class="shell py-16 sm:py-20">
+    {
+      fragen.length === 0 ? (
+        <p class="text-mist-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
       ) : (
-        <div class="space-y-12">
-          {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
-            <div>
-              <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-1">{byType[t][0].data.frageTyp === t ? '' : ''}{t === 'ist-sind' ? 'Merkmale & Optionen' : t === 'was' ? 'Bedürfnisse & Grundlagen' : t === 'wie' ? 'Anleitung' : t === 'kann' ? 'Erlaubnis & Sicherheit' : 'Warum, wann & wie viel'}</h2>
-              <ul class="mt-4 divide-y divide-gray-200 border-t border-gray-200">
-                {byType[t].map((e) => (
-                  <li>
-                    <a
-                      href={`/${hub.slug}/${e.data.slug}/`}
-                      class="group flex items-start justify-between gap-4 py-4 hover:bg-gray-50 rounded-lg px-3 -mx-3 transition"
-                    >
-                      <span class="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">
-                        {e.data.frage}
-                      </span>
-                      <span class="shrink-0 text-gray-300 group-hover:text-primary-400 transition-colors" aria-hidden="true">→</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
+          {/* Sidebar: question types as an index */}
+          <nav class="lg:col-span-3" aria-label="Fragentypen">
+            <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-500">In diesem Bereich</h2>
+            <ul class="mt-5 space-y-3">
+              {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
+                <li>
+                  <a
+                    href={`#typ-${t}`}
+                    class="group flex items-baseline justify-between gap-3 text-sm text-ink-700 transition-colors duration-300 hover:text-plum"
+                  >
+                    <span>{TYPE_TITLE[t]}</span>
+                    <span class="text-xs text-mist-400 group-hover:text-blush">
+                      {byType[t].length}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Question groups */}
+          <div class="lg:col-span-9">
+            {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
+              <section id={`typ-${t}`} class="mb-14 last:mb-0 scroll-mt-24">
+                <h2 class="font-display text-2xl font-semibold text-ink sm:text-[1.75rem]">
+                  {TYPE_TITLE[t]}
+                </h2>
+                <ul class="mt-5 divide-y divide-mist-200 border-y border-mist-200">
+                  {byType[t].map((e) => (
+                    <li>
+                      <a
+                        href={`/${hub.slug}/${e.data.slug}/`}
+                        class="group flex items-start justify-between gap-5 py-4 transition-colors duration-300"
+                      >
+                        <span class="font-medium leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                          {e.data.frage}
+                        </span>
+                        <span
+                          class="mt-1 shrink-0 text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                          aria-hidden="true"
+                        >
+                          →
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
         </div>
-      )}
-    </div>
+      )
+    }
   </section>
 </Layout>

@@ -7,9 +7,6 @@ updatedDate: 2026-10-01
 tags: ['kindergeld', 'geld', 'familie', 'antrag']
 category: 'finanzen'
 ---
-
-# Kindergeld 2026
-
 ## Kurzübersicht
 
 | Feld | Wert |

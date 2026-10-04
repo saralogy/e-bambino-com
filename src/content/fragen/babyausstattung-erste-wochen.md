@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Was gehört in die Babyausstattung für die ersten Wochen zu Hause?
-
 Die Grundausstattung ist kleiner als der Onlineshop vermuten lässt. Wer mit Babybett, Matratze, Schlafsack, Windeln und einem Wickelplatz startet, kommt in der Regel gut durch die ersten Wochen.
 
 ## Welche sieben Dinge brauche ich für den Start?

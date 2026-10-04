@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Was hilft gegen Windeldermatitis?
-
 Roter, gereizter Babyhintern ist einer der häufigsten Gründe für einen Kinderarztbesuch im ersten Lebensjahr. Meist steckt kein schweres Problem dahinter, sondern Feuchtigkeit, die zu lange auf der Haut steht.
 
 ## Was verursacht Windeldermatitis?

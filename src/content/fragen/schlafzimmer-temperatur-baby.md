@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Welche Temperatur und Belüftung braucht ein Schlafzimmer mit Baby?
-
 Ein gut belüftetes, kühles Schlafzimmer gehört zu den Empfehlungen, die am engsten mit einer Verringerung des Risikos für den plötzlichen Kindstod verknüpft sind.
 
 ## Welche Raumtemperatur wird für das Babyzimmer empfohlen?

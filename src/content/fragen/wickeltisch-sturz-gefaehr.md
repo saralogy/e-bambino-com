@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Warum ist der Wickeltisch so gefährlich?
-
 Kaum eine Ecke des Hauses wird so unterschätzt wie der Wickeltisch. Er ist erhöht, schmal, glatt — und wird regelmäßig mit einer Hand voll Gegenständen aufgesucht.
 
 ## Warum ist die Ablagegefahr so hoch?

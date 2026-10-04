@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Welche Haushaltsgegenstände sind für Kleinkinder am gefährlichsten?
-
 Unfälle mit Babys passieren fast immer zu Hause, weil dort die meisten unbeaufsichtigten Stunden verbracht werden. Die gute Nachricht: Es gibt keine Geheimwunder, sondern eine überschaubare Liste.
 
 ## Welche fünf Kategorien sind am gefährlichsten?

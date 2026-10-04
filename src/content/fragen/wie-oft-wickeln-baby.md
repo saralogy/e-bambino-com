@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie oft muss ein Baby gewickelt werden?
-
 Die verbreitete Zahl von zehn bis zwölf Wicklungen am Tag gilt für die ersten Wochen. Danach sinkt sie, weil das Baby trockener und die Blase länger gefüllt hält. Entscheidend ist weniger die Zahl als der Zustand.
 
 ## Woran erkenne ich, dass die Windel voll ist?

@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Wie wird ein Autositz richtig eingebaut und geprüft?
-
 Der Einbau ist der Moment, an dem die meiste Sicherheit verloren geht. Studien zu Unfällen mit Kindersitzen zeigen, dass viele Sitze zwar richtig gekauft, aber falsch eingebaut waren.
 
 ## Rückwärts oder vorwärts?

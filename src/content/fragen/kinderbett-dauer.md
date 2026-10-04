@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie lange braucht ein Kinderbett und wann wird es zu klein?
-
 Ein Kinderbett hält in der Regel zwei bis vier Jahre. Entscheidend ist nicht das Geburtsdatum deines Kindes, sondern der tatsächliche Schlafplatz im Bett.
 
 ## Woran erkenne ich, dass ein Kinderbett zu klein geworden ist?

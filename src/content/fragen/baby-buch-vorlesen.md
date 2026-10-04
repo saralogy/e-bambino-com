@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie liest man einem Baby richtig vor?
-
 Vorlesen ist die einfachste sprachliche Förderung, die es gibt. Du brauchst weder Übung noch ein teures Buch. Entscheidend ist, dass du regelmäßig und mit deiner Stimme liest.
 
 ## Ab wann sollte ich einem Baby vorlesen?

@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Wie sichert man Steckdosen für ein Baby?
-
 Steckdosen gehören zu den Stellen, an denen Babys am schnellsten zu Schaden kommen. Stromschäden sind selten, aber schwer. Die gute Nachricht: In den meisten Wohnungen sind es drei Handgriffe und ein Wochenende Arbeit.
 
 ## Welche drei Methoden gibt es?

@@ -1,5 +1,6 @@
 ---
 // ContentPage.astro — layout for Markdown pages declared via `layout:` frontmatter.
+// Renders the Markdown body inside the site shell with the shared prose typography.
 import Base from './Base.astro';
 import type { Props } from './Base.astro';
 
@@ -7,7 +8,7 @@ const props = Astro.props as Props;
 ---
 
 <Base {...props}>
-  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <article class="shell measure py-12 sm:py-16">
     <slot />
   </article>
 </Base>

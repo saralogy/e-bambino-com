@@ -7,9 +7,6 @@ updatedDate: 2026-10-01
 tags: ['urlaub', 'familie', 'checkliste', 'packen']
 category: 'checklisten'
 ---
-
-# Urlaubs-Checkliste für Familien mit Kindern
-
 ## Kurzübersicht
 
 - **Typ:** Urlaub

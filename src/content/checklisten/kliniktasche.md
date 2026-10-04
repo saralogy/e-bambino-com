@@ -7,9 +7,6 @@ updatedDate: 2026-10-01
 tags: ['klinik', 'tasche', 'geburt', 'checkliste']
 category: 'checklisten'
 ---
-
-# Kliniktasche Checkliste
-
 ## Kurzübersicht
 
 - **Typ:** Klinik

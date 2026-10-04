@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Wie verhindert man Stürze vom Wickeltisch und Sofa?
-
 Stürze sind im Kleinkindalter häufig, weil Kinder lernen, das Gleichgewicht zu verlieren, lange bevor sie es wieder können. Der Sturz selbst ist meist harmlos — die halb gebremsten Stürze vom Hochstuhl sind es, die Schmerzen verursachen.
 
 ## Warum sind Stürze in den ersten zwei Jahren so häufig?

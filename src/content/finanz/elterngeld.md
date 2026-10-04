@@ -7,9 +7,6 @@ updatedDate: 2026-10-01
 tags: ['elterngeld', 'geld', 'familie', 'antrag']
 category: 'finanzen'
 ---
-
-# Elterngeld 2026
-
 ## Kurzübersicht
 
 | Feld | Wert |

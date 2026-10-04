@@ -1,31 +1,70 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
 
 const finanz = await getCollection('finanz');
+const dtf = new Intl.DateTimeFormat('de-DE', { month: 'long', year: 'numeric' });
 ---
 
 <Layout
   title="Finanzielle Hilfen"
   description="Elterngeld, Kindergeld und weitere finanzielle Unterstützung für Familien — mit Beträgen, Fristen und Antragsunterlagen."
 >
-  <section class="bg-gradient-to-b from-primary-50 to-white py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">Finanzielle Hilfen</h1>
-      <p class="text-xl text-gray-600">Elterngeld, Kindergeld und weitere Unterstützung</p>
+  <section class="bg-warm-wash">
+    <div class="shell py-16 sm:py-20">
+      <SectionHeader
+        eyebrow="Mit Stand-Datum"
+        title="Finanzielle Hilfen"
+        lede="Elterngeld, Kindergeld und weitere Unterstützung für Familien — mit Beträgen, Fristen und den Unterlagen für den Antrag. Beträge können sich ändern; maßgeblich ist die Auskunft der zuständigen Stelle."
+      />
     </div>
   </section>
 
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {finanz.map(f => (
-          <a href={`/finanz/${f.slug}/`} class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border">
-            <h3 class="text-xl font-semibold mb-2">{f.data.title}</h3>
-            <p class="text-gray-600 text-sm">{f.data.description}</p>
-          </a>
-        ))}
-      </div>
-    </div>
+  <section class="shell py-16 sm:py-20">
+    {
+      finanz.length === 0 ? (
+        <p class="text-mist-500">Hier werden in den nächsten Tagen weitere Hilfen ergänzt.</p>
+      ) : (
+        <ul class="divide-y divide-mist-200 border-y border-mist-200">
+          {finanz.map((f) => (
+            <li>
+              <a
+                href={`/finanz/${f.slug}/`}
+                class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
+              >
+                <span class="flex-1">
+                  <span class="font-display text-xl font-semibold text-ink transition-colors duration-300 group-hover:text-plum sm:text-2xl">
+                    {f.data.title}
+                  </span>
+                  <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-mist-600">
+                    {f.data.description}
+                  </span>
+                </span>
+                <span class="flex shrink-0 items-center gap-3 text-sm text-mist-500">
+                  <time class="text-xs uppercase tracking-wider text-mist-400" datetime={f.data.date.toISOString()}>
+                    Stand {dtf.format(f.data.date)}
+                  </time>
+                  <span
+                    class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    →
+                  </span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <aside class="mt-12 rounded-card border border-blush-200 bg-blush-50 p-6">
+      <h2 class="font-display text-lg font-semibold text-ink">Verbindlich ist die Behörde</h2>
+      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+        Diese Seiten sind eine Orientierung, keine Rechts- oder Steuerberatung. Beträge und Fristen können
+        sich ändern — lassen Sie sich den aktuellen Stand bei der zuständigen Stelle bestätigen.
+      </p>
+    </aside>
   </section>
 </Layout>

@@ -15,9 +15,6 @@ quellen: ['rki', 'awmf']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Ab welchem Alter braucht ein Kind Bildschirmzeit?
-
 Bildschirmzeit ist bei kleinen Kindern in der Regel kein Ziel, sondern eine Frage der Begleitung. Die AWMF rät, in den ersten Lebensjahren ganz auf Bildschirmmedien zu verzichten.
 
 ## Ab welchem Alter sind Bildschirmzeiten bei Kindern sinnvoll?

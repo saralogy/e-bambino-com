@@ -11,7 +11,7 @@ const perHub = TAXONOMY.map((h) => ({
   count: fragen.filter((f) => f.data.hub === h.slug).length,
 })).filter((h) => h.count > 0);
 
-const newest = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 8);
+const newest = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 10);
 const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
 
 const TYPE_LABEL: Record<string, string> = {
@@ -27,50 +27,102 @@ const TYPE_LABEL: Record<string, string> = {
   title="Fragen & Antworten"
   description="Die häufigsten Fragen zu Babybekleidung, Windeln, Ernährung, Baden, Stillen, Mobilität, Spielzeug und Sicherheit — verständlich beantwortet."
 >
-  <section class="bg-gradient-to-b from-primary-50 to-white py-16">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">
-        Fragen & Antworten rund um dein Baby
-      </h1>
-      <p class="mt-5 text-lg text-gray-600 max-w-2xl mx-auto">
-        {TOTALS.hubs} Themenbereiche, {fragen.length} Fragen mit direkter Antwort. Von Menschen erstellt und
-        geprüft, mit offengelegten Quellen.
-      </p>
-    </div>
-  </section>
-
-  <section class="py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-6">Themenbereiche</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {perHub.map((h) => (
-          <a
-            href={`/${h.slug}/`}
-            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition"
-          >
-            <h3 class="font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">{h.label}</h3>
-            <p class="mt-2 flex-1 text-sm text-gray-600">{h.answer.slice(0, 130)}…</p>
-            <span class="mt-4 text-sm font-medium text-primary-600">{h.count} {h.count === 1 ? 'Frage' : 'Fragen'}</span>
-          </a>
-        ))}
+  <section class="bg-warm-wash">
+    <div class="shell py-20 sm:py-24">
+      <div class="max-w-3xl">
+        <p class="eyebrow rise">
+          <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+          Fragen &amp; Antworten
+        </p>
+        <h1 class="display-1 mt-6 text-balance rise rise-delay-1">
+          Die Fragen, die Eltern<br class="hidden sm:block" />
+          wirklich stellen
+        </h1>
+        <p class="lede measure mt-7 text-pretty rise rise-delay-2">
+          {perHub.length} Themenbereiche, {fragen.length} Fragen mit direkter Antwort. Jede Frage beantwortet
+          sich in einem Absatz, jede Antwort nennt ihre Quelle.
+        </p>
+        <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-mist-200 pt-7">
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">{fragen.length}</dt>
+            <dd class="text-sm text-mist-600">beantwortete Fragen</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">{perHub.length}</dt>
+            <dd class="text-sm text-mist-600">Themenbereiche</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">100 %</dt>
+            <dd class="text-sm text-mist-600">mit Quellenangabe</dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-6">Zuletzt ergänzt</h2>
-      <ul class="divide-y divide-gray-200 border-t border-gray-200">
-        {newest.map((e) => (
+  <!-- Themenbereiche -->
+  <section class="shell py-20 sm:py-24">
+    <h2 class="display-2">Themenbereiche</h2>
+    <ul class="mt-10 divide-y divide-mist-200 border-y border-mist-200">
+      {
+        perHub.map((h) => (
           <li>
-            <a href={`/${e.data.hub}/${e.data.slug}/`} class="group flex flex-wrap items-baseline justify-between gap-2 py-4 hover:bg-gray-100/60 rounded-lg px-3 -mx-3 transition">
-              <span class="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">{e.data.frage}</span>
-              <span class="text-xs text-gray-500">
-                {TYPE_LABEL[e.data.frageTyp]} · <time datetime={e.data.date.toISOString()}>{dtf.format(e.data.date)}</time>
+            <a
+              href={`/${h.slug}/`}
+              class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
+            >
+              <span class="flex-1">
+                <span class="font-display text-xl font-semibold text-ink transition-colors duration-300 group-hover:text-plum sm:text-2xl">
+                  {h.label}
+                </span>
+                <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-mist-600">
+                  {h.answer.slice(0, 120)}…
+                </span>
+              </span>
+              <span class="flex shrink-0 items-center gap-3 text-sm text-mist-500">
+                <span class="chip-mist">{h.count} Fragen</span>
+                <span
+                  class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
               </span>
             </a>
           </li>
-        ))}
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- Alle Fragen -->
+  <section class="bg-sand-50 py-20 sm:py-24">
+    <div class="shell">
+      <h2 class="display-2">Alle Fragen</h2>
+      <p class="lede measure mt-4 text-pretty">Nach Typ sortiert, jeweils mit Datum der letzten Prüfung.</p>
+
+      <ul class="mt-10 divide-y divide-mist-200 border-y border-mist-200">
+        {
+          newest.map((e) => (
+            <li>
+              <a
+                href={`/${e.data.hub}/${e.data.slug}/`}
+                class="group flex flex-col gap-1 py-5 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
+              >
+                <span class="flex-1 font-medium leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                  {e.data.frage}
+                </span>
+                <span class="flex shrink-0 items-center gap-3 text-xs uppercase tracking-wider text-mist-500">
+                  <span class="hidden sm:inline">{TYPE_LABEL[e.data.frageTyp]}</span>
+                  <time datetime={e.data.date.toISOString()}>{dtf.format(e.data.date)}</time>
+                  <span class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
+                    →
+                  </span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>

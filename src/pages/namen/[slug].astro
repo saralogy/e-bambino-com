@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
+import Layout from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -16,31 +17,36 @@ const isGirl = entry.data.typ === 'mädchen';
 ---
 
 <Layout title={entry.data.title} description={entry.data.description} type="article">
-  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <nav class="text-sm text-gray-500 mb-6">
-      <a href="/namen/" class="hover:text-primary-600">Namen</a>
-      <span class="mx-2" aria-hidden="true">/</span>
-      <span class="text-gray-700">{entry.data.title}</span>
-    </nav>
+  <article class="shell measure py-12 sm:py-16">
+    <Breadcrumbs
+      items={[{ label: 'Start', href: '/' }, { label: 'Baby-Namen', href: '/namen/' }, { label: entry.data.title }]}
+    />
 
     <header class="mb-10">
-      <div class="flex items-center gap-4">
-        <span class="text-5xl" aria-hidden="true">{isGirl ? '👧' : '👦'}</span>
-        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">{entry.data.title}</h1>
-      </div>
-      {entry.data.bedeutung && <p class="mt-4 text-xl text-primary-700">{entry.data.bedeutung}</p>}
+      <h1 class="font-display text-display-lg font-semibold tracking-tight text-ink">
+        {entry.data.title}
+      </h1>
+      {entry.data.bedeutung && <p class="mt-3 font-display text-xl text-plum">{entry.data.bedeutung}</p>}
 
-      <dl class="mt-6 flex flex-wrap gap-2 text-xs">
+      <dl class="mt-7 flex flex-wrap gap-2">
         {entry.data.typ && (
-          <div><dt class="sr-only">Geschlecht</dt><dd class="rounded-full bg-primary-100 text-primary-800 px-3 py-1">{entry.data.typ}</dd></div>
+          <div><dt class="sr-only">Geschlecht</dt><dd class="chip-blush">{entry.data.typ}</dd></div>
         )}
         {entry.data.herkunft && (
-          <div><dt class="sr-only">Herkunft</dt><dd class="rounded-full bg-gray-100 text-gray-700 px-3 py-1">{entry.data.herkunft}</dd></div>
+          <div><dt class="sr-only">Herkunft</dt><dd class="chip-mist">{entry.data.herkunft}</dd></div>
         )}
         {entry.data.popularitaet && (
-          <div><dt class="sr-only">Beliebtheit</dt><dd class="rounded-full bg-gray-100 text-gray-700 px-3 py-1">{entry.data.popularitaet}</dd></div>
+          <div>
+            <dt class="sr-only">Beliebtheit</dt>
+            <dd class="chip-sand">{entry.data.popularitaet}</dd>
+          </div>
         )}
-        <div><dt class="sr-only">Stand</dt><dd class="rounded-full bg-gray-100 text-gray-500 px-3 py-1">Stand {dtf.format(entry.data.date)}</dd></div>
+        <div>
+          <dt class="sr-only">Stand</dt>
+          <dd class="chip-mist">
+            <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
+          </dd>
+        </div>
       </dl>
     </header>
 
@@ -48,7 +54,7 @@ const isGirl = entry.data.typ === 'mädchen';
       <Content />
     </div>
 
-    <footer class="mt-14 pt-8 border-t border-gray-200 text-sm text-gray-500">
+    <footer class="mt-14 border-t border-mist-200 pt-8 text-sm leading-relaxed text-mist-600">
       <p>
         Erstellt von {entry.data.author}. Geprüft nach den Regeln der e-bambino-Redaktion —
         menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).

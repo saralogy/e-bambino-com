@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Ab welchem Alter braucht ein Baby einen Kinderwagen?
-
 Die ehrliche Antwort lautet: Ein Kinderwagen funktioniert ab dem ersten Tag, aber die ersten Monate sind eine Trage oder eine Babywanne oft angenehmer.
 
 ## Warum ist die Trage am Anfang praktischer?

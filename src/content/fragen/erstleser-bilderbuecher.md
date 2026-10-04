@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Was sind die besten Erstleser-Bilderbücher?
-
 Erstleser-Bilderbücher folgen einem klaren Prinzip: wenig Text, klare Bilder, eine Wiederholung. Diese drei Elemente erleichtern Kindern den Einstieg ins Lesen mehr als jede Themenwahl.
 
 ## Woran erkenne ich ein gutes Erstleser-Bilderbuch?

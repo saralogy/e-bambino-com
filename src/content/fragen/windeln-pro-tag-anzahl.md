@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie viele Windeln braucht ein Baby pro Tag?
-
 Die verbreitete Orientierung: Ein Neugeborenes verbraucht rund zehn bis zwölf Windeln täglich. Danach sinkt der Bedarf, weil die Blase länger gefüllt bleibt und das Volumen wächst.
 
 ## Wie plane ich den Monatsvorrat?

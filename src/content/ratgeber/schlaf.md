@@ -7,9 +7,6 @@ updatedDate: 2026-10-01
 tags: ['schlaf', 'baby', 'ratgeber', 'entwicklung']
 category: 'ratgeber'
 ---
-
-# Schlaf-Ratgeber für Babys
-
 ## Kurzübersicht
 
 - **Typ:** Schlaf

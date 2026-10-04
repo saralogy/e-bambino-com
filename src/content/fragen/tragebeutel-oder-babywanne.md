@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Tragebeutel oder Babywanne — was ist für unterwegs besser?
-
 Beide Systeme haben eine klare Stärke, und die Frage ist weniger „welches ist besser" als „was brauche ich auf diesem Weg".
 
 ## Was unterscheidet die beiden Systeme?

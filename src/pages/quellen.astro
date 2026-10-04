@@ -57,51 +57,63 @@ const quellen = [
   title="Quellen"
   description="Die vollständige Liste der Quellen, aus denen e-bambino.com seine Inhalte prüft — von AWMF bis Destatis und BFS."
 >
-  <section class="bg-gradient-to-b from-secondary-50 to-white py-14">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Unsere Quellen</h1>
-      <p class="mt-4 text-lg text-gray-600">
+  <section class="bg-warm-wash">
+    <div class="shell py-16 sm:py-20">
+      <p class="eyebrow rise">
+        <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+        {quellen.length} Quellen
+      </p>
+      <h1 class="display-1 mt-5 rise rise-delay-1">Unsere Quellen</h1>
+      <p class="lede measure mt-6 text-pretty rise rise-delay-2">
         Jede Zahl auf dieser Website stammt aus einer der folgenden Quellen. Alles andere streichen wir.
       </p>
     </div>
   </section>
 
-  <section class="py-14">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <ul class="space-y-4">
-        {quellen.map((q) => (
-          <li class="rounded-xl border border-gray-200 bg-white p-6">
-            <div class="flex flex-wrap items-baseline gap-x-3">
-              <a
-                href={q.url}
-                rel="noopener noreferrer external"
-                target="_blank"
-                class="font-semibold text-primary-700 hover:text-primary-800 underline underline-offset-2"
-              >
-                {q.org}
-              </a>
-              <span class="text-sm text-gray-500">{q.voll}</span>
+  <section class="shell py-16 sm:py-20">
+    <ul class="divide-y divide-mist-200 border-y border-mist-200">
+      {
+        quellen.map((q) => (
+          <li>
+            <div class="flex flex-col gap-2 py-6 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+              <div>
+                <a
+                  href={q.url}
+                  rel="noopener noreferrer external"
+                  target="_blank"
+                  class="font-display text-xl font-semibold text-ink transition-colors duration-300 hover:text-plum"
+                >
+                  {q.org}
+                </a>
+                <p class="mt-1 text-sm text-mist-500">{q.voll}</p>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mist-600">
+                  <span class="font-medium text-ink">Wofür:</span> {q.fuer}
+                </p>
+              </div>
+              <span class="shrink-0 text-sm text-blush" aria-hidden="true">
+                ↗
+              </span>
             </div>
-            <p class="mt-2 text-sm text-gray-600">
-              <span class="font-medium text-gray-700">Wofür:</span> {q.fuer}
-            </p>
           </li>
-        ))}
-      </ul>
+        ))
+      }
+    </ul>
 
-      <div class="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
-        <h2 class="font-semibold text-gray-900">Was wir nicht als Quelle nutzen</h2>
-        <p class="mt-2 text-sm text-gray-600">
-          Kein SEO-Affiliate-Netzwerk, keine unbenannten Blogs, keine Wikipedia-Abschnitte ohne
-          Primärquelle, keine Zahlen aus Foren oder sozialen Medien. Wenn eine Angabe sich nicht
-          gegen eine Primärquelle prüfen lässt, kommt sie nicht auf die Seite.
-        </p>
-      </div>
-
-      <p class="mt-8 text-sm text-gray-500">
-        Fehlt eine Quelle oder finden Sie einen Fehler? Schreiben Sie uns an
-        <a href="mailto:kontakt@e-bambino.com" class="text-primary-600 underline underline-offset-2">kontakt@e-bambino.com</a>.
+    <aside class="mt-14 rounded-card border border-mist-200 bg-sand-50 p-6">
+      <h2 class="font-display text-lg font-semibold text-ink">Was wir nicht als Quelle nutzen</h2>
+      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+        Kein SEO-Affiliate-Netzwerk, keine unbenannten Blogs, keine Wikipedia-Abschnitte ohne Primärquelle,
+        keine Zahlen aus Foren oder sozialen Medien. Wenn eine Angabe sich nicht gegen eine Primärquelle
+        prüfen lässt, kommt sie nicht auf die Seite.
       </p>
-    </div>
+    </aside>
+
+    <p class="mt-10 text-sm text-mist-600">
+      Fehlt eine Quelle oder finden Sie einen Fehler? Schreiben Sie uns an{' '}
+      <a href="mailto:kontakt@e-bambino.com" class="text-plum underline decoration-blush-200 decoration-2 underline-offset-2">
+        kontakt@e-bambino.com
+      </a>
+      .
+    </p>
   </section>
 </Layout>

@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie viel wiegt ein Kind, bevor ein Kindersitz vorne erlaubt ist?
-
 Die verbreitete Kurzform „ab vier Jahren" stimmt häufig, ist aber nicht die Regel, auf die es ankommt. Entscheidend ist die Sitzposition im Fahrzeug.
 
 ## Woran erkenne ich, dass ein Kind nach vorne darf?

@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Ab wann kann ein Baby mit Windeln auf die Toilette?
-
 Fragen zum Windelentraining beantworten sich nicht mit einem Datum. Entscheidend ist, ob das Kind die körperlichen Voraussetzungen mitbringt und ob es selbst ein Interesse zeigt.
 
 ## Welche Signale deuten auf Bereitschaft hin?

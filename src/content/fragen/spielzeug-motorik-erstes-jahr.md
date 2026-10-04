@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Welches Spielzeug fördert die Motorik im ersten Jahr?
-
 Im ersten Lebensjahr geht es nicht um schwierige Aufgaben, sondern um Bewegungserfahrung. Dein Baby greift, dreht, schiebt, wirft und steckt. Jedes dieser Handlungen trainiert Kraft, Koordination und Neugier.
 
 ## Welche Bewegungsformen braucht mein Baby im ersten Jahr?

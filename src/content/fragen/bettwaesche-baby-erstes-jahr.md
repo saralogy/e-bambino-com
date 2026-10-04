@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Welche Bettwäsche braucht ein Baby im ersten Jahr?
-
 Für das Babybett zählt im ersten Jahr nicht die Vielfalt, sondern die Beschaffenheit. Eng anliegend, atmungsaktiv und frei von allem, was sich verschieben oder einatmen lässt.
 
 ## Ist ein Spannbettlaken für das Baby sicher?

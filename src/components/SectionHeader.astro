@@ -1,0 +1,24 @@
+---
+// SectionHeader.astro — consistent editorial section heading with an optional eyebrow.
+export interface Props {
+  eyebrow?: string;
+  title: string;
+  lede?: string;
+  count?: number;
+}
+
+const { eyebrow, title, lede, count } = Astro.props;
+---
+
+<header class="max-w-3xl">
+  {
+    eyebrow && (
+      <p class="eyebrow rise">
+        <span class="inline-block h-px w-8 bg-blush" aria-hidden="true" />
+        {count !== undefined ? `${count} ${count === 1 ? 'Eintrag' : 'Einträge'}` : eyebrow}
+      </p>
+    )
+  }
+  <h1 class:list={['display-1', 'rise', 'rise-delay-1', !eyebrow && 'mt-0']}>{title}</h1>
+  {lede && <p class="lede measure mt-6 text-pretty rise rise-delay-2">{lede}</p>}
+</header>

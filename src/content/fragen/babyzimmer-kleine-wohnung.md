@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Wie richte ich ein Babyzimmer in einer kleinen Wohnung ein?
-
 Ein eigenes Babyzimmer ist in vielen Wohnungen kein Muss. Wenn wenig Fläche zur Verfügung steht, zählt nicht die Vollständigkeit der Ausstattung, sondern eine sichere und ruhige Schlafumgebung.
 
 ## Welche Möbel brauche ich wirklich für den Anfang?

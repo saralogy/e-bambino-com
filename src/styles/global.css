@@ -129,6 +129,10 @@
     @apply mt-5;
   }
 
+  .prose h1 {
+    @apply font-display text-display-sm sm:text-display-md font-semibold text-ink mt-0 mb-6 text-balance;
+  }
+
   .prose h2 {
     @apply font-display text-2xl sm:text-[1.75rem] leading-tight font-semibold text-ink mt-12 mb-4;
   }

@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Plastik- oder Stoffwindeln — was sind die Unterschiede?
-
 Beide Systeme funktionieren. Die Frage ist nicht, welches besser ist, sondern welches zu Ihrem Alltag und Ihrem Budget passt.
 
 ## Was kostet ein Jahr Vergleich?

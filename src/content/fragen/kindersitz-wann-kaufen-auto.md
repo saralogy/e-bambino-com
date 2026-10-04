@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: true
 reviewedBy: ''
 ---
-
-# Wann braucht ein Kind einen Kindersitz im Auto?
-
 Die kurze Antwort: vom ersten Tag an, auf jeder Fahrt, auch für den five-Minuten-Weg zum Kinderarzt.
 
 ## Braucht ein Neugeborenes schon einen Kindersitz?

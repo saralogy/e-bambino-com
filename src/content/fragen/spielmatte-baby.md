@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Braucht ein Baby eine Spielmatte?
-
 Kurze Antwort: nein, nicht für die Entwicklung. Eine Spielmatte ist eine praktische Ergänzung, wenn der Boden hart ist oder dein Baby häufig krabbelt. Kaufen solltest du sie danach, nicht aus dem Gefühl, deinem Kind etwas zu schulden.
 
 ## Welche Unterschiede gibt es zwischen den Spielmatten?

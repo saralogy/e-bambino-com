@@ -15,9 +15,6 @@ quellen: ['rki']
 ymyl: false
 reviewedBy: ''
 ---
-
-# Welcher Hochstuhl ist ab welchem Alter geeignet?
-
 Am Hochstuhl scheitert es selten am Design und oft an der Passform. Ein Stuhl, der zu groß ist, lässt das Kind nicht ruhig sitzen, weil die Füße den Boden nicht erreichen.
 
 ## Ab welchem Alter ist ein Hochstuhl sinnvoll?
