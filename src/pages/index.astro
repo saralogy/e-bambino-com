@@ -1,47 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { TAXONOMY } from '../data/taxonomie';
+import { shipGate } from '../lib/shipgate';
 
-const [namen, checklisten, finanz, ratgeber] = await Promise.all([
+const [namen, checklisten, finanz, ratgeber, alleFragen] = await Promise.all([
   getCollection('namen'),
   getCollection('checklisten'),
   getCollection('finanz'),
   getCollection('ratgeber'),
+  getCollection('fragen'),
 ]);
 
-const pillars = [
-  {
-    title: 'Baby-Namen',
-    href: '/namen/',
-    icon: '👶',
-    blurb: 'Italienische Namen mit Bedeutung, Herkunft, Varianten und Ranglisten für Deutschland, Österreich und die Schweiz.',
-  },
-  {
-    title: 'Checklisten',
-    href: '/checklisten/',
-    icon: '✅',
-    blurb: 'Kliniktasche, Urlaub, Einschulung — zum Abhaken statt zum Nachschlagen.',
-  },
-  {
-    title: 'Finanzielle Hilfen',
-    href: '/finanz/',
-    icon: '💰',
-    blurb: 'Elterngeld, Kindergeld, Kinderzuschlag: Beträge, Fristen und die Dokumente für den Antrag.',
-  },
-  {
-    title: 'Ratgeber',
-    href: '/ratgeber/',
-    icon: '📚',
-    blurb: 'Schlaf, Ernährung, Entwicklung — mit Quellen, auf die Sie sich verlassen können.',
-  },
-];
+const fragen = alleFragen.filter((e) => shipGate(e.data).ship);
 
-const trust = [
-  { label: 'Von Menschen geprüft', sub: 'EU AI Act Art. 50' },
-  { label: 'Quellen offengelegt', sub: 'AWMF · RKI · Destatis' },
-  { label: 'Aktualisiert', sub: 'mit Datum' },
-  { label: 'Keine Werbung', sub: 'für Sie neutral' },
-];
+const hubs = TAXONOMY.map((h) => ({
+  ...h,
+  count: fragen.filter((f) => f.data.hub === h.slug).length,
+}))
+  .filter((h) => h.count > 0)
+  .sort((a, b) => b.count - a.count);
 
 const newest = [
   ...namen.map((e) => ({ title: e.data.title, href: `/namen/${e.slug}/`, kind: 'Name', date: e.data.date })),
@@ -50,116 +28,243 @@ const newest = [
   ...ratgeber.map((e) => ({ title: e.data.title, href: `/ratgeber/${e.slug}/`, kind: 'Ratgeber', date: e.data.date })),
 ]
   .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+  .slice(0, 5);
+
+const fragenNeu = [...fragen]
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 6);
 
 const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
+
+const gesamtFragen = fragen.length;
 ---
 
 <Layout>
-  <!-- Hero -->
-  <section class="bg-gradient-to-b from-primary-50 via-white to-white py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="inline-flex items-center gap-2 text-sm font-medium text-primary-700 bg-primary-50 rounded-full px-4 py-1.5 mb-6">
-        🇮🇹 Italienisch · 🇩🇪 Deutsch · 🇦🇹🇨🇭 DACH
-      </p>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
-        Der italienische Familienratgeber für <span class="text-primary-600">DACH &amp; EU</span>
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-        Baby-Namen, Checklisten und finanzielle Hilfen — verständlich erklärt, von Menschen geprüft,
-        ohne Werbung und ohne Fachchinesisch.
-      </p>
-      <div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
-        <a
-          href="/namen/"
-          class="bg-primary-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-        >
-          Namen entdecken
-        </a>
-        <a
-          href="/checklisten/"
-          class="bg-white text-primary-700 border border-gray-300 px-7 py-3 rounded-lg font-semibold hover:border-primary-400 hover:bg-primary-50/50 transition-colors"
-        >
-          Checklisten ansehen
-        </a>
+  <!-- ============ Hero ============ -->
+  <section class="relative overflow-hidden bg-warm-wash">
+    <div class="shell relative py-20 sm:py-28 lg:py-32">
+      <div class="max-w-3xl">
+        <p class="eyebrow rise">
+          <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+          Italienisch · Deutsch · DACH
+        </p>
+
+        <h1 class="display-1 mt-6 text-balance rise rise-delay-1">
+          Der italienische<br class="hidden sm:block" />
+          Familienratgeber für <span class="text-plum">DACH &amp; EU</span>
+        </h1>
+
+        <p class="lede measure mt-7 text-pretty rise rise-delay-2">
+          Namen, Checklisten und finanzielle Hilfen für die ersten Jahre mit einem Kind —
+          verständlich erklärt, von Menschen geprüft, ohne Werbung und ohne Fachchinesisch.
+        </p>
+
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row rise rise-delay-3">
+          <a href="/fragen/" class="btn-primary">Fragen durchsuchen</a>
+          <a href="/namen/" class="btn-secondary">Namen entdecken</a>
+        </div>
+
+        <dl class="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-mist-200 pt-8">
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">{gesamtFragen}</dt>
+            <dd class="text-sm text-mist-600">beantwortete Fragen</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">{hubs.length}</dt>
+            <dd class="text-sm text-mist-600">Themenbereiche</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-semibold text-ink">0</dt>
+            <dd class="text-sm text-mist-600">Werbeanzeigen</dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <!-- Trust strip -->
-  <section class="border-y border-gray-200 bg-gray-50/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <dl class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-        {trust.map((t) => (
-          <div>
-            <dt class="font-semibold text-gray-900 text-sm">{t.label}</dt>
-            <dd class="text-gray-500 text-xs mt-0.5">{t.sub}</dd>
-          </div>
-        ))}
-      </dl>
+  <!-- ============ Trust strip ============ -->
+  <section class="border-y border-mist-200 bg-white">
+    <div class="shell py-6">
+      <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-mist-600">
+        <li class="flex items-center gap-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-blush" aria-hidden="true"></span>
+          Von Menschen geprüft
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-plum" aria-hidden="true"></span>
+          Quellen offengelegt
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-mist-400" aria-hidden="true"></span>
+          Mit Stand-Datum
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-ink" aria-hidden="true"></span>
+          EU AI Act Art. 50
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Pillars -->
-  <section class="py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Was Sie hier finden</h2>
-      <p class="mt-3 text-gray-600 max-w-2xl">
-        Vier Bereiche, ein Anspruch: nachvollziehbar nützlich. Keine Definitionssammlung, sondern
-        Antworten auf die Fragen, die Eltern tatsächlich stellen.
-      </p>
+  <!-- ============ Themenbereiche (editorial list, not boxes) ============ -->
+  <section class="shell py-20 sm:py-24">
+    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-4">
+        <h2 class="display-2 text-balance">Themen&shy;bereiche</h2>
+        <p class="lede mt-5 text-pretty">
+          Keine Definitionssammlung, sondern Antworten auf die Fragen, die Eltern tatsächlich
+          stellen — gruppiert nach dem, was Sie gerade beschäftigt.
+        </p>
+        <div class="rule-gradient mt-8 w-32" aria-hidden="true"></div>
+      </div>
 
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {pillars.map((p) => (
-          <a
-            href={p.href}
-            class="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition"
-          >
-            <span class="text-3xl" aria-hidden="true">{p.icon}</span>
-            <h3 class="mt-4 font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">
+      <div class="lg:col-span-8">
+        <ul class="divide-y divide-mist-200 border-y border-mist-200">
+          {
+            hubs.map((h) => (
+              <li>
+                <a
+                  href={`/${h.slug}/`}
+                  class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
+                >
+                  <span class="flex-1">
+                    <span class="font-display text-xl font-semibold text-ink transition-colors duration-300 group-hover:text-plum sm:text-2xl">
+                      {h.label}
+                    </span>
+                    <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-mist-600">
+                      {h.answer.slice(0, 120)}…
+                    </span>
+                  </span>
+                  <span class="flex shrink-0 items-center gap-3 text-sm text-mist-500">
+                    <span class="chip-mist">{h.count} Fragen</span>
+                    <span
+                      class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                      aria-hidden="true"
+                    >
+                      →
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Zuletzt beantwortet ============ -->
+  {
+    fragenNeu.length > 0 && (
+      <section class="bg-sand-50 py-20 sm:py-24">
+        <div class="shell">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p class="eyebrow">Zuletzt ergänzt</p>
+              <h2 class="display-2 mt-3">Neue Antworten</h2>
+            </div>
+            <a href="/fragen/" class="text-sm font-semibold text-plum hover:text-blush-600">
+              Alle {gesamtFragen} Fragen →
+            </a>
+          </div>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {fragenNeu.map((e) => (
+              <a href={`/${e.data.hub}/${e.data.slug}/`} class="card-link group flex flex-col">
+                <span class="chip-blush self-start">{TAXONOMY.find((t) => t.slug === e.data.hub)?.label ?? e.data.hub}</span>
+                <h3 class="mt-4 font-display text-lg font-semibold leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                  {e.data.frage}
+                </h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-mist-600 line-clamp-3">
+                  {e.data.antwort.slice(0, 130)}…
+                </p>
+                <time
+                  datetime={e.data.date.toISOString()}
+                  class="mt-5 text-xs uppercase tracking-wider text-mist-400"
+                >
+                  {dtf.format(e.data.date)}
+                </time>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ============ Weitere Bereiche ============ -->
+  <section class="shell py-20 sm:py-24">
+    <h2 class="display-2">Weitere Bereiche</h2>
+    <p class="lede measure mt-4 text-pretty">
+      Neben den Fragen gibt es Werkzeuge, die Sie im Alltag brauchen.
+    </p>
+
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        [
+          { title: 'Baby-Namen', href: '/namen/', blurb: 'Italienische Namen mit Bedeutung und Herkunft.' },
+          { title: 'Checklisten', href: '/checklisten/', blurb: 'Kliniktasche und Reise — zum Abhaken.' },
+          { title: 'Finanzielle Hilfen', href: '/finanz/', blurb: 'Elterngeld und Kindergeld mit Fristen.' },
+          { title: 'Ratgeber', href: '/ratgeber/', blurb: 'Schlaf und Entwicklung mit Quellen.' },
+        ].map((p) => (
+          <a href={p.href} class="card-link group">
+            <h3 class="font-display text-lg font-semibold text-ink transition-colors duration-300 group-hover:text-plum">
               {p.title}
             </h3>
-            <p class="mt-2 text-sm text-gray-600 flex-1">{p.blurb}</p>
-            <span class="mt-4 text-sm font-medium text-primary-600">Alle ansehen →</span>
+            <p class="mt-2 text-sm leading-relaxed text-mist-600">{p.blurb}</p>
           </a>
-        ))}
-      </div>
+        ))
+      }
     </div>
+
+    {
+      newest.length > 0 && (
+        <div class="mt-14">
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-500">Zuletzt aktualisiert</h3>
+          <ul class="mt-5 divide-y divide-mist-200 border-y border-mist-200">
+            {newest.map((n) => (
+              <li>
+                <a
+                  href={n.href}
+                  class="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4 transition-colors duration-300"
+                >
+                  <span class="font-medium text-ink transition-colors duration-300 group-hover:text-plum">
+                    {n.title}
+                  </span>
+                  <span class="text-xs uppercase tracking-wider text-mist-400">
+                    {n.kind} · <time datetime={n.date.toISOString()}>{dtf.format(n.date)}</time>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
   </section>
 
-  <!-- Newest content -->
-  <section class="bg-gray-50 py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Zuletzt aktualisiert</h2>
-      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {newest.map((n) => (
-          <a href={n.href} class="group rounded-xl border border-gray-200 bg-white p-6 hover:border-primary-300 hover:shadow-md transition">
-            <div class="flex items-center gap-2 text-xs">
-              <span class="font-medium uppercase tracking-wider text-primary-600">{n.kind}</span>
-              <span class="text-gray-400">·</span>
-              <time datetime={n.date.toISOString()} class="text-gray-500">{dtf.format(n.date)}</time>
-            </div>
-            <h3 class="mt-2 font-semibold text-gray-900 group-hover:text-primary-700 transition-colors">{n.title}</h3>
+  <!-- ============ CTA ============ -->
+  <section class="bg-plum-deep text-white">
+    <div class="shell py-20 sm:py-24">
+      <div class="max-w-2xl">
+        <p class="eyebrow text-blush-200">Ihr Baby bekommt einen Namen</p>
+        <h2 class="font-display mt-4 text-3xl leading-tight sm:text-4xl text-balance">
+          Wir helfen beim Finden — und beim Vorbereiten auf alles, was kommt.
+        </h2>
+        <p class="mt-5 text-lg leading-relaxed text-mist-200 text-pretty">
+          Stöbern Sie durch italienische Namen mit echter Bedeutung, oder holen Sie sich die
+          Checkliste für die Klinik. Kostenlos, ohne Anmeldung.
+        </p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href="/namen/" class="btn-primary">Zu den Namen</a>
+          <a
+            href="/fragen/"
+            class="btn bg-white/10 text-white border border-white/25 hover:bg-white/20 hover:-translate-y-0.5 transition-all duration-300 ease-smooth"
+          >
+            Alle Fragen
           </a>
-        ))}
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="bg-primary-700 py-16">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold text-white">Ihr Baby bekommt einen Namen — wir helfen beim Finden.</h2>
-      <p class="mt-4 text-primary-100">
-        Stöbern Sie durch italienische Namen mit echter Bedeutung, oder holen Sie sich die Checkliste
-        für die Klinik. Kostenlos, ohne Anmeldung.
-      </p>
-      <a
-        href="/namen/"
-        class="mt-8 inline-block bg-white text-primary-700 px-7 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-      >
-        Zu den Namen
-      </a>
     </div>
   </section>
 </Layout>

@@ -33,12 +33,25 @@ const {
     <meta name="generator" content={Astro.generator} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {/*
+      Self-hosted fonts. Deliberately NOT the Google CDN: loading fonts from
+      fonts.googleapis.com sends the visitor's IP to a US server, which German
+      courts have treated as a GDPR violation absent consent. Files live in
+      public/fonts and are served from e-bambino.com.
+      Fraunces = variable optical-size serif (display).
+      Karla = humanist grotesque (body/UI).
+    */}
+    <link rel="preconnect" href="/" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/karla-v33-qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+
     <SEO {title} {description} {image} {canonical} {type} />
   </head>
-  <body class="bg-white text-gray-800 antialiased flex flex-col min-h-screen">
+  <body class="flex min-h-screen flex-col">
     <a
       href="#main"
-      class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-pill focus:bg-ink focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
       >Zum Inhalt springen</a
     >
     <Header />

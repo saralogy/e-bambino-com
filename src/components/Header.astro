@@ -13,68 +13,99 @@ const current = Astro.url.pathname;
 const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <a href="/" class="flex-shrink-0 flex items-center" aria-label="e-bambino Startseite">
-        <span class="text-2xl font-bold text-primary-600">e-bambino</span>
-        <span class="ml-1 text-sm text-gray-400">.com</span>
+<header class="sticky top-0 z-50 border-b border-mist-200/70 bg-paper/85 backdrop-blur-md">
+  <div class="shell">
+    <div class="flex h-[4.25rem] items-center justify-between gap-4">
+      <a href="/" class="group flex items-baseline gap-1.5" aria-label="e-bambino Startseite">
+        <span
+          class="font-display text-[1.4rem] font-semibold tracking-tight text-ink transition-colors duration-300 group-hover:text-plum"
+        >
+          e-bambino
+        </span>
+        <span class="hidden text-[0.7rem] font-medium uppercase tracking-[0.2em] text-mist-500 sm:inline">
+          .com
+        </span>
       </a>
 
-      <nav class="hidden lg:flex items-center space-x-1" aria-label="Hauptnavigation">
+      <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Hauptnavigation">
         {
           navItems.map((item) => (
             <a
               href={item.href}
               aria-current={isActive(item.href) ? 'page' : undefined}
               class:list={[
-                'px-3 py-2 text-sm font-medium rounded-md transition-colors',
-                isActive(item.href)
-                  ? 'text-primary-700 bg-primary-50'
-                  : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50',
+                'relative rounded-pill px-3.5 py-2 text-[0.875rem] font-medium transition-colors duration-300',
+                isActive(item.href) ? 'text-plum' : 'text-ink-700 hover:text-plum',
               ]}
             >
               {item.label}
+              {isActive(item.href) && (
+                <span
+                  class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-blush"
+                  aria-hidden="true"
+                />
+              )}
             </a>
           ))
         }
       </nav>
 
-      <div class="hidden lg:flex items-center gap-1 text-sm" aria-label="Sprache wählen">
-        <span class="px-2 py-1 rounded bg-gray-100 text-gray-900 font-semibold" aria-current="true">DE</span>
-        <span class="px-2 py-1 rounded text-gray-400 cursor-not-allowed" title="Italienische Version folgt">IT</span>
-      </div>
+      <div class="flex items-center gap-3">
+        <div
+          class="hidden items-center gap-0.5 rounded-pill bg-mist-100 p-0.5 text-xs font-semibold lg:flex"
+          aria-label="Sprache wählen"
+        >
+          <span class="rounded-pill bg-white px-2.5 py-1 text-ink shadow-soft">DE</span>
+          <span class="px-2.5 py-1 text-mist-500" title="Italienische Version folgt">IT</span>
+        </div>
 
-      <button
-        id="menu-btn"
-        type="button"
-        class="lg:hidden p-2 -mr-2 text-gray-700 hover:text-primary-600"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        aria-label="Menü öffnen"
-      >
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+        <button
+          id="menu-btn"
+          type="button"
+          class="lg:hidden -mr-2 rounded-lg p-2 text-ink transition-colors hover:bg-mist-100"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Menü öffnen"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="1.75"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t" role="dialog" aria-label="Mobile Navigation">
-    <nav class="px-2 pt-2 pb-3 space-y-1" aria-label="Mobile Navigation">
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-mist-200 bg-paper lg:hidden"
+    role="dialog"
+    aria-label="Mobile Navigation"
+  >
+    <nav class="shell py-4 space-y-1" aria-label="Mobile Navigation">
       {
         navItems.map((item) => (
           <a
             href={item.href}
             class:list={[
-              'block px-3 py-2.5 text-base font-medium rounded-md',
-              isActive(item.href) ? 'text-primary-700 bg-primary-50' : 'text-gray-700 hover:bg-gray-50',
+              'block rounded-lg px-3 py-3 text-base font-medium transition-colors',
+              isActive(item.href) ? 'bg-blush-50 text-plum' : 'text-ink-700 hover:bg-mist-100',
             ]}
           >
             {item.label}
           </a>
         ))
       }
+      <div class="flex items-center gap-2 px-3 pt-3 text-xs font-semibold text-mist-600">
+        <span class="rounded-pill bg-ink px-2.5 py-1 text-white">DE</span>
+        <span class="px-2.5 py-1 text-mist-500">IT (bald)</span>
+      </div>
     </nav>
   </div>
 </header>
