@@ -27,11 +27,11 @@ const TYPE_LABEL: Record<string, string> = {
   title="Fragen & Antworten"
   description="Die häufigsten Fragen zu Babybekleidung, Windeln, Ernährung, Baden, Stillen, Mobilität, Spielzeug und Sicherheit — verständlich beantwortet."
 >
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-20 sm:py-24">
       <div class="max-w-3xl">
         <p class="eyebrow rise">
-          <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+          <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
           Fragen &amp; Antworten
         </p>
         <h1 class="display-1 mt-6 text-balance rise rise-delay-1">
@@ -42,18 +42,18 @@ const TYPE_LABEL: Record<string, string> = {
           {perHub.length} Themenbereiche, {fragen.length} Fragen mit direkter Antwort. Jede Frage beantwortet
           sich in einem Absatz, jede Antwort nennt ihre Quelle.
         </p>
-        <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-mist-200 pt-7">
+        <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-fog-100 pt-7">
           <div>
-            <dt class="font-display text-2xl font-semibold text-ink">{fragen.length}</dt>
-            <dd class="text-sm text-mist-600">beantwortete Fragen</dd>
+            <dt class="font-display text-2xl font-semibold text-night">{fragen.length}</dt>
+            <dd class="text-sm text-night-500">beantwortete Fragen</dd>
           </div>
           <div>
-            <dt class="font-display text-2xl font-semibold text-ink">{perHub.length}</dt>
-            <dd class="text-sm text-mist-600">Themenbereiche</dd>
+            <dt class="font-display text-2xl font-semibold text-night">{perHub.length}</dt>
+            <dd class="text-sm text-night-500">Themenbereiche</dd>
           </div>
           <div>
-            <dt class="font-display text-2xl font-semibold text-ink">100 %</dt>
-            <dd class="text-sm text-mist-600">mit Quellenangabe</dd>
+            <dt class="font-display text-2xl font-semibold text-night">100 %</dt>
+            <dd class="text-sm text-night-500">mit Quellenangabe</dd>
           </div>
         </dl>
       </div>
@@ -63,7 +63,7 @@ const TYPE_LABEL: Record<string, string> = {
   <!-- Themenbereiche -->
   <section class="shell py-20 sm:py-24">
     <h2 class="display-2">Themenbereiche</h2>
-    <ul class="mt-10 divide-y divide-mist-200 border-y border-mist-200">
+    <ul class="mt-10 divide-y divide-fog-100 border-y border-fog-100">
       {
         perHub.map((h) => (
           <li>
@@ -72,17 +72,17 @@ const TYPE_LABEL: Record<string, string> = {
               class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
             >
               <span class="flex-1">
-                <span class="font-display text-xl font-semibold text-ink transition-colors duration-300 group-hover:text-plum sm:text-2xl">
+                <span class="font-display text-xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700 sm:text-2xl">
                   {h.label}
                 </span>
-                <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-mist-600">
+                <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-night-500">
                   {h.answer.slice(0, 120)}…
                 </span>
               </span>
-              <span class="flex shrink-0 items-center gap-3 text-sm text-mist-500">
+              <span class="flex shrink-0 items-center gap-3 text-sm text-night-500">
                 <span class="chip-mist">{h.count} Fragen</span>
                 <span
-                  class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                  class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1"
                   aria-hidden="true"
                 >
                   →
@@ -96,12 +96,12 @@ const TYPE_LABEL: Record<string, string> = {
   </section>
 
   <!-- Alle Fragen -->
-  <section class="bg-sand-50 py-20 sm:py-24">
+  <section class="bg-fog py-20 sm:py-24">
     <div class="shell">
       <h2 class="display-2">Alle Fragen</h2>
       <p class="lede measure mt-4 text-pretty">Nach Typ sortiert, jeweils mit Datum der letzten Prüfung.</p>
 
-      <ul class="mt-10 divide-y divide-mist-200 border-y border-mist-200">
+      <ul class="mt-10 divide-y divide-fog-100 border-y border-fog-100">
         {
           newest.map((e) => (
             <li>
@@ -109,13 +109,13 @@ const TYPE_LABEL: Record<string, string> = {
                 href={`/${e.data.hub}/${e.data.slug}/`}
                 class="group flex flex-col gap-1 py-5 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
               >
-                <span class="flex-1 font-medium leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                <span class="flex-1 font-medium leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                   {e.data.frage}
                 </span>
-                <span class="flex shrink-0 items-center gap-3 text-xs uppercase tracking-wider text-mist-500">
+                <span class="flex shrink-0 items-center gap-3 text-xs uppercase tracking-wider text-night-500">
                   <span class="hidden sm:inline">{TYPE_LABEL[e.data.frageTyp]}</span>
                   <time datetime={e.data.date.toISOString()}>{dtf.format(e.data.date)}</time>
-                  <span class="text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
+                  <span class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
                     →
                   </span>
                 </span>

@@ -23,7 +23,7 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <span class="chip-sand">Checkliste</span>
       <h1 class="display-2 mt-4 text-balance">{entry.data.title}</h1>
       <p class="lede mt-5 text-pretty">{entry.data.description}</p>
-      <p class="mt-5 text-xs uppercase tracking-wider text-mist-500">
+      <p class="mt-5 text-xs uppercase tracking-wider text-night-500">
         <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
         {' · '}{entry.data.author}
       </p>
@@ -33,12 +33,12 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <Content />
     </div>
 
-    <aside class="mt-14 rounded-card border border-blush-200 bg-blush-50 p-6">
-      <h2 class="font-display text-lg font-semibold text-ink">Tipp zum Abhaken</h2>
-      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+    <aside class="mt-14 rounded-card border border-ultramarine-100 bg-ultramarine-50 p-6">
+      <h2 class="font-display text-lg font-semibold text-night">Tipp zum Abhaken</h2>
+      <p class="mt-2 text-sm leading-relaxed text-night-700">
         Drucken Sie diese Liste aus und haken Sie die Punkte direkt ab — oder speichern Sie sie als
         Lesezeichen auf dem Handy.{' '}
-        <a href="/ueber-uns/" class="text-plum underline decoration-blush-200 decoration-2 underline-offset-2">
+        <a href="/ueber-uns/" class="text-ultramarine-700 underline decoration-ultramarine-100 decoration-2 underline-offset-2">
           Mehr über unsere Redaktion
         </a>
         .

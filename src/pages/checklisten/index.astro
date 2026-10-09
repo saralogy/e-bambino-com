@@ -10,7 +10,7 @@ const checklisten = await getCollection('checklisten');
   title="Checklisten"
   description="Praktische Checklisten für Klinik, Urlaub, Einschulung und Alltag — zum Abhaken statt zum Nachschlagen."
 >
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-16 sm:py-20">
       <SectionHeader
         eyebrow="Zum Abhaken"
@@ -23,18 +23,18 @@ const checklisten = await getCollection('checklisten');
   <section class="shell py-16 sm:py-20">
     {
       checklisten.length === 0 ? (
-        <p class="text-mist-500">Hier werden in den nächsten Tagen Checklisten ergänzt.</p>
+        <p class="text-night-500">Hier werden in den nächsten Tagen Checklisten ergänzt.</p>
       ) : (
         <ul class="grid gap-6 sm:grid-cols-2">
           {checklisten.map((cl) => (
             <li>
               <a href={`/checklisten/${cl.slug}/`} class="card-link group flex h-full flex-col">
                 <span class="chip-sand self-start">Checkliste</span>
-                <h2 class="mt-4 font-display text-xl font-semibold leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                <h2 class="mt-4 font-display text-xl font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                   {cl.data.title}
                 </h2>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-mist-600">{cl.data.description}</p>
-                <span class="mt-5 flex items-center gap-2 text-sm font-medium text-plum">
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{cl.data.description}</p>
+                <span class="mt-5 flex items-center gap-2 text-sm font-medium text-ultramarine-700">
                   Liste öffnen
                   <span class="transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
                     →

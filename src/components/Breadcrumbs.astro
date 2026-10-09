@@ -7,17 +7,17 @@ export interface Props {
 const { items } = Astro.props;
 ---
 
-<nav class="mb-8 flex flex-wrap items-center gap-2 text-sm text-mist-500" aria-label="Brotkrumen">
+<nav class="mb-8 flex flex-wrap items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
   {
     items.map((item, i) => (
       <>
         {i > 0 && <span aria-hidden="true">/</span>}
         {item.href ? (
-          <a href={item.href} class="transition-colors hover:text-plum">
+          <a href={item.href} class="transition-colors hover:text-ultramarine-700">
             {item.label}
           </a>
         ) : (
-          <span class="text-ink">{item.label}</span>
+          <span class="text-night">{item.label}</span>
         )}
       </>
     ))

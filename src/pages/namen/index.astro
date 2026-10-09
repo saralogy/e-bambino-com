@@ -12,7 +12,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
   title="Baby-Namen"
   description="Italienische Baby-Namen mit Bedeutung, Herkunft, Varianten und Beliebtheit in Deutschland, Österreich und der Schweiz."
 >
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-16 sm:py-20">
       <SectionHeader
         eyebrow="Mit Bedeutung und Herkunft"
@@ -25,7 +25,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="alle"
-          class="fbtn rounded-pill border border-ink bg-ink px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 ease-smooth"
+          class="fbtn rounded-pill border border-night bg-night px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 ease-smooth"
           aria-pressed="true"
         >
           Alle
@@ -33,7 +33,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="mädchen"
-          class="fbtn rounded-pill border border-mist-300 bg-white px-5 py-2.5 text-sm font-medium text-ink-700 transition-all duration-300 ease-smooth hover:border-blush"
+          class="fbtn rounded-pill border border-fog-300 bg-white px-5 py-2.5 text-sm font-medium text-night-700 transition-all duration-300 ease-smooth hover:border-ultramarine"
           aria-pressed="false"
         >
           Mädchen
@@ -41,12 +41,12 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="jungen"
-          class="fbtn rounded-pill border border-mist-300 bg-white px-5 py-2.5 text-sm font-medium text-ink-700 transition-all duration-300 ease-smooth hover:border-blush"
+          class="fbtn rounded-pill border border-fog-300 bg-white px-5 py-2.5 text-sm font-medium text-night-700 transition-all duration-300 ease-smooth hover:border-ultramarine"
           aria-pressed="false"
         >
           Jungen
         </button>
-        <p id="count" class="ml-1 text-sm text-mist-500" aria-live="polite"></p>
+        <p id="count" class="ml-1 text-sm text-night-500" aria-live="polite"></p>
       </div>
     </div>
   </section>
@@ -58,12 +58,12 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
           <li data-typ={n.data.typ ?? ''}>
             <a href={`/namen/${n.slug}/`} class="card-link group flex h-full flex-col">
               <div class="flex items-baseline gap-3">
-                <h2 class="font-display text-3xl font-semibold text-ink transition-colors duration-300 group-hover:text-plum">
+                <h2 class="font-display text-3xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700">
                   {n.data.title}
                 </h2>
               </div>
-              {n.data.bedeutung && <p class="mt-2 font-medium text-plum">{n.data.bedeutung}</p>}
-              <p class="mt-3 flex-1 text-sm leading-relaxed text-mist-600">{n.data.description}</p>
+              {n.data.bedeutung && <p class="mt-2 font-medium text-ultramarine-700">{n.data.bedeutung}</p>}
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{n.data.description}</p>
               <div class="mt-5 flex flex-wrap items-center gap-2">
                 {n.data.typ && <span class="chip-blush">{n.data.typ}</span>}
                 {n.data.herkunft && <span class="chip-mist">{n.data.herkunft}</span>}
@@ -74,7 +74,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
       }
     </ul>
 
-    <p id="empty" class="hidden py-8 text-mist-500">Hier ist noch kein Name eingetragen.</p>
+    <p id="empty" class="hidden py-8 text-night-500">Hier ist noch kein Name eingetragen.</p>
   </section>
 </Layout>
 
@@ -96,12 +96,12 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
 
     for (const b of btns) {
       const on = b.dataset.filter === filter;
-      b.classList.toggle('bg-ink', on);
+      b.classList.toggle('bg-night', on);
       b.classList.toggle('text-white', on);
-      b.classList.toggle('border-ink', on);
+      b.classList.toggle('border-night', on);
       b.classList.toggle('bg-white', !on);
-      b.classList.toggle('text-ink-700', !on);
-      b.classList.toggle('border-mist-300', !on);
+      b.classList.toggle('text-night-700', !on);
+      b.classList.toggle('border-fog-300', !on);
       b.setAttribute('aria-pressed', String(on));
     }
   }

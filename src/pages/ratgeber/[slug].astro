@@ -25,7 +25,7 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <span class="chip-mist">Ratgeber</span>
       <h1 class="display-2 mt-4 text-balance">{entry.data.title}</h1>
       <p class="lede mt-5 text-pretty">{entry.data.description}</p>
-      <p class="mt-5 text-xs uppercase tracking-wider text-mist-500">
+      <p class="mt-5 text-xs uppercase tracking-wider text-night-500">
         <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
         {' · '}{entry.data.author}
       </p>
@@ -35,9 +35,9 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <Content />
     </div>
 
-    <aside class="mt-14 rounded-card border border-mist-200 bg-sand-50 p-6">
-      <h2 class="font-display text-lg font-semibold text-ink">Wann zum Arzt?</h2>
-      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+    <aside class="mt-14 rounded-card border border-fog-100 bg-fog p-6">
+      <h2 class="font-display text-lg font-semibold text-night">Wann zum Arzt?</h2>
+      <p class="mt-2 text-sm leading-relaxed text-night-700">
         Bei Fieber, Atemnot, ungewöhnlicher Müdigkeit oder wenn Sie unsicher sind: bitte nicht warten.
         Dieser Beitrag ersetzt keine ärztliche Beratung.
       </p>

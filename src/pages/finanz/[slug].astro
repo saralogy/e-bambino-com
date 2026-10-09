@@ -25,7 +25,7 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <span class="chip-blush">Finanzielle Hilfe</span>
       <h1 class="display-2 mt-4 text-balance">{entry.data.title}</h1>
       <p class="lede mt-5 text-pretty">{entry.data.description}</p>
-      <p class="mt-5 text-xs uppercase tracking-wider text-mist-500">
+      <p class="mt-5 text-xs uppercase tracking-wider text-night-500">
         <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
         {' · '}{entry.data.author}
       </p>
@@ -35,9 +35,9 @@ const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', ye
       <Content />
     </div>
 
-    <aside class="mt-14 rounded-card border border-blush-200 bg-blush-50 p-6">
-      <h2 class="font-display text-lg font-semibold text-ink">Verbindlich ist die Behörde</h2>
-      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+    <aside class="mt-14 rounded-card border border-ultramarine-100 bg-ultramarine-50 p-6">
+      <h2 class="font-display text-lg font-semibold text-night">Verbindlich ist die Behörde</h2>
+      <p class="mt-2 text-sm leading-relaxed text-night-700">
         Diese Seite ist eine Orientierung, keine Rechts- oder Steuerberatung. Beträge und Fristen können
         sich ändern — lassen Sie sich den aktuellen Stand bei der zuständigen Stelle bestätigen.
       </p>
