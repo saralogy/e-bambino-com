@@ -4,6 +4,8 @@
 //   ultramarine navigates, mandarin converts, limone flags a deal.
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  // Added by the rehype plugin in astro.config.mjs, so it never appears in source files.
+  safelist: ['table-scroll'],
   theme: {
     extend: {
       colors: {
