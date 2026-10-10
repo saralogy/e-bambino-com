@@ -15,6 +15,7 @@ export interface Props {
   type?: 'website' | 'article';
   /** ISO date of the last edit; emitted as article:modified_time for article pages only. */
   modified?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -27,6 +28,7 @@ const {
   canonical = Astro.url.href,
   type = 'website',
   modified,
+  noindex = false,
 } = Astro.props;
 
 const t = UI[lang];
@@ -77,7 +79,7 @@ const jsonLd = JSON.stringify({
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
 <link rel="canonical" href={canonical} />
 {alts.length > 1 && alts.map(([l, p]) => <link rel="alternate" hreflang={l} href={`${SITE}${p}`} />)}
 {alts.length > 1 && xDefault && <link rel="alternate" hreflang="x-default" href={`${SITE}${xDefault}`} />}

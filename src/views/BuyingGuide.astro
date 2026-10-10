@@ -4,6 +4,7 @@ import type { CollectionEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ArticleHero from '../components/ArticleHero.astro';
 import { getCollection, render } from 'astro:content';
+import { SOURCE_NAMES } from '../lib/sources';
 import { shipGate } from '../lib/shipgate';
 import { hubBySlug } from '../i18n/hubs';
 import { UI, OTHER, SITE, path, sectionPath, entryLang, entrySlug, entryKey, dateFormat, type Lang } from '../i18n';
@@ -52,10 +53,6 @@ const COPY = {
   },
 }[lang];
 
-const SOURCE_NAMES: Record<string, string> = {
-  who: 'WHO', unece: 'UNECE', cpsc: 'CPSC', rki: 'RKI', awmf: 'AWMF',
-  'kindergesundheit-info': 'kindergesundheit-info.de', verbraucherzentrale: 'Verbraucherzentrale',
-};
 
 const hub = hubBySlug(lang, entry.data.hub);
 const hubLabel = hub?.label ?? entry.data.hub;
