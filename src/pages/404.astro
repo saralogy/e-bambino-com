@@ -11,9 +11,9 @@ const bereiche = [
 ---
 
 <Layout title="404 — Seite nicht gefunden" description="Diese Seite existiert nicht (404)." noindex>
-  <section class="bg-wash">
+  <section class="page-hero">
     <div class="shell py-24 text-center sm:py-32">
-      <p class="font-display text-display-lg font-semibold text-ultramarine-100" aria-hidden="true">404</p>
+      <p class="font-display text-[6rem] font-extrabold leading-none text-limone sm:text-[9rem]" aria-hidden="true">404</p>
       <h1 class="display-2 mt-4 text-balance">Diese Seite gibt es nicht</h1>
       <p class="lede mx-auto mt-5 max-w-xl text-pretty">
         Möglicherweise wurde sie verschoben oder entfernt. Diese Bereiche gibt es:
@@ -22,7 +22,7 @@ const bereiche = [
       <div class="mt-10 flex flex-wrap justify-center gap-3">
         {
           bereiche.map((b, i) => (
-            <a href={b.href} class={i === 0 ? 'btn-primary' : 'btn-secondary'}>
+            <a href={b.href} class={i === 0 ? 'btn bg-limone text-night hover:bg-limone-300' : 'btn border-2 border-white text-white hover:bg-white/10'}>
               {b.label}
             </a>
           ))

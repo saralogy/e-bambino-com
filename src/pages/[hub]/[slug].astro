@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Base.astro';
+import ArticleHero from '../../components/ArticleHero.astro';
 import { getCollection, render } from 'astro:content';
 import { TAXONOMY, QUESTION_TYPES } from '../../data/taxonomie';
 import { shipGate } from '../../lib/shipgate';
@@ -59,40 +60,33 @@ const jsonLd = JSON.stringify({
 <Layout title={entry.data.title} description={entry.data.description} type="article">
   <script type="application/ld+json" set:html={jsonLd} />
 
-  <article class="shell measure py-12 sm:py-16">
-    <nav class="mb-8 flex items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
-      <a href="/" class="transition-colors hover:text-ultramarine-700">Start</a>
-      <span aria-hidden="true">/</span>
-      <a href={`/${entry.data.hub}/`} class="transition-colors hover:text-ultramarine-700">
-        {hub?.label ?? entry.data.hub}
-      </a>
-    </nav>
+  <ArticleHero crumbs={[{ label: 'Start', href: '/' }, { label: hub?.label ?? entry.data.hub, href: `/${entry.data.hub}/` }]}>
+    <h1 class="display-2 text-balance">{entry.data.frage}</h1>
+    <dl class="mt-6 flex flex-wrap items-center gap-2">
+      <div>
+        <dt class="sr-only">Fragetyp</dt>
+        <dd class="chip-topic">{typLabel}</dd>
+      </div>
+      <div>
+        <dt class="sr-only">Stand</dt>
+        <dd class="chip-neutral">
+          <time datetime={(entry.data.updatedDate ?? entry.data.date).toISOString()}>
+            Stand {dtf.format(entry.data.updatedDate ?? entry.data.date)}
+          </time>
+        </dd>
+      </div>
+    </dl>
+  </ArticleHero>
 
-    <header class="mb-9">
-      <h1 class="display-2 text-balance">{entry.data.frage}</h1>
-      <dl class="mt-6 flex flex-wrap items-center gap-2">
-        <div>
-          <dt class="sr-only">Fragetyp</dt>
-          <dd class="chip-blush">{typLabel}</dd>
-        </div>
-        <div>
-          <dt class="sr-only">Stand</dt>
-          <dd class="chip-mist">
-            <time datetime={(entry.data.updatedDate ?? entry.data.date).toISOString()}>
-              Stand {dtf.format(entry.data.updatedDate ?? entry.data.date)}
-            </time>
-          </dd>
-        </div>
-      </dl>
-    </header>
-
+  <article class="shell measure pb-12 sm:pb-16">
     {/* Answer-first block — 40–60 words, the AI-snippet target */}
-    <div class="mb-10 rounded-card border border-ultramarine-100 bg-ultramarine-50 p-6 sm:p-7">
-      <p class="text-pretty text-lg leading-relaxed text-night">{entry.data.antwort}</p>
+    <div class="relative z-10 -mt-9 mb-10 rounded-ds-lg bg-ultramarine p-6 text-white shadow-lift sm:p-8">
+      <p class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Kurzantwort</p>
+      <p class="mt-3 text-pretty text-lg leading-relaxed sm:text-xl">{entry.data.antwort}</p>
     </div>
 
     {/* Trust box */}
-    <aside class="mb-12 rounded-card border border-fog-100 bg-fog p-6 text-sm">
+    <aside class="mb-12 rounded-ds-lg bg-fog p-6 text-sm">
       <dl class="grid gap-x-10 gap-y-3 sm:grid-cols-2">
         <div class="flex gap-2">
           <dt class="font-semibold text-night">Autor:</dt>
@@ -133,7 +127,7 @@ const jsonLd = JSON.stringify({
     {
       siblings.length > 0 && (
         <section class="mt-16 pt-10 border-t border-fog-100">
-          <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-night-500">
+          <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-night-500">
             Weitere Fragen zu {hub?.label ?? entry.data.hub}
           </h2>
           <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
@@ -141,7 +135,7 @@ const jsonLd = JSON.stringify({
               <li>
                 <a
                   href={`/${s.data.hub}/${s.data.slug}/`}
-                  class="group flex items-center justify-between gap-6 py-4 transition-colors duration-300"
+                  class="group flex min-h-tap-m items-center justify-between gap-6 py-3 transition-colors duration-300"
                 >
                   <span class="font-medium text-night transition-colors duration-300 group-hover:text-ultramarine-700">
                     {s.data.frage}

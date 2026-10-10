@@ -36,12 +36,12 @@ const TYPE_TITLE: Record<string, string> = {
 ---
 
 <Layout title={hub.label} description={hub.answer.slice(0, 155)}>
-  <section class="bg-wash">
+  <section class="page-hero">
     <div class="shell py-16 sm:py-20">
-      <nav class="mb-8 flex items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
-        <a href="/" class="transition-colors hover:text-ultramarine-700">Start</a>
+      <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Brotkrumen">
+        <a href="/" class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">Start</a>
         <span aria-hidden="true">/</span>
-        <a href="/fragen/" class="transition-colors hover:text-ultramarine-700">Fragen</a>
+        <a href="/fragen/" class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">Fragen</a>
       </nav>
 
       <p class="eyebrow rise">
@@ -62,12 +62,12 @@ const TYPE_TITLE: Record<string, string> = {
           {/* Sidebar: question types as an index */}
           <nav class="lg:col-span-3" aria-label="Fragentypen">
             <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-night-500">In diesem Bereich</h2>
-            <ul class="mt-5 space-y-3">
+            <ul class="mt-4 space-y-0.5">
               {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
                 <li>
                   <a
                     href={`#typ-${t}`}
-                    class="group flex items-baseline justify-between gap-3 text-sm text-night-700 transition-colors duration-300 hover:text-ultramarine-700"
+                    class="group flex min-h-tap-s items-center justify-between gap-3 text-sm text-night-700 transition-colors duration-300 hover:text-ultramarine-700"
                   >
                     <span>{TYPE_TITLE[t]}</span>
                     <span class="text-xs text-night-500 group-hover:text-ultramarine">

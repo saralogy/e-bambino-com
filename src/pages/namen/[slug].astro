@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Base.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleHero from '../../components/ArticleHero.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -17,44 +17,41 @@ const isGirl = entry.data.typ === 'mädchen';
 ---
 
 <Layout title={entry.data.title} description={entry.data.description} type="article">
-  <article class="shell measure py-12 sm:py-16">
-    <Breadcrumbs
-      items={[{ label: 'Start', href: '/' }, { label: 'Baby-Namen', href: '/namen/' }, { label: entry.data.title }]}
-    />
+  <ArticleHero crumbs={[{ label: 'Start', href: '/' }, { label: 'Baby-Namen', href: '/namen/' }, { label: entry.data.title }]}>
+    <h1 class="font-display text-display-sm sm:text-display-md lg:text-display-lg text-balance break-words text-night">
+      {entry.data.title}
+    </h1>
+    {entry.data.bedeutung && <p class="mt-4 font-display text-2xl font-bold text-limone">{entry.data.bedeutung}</p>}
 
-    <header class="mb-10">
-      <h1 class="font-display text-display-sm sm:text-display-md lg:text-display-lg text-balance break-words text-night">
-        {entry.data.title}
-      </h1>
-      {entry.data.bedeutung && <p class="mt-3 font-display text-xl text-ultramarine-700">{entry.data.bedeutung}</p>}
-
-      <dl class="mt-7 flex flex-wrap gap-2">
-        {entry.data.typ && (
-          <div><dt class="sr-only">Geschlecht</dt><dd class="chip-blush">{entry.data.typ}</dd></div>
-        )}
-        {entry.data.herkunft && (
-          <div><dt class="sr-only">Herkunft</dt><dd class="chip-mist">{entry.data.herkunft}</dd></div>
-        )}
-        {entry.data.popularitaet && (
-          <div>
-            <dt class="sr-only">Beliebtheit</dt>
-            <dd class="chip-sand">{entry.data.popularitaet}</dd>
-          </div>
-        )}
+    <dl class="mt-7 flex flex-wrap gap-2">
+      {entry.data.typ && (
+        <div><dt class="sr-only">Geschlecht</dt><dd class="chip-topic">{entry.data.typ}</dd></div>
+      )}
+      {entry.data.herkunft && (
+        <div><dt class="sr-only">Herkunft</dt><dd class="chip-neutral">{entry.data.herkunft}</dd></div>
+      )}
+      {entry.data.popularitaet && (
         <div>
-          <dt class="sr-only">Stand</dt>
-          <dd class="chip-mist">
-            <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
-          </dd>
+          <dt class="sr-only">Beliebtheit</dt>
+          <dd class="chip-highlight">{entry.data.popularitaet}</dd>
         </div>
-      </dl>
-    </header>
+      )}
+      <div>
+        <dt class="sr-only">Stand</dt>
+        <dd class="chip-neutral">
+          <time datetime={entry.data.date.toISOString()}>Stand {dtf.format(entry.data.date)}</time>
+        </dd>
+      </div>
+    </dl>
+  </ArticleHero>
+
+  <article class="shell measure py-12 sm:py-16">
 
     <div class="prose">
       <Content />
     </div>
 
-    <footer class="mt-14 border-t border-fog-100 pt-8 text-sm leading-relaxed text-night-500">
+    <footer class="mt-14 rounded-ds-lg bg-fog p-6 text-sm leading-relaxed text-night-500">
       <p>
         Erstellt von {entry.data.author}. Geprüft nach den Regeln der e-bambino-Redaktion —
         menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).

@@ -1,0 +1,17 @@
+---
+// ArticleHero.astro — night header band for detail pages. Aligns with the reading column below it.
+import Breadcrumbs from './Breadcrumbs.astro';
+
+export interface Props {
+  crumbs: { label: string; href?: string }[];
+}
+
+const { crumbs } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class="shell measure pb-14 pt-6 sm:pb-20 sm:pt-8">
+    <Breadcrumbs items={crumbs} />
+    <slot />
+  </div>
+</section>

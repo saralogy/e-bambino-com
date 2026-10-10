@@ -13,6 +13,13 @@ const current = Astro.url.pathname;
 const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
 ---
 
+<div class="bg-night text-white">
+  <p class="shell py-2 text-center text-[0.8125rem] font-semibold">
+    Von Menschen geprüft <span class="mx-1.5 text-limone" aria-hidden="true">·</span> Quellen offengelegt
+    <span class="hidden sm:inline"><span class="mx-1.5 text-limone" aria-hidden="true">·</span> Stand-Datum bei jedem Inhalt</span>
+  </p>
+</div>
+
 <header class="sticky top-0 z-50 border-b border-fog-100 bg-paper/85 backdrop-blur-md">
   <div class="shell">
     <div class="flex h-[4.25rem] items-center justify-between gap-4">
@@ -34,7 +41,7 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
               href={item.href}
               aria-current={isActive(item.href) ? 'page' : undefined}
               class:list={[
-                'relative rounded-pill px-3.5 py-2.5 text-[0.9375rem] font-semibold transition-colors duration-300',
+                'relative inline-flex min-h-tap-s items-center rounded-pill px-3.5 text-[0.9375rem] font-semibold transition-colors duration-300',
                 isActive(item.href) ? 'text-ultramarine' : 'text-night-700 hover:text-ultramarine',
               ]}
             >
