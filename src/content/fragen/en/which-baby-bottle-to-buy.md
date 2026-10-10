@@ -13,6 +13,7 @@ slug: "which-baby-bottle-to-buy"
 antwort: "When choosing a baby bottle, glass is the material the Verbraucherzentrale rates most suitable for keeping substances out of food. Glass tolerates hot cleaning but is heavier and more fragile than plastic. Polycarbonate has been banned for baby bottles in the EU since 2011, and silicone teats do not need boiling at home."
 quellen: ["verbraucherzentrale", "kindergesundheit-info", "cpsc", "aap", "cdc"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Bottles differ mainly in material, teat and how easy they are to clean and use safely. This page compares the material and teat points covered by the sources we checked, and marks the gaps honestly.

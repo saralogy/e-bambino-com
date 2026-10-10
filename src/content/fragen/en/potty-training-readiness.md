@@ -14,6 +14,7 @@ translationOf: 'windelentraining-ab-wann'
 antwort: "A toddler is ready for potty training when they show readiness signs, such as staying dry for at least two hours, rather than at a set age. The AAP says most children are bowel and bladder trained by age 4, and the CDC warns that starting too early can cause stress and setbacks."
 quellen: ["aap", "cdc", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Official sources describe toddler readiness in physical, mental, and willingness terms rather than as one age. Use this checklist to see where your toddler stands.

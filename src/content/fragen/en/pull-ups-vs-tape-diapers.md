@@ -13,6 +13,7 @@ slug: 'pull-ups-vs-tape-diapers'
 antwort: "Official sources we checked do not say whether pull-ups or tape diapers are better, so this page does not rank them. Both are disposable diapers that must absorb, stay leakproof, and be changed often. Compare fit, changing, and price per diaper yourself."
 quellen: []
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 Pull-ups and tape diapers are both disposable diapers that need frequent changes. The sources we checked do not compare the two directly, so this page separates what is confirmed from what is still open.

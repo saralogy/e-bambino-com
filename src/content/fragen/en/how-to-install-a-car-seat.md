@@ -14,6 +14,7 @@ translationOf: "autositz-einbau-pruefen"
 antwort: "To install a car seat correctly, use the seat belt or LATCH lower anchors in the back seat, following the manual. Lock the belt or tighten the straps while pressing down on the seat, then check it moves no more than about 1 inch at the belt path. Rear-facing seats also need the correct recline angle."
 quellen: ["nhtsa", "aap", "cdc", "unece"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 A car seat works best when it is installed tightly and at the correct angle. These steps cover the most important points in the seat's manual and in official guidance.

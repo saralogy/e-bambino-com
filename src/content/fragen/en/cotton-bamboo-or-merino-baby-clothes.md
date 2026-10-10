@@ -13,6 +13,7 @@ slug: 'cotton-bamboo-or-merino-baby-clothes'
 antwort: "The sources we checked do not rank cotton, bamboo or merino for baby clothes. For sleepwear, the CPSC warns that loose-fitting cotton garments can catch fire easily, so choose snug-fitting or flame-resistant sleepwear. Wash new baby clothes before use, and check the label for flame-resistant sleepwear and care instructions."
 quellen: ["cpsc", "aap"]
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 Cotton, bamboo and merino are all used in baby clothes, but the sources we checked do not rank them against each other. This guide covers the sourced safety and care facts for sleepwear, and what to check on the label.

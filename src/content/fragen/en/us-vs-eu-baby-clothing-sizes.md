@@ -13,6 +13,7 @@ slug: 'us-vs-eu-baby-clothing-sizes'
 antwort: "US and EU baby clothing sizes may not match directly on the label. US infant clothes are labeled by age in months, not length, and we have not verified a US-to-EU size table. Compare the length in centimeters on each brand's chart before you buy."
 quellen: []
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 If you shop across US and EU sites, the size on one label may not tell you the fit on another. This guide explains what US labels mean and what to check before you buy.

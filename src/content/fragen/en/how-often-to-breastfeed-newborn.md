@@ -14,6 +14,7 @@ translationOf: 'stillen-haeufigkeit'
 antwort: "Most newborns need to breastfeed 8 to 12 times in 24 hours, and WHO recommends feeding on demand whenever your baby is hungry. Expect 1 to 3 hours between feeds in the first weeks. Good signs include at least six wet diapers a day after your milk comes in and steady weight gain."
 quellen: ["who", "nichd", "aap", "kindergesundheit-info", "cdc"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Newborns feed often, and frequent feeding is normal. This page explains typical feeding frequency, how to tell your baby is getting enough milk, and how the pattern changes over the first months.

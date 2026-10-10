@@ -14,6 +14,7 @@ translationOf: "autositz-einbau-pruefen"
 antwort: "To check car seat installation, pull the seat at the belt path: it should not move more than 1 inch side to side or front to back. Route the belt through the correct path, then buckle and lock it while pressing down firmly. NHTSA's Car Seat Inspection Finder locates certified technicians who inspect seats free of charge in most cases."
 quellen: ["nhtsa", "cdc"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 

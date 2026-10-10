@@ -14,6 +14,7 @@ translationOf: "babyausstattung-erste-wochen"
 antwort: "A newborn needs a firm, flat sleep surface, such as a crib, bassinet or play yard, with only a fitted sheet. Use a sleep sack or wearable blanket instead of loose blankets, and keep bumpers and pillows out of the sleep space from the start."
 quellen: ["cpsc", "aap", "nichd"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Your first weeks at home come with a long list of baby products, and most of it can wait. A safe sleep space for your newborn cannot wait, so start there.

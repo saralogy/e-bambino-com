@@ -14,6 +14,7 @@ translationOf: 'windeldermatitis-hilfe'
 antwort: "For a simple diaper rash, change diapers often, rinse with water, let the skin air-dry, and apply a thick layer of fragrance-free barrier cream such as zinc oxide or petrolatum. The rash should clear in about three days. Call your pediatrician for blisters, open sores, fever, or any concern in a baby under one month."
 quellen: ["aap", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Many diaper rashes can be treated at home, but some signs need a doctor's call. This checklist covers the home steps first and the signs that mean you should contact the pediatrician.

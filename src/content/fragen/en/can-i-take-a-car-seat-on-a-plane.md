@@ -13,6 +13,7 @@ slug: "can-i-take-a-car-seat-on-a-plane"
 antwort: "A car seat can be used on a plane only if its label says it is certified for use in motor vehicles and aircraft. Most rear-facing, convertible and forward-facing car seats can be used on planes, but booster seats and travel vests cannot. Check the label, then your airline's policy, before you fly."
 quellen: ["aap"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 The FAA and AAP recommend that children under 40 pounds fly securely fastened in a certified child restraint. Airline rules for bringing and checking seats vary, so plan before you reach the airport.

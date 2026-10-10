@@ -192,6 +192,7 @@ export interface EnglishFrontmatter {
   quellen?: string[];
   ymyl?: boolean;
   reviewedBy?: string;
+  draft?: boolean;
 }
 
 export interface EnglishResult extends AuditResult {
@@ -203,7 +204,7 @@ const BRITISH = /\b(nappy|nappies|pram|prams|pushchair|pushchairs|colour|colours
 export function auditEnglish(body: string, fm: EnglishFrontmatter): EnglishResult {
   const issues: AuditIssue[] = [];
   const slug = fm.slug ?? 'unknown';
-  const held = !!fm.ymyl && !fm.reviewedBy;
+  const held = !!fm.draft || (!!fm.ymyl && !fm.reviewedBy);
   const quellen = fm.quellen ?? [];
 
   // Answer-first block: 25–80 words.
@@ -229,7 +230,8 @@ export function auditEnglish(body: string, fm: EnglishFrontmatter): EnglishResul
   }
 
   // YMYL without reviewer: held, not published.
-  if (held) issues.push(warn('ymyl-held', 'HELD: ymyl page without reviewedBy, not generated'));
+  if (fm.draft) issues.push(warn('draft-held', 'HELD: draft, waiting for editorial pass'));
+  else if (held) issues.push(warn('ymyl-held', 'HELD: ymyl page without reviewedBy, not generated'));
 
   // Hard brand and format rules.
   issues.push(...hardRuleIssues(body + '\n' + (fm.antwort ?? '')));

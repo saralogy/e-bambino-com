@@ -13,6 +13,7 @@ slug: "pressure-mount-vs-hardware-stair-gates"
 antwort: "Hardware-mounted stair gates, which screw into the wall, are the type CPSC guidance says to use at the top of stairs. Pressure-mounted gates suit parents who want to move the gate or avoid marking walls, but CPSC does not recommend them at the top of stairs. Check the packaging for the minimum distance to the first step."
 quellen: ["cpsc", "aap"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 

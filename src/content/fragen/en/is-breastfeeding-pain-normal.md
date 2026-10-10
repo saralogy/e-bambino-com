@@ -13,6 +13,7 @@ slug: 'is-breastfeeding-pain-normal'
 antwort: "Breastfeeding pain that lasts beyond the first minute of a feed is not normal and signals a poor latch. Break the suction with a finger in the corner of your baby's mouth, then re-latch your baby. Call a doctor if sore or cracked nipples are not better after 24 hours, or if breastfeeding pain comes with a fever."
 quellen: ["aap", "cdc"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Ongoing pain is not a normal part of breastfeeding. This page explains what pain can mean, how to improve a latch, and when to get help.

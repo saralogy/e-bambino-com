@@ -13,6 +13,7 @@ slug: 'diaper-size-by-weight'
 antwort: "The right diaper size is the one whose printed weight range includes your baby's weight, because no official chart sets diaper sizes by weight. Each brand sets its own ranges, so check the pack you are buying. Confirm fit after each change: the tabs should be even in front, with no gaps at the hips."
 quellen: ["aap", "cdc"]
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 Choosing a diaper size is simpler when you know which number to trust. Each brand sets its own sizes, so the weight range printed on the diaper pack you are buying matters more than any general chart.

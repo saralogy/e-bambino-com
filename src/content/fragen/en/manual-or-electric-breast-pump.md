@@ -13,6 +13,7 @@ slug: 'manual-or-electric-breast-pump'
 antwort: "Electric breast pumps are usually faster, while manual breast pumps are easier to carry and need no outlet. A double electric pump can reduce pumping time, since it pumps both breasts at once. Rent a pump only if it is designed for multiple users, since single-user pumps should never be rented or shared."
 quellen: ["fda", "cdc", "aap"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Choosing a breast pump depends on how often you will pump and whether you need to pump away from home. This page compares the main types using FDA guidance, with a section on rentals, which come with specific safety rules.

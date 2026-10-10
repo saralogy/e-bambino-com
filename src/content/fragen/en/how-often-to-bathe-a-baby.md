@@ -14,6 +14,7 @@ translationOf: 'wie-oft-baden-baby'
 antwort: "Babies in the first year may need only about one to three baths a week, not a daily bath. Keep each bath to about 5 to 10 minutes, keep the water body-warm at 36 to 37 degrees Celsius, and clean the diaper area well at each change."
 quellen: ["aap", "kindergesundheit-info", "cpsc"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 This page covers the first year. The guidance we found suggests a few short baths a week, with careful diaper-area cleaning in between.

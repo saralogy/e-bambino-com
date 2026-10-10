@@ -13,6 +13,7 @@ slug: 'how-long-is-breast-milk-good-for'
 antwort: "Freshly expressed breast milk can stay at room temperature for up to 4 hours and in the refrigerator for up to 4 days. In a freezer at 0°F or below, breast milk is best used within about 6 months and is acceptable up to 12 months. Once fully thawed, milk must not be refrozen."
 quellen: ["cdc"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Breast milk storage times depend on where the milk is kept and whether it has been thawed. This page follows CDC guidance throughout, so you can use one consistent set of rules at home and when you are out. For feeding frequency, see [How often should a newborn breastfeed in 24 hours?](/breastfeeding/how-often-to-breastfeed-newborn/).

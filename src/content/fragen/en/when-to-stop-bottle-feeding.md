@@ -14,6 +14,7 @@ translationOf: "flasche-trinken-beenden"
 antwort: "The AAP recommends completing the bottle-to-cup transition between 12 and 18 months. German guidance gives no fixed age, but advises a cup from the first year where possible, and a normal cup from the second year. A bottle at sleep raises tooth decay risk, even with plain water, so change the bedtime bottle first."
 quellen: ["kindergesundheit-info", "verbraucherzentrale", "aap"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Moving from bottle to cup is a gradual change, not a single day. This page sets out what the AAP and German guidance say about timing, cups and bedtime habits.

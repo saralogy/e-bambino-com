@@ -13,6 +13,7 @@ slug: "baby-walker-or-push-toy"
 antwort: "No, the AAP recommends banning the manufacture and sale of mobile baby walkers. Most walker injuries are stair falls, and walkers do not teach children to walk. The AAP names stationary activity centers and play yards as safer alternatives. The sources used here give no safety guidance for push toys, so ask your pediatrician before buying one."
 quellen: ["aap", "cpsc"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Parents often wonder whether a walker helps a baby learn to walk, or whether a push toy is the better choice. This page sets out what the AAP and the US Consumer Product Safety Commission (CPSC) say about walkers, and where the sources have gaps.

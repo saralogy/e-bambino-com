@@ -14,6 +14,7 @@ translationOf: "schlafzimmer-temperatur-baby"
 antwort: "The German AWMF S1 guideline on preventing sudden infant death recommends 18 °C as the optimal nighttime room temperature for a baby's sleep room. Dress your baby in a sleep bag of suitable size instead of a duvet to help avoid overheating."
 quellen: ["awmf", "aap", "kindergesundheit-info", "nichd"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Overheating is one of the risks that safe-sleep guidance names, so room temperature matters. Here is the target and how to keep your baby comfortable at night.

@@ -13,6 +13,7 @@ slug: "when-to-start-solid-food"
 antwort: "Most babies are ready for solid food around 6 months, according to WHO-linked guidance, and some from 4 months if they sit with good head control and show other readiness signs. German guidance gives a wider window, from after the completed fourth month to the start of the seventh month."
 quellen: ["who", "kindergesundheit-info", "verbraucherzentrale"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Starting solids is a gradual step that follows your baby's development, not a single date on the calendar. This page explains the timing windows in the sources we checked and the signs of readiness.

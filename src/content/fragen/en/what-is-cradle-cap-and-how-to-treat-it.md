@@ -13,6 +13,7 @@ slug: 'what-is-cradle-cap-and-how-to-treat-it'
 antwort: "Cradle cap is scaling on a baby's scalp that is usually harmless. In most cases, cradle cap clears up by age 1 year, often without treatment. Gentle home care is the usual start: wash the baby's hair about every other day with a mild baby shampoo. See a pediatrician if the scalp becomes crusted, weepy, or has pus bumps."
 quellen: ["aap"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Cradle cap is scaling on a baby's scalp that is usually harmless. Gentle home care is the usual starting point, and a few signs mean a pediatrician should check the scalp.

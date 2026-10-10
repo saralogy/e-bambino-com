@@ -112,6 +112,7 @@ const enResults: (EnglishResult | AuditResult)[] = mdFiles(EN_DIR).map((f) => {
     quellen: sources(data.quellen),
     ymyl: data.ymyl === 'true',
     reviewedBy: data.reviewedBy || '',
+    draft: data.draft === 'true',
   });
 });
 

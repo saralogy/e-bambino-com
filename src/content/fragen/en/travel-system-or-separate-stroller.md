@@ -13,6 +13,7 @@ slug: "travel-system-or-separate-stroller"
 antwort: "Neither a travel system nor a separate stroller and car seat is better for every family, so choose by fit, price and flexibility. Confirm the stroller and car seat model numbers are compatible, check both models on the CPSC recall list, and compare the exact models you are considering."
 quellen: ["cpsc"]
 ymyl: false
+draft: true
 reviewedBy: ""
 ---
 Shopping for a stroller and car seat often means choosing between a travel system and buying the two separately. This page covers fit, price, and flexibility. Safety judgments are left to the manufacturer's manuals and the official CPSC recall lists.

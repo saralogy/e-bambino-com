@@ -13,6 +13,7 @@ slug: 'do-babies-need-baby-shampoo'
 antwort: "The AAP advises a mild shampoo or body wash for a baby's hair, two or three times a week, rather than a special baby-labeled product. Use soap sparingly, and choose fragrance-free products with few ingredients. The guidance we checked does not confirm specific skin benefits from any particular product."
 quellen: ["aap"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 This page covers the basic bath products for a baby: water, a mild soap or body wash, shampoo and an optional moisturizer. The label is the place to check what is actually in the bottle. For scaly patches on the scalp, see [what cradle cap is and how to treat it](/bath-and-care/what-is-cradle-cap-and-how-to-treat-it/).

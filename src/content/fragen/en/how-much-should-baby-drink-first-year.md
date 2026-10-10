@@ -13,6 +13,7 @@ slug: "how-much-should-baby-drink-first-year"
 antwort: "A baby has no single fixed amount to drink in the first year. In the first four to six months, breast milk or formula provides enough fluid, and German guidance says a baby's hunger and fullness signals matter more than package amounts. From about six months, the WHO says complementary foods should be added while breastfeeding continues."
 quellen: ["who", "aap", "cdc", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Babies do not drink to a fixed schedule, and amounts vary. This page sets out what the sources we checked say about milk and fluids, and where they stop short of giving numbers.

@@ -13,6 +13,7 @@ slug: 'baby-bathtub-or-bath-seat'
 antwort: "No source we checked ranks baby bathtubs, bath seats or sink inserts, so choose by safety checks. Check the manufacture date on infant tubs, confirm a bath seat is not on a CPSC warning or recall list, and look for a stable, non-slip setup. A bath seat does not replace adult supervision."
 quellen: ["cpsc", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 Baby bathtubs and bath seats are separate products with their own safety rules. The table compares the three common options, and the sections below explain what the safety sources say.

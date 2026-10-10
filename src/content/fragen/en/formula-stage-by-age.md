@@ -14,6 +14,7 @@ translationOf: "saeuglingsnahrung-nach-alter"
 antwort: "Starter formula, labeled pre or 1 in Germany, suits the whole first year, including after solid foods start. Follow-on formula, labeled 2 or higher, is largely similar but has more iron, and the Verbraucherzentrale says it can be introduced from the seventh month at the earliest. Specialty formulas are used under medical direction."
 quellen: ["awmf", "verbraucherzentrale", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Infant formula comes in stages, and the right one depends on your baby's age and whether solid foods have started. This page explains the German guidance on each stage and when a switch is worth discussing.

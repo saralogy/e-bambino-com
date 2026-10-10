@@ -13,6 +13,7 @@ slug: "cordless-vs-corded-blinds-baby-safety"
 antwort: "Corded window blinds can strangle young children, and CPSC says about nine children under 5 die each year from strangling in corded window coverings. CPSC advises cordless window coverings for every room where a child may be present. If you cannot replace corded blinds, keep cords out of reach and move cribs and furniture away from windows."
 quellen: ["cpsc"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 

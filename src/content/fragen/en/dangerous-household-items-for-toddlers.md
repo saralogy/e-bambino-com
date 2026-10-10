@@ -14,6 +14,7 @@ translationOf: "gefaehrliche-hausgegenstaende-kleinkind"
 antwort: "Dangerous household items for toddlers include medicines, cleaning products, laundry detergent packets, button batteries, small toy parts and hot liquids. Store medicines, cleaning products and similar items in their original packaging, locked and out of sight and reach. If a child swallows something, call Poison Help at 1-800-222-1222 right away."
 quellen: ["cpsc", "aap", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 

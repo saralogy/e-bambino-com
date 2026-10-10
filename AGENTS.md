@@ -51,7 +51,8 @@ npm ci            # install
 npm run dev       # local dev server
 npm run build     # production build into dist/  (must pass before every merge)
 npm run preview   # serve dist/ locally
-npx tsx scripts/run-audit.ts   # German content quality audit (needs tsx: npx installs it)
+npm run audit     # content audit, English + German (exit 1 only on hard errors)
+node scripts/make-og.mjs       # regenerate public/og-default.png and logo.png (Playwright)
 ```
 
 Deployment: merging to `main` is the release. Work on a branch, open a PR, merge when checks pass.
@@ -75,6 +76,8 @@ src/
   content/<collection>/<lang>/*.md   All content. Folder name = language (en | de)
   data/taxonomie.ts    German taxonomy: hubs, facets, reserved /produkte/ URLs
   lib/shipgate.ts      Publication gate (see 5.2)
+  lib/sources.ts       Display names for source keys (quellen)
+  lib/llms.ts          Builds /llms.txt and /llms-full.txt for AI answer engines (GEO)
   lib/audit.ts         German copy quality checks
   styles/global.css    Component classes (.btn-*, .card, .chip-*, .prose, .page-hero …)
 tailwind.config.js     Design tokens
@@ -92,6 +95,8 @@ astro.config.mjs       Redirects from old German root URLs to /de/, markdown tab
 | Names | `/names/…` | `/de/namen/…` |
 | Checklists | `/checklists/…` | `/de/checklisten/…` |
 | Guides | `/guides/…` | `/de/ratgeber/…` |
+| Buying guides | `/buying-guides/…` | `/de/kaufberatung/…` |
+| For AI engines | `/llms.txt`, `/llms-full.txt` | — |
 | Finance (Germany only) | — | `/de/finanz/…` |
 | About / Legal / Privacy / Sources | `/about/`, `/legal-notice/`, `/privacy/`, `/sources/` | `/de/ueber-uns/`, `/de/impressum/`, `/de/datenschutz/`, `/de/quellen/` |
 
@@ -125,6 +130,7 @@ antwort: "40–60 word direct answer shown first in a highlighted card."
 quellen: ["kindergesundheit-info"]   # REQUIRED, keys from the Sources page; empty = not published
 ymyl: false                    # true for health, safety, nutrition, sleep topics
 reviewedBy: ''                 # required when ymyl is true, e.g. 'Mathilda, Nurse'
+draft: true                    # optional; holds the page until the editorial pass is done
 ---
 Intro paragraph (1–2 sentences).
 
@@ -141,9 +147,11 @@ footer line. The page shows "Updated · Sources · Reviewed by" automatically at
 - Checklists: `src/content/checklisten/<lang>/`, guides: `src/content/ratgeber/<lang>/`,
   finance: `src/content/finanz/de/` (German only).
 - English entries set `translationOf: <german slug>` so hreflang and the language switch connect them.
-- Source keys used today: `who`, `awmf`, `rki`, `kindergesundheit-info`, `verbraucherzentrale`,
-  `unece`, `cpsc`. A new key needs an entry in `src/views/Sources.astro` and the display-name map in
-  `src/views/Question.astro`.
+- Buying guides: `src/content/kaufberatung/<lang>/` (fields `antwort`, `criteria`, `types`, `checklist`,
+  `quellen`; same gate). The "Compare prices" slot is reserved for the commerce layer.
+- Source keys: `who`, `aap`, `cdc`, `nichd`, `nhtsa`, `fda`, `cpsc`, `unece`, `rki`, `awmf`,
+  `kindergesundheit-info`, `verbraucherzentrale`. A new key needs an entry in `src/views/Sources.astro`
+  and in `src/lib/sources.ts`.
 
 ### 4.3 Writing style
 
@@ -164,8 +172,8 @@ footer line. The page shows "Updated · Sources · Reviewed by" automatically at
   nothing loose in the crib in year one; car seats: rear-facing as long as the seat allows).
 
 ### 5.2 Publication gate (`src/lib/shipgate.ts`)
-A question page is built only if it has at least one source AND, when `ymyl: true`, a named
-`reviewedBy`. Held pages are simply not generated. Do not weaken this gate.
+A question page is built only if it is not `draft: true`, has at least one source AND, when
+`ymyl: true`, a named `reviewedBy`. Held pages are simply not generated. Do not weaken this gate.
 
 ### 5.3 Legal (Germany-based operator)
 - Impressum must stay complete and accurate (§ 5 DDG).
@@ -208,6 +216,12 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 - German pages held by the gate (`ymyl: true`, no reviewer): 19, including
   `kindersitz-vorne-gewicht` and `schlafsack-oder-decke-winter`, whose German text contains
   **unsafe advice** and must be rewritten (use the English versions as the reference) before release.
+- **38 English drafts** (`draft: true`) written by the per-category teams, listed with their
+  briefs, buying-guide ideas, roadmaps and hub UI ideas in `docs/category-plans.md`. Research with
+  source URLs is in `docs/research/`. They need an editorial pass before release (see that file).
+- Buying-guide template is live at `/buying-guides/` (empty state); the stroller guide is a held draft.
+- SEO/GEO foundation: robots.txt allows AI search crawlers; Organization + WebSite (SearchAction)
+  JSON-LD on every page; Article/Breadcrumb/ItemList/QAPage data on views; `/llms.txt`.
 - Reviewer on file: **Mathilda, Nurse** — currently named on the English car-seat and sleep-sack pages.
 - Growth strategy (SEO, templates, lead generation, roadmap):
   https://claude.ai/artifact/JfvtzXZXiBM3oZ311zq97N
@@ -223,18 +237,20 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
       (car seats, sleep sack).
 - [ ] **German unsafe pages:** rewrite `kindersitz-vorne-gewicht` and `schlafsack-oder-decke-winter`
       from the corrected English versions, then send for review.
+- [ ] **Editorial pass on the 38 drafts** in `docs/category-plans.md`: rewrite the hedged lines,
+      verify facts, fix links, then release non-YMYL pages and send YMYL pages to Mathilda.
+      Bath & care, Breastfeeding and Safety hubs stay 404 until one of their pages is released.
 - [ ] **Source check:** an editor should confirm the sources on newborn sizes, sleeper vs bodysuit,
       diapers per day, books for beginning readers and crib duration.
 
 ### Next (content and SEO)
 - [ ] Review and release the other held German health/safety pages, and write English versions.
-- [ ] Buying-guide template ("how to choose a stroller") — the biggest SEO and lead gap.
+- [ ] Write and source the first buying guides (ideas per category in `docs/category-plans.md`);
+      link them from hubs and from the header nav once one is live.
+- [ ] Hub modules from the UX/UI review: "start here" path, comparison table, buying-guide card.
 - [ ] Internal links inside article bodies (question → guide → hub) and related-content modules.
-- [ ] Structured data on all detail pages (Article, BreadcrumbList; ItemList on listings).
-- [ ] Fill the empty hubs: Bath & care, Breastfeeding, Safety (EN).
-- [ ] Fix the German URL typo `/de/checklisten/urlaugs-checkliste/` → `urlaubs-checkliste` with a redirect.
-- [ ] Add an `npm run audit` script and an English audit.
-- [ ] robots.txt: remove `Disallow: /_astro/` and the duplicate `User-Agent: *` group.
+- [ ] Checklists and guides have no `hub` field, so the "Keep going" module on question pages
+      falls back to the first checklist; add a hub field to those schemas.
 
 ### Later (lead generation and commerce)
 - [ ] Interactive first-equipment planner (save/share by email, double opt-in).
@@ -256,3 +272,5 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 | 2026-10-10 | Core values are parent-centric (see section 1), not "checked by people / sources disclosed". |
 | 2026-10-10 | No per-post AI Act/editorial footer; reviewer info only as a quiet line at the end of a page. |
 | 2026-10-10 | Legal entity on the site: e-bambino, Hamburg, Germany, info@e-bambino.com. |
+| 2026-10-10 | Content is produced by per-category teams (PM, researcher, writer, SEO/GEO, UX/UI, publisher). Facts come only from official sources found by the researcher. Team output lands as `draft: true` and needs an editorial pass before release. |
+| 2026-10-10 | AI answer engines are a target channel (GEO): allow their crawlers, publish `/llms.txt`, keep a quotable 40–60 word short answer on every page. |

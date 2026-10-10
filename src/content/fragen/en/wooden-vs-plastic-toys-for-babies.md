@@ -13,6 +13,7 @@ slug: "wooden-vs-plastic-toys-for-babies"
 antwort: "The German and US sources reviewed here do not rank wood and plastic against each other. Verbraucherzentrale prefers untreated solid wood and warns that cheap soft plastic may contain banned plasticizers. Look for a GS mark with safety and pollutant testing, and check wooden toys for cracks, splinters and sharp edges."
 quellen: ["verbraucherzentrale", "kindergesundheit-info", "cpsc"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Wood and plastic each carry different risks, so the product and its safety labels matter as much as the material. This page draws on German consumer and child-health guidance and US rules, and says where the sources are silent.

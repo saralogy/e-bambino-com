@@ -13,6 +13,7 @@ slug: 'reusable-or-disposable-nursing-pads'
 antwort: "Disposable and washable nursing pads can both be slipped inside the bra cup to absorb milk that leaks between feedings. Neither type is ranked above the other in the sources we checked, so choose by what suits you. Avoid pads with plastic liners, which block air flow and can irritate the nipples."
 quellen: ["aap"]
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 If your breasts leak between feeds, a nursing pad can help keep your clothes dry. This page covers when pads help and which kinds to avoid.

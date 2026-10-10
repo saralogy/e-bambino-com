@@ -92,10 +92,12 @@ const jsonLd = JSON.stringify({
   <script type="application/ld+json" set:html={jsonLd} />
   <section class="page-hero">
     <div class="shell py-16 sm:py-20">
-      <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Breadcrumb">
+      <nav class="mb-4 flex flex-wrap items-center gap-x-2 text-sm text-night-500" aria-label="Breadcrumb">
         <a href={path(lang)} class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">{UI[lang].home}</a>
         <span aria-hidden="true">/</span>
         <a href={sectionPath(lang, 'questions')} class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">{COPY.crumbQuestions}</a>
+        <span aria-hidden="true">/</span>
+        <span class="text-white" aria-current="page">{hub.label}</span>
       </nav>
 
       <p class="eyebrow rise">

@@ -14,6 +14,7 @@ translationOf: "steckdosen-sichern-baby"
 antwort: "To childproof electrical outlets, cover unused outlets with safety covers while children are present. Choose covers a child cannot easily pull out and that are too large to choke on, and use tamper-resistant receptacles when outlets are replaced. Supervision still matters, because determined toddlers can overcome some outlet devices."
 quellen: ["cpsc", "aap", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 

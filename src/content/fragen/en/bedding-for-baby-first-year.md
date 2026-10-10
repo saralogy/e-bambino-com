@@ -14,6 +14,7 @@ translationOf: "bettwaesche-baby-erstes-jahr"
 antwort: "A crib needs only a fitted sheet in the first year. Blankets, pillows, duvets, comforters and bumpers stay out of the sleep space, and padded crib bumpers are banned under federal law. Crib sheets should fit snugly and be designed for crib mattresses."
 quellen: ["cpsc", "aap", "awmf", "nichd"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Crib bedding follows a few firm rules for safe sleep. Here is what to use, what to leave out and why. For the full first-weeks list, see [newborn essentials for the first weeks at home](/nursery/newborn-essentials-first-weeks/).

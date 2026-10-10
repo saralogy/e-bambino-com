@@ -13,6 +13,7 @@ slug: "umbrella-stroller-or-full-size"
 antwort: "An umbrella stroller is generally a poor fit for a newborn, according to the CPSC, though it is the lightest type and folds compactly. Choose a full-size or umbrella stroller that matches your baby's age, and confirm any newborn lie-flat claim with the manufacturer."
 quellen: ["cpsc", "aap"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Umbrella and full-size strollers suit different stages and different trips. This page compares them on newborn use, weight, folded size, and the age range each manufacturer states.

@@ -14,6 +14,7 @@ translationOf: "bildschirmzeit-ab-welchem-alter"
 antwort: "The American Academy of Pediatrics (AAP) advises discouraging screen media for children under 18 months, except video chatting, and limits children aged 2 to 5 to no more than 1 hour a day, with co-viewing recommended. The German AWMF guideline recommends screen-free use until age 3. The two guidelines differ for toddlers aged 18 to 24 months."
 quellen: ["aap", "awmf", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 Screen advice for young children is not one global rule. This page sets out what the American Academy of Pediatrics (AAP) and the German AWMF guideline recommend, and where they do not agree.

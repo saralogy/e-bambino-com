@@ -13,6 +13,7 @@ slug: 'how-many-baby-clothes-do-you-need'
 antwort: "The sources we checked do not give an exact number of baby clothes. The AAP advises buying larger sizes, since newborn sizes are often outgrown within days. For sleep, use layers or a wearable blanket that fits, and wait to buy shoes until your baby walks."
 quellen: []
 ymyl: false
+draft: true
 reviewedBy: ''
 ---
 The sources we checked do not give an exact count of baby clothes. This guide shows how to plan by size and stage, so you can add to your stock as your baby grows.

@@ -13,6 +13,7 @@ slug: 'how-to-bathe-a-newborn-before-cord-falls-off'
 antwort: "A newborn gets sponge baths, not tub baths, until the umbilical cord stump falls off, which usually happens 1 to 3 weeks after birth. Keep the stump clean and dry, wash the face first, and call the baby's doctor for yellow or white pus, swelling, redness, or active bleeding."
 quellen: ["aap", "kindergesundheit-info"]
 ymyl: true
+draft: true
 reviewedBy: ''
 ---
 A newborn gets sponge baths, not tub baths, until the umbilical cord stump falls off. Gathering everything first and keeping the baby wrapped and supported makes washing simpler in these early weeks.

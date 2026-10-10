@@ -13,6 +13,7 @@ slug: "bassinet-bedside-crib-or-crib"
 antwort: "A crib, bassinet or bedside sleeper is a safe choice when it meets federal safety standards and has a firm, flat surface with only a fitted sheet. Federal law bans inclined sleep products, and the AAP advises checking the CPSC website for recalls before you buy."
 quellen: ["cpsc", "aap"]
 ymyl: true
+draft: true
 reviewedBy: ""
 ---
 This guide compares a bassinet, a bedside crib and a full crib. The safety rules are the same for all three, so check those rules first, then compare size and space. A bedside crib, also called a bedside sleeper, attaches to an adult bed.
