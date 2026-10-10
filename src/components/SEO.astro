@@ -1,5 +1,7 @@
 ---
 // SEO.astro — meta tags, hreflang alternates, Open Graph, Twitter card, JSON-LD.
+// Emits the site-wide JSON-LD (one @graph: Organization + WebSite) on every page.
+// Page types such as Article are emitted by their own views, so none is emitted here.
 import { SITE, UI, type Lang } from '../i18n';
 
 export interface Props {
@@ -8,8 +10,11 @@ export interface Props {
   title?: string;
   description: string;
   image?: string;
+  imageAlt?: string;
   canonical?: string;
   type?: 'website' | 'article';
+  /** ISO date of the last edit; emitted as article:modified_time for article pages only. */
+  modified?: string;
 }
 
 const {
@@ -18,8 +23,10 @@ const {
   title,
   description,
   image = `${SITE}/og-default.png`,
+  imageAlt,
   canonical = Astro.url.href,
   type = 'website',
+  modified,
 } = Astro.props;
 
 const t = UI[lang];
@@ -28,26 +35,49 @@ const fullTitle = title ? `${title} | e-bambino` : t.siteTitle;
 // hreflang: every language version of this page, plus x-default → English.
 const alts = Object.entries(alternates).filter(([, p]) => p) as [Lang, string][];
 const xDefault = alternates.en;
+// og:locale:alternate: the other language versions of this page.
+const otherLocales = alts.filter(([l]) => l !== lang).map(([l]) => UI[l].ogLocale);
+
+const searchTemplate =
+  lang === 'de' ? `${SITE}/de/fragen/?q={search_term_string}` : `${SITE}/questions/?q={search_term_string}`;
 
 // JSON-LD must be serialised with set:html — a bare object literal is not valid there.
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
-  '@type': type === 'article' ? 'Article' : 'WebSite',
-  name: fullTitle,
-  description,
-  url: canonical,
-  inLanguage: lang,
-  publisher: {
-    '@type': 'Organization',
-    name: 'e-bambino',
-    url: SITE,
-    logo: { '@type': 'ImageObject', url: `${SITE}/logo.png` },
-  },
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE}/#organization`,
+      name: 'e-bambino',
+      url: SITE,
+      logo: `${SITE}/logo.png`,
+      email: 'info@e-bambino.com',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Hamburg',
+        addressCountry: 'DE',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#website`,
+      name: 'e-bambino',
+      url: SITE,
+      inLanguage: lang,
+      publisher: { '@id': `${SITE}/#organization` },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: searchTemplate },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
 });
 ---
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <link rel="canonical" href={canonical} />
 {alts.length > 1 && alts.map(([l, p]) => <link rel="alternate" hreflang={l} href={`${SITE}${p}`} />)}
 {alts.length > 1 && xDefault && <link rel="alternate" hreflang="x-default" href={`${SITE}${xDefault}`} />}
@@ -55,10 +85,15 @@ const jsonLd = JSON.stringify({
 <meta property="og:site_name" content="e-bambino" />
 <meta property="og:type" content={type} />
 <meta property="og:locale" content={t.ogLocale} />
+{otherLocales.map((locale) => <meta property="og:locale:alternate" content={locale} />)}
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={image} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={imageAlt ?? fullTitle} />
+{type === 'article' && modified && <meta property="article:modified_time" content={modified} />}
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
