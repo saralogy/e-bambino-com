@@ -1,5 +1,5 @@
 ---
-title: 'Urlaugs-Checkliste für Familien mit Kindern'
+title: 'Urlaubs-Checkliste für Familien mit Kindern'
 description: 'Die komplette Urlaubs-Checkliste für Familien mit Kindern. Was Sie für Strand, Stadt oder Berge unbedingt einpacken müssen.'
 author: 'e-bambino Redaktion'
 date: 2026-10-01

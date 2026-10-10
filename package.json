@@ -2,12 +2,13 @@
   "name": "e-bambino.com",
   "type": "module",
   "version": "0.1.0",
-  "description": "German-language family media site for DACH/EU markets",
+  "description": "e-bambino: premium baby & mom guide and product aggregator (English global, German /de/)",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "audit": "npx -y tsx scripts/run-audit.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.0",
