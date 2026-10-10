@@ -3,7 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
-import { LANGS, sectionPath, entryLang, entrySlug, dateFormat, type Lang } from '../i18n';
+import { LANGS, SITE, UI, path, sectionPath, entryLang, entrySlug, dateFormat, type Lang } from '../i18n';
 import { COLLECTIONS, type ArticleCollection } from './collections';
 
 export interface Props {
@@ -20,9 +20,44 @@ const asOf = lang === 'de' ? 'Stand' : 'Updated';
 const alternates = Object.fromEntries(
   LANGS.filter((l) => COLLECTIONS[collection][l]).map((l) => [l, sectionPath(l, COLLECTIONS[collection][l]!.section)!]),
 );
+
+const indexUrl = sectionPath(lang, c.section)!;
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: c.title,
+      description: c.description,
+      url: `${SITE}${indexUrl}`,
+      inLanguage: lang,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: UI[lang].home, item: `${SITE}${path(lang)}` },
+        { '@type': 'ListItem', position: 2, name: c.title, item: `${SITE}${indexUrl}` },
+      ],
+    },
+    ...(items.length
+      ? [
+          {
+            '@type': 'ItemList',
+            itemListElement: items.map((e, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `${SITE}${sectionPath(lang, c.section, entrySlug(e))}`,
+              name: e.data.title,
+            })),
+          },
+        ]
+      : []),
+  ],
+});
 ---
 
 <Layout {lang} {alternates} title={c.title} description={c.description}>
+  <script type="application/ld+json" set:html={jsonLd} />
   <section class="page-hero">
     <div class="shell py-16 sm:py-20">
       <SectionHeader eyebrow={c.eyebrow} title={c.title} lede={c.lede} />
