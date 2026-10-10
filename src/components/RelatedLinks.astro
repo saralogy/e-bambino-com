@@ -1,0 +1,80 @@
+---
+// RelatedLinks.astro — "Keep going" module after a question body: topic hub, one checklist or guide, all questions.
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { UI, path, sectionPath, entryLang, entrySlug, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+  hub: string;
+  hubLabel: string;
+}
+const { lang, hub, hubLabel } = Astro.props;
+
+const COPY = {
+  en: {
+    heading: 'Keep going',
+    hubTitle: `All ${hubLabel} questions`,
+    hubLabel: 'Topic',
+    checklist: 'Checklist',
+    guide: 'Guide',
+    indexLabel: 'Questions',
+    indexTitle: UI.en.questionsAll,
+  },
+  de: {
+    heading: 'Weiterlesen',
+    hubTitle: `Alle Fragen zu ${hubLabel}`,
+    hubLabel: 'Bereich',
+    checklist: 'Checkliste',
+    guide: 'Ratgeber',
+    indexLabel: 'Fragen',
+    indexTitle: UI.de.questionsAll,
+  },
+}[lang];
+
+const [checklists, guides] = await Promise.all([getCollection('checklisten'), getCollection('ratgeber')]);
+
+type Pick = { entry: CollectionEntry<'checklisten'> | CollectionEntry<'ratgeber'>; section: 'checklists' | 'guides' };
+const candidates: Pick[] = [
+  ...checklists.map((entry) => ({ entry, section: 'checklists' as const })),
+  ...guides.map((entry) => ({ entry, section: 'guides' as const })),
+].filter((c) => entryLang(c.entry) === lang);
+
+// Prefer an entry tagged for this hub (data.category or data.hub); otherwise the first checklist.
+const tagged = (c: Pick) => {
+  const data = c.entry.data as { category?: string; hub?: string };
+  return data.hub === hub || data.category === hub;
+};
+const chosen = candidates.find(tagged) ?? candidates.find((c) => c.section === 'checklists');
+
+const cards = [
+  { href: path(lang, hub), label: COPY.hubLabel, title: COPY.hubTitle },
+  ...(chosen
+    ? [{
+        href: sectionPath(lang, chosen.section, entrySlug(chosen.entry)) as string,
+        label: chosen.section === 'checklists' ? COPY.checklist : COPY.guide,
+        title: chosen.entry.data.title ?? entrySlug(chosen.entry),
+      }]
+    : []),
+  { href: sectionPath(lang, 'questions') as string, label: COPY.indexLabel, title: COPY.indexTitle },
+];
+---
+
+<section class="mt-16 border-t border-fog-100 pt-10" aria-labelledby="keep-going">
+  <h2 id="keep-going" class="eyebrow">{COPY.heading}</h2>
+  <ul class="mt-5 grid gap-4 sm:grid-cols-3">
+    {cards.map((card) => (
+      <li class="flex">
+        <a
+          href={card.href}
+          class="card-link group flex min-h-tap-m w-full flex-col gap-3 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ultramarine focus-visible:ring-offset-[3px]"
+        >
+          <span class="text-xs font-bold uppercase tracking-[0.08em] text-ultramarine-700">{card.label}</span>
+          <span class="font-display text-lg font-semibold leading-snug text-night text-pretty transition-colors duration-300 group-hover:text-ultramarine-700">
+            {card.title}
+          </span>
+          <span class="mt-auto pt-2 text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
