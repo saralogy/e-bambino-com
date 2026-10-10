@@ -109,7 +109,7 @@ const tileStyles = [
               <div class="pointer-events-none absolute -bottom-6 left-2 hidden h-20 w-20 rounded-full bg-mandarin lg:block" aria-hidden="true"></div>
               {latestFrage && (
                 <a href={`/${latestFrage.data.hub}/${latestFrage.data.slug}/`} class="relative block rounded-ds-lg bg-white p-6 text-night shadow-lift transition-transform duration-lift ease-reveal hover:-translate-y-1 lg:-rotate-2">
-                  <span class="chip-blush">{hubLabel(latestFrage.data.hub)}</span>
+                  <span class="chip-topic">{hubLabel(latestFrage.data.hub)}</span>
                   <span class="mt-4 block font-display text-xl font-bold leading-snug tracking-tight text-pretty">{latestFrage.data.frage}</span>
                   <span class="mt-4 block text-sm font-bold text-ultramarine-700">Antwort lesen →</span>
                 </a>
@@ -196,7 +196,7 @@ const tileStyles = [
           <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {fragenNeu.map((e) => (
               <a href={`/${e.data.hub}/${e.data.slug}/`} class="card-link group flex flex-col">
-                <span class="chip-blush self-start">{TAXONOMY.find((t) => t.slug === e.data.hub)?.label ?? e.data.hub}</span>
+                <span class="chip-topic self-start">{TAXONOMY.find((t) => t.slug === e.data.hub)?.label ?? e.data.hub}</span>
                 <h3 class="mt-4 font-display text-lg font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                   {e.data.frage}
                 </h3>

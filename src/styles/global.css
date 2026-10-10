@@ -162,23 +162,28 @@
   }
 
   /* Topic / category */
-  .chip-blush {
+  .chip-topic {
     @apply chip bg-ultramarine-50 text-ultramarine-700;
   }
 
   /* Highlight: new, popular */
-  .chip-sand {
+  .chip-highlight {
     @apply chip bg-limone text-night;
   }
 
   /* Neutral meta */
-  .chip-mist {
+  .chip-neutral {
     @apply chip bg-fog text-night-700;
   }
 
   /* ---------- Long-form article typography ---------- */
   .prose {
     @apply text-[1.0625rem] leading-[1.75] text-night-700;
+  }
+
+  /* Markdown pages: the hero already shows the title, so drop the duplicate H1. */
+  .prose-page > h1:first-child {
+    @apply hidden;
   }
 
   .prose > * + * {

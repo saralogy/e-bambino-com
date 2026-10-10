@@ -65,8 +65,8 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
               {n.data.bedeutung && <p class="mt-2 font-medium text-ultramarine-700">{n.data.bedeutung}</p>}
               <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{n.data.description}</p>
               <div class="mt-5 flex flex-wrap items-center gap-2">
-                {n.data.typ && <span class="chip-blush">{n.data.typ}</span>}
-                {n.data.herkunft && <span class="chip-mist">{n.data.herkunft}</span>}
+                {n.data.typ && <span class="chip-topic">{n.data.typ}</span>}
+                {n.data.herkunft && <span class="chip-neutral">{n.data.herkunft}</span>}
               </div>
             </a>
           </li>

@@ -118,7 +118,6 @@ export default {
       backgroundImage: {
         // Placeholder for missing product photos
         'photo-stripes': 'repeating-linear-gradient(135deg, #E3E5EE 0 12px, #F2F3F8 12px 24px)',
-        wash: 'linear-gradient(135deg, #FFFFFF 0%, #F2F3F8 100%)',
         deep: 'linear-gradient(150deg, #0C1020 0%, #151A30 100%)',
         'ultra-deep': 'linear-gradient(150deg, #1521A3 0%, #0C1020 100%)',
         'line-fade':

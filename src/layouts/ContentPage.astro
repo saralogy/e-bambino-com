@@ -1,14 +1,23 @@
 ---
 // ContentPage.astro — layout for Markdown pages declared via `layout:` frontmatter.
-// Renders the Markdown body inside the site shell with the shared prose typography.
+// Night hero with the page title, then the Markdown body in the shared prose typography.
 import Base from './Base.astro';
+import ArticleHero from '../components/ArticleHero.astro';
 import type { Props } from './Base.astro';
 
 const props = Astro.props as Props;
+const { frontmatter } = Astro.props as { frontmatter?: { title?: string; description?: string } };
 ---
 
 <Base {...props}>
+  <ArticleHero crumbs={[{ label: 'Start', href: '/' }, { label: frontmatter?.title ?? props.title }]}>
+    <h1 class="display-1 text-balance">{frontmatter?.title ?? props.title}</h1>
+    {frontmatter?.description && <p class="lede mt-5 text-pretty">{frontmatter.description}</p>}
+  </ArticleHero>
+
   <article class="shell measure py-12 sm:py-16">
-    <slot />
+    <div class="prose prose-page">
+      <slot />
+    </div>
   </article>
 </Base>

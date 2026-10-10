@@ -29,7 +29,7 @@ const ratgeber = await getCollection('ratgeber');
           {ratgeber.map((r) => (
             <li>
               <a href={`/ratgeber/${r.slug}/`} class="card-link group flex h-full flex-col">
-                <span class="chip-mist self-start">Ratgeber</span>
+                <span class="chip-neutral self-start">Ratgeber</span>
                 <h2 class="mt-4 font-display text-lg font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                   {r.data.title}
                 </h2>
