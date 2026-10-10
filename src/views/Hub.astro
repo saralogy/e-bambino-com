@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { shipGate } from '../lib/shipgate';
 import { hubByKey, type HubInfo } from '../i18n/hubs';
-import { UI, OTHER, path, sectionPath, entryLang, type Lang } from '../i18n';
+import { SITE, UI, OTHER, path, sectionPath, entryLang, type Lang } from '../i18n';
 
 export interface Props {
   lang: Lang;
@@ -48,9 +48,48 @@ const otherHub = hubByKey(other, hub.key);
 const otherHasPages = otherHub && alle.some((e) => entryLang(e) === other && e.data.hub === otherHub.slug);
 const alternates: Partial<Record<Lang, string>> = { [lang]: path(lang, hub.slug) };
 if (otherHub && otherHasPages) alternates[other] = path(other, otherHub.slug);
+
+// Questions in the order they are rendered (grouped by type).
+const renderedQuestions = TYPE_ORDER.flatMap((t) => byType[t] ?? []);
+const questionsUrl = sectionPath(lang, 'questions')!;
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: hub.label,
+      description: hub.answer,
+      url: `${SITE}${path(lang, hub.slug)}`,
+      inLanguage: lang,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: UI[lang].home, item: `${SITE}${path(lang)}` },
+        { '@type': 'ListItem', position: 2, name: COPY.crumbQuestions, item: `${SITE}${questionsUrl}` },
+        { '@type': 'ListItem', position: 3, name: hub.label, item: `${SITE}${path(lang, hub.slug)}` },
+      ],
+    },
+    ...(renderedQuestions.length
+      ? [
+          {
+            '@type': 'ItemList',
+            itemListElement: renderedQuestions.map((e, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `${SITE}${path(lang, hub.slug, e.data.slug)}`,
+              name: e.data.frage,
+            })),
+          },
+        ]
+      : []),
+  ],
+});
 ---
 
 <Layout {lang} {alternates} title={hub.label} description={hub.answer.slice(0, 155)}>
+  <script type="application/ld+json" set:html={jsonLd} />
   <section class="page-hero">
     <div class="shell py-16 sm:py-20">
       <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Breadcrumb">

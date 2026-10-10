@@ -3,7 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { getCollection } from 'astro:content';
-import { sectionPath, entryLang, entrySlug, type Lang } from '../i18n';
+import { SITE, UI, path, sectionPath, entryLang, entrySlug, type Lang } from '../i18n';
 
 export interface Props {
   lang: Lang;
@@ -47,6 +47,40 @@ const namen = (await getCollection('namen'))
   .filter((e) => entryLang(e) === lang)
   .sort((a, b) => a.data.title.localeCompare(b.data.title, lang));
 
+const namesUrl = sectionPath(lang, 'names')!;
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: COPY.title,
+      description: COPY.description,
+      url: `${SITE}${namesUrl}`,
+      inLanguage: lang,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: UI[lang].home, item: `${SITE}${path(lang)}` },
+        { '@type': 'ListItem', position: 2, name: COPY.title, item: `${SITE}${namesUrl}` },
+      ],
+    },
+    ...(namen.length
+      ? [
+          {
+            '@type': 'ItemList',
+            itemListElement: namen.map((n, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `${SITE}${sectionPath(lang, 'names', entrySlug(n))}`,
+              name: n.data.title,
+            })),
+          },
+        ]
+      : []),
+  ],
+});
+
 const filters = [
   { value: 'alle', label: COPY.all },
   { value: COPY.values.girl, label: COPY.girl },
@@ -57,6 +91,7 @@ const off = 'fbtn min-h-tap-s rounded-pill border-2 border-white/40 bg-transpare
 ---
 
 <Layout {lang} alternates={{ en: sectionPath('en', 'names')!, de: sectionPath('de', 'names')! }} title={COPY.title} description={COPY.description}>
+  <script type="application/ld+json" set:html={jsonLd} />
   <section class="page-hero">
     <div class="shell py-16 sm:py-20">
       <SectionHeader eyebrow={COPY.eyebrow} title={COPY.h1} lede={COPY.lede} />
