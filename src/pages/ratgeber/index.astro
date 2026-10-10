@@ -10,7 +10,7 @@ const ratgeber = await getCollection('ratgeber');
   title="Ratgeber"
   description="Fachlich geprüfte Ratgeber zu Schlaf, Ernährung und Entwicklung — mit offengelegten Quellen."
 >
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-16 sm:py-20">
       <SectionHeader
         eyebrow="Mit offengelegten Quellen"
@@ -23,18 +23,18 @@ const ratgeber = await getCollection('ratgeber');
   <section class="shell py-16 sm:py-20">
     {
       ratgeber.length === 0 ? (
-        <p class="text-mist-500">Hier werden in den nächsten Tagen Ratgeber ergänzt.</p>
+        <p class="text-night-500">Hier werden in den nächsten Tagen Ratgeber ergänzt.</p>
       ) : (
         <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ratgeber.map((r) => (
             <li>
               <a href={`/ratgeber/${r.slug}/`} class="card-link group flex h-full flex-col">
                 <span class="chip-mist self-start">Ratgeber</span>
-                <h2 class="mt-4 font-display text-lg font-semibold leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                <h2 class="mt-4 font-display text-lg font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                   {r.data.title}
                 </h2>
-                <p class="mt-3 flex-1 text-sm leading-relaxed text-mist-600">{r.data.description}</p>
-                <span class="mt-5 flex items-center gap-2 text-sm font-medium text-plum">
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{r.data.description}</p>
+                <span class="mt-5 flex items-center gap-2 text-sm font-medium text-ultramarine-700">
                   Beitrag lesen
                   <span class="transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
                     →

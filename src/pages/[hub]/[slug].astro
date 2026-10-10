@@ -60,10 +60,10 @@ const jsonLd = JSON.stringify({
   <script type="application/ld+json" set:html={jsonLd} />
 
   <article class="shell measure py-12 sm:py-16">
-    <nav class="mb-8 flex items-center gap-2 text-sm text-mist-500" aria-label="Brotkrumen">
-      <a href="/" class="transition-colors hover:text-plum">Start</a>
+    <nav class="mb-8 flex items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
+      <a href="/" class="transition-colors hover:text-ultramarine-700">Start</a>
       <span aria-hidden="true">/</span>
-      <a href={`/${entry.data.hub}/`} class="transition-colors hover:text-plum">
+      <a href={`/${entry.data.hub}/`} class="transition-colors hover:text-ultramarine-700">
         {hub?.label ?? entry.data.hub}
       </a>
     </nav>
@@ -87,39 +87,39 @@ const jsonLd = JSON.stringify({
     </header>
 
     {/* Answer-first block — 40–60 words, the AI-snippet target */}
-    <div class="mb-10 rounded-card border border-blush-200 bg-blush-50 p-6 sm:p-7">
-      <p class="text-pretty text-lg leading-relaxed text-ink">{entry.data.antwort}</p>
+    <div class="mb-10 rounded-card border border-ultramarine-100 bg-ultramarine-50 p-6 sm:p-7">
+      <p class="text-pretty text-lg leading-relaxed text-night">{entry.data.antwort}</p>
     </div>
 
     {/* Trust box */}
-    <aside class="mb-12 rounded-card border border-mist-200 bg-sand-50 p-6 text-sm">
+    <aside class="mb-12 rounded-card border border-fog-100 bg-fog p-6 text-sm">
       <dl class="grid gap-x-10 gap-y-3 sm:grid-cols-2">
         <div class="flex gap-2">
-          <dt class="font-semibold text-ink">Autor:</dt>
-          <dd class="text-mist-600">{entry.data.author}</dd>
+          <dt class="font-semibold text-night">Autor:</dt>
+          <dd class="text-night-500">{entry.data.author}</dd>
         </div>
         {entry.data.ymyl && entry.data.reviewedBy && (
           <div class="flex gap-2">
-            <dt class="font-semibold text-ink">Medizinisch geprüft:</dt>
-            <dd class="text-mist-600">{entry.data.reviewedBy}</dd>
+            <dt class="font-semibold text-night">Medizinisch geprüft:</dt>
+            <dd class="text-night-500">{entry.data.reviewedBy}</dd>
           </div>
         )}
         <div class="flex gap-2">
-          <dt class="font-semibold text-ink">Aktualisiert am:</dt>
-          <dd class="text-mist-600">{dtf.format(entry.data.updatedDate ?? entry.data.date)}</dd>
+          <dt class="font-semibold text-night">Aktualisiert am:</dt>
+          <dd class="text-night-500">{dtf.format(entry.data.updatedDate ?? entry.data.date)}</dd>
         </div>
         <div class="flex gap-2">
-          <dt class="font-semibold text-ink">Quellen:</dt>
-          <dd class="text-mist-600">
+          <dt class="font-semibold text-night">Quellen:</dt>
+          <dd class="text-night-500">
             {entry.data.quellen.length ? (
               entry.data.quellen.join(', ')
             ) : (
-              <a href="/quellen/" class="text-plum underline underline-offset-2">siehe Quellen</a>
+              <a href="/quellen/" class="text-ultramarine-700 underline underline-offset-2">siehe Quellen</a>
             )}
           </dd>
         </div>
       </dl>
-      <p class="mt-5 border-t border-mist-200 pt-4 text-xs leading-relaxed text-mist-600">
+      <p class="mt-5 border-t border-fog-100 pt-4 text-xs leading-relaxed text-night-500">
         Von Menschen erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).
         Keine medizinische Beratung.
       </p>
@@ -132,21 +132,21 @@ const jsonLd = JSON.stringify({
     {/* Siblings */}
     {
       siblings.length > 0 && (
-        <section class="mt-16 pt-10 border-t border-mist-200">
-          <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-500">
+        <section class="mt-16 pt-10 border-t border-fog-100">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-night-500">
             Weitere Fragen zu {hub?.label ?? entry.data.hub}
           </h2>
-          <ul class="mt-5 divide-y divide-mist-200 border-y border-mist-200">
+          <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
             {siblings.map((s) => (
               <li>
                 <a
                   href={`/${s.data.hub}/${s.data.slug}/`}
                   class="group flex items-center justify-between gap-6 py-4 transition-colors duration-300"
                 >
-                  <span class="font-medium text-ink transition-colors duration-300 group-hover:text-plum">
+                  <span class="font-medium text-night transition-colors duration-300 group-hover:text-ultramarine-700">
                     {s.data.frage}
                   </span>
-                  <span class="shrink-0 text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
+                  <span class="shrink-0 text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">
                     →
                   </span>
                 </a>

@@ -21,10 +21,10 @@ const rechtliches = [
   <div class="shell py-16">
     <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
       <div class="lg:col-span-4">
-        <p class="font-display text-2xl font-semibold tracking-tight">
-          e-bambino<span class="text-blush">.</span>com
+        <p class="font-display text-2xl font-extrabold tracking-tight">
+          e<span class="text-mandarin">-</span>bambino<span class="text-limone">.</span>com
         </p>
-        <p class="mt-4 max-w-xs text-sm leading-relaxed text-mist-300">
+        <p class="mt-4 max-w-xs text-sm leading-relaxed text-fog-300">
           Der italienische Familienratgeber für DACH und die EU. Namen, Checklisten und finanzielle
           Hilfen — verständlich, geprüft, auf Deutsch.
         </p>
@@ -32,14 +32,14 @@ const rechtliches = [
       </div>
 
       <div class="lg:col-span-3">
-        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-400">Bereiche</h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Bereiche</h2>
         <ul class="mt-5 space-y-3">
           {
             kategorien.map((k) => (
               <li>
                 <a
                   href={k.href}
-                  class="text-sm text-mist-200 transition-colors duration-300 hover:text-blush"
+                  class="text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
                 >
                   {k.label}
                 </a>
@@ -50,14 +50,14 @@ const rechtliches = [
       </div>
 
       <div class="lg:col-span-2">
-        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-400">Rechtliches</h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Rechtliches</h2>
         <ul class="mt-5 space-y-3">
           {
             rechtliches.map((k) => (
               <li>
                 <a
                   href={k.href}
-                  class="text-sm text-mist-200 transition-colors duration-300 hover:text-blush"
+                  class="text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
                 >
                   {k.label}
                 </a>
@@ -68,12 +68,12 @@ const rechtliches = [
       </div>
 
       <div class="lg:col-span-3">
-        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-400">Kontakt</h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Kontakt</h2>
         <ul class="mt-5 space-y-3 text-sm">
           <li>
             <a
               href="mailto:kontakt@e-bambino.com"
-              class="text-mist-200 transition-colors duration-300 hover:text-blush"
+              class="text-fog-100 transition-colors duration-300 hover:text-limone"
             >
               kontakt@e-bambino.com
             </a>
@@ -81,7 +81,7 @@ const rechtliches = [
           <li>
             <a
               href="/ueber-uns/"
-              class="text-mist-200 transition-colors duration-300 hover:text-blush"
+              class="text-fog-100 transition-colors duration-300 hover:text-limone"
             >
               Redaktion &amp; Arbeitsweise
             </a>
@@ -91,8 +91,8 @@ const rechtliches = [
     </div>
 
     <div class="mt-14 border-t border-white/10 pt-8 space-y-2 text-center">
-      <p class="text-sm text-mist-400">© {year} e-bambino.com. Alle Rechte vorbehalten.</p>
-      <p class="mx-auto max-w-2xl text-xs leading-relaxed text-mist-500">
+      <p class="text-sm text-fog-300">© {year} e-bambino.com. Alle Rechte vorbehalten.</p>
+      <p class="mx-auto max-w-2xl text-xs leading-relaxed text-fog-300">
         Inhalte von menschlichen Redakteuren erstellt und geprüft — im Einklang mit EU AI Act Art. 50.
         Keine medizinische Beratung.
       </p>

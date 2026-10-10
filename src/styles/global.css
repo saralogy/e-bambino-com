@@ -4,10 +4,11 @@
 
 @layer base {
   :root {
-    --ink: #142030;
-    --blush: #ff5c8d;
-    --mist: #85a3b2;
-    --sand: #e9d8c8;
+    --night: #0c1020;
+    --ultramarine: #2438f5;
+    --mandarin: #ff6a1a;
+    --limone: #d9f24a;
+    --fog: #f2f3f8;
     --paper: #ffffff;
   }
 
@@ -17,24 +18,25 @@
   }
 
   body {
-    @apply bg-paper text-ink antialiased;
+    @apply bg-paper text-night antialiased;
     font-family: theme('fontFamily.sans');
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
   }
 
-  /* Fraunces is a variable font with optical-size and "wonk" axes. Setting them
-     explicitly keeps the display sizes from looking loose at large sizes. */
+  /* Bricolage Grotesque: heavy weight and tight tracking give the headline its
+     stance. German compounds need room, so never go below 0.92 line height. */
   .font-display {
-    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 40;
+    font-weight: 800;
+    font-optical-sizing: auto;
   }
 
   ::selection {
-    @apply bg-blush-200 text-ink;
+    @apply bg-limone text-night;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-blush ring-offset-2 ring-offset-paper rounded-sm;
+    @apply outline-none ring-[3px] ring-ultramarine ring-offset-[3px] ring-offset-paper rounded-sm;
   }
 }
 
@@ -51,52 +53,59 @@
 
   /* ---------- Type ---------- */
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-plum;
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.08em] text-ultramarine;
+  }
+
+  .display-1,
+  .display-2 {
+    overflow-wrap: break-word;
   }
 
   .display-1 {
-    @apply font-display text-display-sm sm:text-display-md lg:text-display-lg text-ink;
+    @apply font-display text-display-sm sm:text-display-md lg:text-display-lg text-night;
   }
 
   .display-2 {
-    @apply font-display text-display-sm sm:text-display-md text-ink;
+    @apply font-display text-display-sm sm:text-display-md text-night;
   }
 
   .lede {
-    @apply text-lg sm:text-xl leading-relaxed text-mist-700;
+    @apply text-lg sm:text-xl leading-relaxed text-night-500;
   }
 
   /* ---------- Buttons ---------- */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-pill px-6 py-3
-           text-sm font-semibold transition-all duration-300 ease-smooth
-           focus-visible:ring-2 focus-visible:ring-blush focus-visible:ring-offset-2;
+    @apply inline-flex min-h-tap-m items-center justify-center gap-2 rounded-ds-md px-6 py-3
+           text-base font-bold transition-all duration-tap ease-reveal
+           focus-visible:ring-[3px] focus-visible:ring-ultramarine focus-visible:ring-offset-[3px];
   }
 
+  /* Navigate / main action */
   .btn-primary {
-    @apply btn bg-blush text-white shadow-soft
-           hover:bg-blush-600 hover:shadow-lift hover:-translate-y-0.5 active:translate-y-0;
+    @apply btn bg-ultramarine text-white hover:bg-ultramarine-600 active:translate-y-px;
+  }
+
+  /* Buy / retailer hand-off. Once per view. Night text: white fails contrast. */
+  .btn-buy {
+    @apply btn bg-mandarin text-night hover:bg-mandarin-600 active:translate-y-px;
   }
 
   .btn-secondary {
-    @apply btn bg-white text-ink border border-mist-300
-           hover:border-blush hover:text-plum hover:-translate-y-0.5
-           transition-all duration-300 ease-smooth;
+    @apply btn border-2 border-night bg-white text-night hover:bg-fog active:translate-y-px;
   }
 
   .btn-dark {
-    @apply btn bg-ink text-white hover:bg-slate-800 hover:-translate-y-0.5
-           transition-all duration-300 ease-smooth;
+    @apply btn bg-night text-white hover:bg-night-700 active:translate-y-px;
   }
 
   /* ---------- Cards ---------- */
   .card {
-    @apply rounded-card border border-mist-200 bg-white p-6
-           transition-all duration-300 ease-smooth;
+    @apply rounded-card border border-fog-100 bg-white p-6
+           transition-all duration-lift ease-reveal;
   }
 
   .card-link {
-    @apply card hover:-translate-y-1 hover:border-blush-200 hover:shadow-lift;
+    @apply card hover:-translate-y-1 hover:border-night hover:shadow-soft;
   }
 
   /* ---------- Decoration ---------- */
@@ -105,24 +114,27 @@
   }
 
   .chip {
-    @apply inline-flex items-center rounded-pill px-3 py-1 text-xs font-medium;
+    @apply inline-flex items-center rounded-pill px-3 py-1 text-xs font-bold;
   }
 
+  /* Topic / category */
   .chip-blush {
-    @apply chip bg-blush-100 text-plum;
+    @apply chip bg-ultramarine-50 text-ultramarine-700;
   }
 
+  /* Highlight: new, popular */
   .chip-sand {
-    @apply chip bg-sand-200 text-ink;
+    @apply chip bg-limone text-night;
   }
 
+  /* Neutral meta */
   .chip-mist {
-    @apply chip bg-mist-100 text-mist-700;
+    @apply chip bg-fog text-night-700;
   }
 
   /* ---------- Long-form article typography ---------- */
   .prose {
-    @apply text-[1.0625rem] leading-[1.75] text-ink-700;
+    @apply text-[1.0625rem] leading-[1.75] text-night-700;
   }
 
   .prose > * + * {
@@ -130,28 +142,28 @@
   }
 
   .prose h1 {
-    @apply font-display text-display-sm sm:text-display-md font-semibold text-ink mt-0 mb-6 text-balance;
+    @apply font-display text-display-sm sm:text-display-md text-night mt-0 mb-6 text-balance;
   }
 
   .prose h2 {
-    @apply font-display text-2xl sm:text-[1.75rem] leading-tight font-semibold text-ink mt-12 mb-4;
+    @apply font-display text-2xl sm:text-[1.75rem] leading-tight tracking-tight font-bold text-night mt-12 mb-4;
   }
 
   .prose h3 {
-    @apply font-display text-xl font-semibold text-ink mt-9 mb-3;
+    @apply font-display text-xl font-bold tracking-tight text-night mt-9 mb-3;
   }
 
   .prose h4 {
-    @apply font-semibold text-ink mt-7 mb-2;
+    @apply font-semibold text-night mt-7 mb-2;
   }
 
   .prose a {
-    @apply text-plum underline decoration-blush-200 decoration-2 underline-offset-[3px]
-           hover:decoration-blush hover:text-blush-600 transition-colors;
+    @apply text-ultramarine-700 underline decoration-ultramarine-300 decoration-2 underline-offset-[3px]
+           hover:decoration-ultramarine hover:text-ultramarine transition-colors;
   }
 
   .prose strong {
-    @apply font-semibold text-ink;
+    @apply font-semibold text-night;
   }
 
   .prose em {
@@ -159,47 +171,51 @@
   }
 
   .prose ul {
-    @apply list-disc pl-6 space-y-2 marker:text-blush;
+    @apply list-disc pl-6 space-y-2 marker:text-ultramarine;
   }
 
   .prose ol {
-    @apply list-decimal pl-6 space-y-2 marker:text-blush;
+    @apply list-decimal pl-6 space-y-2 marker:text-ultramarine;
   }
 
   .prose li::marker {
-    @apply text-blush;
+    @apply text-ultramarine;
   }
 
   .prose table {
-    @apply w-full text-sm border-collapse my-7;
+    @apply w-full min-w-full text-sm border-collapse;
+  }
+
+  .table-scroll {
+    @apply my-7 max-w-full overflow-x-auto rounded-ds-sm;
   }
 
   .prose thead {
-    @apply bg-ink text-white;
+    @apply bg-night text-white;
   }
 
   .prose th {
-    @apply text-left font-semibold px-4 py-3 tracking-wide;
+    @apply text-left font-semibold px-3 py-3 tracking-wide sm:px-4;
   }
 
   .prose td {
-    @apply border-b border-mist-200 px-4 py-3 align-top text-ink-700;
+    @apply border-b border-fog-100 px-3 py-3 align-top text-night-700 sm:px-4;
   }
 
   .prose tbody tr:nth-child(even) {
-    @apply bg-sand-50;
+    @apply bg-fog;
   }
 
   .prose blockquote {
-    @apply border-l-2 border-blush bg-blush-50 py-3 pl-5 pr-4 rounded-r-card italic text-ink-700;
+    @apply rounded-card bg-ultramarine-50 px-5 py-4 text-night-700;
   }
 
   .prose code {
-    @apply bg-mist-100 text-ink rounded px-1.5 py-0.5 text-[0.9em] font-mono;
+    @apply bg-fog text-night rounded px-1.5 py-0.5 text-[0.9em] font-mono;
   }
 
   .prose hr {
-    @apply border-0 h-px bg-mist-200 my-10;
+    @apply border-0 h-px bg-fog-100 my-10;
   }
 
   .prose img {

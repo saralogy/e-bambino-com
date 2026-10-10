@@ -57,10 +57,10 @@ const quellen = [
   title="Quellen"
   description="Die vollständige Liste der Quellen, aus denen e-bambino.com seine Inhalte prüft — von AWMF bis Destatis und BFS."
 >
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-16 sm:py-20">
       <p class="eyebrow rise">
-        <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+        <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
         {quellen.length} Quellen
       </p>
       <h1 class="display-1 mt-5 rise rise-delay-1">Unsere Quellen</h1>
@@ -71,7 +71,7 @@ const quellen = [
   </section>
 
   <section class="shell py-16 sm:py-20">
-    <ul class="divide-y divide-mist-200 border-y border-mist-200">
+    <ul class="divide-y divide-fog-100 border-y border-fog-100">
       {
         quellen.map((q) => (
           <li>
@@ -81,16 +81,16 @@ const quellen = [
                   href={q.url}
                   rel="noopener noreferrer external"
                   target="_blank"
-                  class="font-display text-xl font-semibold text-ink transition-colors duration-300 hover:text-plum"
+                  class="font-display text-xl font-semibold text-night transition-colors duration-300 hover:text-ultramarine-700"
                 >
                   {q.org}
                 </a>
-                <p class="mt-1 text-sm text-mist-500">{q.voll}</p>
-                <p class="mt-2 max-w-xl text-sm leading-relaxed text-mist-600">
-                  <span class="font-medium text-ink">Wofür:</span> {q.fuer}
+                <p class="mt-1 text-sm text-night-500">{q.voll}</p>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-night-500">
+                  <span class="font-medium text-night">Wofür:</span> {q.fuer}
                 </p>
               </div>
-              <span class="shrink-0 text-sm text-blush" aria-hidden="true">
+              <span class="shrink-0 text-sm text-ultramarine" aria-hidden="true">
                 ↗
               </span>
             </div>
@@ -99,18 +99,18 @@ const quellen = [
       }
     </ul>
 
-    <aside class="mt-14 rounded-card border border-mist-200 bg-sand-50 p-6">
-      <h2 class="font-display text-lg font-semibold text-ink">Was wir nicht als Quelle nutzen</h2>
-      <p class="mt-2 text-sm leading-relaxed text-ink-700">
+    <aside class="mt-14 rounded-card border border-fog-100 bg-fog p-6">
+      <h2 class="font-display text-lg font-semibold text-night">Was wir nicht als Quelle nutzen</h2>
+      <p class="mt-2 text-sm leading-relaxed text-night-700">
         Kein SEO-Affiliate-Netzwerk, keine unbenannten Blogs, keine Wikipedia-Abschnitte ohne Primärquelle,
         keine Zahlen aus Foren oder sozialen Medien. Wenn eine Angabe sich nicht gegen eine Primärquelle
         prüfen lässt, kommt sie nicht auf die Seite.
       </p>
     </aside>
 
-    <p class="mt-10 text-sm text-mist-600">
+    <p class="mt-10 text-sm text-night-500">
       Fehlt eine Quelle oder finden Sie einen Fehler? Schreiben Sie uns an{' '}
-      <a href="mailto:kontakt@e-bambino.com" class="text-plum underline decoration-blush-200 decoration-2 underline-offset-2">
+      <a href="mailto:kontakt@e-bambino.com" class="text-ultramarine-700 underline decoration-ultramarine-100 decoration-2 underline-offset-2">
         kontakt@e-bambino.com
       </a>
       .

@@ -36,3 +36,6 @@ npm-debug.log*
 
 # Hermes
 .hermes/
+
+# Astro
+.astro/

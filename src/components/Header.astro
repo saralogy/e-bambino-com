@@ -13,17 +13,17 @@ const current = Astro.url.pathname;
 const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
 ---
 
-<header class="sticky top-0 z-50 border-b border-mist-200/70 bg-paper/85 backdrop-blur-md">
+<header class="sticky top-0 z-50 border-b border-fog-100 bg-paper/85 backdrop-blur-md">
   <div class="shell">
     <div class="flex h-[4.25rem] items-center justify-between gap-4">
-      <a href="/" class="group flex items-baseline gap-1.5" aria-label="e-bambino Startseite">
-        <span
-          class="font-display text-[1.4rem] font-semibold tracking-tight text-ink transition-colors duration-300 group-hover:text-plum"
-        >
-          e-bambino
-        </span>
-        <span class="hidden text-[0.7rem] font-medium uppercase tracking-[0.2em] text-mist-500 sm:inline">
-          .com
+      <a href="/" class="group flex min-h-tap-s items-center gap-2.5" aria-label="e-bambino Startseite">
+        <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="7" y="3" width="11" height="42" rx="5.5" fill="#2438F5"></rect>
+          <circle cx="29" cy="30" r="12" fill="none" stroke="#2438F5" stroke-width="10"></circle>
+          <circle cx="37" cy="9" r="5.5" fill="#FF6A1A"></circle>
+        </svg>
+        <span class="font-display text-[1.5rem] font-extrabold tracking-tight text-night">
+          e<span class="text-mandarin">-</span>bambino
         </span>
       </a>
 
@@ -34,14 +34,14 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
               href={item.href}
               aria-current={isActive(item.href) ? 'page' : undefined}
               class:list={[
-                'relative rounded-pill px-3.5 py-2 text-[0.875rem] font-medium transition-colors duration-300',
-                isActive(item.href) ? 'text-plum' : 'text-ink-700 hover:text-plum',
+                'relative rounded-pill px-3.5 py-2.5 text-[0.9375rem] font-semibold transition-colors duration-300',
+                isActive(item.href) ? 'text-ultramarine' : 'text-night-700 hover:text-ultramarine',
               ]}
             >
               {item.label}
               {isActive(item.href) && (
                 <span
-                  class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-blush"
+                  class="absolute inset-x-3.5 -bottom-0.5 h-[3px] rounded-full bg-ultramarine"
                   aria-hidden="true"
                 />
               )}
@@ -52,17 +52,17 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
 
       <div class="flex items-center gap-3">
         <div
-          class="hidden items-center gap-0.5 rounded-pill bg-mist-100 p-0.5 text-xs font-semibold lg:flex"
+          class="hidden items-center gap-0.5 rounded-pill bg-fog p-0.5 text-xs font-semibold lg:flex"
           aria-label="Sprache wählen"
         >
-          <span class="rounded-pill bg-white px-2.5 py-1 text-ink shadow-soft">DE</span>
-          <span class="px-2.5 py-1 text-mist-500" title="Italienische Version folgt">IT</span>
+          <span class="rounded-pill bg-white px-2.5 py-1 text-night shadow-soft">DE</span>
+          <span class="px-2.5 py-1 text-night-500" title="Italienische Version folgt">IT</span>
         </div>
 
         <button
           id="menu-btn"
           type="button"
-          class="lg:hidden -mr-2 rounded-lg p-2 text-ink transition-colors hover:bg-mist-100"
+          class="lg:hidden -mr-2 inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-lg p-2 text-night transition-colors hover:bg-fog"
           aria-expanded="false"
           aria-controls="mobile-menu"
           aria-label="Menü öffnen"
@@ -84,7 +84,7 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
 
   <div
     id="mobile-menu"
-    class="hidden border-t border-mist-200 bg-paper lg:hidden"
+    class="hidden border-t border-fog-100 bg-paper lg:hidden"
     role="dialog"
     aria-label="Mobile Navigation"
   >
@@ -95,16 +95,16 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
             href={item.href}
             class:list={[
               'block rounded-lg px-3 py-3 text-base font-medium transition-colors',
-              isActive(item.href) ? 'bg-blush-50 text-plum' : 'text-ink-700 hover:bg-mist-100',
+              isActive(item.href) ? 'bg-ultramarine-50 text-ultramarine-700' : 'text-night-700 hover:bg-fog',
             ]}
           >
             {item.label}
           </a>
         ))
       }
-      <div class="flex items-center gap-2 px-3 pt-3 text-xs font-semibold text-mist-600">
-        <span class="rounded-pill bg-ink px-2.5 py-1 text-white">DE</span>
-        <span class="px-2.5 py-1 text-mist-500">IT (bald)</span>
+      <div class="flex items-center gap-2 px-3 pt-3 text-xs font-semibold text-night-500">
+        <span class="rounded-pill bg-night px-2.5 py-1 text-white">DE</span>
+        <span class="px-2.5 py-1 text-night-500">IT (bald)</span>
       </div>
     </nav>
   </div>

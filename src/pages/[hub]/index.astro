@@ -36,16 +36,16 @@ const TYPE_TITLE: Record<string, string> = {
 ---
 
 <Layout title={hub.label} description={hub.answer.slice(0, 155)}>
-  <section class="bg-warm-wash">
+  <section class="bg-wash">
     <div class="shell py-16 sm:py-20">
-      <nav class="mb-8 flex items-center gap-2 text-sm text-mist-500" aria-label="Brotkrumen">
-        <a href="/" class="transition-colors hover:text-plum">Start</a>
+      <nav class="mb-8 flex items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
+        <a href="/" class="transition-colors hover:text-ultramarine-700">Start</a>
         <span aria-hidden="true">/</span>
-        <a href="/fragen/" class="transition-colors hover:text-plum">Fragen</a>
+        <a href="/fragen/" class="transition-colors hover:text-ultramarine-700">Fragen</a>
       </nav>
 
       <p class="eyebrow rise">
-        <span class="inline-block h-px w-8 bg-blush" aria-hidden="true"></span>
+        <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
         {fragen.length} {fragen.length === 1 ? 'Frage' : 'Fragen'}
       </p>
       <h1 class="display-1 mt-5 max-w-3xl text-balance rise rise-delay-1">{hub.label}</h1>
@@ -56,21 +56,21 @@ const TYPE_TITLE: Record<string, string> = {
   <section class="shell py-16 sm:py-20">
     {
       fragen.length === 0 ? (
-        <p class="text-mist-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
+        <p class="text-night-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
       ) : (
         <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Sidebar: question types as an index */}
           <nav class="lg:col-span-3" aria-label="Fragentypen">
-            <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mist-500">In diesem Bereich</h2>
+            <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-night-500">In diesem Bereich</h2>
             <ul class="mt-5 space-y-3">
               {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
                 <li>
                   <a
                     href={`#typ-${t}`}
-                    class="group flex items-baseline justify-between gap-3 text-sm text-ink-700 transition-colors duration-300 hover:text-plum"
+                    class="group flex items-baseline justify-between gap-3 text-sm text-night-700 transition-colors duration-300 hover:text-ultramarine-700"
                   >
                     <span>{TYPE_TITLE[t]}</span>
-                    <span class="text-xs text-mist-400 group-hover:text-blush">
+                    <span class="text-xs text-night-500 group-hover:text-ultramarine">
                       {byType[t].length}
                     </span>
                   </a>
@@ -83,21 +83,21 @@ const TYPE_TITLE: Record<string, string> = {
           <div class="lg:col-span-9">
             {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
               <section id={`typ-${t}`} class="mb-14 last:mb-0 scroll-mt-24">
-                <h2 class="font-display text-2xl font-semibold text-ink sm:text-[1.75rem]">
+                <h2 class="font-display text-2xl font-semibold text-night sm:text-[1.75rem]">
                   {TYPE_TITLE[t]}
                 </h2>
-                <ul class="mt-5 divide-y divide-mist-200 border-y border-mist-200">
+                <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
                   {byType[t].map((e) => (
                     <li>
                       <a
                         href={`/${hub.slug}/${e.data.slug}/`}
                         class="group flex items-start justify-between gap-5 py-4 transition-colors duration-300"
                       >
-                        <span class="font-medium leading-snug text-ink transition-colors duration-300 group-hover:text-plum text-pretty">
+                        <span class="font-medium leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
                           {e.data.frage}
                         </span>
                         <span
-                          class="mt-1 shrink-0 text-blush transition-transform duration-300 ease-smooth group-hover:translate-x-1"
+                          class="mt-1 shrink-0 text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1"
                           aria-hidden="true"
                         >
                           →
