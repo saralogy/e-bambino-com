@@ -18,7 +18,7 @@ const isGirl = entry.data.typ === 'mädchen';
 
 <Layout title={entry.data.title} description={entry.data.description} type="article">
   <ArticleHero crumbs={[{ label: 'Start', href: '/' }, { label: 'Baby-Namen', href: '/namen/' }, { label: entry.data.title }]}>
-    <h1 class="font-display text-display-sm sm:text-display-md lg:text-display-lg text-balance break-words text-night">
+    <h1 class="font-display text-display-sm sm:text-display-md lg:text-display-lg text-balance break-words text-white">
       {entry.data.title}
     </h1>
     {entry.data.bedeutung && <p class="mt-4 font-display text-2xl font-bold text-limone">{entry.data.bedeutung}</p>}
