@@ -68,7 +68,12 @@ function legacyGermanRedirects() {
 export default defineConfig({
   site: 'https://e-bambino.com',
   trailingSlash: 'always',
-  redirects: legacyGermanRedirects(),
+  redirects: {
+    ...legacyGermanRedirects(),
+    // Typo URL of the vacation checklist (urlaugs -> urlaubs), kept alive for old links.
+    '/de/checklisten/urlaugs-checkliste/': '/de/checklisten/urlaubs-checkliste/',
+    '/checklisten/urlaugs-checkliste/': '/de/checklisten/urlaubs-checkliste/',
+  },
   integrations: [
     mdx(),
     tailwind({ applyBaseStyles: false }),

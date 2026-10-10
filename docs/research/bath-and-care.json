@@ -1,0 +1,229 @@
+{
+ "pieces": [
+  {
+   "slug": "how-often-to-bathe-a-baby",
+   "facts": [
+    {
+     "claim": "Newborns do not need daily baths. About three baths a week during the first year may be enough, and bathing more often can dry out the skin.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Kindergesundheit-info recommends bathing a baby once or twice a week, for about 5 to 10 minutes each time. If a baby is bathed more often, each bath should be limited to about 5 minutes.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/baden/"
+    },
+    {
+     "claim": "Thorough cleaning of the diaper area at each diaper change reduces the need for full baths.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/default.aspx"
+    },
+    {
+     "claim": "Frequent bathing with soap, or repeated loss of moisture from the skin, can dry the skin out.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/default.aspx"
+    },
+    {
+     "claim": "The bath water should be body-warm, at 36 to 37 degrees Celsius, and somewhat on the cooler side rather than too hot. Check it with a bath thermometer and by testing with the forearm.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/baden/"
+    },
+    {
+     "claim": "Hair can be washed about two to three times a week with a mild shampoo or body wash, which is less often than daily.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "A baby should never be left alone in the bath, even for a moment, and should stay within arm's reach at all times.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+    }
+   ],
+   "unverified": [
+    "The RKI or AWMF rule set 'Sicher baden - acht Regeln' was not found in official-domain search results. Every bath-safety rule still needs checking against RKI or AWMF before publication.",
+    "Room temperature for bathing: a kindergesundheit snippet gives 21 to 24 degrees, but the wording was unclear, so it is not used as a fact.",
+    "Whether a daily wash or a very short wash is harmful beyond dryness is not confirmed by an official source.",
+    "Age-by-age bath frequency beyond the first year is not confirmed by any official source found.",
+    "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing."
+   ]
+  },
+  {
+   "slug": "how-to-bathe-a-newborn-before-cord-falls-off",
+   "facts": [
+    {
+     "claim": "The umbilical cord stump usually falls off between 1 and 3 weeks after birth.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
+    },
+    {
+     "claim": "Give sponge baths only until the cord stump falls off. Continue sponge baths for a few more days after it falls off, and move to a tub bath once the umbilical area has healed.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Sponge bath steps: gather supplies first and lay the baby on a padded, flat surface. Use a safety strap or keep one hand on the baby. Wash the face first, keeping water out of the eyes and mouth, then the body, and finish with the diaper area. Keep the baby wrapped in a dry towel and expose only the part being washed.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Pay special attention to the creases under the arms, behind the ears, around the neck and in the genital area.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Keep the stump clean and dry. Fold the diaper below the cord so urine does not soak it, and check at each diaper change.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
+    },
+    {
+     "claim": "Call the baby's doctor if there is yellow or white pus, or swelling or redness around the belly button. Call immediately if the cord actively bleeds. A few drops of blood on the diaper around the time the stump falls off are normal.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
+    },
+    {
+     "claim": "Kindergesundheit-info says a baby may be bathed before the navel has healed, as long as there are no signs of inflammation. If there are signs of inflammation, washing with a washcloth is the option.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/nabelpflege/"
+    }
+   ],
+   "unverified": [
+    "The German kindergesundheit-info snippet says a stump that has not fallen off by the third month needs a doctor visit. The official AAP snippet gives 1 to 3 weeks for falling off and does not confirm this, so it is not used as a fact.",
+    "AWMF guidance on newborn cord care was not found in official-domain search results. Check against AWMF before publishing.",
+    "Warning signs in the German guidance may differ from the AAP list. Editorial should confirm the full list with kindergesundheit-info or AWMF.",
+    "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing."
+   ]
+  },
+  {
+   "slug": "baby-bathtub-or-bath-seat",
+   "facts": [
+    {
+     "claim": "Infant bath tubs have a mandatory federal safety standard that took effect on October 2, 2017. Sellers cannot legally sell non-compliant tubs made on or after that date. The standard covers latching and locking, static load testing, and drowning and fall warnings.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/CPSC-Approves-New-Federal-Safety-Standard-for-Infant-Bath-Tubs"
+    },
+    {
+     "claim": "Infant bath seats are a separate product category with their own mandatory federal standard. CPSC has issued recent warnings that some bath seats are unstable and can tip over, and that some have leg openings that can trap a child.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+    },
+    {
+     "claim": "CPSC says bath seats and rings are not safety devices and do not replace adult supervision.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+    },
+    {
+     "claim": "CPSC data for 2004 to 2015 counted 247 incidents with infant bathtubs: 31 fatal and 216 nonfatal. In 30 of the 31 fatalities, a parent or guardian was not present.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/CPSC-Approves-New-Federal-Safety-Standard-for-Infant-Bath-Tubs"
+    },
+    {
+     "claim": "Kindergesundheit-info says a baby tub needs a non-slip insert. An add-on seat placed in a large bathtub must not wobble, tip or slip.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-badespass/"
+    },
+    {
+     "claim": "Kindergesundheit-info says a baby tub should be filled only halfway with water. A child can drown in as little as 10 cm of water if the head goes under, even if the child can already sit.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-badespass/"
+    },
+    {
+     "claim": "Before buying, check the manufacture date on infant tubs, and confirm that a bath seat is not on a CPSC warning or recall list.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-YCXXKJ-Baby-Bath-Seats-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Drowning-Violates-Mandatory-Standard-for-Infant-Bath-Seats"
+    }
+   ],
+   "unverified": [
+    "Age and weight ranges for each option (tub, bath seat, sink insert) were not confirmed from an official source. Manufacturer labels must be checked, and the page must not state limits as fact.",
+    "The sink insert option was not covered by any official source found.",
+    "Space needed and storage are not confirmed by any official source.",
+    "Whether a bath seat or tub is a safe supervision substitute beyond CPSC's statement was not confirmed for the German context. Verbraucherzentrale search returned no results.",
+    "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing."
+   ]
+  },
+  {
+   "slug": "do-babies-need-baby-shampoo",
+   "facts": [
+    {
+     "claim": "The AAP advises washing a baby's hair two or three times a week with a mild shampoo or body wash.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Soaps can dry out a baby's skin. Use soap sparingly and rinse it off promptly. For heavily soiled areas, use only mild, neutral-pH soaps without additives.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "For body wash, the AAP suggests fragrance-free body washes or bar soaps with a few simple ingredients. For shampoo, it advises choosing products without phthalates or parabens, and checking the label to be sure.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/How-to-Choose-Safer-Personal-Care-Products.aspx"
+    },
+    {
+     "claim": "After bathing, a small amount of fragrance-free, hypoallergenic moisturizer can help prevent dryness or eczema.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+     "claim": "Thorough diaper-area cleaning at changes reduces the need for full baths, which also reduces the need for extra soap.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/default.aspx"
+    }
+   ],
+   "unverified": [
+    "Whether water alone is enough for the first months was not stated as a fact by any official source found, so it is not included. Editorial must not present it as settled.",
+    "What a mild or fragrance-free product changes for the skin: the AAP gives a general preference, but no official source found confirms a specific benefit. Skin-claim wording must stay conservative.",
+    "Marketing claims on bottles: no official source confirms or rejects specific claims.",
+    "How much to buy is not covered by any official source.",
+    "PMC studies on natural baby products were not used because they are not official-domain sources.",
+    "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing."
+   ]
+  },
+  {
+   "slug": "what-is-cradle-cap-and-how-to-treat-it",
+   "facts": [
+    {
+     "claim": "Cradle cap is usually harmless, and it often does not need treatment.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Cradle-Cap.aspx"
+    },
+    {
+     "claim": "In most cases, cradle cap has cleared up by age 1 year.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Cradle-Cap.aspx"
+    },
+    {
+     "claim": "Basic home care is to wash the baby's hair about every other day with a mild baby shampoo. Gentle massage, a soft brush or a baby comb can loosen scales.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Cradle-Cap.aspx"
+    },
+    {
+     "claim": "For tougher scales, a small amount of mineral oil, coconut oil or petroleum jelly can be applied and left on overnight. Do not use olive oil, because it may increase yeast growth.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Cradle+Cap"
+    },
+    {
+     "claim": "Do not pick at the scales, because that raises the risk of infection.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Cradle+Cap"
+    },
+    {
+     "claim": "See the pediatrician if the cradle cap becomes crusted, weepy, or has pus bumps.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Cradle+Cap"
+    },
+    {
+     "claim": "Check with the pediatrician before using a medicated shampoo on a baby, because it may irritate the skin.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Cradle-Cap.aspx"
+    }
+   ],
+   "unverified": [
+    "Medicated options conflict between AAP pages: the symptom checker mentions anti-dandruff shampoo twice a week and 1% hydrocortisone cream for up to 7 days, while the main article advises checking with a pediatrician first. Do not publish the specific product regimen without a pediatrician check.",
+    "Kindergesundheit-info and AWMF guidance on cradle cap was not found in official-domain search results. Both must be checked before publication.",
+    "A clinical review found in search (PMC) says salicylic acid 10% is contraindicated in infants. It is not an official-domain source, so it is listed here only as a caution to verify, not as a fact.",
+    "Whether the scales will go away by a specific age in every case is not confirmed beyond the AAP general statement.",
+    "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing."
+   ]
+  }
+ ]
+}

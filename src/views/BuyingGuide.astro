@@ -1,0 +1,204 @@
+---
+// BuyingGuide.astro — one buying guide ("how to choose X"): verdict, criteria table, types, body, checklist, price slot.
+import type { CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ArticleHero from '../components/ArticleHero.astro';
+import { getCollection, render } from 'astro:content';
+import { SOURCE_NAMES } from '../lib/sources';
+import { shipGate } from '../lib/shipgate';
+import { hubBySlug } from '../i18n/hubs';
+import { UI, OTHER, SITE, path, sectionPath, entryLang, entrySlug, entryKey, dateFormat, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+  entry: CollectionEntry<'kaufberatung'>;
+}
+const { lang, entry } = Astro.props;
+const { Content } = await render(entry);
+
+const COPY = {
+  en: {
+    indexTitle: 'Buying guides',
+    short: 'What matters most',
+    criteria: 'What to look for',
+    colCriterion: 'Criterion',
+    colWhy: 'Why it matters',
+    colLook: 'What to look for',
+    types: 'Types compared',
+    bestFor: 'Best for',
+    tradeoffs: 'Trade-offs',
+    checklist: 'Before you buy',
+    compare: 'Compare prices',
+    comingSoon: 'Price comparison is coming soon.',
+    updated: 'Updated',
+    sources: 'Sources',
+    reviewed: 'Reviewed by',
+  },
+  de: {
+    indexTitle: 'Kaufberatung',
+    short: 'Das Wichtigste in Kürze',
+    criteria: 'Worauf Sie achten sollten',
+    colCriterion: 'Kriterium',
+    colWhy: 'Warum es wichtig ist',
+    colLook: 'Worauf Sie achten',
+    types: 'Arten im Vergleich',
+    bestFor: 'Geeignet für',
+    tradeoffs: 'Nachteile',
+    checklist: 'Vor dem Kauf',
+    compare: 'Preise vergleichen',
+    comingSoon: 'Preisvergleich folgt in Kürze.',
+    updated: 'Stand',
+    sources: 'Quellen',
+    reviewed: 'Geprüft von',
+  },
+}[lang];
+
+
+const hub = hubBySlug(lang, entry.data.hub);
+const hubLabel = hub?.label ?? entry.data.hub;
+const dtf = dateFormat(lang);
+const updated = entry.data.updatedDate ?? entry.data.date;
+const indexPath = sectionPath(lang, 'buyingGuides')!;
+
+// Translation of this guide, if it is published.
+const other = OTHER[lang];
+const twin = (await getCollection('kaufberatung'))
+  .filter((e) => shipGate({ slug: e.id, ...e.data }).ship)
+  .find((e) => entryLang(e) === other && entryKey(e) === entryKey(entry));
+const alternates: Partial<Record<Lang, string>> = { [lang]: sectionPath(lang, 'buyingGuides', entrySlug(entry))! };
+if (twin) alternates[other] = sectionPath(other, 'buyingGuides', entrySlug(twin))!;
+
+const pageUrl = `${SITE}${alternates[lang]}`;
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: entry.data.title,
+      description: entry.data.description,
+      datePublished: entry.data.date.toISOString(),
+      dateModified: updated.toISOString(),
+      inLanguage: lang,
+      mainEntityOfPage: pageUrl,
+      author: { '@id': `${SITE}/#organization` },
+      publisher: { '@id': `${SITE}/#organization` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: UI[lang].home, item: `${SITE}${path(lang)}` },
+        { '@type': 'ListItem', position: 2, name: COPY.indexTitle, item: `${SITE}${indexPath}` },
+        { '@type': 'ListItem', position: 3, name: entry.data.title, item: pageUrl },
+      ],
+    },
+  ],
+});
+---
+
+<Base {lang} {alternates} title={entry.data.title} description={entry.data.description} type="article">
+  <script type="application/ld+json" set:html={jsonLd} />
+
+  <ArticleHero crumbs={[{ label: UI[lang].home, href: path(lang) }, { label: COPY.indexTitle, href: indexPath }, { label: entry.data.title }]}>
+    <dl class="flex flex-wrap items-center gap-2">
+      <div>
+        <dt class="sr-only">{COPY.indexTitle}</dt>
+        <dd class="chip-topic">{hubLabel}</dd>
+      </div>
+      <div>
+        <dt class="sr-only">{COPY.updated}</dt>
+        <dd class="chip-neutral"><time datetime={updated.toISOString()}>{COPY.updated} {dtf.format(updated)}</time></dd>
+      </div>
+    </dl>
+    <h1 class="display-2 mt-6 text-balance">{entry.data.title}</h1>
+    <p class="lede mt-5 text-pretty">{entry.data.description}</p>
+  </ArticleHero>
+
+  <article class="shell measure pb-12 sm:pb-16">
+    <div id="answer" class="relative z-10 -mt-9 mb-10 rounded-ds-lg bg-ultramarine p-6 text-white shadow-lift sm:p-8">
+      <p class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{COPY.short}</p>
+      <p class="mt-3 text-pretty text-lg leading-relaxed sm:text-xl">{entry.data.antwort}</p>
+    </div>
+
+    <section aria-labelledby="criteria" class="mt-12">
+      <h2 id="criteria" class="font-display text-2xl font-bold tracking-tight text-night sm:text-3xl">{COPY.criteria}</h2>
+      <div class="prose">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">{COPY.colCriterion}</th>
+                <th scope="col">{COPY.colWhy}</th>
+                <th scope="col">{COPY.colLook}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {entry.data.criteria.map((c) => (
+                <tr>
+                  <th scope="row" class="font-semibold text-night">{c.name}</th>
+                  <td>{c.why}</td>
+                  <td>{c.lookFor}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    {
+      entry.data.types && entry.data.types.length > 0 && (
+        <section aria-labelledby="types" class="mt-12">
+          <h2 id="types" class="font-display text-2xl font-bold tracking-tight text-night sm:text-3xl">{COPY.types}</h2>
+          <ul class="mt-6 grid gap-6 sm:grid-cols-2">
+            {entry.data.types.map((t) => (
+              <li class="card h-full">
+                <h3 class="font-display text-xl font-semibold text-night">{t.name}</h3>
+                <dl class="mt-4 space-y-4 text-sm leading-relaxed text-night-700">
+                  <div>
+                    <dt class="text-xs font-bold uppercase tracking-[0.08em] text-ultramarine-700">{COPY.bestFor}</dt>
+                    <dd class="mt-1">{t.bestFor}</dd>
+                  </div>
+                  <div>
+                    <dt class="text-xs font-bold uppercase tracking-[0.08em] text-ultramarine-700">{COPY.tradeoffs}</dt>
+                    <dd class="mt-1">{t.tradeoffs}</dd>
+                  </div>
+                </dl>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <div class="prose mt-12">
+      <Content />
+    </div>
+
+    {
+      entry.data.checklist && entry.data.checklist.length > 0 && (
+        <section aria-labelledby="checklist" class="mt-14 rounded-ds-lg bg-limone p-6 text-night sm:p-8">
+          <h2 id="checklist" class="font-display text-xl font-bold tracking-tight">{COPY.checklist}</h2>
+          <ul class="mt-5 space-y-4">
+            {entry.data.checklist.map((item) => (
+              <li class="flex items-start gap-3 text-base leading-relaxed">
+                <span class="mt-1 h-5 w-5 shrink-0 rounded-ds-sm border-2 border-night" aria-hidden="true" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="compare" class="mt-14 rounded-ds-lg bg-fog p-6 sm:p-8">
+      <h2 id="compare" class="font-display text-xl font-bold tracking-tight text-night">{COPY.compare}</h2>
+      <p class="mt-2 text-base leading-relaxed text-night-700">{COPY.comingSoon}</p>
+    </section>
+
+    <p class="mt-12 border-t border-fog-100 pt-6 text-sm leading-relaxed text-night-500">
+      {COPY.updated} {dtf.format(updated)}
+      {entry.data.quellen.length ? <> · {COPY.sources}: <a href={sectionPath(lang, 'sources')} class="text-ultramarine-700 underline underline-offset-2">{entry.data.quellen.map((k: string) => SOURCE_NAMES[k] ?? k).join(', ')}</a></> : null}
+      {entry.data.ymyl && entry.data.reviewedBy ? <> · {`${COPY.reviewed} ${entry.data.reviewedBy}`}</> : null}
+    </p>
+  </article>
+</Base>

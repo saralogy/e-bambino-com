@@ -52,10 +52,33 @@ const ratgeberCollection = defineCollection({
   schema: contentSchema,
 });
 
+// Buying guides (Kaufberatung): "how to choose X" pages. Publication is gated by shipGate.
+const kaufberatungCollection = defineCollection({
+  type: 'content',
+  schema: contentSchema.extend({
+    title: z.string(),
+    // No `slug` field: Astro reserves it. The URL slug is the file name (entrySlug).
+    hub: z.string(),
+    translationOf: z.string().optional(),
+    /** Short verdict: what matters most when choosing this product. */
+    antwort: z.string(),
+    quellen: z.array(z.string()).default([]),
+    ymyl: z.boolean().default(false),
+    reviewedBy: z.string().optional(),
+    /** Decision criteria, rendered as a table. */
+    criteria: z.array(z.object({ name: z.string(), why: z.string(), lookFor: z.string() })),
+    /** Product types compared, rendered as cards. */
+    types: z.array(z.object({ name: z.string(), bestFor: z.string(), tradeoffs: z.string() })).optional(),
+    /** Questions to ask in the store, rendered as a checklist. */
+    checklist: z.array(z.string()).optional(),
+  }),
+});
+
 // Export all collections
 export const collections = {
   namen: namenCollection,
   checklisten: checklistenCollection,
   finanz: finanzCollection,
   ratgeber: ratgeberCollection,
+  kaufberatung: kaufberatungCollection,
 };

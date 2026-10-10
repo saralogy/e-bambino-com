@@ -6,7 +6,7 @@ date: 2026-10-10
 updatedDate: 2026-10-10
 tags: ['travel', 'family', 'checklist']
 category: 'checklists'
-translationOf: 'urlaugs-checkliste'
+translationOf: 'urlaubs-checkliste'
 ---
 ## At a glance
 

@@ -1,0 +1,266 @@
+{
+ "pieces": [
+  {
+   "slug": "how-much-should-baby-drink-first-year",
+   "facts": [
+    {
+     "claim": "Bottle-fed newborns usually take about 1 to 2 oz (30 to 60 mL) per feeding in the first 2 to 3 days, then about 2 to 3 oz (60 to 90 mL) every 3 to 4 hours.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+     "claim": "By the end of the first month, a formula-fed baby usually takes at least 3 to 4 oz (about 120 mL) per feeding, on a roughly 3 to 4 hour schedule.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+     "claim": "By 6 months, a baby takes about 6 to 8 oz (180 to 240 mL) at each of 4 or 5 feedings in 24 hours.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+     "claim": "Most babies do not need more than about 32 oz (950 mL) of formula a day. If a baby always wants more or less than this, the pediatrician should be consulted.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-much-formula-does-my-baby-need.aspx"
+    },
+    {
+     "claim": "Breastfed newborns usually nurse about every 2 hours, which is roughly 10 to 12 feeding sessions in 24 hours. The CDC lists breastfeeding fewer than 8 times in 24 hours on most days as a possible warning sign.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/newborn-basics.html"
+    },
+    {
+     "claim": "Regular wet and dirty diapers are a sign that a baby is eating enough. A well-nourished newborn has 6 or more wet diapers a day by 5 to 7 days old, with pale urine.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/"
+    },
+    {
+     "claim": "In the first days after birth a baby may lose up to about 8 to 10 percent of birth weight. Not gaining about 5 to 7 oz per week after the milk comes in is a warning sign to raise with a clinician.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/How-to-Tell-if-Baby-is-Getting-Enough-Milk.aspx"
+    },
+    {
+     "claim": "Exclusive breastfeeding is recommended for about the first six months. After that, complementary foods should be added while breastfeeding continues, up to two years or beyond, because the baby's energy and nutrient needs begin to exceed what breast milk provides at about 6 months.",
+     "sourceKey": "who",
+     "url": "https://www.emro.who.int/nutrition/breastfeeding/exclusively-breastfeed-for-6-months.html"
+    },
+    {
+     "claim": "In the first four to six months, breast milk or formula provides enough fluid. An extra drink of about 200 mL per day is enough, and the German guidance on drinks for the first year says the baby signals hunger and fullness, so package amounts are only a rough guide.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/getraenke/"
+    }
+   ],
+   "unverified": [
+    "RKI: no RKI page with per-feed or per-age volumes was found. The RKI breastfeeding page surfaced in search but did not give amounts. Do not attribute any amount to RKI.",
+    "Table band 3 to 6 months (per-feed amount and feeds per day): no official figure was found for this band. The AAP figures give only the 1 month and 6 month points.",
+    "Table band 6 to 12 months (per-feed amount): only the 6 month AAP figure was confirmed. No official per-feed figure for 6 to 12 months was found.",
+    "WHO feeding frequency of 8 to 12 feeds per 24 hours in the first weeks: only secondary sources (a preprint) were found. WHO itself did not confirm this figure. Do not attribute it to WHO.",
+    "German volume figures of about 0.7 L per day under 4 months and 0.4 L per day from 4 to under 12 months (plus solids) come from an NIH-hosted German review (pmc.ncbi.nlm.nih.gov), not an allowed official source. They are not confirmed.",
+    "Conflicting German figures for the second half of the first year: one source gives 0.4 L per day in addition to solids, another gives about 600 to 700 mL per day total once family food is reached. Needs an editor decision.",
+    "German figures of 6 bottle meals per day in the newborn period and 5 from the second month come from the same non-official review and are not confirmed.",
+    "The 1 to 2 oz first-days figure and the 3 to 4 oz end-of-month figure come from search summaries, not from direct page text. Confirm against the AAP page before publishing."
+   ]
+  },
+  {
+   "slug": "when-to-stop-bottle-feeding",
+   "facts": [
+    {
+     "claim": "The AAP recommends starting the bottle-to-cup transition around 6 months by offering a first cup, reducing bottle feeds slowly, and completing the transition between 12 and 18 months.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Discontinuing-the-Bottle.aspx"
+    },
+    {
+     "claim": "The AAP says it is healthiest for a child to drink from an open cup by about age 2. Sippy cups are a temporary step, and children with chronic illness, physical differences or motor delays may need a schedule set with the pediatrician.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Discontinuing-the-Bottle.aspx"
+    },
+    {
+     "claim": "German guidance: from the first year, a child should drink from a cup or glass where possible. From the second year the child learns to drink from a normal cup, and at the latest from then on, nipple bottles, spouted cups and valve bottles should be avoided.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/risiken-vorbeugen/alltagstipps/zahngesundheit/empfehlungen/"
+    },
+    {
+     "claim": "German guidance says special learning cups or spoons are not necessary. A normal cup is enough for learning to drink.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/infomaterial-service/nachrichten/artikel/artikel/wie-gelingt-das-gemeinsame-essen-mit-kleinkindern-am-familientisch/"
+    },
+    {
+     "claim": "The Verbraucherzentrale advises offering extra drinks from a cup, mug or glass from the start. Bottle use makes it harder to learn to drink. Constant sucking and a bottle at sleep raise the risk of tooth decay, including with plain water.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/trinkwasser-das-beste-getraenk-fuers-baby-62027"
+    },
+    {
+     "claim": "The AAP's symptom guidance says falling asleep with a bottle of milk or juice can cause severe tooth decay.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Bottle-Feeding+%28Formula%29+Questions"
+    },
+    {
+     "claim": "The CDC says propping a bottle or leaving it in the baby's mouth can raise the risk of choking, ear infections and tooth decay. A parent should not force a baby to finish a bottle when showing signs of fullness.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/bottle-feeding/index.html"
+    }
+   ],
+   "unverified": [
+    "Exact age to drop the bottle: the AAP gives a 12 to 18 month window. A separate AAP/AAPD summary says a transition from bottle to lidless cup by 12 months is recommended to prevent caries, but the original guidance was not confirmed. The two need to be reconciled.",
+    "German guidance does not give a fixed age for stopping the bottle. The only German timing is 'at the latest from the second year'.",
+    "Advice to stop the bedtime bottle first and to track progress for 2 to 3 weeks before the next step: no source found. The checklist steps are editorial method, not sourced guidance.",
+    "Lutschgewohnheit ending by the end of the third year: this comes from an orthodontic source, not an allowed official domain. Not confirmed.",
+    "Advice not to put a baby to bed with a bottle appeared in CDC/FDA search summaries, but the exact page was not confirmed. The AAP tooth-decay point is confirmed."
+   ]
+  },
+  {
+   "slug": "formula-stage-by-age",
+   "facts": [
+    {
+     "claim": "Säuglingsanfangsnahrung (Pre- or 1-Nahrung) suits the whole first year, including after solids are introduced. Pre-formulas use only lactose as carbohydrate, like breast milk. Some 1-formulas also contain starch.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/babynahrung-wenn-nicht-oder-nur-teilweise-gestillt-wird-62023"
+    },
+    {
+     "claim": "Follow-on formula (Folgemilch, labeled '2' or higher) is largely similar to starter formula apart from a higher iron content. The Verbraucherzentrale says it should be introduced at the earliest from the 7th month, together with complementary foods.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/babynahrung-wenn-nicht-oder-nur-teilweise-gestillt-wird-62023"
+    },
+    {
+     "claim": "From an expert perspective, switching from starter formula to follow-on formula is not necessary, according to the Verbraucherzentrale.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/babynahrung-wenn-nicht-oder-nur-teilweise-gestillt-wird-62023"
+    },
+    {
+     "claim": "German guidance says complementary foods should start no earlier than after the completed 4th month and no later than the start of the 7th month.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/beikosteinfuehrung/"
+    },
+    {
+     "claim": "The FDA does not approve infant formulas. Manufacturers must notify the FDA before marketing a new formula. Formulas must meet minimum levels for 30 nutrients and maximum levels for 10 of them, use approved or GRAS ingredients, and be tested for Salmonella and Cronobacter.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/food/resources-you-food/infant-formula-homepage"
+    },
+    {
+     "claim": "Specialized medical formulas do not have to meet the standard FDA nutrient requirements, which is why they are used under medical direction.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/food/resources-you-food/infant-formula-homepage"
+    },
+    {
+     "claim": "The German S3 allergy-prevention guideline recommends exclusive breastfeeding for the first four to six months where possible. If formula is needed before complementary feeding starts, it recommends considering an infant formula with study-proven allergy-prevention effect.",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/061-016l_S3_Allergiepraevention_2022-11.pdf"
+    },
+    {
+     "claim": "The AAP advises discussing formula amounts with the pediatrician if a baby always seems to want more or less than usual.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-much-formula-does-my-baby-need.aspx"
+    }
+   ],
+   "unverified": [
+    "No FDA rule separating starter from follow-on formula was found. The relevant text (21 CFR parts 106 and 107) was not retrieved, so the US stage distinction is unconfirmed.",
+    "EFSA opinion on follow-on formula (at least 1.6 g protein per 100 kcal) is not from an allowed official domain and comes from a secondary summary. Not confirmed.",
+    "Start of follow-on formula: the Verbraucherzentrale gives the 7th month, while another German summary gives from the 5th month alongside complementary feeding. Needs an editor decision.",
+    "The Verbraucherzentrale statement that parents of babies at allergy risk are free to choose any formula and need not use HA formula conflicts with the AWMF wording. Needs an editor check before publication.",
+    "Typical base and typical age per stage in the comparison table: no official source gives these as a table. Only the basic age ranges above were confirmed.",
+    "EU rules on advertising and price comparison for infant formula were not searched and are not confirmed here."
+   ]
+  },
+  {
+   "slug": "which-baby-bottle-to-buy",
+   "facts": [
+    {
+     "claim": "The Verbraucherzentrale rates glass as the most suitable material for avoiding substances passing into food. Glass holds up to 200 °C and tolerates hot cleaning.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/glas-7059"
+    },
+    {
+     "claim": "Glass is heavier and more fragile than plastic. There is no single legal rule specific to glass, so manufacturers usually follow lead and cadmium limits.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/glas-7059"
+    },
+    {
+     "claim": "Polycarbonate has been banned in the EU for baby bottles and training cups since 2011.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/kennzeichnung-und-inhaltsstoffe/lebensmittelverpackungen-geben-sie-schadstoffe-ab-52294"
+    },
+    {
+     "claim": "The Verbraucherzentrale does not recommend specific plastic types, because the same plastic can be harmless or release substances depending on its additives.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/auswirkungen-von-plastik-auf-die-gesundheit-7010"
+    },
+    {
+     "claim": "German guidance says silicone teats do not need boiling at home. Rubber teats become porous over time and should be replaced or occasionally boiled.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/flaschenfuetterung/"
+    },
+    {
+     "claim": "The hole in a teat should let about one drop per second fall from an inverted bottle. A hole that is too large makes babies drink fast and swallow air. Thicker formulas suit a medium hole.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/flaschenfuetterung/"
+    },
+    {
+     "claim": "The AAP advises holding the baby semi-upright during bottle feeding and never bottle-feeding a baby lying flat, because this raises the choking risk. The teat should stay full of milk to limit swallowed air.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Bottle-Feeding-How-Its-Done.aspx"
+    },
+    {
+     "claim": "The CPSC warned in 2026 to stop using infant self-feeding pillows because they can cause aspiration and suffocation. Never prop a bottle with a pillow, blanket or other support.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-Consumers-to-Immediately-Stop-Using-Infant-Self-Feeding-Pillows-Due-to-Risk-of-Serious-Injury-or-Death-from-Aspiration-and-Suffocation"
+    },
+    {
+     "claim": "The CDC says bottles should be cleaned after every feeding. Sanitizing matters most for babies under 2 months, premature babies and babies with weakened immune systems.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html"
+    }
+   ],
+   "unverified": [
+    "Whether an anti-colic vent or anti-colic bottle reduces colic or gas: no evidence was found. The brief's question 'Do I need an anti-colic vent?' cannot be answered from official sources.",
+    "Silicone teats having a smooth surface that resists milk residue and germs better than rubber: only a non-official medical source was found. Not confirmed.",
+    "Glass being easier and safer to clean than plastic: the source is an NIH-hosted German review, not an allowed domain. Only the CDC cleaning guidance is confirmed.",
+    "Bottle weight, breakage and heat-tolerance comparisons for polypropylene and silicone liners: no official source found beyond glass and the polycarbonate ban.",
+    "Number of bottles needed to start: no source found.",
+    "The criteria used in the method box are editorial and must be stated by the editor. No official source sets a scoring method for bottles.",
+    "CPSC guidance specific to bottle materials was not found. The 2026 CPSC items concern self-feeding pillows only."
+   ]
+  },
+  {
+   "slug": "when-to-start-solid-food",
+   "facts": [
+    {
+     "claim": "WHO recommends exclusive breastfeeding for about the first six months. At about 6 months, the baby's energy and nutrient needs exceed what breast milk provides, so safe complementary foods should be introduced while breastfeeding continues up to two years or beyond.",
+     "sourceKey": "who",
+     "url": "https://www.emro.who.int/nutrition/breastfeeding/exclusively-breastfeed-for-6-months.html"
+    },
+    {
+     "claim": "WHO-linked operational guidance says most infants are ready for complementary foods around 6 months. Some may be ready from 4 to 6 months if they can sit with good head control and show other readiness signs.",
+     "sourceKey": "who",
+     "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/operational-guidance/are-ch-38-03-operationalguidance-2018-eng-cpg-complementary-feeding-protocol.pdf"
+    },
+    {
+     "claim": "German readiness signs: the baby sits upright with support, holds its head steady, has lost the tongue-thrust reflex, makes chewing movements, shows interest in food and reaches for it.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/beikost-fuer-ihr-baby-bereit-fuer-den-brei-62024"
+    },
+    {
+     "claim": "Further German readiness signs: the baby is interested in what others eat, moves its mouth while watching, and puts food or objects into its mouth. The first porridge should start once the child shows this interest.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/erster-brei/"
+    },
+    {
+     "claim": "German guidance gives a start window of no earlier than the completed 4th month and no later than the start of the 7th month. Many babies can learn to eat from a spoon by the start of the 5th month, and nearly all by the end of the 6th month.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/beikosteinfuehrung/"
+    },
+    {
+     "claim": "Finger food needs the baby to grasp and swallow lumpy food. Some children lack this at 5 to 7 months, so several specialist bodies advise against starting only with baby-led weaning.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/beikosteinfuehrung/"
+    }
+   ],
+   "unverified": [
+    "Whether six months is the right age: the WHO guidance points to about 6 months, but German sources give a 4 to 7 month window. The editor should explain both.",
+    "Recommended first foods: no official source was retrieved for this question.",
+    "WHO wording that starting before 4 months shows no benefit and may stress immature kidneys, gut and immune system: only a secondary summary was found. Confirm on who.int before publishing.",
+    "Allergy-related timing of complementary foods and when to talk to a pediatrician for a known allergy: the AWMF wording on complementary-food timing was not retrieved.",
+    "Prematurity and corrected age for starting solids: no source found.",
+    "The AAP starting-solids page exists but its text was not retrieved, so AAP readiness wording is unconfirmed. Link to high-chair-age only once published."
+   ]
+  }
+ ]
+}

@@ -1,9 +1,11 @@
 ---
-// Question.astro — one question page: answer-first card, trust box, body, sibling questions.
+// Question.astro — one question page: answer-first card, body, related links, sibling questions.
 import type { CollectionEntry } from 'astro:content';
 import Layout from '../layouts/Base.astro';
 import ArticleHero from '../components/ArticleHero.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
 import { getCollection, render } from 'astro:content';
+import { SOURCE_NAMES } from '../lib/sources';
 import { shipGate } from '../lib/shipgate';
 import { hubBySlug } from '../i18n/hubs';
 import { UI, OTHER, SITE, path, sectionPath, entryLang, entryKey, dateFormat, type Lang } from '../i18n';
@@ -53,13 +55,13 @@ const twin = alle.find((e) => entryLang(e) === other && entryKey(e) === entryKey
 const alternates: Partial<Record<Lang, string>> = { [lang]: path(lang, entry.data.hub, entry.data.slug) };
 if (twin) alternates[other] = path(other, twin.data.hub, twin.data.slug);
 
-const SOURCE_NAMES: Record<string, string> = {
-  who: 'WHO', unece: 'UNECE', cpsc: 'CPSC', rki: 'RKI', awmf: 'AWMF',
-  'kindergesundheit-info': 'kindergesundheit-info.de', verbraucherzentrale: 'Verbraucherzentrale',
-};
 const typLabel = COPY.types[entry.data.frageTyp] ?? entry.data.frageTyp;
 const dtf = dateFormat(lang);
 const updated = entry.data.updatedDate ?? entry.data.date;
+
+const pageUrl = `${SITE}${path(lang, entry.data.hub, entry.data.slug)}`;
+const orgId = `${SITE}/#organization`;
+const reviewed = entry.data.ymyl && entry.data.reviewedBy ? entry.data.reviewedBy : null;
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -71,8 +73,24 @@ const jsonLd = JSON.stringify({
       datePublished: entry.data.date.toISOString(),
       dateModified: updated.toISOString(),
       inLanguage: lang,
-      author: { '@type': 'Organization', name: entry.data.author },
-      publisher: { '@type': 'Organization', name: 'e-bambino', url: SITE },
+      mainEntityOfPage: pageUrl,
+      author: { '@id': orgId },
+      publisher: { '@id': orgId },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+      url: pageUrl,
+      name: entry.data.frage,
+      inLanguage: lang,
+      mainEntity: {
+        '@type': 'Question',
+        name: entry.data.frage,
+        text: entry.data.frage,
+        answerCount: 1,
+        acceptedAnswer: { '@type': 'Answer', text: entry.data.antwort, url: `${pageUrl}#answer` },
+      },
+      ...(reviewed ? { reviewedBy: { '@type': 'Person', name: reviewed }, lastReviewed: updated.toISOString() } : {}),
     },
     {
       '@type': 'BreadcrumbList',
@@ -104,7 +122,7 @@ const jsonLd = JSON.stringify({
   </ArticleHero>
 
   <article class="shell measure pb-12 sm:pb-16">
-    <div class="relative z-10 -mt-9 mb-10 rounded-ds-lg bg-ultramarine p-6 text-white shadow-lift sm:p-8">
+    <div id="answer" class="relative z-10 -mt-9 mb-10 rounded-ds-lg bg-ultramarine p-6 text-white shadow-lift sm:p-8">
       <p class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{COPY.short}</p>
       <p class="mt-3 text-pretty text-lg leading-relaxed sm:text-xl">{entry.data.antwort}</p>
     </div>
@@ -118,6 +136,8 @@ const jsonLd = JSON.stringify({
       {entry.data.quellen?.length ? <> · {COPY.sources}: <a href={sectionPath(lang, 'sources')} class="text-ultramarine-700 underline underline-offset-2">{entry.data.quellen.map((k: string) => SOURCE_NAMES[k] ?? k).join(', ')}</a></> : null}
       {entry.data.ymyl && entry.data.reviewedBy ? <> · {`${COPY.reviewed} ${entry.data.reviewedBy}`}</> : null}
     </p>
+
+    <RelatedLinks {lang} hub={entry.data.hub} {hubLabel} />
 
     {
       siblings.length > 0 && (

@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { shipGate } from '../lib/shipgate';
 import { hubsFor, hubBySlug } from '../i18n/hubs';
-import { path, sectionPath, entryLang, dateFormat, type Lang } from '../i18n';
+import { SITE, UI, path, sectionPath, entryLang, dateFormat, type Lang } from '../i18n';
 
 export interface Props {
   lang: Lang;
@@ -58,9 +58,38 @@ const newest = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.va
 const alleSortiert = [...fragen].sort((a, b) => a.data.frage.localeCompare(b.data.frage, lang));
 const dtf = dateFormat(lang);
 const self = sectionPath(lang, 'questions')!;
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: COPY.title,
+      description: COPY.description,
+      url: `${SITE}${self}`,
+      inLanguage: lang,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: UI[lang].home, item: `${SITE}${path(lang)}` },
+        { '@type': 'ListItem', position: 2, name: COPY.title, item: `${SITE}${self}` },
+      ],
+    },
+    ...(perHub.length
+      ? [
+          {
+            '@type': 'ItemList',
+            itemListElement: perHub.map((h, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${path(lang, h.slug)}`, name: h.label })),
+          },
+        ]
+      : []),
+  ],
+});
 ---
 
 <Layout {lang} alternates={{ en: sectionPath('en', 'questions')!, de: sectionPath('de', 'questions')! }} title={COPY.title} description={COPY.description}>
+  <script type="application/ld+json" set:html={jsonLd} />
   <section class="page-hero">
     <div class="shell py-20 sm:py-24">
       <div class="max-w-3xl">

@@ -1,0 +1,202 @@
+{
+ "pieces": [
+  {
+   "slug": "diaper-size-by-weight",
+   "facts": [
+    {
+     "claim": "No official (AAP, CDC, WHO, NIH) diaper size chart by weight was found. Size ranges are set by each manufacturer and differ by brand, so the pack's printed weight range is the reference.",
+     "sourceKey": "aap",
+     "url": "https://aap.org/en/patient-care/newborn-and-infant-nutrition/newborn-and-infant-nutrition-assessment-tools/anthropometric-measurements"
+    },
+    {
+     "claim": "Fit check from the AAP: after changing, the diaper tabs should be evenly secured in front, with no gaps around the hips.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Changing-Diapers.aspx"
+    },
+    {
+     "claim": "The AAP says an infant can be weighed in a clean diaper if the scale is first zeroed with the weight of that clean diaper, which is a way to get a weight reading for comparing against a size range.",
+     "sourceKey": "aap",
+     "url": "https://aap.org/en/patient-care/newborn-and-infant-nutrition/newborn-and-infant-nutrition-assessment-tools/anthropometric-measurements"
+    },
+    {
+     "claim": "The CDC publishes growth charts that track infant weight and length percentiles over time, which is the official reference for whether a baby is gaining weight normally.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/growthcharts/index.htm"
+    }
+   ],
+   "unverified": [
+    "Typical weight range for each diaper size (Newborn, 1 through 6) is not confirmed by any official domain. Do not print numeric ranges without a brand's current pack or site as the source.",
+    "What to do when a baby sits between two sizes: no official guidance found.",
+    "When to move up to the next size (leaks, red marks, tight waistband): no official source found for these signs.",
+    "Whether sizes overlap across brands: no official source found.",
+    "The German planning file windelgroesse-nach-gewicht: no German official source (kindergesundheit-info or verbraucherzentrale) on diaper sizing was found, so the German page needs its own sourcing or translationOf should be dropped."
+   ]
+  },
+  {
+   "slug": "diaper-rash-treatment",
+   "facts": [
+    {
+     "claim": "Zinc oxide and petrolatum are both good barrier-cream choices for diaper rash, fragrance-free products are best, and a thick layer should be applied in the diaper area after bathing.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
+    },
+    {
+     "claim": "For a simple irritant rash the AAP advises rinsing the area gently with water, letting the skin air-dry, and applying a thick barrier cream.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
+    },
+    {
+     "claim": "The AAP symptom checker says a diaper rash should clear in about 3 days when treated correctly; if it does not, yeast may be involved, and an over-the-counter anti-yeast cream is suggested.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+     "claim": "The AAP symptom checker says to avoid ibuprofen for babies under 6 months of age.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+     "claim": "Call the doctor now for bright red skin that peels off in sheets, for fever with an infected look or spreading redness, and for any concern in a baby under one month old.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+     "claim": "Call the doctor within 24 hours for pimples, blisters, boils, yellow scabs, or open sores in the diaper area.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+     "claim": "Contact the doctor during office hours if the rash spreads outside the diaper area or is not better after 3 days of anti-yeast cream.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+     "claim": "A diaper rash that comes with a fever warrants a call to the doctor.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
+    },
+    {
+     "claim": "Kindergesundheit-Info: to prevent skin inflammation, change diapers as often as possible and immediately after each bowel movement.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/wickeln/"
+    },
+    {
+     "claim": "Kindergesundheit-Info lists zinc oxide ointment for a sore bottom as part of the basic home first-aid kit for children.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/krankes-kind/alltagstipps/im-krankheitsfall/hausapotheke/"
+    }
+   ],
+   "unverified": [
+    "Exact home-care window before calling for a non-yeast rash: the AAP sources give 3 days for the yeast case only. The brief's 2-3 day window for an irritant rash is not confirmed as a single official number.",
+    "Cause list (wet or soiled diaper, friction, yeast, bacteria, antibiotics): the AAP page names rash types (irritant, yeast, bacterial) but the causes were only partly confirmed in the snippets. Verify on the full AAP page before writing the cause list.",
+    "Prevalence figures (diaper dermatitis as the most common skin condition in the first two years, 7 to 35 percent) came from a non-official review and are not used.",
+    "US labeling for OTC zinc oxide creams (stop use and see a doctor if symptoms last more than 7 days or return) comes from DailyMed labels. No listed source key applies, so it is not used.",
+    "Whether a reviewer should be named: not a research question, and the page stays held until a named reviewer has read it."
+   ]
+  },
+  {
+   "slug": "potty-training-readiness",
+   "facts": [
+    {
+     "claim": "A child is ready for toilet training when they are dry for at least 2 hours at a time during the day or stay dry after naps.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Psychological-Readiness-and-Motor-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "claim": "Readiness includes being aware of their own bladder and bowel signals, such as grunting, squatting, or freezing when they need a bowel movement.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Psychological-Readiness-and-Motor-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "claim": "A ready child can follow simple instructions and tell an adult they need help getting to the toilet.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Cognitive-and-Verbal-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "claim": "Physical readiness includes walking to and from the bathroom, helping to undress, sitting or standing comfortably, and pulling pants up and down.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Psychological-Readiness-and-Motor-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "claim": "Willingness signs include disliking wet diapers, asking to be changed, asking to use the potty, or asking for big-kid underwear.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Psychological-Readiness-and-Motor-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "claim": "The average age toilet training begins in the United States is between 2 and 3 years, and most children are bowel and bladder trained by age 4.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx"
+    },
+    {
+     "claim": "The CDC says starting toilet training too early can cause stress and setbacks, which can make training take longer.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+     "claim": "Bowel and bladder control arrive at different times; nighttime bowel control often comes early and naturally, while bladder control usually comes much later.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Stages-of-Toilet-Training-Different-Skills-Different-Schedules.aspx"
+    },
+    {
+     "claim": "Kindergesundheit-Info: bladder and bowel control usually comes by itself once the child is physically ready; first signs usually appear in the second and third year, and early potty training does not make it faster.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/entwicklungsschritte/trocken-und-sauberwerden/"
+    },
+    {
+     "claim": "Kindergesundheit-Info: occasional nighttime bedwetting up to age 5 is considered normal.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/index.php?id=8023"
+    },
+    {
+     "claim": "The AAP warns that constipation can start a withholding cycle during training. The child should keep trying and keep any prescribed medicine until training is complete, and a child with constipation should be checked by a pediatrician rather than stopping training on their own.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/health-issues/conditions/abdominal/Pages/constipation.aspx"
+    }
+   ],
+   "unverified": [
+    "How long potty training takes in days or weeks: no official figure was confirmed. The one number found (a few hours in one small study) is not from an official source and must not be used.",
+    "Timeline for children with special needs (months to a year or more): not confirmed from an official page.",
+    "The six signs in the brief should be checked against the full AAP stages page before publication, since the snippets covered readiness in several separate pages.",
+    "Potty chair versus seat insert: no official source found for this question in the search results.",
+    "Guidance that diapers and disposable training pants send the wrong message, and that cloth training pants can help protect clothing: the snippet came from the general AAP potty-training page, so confirm the exact wording on that page before quoting it."
+   ]
+  },
+  {
+   "slug": "pull-ups-vs-tape-diapers",
+   "facts": [
+    {
+     "claim": "Any diaper must absorb urine and stool, be leakproof, and feel comfortable for the child.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/wickeln/"
+    },
+    {
+     "claim": "Kindergesundheit-Info describes pull-up style diapers (Höschenwindeln) as sealing well, so clothing usually stays dry. The source discusses them as disposable diapers and does not directly compare them with tape diapers.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/wickeln/"
+    },
+    {
+     "claim": "The AAP says diapers and disposable training pants send a message that a child does not need to learn to use the toilet, so they are not a substitute for potty training.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    },
+    {
+     "claim": "For frequent night accidents during training, the AAP suggests keeping the child in training pants or even a diaper at night for as long as they are comfortable in them.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    },
+    {
+     "claim": "The AAP recommends changing diapers as often as possible and immediately after a bowel movement to prevent skin inflammation, which applies to both pull-ups and tape diapers.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/wickeln/"
+    }
+   ],
+   "unverified": [
+    "Fit, changing ease, and leak protection differences between pull-ups and tape diapers: no official source comparing the two was found. The Verbraucherzentrale search returned no pull-up versus tape comparison, so this must come from a consumer test or be left out.",
+    "Which one suits a crawling or very active baby: no official source found.",
+    "Pull-ups are only for potty training (the question in the brief): the AAP wording is about training pants and night use, so this claim is not confirmed and should not be stated as fact.",
+    "Price per diaper: no official source. It must be calculated from real retailer prices on the publication date and must not be estimated.",
+    "The Verbraucherzentrale page referenced in the brief as a source was not found in any search result, so it cannot be cited."
+   ]
+  }
+ ]
+}

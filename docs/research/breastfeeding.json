@@ -1,0 +1,245 @@
+{
+ "pieces": [
+  {
+   "slug": "how-often-to-breastfeed-newborn",
+   "facts": [
+    {
+     "claim": "Most babies need to breastfeed 8 to 12 times in 24 hours during the first six months; WHO guidance is to feed on demand, whenever the baby is hungry.",
+     "sourceKey": "who",
+     "url": "https://www.who.int/news-room/questions-and-answers/item/breastfeeding"
+    },
+    {
+     "claim": "A breastfed newborn may need to nurse about 8 to 12 times per 24 hours (NICHD).",
+     "sourceKey": "nichd",
+     "url": "https://www.nichd.nih.gov/health/topics/factsheets/breastfeeding"
+    },
+    {
+     "claim": "Newborns should nurse whenever they show hunger cues, and should not go longer than about 2 to 3 hours during the day or 4 hours at night without a feeding.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+     "claim": "Early hunger cues include rooting and lip-smacking; crying is a late sign of hunger, so feeding earlier is recommended.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+     "claim": "In the first weeks, gaps between feeds can be between 1 and 3 hours, and a feed usually lasts 10 to 45 minutes; most newborns want to nurse several times at night in the first weeks.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/stillalltag/"
+    },
+    {
+     "claim": "Babies may want to feed as often as every 1 to 3 hours at first; later, most exclusively breastfed babies feed every 2 to 4 hours.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/how-much-and-how-often.html"
+    },
+    {
+     "claim": "Around six weeks many infants go through a growth spurt, which naturally brings more hunger.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/stillalltag/"
+    },
+    {
+     "claim": "Signs of adequate intake include frequent feeding, at least 6 wet diapers a day after the milk comes in (pale, thin urine), and regular weight gain.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/stillalltag/"
+    },
+    {
+     "claim": "Weight gain is the most reliable check that a baby is getting enough milk; a breastfed baby should be back to birth weight by about day 10 to 14.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/How-to-Tell-if-Baby-is-Getting-Enough-Milk.aspx"
+    }
+   ],
+   "unverified": [
+    "Typical feeding counts by age band for 1 to 3 months and 4 to 6 months (the table) were not confirmed from an official source; only the first-weeks range and the later 2 to 4 hour interval are sourced.",
+    "Warning-sign threshold of fewer than 8 feeds per 24 hours and weight loss after day 5 was reported in search summaries but not confirmed against a specific official page text; check before using as a threshold.",
+    "Specific WHO diaper-count criteria (6 single-use or 8 washable wet nappies) were reported via a secondary summary; confirm on a WHO page before quoting.",
+    "The German taxonomie.ts claim of 8 to 12 feeds a day is consistent with the sources above, but the AWMF guideline was not located in search."
+   ]
+  },
+  {
+   "slug": "how-long-is-breast-milk-good-for",
+   "facts": [
+    {
+     "claim": "Freshly expressed breast milk can stay at room temperature (77 F or colder) for up to 4 hours.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "Freshly expressed breast milk keeps in the refrigerator for up to 4 days.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "In a freezer at 0 F or below, breast milk is best used within about 6 months and is acceptable up to 12 months.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "HealthyChildren.org gives a different freezer window: up to 9 months in a freezer with a separate door (0 F) and up to 12 months in a chest or deep freezer (-4 F); its general advice is 4 hours at room temperature and 4 days in the refrigerator. The US sources differ on freezer time, so the page must name one source.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Storing-and-Preparing-Expressed-Breast-Milk.aspx"
+    },
+    {
+     "claim": "Thawed breast milk must never be refrozen once it has fully thawed (CDC).",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "Milk thawed in the refrigerator should be used within 24 hours, counted from when it is fully thawed; once warmed or at room temperature it should be used within 2 hours.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "CDC advises thawing in the refrigerator overnight, in lukewarm water, or under lukewarm running water, and says not to thaw or heat breast milk in a microwave because it can create hot spots.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "Milk left over from a feeding should be used within 2 hours after the baby finishes, then discarded.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "Milk can be carried for up to 24 hours in an insulated cooler with frozen ice packs; do not store milk in the refrigerator or freezer door, and leave about one inch of space at the top of the container for freezing.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+     "claim": "In an emergency such as a power outage, CDC says partly thawed milk that still has ice crystals can be refrozen, and fully thawed milk that still feels cold should be refrigerated and used within a day or discarded; when in doubt, throw it out.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/special-considerations.html"
+    },
+    {
+     "claim": "Kindergesundheit-info (German parent portal) gives: refrigerate at about 4 to 6 C for up to 4 days, store in the coldest part of the fridge rather than the door, and freezer compartments of a fridge (about -15 C) only for up to 2 weeks.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/hygiene-bei-muttermilch/"
+    }
+   ],
+   "unverified": [
+    "German room-temperature figure (about 6 to 8 hours at 15 to 25 C) from kindergesundheit-info was truncated in the search snippet; unit and exact value are not confirmed.",
+    "No RKI table with breast-milk storage times was found; the German draft values (4 hours, 4 days, 6 months) are not confirmed by an RKI or AWMF source.",
+    "AWMF S2k guideline on human milk in healthcare settings was listed but its storage times were not visible in results; check the full PDF.",
+    "Refreezing guidance outside the power-outage context and the full CDC refreezing rule for partially thawed milk need a direct page check."
+   ]
+  },
+  {
+   "slug": "manual-or-electric-breast-pump",
+   "facts": [
+    {
+     "claim": "The FDA considers most breast pumps single-user devices, because they cannot be guaranteed to be cleaned and disinfected between users.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/medical-devices/breast-pumps/buying-and-renting-breast-pump"
+    },
+    {
+     "claim": "Only pumps designed as multiple-user pumps can be rented safely; hospitals, lactation consultants and medical supply stores rent them, and each renter needs a new accessories kit (breast shields and tubing).",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/medical-devices/breast-pumps/buying-and-renting-breast-pump"
+    },
+    {
+     "claim": "The FDA does not recognize the term hospital-grade pump, and there is no consistent definition of it across companies.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/medical-devices/breast-pumps/buying-and-renting-breast-pump"
+    },
+    {
+     "claim": "The FDA says manual and powered pumps designed for a single user should never be rented or shared, and contaminated pumps could cause infection in the mother and baby.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/consumers/consumer-updates/what-know-when-buying-or-using-breast-pump"
+    },
+    {
+     "claim": "A typical pumping session is about 10 to 15 minutes per breast, and pumping should stop when it is no longer comfortable or productive.",
+     "sourceKey": "fda",
+     "url": "https://cacmap.fda.gov/medical-devices/breast-pumps/using-breast-pump"
+    },
+    {
+     "claim": "Electric pumps are usually faster, and a double pump (both breasts at once) can reduce pumping time; manual pumps are easier to carry and need no outlet.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/medical-devices/breast-pumps/types-breast-pumps"
+    },
+    {
+     "claim": "The FDA warns that powered pumps depend on electricity or batteries, so parents should have a back-up method, such as a manual pump, to keep a pumping schedule during an emergency.",
+     "sourceKey": "fda",
+     "url": "https://www.fda.gov/medical-devices/breast-pumps/types-breast-pumps"
+    },
+    {
+     "claim": "The CDC advises pumping about as often as the baby would normally feed, and adding an extra session if the baby needs more milk while the parent is away.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/pumping-breast-milk.html"
+    },
+    {
+     "claim": "The AAP suggests about 15 minutes of pumping, on average, for each 4 hours the breastfeeding parent is apart from the baby.",
+     "sourceKey": "aap",
+     "url": "https://www.aap.org/en/patient-care/breastfeeding/frequently-asked-questions/"
+    }
+   ],
+   "unverified": [
+    "No listed source key covers pump specifications or device standards (for example EU MDR or FDA 510(k) requirements); add a regulator source key before writing specification claims.",
+    "Flange fit, noise levels and portability ratings were not sourced; no prices or ratings can be stated.",
+    "Cleaning and disinfection steps for multi-user rental pumps were not found in FDA results; use manufacturer instructions or a sourced page.",
+    "Whether a double electric pump is worth the cost was not sourced; only the time-saving claim is supported."
+   ]
+  },
+  {
+   "slug": "reusable-or-disposable-nursing-pads",
+   "facts": [
+    {
+     "claim": "Disposable or washable breast pads can be slipped inside the bra cup to absorb milk that leaks between feedings; they are useful for parents whose breasts leak a lot.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/pages/Nursing-Supplies.aspx"
+    },
+    {
+     "claim": "Pads with plastic liners that block air flow around the nipples should be avoided because they can irritate the nipples.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/pages/Nursing-Supplies.aspx"
+    }
+   ],
+   "unverified": [
+    "Only two facts could be confirmed from an official domain. No official source was found on when nursing pads are needed in the first months, on sleep or travel use, or on sensitive-skin choices.",
+    "No official source was found on care steps for washable (reusable) pads, such as washing or drying guidance.",
+    "Cost comparison between reusable and disposable pads is not sourced; keep cost claims out.",
+    "A 1997 randomized trial comparing a PVC milk-leakage device with disposable pads (PubMed, nih.gov domain) found no evidence that either caused more problems. It is not mapped to a listed source key, so it is not usable as a fact until a key is added.",
+    "Patent documents claim that a wet pad against the nipple can lead to dryness and cracking; these are not medical guidance and are excluded."
+   ]
+  },
+  {
+   "slug": "is-breastfeeding-pain-normal",
+   "facts": [
+    {
+     "claim": "Pain that continues beyond the first minute or so of nursing is a sign of improper latch and should be corrected right away; to fix it, break the suction with a finger in the corner of the baby's mouth and latch the baby on again, covering as much of the areola as possible.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/ensuring-proper-latch-on.aspx"
+    },
+    {
+     "claim": "The CDC advises talking to a lactation consultant or doctor if the nipple skin is cracked or damaged, or if pain does not improve over the first 1 to 2 weeks.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/what-to-expect-while-breastfeeding.html"
+    },
+    {
+     "claim": "Call a doctor if sore or cracked nipples are not better after 24 hours of treatment (HealthyChildren.org symptom checker).",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Breast-Feeding+Questions"
+    },
+    {
+     "claim": "Breastfeeding pain together with a fever should be discussed with a doctor or nurse.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Warning-Signs-of-Breastfeeding-Problems.aspx"
+    },
+    {
+     "claim": "Mastitis symptoms that continue for more than 24 hours or get worse should be reported to a doctor.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Mastitis.aspx"
+    },
+    {
+     "claim": "If the baby still seems hungry after most feedings, the pediatrician should see the baby and weigh them right away; trouble latching, a weak suck and painful breastfeeding are listed as reasons to call.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Warning-Signs-of-Breastfeeding-Problems.aspx"
+    }
+   ],
+   "unverified": [
+    "Tongue-tie (ankyloglossia) assessment and frenotomy as a fix for pain despite good latch come from a family-physician review (PMC), not an official domain; not usable until confirmed on an official source.",
+    "Specific fever threshold and a hot, red breast lump as a warning sign were not confirmed text on an official page; confirm on the AAP mastitis page before quoting.",
+    "Lactation consultant (IBCLC) or midwife credentials and the reviewer requirement are not sourced here; reviewedBy must stay empty until a named reviewer confirms the page.",
+    "Latch-helping techniques beyond breaking suction and re-latching (for example positioning) need an official page check."
+   ]
+  }
+ ]
+}

@@ -53,6 +53,22 @@ function words(s: string) {
   return s.trim().split(/\s+/).filter(Boolean).length;
 }
 
+/** Hard rules (any language). These make the audit exit with code 1. */
+export const HARD_RULES = ['no-source', 'italian-reference', 'emoji'] as const;
+const ITALIAN_REF = /\b(italian|italy|italia|italien\w*)\b/i;
+// Pictographs, dingbats and arrows-with-emoji ranges; plain punctuation (é, ü, –, §) is not matched.
+const EMOJI = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}]/u;
+
+/** Brand and format rules: no Italian framing, no emojis. */
+function hardRuleIssues(text: string): AuditIssue[] {
+  const issues: AuditIssue[] = [];
+  const it = text.match(ITALIAN_REF);
+  if (it) issues.push(err('italian-reference', `Italien-Bezug im Text ("${it[0]}") — Marke ist nicht italienisch (AGENTS.md §1)`));
+  const em = text.match(EMOJI);
+  if (em) issues.push(err('emoji', `Emoji im Text ("${em[0]}") — keine Emojis in Inhalten`));
+  return issues;
+}
+
 export function auditContent(input: {
   slug: string;
   title: string;
@@ -92,7 +108,11 @@ export function auditContent(input: {
   if (!input.extra) issues.push(err('no-extra', 'Kein sichtbares Extra (Tabelle/Checkliste/Timeline/Rechner) — Pflicht laut Doctrine'));
 
   // --- 5. Sources ---------------------------------------------------------
-  if (!input.quellen?.length) issues.push(err('no-source', 'Keine Quellenangabe — Verifica-Gate'));
+  // Held pages (YMYL without reviewer) are never published, so a missing source is only a warning there.
+  const held = !!input.ymyl && !input.reviewedBy;
+  if (!input.quellen?.length) {
+    issues.push(held ? warn('no-source', 'Keine Quellenangabe (Seite ist gesperrt)') : err('no-source', 'Keine Quellenangabe — Verifica-Gate'));
+  }
 
   // --- 6. YMYL: named reviewer + absolute-claim discipline ----------------
   if (input.ymyl) {
@@ -117,6 +137,9 @@ export function auditContent(input: {
   for (const q of input.subQuestions) {
     if (/^(Über|Was|Wie|Warum|Besteht)\b[^?]{0,40}:/.test(q.h)) issues.push(warn('colon-heading', `Doppelpunkt-Überschrift ist ein KI-Tell: "${q.h}"`));
   }
+
+  // --- 7b. Brand and format hard rules ------------------------------------
+  issues.push(...hardRuleIssues(allText));
 
   // --- 8. Information density --------------------------------------------
   const fw = FILLER.filter((f) => allText.toLowerCase().includes(f)).length;
@@ -154,6 +177,87 @@ export function report(results: AuditResult[]) {
   lines.push('───────────────────────────────────────────────────────');
   lines.push(`  ${results.length} Seiten · ${failed.length} fehlgeschlagen · Ø Score ${Math.round(results.reduce((n, r) => n + r.score, 0) / (results.length || 1))}`);
   lines.push(failed.length === 0 ? '  ERGEBNIS: BESTANDEN ✓' : `  ERGEBNIS: ${failed.length} SEITEN BLOCKIERT`);
+  lines.push('═══════════════════════════════════════════════════════');
+  return lines.join('\n');
+}
+
+// ---------------------------------------------------------------------------
+// English checks (src/content/fragen/en). Simpler than the German gate: they
+// check structure, US spelling, brand rules and sourcing. Warnings never fail.
+// ---------------------------------------------------------------------------
+
+export interface EnglishFrontmatter {
+  slug?: string;
+  antwort?: string;
+  quellen?: string[];
+  ymyl?: boolean;
+  reviewedBy?: string;
+  draft?: boolean;
+}
+
+export interface EnglishResult extends AuditResult {
+  held: boolean;
+}
+
+const BRITISH = /\b(nappy|nappies|pram|prams|pushchair|pushchairs|colour|colours|favourite|favourites|paediatrician|paediatricians|paediatric|cot|cots)\b/gi;
+
+export function auditEnglish(body: string, fm: EnglishFrontmatter): EnglishResult {
+  const issues: AuditIssue[] = [];
+  const slug = fm.slug ?? 'unknown';
+  const held = !!fm.draft || (!!fm.ymyl && !fm.reviewedBy);
+  const quellen = fm.quellen ?? [];
+
+  // Answer-first block: 25–80 words.
+  const aw = words(fm.antwort ?? '');
+  if (aw < 25 || aw > 80) issues.push(warn('answer-length', `Direktantwort ${aw} words, target 25–80`));
+
+  // At least one H2 that is a question.
+  const h2s = [...body.matchAll(/^##\s+(.+)$/gm)].map((m) => m[1].trim());
+  if (!h2s.some((h) => h.endsWith('?'))) issues.push(warn('no-question-h2', 'No H2 ending in "?"'));
+
+  // At least one visible extra: table or list.
+  const hasTable = /^\|.+\|\s*$/m.test(body);
+  const hasList = /^\s*(?:[-*+]|\d+\.)\s+\S/m.test(body);
+  if (!hasTable && !hasList) issues.push(warn('no-extra', 'No table or list in the body'));
+
+  // US spelling.
+  const brit = [...new Set((body.match(BRITISH) ?? []).map((w) => w.toLowerCase()))];
+  if (brit.length) issues.push(warn('british-spelling', `British term(s) for US copy: ${brit.join(', ')}`));
+
+  // Sources.
+  if (!quellen.length) {
+    issues.push(held ? warn('no-source', 'No sources listed (page is held)') : err('no-source', 'No sources listed (quellen is empty)'));
+  }
+
+  // YMYL without reviewer: held, not published.
+  if (fm.draft) issues.push(warn('draft-held', 'HELD: draft, waiting for editorial pass'));
+  else if (held) issues.push(warn('ymyl-held', 'HELD: ymyl page without reviewedBy, not generated'));
+
+  // Hard brand and format rules.
+  issues.push(...hardRuleIssues(body + '\n' + (fm.antwort ?? '')));
+
+  const errors = issues.filter((i) => i.level === 'error').length;
+  const warns = issues.filter((i) => i.level === 'warn').length;
+  const score = Math.max(0, 100 - errors * 20 - warns * 5);
+  return { slug, issues, score, pass: errors === 0, held };
+}
+
+export function reportEnglish(results: EnglishResult[]) {
+  const lines: string[] = [];
+  lines.push('═══════════════════════════════════════════════════════');
+  lines.push('  EB-AUDIT — English content checks (fragen/en)');
+  lines.push('═══════════════════════════════════════════════════════');
+  for (const r of results) {
+    const hard = r.issues.some((i) => i.level === 'error');
+    const tag = r.held ? 'HELD' : hard ? 'FAIL' : r.issues.length ? 'WARN' : 'OK';
+    lines.push(`[${tag}] ${r.slug}  (Score ${r.score})`);
+    for (const i of r.issues) lines.push(`    [${i.level.toUpperCase()}] ${i.rule}: ${i.msg}`);
+  }
+  const held = results.filter((r) => r.held).length;
+  const failed = results.filter((r) => !r.pass).length;
+  const warned = results.filter((r) => r.pass && !r.held && r.issues.length).length;
+  lines.push('───────────────────────────────────────────────────────');
+  lines.push(`  ${results.length} pages · ${held} held · ${warned} with warnings · ${failed} with hard errors`);
   lines.push('═══════════════════════════════════════════════════════');
   return lines.join('\n');
 }

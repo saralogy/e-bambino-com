@@ -1,0 +1,341 @@
+{
+ "pieces": [
+  {
+   "slug": "childproof-electrical-outlets",
+   "facts": [
+    {
+     "claim": "CPSC's home electrical checklist advises buying safety covers for unused outlets when children are present.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/513.pdf"
+    },
+    {
+     "claim": "CPSC says outlet covers must be hard for a child to remove and large enough that a child cannot choke on them.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+     "claim": "CPSC recommends tamper-resistant receptacles when outlets are replaced.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+     "claim": "CPSC cautions that determined toddlers have been known to overcome or disable outlet devices, so supervision is still needed.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+     "claim": "If a child keeps going back to an outlet, block access with furniture; keep electrical cords out of reach and sight.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+     "claim": "CPSC notes that a GFCI (ground fault circuit interrupter) prevents many electrocutions, and its checklist recommends testing each GFCI monthly per the manufacturer's instructions.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/513.pdf"
+    },
+    {
+     "claim": "Toddlers most often get shocked when they bite electrical cords or poke metal objects such as forks or knives into unprotected outlets or appliances.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/pages/Electric-Shock.aspx"
+    },
+    {
+     "claim": "Kindergesundheit-info recommends installing child-safe outlets or retrofitting existing outlets, including power strips, with child locks, and securing outdoor outlets too; child-safe outlets open only when a plug is inserted.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/1-3-jahre/unfallschwerpunkte/sicherheitsregeln/"
+    },
+    {
+     "claim": "Electrical accidents at outlets are listed by Kindergesundheit-info as a typical accident type from about 7 months to 4 years of age.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/entwicklungsaspekte/unfallschwerpunkte/"
+    },
+    {
+     "claim": "AWMF guideline text describes low-voltage burns when children push objects such as knitting needles or nails into unprotected outlets; these mostly affect toddlers up to school age and may need surgical or conservative treatment.",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/006-128l_S2K_Behandlung-thermische-Verletzungen-Kinder-Verbrennung-Verbruehung_2024-08_1.pdf"
+    }
+   ],
+   "unverified": [
+    "Which specific outlet covers (two-piece, plug-in guards) a child can or cannot pull off: no official source compared product types.",
+    "From what age to start covering outlets: no official age was confirmed.",
+    "Which outlets parents usually forget (floor-level, kitchen, outdoor): only the German outdoor-outlet point is sourced; floor-level and kitchen were not confirmed.",
+    "Tamper-resistant outlets being required by the National Electrical Code: only patent background text mentions this; verify against the NEC before use.",
+    "Renter-friendly options and tools needed for each cover type: not covered by any source.",
+    "German sources for the brief were searched once; the German (translationOf) version should be checked against the Kindergesundheit-info checklist for electricity before release."
+   ]
+  },
+  {
+   "slug": "dangerous-household-items-for-toddlers",
+   "facts": [
+    {
+     "claim": "CPSC advises storing medicines, cleaning and laundry products, paints and varnishes, and pesticides in their original packaging in locked cabinets or containers, out of sight and reach of children.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/NSN07_032023_PoisonPrevention_Social_v2.pdf?VersionId=KinIOpoc9jml_wuX.ktUDWkJJPRnkx_m"
+    },
+    {
+     "claim": "Child-resistant safety caps are designed to slow children down but are not fully childproof.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/NSN07_032023_PoisonPrevention_Social_v2.pdf?VersionId=KinIOpoc9jml_wuX.ktUDWkJJPRnkx_m"
+    },
+    {
+     "claim": "HealthyChildren.org recommends traditional liquid or powder laundry detergent instead of detergent packets until all children who live in or visit the home are at least 6 years old, because even a small amount can cause serious breathing or stomach problems or eye irritation.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Poison-Prevention.aspx"
+    },
+    {
+     "claim": "Button batteries can cause severe injury or death if swallowed; keep products with accessible button batteries out of reach and tape battery compartments that do not have a screw closure.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/how-can-i-protect-my-child-from-the-dangers-of-lithium-coin-and-button-batteries.aspx"
+    },
+    {
+     "claim": "A swallowed button-cell battery needs emergency department treatment immediately; serious tissue damage can occur in as little as 2 hours.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/how-can-i-protect-my-child-from-the-dangers-of-lithium-coin-and-button-batteries.aspx"
+    },
+    {
+     "claim": "CPSC lists the National Battery Ingestion Hotline at 800-498-8666 for button battery ingestion.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Button-Cell-Coin-Battery-Information-Center"
+    },
+    {
+     "claim": "If a child swallows or is exposed to a potentially dangerous product, call Poison Help at 1-800-222-1222 immediately; the call is answered by experts at the local poison center.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Poison-Prevention-Information-Center"
+    },
+    {
+     "claim": "Call the poison center even when you suspect but are not sure that a child has swallowed a hazardous product; the AAP notes the line is free, expert and confidential.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Poison-Prevention.aspx"
+    },
+    {
+     "claim": "The AAP advises against making a child vomit and against using syrup of ipecac; if a child is unconscious, not breathing, or having seizures, call 911 or the local emergency number first.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Poison-Prevention.aspx"
+    },
+    {
+     "claim": "CPSC's small parts rule bans toys and children's products intended for children under 3 that contain or break into small parts; a small part fits fully into a test cylinder 2.25 inches long and 1.25 inches wide that approximates the expanded throat of a child under three.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Small-Parts-for-Toys-and-Childrens-Products"
+    },
+    {
+     "claim": "In February 2026 CPSC warned consumers to stop using 5-IN-1 Toddler Musical Instruments because they violate the small parts and small ball bans and pose a choking hazard.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-5-IN-1-Toddler-Musical-Instruments-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Choking-Violates-Small-Parts-and-Ball-Bans"
+    },
+    {
+     "claim": "HealthyChildren.org says 27% to 60% of scald burns in children under 5 come from hot liquids in cups, mugs and tableware; never carry a hot drink and a baby at the same time, and keep mugs and bowls away from table edges.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Treating-and-Preventing-Burns.aspx"
+    },
+    {
+     "claim": "The AAP recommends the hottest tap water at the faucet be no more than 120 degrees Fahrenheit, and CPSC gives the same figure for the water heater thermostat; a 140 F setting can cause a serious burn within about 3 seconds.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Treating-and-Preventing-Burns.aspx"
+    },
+    {
+     "claim": "About three quarters of thermal injuries in children under 5 are scalds from hot liquids or from touching hot objects, and most happen in the second year of life when children begin to walk and pull objects down.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/thermische-verletzungen/"
+    },
+    {
+     "claim": "Kindergesundheit-info advises placing cups of coffee, tea or soup far from the table edge, not drinking or eating hot food while holding a child, and avoiding tablecloths a child can pull down; stir microwaved food well and check its temperature before feeding.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/sicherheit-im-alltag/vorsicht-heiss/"
+    },
+    {
+     "claim": "For small scalds, Kindergesundheit-info advises cooling with lukewarm water for no more than 10 minutes, not using ice, and calling the emergency number 112 for large areas.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/thermische-verletzungen/"
+    },
+    {
+     "claim": "Kindergesundheit-info says the poison information centres (Giftnotrufzentralen) are reachable 24 hours a day for acute poisonings; for an unremarkable child call the centre of your federal state first, and for unconsciousness call 112 immediately.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/im-vergiftungsfall/"
+    },
+    {
+     "claim": "Kindergesundheit-info advises not inducing vomiting in a poisoned child and not giving milk, which can speed absorption of the poison.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/im-vergiftungsfall/"
+    }
+   ],
+   "unverified": [
+    "A complete room-by-room checklist for bathroom, bedroom and hallway: only kitchen, living-room and general items are supported; the bathroom and hallway entries need more research.",
+    "Specific storage heights or the exact fix for each item beyond 'out of reach' and 'locked'.",
+    "Any specific checklist for toys with loose parts beyond the small parts rule and the 2026 recall.",
+    "The German Poison Centre phone number for each Bundesland: not found in the search results.",
+    "When to call the doctor (versus poison control) for non-emergency exposures: not confirmed by a source.",
+    "Whether a child should be taken to the emergency department after swallowing a non-battery product: not confirmed.",
+    "Medicine and cleaner specifics (for example, which products are most dangerous): not sourced."
+   ]
+  },
+  {
+   "slug": "pressure-mount-vs-hardware-stair-gates",
+   "facts": [
+    {
+     "claim": "CPSC guidance says only gates that screw into the wall should be used at the top of stairs.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+     "claim": "Hardware (screw-mounted) gates generally cannot be removed without tools, while pressure-mounted gates are intended for parents who want to move the gate or who do not want to mark walls.",
+     "sourceKey": "cpsc",
+     "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+     "claim": "Under CPSC's final gates standard, pressure-mounted gates that rely on wall cups must carry a separate warning about installing wall cups along the top rail.",
+     "sourceKey": "cpsc",
+     "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+     "claim": "Gates for use at the top of stairs must state on the packaging the minimum distance to the first step.",
+     "sourceKey": "cpsc",
+     "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+     "claim": "Manufacturers of pressure gates often say wall cups are required at the top of stairs, but CPSC notes that buyers may not realize wall cups are needed in other locations too.",
+     "sourceKey": "cpsc",
+     "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+     "claim": "The federal standard sets a minimum gate height of 22 inches from the floor, intended to stop children from leaning over and tumbling over the top.",
+     "sourceKey": "cpsc",
+     "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+     "claim": "An Evenflo recall followed reports that mounting hardware broke or cracked, causing children to fall down stairs; nine such reports were received.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2001/cpsc-evenflo-announce-recall-to-repair-home-decor-swing-wooden-baby-gates"
+    },
+    {
+     "claim": "A Dorel Juvenile Group recall covered Safety 1st stair gates whose hinges could break, posing a fall hazard when the gate is placed at the top of the stairs.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2009/dorel-juvenile-group-recalls-safety-1st-stair-gates-due-to-fall-hazard"
+    },
+    {
+     "claim": "AAP guidance advises installing railings at the top and bottom of stairs, keeping stairs clear and well lit, and supervising children on stairs; stairs are a leading cause of injury for small children.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/aapnews/article/33/9/36/10271/Safety-pitfalls-Stairs-are-a-leading-cause-of"
+    },
+    {
+     "claim": "Pet gates should not be used as child safety gates, and older gates with V-shaped openings that can trap a child's head should be replaced.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Gates-and-Enclosures"
+    }
+   ],
+   "unverified": [
+    "Whether a pressure-mounted gate is acceptable at the top of stairs in every case: the sources say it needs wall cups or a side-pressure indicator, but the exact approval rule was not confirmed.",
+    "How to measure a doorway opening: no official measuring procedure was found; the manufacturer's stated range is the only confirmed guide.",
+    "Wide or irregular opening fit and which gate suits them: not covered by any official source.",
+    "Retractable gates: no safety or mounting facts were found in official sources.",
+    "Installation tools needed for each type, and renter-friendly status: not confirmed.",
+    "Post-installation checks (for example, a shake test): not confirmed by a source beyond general 'install per instructions'."
+   ]
+  },
+  {
+   "slug": "cordless-vs-corded-blinds-baby-safety",
+   "facts": [
+    {
+     "claim": "CPSC says about nine children under 5 die each year from strangling in corded window coverings, and a review of incidents from 2009 to 2021 found a child died in 48% of them.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+    },
+    {
+     "claim": "CPSC notes that strangulation in a window cord can happen in less than a minute and is often silent, so nearby adults may not notice.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+    },
+    {
+     "claim": "CPSC advises buying cordless window coverings, labeled as cordless, for every room where a child may be present; cordless coverings are the safest choice where young children are present.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-to-Consumers-The-Safest-Window-Coverings-When-Young-Children-Are-Present-Are-Cordless"
+    },
+    {
+     "claim": "If corded coverings cannot be replaced, CPSC advises keeping cords out of reach, moving cribs and furniture away from windows, and shortening pull cords; knotting or tying cords together creates a new loop a child could become caught in.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+    },
+    {
+     "claim": "CPSC has warned about hidden cord hazards in older window coverings since at least 1986, and a 2006 CPSC release described old window coverings as a strangulation risk for young children.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2006/Federal-Government-Warns-of-Hidden-Hazard-to-Young-Children-Old-Window-Coverings-Pose-Strangulation-Risk"
+    },
+    {
+     "claim": "A 2011 CPSC release announced a window blind recall and redesign; the Window Covering Safety Council offered free repair kits for corded blinds at that time, so the current availability of the offer should be checked.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2011/CPSC-Window-Covering-Industry-Announce-Recall-to-Repair-Window-Blinds-New-Investigation-of-Childrens-Deaths-Leads-to-Redesigned-Window-Blinds"
+    },
+    {
+     "claim": "CPSC's 2023 release describes draft final rules that would address cord strangulation risks for children 8 and under.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+    }
+   ],
+   "unverified": [
+    "Whether cord cleats or cord stops make corded blinds safe enough: no official source confirmed this, and it needs a CPSC or manufacturer check.",
+    "Whether the cord strangulation rule for children 8 and under has been finalized: not confirmed.",
+    "Whether blinds sold before 2001 carry more risk: the older CPSC release supports age-related risk, but the 2001 cut-off was not confirmed from an official page; check before publishing.",
+    "Retrofit options, motorized blinds and cordless retrofit: not covered by any source.",
+    "Cost tiers (low, mid, high): no official source; keep without invented prices.",
+    "Whether the 2011 repair-kit offer still exists: not confirmed for 2026."
+   ]
+  },
+  {
+   "slug": "car-seat-installation-check",
+   "facts": [
+    {
+     "claim": "NHTSA says a correctly installed car seat should not move more than 1 inch side to side or front to back when pulled at the belt path.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-installation-tips"
+    },
+    {
+     "claim": "CDC gives the same one-inch limit for an installed car seat.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/child-passenger-safety/prevention/index.html"
+    },
+    {
+     "claim": "Route the seat belt through the correct belt path, check for twists, buckle and lock it, then press down firmly on the seat while tightening; for rear-facing seats, the belt goes through the rear-facing belt path.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+     "claim": "Babies must ride semi-reclined to keep the airway open; most infant seats have built-in angle indicators or adjusters to help set the recline.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+     "claim": "On a forward-facing seat, connect the tether to the vehicle's tether anchor and tighten it.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-forward-facing-car-seats"
+    },
+    {
+     "claim": "Use the pinch test at the shoulder: if you can pinch the harness straps, the harness is too loose; rear-facing straps go at or below the shoulders and forward-facing straps at or above them. The chest clip goes at armpit level.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-installation-tips"
+    },
+    {
+     "claim": "A 2009 NHTSA study found the most common installation errors were an improper chest clip level (60%), an inappropriate recline position (36.7%), twisted harness straps (30%) and loose harnesses (20.7%).",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/811234.pdf"
+    },
+    {
+     "claim": "NHTSA recommends replacing a car seat after a moderate or severe crash, and says a seat from such a crash should never be used again; a crash is minor only if all of these are true: the vehicle could be driven away, the door nearest the seat was undamaged, no occupant was injured, airbags did not deploy, and the seat shows no visible damage.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-use-after-crash"
+    },
+    {
+     "claim": "NHTSA's Car Seat Inspection Finder locates inspection stations and virtual inspectors; certified technicians inspect car seats free of charge in most cases.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/campaign/right-seat"
+    }
+   ],
+   "unverified": [
+    "Exact ISOFIX or LATCH route steps: not researched.",
+    "Specific recline angle numbers for each seat type: only the general need for semi-reclined position is sourced.",
+    "Harness height rules beyond the shoulder-slot guidance: not checked against the seat manufacturer.",
+    "Whether a specific local station is free and open: the finder must be used; no local station was confirmed.",
+    "German car seat sources (for the translationOf German version): not searched; check Kindergesundheit-info or ADAC-free official sources before release.",
+    "Whether a minor crash also requires replacement under the manufacturer's manual: NHTSA says to follow manufacturer instructions, but the manual's rules were not checked.",
+    "Rear-facing as long as the seat allows: mainstream guidance per brief, but not confirmed in the search results."
+   ]
+  }
+ ]
+}

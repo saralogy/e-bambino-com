@@ -1,0 +1,248 @@
+{
+ "pieces": [
+  {
+   "slug": "how-to-install-a-car-seat",
+   "facts": [
+    {
+     "claim": "A correctly installed car seat should not move more than about 1 inch (2.5 cm) side-to-side or front-to-back at the belt path when pulled on.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat"
+    },
+    {
+     "claim": "With a seat belt installation, lock the belt, press firmly down on the car seat while tightening the belt, then check that the seat moves no more than about 1 inch.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat"
+    },
+    {
+     "claim": "With lower anchors (LATCH), press firmly down on the seat while tightening the straps, then check that the seat moves no more than about 1 inch.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat"
+    },
+    {
+     "claim": "Rear-facing babies must ride semi-reclined, with the seat installed at the correct recline angle, to keep the airway open.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+     "claim": "For rear-facing seats, the harness straps lie flat and run through the slots at or below the child's shoulders.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+     "claim": "The chest clip should be placed at armpit level.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+     "claim": "The CDC says a rear-facing car seat should never be placed in front of an active airbag, and front passenger airbags can injure or kill young children. Use the back seat.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/child-passenger-safety/prevention/"
+    },
+    {
+     "claim": "The AAP recommends keeping infants and toddlers rear-facing as long as possible, until they reach the highest weight or height allowed by the car seat's manufacturer, not until a set age; the AAP's 2018 policy dropped the earlier two-year minimum.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/142/5/e20182460/38530/Child-Passenger-Safety"
+    },
+    {
+     "claim": "The rear-facing weight and height limits of a seat are printed in its instruction manual and on a label on the side of the seat.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Rear-Facing-Car-Seats-for-Infants-Toddlers.aspx"
+    },
+    {
+     "claim": "Certified Child Passenger Safety Technicians inspect car seats free of charge in most cases and show parents how to install and use them; NHTSA's Car Seat Inspection Finder locates stations and virtual inspectors.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/keep-kids-safe-road"
+    },
+    {
+     "claim": "NHTSA reports that almost half of all car seats are installed incorrectly, even though most parents and caregivers believe they know how to install them.",
+     "sourceKey": "nhtsa",
+     "url": "https://www.nhtsa.gov/press-releases/national-car-seat-check-saturday-2024"
+    },
+    {
+     "claim": "Under UNECE rules for i-Size (ECE R129) seats, rearward-facing travel is mandatory until about 15 months.",
+     "sourceKey": "unece",
+     "url": "https://unece.org/fileadmin/DAM/trans/publications/WP29/CHILD_RESTRAINT_SYSTEMS_brochure.pdf"
+    },
+    {
+     "claim": "i-Size (ECE R129) seats are fixed with the three-point seat belt or, where available, the ISOFIX points; follow the seat's instruction manual exactly.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/auto-kindersitze/"
+    },
+    {
+     "claim": "ISOFIX reduces the risk of incorrect installation because it has only two standardized anchor points; incorrect use can greatly reduce the protective effect of the seat.",
+     "sourceKey": "unece",
+     "url": "https://unece.org/fileadmin/DAM/trans/publications/WP29/CHILD_RESTRAINT_SYSTEMS_brochure.pdf"
+    }
+   ],
+   "unverified": [
+    "Whether the belt-tightness and harness-height checks listed in the brief's install checklist are fully sourced to one page. The recline indicator check is not covered by any source found.",
+    "The age range the CDC gives for rear-facing (snippet said roughly birth to age 2 to 4). Not confirmed on the official page; do not publish an age range without checking the CDC page.",
+    "Conflict in sources on chest clip height: NHTSA says armpit level; a HealthyChildren.org snippet says center of the chest, even with the armpits. The editor should confirm which wording to use.",
+    "The 'pinch test' for harness snugness (if you can pinch the strap at the shoulder, it is too loose). Source page not confirmed.",
+    "NHTSA study finding that LATCH gives less lateral movement than seat belt installation, and a sled-test finding that LATCH gave higher HIC15 values than the lap/shoulder belt. These come from PubMed and were not confirmed on an allowed domain. Do not state either as a safety ranking.",
+    "Whether a top tether or support leg is required or recommended for German i-Size seats in a given vehicle. Not confirmed.",
+    "Exact frequency of re-checking the install (before every trip) is not stated in any source found; the brief's before-every-trip framing is the editorial recommendation and needs reviewer confirmation."
+   ]
+  },
+  {
+   "slug": "travel-system-or-separate-stroller",
+   "facts": [
+    {
+     "claim": "The CPSC recalled Phil&Teds infant car seat adapters for strollers because the plastic adapters can crack, become unstable and break during use, posing a fall hazard to infants.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2014/philandteds-Recalls-Infant-Car-Seat-Adaptors-for-Strollers"
+    },
+    {
+     "claim": "In June 2026 the CPSC announced Joolz Aer2 car seat adapters can fail to properly attach to the stroller, which may allow the car seat to fall.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2026/Joolz-Recalls-Aer2-Car-Seat-Adapters-for-Strollers-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard"
+    },
+    {
+     "claim": "Combi recalled Shuttle travel systems because the car seat can disengage from the stroller frame, posing a fall hazard to infants; the remedy was a strap kit to secure the seat.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2017/Combi-USA-Recalls-Stroller-and-Car-Seat-Combos"
+    },
+    {
+     "claim": "Model numbers printed on the stroller leg and the car seat base are the way to confirm a specific stroller and car seat pairing; check the manufacturer's compatibility list for those models.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2017/Combi-USA-Recalls-Stroller-and-Car-Seat-Combos"
+    },
+    {
+     "claim": "CPSC defines a carriage as a wheeled vehicle generally used to transport an infant lying down, while strollers hold children in a sitting up or semi-reclined position.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Carriages-and-Strollers"
+    },
+    {
+     "claim": "The CPSC approved a new federal safety standard for carriages and strollers in 2014.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2014/CPSC-Approves-New-Federal-Safety-Standard-for-Carriages-and-Strollers"
+    },
+    {
+     "claim": "Stroller guidance from the CPSC: use the harness every time, keep the brake set when parked, and never leave a child unattended.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/5096.pdf"
+    },
+    {
+     "claim": "Strollers can be checked for recalls on the CPSC's stroller recall list; check both the stroller and the car seat model before buying a travel system.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/recall-products/strollers"
+    }
+   ],
+   "unverified": [
+    "Definition of a travel system (stroller and car seat sold together and designed to click together). No official source found in this search.",
+    "Whether a travel system is cheaper than buying the parts separately. Prices are not covered by any official source; the price comparison must come from retailer data, dated and labeled as such.",
+    "General method for checking stroller and car seat fit (beyond model-number compatibility lists). No official checklist found.",
+    "Circumstances in which a separate stroller and car seat is the better choice. Editorial judgment, not sourced.",
+    "CPSC statement that it is not aware of a car seat adapter intended to stay installed in the stroller when the car seat is not used. The source URL was not confirmed.",
+    "Age ranges of use from newborn to toddler, and resale value: manufacturer-specific, not verified.",
+    "The brief's claim that the page can publish without a reviewer: this depends on the editorial team's gate decision. Keep safety statements out of the page as the brief asks."
+   ]
+  },
+  {
+   "slug": "umbrella-stroller-or-full-size",
+   "facts": [
+    {
+     "claim": "CPSC definitions: a carriage is a wheeled vehicle generally used to transport an infant who is lying down; strollers hold children in a sitting up or semi-reclined position. A newborn who needs to lie flat needs a carriage-style product.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Carriages-and-Strollers"
+    },
+    {
+     "claim": "CPSC notes that umbrella strollers are the lightest and most basic type, compact when folded, and may lack certain accessories, which generally makes them a poor fit for a newborn.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/5096.pdf"
+    },
+    {
+     "claim": "The AAP says do not put children to sleep in strollers, especially infants younger than 4 months old.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/aapnews/news/13463/Safety-tips-help-protect-children-from-stroller"
+    },
+    {
+     "claim": "The CPSC says sleeping in a stroller poses a serious risk of entrapment or strangulation, especially for children younger than 12 months.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/5096.pdf"
+    },
+    {
+     "claim": "Sleep surfaces inclined more than 10 degrees from horizontal are unsafe for infant sleep; rockers, gliders, soothers and swings should not be used for infant sleep.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/SafeSleep"
+    },
+    {
+     "claim": "Stroller safety basics from the CPSC: use the harness every time, keep the brake set when parked, and never leave a child unattended.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/5096.pdf"
+    },
+    {
+     "claim": "The CPSC approved a new federal safety standard for carriages and strollers in 2014.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2014/CPSC-Approves-New-Federal-Safety-Standard-for-Carriages-and-Strollers"
+    },
+    {
+     "claim": "Parents should check the CPSC's stroller recall list for both the model they are considering and any older model.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/recall-products/strollers"
+    }
+   ],
+   "unverified": [
+    "Newborn lie-flat or fully flat recline claims for any specific umbrella stroller. The search found none that are rated for newborn lie-flat use. The reviewer must confirm any manufacturer claim before it is printed.",
+    "Weight, folded size, wheel and suspension specifications, price and the age range each manufacturer states. Manufacturer-specific; must come from manufacturer data with a date.",
+    "Performance on rough ground and long walks. Not covered by an official source.",
+    "Whether an umbrella stroller works for a second child (seat-spacing, sibling use). Not covered by an official source.",
+    "Whether a bassinet or play yard is the official recommendation for a newborn who needs to lie flat. The AAP and CPSC guidance found covers sleep surfaces and stroller use only; the product recommendation is editorial and needs a source before publication."
+   ]
+  },
+  {
+   "slug": "can-i-take-a-car-seat-on-a-plane",
+   "facts": [
+    {
+     "claim": "A car seat is usable on a plane only if it has a label reading 'This restraint is certified for use in motor vehicles and aircraft.'",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "Most rear-facing, convertible and forward-facing car seats can be used on airplanes; booster seats and travel vests cannot.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "The FAA and AAP recommend that children under 40 pounds be securely fastened in certified child restraints when flying.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "The FAA does not require children aged 2 years and younger to sit in their own seat with a separate safety belt; the AAP recommends each child have their own seat anyway.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "Car seats, booster seats and strollers are generally not counted as luggage. If the seat is not being used to secure the baby during the flight, it can usually be checked at the gate, typically at no extra charge.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "Airline policies on baby gear change often; ask the airline whether gate-checking a car seat or stroller costs extra before booking.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "Read the seat's instruction manual and confirm the child is within the seat's weight and height limits before flying.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+     "claim": "If a ticket cannot be bought for a small child, choose a flight likely to have empty seats so the child can ride buckled in the car seat.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    }
+   ],
+   "unverified": [
+    "Airline-only harnesses approved by the FAA (one source says 22 to 44 pounds, not for infants, not safe for car or train travel). Source is not on an allowed domain; not published until confirmed on faa.gov.",
+    "The older AmSafe CARES airplane-only device. Source is dated (around 2008), and the claim that no US airlines provide it has not been confirmed for 2026.",
+    "The regulatory wording for seat types that must carry a 'not certified for use in aircraft' label (belt-positioning seats, harnesses, backless restraints). Found only in regulation text in search results; confirm on nhtsa.gov before publishing.",
+    "Specific airline policies on car seats and gate checks, and whether the stroller can be taken to the gate. No airline-specific source was found; the rules differ by airline and country.",
+    "Rules outside the US (for example EU or German aircraft-approval rules for car seats). Not researched in this pass.",
+    "Whether a given car seat fits a given aircraft seat (width, armrest and tray fit). Not covered by any source found.",
+    "Whether the seat must be used during a flight for safety in turbulence or during takeoff and landing beyond the FAA lap-child rule. Not covered by an official source found in this search."
+   ]
+  }
+ ]
+}

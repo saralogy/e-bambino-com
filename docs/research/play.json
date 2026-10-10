@@ -1,0 +1,174 @@
+{
+ "pieces": [
+  {
+   "slug": "screen-time-by-age",
+   "facts": [
+    {
+     "claim": "AAP (Media and Young Minds, 2016): for children under 18 months, pediatricians should discourage screen media other than video chatting.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    },
+    {
+     "claim": "AAP: for 18 to 24 months, parents who want to introduce digital media should choose high-quality programs or apps and use them together with the child; solo media use should be avoided in this age group.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    },
+    {
+     "claim": "AAP: for children 2 to 5 years, limit digital media use to no more than 1 hour per day, with co-viewing recommended.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    },
+    {
+     "claim": "AAP recommends keeping bedrooms, mealtimes and parent-child playtime screen-free.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    },
+    {
+     "claim": "AAP's newer 2025 policy statement (Digital Ecosystems, Children, and Adolescents) takes a looser stance on fixed time limits: time may vary by family, needs, and school nights vs weekends, and occasional brief high-quality videos are not described as harmful. It does not replace the 2016 age bands, so the two AAP documents need to be reconciled in the copy.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy"
+    },
+    {
+     "claim": "AWMF S2k guideline on prevention of dysregulated screen media use in children and adolescents (version 2023-09, AWMF register no. 027-075) recommends keeping children under 3 years away from all passive and active use of screen media; the recommendation is a consensus statement (no. 25).",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/027-075l_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2023-09.pdf"
+    },
+    {
+     "claim": "The AWMF guideline's parent version (2024-11) summarizes the under-3 advice as 'Bis drei: Bildschirmfrei!' (screen-free until age three).",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/027_D_Ges_fuer_Kinderheilkunde_und_Jugendmedizin/027-075eltern_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2024-11.pdf"
+    },
+    {
+     "claim": "The AWMF guideline links excessive screen use in toddlerhood to regulation and attachment disorders and to language and cognitive development, while noting that the data are described as controversial.",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/027-075l_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2023-09.pdf"
+    },
+    {
+     "claim": "Kindergesundheit-info (BZgA-linked) advises that babies and toddlers under three should not watch television yet, and its age table recommends no screen media for this group.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/medien/alltagstipps/mediennutzung/hoechstdauer/"
+    }
+   ],
+   "unverified": [
+    "The AWMF guideline's figure of at most 30 minutes on individual days for children from age 3, and only with a parent present, came from a secondary summary. Confirm it in the guideline text before publishing.",
+    "Whether the German guidance allows video calls for under-3s (the AAP does) is not confirmed by the sources found.",
+    "Reconciling AAP (18 to 24 months: co-viewed high-quality media allowed) with AWMF (under 3: screen-free) is an editorial decision. The English page must not claim the two agree.",
+    "The English page is ymyl and needs a named reviewer before publication; no reviewer is confirmed in this research."
+   ]
+  },
+  {
+   "slug": "baby-walker-or-push-toy",
+   "facts": [
+    {
+     "claim": "AAP recommends a ban on the manufacture and sale of mobile infant walkers, citing data on major and minor injuries and death and no clear benefit from walkers.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers"
+    },
+    {
+     "claim": "AAP says stationary activity centers (no wheels) and play yards or playpens are safer alternatives to mobile baby walkers.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers"
+    },
+    {
+     "claim": "AAP says the vast majority of walker injuries are falls down stairs, and head injuries are common.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/baby-walkers-a-dangerous-choice.aspx"
+    },
+    {
+     "claim": "HealthyChildren.org says walkers do not teach children to walk and can delay walking.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/baby-walkers-a-dangerous-choice.aspx"
+    },
+    {
+     "claim": "AAP states that warning labels, public education, adult supervision and stair gates have not been shown to prevent walker injuries.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers"
+    },
+    {
+     "claim": "AAP advises that babies practice walking by cruising along furniture while a caregiver watches, and that going barefoot helps babies grip the floor with their toes.",
+     "sourceKey": "aap",
+     "url": "https://healthychildren.org/English/ages-stages/baby/pages/How-Active-is-Your-Baby.aspx"
+    },
+    {
+     "claim": "CPSC: in 1992 an estimated 25,700 children under 15 months were treated in US emergency rooms for baby-walker injuries, most from stair falls.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2010/CPSC-Issues-Final-Mandatory-Rule-on-Infant-Baby-Walkers"
+    },
+    {
+     "claim": "CPSC voted in May 2010 to replace the old design-based federal rules with a mandatory standard (adopting ASTM F977-07 with added requirements). The standard requires walkers either to be too wide for a standard doorway or to stop at the edge of a step, so this is a standard rather than a ban.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2010/CPSC-Issues-Final-Mandatory-Rule-on-Infant-Baby-Walkers"
+    },
+    {
+     "claim": "CPSC reports an 88% reduction in walker injuries from 1994 to 2008, which it links partly to the stair-fall requirement added in the 1997 voluntary standard.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2010/CPSC-Issues-Final-Mandatory-Rule-on-Infant-Baby-Walkers"
+    }
+   ],
+   "unverified": [
+    "Push toy safety guidance (age, ground-contact features, handle or tip risks) was not found on any allowed official domain. The push-toy column of the comparison table cannot be sourced yet.",
+    "Whether AAP has issued a newer walker policy than the 2001 statement is unconfirmed. The HealthyChildren pages are mixed in date.",
+    "Official guidance on stationary activity centers beyond the AAP alternative statement (age limits, tip-over and stair risks) was not found.",
+    "Recalls of 2025 walkers that fail the stair-fall requirement exist (CPSC Boyro notice), but no official count for recent years was confirmed."
+   ]
+  },
+  {
+   "slug": "wooden-vs-plastic-toys-for-babies",
+   "facts": [
+    {
+     "claim": "The CE mark on toys sold in the EU is a manufacturer's declaration, not an independent test mark; toys without a CE mark may not be placed on the EU market.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+    },
+    {
+     "claim": "The GS mark indicates voluntary, independent third-party testing commissioned by the manufacturer. The additional wording 'Sicherheit und Schadstoffe' (safety and pollutants) matters for chemical safety.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+    },
+    {
+     "claim": "Verbraucherzentrale prefers untreated solid wood; painted or lacquered wooden toys should meet the German toy standard DIN EN 71-3; plywood puzzles failed tests more often because they released formaldehyde.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+    },
+    {
+     "claim": "Verbraucherzentrale warns that soft plastic is the bigger chemical concern: cheap no-name products may contain banned plasticizers, and polycarbonate can release bisphenol A or other bisphenols.",
+     "sourceKey": "verbraucherzentrale",
+     "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+    },
+    {
+     "claim": "Kindergesundheit-info advises choosing PVC-free or phthalate-free plastic toys, with PP or PE preferred, because PVC often contains harmful plasticizers.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/spielzeug/"
+    },
+    {
+     "claim": "Kindergesundheit-info advises unpainted or waxed wood and regular checks of wooden toys for cracks, splinters and sharp edges.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/spielzeug/"
+    },
+    {
+     "claim": "CPSC limits: children's products must not exceed 100 ppm total lead in any accessible component part (for children 12 and under), and children's product paint must not exceed 90 ppm lead.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Lead-in-Paint"
+    },
+    {
+     "claim": "CPSC limits phthalates in children's toys and child care articles to 0.1% (1,000 ppm) per regulated phthalate in accessible component parts; untreated or unfinished wood and natural fibers are exempt from phthalate testing if not treated with a substance that may contain phthalates.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Phthalates"
+    },
+    {
+     "claim": "Under CPSC small-parts rules (16 CFR part 1501), toys for children under 3 must not have small parts that fit entirely in a test cylinder of about 2.25 by 1.25 inches. CPSC teether recalls in 2026 cite pull-string teethers that violate the mandatory toy standard because of choking risk.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Small-Parts-for-Toys-and-Childrens-Products"
+    }
+   ],
+   "unverified": [
+    "The EN 71 toy standard content (which parts test which hazard) was not confirmed. EN 71 is not on an allowed official domain, so it needs a new source key and a primary source before use.",
+    "No new source key is defined in this research. Adding EN 71 or CE-marking explainers to Sources needs an editor decision.",
+    "Claims that wood is more durable or easier to clean than plastic, or that silicone is safer, were not found in the official sources. Do not state them as facts.",
+    "No official source ranks materials as best. The brief's table cells for durability and cleaning need a documented method or must be marked as general care advice.",
+    "Teething suitability by material was not confirmed by an official source. The CPSC teether results concern choking from pull strings and loose parts, not material choice.",
+    "Lead in teethers was not found; the CPSC search returned no teether lead warning."
+   ]
+  }
+ ]
+}

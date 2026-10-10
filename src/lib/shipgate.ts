@@ -22,7 +22,11 @@ export function shipGate(entry: {
   ymyl?: boolean;
   reviewedBy?: string;
   quellen?: string[];
+  draft?: boolean;
 }): Shippable {
+  if (entry.draft) {
+    return { ship: false, reason: `DRAFT — ${entry.slug} wartet auf die redaktionelle Überarbeitung.` };
+  }
   if (entry.ymyl && !entry.reviewedBy?.trim()) {
     return {
       ship: false,
@@ -36,14 +40,14 @@ export function shipGate(entry: {
 }
 
 /** Filter a collection down to what may be published right now. */
-export function shippableOnly<T extends { data: { slug: string; ymyl?: boolean; reviewedBy?: string; quellen?: string[] } }>(
+export function shippableOnly<T extends { data: { slug: string; ymyl?: boolean; reviewedBy?: string; quellen?: string[]; draft?: boolean } }>(
   entries: T[],
 ): T[] {
   return entries.filter((e) => shipGate(e.data).ship);
 }
 
 /** Pages held back, for build reporting. */
-export function heldBack<T extends { data: { slug: string; ymyl?: boolean; reviewedBy?: string; quellen?: string[] } }>(
+export function heldBack<T extends { data: { slug: string; ymyl?: boolean; reviewedBy?: string; quellen?: string[]; draft?: boolean } }>(
   entries: T[],
 ): { slug: string; reason: string }[] {
   return entries

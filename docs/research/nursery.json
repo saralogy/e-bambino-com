@@ -1,0 +1,228 @@
+{
+ "pieces": [
+  {
+   "slug": "newborn-essentials-first-weeks",
+   "facts": [
+    {
+     "claim": "The CPSC's 'Bare is Best' rule: keep the baby's sleep space bare, with only a fitted sheet, to prevent suffocation. Padded crib bumpers should not be used.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/About-CPSC/Commissioner/Marietta-S-Robinson/Blog/THE-ROBINSON-REPORT-26-Bare-is-Best-%E2%80%93-Do-Not-Use-Padded-Crib-Bumpers"
+    },
+    {
+     "claim": "Always place a baby to sleep on the back to reduce the risk of sudden unexpected infant death and suffocation. A baby who falls asleep in a swing, bouncer or similar product should be moved to a crib, bassinet or play yard.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-Urges-Parents-Caregivers-to-Use-Products-that-Are-Safe-for-Sleep-Check-Babys-Sleep-Space-for-Suffocation-Hazards-Most-Nursery-Product-Related-Infant-Deaths-Can-Be-Prevented"
+    },
+    {
+     "claim": "NICHD advises that a crib, bassinet, portable crib or play yard should meet the safety standards of the U.S. Consumer Product Safety Commission, and that sleep surfaces should be firm and flat.",
+     "sourceKey": "nichd",
+     "url": "https://www.nichd.nih.gov/sites/default/files/publications/pubs/documents/safe_sleep_environment_rev.pdf"
+    },
+    {
+     "claim": "The AAP recommends that infants sleep in a crib, bassinet or portable play yard with a firm, flat mattress and a fitted sheet, and that soft items such as pillows, quilts, comforters, sheepskins, bumper pads and stuffed toys be kept out of the sleep area.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "The AAP advises dressing the baby in layers or a wearable blanket instead of using loose blankets. Infant sleep clothing such as a wearable blanket is preferable to blankets because it reduces the risk of head covering or entrapment. The sack should fit the baby and not cover the head.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/patiented/article/doi/10.1542/peo_document088/79989/Safe-Sleep-and-Your-Baby-How-Parents-Can-Reduce"
+    },
+    {
+     "claim": "The AAP recommends room sharing without bed sharing, ideally for at least the first six months, because it can lower the risk of SIDS by as much as 50 percent. The crib or bassinet should sit near the parents' bed, not in it.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022"
+    },
+    {
+     "claim": "Weighted blankets, weighted sleepers, weighted swaddles and other weighted objects should not be placed on or near a sleeping infant (AAP).",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/patiented/article/doi/10.1542/peo_document088/79989/Safe-Sleep-and-Your-Baby-How-Parents-Can-Reduce"
+    },
+    {
+     "claim": "German guidance: for the first year, put the baby to sleep in a sleeping bag instead of a blanket, and do not use a pillow. Neck opening should be no larger than the baby's head.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/"
+    },
+    {
+     "claim": "German guidance on sleeping bag length: body length minus head length, plus 10 to 15 cm of room to grow.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/"
+    },
+    {
+     "claim": "German guidance: no hot-water bottles or heating pads in the baby's bed. Do not wrap the baby tightly before sleep. Keep powder away from the changing table, because inhaling it risks suffocation.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-schlafplatz/"
+    },
+    {
+     "claim": "The CDC emergency checklist for families with infants lists a portable crib, baby blankets, extra baby clothes, diapers, wipes, diaper rash cream, bottles and a baby carrier. The list is for emergency preparedness, not a general shopping guide.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+    }
+   ],
+   "unverified": [
+    "No official source found for how many bodysuits, sleep sacks or sheets a newborn needs. Quantities must not be stated.",
+    "No official source found for the number of diapers per day or the diapering item list. The CDC emergency list is not a shopping list.",
+    "The German RKI safe-sleep page cited in the German version was not found in search. Only kindergesundheit-info.de and the AWMF guideline (AWMF 063-002) were confirmed. The RKI page must be checked directly on rki.de before release.",
+    "The English safe-sleep source (AAP 2022 policy, NICHD) is confirmed in search snippets, but a full read of the CPSC or AAP checklist of 'needed on day one' items was not possible. The day-one column must be checked by an editor against the AAP parent guide.",
+    "The complete German Babyerstausstattung checklist (BIÖG/kindergesundheit-info PDF) was not retrieved, so its item list is unconfirmed.",
+    "Breastfeeding frequency (8 to 12 feeds in 24 hours) and the vitamin D dose (400 IU daily) appeared in search results but were not tied to a confirmed official URL. Do not use them unless an editor confirms the source.",
+    "Pediatric first-visit timing (about days 3 to 5) is not needed for this page and is unconfirmed as a product-list fact."
+   ]
+  },
+  {
+   "slug": "room-temperature-for-baby-sleep",
+   "facts": [
+    {
+     "claim": "The German AWMF S1 guideline on prevention of sudden infant death (AWMF 063-002, updated December 2022) recommends a night-time room temperature of 18 °C as optimal, and recommends a baby sleeping bag of suitable size instead of a duvet to avoid overheating.",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/063-002l_S1_Praevention-des-Ploetzlichen-Sauuglingstods_2022-12_01.pdf"
+    },
+    {
+     "claim": "Kindergesundheit-info (BZgA) states that the sleeping room should be at 18 degrees Celsius. This matches the AWMF guideline figure.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/sicher-schlafen/"
+    },
+    {
+     "claim": "If no sleeping bag is used, kindergesundheit-info advises a light cotton blanket in summer and a light down blanket in winter. Blankets should be flat, tucked at the foot end under the mattress, and cover the child only to the chest.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlaftipps/"
+    },
+    {
+     "claim": "NICHD Safe to Sleep advises keeping the baby from getting too hot during sleep. Parents should dress the baby in sleep clothing such as a wearable blanket instead of loose blankets.",
+     "sourceKey": "nichd",
+     "url": "https://safetosleep.nichd.nih.gov/reduce-risk/safe-sleep-environment/room/room_txt_alternative"
+    },
+    {
+     "claim": "The AAP's 2022 safe sleep policy addresses overheating as a risk factor and calls for avoiding overheating during sleep. It does not give a specific numeric room temperature.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022"
+    },
+    {
+     "claim": "Kindergesundheit-info states that commercially available baby monitors and special mattresses or sleep pads do not lower the risk of sudden infant death, and are explicitly not recommended.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/sicher-schlafen/"
+    }
+   ],
+   "unverified": [
+    "The German version's 16 to 18 °C range: the lower bound of 16 °C was not found on any searched official source. Every confirmed source gives 18 °C. An editor must confirm the range or change the German text to 18 °C before the English version is written, and fix the German newborn page at the same time.",
+    "The RKI was not found as a source for the 18 °C figure. The confirmed sources are AWMF and kindergesundheit-info.",
+    "NICHD's room illustration shows a thermostat set to 68 to 72 °F. This is an illustrative graphic, not a formal guideline, so it must not be used as a target range.",
+    "No official English numeric temperature range was confirmed.",
+    "The table signs (sweaty neck, flushed skin, cold hands and feet) and their likely causes and actions were not found in any official source. Do not present them as official guidance without a named source.",
+    "No official source found for how to ventilate a room without a draft on the crib.",
+    "No official source was found for specific clothing combinations by temperature (for example, tog ratings or layers at 18 °C). Hot-weather clothing advice was seen in search snippets but not tied to a confirmed page."
+   ]
+  },
+  {
+   "slug": "bedding-for-baby-first-year",
+   "facts": [
+    {
+     "claim": "CPSC: keep the baby's sleep space bare, with only a fitted sheet. Blankets, pillows, comforters, bumpers and extra padding must not be used in the sleep area.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/About-CPSC/Commissioner/Marietta-S-Robinson/Blog/THE-ROBINSON-REPORT-26-Bare-is-Best-%E2%80%93-Do-Not-Use-Padded-Crib-Bumpers"
+    },
+    {
+     "claim": "CPSC crib sheet guidance: the sheet should fit snugly and overlap the mattress so it cannot be pulled loose by a corner. Adult sheets must not be used on a crib mattress because they can come loose and create an entanglement hazard. (This is a 2001 CPSC alert, so it is older guidance.)",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/5137.pdf"
+    },
+    {
+     "claim": "CPSC warning language reproduced for consumers: use only sheets and mattress pads designed specifically for crib mattresses.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Mattresses-Mattress-Pads-Mattress-Sets"
+    },
+    {
+     "claim": "AAP: nothing should be placed between the mattress and the fitted sheet. Mattress toppers, non-fitted sheets, blankets, toys and bumper pads raise the risk of entrapment and suffocation.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "CPSC crib safety tips: the mattress should fit the crib tightly, because a loose fit can leave gaps where a baby can become trapped between the mattress and the crib.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/cribs/crib-safety-tips"
+    },
+    {
+     "claim": "Federal law (the Safe Sleep for Babies Act, as described in a 2023 CPSC release) bans padded crib bumpers and inclined sleep products, regardless of manufacture date.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/CPSC-Urges-Parents-and-Caregivers-to-Check-Babys-Sleep-Space-During-Baby-Safety-Month-Shares-Dos-and-Donts-for-Infant-Sleep-Safety"
+    },
+    {
+     "claim": "NICHD: evidence does not support using crib bumpers to prevent injuries, and evidence shows bumpers can cause serious injury and death.",
+     "sourceKey": "nichd",
+     "url": "https://www.nichd.nih.gov/health/topics/sids/more_information/other-faqs"
+    },
+    {
+     "claim": "German guidance (AWMF 063-002): in the first year, do not use a pillow. Omit pillows, fur pads, bed nests (Nestchen) and padded bed rails, because they carry overheating and suffocation risks.",
+     "sourceKey": "awmf",
+     "url": "https://register.awmf.org/assets/guidelines/063-002l_S1_Praevention-des-Ploetzlichen-Sauuglingstods_2022-12_01.pdf"
+    },
+    {
+     "claim": "German guidance: the crib mattress should be firm and flat, no thicker than 10 cm. A used mattress should be replaced before use. Special mattresses or sleep pads are not recommended because they do not reduce the risk of sudden infant death.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-schlafplatz/"
+    }
+   ],
+   "unverified": [
+    "No official source was found for how often crib sheets should be changed.",
+    "No official source confirmed a rule for waterproof mattress protectors (material, thickness or whether they can be used). A CPSC bassinet briefing says thin waterproof covers that cannot be a standalone mattress are outside a proposed rule's scope. This is not safety advice for cribs and must not be stated as one.",
+    "The 1 3/8 inch (3.5 cm) gap rule appears in a CPSC draft crib mattress warning and was not confirmed in a final rule. Do not use it unless an editor confirms the current standard.",
+    "The CPSC staff tested sheet shrinkage with 100 percent cotton sheets. This is a test method, not a material requirement for parents.",
+    "The German Spannbettlaken (fitted sheet) material and changing guidance was not found on any German official source.",
+    "The German version of the page should confirm that the RKI was not found as a source. The confirmed German sources are AWMF 063-002 and kindergesundheit-info.de."
+   ]
+  },
+  {
+   "slug": "bassinet-bedside-crib-or-crib",
+   "facts": [
+    {
+     "claim": "CPSC: a firm, flat surface in a crib, bassinet, play yard or bedside sleeper that meets federal requirements, with only a fitted sheet, is the recommended sleep setup. The CPSC treats cribs, bassinets, play yards and bedside sleepers that meet federal standards as intended sleep products.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Whether-At-Home-or-Traveling-for-the-Holidays-CPSC-Reminds-Parents-to-Keep-Babies-Sleep-Space-Safe"
+    },
+    {
+     "claim": "CPSC mandatory standard for infant sleep products (approved 2021): inclined sleepers, travel and compact bassinets, and in-bed sleepers were linked to dozens of infant deaths. The standard requires a sleep surface angle of 10 degrees or lower and largely removes these products from the market. It went into effect in June 2022.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2021/CPSC-Approves-Major-New-Federal-Safety-Standard-for-Infant-Sleep-Products"
+    },
+    {
+     "claim": "CPSC cautioned consumers not to use inclined infant sleep products. Between 2005 and mid-2019 there were 1,108 incidents, including 73 infant deaths, related to infant inclined sleep products.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2020/CPSC-Cautions-Consumers-Not-to-Use-Inclined-Infant-Sleep-Products"
+    },
+    {
+     "claim": "CPSC recalled convertible bedside bassinets in 2026 because the attachment mechanism to the adult bed left an opening between the sleeper and the mattress, creating a fall hazard that can cause death.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2026/AirClub-Convertible-Bassinets-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard-Violates-Mandatory-Standard-for-Bedside-Sleepers"
+    },
+    {
+     "claim": "CPSC warned consumers in 2026 to stop using a set of travel bassinets because of strangulation and fall hazards, and because they violate the mandatory standard for infant sleep products.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Immediately-Stop-Using-Tuyedoqe-Travel-Bassinets-Due-to-Risk-of-Serious-Injury-or-Death-from-Strangulation-and-Fall-Hazards-Violates-Mandatory-Standard-for-Infant-Sleep-Products"
+    },
+    {
+     "claim": "CPSC staff recommended (in a 2023 letter, not a final rule) that bassinet side rails be at least 27 inches from the floor and the sleep surface at least 15 inches from the floor, so that caregivers do not need to set the bassinet on raised surfaces.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/s3fs-public/09-07-2023-ASTM-F15-18-Bassinet-Height-Letter.pdf"
+    },
+    {
+     "claim": "The AAP recommends that the crib or bassinet sit near the parents' bed, not in it, so the baby is within view and arm's reach for feeding, comforting and monitoring.",
+     "sourceKey": "aap",
+     "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022"
+    },
+    {
+     "claim": "The AAP advises checking the CPSC website to confirm that a crib has not been recalled.",
+     "sourceKey": "aap",
+     "url": "https://www.aap.org/en/patient-care/safe-sleep/"
+    }
+   ],
+   "unverified": [
+    "No official source confirmed weight or height limits, or the point at which a baby should stop using a bassinet or bedside sleeper (for example, the stated weight limit or when the baby can push up on hands and knees). Each product's manual sets these limits. Do not state a number without an official source.",
+    "No official source was found for the age range each option is usable from (for example, 'from the first night') or until (the size or age cutoff for each option). These must be checked against CPSC and AAP guidance and manufacturer limits before publication.",
+    "No official source found on bed-in-a-bag sets specifically. The CPSC's general rule (bare, firm, flat surface) covers them only by inference, and the page must not claim a specific ban or warning on bed-in-a-bag sets without a source.",
+    "No official source confirmed the cost or the floor space needed for each option.",
+    "The Safe Sleep for Babies Act effective date (described as November 12 in a CPSC 2023 release) must be confirmed before it is quoted, because the year was not confirmed.",
+    "No German version or German official source for this comparison was researched. The German page can be written after this English page is reviewed."
+   ]
+  }
+ ]
+}

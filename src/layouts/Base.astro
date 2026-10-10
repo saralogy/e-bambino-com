@@ -29,7 +29,6 @@ const t = UI[lang];
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     {/*
@@ -44,7 +43,7 @@ const t = UI[lang];
     <link rel="preload" as="font" type="font/woff2" href="/fonts/hanken-grotesk-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
 
-    <SEO {lang} {alternates} {title} description={description ?? t.siteDescription} {image} {canonical} {type} />
+    <SEO {lang} {alternates} {title} description={description ?? t.siteDescription} {image} {canonical} {type} {noindex} />
   </head>
   <body class="flex min-h-screen flex-col">
     <a

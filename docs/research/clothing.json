@@ -1,0 +1,148 @@
+{
+ "pieces": [
+  {
+   "slug": "how-many-baby-clothes-do-you-need",
+   "facts": [
+    {
+     "claim": "Major safe-sleep guidance prefers layered clothing or a wearable blanket (sleep sack) over loose blankets and other coverings to keep a baby warm.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "Soft objects, loose bedding, pillows, quilts, comforters and bumper pads should stay out of the crib; these recommendations are for healthy babies up to 1 year of age.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "A wearable blanket should be the right size for the baby and should not cover the head.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "Sleep sacks that compress the arms, chest and body should stop once a baby shows signs of starting to roll over; sleep sacks that do not swaddle can be used as long as the parent wants.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+     "claim": "Weighted sleepers, swaddles, sleep sacks and blankets are not safe for infants.",
+     "sourceKey": "cdc",
+     "url": "https://www.cdc.gov/reproductive-health/features/babies-sleep.html"
+    },
+    {
+     "claim": "Babies need no more than one layer beyond what a comfortable adult would wear in the same room; a one-piece sleeper or sleep sack can serve as sleep clothing.",
+     "sourceKey": "nichd",
+     "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative"
+    },
+    {
+     "claim": "Newborn sizes are often outgrown within days, so the AAP advises buying larger sizes unless the baby is premature or very small.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/prenatal/decisions-to-make/Pages/Choosing-a-Layette.aspx"
+    },
+    {
+     "claim": "The AAP advises washing new baby clothes before use because newborns tend to have sensitive skin.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Cleaning-Baby-Clothes.aspx"
+    },
+    {
+     "claim": "Babies do not need shoes until they start walking.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/prenatal/decisions-to-make/Pages/Choosing-a-Layette.aspx"
+    },
+    {
+     "claim": "In Germany, a body or undershirt plus pajamas is listed as sufficient bedtime clothing; in warm weather a thin pajama without feet or a short-sleeved body is enough, and hats should be avoided indoors and in bed.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/faq/was-kann-ich-meinem-baby-zum-schlafen-anziehen/"
+    }
+   ],
+   "unverified": [
+    "Exact quantities per item (bodysuits, sleepers, socks, hats, sleep sacks, outerwear) for 0-3, 3-6, 6-12 and 12-24 months. The AAP layette counts reported in one search summary (3-4 sleepwear sets, 6-8 T-shirts, 3 newborn sleep sacks, 2 sweaters, 2 caps, 4 socks, 4-6 receiving blankets) could not be confirmed in a source snippet and come from an older page; verify before publishing.",
+    "Secondhand guidance for each item; no official source found.",
+    "Sleep sack counts by age band and any guidance for 12-24 months.",
+    "Which items can wait until after the birth, beyond shoes; no official source found.",
+    "Sleep sack size rules for the 6-12 and 12-24 month range; the AAP text covers fit and the rolling stop only.",
+    "German quantities (Stückzahlen) for Bodys and Schlafanzüge: none found in official sources."
+   ]
+  },
+  {
+   "slug": "us-vs-eu-baby-clothing-sizes",
+   "facts": [
+    {
+     "claim": "US infant garments sized nine months and under must carry a size label in months of age, such as '0 to 3 mos.' or '9 mos.'.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+    },
+    {
+     "claim": "For infant garments in the nine-months-and-under range, a one-piece garment cannot exceed 64.8 cm (25.75 in) in length, and no piece of a two-piece garment can exceed 40 cm (15.75 in); this is a regulatory eligibility limit, not a size chart.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+    },
+    {
+     "claim": "Tight-fitting sleepwear sizes must be expressed in months or numbers, not letters such as XS, S, M, L or XL.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+    },
+    {
+     "claim": "Babies typically gain about 1 to 1.5 inches (2.5 to 4 cm) in length each month between one and four months, so a '0-3 months' label can run out on length before weight.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Physical-Appearance-and-Growth-1-To-3-Months.aspx"
+    }
+   ],
+   "unverified": [
+    "The entire EU 50-92 to US age-label conversion table, including approximate length in cm and typical weight per row. No official size table was found on the allowed domains; every row must be checked against manufacturer charts.",
+    "Why US and EU baby sizes differ (no official source found).",
+    "Whether buying by age label or by length is recommended (no official source found).",
+    "Brand size-chart variation (based on reasoning, not a sourced fact).",
+    "Converting sizes on US or online retailers (no official source found)."
+   ]
+  },
+  {
+   "slug": "cotton-bamboo-or-merino-baby-clothes",
+   "facts": [
+    {
+     "claim": "The CPSC says loose-fitting cotton or cotton-blend garments, such as oversized T-shirts, can catch fire easily when worn as sleepwear, and recommends snug-fitting or flame-resistant sleepwear for children's sleep.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/CPSC-Alerts-Shoppers-to-Dangers-of-Using-Loose-Fitting-Cotton-Garments-as-Sleepwear-for-Kids"
+    },
+    {
+     "claim": "Children's sleepwear flammability rules (16 CFR parts 1615 and 1616) cover sizes 0 to 6X and 7 to 14; tight-fitting garments that meet the snug-fit sizing and labeling rules are exempt from the flammability testing but must carry the label 'WEAR SNUG-FITTING, NOT FLAME RESISTANT'.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+    },
+    {
+     "claim": "Blanket-style sleepers and robes are covered by the children's sleepwear flammability standards; recalled blanket sleepers were found to fail those standards.",
+     "sourceKey": "cpsc",
+     "url": "https://www.cpsc.gov/Recalls/2024/Childrens-Blanket-Sleepers-and-Robes-Recalled-by-International-Intimates-Due-to-Burn-Hazard-and-Violation-of-Federal-Flammability-Standards"
+    },
+    {
+     "claim": "The AAP advises washing new baby clothes before use because newborns tend to have sensitive skin.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Cleaning-Baby-Clothes.aspx"
+    },
+    {
+     "claim": "Parents should check labels for flame-resistant sleepwear and washing instructions, and avoid soap flakes, which can strip flame-retardant properties.",
+     "sourceKey": "aap",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Cleaning-Baby-Clothes.aspx"
+    },
+    {
+     "claim": "Babies should wear about one layer more than an adult would need in the same room, and overbundling raises overheating risk, which is linked to SIDS.",
+     "sourceKey": "nichd",
+     "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative"
+    },
+    {
+     "claim": "In warm weather, a thin pajama without feet or a short-sleeved body is sufficient bedtime clothing for a baby.",
+     "sourceKey": "kindergesundheit-info",
+     "url": "https://www.kindergesundheit-info.de/themen/faq/was-kann-ich-meinem-baby-zum-schlafen-anziehen/"
+    }
+   ],
+   "unverified": [
+    "Breathability, warmth and drying comparisons of cotton, bamboo viscose and merino wool: no official source found in the allowed domains.",
+    "Whether merino wool is suitable for babies: no official source found.",
+    "Whether bamboo viscose is a better choice than cotton: no official source found.",
+    "What GOTS and OEKO-TEX certifications mean and whether they matter: not from an allowed official domain; must not be claimed without a source.",
+    "Care effort, washing and drying performance by fabric, and price bands: no official source found.",
+    "Any skin-health, allergy or irritation claims by fabric: none sourced. These would make the page ymyl and require a named reviewer, so keep them out unless a medical source is found.",
+    "Note: the 2003 CPSC release is dated; confirm the current wording before quoting it."
+   ]
+  }
+ ]
+}
