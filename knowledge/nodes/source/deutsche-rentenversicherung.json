@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "German Pension Insurance",
+  "id": "source:deutsche-rentenversicherung",
+  "jurisdiction": "DE",
+  "key": "deutsche-rentenversicherung",
+  "name": "Deutsche Rentenversicherung",
+  "registered": false,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.deutsche-rentenversicherung.de"
+}

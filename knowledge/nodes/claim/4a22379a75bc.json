@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7779553dd00e"
+    }
+  ],
+  "id": "claim:4a22379a75bc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "By the end of the first month, a formula-fed baby usually takes at least 3 to 4 oz (about 120 mL) per feeding, on a roughly 3 to 4 hour schedule.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

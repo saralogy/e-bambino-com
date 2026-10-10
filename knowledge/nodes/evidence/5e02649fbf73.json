@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:5e02649fbf73",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Recalls/2014/philandteds-Recalls-Infant-Car-Seat-Adaptors-for-Strollers"
+}

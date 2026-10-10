@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:38c309348a54"
+    }
+  ],
+  "id": "claim:06a91ba1c19a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC mandatory standard for infant sleep products (approved 2021): inclined sleepers, travel and compact bassinets, and in-bed sleepers were linked to dozens of infant deaths. The standard requires a sleep surface angle of 10 degrees or lower and largely removes these products from the market. It went into effect in June 2022.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

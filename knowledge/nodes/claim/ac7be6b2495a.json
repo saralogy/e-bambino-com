@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ac7be6b2495a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Cause list (wet or soiled diaper, friction, yeast, bacteria, antibiotics): the AAP page names rash types (irritant, yeast, bacterial) but the causes were only partly confirmed in the snippets. Verify on the full AAP page before writing the cause list.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,22 @@
+{
+  "appliesTo": [
+    "category-researcher",
+    "lead",
+    "writer-editor"
+  ],
+  "created": "2026-10-10",
+  "edges": [
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-category-team-drafts"
+    },
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-content-intelligence-sprint-001"
+    }
+  ],
+  "evidence": "car-seat-installation-check vs how-to-install-a-car-seat; stroller brief vs held how-to-choose-a-stroller; wardrobe-planner brief vs how-many-baby-clothes-do-you-need.",
+  "id": "lesson:check-inventory-first",
+  "type": "lesson",
+  "what": "Duplicate topics arise when teams do not check the page inventory first; query the graph (pages, opportunities) before proposing or writing."
+}

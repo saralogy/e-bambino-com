@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e56c72b54e54"
+    }
+  ],
+  "id": "claim:b16bcc8040fa",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC says bottles should be cleaned after every feeding. Sanitizing matters most for babies under 2 months, premature babies and babies with weakened immune systems.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

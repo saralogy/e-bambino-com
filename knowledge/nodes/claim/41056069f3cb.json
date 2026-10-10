@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d83d58cd678e"
+    }
+  ],
+  "id": "claim:41056069f3cb",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Call the doctor now for bright red skin that peels off in sheets, for fever with an infected look or spreading redness, and for any concern in a baby under one month old.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

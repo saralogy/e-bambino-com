@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3424aa44d486"
+    }
+  ],
+  "id": "claim:2868b280b233",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC advises pumping about as often as the baby would normally feed, and adding an extra session if the baby needs more milk while the parent is away.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

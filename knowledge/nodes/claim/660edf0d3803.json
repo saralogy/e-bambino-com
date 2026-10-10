@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b840a6c0457d"
+    }
+  ],
+  "id": "claim:660edf0d3803",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC says a rear-facing car seat should never be placed in front of an active airbag, and front passenger airbags can injure or kill young children. Use the back seat.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

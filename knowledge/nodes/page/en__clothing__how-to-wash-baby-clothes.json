@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/kleidung/babywaesche-richtig-waschen"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/how-to-wash-baby-clothes",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "verbraucherzentrale"
+  ],
+  "slug": "how-to-wash-baby-clothes",
+  "status": "published",
+  "title": "How do you wash baby clothes?",
+  "translationOf": "babywaesche-richtig-waschen",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/how-to-wash-baby-clothes/",
+  "ymyl": false
+}

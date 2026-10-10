@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:67c7a8423fe9"
+    }
+  ],
+  "id": "claim:20c8542e384e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP's 2022 safe sleep policy addresses overheating as a risk factor and calls for avoiding overheating during sleep. It does not give a specific numeric room temperature.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

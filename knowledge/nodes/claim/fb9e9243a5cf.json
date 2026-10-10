@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1cb932989413"
+    }
+  ],
+  "id": "claim:fb9e9243a5cf",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AWMF guideline's parent version (2024-11) summarizes the under-3 advice as 'Bis drei: Bildschirmfrei!' (screen-free until age three).",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

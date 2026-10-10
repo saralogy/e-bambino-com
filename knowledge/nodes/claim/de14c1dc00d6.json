@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c24686a5ea42"
+    }
+  ],
+  "id": "claim:de14c1dc00d6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The Verbraucherzentrale advises offering extra drinks from a cup, mug or glass from the start. Bottle use makes it harder to learn to drink. Constant sucking and a bottle at sleep raise the risk of tooth decay, including with plain water.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ee43ae306f3f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether blinds sold before 2001 carry more risk: the older CPSC release supports age-related risk, but the 2001 cut-off was not confirmed from an official page; check before publishing.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

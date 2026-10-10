@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c6a70342bca2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "AWMF S2k guideline on human milk in healthcare settings was listed but its storage times were not visible in results; check the full PDF.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

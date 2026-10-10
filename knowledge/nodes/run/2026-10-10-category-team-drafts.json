@@ -1,0 +1,19 @@
+{
+  "agent": "per-category teams (PM, researcher, writer, SEO/GEO, UX/UI, publisher)",
+  "cost": "not recorded",
+  "edges": [],
+  "finished": "2026-10-10",
+  "id": "run:2026-10-10-category-team-drafts",
+  "inputs": [
+    "docs/category-plans.md"
+  ],
+  "model": "unrecorded (project lead reports Haiku drafts; commit trailers in #10 name several models)",
+  "notes": "Drafts hedged heavily (\"no source we checked ...\") and needed a full editorial pass.",
+  "outputs": [
+    "docs/research/*.json",
+    "38 English draft question pages (draft: true)"
+  ],
+  "started": "2026-10-10",
+  "status": "succeeded",
+  "type": "run"
+}

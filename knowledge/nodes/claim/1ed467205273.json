@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8a3d0eeebd06"
+    }
+  ],
+  "id": "claim:1ed467205273",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Keep the stump clean and dry. Fold the diaper below the cord so urine does not soak it, and check at each diaper change.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

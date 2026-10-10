@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d072b5f6ac7b"
+    }
+  ],
+  "id": "claim:e08b3bbc0e3f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Under CPSC's final gates standard, pressure-mounted gates that rely on wall cups must carry a separate warning about installing wall cups along the top rail.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

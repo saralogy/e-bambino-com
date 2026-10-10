@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bfbed94d41c2"
+    }
+  ],
+  "id": "claim:71c8e357f4d1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Cradle cap is usually harmless, and it often does not need treatment.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

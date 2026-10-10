@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9be60340ff89",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Rules outside the US (for example EU or German aircraft-approval rules for car seats). Not researched in this pass.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

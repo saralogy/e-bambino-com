@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:7ec3d9990b29",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The table signs (sweaty neck, flushed skin, cold hands and feet) and their likely causes and actions were not found in any official source. Do not present them as official guidance without a named source.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

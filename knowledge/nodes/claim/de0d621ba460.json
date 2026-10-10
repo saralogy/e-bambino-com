@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:de0d621ba460",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Cost comparison between reusable and disposable pads is not sourced; keep cost claims out.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

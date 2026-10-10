@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1643ad47cd37"
+    }
+  ],
+  "id": "claim:8f9aedf49e6a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Read the seat's instruction manual and confirm the child is within the seat's weight and height limits before flying.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

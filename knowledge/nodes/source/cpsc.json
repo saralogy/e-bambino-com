@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "U.S. Consumer Product Safety Commission",
+  "id": "source:cpsc",
+  "jurisdiction": "US",
+  "key": "cpsc",
+  "name": "CPSC",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.cpsc.gov"
+}

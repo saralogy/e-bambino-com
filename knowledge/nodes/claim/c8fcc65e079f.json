@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c8fcc65e079f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source found for the number of diapers per day or the diapering item list. The CDC emergency list is not a shopping list.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

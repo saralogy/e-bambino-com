@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "Swiss Federal Statistical Office",
+  "id": "source:bfs",
+  "jurisdiction": "CH",
+  "key": "bfs",
+  "name": "BFS",
+  "registered": false,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.bfs.admin.ch"
+}

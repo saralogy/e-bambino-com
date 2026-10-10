@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:894b1d415553"
+    }
+  ],
+  "id": "claim:3f6a75df5a29",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Blanket-style sleepers and robes are covered by the children's sleepwear flammability standards; recalled blanket sleepers were found to fail those standards.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

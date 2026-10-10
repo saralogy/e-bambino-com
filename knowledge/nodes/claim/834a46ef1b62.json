@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:834a46ef1b62",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No listed source key covers pump specifications or device standards (for example EU MDR or FDA 510(k) requirements); add a regulator source key before writing specification claims.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

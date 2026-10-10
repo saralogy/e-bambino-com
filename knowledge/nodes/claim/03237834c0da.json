@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1cd1f8a5c98e"
+    }
+  ],
+  "id": "claim:03237834c0da",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises dressing the baby in layers or a wearable blanket instead of using loose blankets. Infant sleep clothing such as a wearable blanket is preferable to blankets because it reduces the risk of head covering or entrapment. The sack should fit the baby and not cover the head.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

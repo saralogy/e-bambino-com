@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:eda75b4f2318"
+    }
+  ],
+  "id": "claim:966819c56de7",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A typical pumping session is about 10 to 15 minutes per breast, and pumping should stop when it is no longer comfortable or productive.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

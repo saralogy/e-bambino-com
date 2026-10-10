@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:987ec6c28071"
+    }
+  ],
+  "id": "claim:d61d019dd47a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP says diapers and disposable training pants send a message that a child does not need to learn to use the toilet, so they are not a substitute for potty training.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

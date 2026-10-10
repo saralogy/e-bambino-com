@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:58dd4386e96d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "CPSC statement that it is not aware of a car seat adapter intended to stay installed in the stroller when the car seat is not used. The source URL was not confirmed.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

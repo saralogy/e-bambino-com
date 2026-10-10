@@ -53,6 +53,9 @@ npm run build     # production build into dist/  (must pass before every merge)
 npm run preview   # serve dist/ locally
 npm run audit     # content audit, English + German (exit 1 only on hard errors)
 node scripts/make-og.mjs       # regenerate public/og-default.png and logo.png (Playwright)
+npm run kg:sync   # derive knowledge-graph nodes from content, sources, briefs, research (idempotent)
+npm run kg:check  # validate the graph (exit 1 only on structural errors); kg:build compiles graph.json
+npm run kg -- stats | search <text> | show <id> | neighbors <id> [rel] | pages --status <s>
 ```
 
 Deployment: merging to `main` is the release. Work on a branch, open a PR, merge when checks pass.
@@ -81,6 +84,9 @@ src/
   lib/audit.ts         German copy quality checks
   styles/global.css    Component classes (.btn-*, .card, .chip-*, .prose, .page-hero …)
 tailwind.config.js     Design tokens
+knowledge/             Knowledge graph: one JSON file per node (see knowledge/README.md)
+scripts/kg/            Graph schema, lib, sync, check, CLI
+docs/system/           CONTRACT.md (workflow contract, binding for agents) and EVALUATION.md
 astro.config.mjs       Redirects from old German root URLs to /de/, markdown table wrapper, sitemap
 ```
 
@@ -274,3 +280,4 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 | 2026-10-10 | Legal entity on the site: e-bambino, Hamburg, Germany, info@e-bambino.com. |
 | 2026-10-10 | Content is produced by per-category teams (PM, researcher, writer, SEO/GEO, UX/UI, publisher). Facts come only from official sources found by the researcher. Team output lands as `draft: true` and needs an editorial pass before release. |
 | 2026-10-10 | AI answer engines are a target channel (GEO): allow their crawlers, publish `/llms.txt`, keep a quotable 40–60 word short answer on every page. |
+| 2026-10-10 | Long-term memory is a knowledge graph of git-tracked JSON in `knowledge/` (no external database). Agents follow `docs/system/CONTRACT.md`; check the inventory (`npm run kg -- search`) before proposing a topic. PLAYBOOK scoring is canonical. |

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:403e094c0a06"
+    }
+  ],
+  "id": "claim:93989cfb19c3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The German S3 allergy-prevention guideline recommends exclusive breastfeeding for the first four to six months where possible. If formula is needed before complementary feeding starts, it recommends considering an infant formula with study-proven allergy-prevention effect.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:2564feb8846d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Fit, changing ease, and leak protection differences between pull-ups and tape diapers: no official source comparing the two was found. The Verbraucherzentrale search returned no pull-up versus tape comparison, so this must come from a consumer test or be left out.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

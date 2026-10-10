@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a6c2850df0e6"
+    }
+  ],
+  "id": "claim:80b6f895625a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance says silicone teats do not need boiling at home. Rubber teats become porous over time and should be replaced or occasionally boiled.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

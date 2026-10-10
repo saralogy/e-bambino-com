@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:cec160f53dc9",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/infant-toddler-nutrition/bottle-feeding/index.html"
+}

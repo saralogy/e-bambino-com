@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:91c4a2426ca3",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Lactation consultant (IBCLC) or midwife credentials and the reviewer requirement are not sourced here; reviewedBy must stay empty until a named reviewer confirms the page.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

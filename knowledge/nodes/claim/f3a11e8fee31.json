@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d7db4fa8bb06"
+    }
+  ],
+  "id": "claim:f3a11e8fee31",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In the first four to six months, breast milk or formula provides enough fluid. An extra drink of about 200 mL per day is enough, and the German guidance on drinks for the first year says the baby signals hunger and fullness, so package amounts are only a rough guide.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

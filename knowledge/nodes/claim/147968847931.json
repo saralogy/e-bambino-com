@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:81fb3b8d05e5"
+    }
+  ],
+  "id": "claim:147968847931",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Further German readiness signs: the baby is interested in what others eat, moves its mouth while watching, and puts food or objects into its mouth. The first porridge should start once the child shows this interest.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

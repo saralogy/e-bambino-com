@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:4cd582aec4de",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a travel system is cheaper than buying the parts separately. Prices are not covered by any official source; the price comparison must come from retailer data, dated and labeled as such.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

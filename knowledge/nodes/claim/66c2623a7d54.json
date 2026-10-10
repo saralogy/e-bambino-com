@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:66c2623a7d54",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source confirmed weight or height limits, or the point at which a baby should stop using a bassinet or bedside sleeper (for example, the stated weight limit or when the baby can push up on hands and knees). Each product's manual sets these limits. Do not state a number without an official source.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

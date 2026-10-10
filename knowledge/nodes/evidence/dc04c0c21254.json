@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:dc04c0c21254",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/"
+}

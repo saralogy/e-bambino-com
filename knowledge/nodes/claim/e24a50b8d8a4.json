@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9f12c2622744"
+    }
+  ],
+  "id": "claim:e24a50b8d8a4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP suggests about 15 minutes of pumping, on average, for each 4 hours the breastfeeding parent is apart from the baby.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

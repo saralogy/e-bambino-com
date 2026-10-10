@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c7bff7b97474"
+    }
+  ],
+  "id": "claim:0b099adbb80f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Signs of adequate intake include frequent feeding, at least 6 wet diapers a day after the milk comes in (pale, thin urine), and regular weight gain.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

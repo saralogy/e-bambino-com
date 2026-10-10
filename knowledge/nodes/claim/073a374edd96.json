@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c033a2669e79"
+    }
+  ],
+  "id": "claim:073a374edd96",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC publishes growth charts that track infant weight and length percentiles over time, which is the official reference for whether a baby is gaining weight normally.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

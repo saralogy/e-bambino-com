@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8d930392d885"
+    }
+  ],
+  "id": "claim:91628dff8f58",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Airline policies on baby gear change often; ask the airline whether gate-checking a car seat or stroller costs extra before booking.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

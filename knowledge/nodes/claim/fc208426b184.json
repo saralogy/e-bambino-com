@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:606284a80768"
+    }
+  ],
+  "id": "claim:fc208426b184",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Strollers can be checked for recalls on the CPSC's stroller recall list; check both the stroller and the car seat model before buying a travel system.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

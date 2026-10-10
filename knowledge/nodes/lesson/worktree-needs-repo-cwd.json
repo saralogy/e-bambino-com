@@ -1,0 +1,17 @@
+{
+  "appliesTo": [
+    "lead",
+    "publisher"
+  ],
+  "created": "2026-10-10",
+  "edges": [
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-category-team-drafts"
+    }
+  ],
+  "evidence": "Worktree-based agent runs failed until the session cwd was the repo (observed 2026-10-10).",
+  "id": "lesson:worktree-needs-repo-cwd",
+  "type": "lesson",
+  "what": "Workflow worktrees fail when the session working directory is not the repository; start agents from the repo root."
+}

@@ -1,0 +1,21 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "ernaehrung",
+  "id": "page:de/ernaehrung/flasche-trinken-beenden",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki",
+    "awmf",
+    "who"
+  ],
+  "slug": "flasche-trinken-beenden",
+  "status": "held-ymyl",
+  "title": "Wann sollte ein Baby nichts mehr aus der Flasche trinken?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/ernaehrung/flasche-trinken-beenden/",
+  "ymyl": true
+}

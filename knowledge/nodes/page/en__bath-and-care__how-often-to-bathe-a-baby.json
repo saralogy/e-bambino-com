@@ -1,0 +1,57 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:50452fb0e15c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:65e37320a16b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b4d87d53dfbe"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bf5af80501b9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c7dd760dc8e5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d701beba5072"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e4d0dcb420a8"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    }
+  ],
+  "gated": true,
+  "hub": "bath-and-care",
+  "id": "page:en/bath-and-care/how-often-to-bathe-a-baby",
+  "internalLinks": [
+    "/diapering/how-often-to-change-a-diaper/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "kindergesundheit-info",
+    "cpsc"
+  ],
+  "slug": "how-often-to-bathe-a-baby",
+  "status": "held-ymyl",
+  "title": "How often should you bathe a baby?",
+  "translationOf": "wie-oft-baden-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/bath-and-care/how-often-to-bathe-a-baby/",
+  "ymyl": true
+}

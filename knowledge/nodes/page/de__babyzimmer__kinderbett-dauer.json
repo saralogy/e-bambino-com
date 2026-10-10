@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "babyzimmer",
+  "id": "page:de/babyzimmer/kinderbett-dauer",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "kinderbett-dauer",
+  "status": "published",
+  "title": "Wie lange braucht ein Kinderbett und wann wird es zu klein?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/babyzimmer/kinderbett-dauer/",
+  "ymyl": false
+}

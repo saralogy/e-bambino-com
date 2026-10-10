@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:fda"
+    }
+  ],
+  "id": "evidence:c70c439d96c3",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "fda",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://www.fda.gov/food/resources-you-food/infant-formula-homepage"
+}

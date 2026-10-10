@@ -1,0 +1,36 @@
+{
+  "action": "improve",
+  "category": "diapering",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/diapering/cloth-vs-disposable-diapers"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/diapering/how-many-diapers-per-day"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:diapering-total-cost-calculator"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": false
+  },
+  "id": "opp:diapering-total-cost-calculator",
+  "owner": "content-intelligence-lead",
+  "priority": "P2",
+  "rationale": "From brief 2026-10-10-diapering-total-cost-calculator.md. Decision line: \"Extend the existing comparison with an interactive or transparent calculation\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Cloth vs disposable diaper total-cost calculator",
+  "type": "opportunity"
+}

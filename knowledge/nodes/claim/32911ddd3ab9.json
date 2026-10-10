@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8d8aeaadf5f8"
+    }
+  ],
+  "id": "claim:32911ddd3ab9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Babies may want to feed as often as every 1 to 3 hours at first; later, most exclusively breastfed babies feed every 2 to 4 hours.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

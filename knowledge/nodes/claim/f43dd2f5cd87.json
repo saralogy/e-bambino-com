@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:eaef38748961"
+    }
+  ],
+  "id": "claim:f43dd2f5cd87",
+  "kind": "fact",
+  "status": "supported",
+  "text": "With a seat belt installation, lock the belt, press firmly down on the car seat while tightening the belt, then check that the seat moves no more than about 1 inch.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

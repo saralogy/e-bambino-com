@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f565d58b276f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The entire EU 50-92 to US age-label conversion table, including approximate length in cm and typical weight per row. No official size table was found on the allowed domains; every row must be checked against manufacturer charts.",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

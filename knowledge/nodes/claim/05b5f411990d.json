@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e11b33c92b5b"
+    }
+  ],
+  "id": "claim:05b5f411990d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Use the pinch test at the shoulder: if you can pinch the harness straps, the harness is too loose; rear-facing straps go at or below the shoulders and forward-facing straps at or above them. The chest clip goes at armpit level.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3de925206ae0"
+    }
+  ],
+  "id": "claim:d406755eb8c2",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC lists the National Battery Ingestion Hotline at 800-498-8666 for button battery ingestion.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

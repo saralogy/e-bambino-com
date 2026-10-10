@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:27a8e9f41b4b"
+    }
+  ],
+  "id": "claim:8b9f27049fc8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "WHO-linked operational guidance says most infants are ready for complementary foods around 6 months. Some may be ready from 4 to 6 months if they can sit with good head control and show other readiness signs.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

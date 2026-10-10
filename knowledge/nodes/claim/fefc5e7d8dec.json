@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:751c9e14ee75"
+    }
+  ],
+  "id": "claim:fefc5e7d8dec",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Always place a baby to sleep on the back to reduce the risk of sudden unexpected infant death and suffocation. A baby who falls asleep in a swing, bouncer or similar product should be moved to a crib, bassinet or play yard.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c1a5113d0b89",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Retrofit options, motorized blinds and cordless retrofit: not covered by any source.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

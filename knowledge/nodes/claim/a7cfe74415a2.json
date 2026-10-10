@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:63ba5c8d82a7"
+    }
+  ],
+  "id": "claim:a7cfe74415a2",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC has warned about hidden cord hazards in older window coverings since at least 1986, and a 2006 CPSC release described old window coverings as a strangulation risk for young children.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

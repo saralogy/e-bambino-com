@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b471918dd4ce"
+    }
+  ],
+  "id": "claim:0080e62acbe2",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Under UNECE rules for i-Size (ECE R129) seats, rearward-facing travel is mandatory until about 15 months.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

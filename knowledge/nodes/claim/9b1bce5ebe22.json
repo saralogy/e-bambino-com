@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2daa3d57e80c"
+    }
+  ],
+  "id": "claim:9b1bce5ebe22",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC warned in 2026 to stop using infant self-feeding pillows because they can cause aspiration and suffocation. Never prop a bottle with a pillow, blanket or other support.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

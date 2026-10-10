@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7ab5602c6618"
+    }
+  ],
+  "id": "claim:b34687180ab3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CDC advises thawing in the refrigerator overnight, in lukewarm water, or under lukewarm running water, and says not to thaw or heat breast milk in a microwave because it can create hot spots.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

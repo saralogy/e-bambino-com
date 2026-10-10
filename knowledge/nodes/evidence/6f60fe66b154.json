@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:6f60fe66b154",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-YCXXKJ-Baby-Bath-Seats-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Drowning-Violates-Mandatory-Standard-for-Infant-Bath-Seats"
+}

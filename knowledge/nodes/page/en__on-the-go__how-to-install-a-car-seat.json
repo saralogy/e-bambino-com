@@ -1,0 +1,90 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0007c3fb417a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:0080e62acbe2"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:01d27231b465"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2882fcb8fe7c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2ad5bb227006"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2b106554f306"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3c399125d156"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:660edf0d3803"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7f5a125c2bc3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b9643018f1f8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bf9dfbfab73c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:db5f1868df98"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ec42baf41ec8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f43dd2f5cd87"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/on-the-go/when-can-my-child-face-forward-in-the-car"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/mobilitaet/autositz-einbau-pruefen"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/how-to-install-a-car-seat",
+  "internalLinks": [
+    "/on-the-go/when-can-my-child-face-forward-in-the-car/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "nhtsa",
+    "aap",
+    "cdc",
+    "unece"
+  ],
+  "slug": "how-to-install-a-car-seat",
+  "status": "held-ymyl",
+  "title": "How to install a car seat correctly",
+  "translationOf": "autositz-einbau-pruefen",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/how-to-install-a-car-seat/",
+  "ymyl": true
+}

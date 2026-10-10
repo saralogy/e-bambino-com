@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:85ecd67ca111"
+    }
+  ],
+  "id": "claim:ad83d93c88cb",
+  "kind": "fact",
+  "status": "supported",
+  "text": "HealthyChildren.org says 27% to 60% of scald burns in children under 5 come from hot liquids in cups, mugs and tableware; never carry a hot drink and a baby at the same time, and keep mugs and bowls away from table edges.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

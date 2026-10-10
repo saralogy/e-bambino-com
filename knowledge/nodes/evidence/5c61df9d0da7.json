@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:awmf"
+    }
+  ],
+  "id": "evidence:5c61df9d0da7",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "awmf",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "evidence",
+  "url": "https://register.awmf.org/assets/guidelines/063-002l_S1_Praevention-des-Ploetzlichen-Sauuglingstods_2022-12_01.pdf"
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9d7ad634b288",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Converting sizes on US or online retailers (no official source found).",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f02d6de1f441"
+    }
+  ],
+  "id": "claim:d56dcb97d2f5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "If the baby still seems hungry after most feedings, the pediatrician should see the baby and weigh them right away; trouble latching, a weak suck and painful breastfeeding are listed as reasons to call.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

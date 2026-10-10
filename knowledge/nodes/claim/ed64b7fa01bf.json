@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ed64b7fa01bf",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether sizes overlap across brands: no official source found.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

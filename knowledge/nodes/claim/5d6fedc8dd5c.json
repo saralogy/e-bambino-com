@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:30480686ce70"
+    }
+  ],
+  "id": "claim:5d6fedc8dd5c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Milk thawed in the refrigerator should be used within 24 hours, counted from when it is fully thawed; once warmed or at room temperature it should be used within 2 hours.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/kleidung/strampler-oder-body-unterschied"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/sleeper-or-bodysuit",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "sleeper-or-bodysuit",
+  "status": "published",
+  "title": "Footed sleeper or bodysuit: what is the difference?",
+  "translationOf": "strampler-oder-body-unterschied",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/sleeper-or-bodysuit/",
+  "ymyl": false
+}

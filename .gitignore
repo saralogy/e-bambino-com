@@ -39,3 +39,6 @@ npm-debug.log*
 
 # Astro
 .astro/
+
+# Knowledge graph: compiled view (npm run kg:build). Node files are tracked.
+knowledge/graph.json

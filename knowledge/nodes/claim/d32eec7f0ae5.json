@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d32eec7f0ae5",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Start of follow-on formula: the Verbraucherzentrale gives the 7th month, while another German summary gives from the 5th month alongside complementary feeding. Needs an editor decision.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

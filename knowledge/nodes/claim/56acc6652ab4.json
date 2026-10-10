@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6fae06e1f618"
+    }
+  ],
+  "id": "claim:56acc6652ab4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-Info: bladder and bowel control usually comes by itself once the child is physically ready; first signs usually appear in the second and third year, and early potty training does not make it faster.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

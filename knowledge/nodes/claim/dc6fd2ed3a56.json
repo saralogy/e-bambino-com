@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:cc7cc0b001c0"
+    }
+  ],
+  "id": "claim:dc6fd2ed3a56",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Under CPSC small-parts rules (16 CFR part 1501), toys for children under 3 must not have small parts that fit entirely in a test cylinder of about 2.25 by 1.25 inches. CPSC teether recalls in 2026 cite pull-string teethers that violate the mandatory toy standard because of choking risk.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

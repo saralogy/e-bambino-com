@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6ce221170bf9"
+    }
+  ],
+  "id": "claim:34c8bdf76651",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Only pumps designed as multiple-user pumps can be rented safely; hospitals, lactation consultants and medical supply stores rent them, and each renter needs a new accessories kit (breast shields and tubing).",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

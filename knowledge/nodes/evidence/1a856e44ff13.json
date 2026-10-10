@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:1a856e44ff13",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Recalls/2017/Combi-USA-Recalls-Stroller-and-Car-Seat-Combos"
+}

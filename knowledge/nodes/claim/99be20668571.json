@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:99be20668571",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Warning-sign threshold of fewer than 8 feeds per 24 hours and weight loss after day 5 was reported in search summaries but not confirmed against a specific official page text; check before using as a threshold.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

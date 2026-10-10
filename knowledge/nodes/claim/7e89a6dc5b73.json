@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9c0c1328bd94"
+    }
+  ],
+  "id": "claim:7e89a6dc5b73",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FDA warns that powered pumps depend on electricity or batteries, so parents should have a back-up method, such as a manual pump, to keep a pumping schedule during an emergency.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

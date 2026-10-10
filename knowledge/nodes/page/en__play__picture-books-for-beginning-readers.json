@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/spielzeug/erstleser-bilderbuecher"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/picture-books-for-beginning-readers",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "picture-books-for-beginning-readers",
+  "status": "published",
+  "title": "What makes a good book for beginning readers?",
+  "translationOf": "erstleser-bilderbuecher",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/picture-books-for-beginning-readers/",
+  "ymyl": false
+}

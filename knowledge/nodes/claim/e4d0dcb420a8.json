@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:937a3596d27f"
+    }
+  ],
+  "id": "claim:e4d0dcb420a8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The bath water should be body-warm, at 36 to 37 degrees Celsius, and somewhat on the cooler side rather than too hot. Check it with a bath thermometer and by testing with the forearm.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

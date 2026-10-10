@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2aa19da14117"
+    }
+  ],
+  "id": "claim:86379602bedd",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A 2009 NHTSA study found the most common installation errors were an improper chest clip level (60%), an inappropriate recline position (36.7%), twisted harness straps (30%) and loose harnesses (20.7%).",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

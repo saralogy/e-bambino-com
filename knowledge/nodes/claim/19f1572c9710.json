@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:19f1572c9710",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Age ranges of use from newborn to toddler, and resale value: manufacturer-specific, not verified.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

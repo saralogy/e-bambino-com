@@ -1,0 +1,22 @@
+{
+  "collection": "checklisten",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/checklisten/urlaubs-checkliste"
+    }
+  ],
+  "gated": false,
+  "id": "page:en/checklists/family-travel",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [],
+  "slug": "family-travel",
+  "status": "published",
+  "title": "Family travel checklist: packing with a baby or toddler",
+  "translationOf": "urlaubs-checkliste",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/checklists/family-travel/",
+  "ymyl": false
+}

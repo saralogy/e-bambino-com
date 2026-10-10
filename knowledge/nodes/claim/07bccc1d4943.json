@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:07bccc1d4943",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Care effort, washing and drying performance by fabric, and price bands: no official source found.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:7253451f48c5",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "From what age to start covering outlets: no official age was confirmed.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

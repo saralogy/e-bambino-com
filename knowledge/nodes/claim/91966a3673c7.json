@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:91966a3673c7",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the German guidance allows video calls for under-3s (the AAP does) is not confirmed by the sources found.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:129759eb592c"
+    }
+  ],
+  "id": "claim:01d27231b465",
+  "kind": "fact",
+  "status": "supported",
+  "text": "With lower anchors (LATCH), press firmly down on the seat while tightening the straps, then check that the seat moves no more than about 1 inch.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

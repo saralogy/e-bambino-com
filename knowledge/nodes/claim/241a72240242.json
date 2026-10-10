@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e9837b7f435e"
+    }
+  ],
+  "id": "claim:241a72240242",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Weight gain is the most reliable check that a baby is getting enough milk; a breastfed baby should be back to birth weight by about day 10 to 14.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

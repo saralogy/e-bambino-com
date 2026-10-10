@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a83a24c787b5"
+    }
+  ],
+  "id": "claim:e21e6a442380",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP: for children 2 to 5 years, limit digital media use to no more than 1 hour per day, with co-viewing recommended.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

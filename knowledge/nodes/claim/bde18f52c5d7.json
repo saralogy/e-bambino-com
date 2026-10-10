@@ -1,0 +1,19 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c207d761df3e"
+    }
+  ],
+  "id": "claim:bde18f52c5d7",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises washing new baby clothes before use because newborns tend to have sensitive skin.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes",
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

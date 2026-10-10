@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:aad428a93162",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source ranks materials as best. The brief's table cells for durability and cleaning need a documented method or must be marked as general care advice.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

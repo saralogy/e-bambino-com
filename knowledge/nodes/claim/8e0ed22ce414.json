@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:8e0ed22ce414",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Room temperature for bathing: a kindergesundheit snippet gives 21 to 24 degrees, but the wording was unclear, so it is not used as a fact.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

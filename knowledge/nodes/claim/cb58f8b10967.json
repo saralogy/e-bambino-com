@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2dacd42fd353"
+    }
+  ],
+  "id": "claim:cb58f8b10967",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Newborns should nurse whenever they show hunger cues, and should not go longer than about 2 to 3 hours during the day or 4 hours at night without a feeding.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

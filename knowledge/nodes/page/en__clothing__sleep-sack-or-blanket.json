@@ -1,0 +1,26 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/kleidung/schlafsack-oder-decke-winter"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/sleep-sack-or-blanket",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "reviewedBy": "Mathilda, Nurse",
+  "slug": "sleep-sack-or-blanket",
+  "status": "published",
+  "title": "Sleep sack or blanket: what should a baby sleep in?",
+  "translationOf": "schlafsack-oder-decke-winter",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/sleep-sack-or-blanket/",
+  "ymyl": true
+}

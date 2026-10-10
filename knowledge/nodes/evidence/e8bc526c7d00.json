@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:e8bc526c7d00",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/health-issues/conditions/abdominal/Pages/constipation.aspx"
+}

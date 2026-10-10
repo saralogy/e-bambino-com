@@ -1,0 +1,64 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:020e707612c9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:02e0ea1c52cc"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:06a91ba1c19a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3a32e20b11f4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6402e9ad30f6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:655a76ce586f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bc34faed521c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ede691b7d9a9"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/nursery/how-long-does-a-crib-last"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/nursery/nursery-in-a-small-apartment"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/bassinet-bedside-crib-or-crib",
+  "internalLinks": [
+    "/nursery/how-long-does-a-crib-last/",
+    "/nursery/nursery-in-a-small-apartment/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap"
+  ],
+  "slug": "bassinet-bedside-crib-or-crib",
+  "status": "held-ymyl",
+  "title": "Bassinet, bedside sleeper or crib: which comes first?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/bassinet-bedside-crib-or-crib/",
+  "ymyl": true
+}

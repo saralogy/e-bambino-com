@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:a6c2850df0e6",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/flaschenfuetterung/"
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:21e5f2f6877f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The brief's claim that the page can publish without a reviewer: this depends on the editorial team's gate decision. Keep safety statements out of the page as the brief asks.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

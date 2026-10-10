@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:awmf"
+    }
+  ],
+  "id": "evidence:1cb932989413",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "awmf",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://register.awmf.org/assets/guidelines/027_D_Ges_fuer_Kinderheilkunde_und_Jugendmedizin/027-075eltern_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2024-11.pdf"
+}

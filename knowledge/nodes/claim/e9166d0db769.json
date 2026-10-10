@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9693ddeabe0a"
+    }
+  ],
+  "id": "claim:e9166d0db769",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AWMF guideline links excessive screen use in toddlerhood to regulation and attachment disorders and to language and cognitive development, while noting that the data are described as controversial.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

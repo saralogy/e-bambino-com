@@ -1,0 +1,56 @@
+{
+  "agent": "content-intelligence-lead + intel-* category researchers",
+  "cost": "not recorded",
+  "edges": [
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-bath-care-first-bath-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-breastfeeding-pumping-storage-workflow"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-clothing-size-wardrobe-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-diapering-total-cost-calculator"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-feeding-high-chair-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-nursery-crib-mattress-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-on-the-go-stroller-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-play-toy-rotation-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "brief:2026-10-10-safety-room-by-room-checklist"
+    }
+  ],
+  "finished": "2026-10-10",
+  "id": "run:2026-10-10-content-intelligence-sprint-001",
+  "inputs": [
+    "AGENTS.md",
+    ".claude/content-intelligence/PLAYBOOK.md"
+  ],
+  "model": "unrecorded",
+  "outputs": [
+    "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+    "docs/content-intelligence/inbox/*.md"
+  ],
+  "started": "2026-10-10",
+  "status": "succeeded",
+  "type": "run"
+}

@@ -1,0 +1,63 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:3e3c4b3914b9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8323afa63dea"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8b2ffb0befe8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:954c93b8f1d0"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bb6e0632065d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bd31fcd6df69"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:be0d2d74c4fe"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f45fdfe0404b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ff625832197a"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/play/toys-for-motor-skills-first-year"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/baby-walker-or-push-toy",
+  "internalLinks": [
+    "/play/toys-for-motor-skills-first-year/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "cpsc"
+  ],
+  "slug": "baby-walker-or-push-toy",
+  "status": "held-ymyl",
+  "title": "Are baby walkers safe, or is a push toy better?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/baby-walker-or-push-toy/",
+  "ymyl": true
+}

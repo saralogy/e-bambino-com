@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:999d5cc383b0"
+    }
+  ],
+  "id": "claim:6b23ac7cfbaf",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance: from the first year, a child should drink from a cup or glass where possible. From the second year the child learns to drink from a normal cup, and at the latest from then on, nipple bottles, spouted cups and valve bottles should be avoided.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:20bd2e4e8e73",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The complete German Babyerstausstattung checklist (BIÖG/kindergesundheit-info PDF) was not retrieved, so its item list is unconfirmed.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

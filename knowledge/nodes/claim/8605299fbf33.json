@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:dd0930caf6c0"
+    }
+  ],
+  "id": "claim:8605299fbf33",
+  "kind": "fact",
+  "status": "supported",
+  "text": "HealthyChildren.org recommends traditional liquid or powder laundry detergent instead of detergent packets until all children who live in or visit the home are at least 6 years old, because even a small amount can cause serious breathing or stomach problems or eye irritation.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

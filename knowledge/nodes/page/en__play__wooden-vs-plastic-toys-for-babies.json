@@ -1,0 +1,64 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:138fdbeb18f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3c130d81fa49"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:42b61b7c3057"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:54ee60074d37"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5f753b20155c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a23b16c3f3b7"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b931dae8eb64"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bd60fde121b3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:dc6fd2ed3a56"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/play/toys-for-motor-skills-first-year"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/wooden-vs-plastic-toys-for-babies",
+  "internalLinks": [
+    "/play/toys-for-motor-skills-first-year/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "verbraucherzentrale",
+    "kindergesundheit-info",
+    "cpsc"
+  ],
+  "slug": "wooden-vs-plastic-toys-for-babies",
+  "status": "held-ymyl",
+  "title": "Are wooden or plastic toys better for babies?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/wooden-vs-plastic-toys-for-babies/",
+  "ymyl": true
+}

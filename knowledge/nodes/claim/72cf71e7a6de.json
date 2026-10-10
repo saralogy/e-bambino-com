@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:72cf71e7a6de",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a minor crash also requires replacement under the manufacturer's manual: NHTSA says to follow manufacturer instructions, but the manual's rules were not checked.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:dcd5bd92ffbb"
+    }
+  ],
+  "id": "claim:09ef1efc6f4d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NHTSA says a correctly installed car seat should not move more than 1 inch side to side or front to back when pulled at the belt path.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

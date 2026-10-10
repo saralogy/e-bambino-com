@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bf9929da7d54"
+    }
+  ],
+  "id": "claim:988185333d7d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "An Evenflo recall followed reports that mounting hardware broke or cracked, causing children to fall down stairs; nine such reports were received.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

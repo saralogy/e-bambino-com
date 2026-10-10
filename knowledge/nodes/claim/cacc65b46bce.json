@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:cacc65b46bce",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No RKI table with breast-milk storage times was found; the German draft values (4 hours, 4 days, 6 months) are not confirmed by an RKI or AWMF source.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

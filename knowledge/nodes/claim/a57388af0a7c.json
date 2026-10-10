@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a57388af0a7c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Which specific outlet covers (two-piece, plug-in guards) a child can or cannot pull off: no official source compared product types.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

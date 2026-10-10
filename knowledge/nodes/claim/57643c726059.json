@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:57643c726059",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Advice to stop the bedtime bottle first and to track progress for 2 to 3 weeks before the next step: no source found. The checklist steps are editorial method, not sourced guidance.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

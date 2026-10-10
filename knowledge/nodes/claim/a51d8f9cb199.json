@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a51d8f9cb199",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the seat must be used during a flight for safety in turbulence or during takeoff and landing beyond the FAA lap-child rule. Not covered by an official source found in this search.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

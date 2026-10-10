@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:72db62024c4c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Lutschgewohnheit ending by the end of the third year: this comes from an orthodontic source, not an allowed official domain. Not confirmed.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,63 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:09a5bc0f7b19"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:0ed0e22e4ff9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:20c8542e384e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4bd62a63f55f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:677568e4d9bd"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a15501d0f47e"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/sleep-sack-or-blanket"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/guides/baby-sleep"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/babyzimmer/schlafzimmer-temperatur-baby"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/room-temperature-for-baby-sleep",
+  "internalLinks": [
+    "/clothing/sleep-sack-or-blanket/",
+    "/guides/baby-sleep/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "awmf",
+    "kindergesundheit-info",
+    "aap",
+    "nichd"
+  ],
+  "slug": "room-temperature-for-baby-sleep",
+  "status": "held-ymyl",
+  "title": "What room temperature is best for a sleeping baby?",
+  "translationOf": "schlafzimmer-temperatur-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/room-temperature-for-baby-sleep/",
+  "ymyl": true
+}

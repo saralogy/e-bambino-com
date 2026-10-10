@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:502b9bc4969b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Exact ISOFIX or LATCH route steps: not researched.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

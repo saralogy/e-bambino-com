@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0a099496c40b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "AWMF guidance on newborn cord care was not found in official-domain search results. Check against AWMF before publishing.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

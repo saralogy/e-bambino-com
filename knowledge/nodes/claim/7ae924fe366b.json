@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:56b8e1314079"
+    }
+  ],
+  "id": "claim:7ae924fe366b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Early hunger cues include rooting and lip-smacking; crying is a late sign of hunger, so feeding earlier is recommended.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

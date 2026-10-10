@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:812bf6852902",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "evidence",
+  "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+}

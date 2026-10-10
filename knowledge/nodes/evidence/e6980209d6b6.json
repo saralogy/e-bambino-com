@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:e6980209d6b6",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/FAQ/Mattresses-Mattress-Pads-Mattress-Sets"
+}

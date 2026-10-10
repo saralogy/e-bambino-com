@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:241e5ca94255",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The regulatory wording for seat types that must carry a 'not certified for use in aircraft' label (belt-positioning seats, harnesses, backless restraints). Found only in regulation text in search results; confirm on nhtsa.gov before publishing.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

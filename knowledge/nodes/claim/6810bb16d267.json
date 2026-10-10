@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:cfe267aea223"
+    }
+  ],
+  "id": "claim:6810bb16d267",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Electric pumps are usually faster, and a double pump (both breasts at once) can reduce pumping time; manual pumps are easier to carry and need no outlet.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/kleidung/groesse-strampler-baby"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/newborn-clothing-size",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "who"
+  ],
+  "slug": "newborn-clothing-size",
+  "status": "published",
+  "title": "What clothing size does a newborn need?",
+  "translationOf": "groesse-strampler-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/newborn-clothing-size/",
+  "ymyl": false
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:3424aa44d486",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/pumping-breast-milk.html"
+}

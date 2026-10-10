@@ -1,0 +1,24 @@
+{
+  "action": "create",
+  "category": "safety",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "TARGETS",
+      "to": "need:safety-room-by-room-checklist"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": true
+  },
+  "id": "opp:safety-room-by-room-checklist",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-safety-room-by-room-checklist.md. Decision line: \"Build after confirming DE/EU authority sources and reviewer\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Room-by-room babyproofing checklist with stage-based re-checks",
+  "type": "opportunity"
+}

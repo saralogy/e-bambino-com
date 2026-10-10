@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ea22aad610dc"
+    }
+  ],
+  "id": "claim:a15501d0f47e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NICHD Safe to Sleep advises keeping the baby from getting too hot during sleep. Parents should dress the baby in sleep clothing such as a wearable blanket instead of loose blankets.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

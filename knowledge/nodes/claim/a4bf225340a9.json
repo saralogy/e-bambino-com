@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a4bf225340a9",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Post-installation checks (for example, a shake test): not confirmed by a source beyond general 'install per instructions'.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

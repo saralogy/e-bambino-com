@@ -1,0 +1,9 @@
+{
+  "audience": "expecting and new parents",
+  "edges": [],
+  "id": "need:safety-room-by-room-checklist",
+  "intent": "unknown",
+  "lang": "en",
+  "question": "How do you babyproof your home room by room?",
+  "type": "need"
+}

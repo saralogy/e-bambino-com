@@ -1,0 +1,26 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/mobilitaet/kindersitz-vorne-gewicht"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/when-can-my-child-face-forward-in-the-car",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "unece"
+  ],
+  "reviewedBy": "Mathilda, Nurse",
+  "slug": "when-can-my-child-face-forward-in-the-car",
+  "status": "published",
+  "title": "When can a child face forward in the car?",
+  "translationOf": "kindersitz-vorne-gewicht",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/when-can-my-child-face-forward-in-the-car/",
+  "ymyl": true
+}

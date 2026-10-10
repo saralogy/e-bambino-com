@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:28c24df9511a"
+    }
+  ],
+  "id": "claim:42b61b7c3057",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC limits: children's products must not exceed 100 ppm total lead in any accessible component part (for children 12 and under), and children's product paint must not exceed 90 ppm lead.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

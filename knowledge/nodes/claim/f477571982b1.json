@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f477571982b1",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Why US and EU baby sizes differ (no official source found).",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

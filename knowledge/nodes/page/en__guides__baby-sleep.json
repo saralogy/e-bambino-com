@@ -1,0 +1,22 @@
+{
+  "collection": "ratgeber",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/ratgeber/schlaf"
+    }
+  ],
+  "gated": false,
+  "id": "page:en/guides/baby-sleep",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [],
+  "slug": "baby-sleep",
+  "status": "published",
+  "title": "Baby sleep guide: how to help your baby sleep well",
+  "translationOf": "schlaf",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/guides/baby-sleep/",
+  "ymyl": false
+}

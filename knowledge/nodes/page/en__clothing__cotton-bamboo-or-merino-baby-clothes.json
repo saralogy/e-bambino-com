@@ -1,0 +1,56 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:3f6a75df5a29"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7d0d2de25e73"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:86981655e798"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:92fc038ef41a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a54b341af460"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bde18f52c5d7"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fccc796062dc"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/how-to-wash-baby-clothes"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/cotton-bamboo-or-merino-baby-clothes",
+  "internalLinks": [
+    "/clothing/how-to-wash-baby-clothes/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "nichd"
+  ],
+  "slug": "cotton-bamboo-or-merino-baby-clothes",
+  "status": "held-ymyl",
+  "title": "Cotton, bamboo or merino: which fabric for baby clothes?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/cotton-bamboo-or-merino-baby-clothes/",
+  "ymyl": true
+}

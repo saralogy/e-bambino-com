@@ -1,0 +1,54 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:03c9e5e42708"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:1d3677e96953"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:1ed467205273"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2975be63fd7c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5eeaa74f04d1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f6bf07526c87"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fd8115a9cdff"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    }
+  ],
+  "gated": true,
+  "hub": "bath-and-care",
+  "id": "page:en/bath-and-care/how-to-bathe-a-newborn-before-cord-falls-off",
+  "internalLinks": [
+    "/diapering/how-often-to-change-a-diaper/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "how-to-bathe-a-newborn-before-cord-falls-off",
+  "status": "held-ymyl",
+  "title": "How do you bathe a newborn before the cord falls off?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/bath-and-care/how-to-bathe-a-newborn-before-cord-falls-off/",
+  "ymyl": true
+}

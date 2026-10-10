@@ -1,0 +1,43 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:073a374edd96"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:45dcb8d3f371"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:81286a3b2a4c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9ea6d5c5d95e"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-many-diapers-per-day"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/diaper-size-by-weight",
+  "internalLinks": [
+    "/diapering/how-many-diapers-per-day/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "cdc"
+  ],
+  "slug": "diaper-size-by-weight",
+  "status": "published",
+  "title": "What diaper size does my baby need?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/diaper-size-by-weight/",
+  "ymyl": false
+}

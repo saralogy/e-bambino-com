@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3697d10e6b31"
+    }
+  ],
+  "id": "claim:0685c946d4ee",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Thorough diaper-area cleaning at changes reduces the need for full baths, which also reduces the need for extra soap.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

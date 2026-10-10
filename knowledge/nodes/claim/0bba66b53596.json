@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:410ad3d8fcf5"
+    }
+  ],
+  "id": "claim:0bba66b53596",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NHTSA's Car Seat Inspection Finder locates inspection stations and virtual inspectors; certified technicians inspect car seats free of charge in most cases.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

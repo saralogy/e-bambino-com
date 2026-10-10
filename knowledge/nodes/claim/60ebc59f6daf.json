@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:60ebc59f6daf",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the 2011 repair-kit offer still exists: not confirmed for 2026.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

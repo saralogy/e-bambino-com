@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2845795ccd4c"
+    }
+  ],
+  "id": "claim:b0ef503294bf",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Zinc oxide and petrolatum are both good barrier-cream choices for diaper rash, fragrance-free products are best, and a thick layer should be applied in the diaper area after bathing.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

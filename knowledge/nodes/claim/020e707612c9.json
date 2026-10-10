@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3b3e1733efff"
+    }
+  ],
+  "id": "claim:020e707612c9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC staff recommended (in a 2023 letter, not a final rule) that bassinet side rails be at least 27 inches from the floor and the sleep surface at least 15 inches from the floor, so that caregivers do not need to set the bassinet on raised surfaces.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

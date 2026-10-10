@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ba366962e244",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether an anti-colic vent or anti-colic bottle reduces colic or gas: no evidence was found. The brief's question 'Do I need an anti-colic vent?' cannot be answered from official sources.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:996dddf9791c"
+    }
+  ],
+  "id": "claim:ab7e3702ca9a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC advises storing medicines, cleaning and laundry products, paints and varnishes, and pesticides in their original packaging in locked cabinets or containers, out of sight and reach of children.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

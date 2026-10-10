@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:83c58c38886a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether cord cleats or cord stops make corded blinds safe enough: no official source confirmed this, and it needs a CPSC or manufacturer check.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

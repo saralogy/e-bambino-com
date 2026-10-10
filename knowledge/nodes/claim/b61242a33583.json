@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e5e6fa63d4c9"
+    }
+  ],
+  "id": "claim:b61242a33583",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A breastfed newborn may need to nurse about 8 to 12 times per 24 hours (NICHD).",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

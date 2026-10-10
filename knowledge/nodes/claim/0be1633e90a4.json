@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0be1633e90a4",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The English page is ymyl and needs a named reviewer before publication; no reviewer is confirmed in this research.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

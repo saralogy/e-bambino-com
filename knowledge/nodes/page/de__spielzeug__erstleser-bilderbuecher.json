@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "spielzeug",
+  "id": "page:de/spielzeug/erstleser-bilderbuecher",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "erstleser-bilderbuecher",
+  "status": "published",
+  "title": "Was sind die besten Erstleser-Bilderbücher?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/spielzeug/erstleser-bilderbuecher/",
+  "ymyl": false
+}

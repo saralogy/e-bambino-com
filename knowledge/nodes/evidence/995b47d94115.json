@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:995b47d94115",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/CPSC-Approves-New-Federal-Safety-Standard-for-Infant-Bath-Tubs"
+}

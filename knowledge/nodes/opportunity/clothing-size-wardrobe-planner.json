@@ -1,0 +1,46 @@
+{
+  "action": "create",
+  "category": "clothing",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/how-many-baby-clothes-do-you-need"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/how-to-wash-baby-clothes"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/newborn-clothing-size"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/sleeper-or-bodysuit"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/when-to-buy-the-next-size"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:clothing-size-wardrobe-planner"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [
+      "page:en/clothing/how-many-baby-clothes-do-you-need"
+    ],
+    "evidence": false,
+    "ymyl": false
+  },
+  "id": "opp:clothing-size-wardrobe-planner",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-clothing-size-wardrobe-planner.md. Decision line: \"Build a useful planning guide/tool after page-agent overlap check\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Baby clothing size and starter-wardrobe planner",
+  "type": "opportunity"
+}

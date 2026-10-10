@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5f6908d4e0eb"
+    }
+  ],
+  "id": "claim:0960e9f11e0c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC crib sheet guidance: the sheet should fit snugly and overlap the mattress so it cannot be pulled loose by a corner. Adult sheets must not be used on a crib mattress because they can come loose and create an entanglement hazard. (This is a 2001 CPSC alert, so it is older guidance.)",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

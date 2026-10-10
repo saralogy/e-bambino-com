@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4fe183789a72"
+    }
+  ],
+  "id": "claim:ea2cece4d1bc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In the first weeks, gaps between feeds can be between 1 and 3 hours, and a feed usually lasts 10 to 45 minutes; most newborns want to nurse several times at night in the first weeks.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

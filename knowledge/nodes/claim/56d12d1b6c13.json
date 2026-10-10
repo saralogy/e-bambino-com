@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d3fca21a0b36"
+    }
+  ],
+  "id": "claim:56d12d1b6c13",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC cautions that determined toddlers have been known to overcome or disable outlet devices, so supervision is still needed.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

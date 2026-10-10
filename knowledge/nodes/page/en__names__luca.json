@@ -1,0 +1,22 @@
+{
+  "collection": "namen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/namen/luca"
+    }
+  ],
+  "gated": false,
+  "id": "page:en/names/luca",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [],
+  "slug": "luca",
+  "status": "published",
+  "title": "Luca: boy’s name meaning and origin",
+  "translationOf": "luca",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/names/luca/",
+  "ymyl": false
+}

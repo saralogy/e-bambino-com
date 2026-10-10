@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:9f12c2622744",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "evidence",
+  "url": "https://www.aap.org/en/patient-care/breastfeeding/frequently-asked-questions/"
+}

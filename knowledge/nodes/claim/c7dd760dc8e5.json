@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3d9876022207"
+    }
+  ],
+  "id": "claim:c7dd760dc8e5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Frequent bathing with soap, or repeated loss of moisture from the skin, can dry the skin out.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

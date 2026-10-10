@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:132c2f0be115",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source found on bed-in-a-bag sets specifically. The CPSC's general rule (bare, firm, flat surface) covers them only by inference, and the page must not claim a specific ban or warning on bed-in-a-bag sets without a source.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

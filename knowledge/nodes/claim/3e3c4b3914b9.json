@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:fa83874df07f"
+    }
+  ],
+  "id": "claim:3e3c4b3914b9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "HealthyChildren.org says walkers do not teach children to walk and can delay walking.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

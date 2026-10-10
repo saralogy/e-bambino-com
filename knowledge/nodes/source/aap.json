@@ -1,0 +1,13 @@
+{
+  "authority": "professional",
+  "edges": [],
+  "fullName": "American Academy of Pediatrics (HealthyChildren.org)",
+  "id": "source:aap",
+  "jurisdiction": "US",
+  "key": "aap",
+  "name": "AAP",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.healthychildren.org"
+}

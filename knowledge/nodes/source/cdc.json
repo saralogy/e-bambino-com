@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "U.S. Centers for Disease Control and Prevention",
+  "id": "source:cdc",
+  "jurisdiction": "US",
+  "key": "cdc",
+  "name": "CDC",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.cdc.gov"
+}

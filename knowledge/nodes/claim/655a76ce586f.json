@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c95ad6ab5c99"
+    }
+  ],
+  "id": "claim:655a76ce586f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC: a firm, flat surface in a crib, bassinet, play yard or bedside sleeper that meets federal requirements, with only a fitted sheet, is the recommended sleep setup. The CPSC treats cribs, bassinets, play yards and bedside sleepers that meet federal standards as intended sleep products.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

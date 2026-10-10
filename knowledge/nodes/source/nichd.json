@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "NIH Safe to Sleep campaign (NICHD)",
+  "id": "source:nichd",
+  "jurisdiction": "US",
+  "key": "nichd",
+  "name": "NICHD",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://safetosleep.nichd.nih.gov"
+}

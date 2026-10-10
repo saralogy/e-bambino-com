@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5c411052370d"
+    }
+  ],
+  "id": "claim:db5f1868df98",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Certified Child Passenger Safety Technicians inspect car seats free of charge in most cases and show parents how to install and use them; NHTSA's Car Seat Inspection Finder locates stations and virtual inspectors.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0e118f249023",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "A complete room-by-room checklist for bathroom, bedroom and hallway: only kitchen, living-room and general items are supported; the bathroom and hallway entries need more research.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

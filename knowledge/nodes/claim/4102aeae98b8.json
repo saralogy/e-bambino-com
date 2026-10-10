@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:4102aeae98b8",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the belt-tightness and harness-height checks listed in the brief's install checklist are fully sourced to one page. The recline indicator check is not covered by any source found.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

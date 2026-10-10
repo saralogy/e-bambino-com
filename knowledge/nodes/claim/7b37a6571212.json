@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:12b6767594ef"
+    }
+  ],
+  "id": "claim:7b37a6571212",
+  "kind": "fact",
+  "status": "supported",
+  "text": "On a forward-facing seat, connect the tether to the vehicle's tether anchor and tighten it.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

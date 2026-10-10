@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1eccee5953a4"
+    }
+  ],
+  "id": "claim:838d1384d121",
+  "kind": "fact",
+  "status": "supported",
+  "text": "HealthyChildren.org gives a different freezer window: up to 9 months in a freezer with a separate door (0 F) and up to 12 months in a chest or deep freezer (-4 F); its general advice is 4 hours at room temperature and 4 days in the refrigerator. The US sources differ on freezer time, so the page must name one source.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

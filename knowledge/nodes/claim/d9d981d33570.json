@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:84e65e7252c5"
+    }
+  ],
+  "id": "claim:d9d981d33570",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance: the crib mattress should be firm and flat, no thicker than 10 cm. A used mattress should be replaced before use. Special mattresses or sleep pads are not recommended because they do not reduce the risk of sudden infant death.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

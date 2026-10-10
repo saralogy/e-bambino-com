@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b34924c36578"
+    }
+  ],
+  "id": "claim:a491da8efc06",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC says about nine children under 5 die each year from strangling in corded window coverings, and a review of incidents from 2009 to 2021 found a child died in 48% of them.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

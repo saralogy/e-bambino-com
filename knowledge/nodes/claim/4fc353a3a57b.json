@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:03f2798b75fa"
+    }
+  ],
+  "id": "claim:4fc353a3a57b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Infant bath seats are a separate product category with their own mandatory federal standard. CPSC has issued recent warnings that some bath seats are unstable and can tip over, and that some have leg openings that can trap a child.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

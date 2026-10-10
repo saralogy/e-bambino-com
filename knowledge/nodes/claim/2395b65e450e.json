@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:3f9b89fb3043"
+    }
+  ],
+  "id": "claim:2395b65e450e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Säuglingsanfangsnahrung (Pre- or 1-Nahrung) suits the whole first year, including after solids are introduced. Pre-formulas use only lactose as carbohydrate, like breast milk. Some 1-formulas also contain starch.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

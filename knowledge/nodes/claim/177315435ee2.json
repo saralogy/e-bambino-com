@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:177315435ee2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Airline-only harnesses approved by the FAA (one source says 22 to 44 pounds, not for infants, not safe for car or train travel). Source is not on an allowed domain; not published until confirmed on faa.gov.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

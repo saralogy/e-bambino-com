@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e0b6c3d7cfc2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The six signs in the brief should be checked against the full AAP stages page before publication, since the snippets covered readiness in several separate pages.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

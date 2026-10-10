@@ -1,0 +1,17 @@
+{
+  "category": "play",
+  "decisionLine": "Build a practical planner or checklist; no product-ranking page",
+  "edges": [
+    {
+      "rel": "SPECIFIES",
+      "to": "opp:play-toy-rotation-planner"
+    }
+  ],
+  "id": "brief:2026-10-10-play-toy-rotation-planner",
+  "path": "docs/content-intelligence/inbox/2026-10-10-play-toy-rotation-planner.md",
+  "priority": "P2",
+  "researchDate": "2026-10-10",
+  "status": "inbox",
+  "title": "Toy rotation and borrow/buy/skip planner for the first year",
+  "type": "brief"
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4a8ad72b5c6a"
+    }
+  ],
+  "id": "claim:f6bf07526c87",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Pay special attention to the creases under the arms, behind the ears, around the neck and in the genital area.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d881fe80902c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a given car seat fits a given aircraft seat (width, armrest and tray fit). Not covered by any source found.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

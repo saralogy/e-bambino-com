@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:51738c874a93",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/faq/was-kann-ich-meinem-baby-zum-schlafen-anziehen/"
+}

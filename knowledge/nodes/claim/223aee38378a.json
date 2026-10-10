@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:223aee38378a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether water alone is enough for the first months was not stated as a fact by any official source found, so it is not included. Editorial must not present it as settled.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

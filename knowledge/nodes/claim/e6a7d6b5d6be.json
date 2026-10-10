@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e6a7d6b5d6be",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether merino wool is suitable for babies: no official source found.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

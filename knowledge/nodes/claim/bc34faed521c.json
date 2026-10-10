@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bfb85cd1b26e"
+    }
+  ],
+  "id": "claim:bc34faed521c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC warned consumers in 2026 to stop using a set of travel bassinets because of strangulation and fall hazards, and because they violate the mandatory standard for infant sleep products.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

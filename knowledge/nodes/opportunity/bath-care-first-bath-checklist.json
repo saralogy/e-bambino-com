@@ -1,0 +1,24 @@
+{
+  "action": "create",
+  "category": "bath-and-care",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "TARGETS",
+      "to": "need:bath-care-first-bath-checklist"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": true
+  },
+  "id": "opp:bath-care-first-bath-checklist",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-bath-care-first-bath-checklist.md. Decision line: \"Build an answer-first checklist page; English hub is currently empty\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "First-bath setup and minimum kit",
+  "type": "opportunity"
+}

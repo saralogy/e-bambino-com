@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:088da4f1b1dc",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "CPSC guidance specific to bottle materials was not found. The 2026 CPSC items concern self-feeding pillows only.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

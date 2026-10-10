@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7209e759968d"
+    }
+  ],
+  "id": "claim:0b085a6d7001",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-Info: occasional nighttime bedwetting up to age 5 is considered normal.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

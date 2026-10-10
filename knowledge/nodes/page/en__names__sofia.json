@@ -1,0 +1,22 @@
+{
+  "collection": "namen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/namen/sofia"
+    }
+  ],
+  "gated": false,
+  "id": "page:en/names/sofia",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [],
+  "slug": "sofia",
+  "status": "published",
+  "title": "Sofia: girl’s name meaning and origin",
+  "translationOf": "sofia",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/names/sofia/",
+  "ymyl": false
+}

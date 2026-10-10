@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:62943f22f594"
+    }
+  ],
+  "id": "claim:ea8086c5faa2",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC advises talking to a lactation consultant or doctor if the nipple skin is cracked or damaged, or if pain does not improve over the first 1 to 2 weeks.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

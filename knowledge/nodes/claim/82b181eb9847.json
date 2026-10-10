@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f5afaf8a1c39"
+    }
+  ],
+  "id": "claim:82b181eb9847",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends starting the bottle-to-cup transition around 6 months by offering a first cup, reducing bottle feeds slowly, and completing the transition between 12 and 18 months.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

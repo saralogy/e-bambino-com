@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ad6500f068c0",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a bassinet or play yard is the official recommendation for a newborn who needs to lie flat. The AAP and CPSC guidance found covers sleep surfaces and stroller use only; the product recommendation is editorial and needs a source before publication.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

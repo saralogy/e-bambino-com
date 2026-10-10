@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2c0f6c3c7f05"
+    }
+  ],
+  "id": "claim:e951b016b21e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Call a doctor if sore or cracked nipples are not better after 24 hours of treatment (HealthyChildren.org symptom checker).",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

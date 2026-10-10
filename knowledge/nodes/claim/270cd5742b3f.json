@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1fdffecbcd4e"
+    }
+  ],
+  "id": "claim:270cd5742b3f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A 2011 CPSC release announced a window blind recall and redesign; the Window Covering Safety Council offered free repair kits for corded blinds at that time, so the current availability of the offer should be checked.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

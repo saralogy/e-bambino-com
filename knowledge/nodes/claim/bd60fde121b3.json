@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c12184ca10e0"
+    }
+  ],
+  "id": "claim:bd60fde121b3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info advises unpainted or waxed wood and regular checks of wooden toys for cracks, splinters and sharp edges.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

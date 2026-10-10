@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:70f184634d27"
+    }
+  ],
+  "id": "claim:03b7f0a41e61",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Bowel and bladder control arrive at different times; nighttime bowel control often comes early and naturally, while bladder control usually comes much later.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:4c4e28689ebc",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Potty chair versus seat insert: no official source found for this question in the search results.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

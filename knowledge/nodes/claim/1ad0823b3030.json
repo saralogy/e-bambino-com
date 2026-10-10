@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:37066b75f7ad"
+    }
+  ],
+  "id": "claim:1ad0823b3030",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC says bath seats and rings are not safety devices and do not replace adult supervision.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

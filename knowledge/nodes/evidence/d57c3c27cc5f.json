@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:verbraucherzentrale"
+    }
+  ],
+  "id": "evidence:d57c3c27cc5f",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "verbraucherzentrale",
+  "sourceQuality": "secondary",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "evidence",
+  "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/kennzeichnung-und-inhaltsstoffe/lebensmittelverpackungen-geben-sie-schadstoffe-ab-52294"
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:43784dc07e2e"
+    }
+  ],
+  "id": "claim:cc601abeb1f5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info advises placing cups of coffee, tea or soup far from the table edge, not drinking or eating hot food while holding a child, and avoiding tablecloths a child can pull down; stir microwaved food well and check its temperature before feeding.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

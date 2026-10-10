@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:06ae25c8c82e"
+    }
+  ],
+  "id": "claim:d701beba5072",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Thorough cleaning of the diaper area at each diaper change reduces the need for full baths.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

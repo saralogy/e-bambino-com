@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "sicherheit",
+  "id": "page:de/sicherheit/gefaehrliche-hausgegenstaende-kleinkind",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "gefaehrliche-hausgegenstaende-kleinkind",
+  "status": "held-ymyl",
+  "title": "Welche Haushaltsgegenstände sind für Kleinkinder am gefährlichsten?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/sicherheit/gefaehrliche-hausgegenstaende-kleinkind/",
+  "ymyl": true
+}

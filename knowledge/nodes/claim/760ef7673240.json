@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c9103edee456"
+    }
+  ],
+  "id": "claim:760ef7673240",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FDA says manual and powered pumps designed for a single user should never be rented or shared, and contaminated pumps could cause infection in the mother and baby.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

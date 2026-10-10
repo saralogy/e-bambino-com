@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:eb77aa58bc6f"
+    }
+  ],
+  "id": "claim:5f753b20155c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Verbraucherzentrale prefers untreated solid wood; painted or lacquered wooden toys should meet the German toy standard DIN EN 71-3; plywood puzzles failed tests more often because they released formaldehyde.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

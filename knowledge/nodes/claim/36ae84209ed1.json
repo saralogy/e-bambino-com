@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8b20538f5155"
+    }
+  ],
+  "id": "claim:36ae84209ed1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German readiness signs: the baby sits upright with support, holds its head steady, has lost the tongue-thrust reflex, makes chewing movements, shows interest in food and reaches for it.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

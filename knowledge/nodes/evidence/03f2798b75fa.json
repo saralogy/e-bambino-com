@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:03f2798b75fa",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+}

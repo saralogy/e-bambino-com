@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:19000209382f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Medicated options conflict between AAP pages: the symptom checker mentions anti-dandruff shampoo twice a week and 1% hydrocortisone cream for up to 7 days, while the main article advises checking with a pediatrician first. Do not publish the specific product regimen without a pediatrician check.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

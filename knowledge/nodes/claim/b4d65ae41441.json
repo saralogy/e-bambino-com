@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:b4d65ae41441",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "General method for checking stroller and car seat fit (beyond model-number compatibility lists). No official checklist found.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

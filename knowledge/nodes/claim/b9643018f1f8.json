@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6f1b87e09415"
+    }
+  ],
+  "id": "claim:b9643018f1f8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A correctly installed car seat should not move more than about 1 inch (2.5 cm) side-to-side or front-to-back at the belt path when pulled on.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

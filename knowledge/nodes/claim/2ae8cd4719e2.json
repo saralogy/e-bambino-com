@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:2ae8cd4719e2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German quantities (Stückzahlen) for Bodys and Schlafanzüge: none found in official sources.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

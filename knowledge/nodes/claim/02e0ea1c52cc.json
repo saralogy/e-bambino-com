@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7379f58fe1ea"
+    }
+  ],
+  "id": "claim:02e0ea1c52cc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC cautioned consumers not to use inclined infant sleep products. Between 2005 and mid-2019 there were 1,108 incidents, including 73 infant deaths, related to infant inclined sleep products.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

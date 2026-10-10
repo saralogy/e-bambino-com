@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:95ba8a9066cd"
+    }
+  ],
+  "id": "claim:cb591619ee54",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Newborn sizes are often outgrown within days, so the AAP advises buying larger sizes unless the baby is premature or very small.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

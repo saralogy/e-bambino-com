@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bc58cb164726"
+    }
+  ],
+  "id": "claim:03c9e5e42708",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Give sponge baths only until the cord stump falls off. Continue sponge baths for a few more days after it falls off, and move to a tub bath once the umbilical area has healed.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

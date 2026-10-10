@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c23e664d139a"
+    }
+  ],
+  "id": "claim:ec42baf41ec8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NHTSA reports that almost half of all car seats are installed incorrectly, even though most parents and caregivers believe they know how to install them.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

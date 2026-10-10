@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:2b62ac3c0011",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "When to call the doctor (versus poison control) for non-emergency exposures: not confirmed by a source.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

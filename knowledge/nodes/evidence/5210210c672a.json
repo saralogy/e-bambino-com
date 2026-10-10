@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:verbraucherzentrale"
+    }
+  ],
+  "id": "evidence:5210210c672a",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "verbraucherzentrale",
+  "sourceQuality": "secondary",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "evidence",
+  "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/glas-7059"
+}

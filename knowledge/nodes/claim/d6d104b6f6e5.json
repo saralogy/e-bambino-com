@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a02725b40958"
+    }
+  ],
+  "id": "claim:d6d104b6f6e5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info says a baby tub needs a non-slip insert. An add-on seat placed in a large bathtub must not wobble, tip or slip.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

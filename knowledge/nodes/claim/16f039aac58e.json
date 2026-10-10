@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:16f039aac58e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Flange fit, noise levels and portability ratings were not sourced; no prices or ratings can be stated.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

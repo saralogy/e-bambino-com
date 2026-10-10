@@ -1,0 +1,83 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:03237834c0da"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:47e50b34e7d6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6084be0a7d62"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:73462ef8e963"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:75c3374d9186"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:87be8d7342ff"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a261caa92590"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:af9377eff464"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bb509d5946d9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:db49d2b9fea2"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fefc5e7d8dec"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/hospital-bag"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-many-diapers-per-day"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/babyzimmer/babyausstattung-erste-wochen"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/newborn-essentials-first-weeks",
+  "internalLinks": [
+    "/checklists/hospital-bag/",
+    "/diapering/how-many-diapers-per-day/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "nichd",
+    "kindergesundheit-info"
+  ],
+  "slug": "newborn-essentials-first-weeks",
+  "status": "held-ymyl",
+  "title": "What does a newborn need for the first weeks at home?",
+  "translationOf": "babyausstattung-erste-wochen",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/newborn-essentials-first-weeks/",
+  "ymyl": true
+}

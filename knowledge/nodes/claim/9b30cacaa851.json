@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6f60fe66b154"
+    }
+  ],
+  "id": "claim:9b30cacaa851",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Before buying, check the manufacture date on infant tubs, and confirm that a bath seat is not on a CPSC warning or recall list.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

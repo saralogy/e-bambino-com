@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:423962a376ad"
+    }
+  ],
+  "id": "claim:2b106554f306",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Rear-facing babies must ride semi-reclined, with the seat installed at the correct recline angle, to keep the airway open.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

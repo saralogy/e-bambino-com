@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a78a7a897211"
+    }
+  ],
+  "id": "claim:c85af31b01f9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AWMF guideline text describes low-voltage burns when children push objects such as knitting needles or nails into unprotected outlets; these mostly affect toddlers up to school age and may need surgical or conservative treatment.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

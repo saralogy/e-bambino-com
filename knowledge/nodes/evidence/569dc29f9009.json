@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:569dc29f9009",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "evidence",
+  "url": "https://publications.aap.org/patiented/article/doi/10.1542/peo_document088/79989/Safe-Sleep-and-Your-Baby-How-Parents-Can-Reduce"
+}

@@ -1,0 +1,38 @@
+{
+  "action": "create",
+  "category": "on-the-go",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/buying-guides/how-to-choose-a-stroller"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/on-the-go/baby-carrier-or-bassinet"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/on-the-go/when-can-a-baby-use-a-stroller"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:on-the-go-stroller-buying-guide"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [
+      "page:en/buying-guides/how-to-choose-a-stroller"
+    ],
+    "evidence": false,
+    "ymyl": false
+  },
+  "id": "opp:on-the-go-stroller-buying-guide",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-on-the-go-stroller-buying-guide.md. Decision line: \"Build; explicitly listed as a roadmap gap in AGENTS.md\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Constraint-first stroller buying guide",
+  "type": "opportunity"
+}

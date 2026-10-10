@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ced2eaed7da4",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Table band 3 to 6 months (per-feed amount and feeds per day): no official figure was found for this band. The AAP figures give only the 1 month and 6 month points.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

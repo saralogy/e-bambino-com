@@ -1,0 +1,36 @@
+{
+  "action": "create",
+  "category": "nursery",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/sleep-sack-or-blanket"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/guides/baby-sleep"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/nursery/how-long-does-a-crib-last"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:nursery-crib-mattress-checklist"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": true
+  },
+  "id": "opp:nursery-crib-mattress-checklist",
+  "owner": "content-intelligence-lead",
+  "priority": "P2",
+  "rationale": "From brief 2026-10-10-nursery-crib-mattress-checklist.md. Decision line: \"Build a narrow safety checklist rather than another general nursery guide\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Crib mattress fit and second-hand crib inspection checklist",
+  "type": "opportunity"
+}

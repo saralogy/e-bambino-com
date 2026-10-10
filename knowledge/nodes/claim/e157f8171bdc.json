@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e157f8171bdc",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Warning signs in the German guidance may differ from the AAP list. Editorial should confirm the full list with kindergesundheit-info or AWMF.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

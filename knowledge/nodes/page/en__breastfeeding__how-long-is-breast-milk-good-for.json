@@ -1,0 +1,70 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:08ba3aaa31cb"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:302a7e1c4353"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3239c02742af"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3bfc35a7dad5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5d6fedc8dd5c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:62f2fad19599"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6694267b8b6f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:75033cd79068"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:838d1384d121"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b34687180ab3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ef780b0913a8"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/family-travel"
+    }
+  ],
+  "gated": true,
+  "hub": "breastfeeding",
+  "id": "page:en/breastfeeding/how-long-is-breast-milk-good-for",
+  "internalLinks": [
+    "/checklists/family-travel/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cdc"
+  ],
+  "slug": "how-long-is-breast-milk-good-for",
+  "status": "held-ymyl",
+  "title": "How long does breast milk last in the fridge and freezer?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/breastfeeding/how-long-is-breast-milk-good-for/",
+  "ymyl": true
+}

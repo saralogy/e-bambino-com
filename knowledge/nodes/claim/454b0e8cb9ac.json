@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:454b0e8cb9ac",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Wide or irregular opening fit and which gate suits them: not covered by any official source.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:e56c72b54e54",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html"
+}

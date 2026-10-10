@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:20e7b3cc2291"
+    }
+  ],
+  "id": "claim:52db75defed6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For body wash, the AAP suggests fragrance-free body washes or bar soaps with a few simple ingredients. For shampoo, it advises choosing products without phthalates or parabens, and checking the label to be sure.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

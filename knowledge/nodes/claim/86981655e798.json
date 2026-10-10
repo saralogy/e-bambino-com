@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:752ac3b9bd94"
+    }
+  ],
+  "id": "claim:86981655e798",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC says loose-fitting cotton or cotton-blend garments, such as oversized T-shirts, can catch fire easily when worn as sleepwear, and recommends snug-fitting or flame-resistant sleepwear for children's sleep.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

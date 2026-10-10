@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9f9041113c3a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No FDA rule separating starter from follow-on formula was found. The relevant text (21 CFR parts 106 and 107) was not retrieved, so the US stage distinction is unconfirmed.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

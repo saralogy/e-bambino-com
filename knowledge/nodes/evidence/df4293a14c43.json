@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:verbraucherzentrale"
+    }
+  ],
+  "id": "evidence:df4293a14c43",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "verbraucherzentrale",
+  "sourceQuality": "secondary",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "evidence",
+  "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+}

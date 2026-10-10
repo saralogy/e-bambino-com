@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:331e6d6a1650",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Pull-ups are only for potty training (the question in the brief): the AAP wording is about training pants and night use, so this claim is not confirmed and should not be stated as fact.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

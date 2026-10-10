@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d8c477591580",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Cleaning and disinfection steps for multi-user rental pumps were not found in FDA results; use manufacturer instructions or a sourced page.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ff97ddeee845"
+    }
+  ],
+  "id": "claim:fccc796062dc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In warm weather, a thin pajama without feet or a short-sleeved body is sufficient bedtime clothing for a baby.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

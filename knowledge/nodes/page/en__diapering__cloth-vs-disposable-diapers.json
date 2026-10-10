@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/windeln/plastik-oder-stoffwindeln"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/cloth-vs-disposable-diapers",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "verbraucherzentrale"
+  ],
+  "slug": "cloth-vs-disposable-diapers",
+  "status": "published",
+  "title": "Cloth or disposable diapers: what are the differences?",
+  "translationOf": "plastik-oder-stoffwindeln",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/cloth-vs-disposable-diapers/",
+  "ymyl": false
+}

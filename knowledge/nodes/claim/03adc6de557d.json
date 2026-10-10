@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ae7d65114811"
+    }
+  ],
+  "id": "claim:03adc6de557d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC's 2023 release describes draft final rules that would address cord strangulation risks for children 8 and under.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

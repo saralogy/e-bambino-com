@@ -1,0 +1,54 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:147968847931"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:36ae84209ed1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8b9f27049fc8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:96305ba9d345"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a455659b41d1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ab3b9adb0ab8"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/feeding/high-chair-age"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/when-to-start-solid-food",
+  "internalLinks": [
+    "/feeding/high-chair-age/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "who",
+    "aap",
+    "cdc",
+    "kindergesundheit-info",
+    "verbraucherzentrale"
+  ],
+  "slug": "when-to-start-solid-food",
+  "status": "held-ymyl",
+  "title": "When can a baby start solid food?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/when-to-start-solid-food/",
+  "ymyl": true
+}

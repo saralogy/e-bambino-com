@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "babyzimmer",
+  "id": "page:de/babyzimmer/bettwaesche-baby-erstes-jahr",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "bettwaesche-baby-erstes-jahr",
+  "status": "held-ymyl",
+  "title": "Welche Bettwäsche braucht ein Baby im ersten Jahr?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/babyzimmer/bettwaesche-baby-erstes-jahr/",
+  "ymyl": true
+}

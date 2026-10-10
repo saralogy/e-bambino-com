@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/windeln/wie-oft-wickeln-baby"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/how-often-to-change-a-diaper",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "how-often-to-change-a-diaper",
+  "status": "published",
+  "title": "How often should you change a baby’s diaper?",
+  "translationOf": "wie-oft-wickeln-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/how-often-to-change-a-diaper/",
+  "ymyl": false
+}

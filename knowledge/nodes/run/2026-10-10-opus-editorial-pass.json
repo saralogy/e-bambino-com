@@ -1,0 +1,19 @@
+{
+  "agent": "editor + adversarial fact-checker, one pair per category",
+  "cost": "not recorded",
+  "edges": [],
+  "finished": "2026-10-10",
+  "id": "run:2026-10-10-opus-editorial-pass",
+  "inputs": [
+    "38 English drafts",
+    "docs/research/*.json"
+  ],
+  "model": "Opus (exact id unrecorded)",
+  "outputs": [
+    "6 English pages released",
+    "32 YMYL pages held for a named reviewer"
+  ],
+  "started": "2026-10-10",
+  "status": "succeeded",
+  "type": "run"
+}

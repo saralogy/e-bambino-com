@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:1e8d930cb479",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Renter-friendly options and tools needed for each cover type: not covered by any source.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

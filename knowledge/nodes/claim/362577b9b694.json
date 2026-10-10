@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:362577b9b694",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Harness height rules beyond the shoulder-slot guidance: not checked against the seat manufacturer.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

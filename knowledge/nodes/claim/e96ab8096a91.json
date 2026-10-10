@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e96ab8096a91",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Typical weight range for each diaper size (Newborn, 1 through 6) is not confirmed by any official domain. Do not print numeric ranges without a brand's current pack or site as the source.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:cdcab02ed1ab",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "evidence",
+  "url": "https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers"
+}

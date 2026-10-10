@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2509eb62ec71"
+    }
+  ],
+  "id": "claim:09e3ca12c247",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Specialized medical formulas do not have to meet the standard FDA nutrient requirements, which is why they are used under medical direction.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

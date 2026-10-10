@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d0a372410864",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether buying by age label or by length is recommended (no official source found).",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

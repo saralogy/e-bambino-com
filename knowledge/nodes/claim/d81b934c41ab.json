@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d81b934c41ab",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source confirmed the cost or the floor space needed for each option.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,73 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:50e555aed728"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5297971d0799"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:56d12d1b6c13"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7cea6d915624"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9030298b0b4c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ac2bbd27c233"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ae57100d5c45"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bb5ccc6e90f8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c85af31b01f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c98df92c6ee6"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/nursery/nursery-in-a-small-apartment"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/sicherheit/steckdosen-sichern-baby"
+    }
+  ],
+  "gated": true,
+  "hub": "safety",
+  "id": "page:en/safety/childproof-electrical-outlets",
+  "internalLinks": [
+    "/nursery/nursery-in-a-small-apartment/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "kindergesundheit-info"
+  ],
+  "slug": "childproof-electrical-outlets",
+  "status": "held-ymyl",
+  "title": "How to Childproof Electrical Outlets",
+  "translationOf": "steckdosen-sichern-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/safety/childproof-electrical-outlets/",
+  "ymyl": true
+}

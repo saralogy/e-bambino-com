@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b1b6ec24d1d7"
+    }
+  ],
+  "id": "claim:458ec1dabc2f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The average age toilet training begins in the United States is between 2 and 3 years, and most children are bowel and bladder trained by age 4.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

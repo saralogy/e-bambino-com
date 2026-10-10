@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5e02649fbf73"
+    }
+  ],
+  "id": "claim:8ab13dfdf7cc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC recalled Phil&Teds infant car seat adapters for strollers because the plastic adapters can crack, become unstable and break during use, posing a fall hazard to infants.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

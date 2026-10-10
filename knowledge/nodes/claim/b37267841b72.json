@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0944b0c0578e"
+    }
+  ],
+  "id": "claim:b37267841b72",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC guidance says only gates that screw into the wall should be used at the top of stairs.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

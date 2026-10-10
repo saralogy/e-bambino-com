@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3fd1083c667a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Rear-facing as long as the seat allows: mainstream guidance per brief, but not confirmed in the search results.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

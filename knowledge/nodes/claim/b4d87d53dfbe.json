@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e761dbda4b33"
+    }
+  ],
+  "id": "claim:b4d87d53dfbe",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Newborns do not need daily baths. About three baths a week during the first year may be enough, and bathing more often can dry out the skin.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

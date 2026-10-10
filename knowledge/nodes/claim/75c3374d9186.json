@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:28baf57332c4"
+    }
+  ],
+  "id": "claim:75c3374d9186",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends that infants sleep in a crib, bassinet or portable play yard with a firm, flat mattress and a fitted sheet, and that soft items such as pillows, quilts, comforters, sheepskins, bumper pads and stuffed toys be kept out of the sleep area.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:ab76b0d97f16",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/CPSC-Urges-Parents-and-Caregivers-to-Check-Babys-Sleep-Space-During-Baby-Safety-Month-Shares-Dos-and-Donts-for-Infant-Sleep-Safety"
+}

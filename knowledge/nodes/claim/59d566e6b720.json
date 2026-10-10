@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1a9986372882"
+    }
+  ],
+  "id": "claim:59d566e6b720",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP's newer 2025 policy statement (Digital Ecosystems, Children, and Adolescents) takes a looser stance on fixed time limits: time may vary by family, needs, and school nights vs weekends, and occasional brief high-quality videos are not described as harmful. It does not replace the 2016 age bands, so the two AAP documents need to be reconciled in the copy.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

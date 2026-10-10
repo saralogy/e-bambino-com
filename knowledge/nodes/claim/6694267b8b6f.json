@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7d20d51b0a05"
+    }
+  ],
+  "id": "claim:6694267b8b6f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Milk can be carried for up to 24 hours in an insulated cooler with frozen ice packs; do not store milk in the refrigerator or freezer door, and leave about one inch of space at the top of the container for freezing.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

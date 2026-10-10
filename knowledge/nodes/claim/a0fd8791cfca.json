@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a0fd8791cfca",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether an umbrella stroller works for a second child (seat-spacing, sibling use). Not covered by an official source.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

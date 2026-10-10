@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:4503d24b4577",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Guidance that diapers and disposable training pants send the wrong message, and that cloth training pants can help protect clothing: the snippet came from the general AAP potty-training page, so confirm the exact wording on that page before quoting it.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

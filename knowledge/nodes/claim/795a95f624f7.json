@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:38a4058d4192"
+    }
+  ],
+  "id": "claim:795a95f624f7",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC crib safety tips: the mattress should fit the crib tightly, because a loose fit can leave gaps where a baby can become trapped between the mattress and the crib.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

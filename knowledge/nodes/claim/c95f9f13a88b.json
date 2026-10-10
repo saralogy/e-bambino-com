@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c95f9f13a88b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German Poison Centre phone number for each Bundesland: not found in the search results.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

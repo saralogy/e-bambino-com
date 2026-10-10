@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nhtsa"
+    }
+  ],
+  "id": "evidence:5c5fd1a7df51",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nhtsa",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "evidence",
+  "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-use-after-crash"
+}

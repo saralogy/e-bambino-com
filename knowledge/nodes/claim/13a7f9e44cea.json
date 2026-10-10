@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:13a7f9e44cea",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether six months is the right age: the WHO guidance points to about 6 months, but German sources give a 4 to 7 month window. The editor should explain both.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

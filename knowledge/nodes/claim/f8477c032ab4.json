@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7ca56eedd45c"
+    }
+  ],
+  "id": "claim:f8477c032ab4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In June 2026 the CPSC announced Joolz Aer2 car seat adapters can fail to properly attach to the stroller, which may allow the car seat to fall.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

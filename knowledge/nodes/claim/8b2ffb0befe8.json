@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f7dbb5e53a67"
+    }
+  ],
+  "id": "claim:8b2ffb0befe8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC: in 1992 an estimated 25,700 children under 15 months were treated in US emergency rooms for baby-walker injuries, most from stair falls.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

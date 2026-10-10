@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:995b47d94115"
+    }
+  ],
+  "id": "claim:eba38df43449",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC data for 2004 to 2015 counted 247 incidents with infant bathtubs: 31 fatal and 216 nonfatal. In 30 of the 31 fatalities, a parent or guardian was not present.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

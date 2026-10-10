@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e39dba5c7383",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Allergy-related timing of complementary foods and when to talk to a pediatrician for a known allergy: the AWMF wording on complementary-food timing was not retrieved.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

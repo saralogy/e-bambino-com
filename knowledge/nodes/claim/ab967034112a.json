@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2f315f1bd726"
+    }
+  ],
+  "id": "claim:ab967034112a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Tight-fitting sleepwear sizes must be expressed in months or numbers, not letters such as XS, S, M, L or XL.",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

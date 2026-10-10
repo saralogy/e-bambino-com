@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:00f232b39278"
+    }
+  ],
+  "id": "claim:90266fc5fb6b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP symptom checker says a diaper rash should clear in about 3 days when treated correctly; if it does not, yeast may be involved, and an over-the-counter anti-yeast cream is suggested.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

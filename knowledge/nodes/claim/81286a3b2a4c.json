@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c2920dc2e570"
+    }
+  ],
+  "id": "claim:81286a3b2a4c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP says an infant can be weighed in a clean diaper if the scale is first zeroed with the weight of that clean diaper, which is a way to get a weight reading for comparing against a size range.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

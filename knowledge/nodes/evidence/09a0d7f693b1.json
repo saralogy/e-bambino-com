@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nichd"
+    }
+  ],
+  "id": "evidence:09a0d7f693b1",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nichd",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "evidence",
+  "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative"
+}

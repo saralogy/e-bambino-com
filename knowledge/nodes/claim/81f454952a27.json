@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4f774cc84c1f"
+    }
+  ],
+  "id": "claim:81f454952a27",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Sleep sacks that compress the arms, chest and body should stop once a baby shows signs of starting to roll over; sleep sacks that do not swaddle can be used as long as the parent wants.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

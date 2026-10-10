@@ -1,0 +1,56 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:1ad0823b3030"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4fc353a3a57b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9b30cacaa851"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b733a35d19bc"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d6d104b6f6e5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:eba38df43449"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f7184cc220b3"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/nursery/nursery-in-a-small-apartment"
+    }
+  ],
+  "gated": true,
+  "hub": "bath-and-care",
+  "id": "page:en/bath-and-care/baby-bathtub-or-bath-seat",
+  "internalLinks": [
+    "/nursery/nursery-in-a-small-apartment/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "kindergesundheit-info"
+  ],
+  "slug": "baby-bathtub-or-bath-seat",
+  "status": "held-ymyl",
+  "title": "Baby bathtub or bath seat: which one do you need?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/bath-and-care/baby-bathtub-or-bath-seat/",
+  "ymyl": true
+}

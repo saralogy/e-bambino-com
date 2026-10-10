@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:awmf"
+    }
+  ],
+  "id": "evidence:9693ddeabe0a",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "awmf",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://register.awmf.org/assets/guidelines/027-075l_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2023-09.pdf"
+}

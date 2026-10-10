@@ -1,0 +1,67 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:24a9db85232e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:53a6ee33cc34"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:80b6f895625a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9b1bce5ebe22"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a36e8e93691e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b16bcc8040fa"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bda1007fdfeb"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:cf66bc3b127e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f03b317146bc"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/hospital-bag"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/which-baby-bottle-to-buy",
+  "internalLinks": [
+    "/checklists/hospital-bag/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "verbraucherzentrale",
+    "kindergesundheit-info",
+    "fda",
+    "aap",
+    "cdc",
+    "cpsc"
+  ],
+  "slug": "which-baby-bottle-to-buy",
+  "status": "held-ymyl",
+  "title": "Which baby bottle should I buy? Materials and nipples",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/which-baby-bottle-to-buy/",
+  "ymyl": true
+}

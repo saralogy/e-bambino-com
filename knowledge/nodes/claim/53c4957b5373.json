@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:53c4957b5373",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Exact quantities per item (bodysuits, sleepers, socks, hats, sleep sacks, outerwear) for 0-3, 3-6, 6-12 and 12-24 months. The AAP layette counts reported in one search summary (3-4 sleepwear sets, 6-8 T-shirts, 3 newborn sleep sacks, 2 sweaters, 2 caps, 4 socks, 4-6 receiving blankets) could not be confirmed in a source snippet and come from an older page; verify before publishing.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

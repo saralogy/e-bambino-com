@@ -1,0 +1,40 @@
+{
+  "action": "create",
+  "category": "play",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/play/does-a-baby-need-a-play-mat"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/play/how-to-read-to-a-baby"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/play/picture-books-for-beginning-readers"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/play/toys-for-motor-skills-first-year"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:play-toy-rotation-planner"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": false
+  },
+  "id": "opp:play-toy-rotation-planner",
+  "owner": "content-intelligence-lead",
+  "priority": "P2",
+  "rationale": "From brief 2026-10-10-play-toy-rotation-planner.md. Decision line: \"Build a practical planner or checklist; no product-ranking page\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "Toy rotation and borrow/buy/skip planner for the first year",
+  "type": "opportunity"
+}

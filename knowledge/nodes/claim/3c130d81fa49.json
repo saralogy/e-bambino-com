@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c36c5d4a5b98"
+    }
+  ],
+  "id": "claim:3c130d81fa49",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CE mark on toys sold in the EU is a manufacturer's declaration, not an independent test mark; toys without a CE mark may not be placed on the EU market.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

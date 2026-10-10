@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:fd7da9ec4cd8",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Push toy safety guidance (age, ground-contact features, handle or tip risks) was not found on any allowed official domain. The push-toy column of the comparison table cannot be sourced yet.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

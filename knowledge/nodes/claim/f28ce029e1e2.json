@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f28ce029e1e2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether AAP has issued a newer walker policy than the 2001 statement is unconfirmed. The HealthyChildren pages are mixed in date.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

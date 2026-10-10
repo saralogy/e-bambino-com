@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:35a55aaf4438"
+    }
+  ],
+  "id": "claim:2bda4a6af70f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP: for 18 to 24 months, parents who want to introduce digital media should choose high-quality programs or apps and use them together with the child; solo media use should be avoided in this age group.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

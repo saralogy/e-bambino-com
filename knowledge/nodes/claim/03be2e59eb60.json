@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:03be2e59eb60",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No new source key is defined in this research. Adding EN 71 or CE-marking explainers to Sources needs an editor decision.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

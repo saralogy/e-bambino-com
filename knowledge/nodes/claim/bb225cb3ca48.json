@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:bb225cb3ca48",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source was found on care steps for washable (reusable) pads, such as washing or drying guidance.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

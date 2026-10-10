@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:40f58aeddc0b"
+    }
+  ],
+  "id": "claim:cf66bc3b127e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises holding the baby semi-upright during bottle feeding and never bottle-feeding a baby lying flat, because this raises the choking risk. The teat should stay full of milk to limit swallowed air.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

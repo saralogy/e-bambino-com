@@ -1,0 +1,23 @@
+{
+  "agent": "systems-architect",
+  "cost": "one session; no external fetches",
+  "edges": [],
+  "finished": "2026-10-10",
+  "id": "run:2026-10-10-knowledge-graph-core",
+  "inputs": [
+    "AGENTS.md",
+    "docs/content-intelligence/",
+    "docs/research/",
+    "src/lib/shipgate.ts"
+  ],
+  "model": "claude-opus-5-5",
+  "outputs": [
+    "scripts/kg/",
+    "knowledge/",
+    "docs/system/EVALUATION.md",
+    "docs/system/CONTRACT.md"
+  ],
+  "started": "2026-10-10",
+  "status": "succeeded",
+  "type": "run"
+}

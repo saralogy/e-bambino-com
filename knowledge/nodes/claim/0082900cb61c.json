@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0082900cb61c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The age range the CDC gives for rear-facing (snippet said roughly birth to age 2 to 4). Not confirmed on the official page; do not publish an age range without checking the CDC page.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

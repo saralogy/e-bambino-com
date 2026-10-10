@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e409d419c312",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The sink insert option was not covered by any official source found.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

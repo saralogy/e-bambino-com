@@ -1,0 +1,65 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:325bc14d2fd9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3e775026b4d5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3ee70211d040"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4e8401f5fe86"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6c9b4fb76f63"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6d50e8b54c65"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c252fdf13c57"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ee4ae4936c2b"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/on-the-go/travel-system-or-separate-stroller"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/on-the-go/when-can-a-baby-use-a-stroller"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/umbrella-stroller-or-full-size",
+  "internalLinks": [
+    "/on-the-go/travel-system-or-separate-stroller/",
+    "/on-the-go/when-can-a-baby-use-a-stroller/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "cdc"
+  ],
+  "slug": "umbrella-stroller-or-full-size",
+  "status": "held-ymyl",
+  "title": "Umbrella stroller or full-size stroller?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/umbrella-stroller-or-full-size/",
+  "ymyl": true
+}

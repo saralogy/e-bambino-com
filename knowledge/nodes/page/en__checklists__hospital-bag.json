@@ -1,0 +1,22 @@
+{
+  "collection": "checklisten",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/checklisten/kliniktasche"
+    }
+  ],
+  "gated": false,
+  "id": "page:en/checklists/hospital-bag",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [],
+  "slug": "hospital-bag",
+  "status": "published",
+  "title": "Hospital bag checklist: what to pack for the birth",
+  "translationOf": "kliniktasche",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/checklists/hospital-bag/",
+  "ymyl": false
+}

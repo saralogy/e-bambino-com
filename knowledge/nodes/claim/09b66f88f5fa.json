@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:09b66f88f5fa",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "US labeling for OTC zinc oxide creams (stop use and see a doctor if symptoms last more than 7 days or return) comes from DailyMed labels. No listed source key applies, so it is not used.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

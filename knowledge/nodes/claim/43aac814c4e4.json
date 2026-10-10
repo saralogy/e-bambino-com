@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:43aac814c4e4",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Number of bottles needed to start: no source found.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

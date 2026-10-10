@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6301f2dce2b2"
+    }
+  ],
+  "id": "claim:fafe9eceadc1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP recommends keeping bedrooms, mealtimes and parent-child playtime screen-free.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

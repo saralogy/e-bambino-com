@@ -1,0 +1,13 @@
+{
+  "authority": "consumer",
+  "edges": [],
+  "fullName": "German consumer advice centres",
+  "id": "source:verbraucherzentrale",
+  "jurisdiction": "DE",
+  "key": "verbraucherzentrale",
+  "name": "Verbraucherzentrale",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.verbraucherzentrale.de"
+}

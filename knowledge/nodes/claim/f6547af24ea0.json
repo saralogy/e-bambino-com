@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:52b17d3775e9"
+    }
+  ],
+  "id": "claim:f6547af24ea0",
+  "kind": "fact",
+  "status": "supported",
+  "text": "US infant garments sized nine months and under must carry a size label in months of age, such as '0 to 3 mos.' or '9 mos.'.",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

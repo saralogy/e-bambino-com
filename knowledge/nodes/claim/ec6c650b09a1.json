@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ec6c650b09a1",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Kindergesundheit-info and AWMF guidance on cradle cap was not found in official-domain search results. Both must be checked before publication.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

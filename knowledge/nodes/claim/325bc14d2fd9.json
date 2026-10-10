@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2b4bd7e75f98"
+    }
+  ],
+  "id": "claim:325bc14d2fd9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC notes that umbrella strollers are the lightest and most basic type, compact when folded, and may lack certain accessories, which generally makes them a poor fit for a newborn.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

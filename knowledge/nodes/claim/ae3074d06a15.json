@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ae3074d06a15",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Latch-helping techniques beyond breaking suction and re-latching (for example positioning) need an official page check.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9462d5a7a63c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German figures of 6 bottle meals per day in the newborn period and 5 from the second month come from the same non-official review and are not confirmed.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nhtsa"
+    }
+  ],
+  "id": "evidence:423962a376ad",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nhtsa",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+}

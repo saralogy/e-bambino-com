@@ -1,0 +1,15 @@
+{
+  "about": "Release path for team drafts",
+  "by": "project lead",
+  "date": "2026-10-10",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "run:2026-10-10-opus-editorial-pass"
+    }
+  ],
+  "id": "decision:2026-10-10-editorial-pass-before-release",
+  "outcome": "Team output lands as draft and needs an editorial pass and fact-check before release; YMYL pages additionally need a named human reviewer.",
+  "reason": "Drafts were hedged and partly unsourced; the gate in src/lib/shipgate.ts holds YMYL pages without reviewedBy.",
+  "type": "decision"
+}

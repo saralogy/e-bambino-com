@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e5a113e0199a"
+    }
+  ],
+  "id": "claim:a62be54471eb",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Car seats, booster seats and strollers are generally not counted as luggage. If the seat is not being used to secure the baby during the flight, it can usually be checked at the gate, typically at no extra charge.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:03308144b14e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German RKI safe-sleep page cited in the German version was not found in search. Only kindergesundheit-info.de and the AWMF guideline (AWMF 063-002) were confirmed. The RKI page must be checked directly on rki.de before release.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

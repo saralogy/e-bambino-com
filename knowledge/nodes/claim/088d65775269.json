@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:088d65775269",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Exact frequency of re-checking the install (before every trip) is not stated in any source found; the brief's before-every-trip framing is the editorial recommendation and needs reviewer confirmation.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

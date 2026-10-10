@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3bb401c161a3",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether bamboo viscose is a better choice than cotton: no official source found.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d01c3c028434",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German version of the page should confirm that the RKI was not found as a source. The confirmed German sources are AWMF 063-002 and kindergesundheit-info.de.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

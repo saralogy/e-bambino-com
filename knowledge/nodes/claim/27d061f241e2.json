@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:27d061f241e2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Specific fever threshold and a hot, red breast lump as a warning sign were not confirmed text on an official page; confirm on the AAP mastitis page before quoting.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bef794da07a9"
+    }
+  ],
+  "id": "claim:ee4ae4936c2b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Sleep surfaces inclined more than 10 degrees from horizontal are unsafe for infant sleep; rockers, gliders, soothers and swings should not be used for infant sleep.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

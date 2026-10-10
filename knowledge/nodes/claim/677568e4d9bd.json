@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:531e25cd2b56"
+    }
+  ],
+  "id": "claim:677568e4d9bd",
+  "kind": "fact",
+  "status": "supported",
+  "text": "If no sleeping bag is used, kindergesundheit-info advises a light cotton blanket in summer and a light down blanket in winter. Blankets should be flat, tucked at the foot end under the mattress, and cover the child only to the chest.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

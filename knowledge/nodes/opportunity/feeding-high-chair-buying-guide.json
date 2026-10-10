@@ -1,0 +1,28 @@
+{
+  "action": "create",
+  "category": "feeding",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/feeding/high-chair-age"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:feeding-high-chair-buying-guide"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "ymyl": true
+  },
+  "id": "opp:feeding-high-chair-buying-guide",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-feeding-high-chair-buying-guide.md. Decision line: \"Build a buying guide; link to existing age/readiness answer\". Not yet scored against the PLAYBOOK rubric.",
+  "reviewBy": "2027-01-08",
+  "state": "proposed",
+  "title": "How to choose a high chair",
+  "type": "opportunity"
+}

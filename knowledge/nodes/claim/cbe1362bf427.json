@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:cbe1362bf427",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official English numeric temperature range was confirmed.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

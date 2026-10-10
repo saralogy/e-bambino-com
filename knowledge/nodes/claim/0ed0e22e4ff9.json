@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0e23ddfac795"
+    }
+  ],
+  "id": "claim:0ed0e22e4ff9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info states that commercially available baby monitors and special mattresses or sleep pads do not lower the risk of sudden infant death, and are explicitly not recommended.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

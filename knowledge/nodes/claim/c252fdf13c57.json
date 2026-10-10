@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f91878c02956"
+    }
+  ],
+  "id": "claim:c252fdf13c57",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC definitions: a carriage is a wheeled vehicle generally used to transport an infant who is lying down; strollers hold children in a sitting up or semi-reclined position. A newborn who needs to lie flat needs a carriage-style product.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

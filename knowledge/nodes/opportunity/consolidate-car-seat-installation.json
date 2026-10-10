@@ -1,0 +1,31 @@
+{
+  "action": "consolidate",
+  "category": "safety",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/on-the-go/how-to-install-a-car-seat"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/safety/car-seat-installation-check"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [
+      "page:en/safety/car-seat-installation-check",
+      "page:en/on-the-go/how-to-install-a-car-seat"
+    ],
+    "evidence": true,
+    "ymyl": true
+  },
+  "id": "opp:consolidate-car-seat-installation",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "Both held YMYL pages cover the 1-inch test, harness and chest clip. Decide one canonical page (or install vs check split) before a reviewer spends time on both.",
+  "reviewBy": "2026-11-10",
+  "state": "proposed",
+  "title": "Consolidate or clearly separate the two car-seat installation pages",
+  "type": "opportunity"
+}

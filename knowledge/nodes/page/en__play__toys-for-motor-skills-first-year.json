@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/spielzeug/spielzeug-motorik-erstes-jahr"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/toys-for-motor-skills-first-year",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "toys-for-motor-skills-first-year",
+  "status": "published",
+  "title": "Which toys support motor skills in the first year?",
+  "translationOf": "spielzeug-motorik-erstes-jahr",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/toys-for-motor-skills-first-year/",
+  "ymyl": false
+}

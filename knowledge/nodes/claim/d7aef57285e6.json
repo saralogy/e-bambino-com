@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d7aef57285e6",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Definition of a travel system (stroller and car seat sold together and designed to click together). No official source found in this search.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

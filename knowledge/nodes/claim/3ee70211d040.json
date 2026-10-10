@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0b7e95914201"
+    }
+  ],
+  "id": "claim:3ee70211d040",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC says sleeping in a stroller poses a serious risk of entrapment or strangulation, especially for children younger than 12 months.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:82d1f3e0d07b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Only two facts could be confirmed from an official domain. No official source was found on when nursing pads are needed in the first months, on sleep or travel use, or on sensitive-skin choices.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

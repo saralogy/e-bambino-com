@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:91079b04dca2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Refreezing guidance outside the power-outage context and the full CDC refreezing rule for partially thawed milk need a direct page check.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

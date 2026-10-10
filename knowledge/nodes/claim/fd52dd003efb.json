@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:fd52dd003efb",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "EFSA opinion on follow-on formula (at least 1.6 g protein per 100 kcal) is not from an allowed official domain and comes from a secondary summary. Not confirmed.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

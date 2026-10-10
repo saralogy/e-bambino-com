@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:912d766f2552",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The English safe-sleep source (AAP 2022 policy, NICHD) is confirmed in search snippets, but a full read of the CPSC or AAP checklist of 'needed on day one' items was not possible. The day-one column must be checked by an editor against the AAP parent guide.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

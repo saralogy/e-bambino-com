@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:verbraucherzentrale"
+    }
+  ],
+  "id": "evidence:3f9b89fb3043",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "verbraucherzentrale",
+  "sourceQuality": "secondary",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/babynahrung-wenn-nicht-oder-nur-teilweise-gestillt-wird-62023"
+}

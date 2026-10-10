@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:84283c324dcf"
+    }
+  ],
+  "id": "claim:4bd62a63f55f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info (BZgA) states that the sleeping room should be at 18 degrees Celsius. This matches the AWMF guideline figure.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9c7d535e2653"
+    }
+  ],
+  "id": "claim:d91dce21776f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In February 2026 CPSC warned consumers to stop using 5-IN-1 Toddler Musical Instruments because they violate the small parts and small ball bans and pose a choking hazard.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:60a18fe826d9"
+    }
+  ],
+  "id": "claim:65e37320a16b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info recommends bathing a baby once or twice a week, for about 5 to 10 minutes each time. If a baby is bathed more often, each bath should be limited to about 5 minutes.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

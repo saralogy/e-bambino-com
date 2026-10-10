@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:025bf2113b44"
+    }
+  ],
+  "id": "claim:66e373999780",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance says complementary foods should start no earlier than after the completed 4th month and no later than the start of the 7th month.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "mobilitaet",
+  "id": "page:de/mobilitaet/kinderwagen-ab-welchem-alter",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "kinderwagen-ab-welchem-alter",
+  "status": "published",
+  "title": "Ab welchem Alter braucht ein Baby einen Kinderwagen?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/mobilitaet/kinderwagen-ab-welchem-alter/",
+  "ymyl": false
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:fc542759fa3c"
+    }
+  ],
+  "id": "claim:302a7e1c4353",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Freshly expressed breast milk keeps in the refrigerator for up to 4 days.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

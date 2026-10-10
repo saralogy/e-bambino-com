@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6e633dfe7393"
+    }
+  ],
+  "id": "claim:9fef2a728940",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Around six weeks many infants go through a growth spurt, which naturally brings more hunger.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

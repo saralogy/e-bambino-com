@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0fe270cdef8e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a specific local station is free and open: the finder must be used; no local station was confirmed.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

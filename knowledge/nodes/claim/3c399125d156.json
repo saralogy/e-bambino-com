@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:be8fe07cc4a1"
+    }
+  ],
+  "id": "claim:3c399125d156",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The chest clip should be placed at armpit level.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

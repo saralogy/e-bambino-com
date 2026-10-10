@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:a02725b40958",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-badespass/"
+}

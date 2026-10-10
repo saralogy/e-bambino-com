@@ -1,0 +1,50 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:03c514cfbfef"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:32501a021c12"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:71c8e357f4d1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a69b51d751d3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:aba59f168743"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f4a2371efe1b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ff6e17e4c60f"
+    }
+  ],
+  "gated": true,
+  "hub": "bath-and-care",
+  "id": "page:en/bath-and-care/what-is-cradle-cap-and-how-to-treat-it",
+  "internalLinks": [
+    "/questions/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "what-is-cradle-cap-and-how-to-treat-it",
+  "status": "held-ymyl",
+  "title": "What is cradle cap, and how do you treat it?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/bath-and-care/what-is-cradle-cap-and-how-to-treat-it/",
+  "ymyl": true
+}

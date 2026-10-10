@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "spielzeug",
+  "id": "page:de/spielzeug/spielzeug-motorik-erstes-jahr",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "spielzeug-motorik-erstes-jahr",
+  "status": "published",
+  "title": "Welches Spielzeug fördert die Motorik im ersten Jahr?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/spielzeug/spielzeug-motorik-erstes-jahr/",
+  "ymyl": false
+}

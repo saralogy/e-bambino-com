@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5b590a5cf5c9",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a daily wash or a very short wash is harmful beyond dryness is not confirmed by an official source.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}
