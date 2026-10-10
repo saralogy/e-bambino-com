@@ -17,13 +17,15 @@ const contentSchema = z.object({
   tags: z.array(z.string()).default([]),
   category: z.string().default('ratgeber'),
   seo: seoSchema.optional(),
+  /** English entries: slug of the German original, links the two versions. */
+  translationOf: z.string().optional(),
 });
 
-// Names collection (Italian baby names)
+// Names collection (baby names with meaning and origin)
 const namenCollection = defineCollection({
   type: 'content',
   schema: contentSchema.extend({
-    typ: z.enum(['mädchen', 'jungen']).optional(),
+    typ: z.enum(['mädchen', 'jungen', 'girl', 'boy']).optional(),
     bedeutung: z.string().optional(),
     herkunft: z.string().optional(),
     popularitaet: z.string().optional(),

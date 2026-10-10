@@ -1,0 +1,16 @@
+---
+import Question from '../../../views/Question.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../../../lib/shipgate';
+import { entryLang } from '../../../i18n';
+
+export async function getStaticPaths() {
+  // Build-time publication gate: a YMYL page without a named human reviewer
+  // must never reach dist/. It is held, not published-with-a-warning.
+  return (await getCollection('fragen'))
+    .filter((entry) => entryLang(entry) === 'de' && shipGate(entry.data).ship)
+    .map((entry) => ({ params: { hub: entry.data.hub, slug: entry.data.slug }, props: { entry } }));
+}
+---
+
+<Question lang="de" entry={Astro.props.entry} />

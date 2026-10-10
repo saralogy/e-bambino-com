@@ -1,0 +1,202 @@
+---
+// QuestionsIndex.astro — all questions by topic, with client-side search (?q=).
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../lib/shipgate';
+import { hubsFor, hubBySlug } from '../i18n/hubs';
+import { path, sectionPath, entryLang, dateFormat, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const COPY = {
+  en: {
+    title: 'Questions & answers',
+    description: 'Clear answers to the questions new parents ask most: baby clothing, diapers, strollers and carriers, nursery, toys and more.',
+    eyebrow: 'Questions & answers',
+    h1: 'The questions parents really ask',
+    lede: (h: number, q: number) => `${h} topics, ${q} questions with a direct answer. Every answer comes first in one paragraph and names its source.`,
+    searchLabel: 'Search questions',
+    searchPlaceholder: 'e.g. high chair, diapers, sleep sack',
+    searchButton: 'Search',
+    stats: ['answered questions', 'topics', 'with sources'],
+    hits: (n: number, q: string) => `${n} ${n === 1 ? 'result' : 'results'} for “${q}”`,
+    none: 'No results. Try another word or browse the topics below.',
+    topics: 'Topics',
+    question: (n: number) => `${n} ${n === 1 ? 'question' : 'questions'}`,
+    newest: 'Latest questions',
+    newestLede: 'Newest first, each with the date of its last check.',
+    types: { was: 'Basics', wie: 'How-to', 'ist-sind': 'Options', kann: 'Safety', sonstiges: 'When & why' } as Record<string, string>,
+  },
+  de: {
+    title: 'Fragen & Antworten',
+    description: 'Die häufigsten Fragen zu Babybekleidung, Windeln, Ernährung, Baden, Stillen, Mobilität, Spielzeug und Sicherheit, verständlich beantwortet.',
+    eyebrow: 'Fragen & Antworten',
+    h1: 'Die Fragen, die Eltern wirklich stellen',
+    lede: (h: number, q: number) => `${h} Themenbereiche, ${q} Fragen mit direkter Antwort. Jede Frage beantwortet sich in einem Absatz, jede Antwort nennt ihre Quelle.`,
+    searchLabel: 'Frage suchen',
+    searchPlaceholder: 'z. B. Hochstuhl, Wickeln, Schlafsack',
+    searchButton: 'Suchen',
+    stats: ['beantwortete Fragen', 'Themenbereiche', 'mit Quellenangabe'],
+    hits: (n: number, q: string) => `${n} Treffer für „${q}“`,
+    none: 'Keine Treffer. Versuchen Sie ein anderes Wort oder stöbern Sie unten in den Themenbereichen.',
+    topics: 'Themenbereiche',
+    question: (n: number) => `${n} ${n === 1 ? 'Frage' : 'Fragen'}`,
+    newest: 'Neueste Fragen',
+    newestLede: 'Neueste zuerst, jeweils mit Datum der letzten Prüfung.',
+    types: { was: 'Bedürfnis', wie: 'Anleitung', 'ist-sind': 'Merkmale & Optionen', kann: 'Erlaubnis & Sicherheit', sonstiges: 'Warum & wann' } as Record<string, string>,
+  },
+}[lang];
+
+const fragen = (await getCollection('fragen')).filter((e) => entryLang(e) === lang && shipGate(e.data).ship);
+const perHub = hubsFor(lang)
+  .map((h) => ({ ...h, count: fragen.filter((f) => f.data.hub === h.slug).length }))
+  .filter((h) => h.count > 0);
+const newest = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 10);
+const alleSortiert = [...fragen].sort((a, b) => a.data.frage.localeCompare(b.data.frage, lang));
+const dtf = dateFormat(lang);
+const self = sectionPath(lang, 'questions')!;
+---
+
+<Layout {lang} alternates={{ en: sectionPath('en', 'questions')!, de: sectionPath('de', 'questions')! }} title={COPY.title} description={COPY.description}>
+  <section class="page-hero">
+    <div class="shell py-20 sm:py-24">
+      <div class="max-w-3xl">
+        <p class="eyebrow rise">
+          <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
+          {COPY.eyebrow}
+        </p>
+        <h1 class="display-1 mt-6 text-balance rise rise-delay-1">{COPY.h1}</h1>
+        <p class="lede measure mt-7 text-pretty rise rise-delay-2">{COPY.lede(perHub.length, fragen.length)}</p>
+        <form action={self} method="get" role="search" class="mt-8 flex max-w-xl items-center gap-2 rounded-pill bg-white p-1.5 pl-5 text-night shadow-lift focus-within:ring-[3px] focus-within:ring-limone">
+          <svg class="h-5 w-5 shrink-0 text-night-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a7 7 0 1 0 14 0a7 7 0 1 0 -14 0 M16.5 16.5L21 21"></path></svg>
+          <label for="q" class="sr-only">{COPY.searchLabel}</label>
+          <input id="q" name="q" type="search" autocomplete="off" placeholder={COPY.searchPlaceholder} class="min-h-tap-s min-w-0 flex-1 bg-transparent text-base text-night outline-none placeholder:text-night-500" />
+          <button type="submit" class="btn-primary !min-h-tap-s !rounded-pill !px-6">{COPY.searchButton}</button>
+        </form>
+        <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-fog-100 pt-7">
+          <div>
+            <dt class="font-display text-2xl font-extrabold text-white">{fragen.length}</dt>
+            <dd class="text-sm text-night-500">{COPY.stats[0]}</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-extrabold text-white">{perHub.length}</dt>
+            <dd class="text-sm text-night-500">{COPY.stats[1]}</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl font-extrabold text-white">100 %</dt>
+            <dd class="text-sm text-night-500">{COPY.stats[2]}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search results (client-side, visible only with ?q=) -->
+  <section id="suche" class="hidden bg-white py-16 sm:py-20" aria-live="polite">
+    <div class="shell">
+      <h2 id="suche-titel" class="display-2 text-balance"></h2>
+      <ul id="suche-liste" class="mt-8 divide-y divide-fog-100 border-y border-fog-100">
+        {
+          alleSortiert.map((e) => (
+            <li class="hidden" data-t={`${e.data.frage} ${e.data.antwort}`.toLowerCase()}>
+              <a href={path(lang, e.data.hub, e.data.slug)} class="group flex min-h-tap-m flex-col gap-1 py-5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+                <span class="flex-1 font-semibold leading-snug text-night transition-colors duration-tap group-hover:text-ultramarine text-pretty">{e.data.frage}</span>
+                <span class="shrink-0 text-xs font-bold uppercase tracking-wider text-night-500">{hubBySlug(lang, e.data.hub)?.label}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p id="suche-leer" class="mt-8 hidden text-lg text-night-500">{COPY.none}</p>
+    </div>
+  </section>
+
+  <div id="browse">
+    <section class="shell py-20 sm:py-24">
+      <h2 class="display-2">{COPY.topics}</h2>
+      <ul class="mt-10 divide-y divide-fog-100 border-y border-fog-100">
+        {
+          perHub.map((h) => (
+            <li>
+              <a href={path(lang, h.slug)} class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+                <span class="flex-1">
+                  <span class="font-display text-xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700 sm:text-2xl">{h.label}</span>
+                  <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-night-500">{h.answer.slice(0, 120)}…</span>
+                </span>
+                <span class="flex shrink-0 items-center gap-3 text-sm text-night-500">
+                  <span class="chip-neutral">{COPY.question(h.count)}</span>
+                  <span class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="bg-fog py-20 sm:py-24">
+      <div class="shell">
+        <h2 class="display-2">{COPY.newest}</h2>
+        <p class="lede measure mt-4 text-pretty">{COPY.newestLede}</p>
+        <ul class="mt-10 divide-y divide-fog-100 border-y border-fog-100">
+          {
+            newest.map((e) => (
+              <li>
+                <a href={path(lang, e.data.hub, e.data.slug)} class="group flex min-h-tap-m flex-col gap-1 py-5 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+                  <span class="flex-1 font-medium leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">{e.data.frage}</span>
+                  <span class="flex shrink-0 items-center gap-3 text-xs uppercase tracking-wider text-night-500">
+                    <span class="hidden sm:inline">{COPY.types[e.data.frageTyp]}</span>
+                    <time datetime={e.data.date.toISOString()}>{dtf.format(e.data.date)}</time>
+                    <span class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script define:vars={{ lang }}>
+  const q = document.getElementById('q');
+  const box = document.getElementById('suche');
+  const browse = document.getElementById('browse');
+  const titel = document.getElementById('suche-titel');
+  const leer = document.getElementById('suche-leer');
+  const items = Array.from(document.querySelectorAll('#suche-liste > li'));
+  const hitsText = (n, raw) =>
+    lang === 'de' ? `${n} Treffer für „${raw}“` : `${n} ${n === 1 ? 'result' : 'results'} for “${raw}”`;
+
+  function run(raw) {
+    const terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
+    const active = terms.length > 0;
+    let hits = 0;
+    for (const li of items) {
+      const ok = active && terms.every((t) => (li.dataset.t ?? '').includes(t));
+      li.classList.toggle('hidden', !ok);
+      if (ok) hits++;
+    }
+    box?.classList.toggle('hidden', !active);
+    browse?.classList.toggle('hidden', active);
+    leer?.classList.toggle('hidden', !active || hits > 0);
+    if (titel) titel.textContent = active ? hitsText(hits, raw.trim()) : '';
+  }
+
+  if (q) {
+    const initial = new URLSearchParams(location.search).get('q') ?? '';
+    q.value = initial;
+    run(initial);
+    q.addEventListener('input', () => {
+      run(q.value);
+      const url = new URL(location.href);
+      if (q.value.trim()) url.searchParams.set('q', q.value.trim());
+      else url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+    });
+  }
+</script>

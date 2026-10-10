@@ -1,11 +1,11 @@
 /**
- * Runs the audit gate over every page in src/content/fragen/.
+ * Runs the (German-language) audit gate over every page in src/content/fragen/de/.
  * Usage: npx tsx scripts/run-audit.ts [--json]
  */
 import { readFileSync, readdirSync } from 'node:fs';
 import { auditContent, report } from '../src/lib/audit';
 
-const DIR = new URL('../src/content/fragen/', import.meta.url).pathname;
+const DIR = new URL('../src/content/fragen/de/', import.meta.url).pathname;
 
 function fm(txt: string) {
   const m = txt.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);

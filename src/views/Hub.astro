@@ -1,0 +1,112 @@
+---
+// Hub.astro — one topic with its questions grouped by question type.
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../lib/shipgate';
+import { hubByKey, type HubInfo } from '../i18n/hubs';
+import { UI, OTHER, path, sectionPath, entryLang, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+  hub: HubInfo;
+}
+const { lang, hub } = Astro.props;
+
+const COPY = {
+  en: {
+    crumbQuestions: 'Questions',
+    count: (n: number) => `${n} ${n === 1 ? 'question' : 'questions'}`,
+    inThis: 'In this topic',
+    typeNav: 'Question types',
+    empty: 'Questions for this topic are on their way.',
+    types: { was: 'Basics', wie: 'How-to', 'ist-sind': 'Options & differences', kann: 'Safety & permissions', sonstiges: 'When, why & how much' } as Record<string, string>,
+  },
+  de: {
+    crumbQuestions: 'Fragen',
+    count: (n: number) => `${n} ${n === 1 ? 'Frage' : 'Fragen'}`,
+    inThis: 'In diesem Bereich',
+    typeNav: 'Fragentypen',
+    empty: 'Hier werden in den nächsten Tagen Fragen ergänzt.',
+    types: { was: 'Bedürfnisse & Grundlagen', wie: 'Anleitung', 'ist-sind': 'Merkmale & Optionen', kann: 'Erlaubnis & Sicherheit', sonstiges: 'Warum, wann & wie viel' } as Record<string, string>,
+  },
+}[lang];
+
+const alle = (await getCollection('fragen')).filter((e) => shipGate(e.data).ship);
+const fragen = alle
+  .filter((e) => entryLang(e) === lang && e.data.hub === hub.slug)
+  .sort((a, b) => a.data.frage.localeCompare(b.data.frage, lang));
+
+const byType = fragen.reduce<Record<string, typeof fragen>>((acc, e) => {
+  (acc[e.data.frageTyp] ??= []).push(e);
+  return acc;
+}, {});
+const TYPE_ORDER = ['was', 'wie', 'ist-sind', 'kann', 'sonstiges'] as const;
+
+// The other language's version of this hub, if it has published questions.
+const other = OTHER[lang];
+const otherHub = hubByKey(other, hub.key);
+const otherHasPages = otherHub && alle.some((e) => entryLang(e) === other && e.data.hub === otherHub.slug);
+const alternates: Partial<Record<Lang, string>> = { [lang]: path(lang, hub.slug) };
+if (otherHub && otherHasPages) alternates[other] = path(other, otherHub.slug);
+---
+
+<Layout {lang} {alternates} title={hub.label} description={hub.answer.slice(0, 155)}>
+  <section class="page-hero">
+    <div class="shell py-16 sm:py-20">
+      <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Breadcrumb">
+        <a href={path(lang)} class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">{UI[lang].home}</a>
+        <span aria-hidden="true">/</span>
+        <a href={sectionPath(lang, 'questions')} class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">{COPY.crumbQuestions}</a>
+      </nav>
+
+      <p class="eyebrow rise">
+        <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
+        {COPY.count(fragen.length)}
+      </p>
+      <h1 class="display-1 mt-5 max-w-3xl text-balance rise rise-delay-1">{hub.label}</h1>
+      <p class="lede measure mt-6 text-pretty rise rise-delay-2">{hub.answer}</p>
+    </div>
+  </section>
+
+  <section class="shell py-16 sm:py-20">
+    {
+      fragen.length === 0 ? (
+        <p class="text-night-500">{COPY.empty}</p>
+      ) : (
+        <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
+          <nav class="lg:col-span-3" aria-label={COPY.typeNav}>
+            <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-night-500">{COPY.inThis}</h2>
+            <ul class="mt-4 space-y-0.5">
+              {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
+                <li>
+                  <a href={`#typ-${t}`} class="group flex min-h-tap-s items-center justify-between gap-3 text-sm text-night-700 transition-colors duration-300 hover:text-ultramarine-700">
+                    <span>{COPY.types[t]}</span>
+                    <span class="text-xs text-night-500 group-hover:text-ultramarine">{byType[t].length}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div class="lg:col-span-9">
+            {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
+              <section id={`typ-${t}`} class="mb-14 last:mb-0 scroll-mt-24">
+                <h2 class="font-display text-2xl font-semibold text-night sm:text-[1.75rem]">{COPY.types[t]}</h2>
+                <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
+                  {byType[t].map((e) => (
+                    <li>
+                      <a href={path(lang, hub.slug, e.data.slug)} class="group flex min-h-tap-m items-start justify-between gap-5 py-4 transition-colors duration-300">
+                        <span class="font-medium leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">{e.data.frage}</span>
+                        <span class="mt-1 shrink-0 text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+        </div>
+      )
+    }
+  </section>
+</Layout>

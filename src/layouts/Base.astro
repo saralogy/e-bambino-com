@@ -1,7 +1,16 @@
 ---
 // Base.astro — single root layout for the whole site.
 // All other layouts/pages compose on top of this.
+import SEO from '../components/SEO.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { UI, type Lang } from '../i18n';
+import '../styles/global.css';
+
 export interface Props {
+  lang?: Lang;
+  /** Paths of this page in each language, for hreflang and the language switch. */
+  alternates?: Partial<Record<Lang, string>>;
   title?: string;
   description?: string;
   image?: string;
@@ -10,23 +19,12 @@ export interface Props {
   noindex?: boolean;
 }
 
-import SEO from '../components/SEO.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-
-const {
-  title,
-  description = 'e-bambino.com — der italienische Familienratgeber für DACH & EU. Baby-Namen, Checklisten, finanzielle Hilfen und Ratgeber. Von Menschen geprüft.',
-  image,
-  canonical,
-  type = 'website',
-  noindex = false,
-} = Astro.props;
+const { lang = 'en', alternates = {}, title, description, image, canonical, type = 'website', noindex = false } = Astro.props;
+const t = UI[lang];
 ---
 
 <!doctype html>
-<html lang="de">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,18 +44,18 @@ const {
     <link rel="preload" as="font" type="font/woff2" href="/fonts/hanken-grotesk-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
 
-    <SEO {title} {description} {image} {canonical} {type} />
+    <SEO {lang} {alternates} {title} description={description ?? t.siteDescription} {image} {canonical} {type} />
   </head>
   <body class="flex min-h-screen flex-col">
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-pill focus:bg-night focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
-      >Zum Inhalt springen</a
+      >{t.skip}</a
     >
-    <Header />
+    <Header {lang} {alternates} />
     <main id="main" class="flex-1">
       <slot />
     </main>
-    <Footer />
+    <Footer {lang} />
   </body>
 </html>

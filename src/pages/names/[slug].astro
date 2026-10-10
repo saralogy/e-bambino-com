@@ -1,0 +1,13 @@
+---
+import NameDetail from '../../views/NameDetail.astro';
+import { getCollection } from 'astro:content';
+import { entryLang, entrySlug } from '../../i18n';
+
+export async function getStaticPaths() {
+  return (await getCollection('namen'))
+    .filter((entry) => entryLang(entry) === 'en')
+    .map((entry) => ({ params: { slug: entrySlug(entry) }, props: { entry } }));
+}
+---
+
+<NameDetail lang="en" entry={Astro.props.entry} />

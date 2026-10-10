@@ -1,18 +1,23 @@
 ---
 // ContentPage.astro — layout for Markdown pages declared via `layout:` frontmatter.
 // Night hero with the page title, then the Markdown body in the shared prose typography.
+// Frontmatter: title, description, lang ('en' | 'de'), alternate (path of the other language).
 import Base from './Base.astro';
 import ArticleHero from '../components/ArticleHero.astro';
-import type { Props } from './Base.astro';
+import { UI, path, OTHER, type Lang } from '../i18n';
 
-const props = Astro.props as Props;
-const { frontmatter } = Astro.props as { frontmatter?: { title?: string; description?: string } };
+const { frontmatter } = Astro.props as {
+  frontmatter: { title: string; description?: string; lang?: Lang; alternate?: string };
+};
+const lang: Lang = frontmatter.lang ?? 'en';
+const alternates: Partial<Record<Lang, string>> = { [lang]: Astro.url.pathname };
+if (frontmatter.alternate) alternates[OTHER[lang]] = frontmatter.alternate;
 ---
 
-<Base {...props}>
-  <ArticleHero crumbs={[{ label: 'Start', href: '/' }, { label: frontmatter?.title ?? props.title }]}>
-    <h1 class="display-1 text-balance">{frontmatter?.title ?? props.title}</h1>
-    {frontmatter?.description && <p class="lede mt-5 text-pretty">{frontmatter.description}</p>}
+<Base {lang} {alternates} title={frontmatter.title} description={frontmatter.description}>
+  <ArticleHero crumbs={[{ label: UI[lang].home, href: path(lang) }, { label: frontmatter.title }]}>
+    <h1 class="display-1 text-balance">{frontmatter.title}</h1>
+    {frontmatter.description && <p class="lede mt-5 text-pretty">{frontmatter.description}</p>}
   </ArticleHero>
 
   <article class="shell measure py-12 sm:py-16">

@@ -1,0 +1,53 @@
+---
+// NameDetail.astro — one baby name.
+import type { CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Base.astro';
+import ArticleHero from '../components/ArticleHero.astro';
+import { getCollection, render } from 'astro:content';
+import { UI, OTHER, path, sectionPath, entryLang, entrySlug, entryKey, dateFormat, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+  entry: CollectionEntry<'namen'>;
+}
+const { lang, entry } = Astro.props;
+const { Content } = await render(entry);
+
+const COPY = {
+  en: { crumb: 'Baby names', gender: 'Gender', origin: 'Origin', popularity: 'Popularity', asOf: 'Updated', girl: 'girl', boy: 'boy', footer: (a: string) => `Written by ${a}. Checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).` },
+  de: { crumb: 'Baby-Namen', gender: 'Geschlecht', origin: 'Herkunft', popularity: 'Beliebtheit', asOf: 'Stand', girl: 'Mädchen', boy: 'Jungen', footer: (a: string) => `Erstellt von ${a}. Geprüft nach den Regeln der e-bambino-Redaktion: menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).` },
+}[lang];
+
+const typLabel = { mädchen: COPY.girl, jungen: COPY.boy, girl: COPY.girl, boy: COPY.boy }[entry.data.typ ?? ''] ?? entry.data.typ;
+const other = OTHER[lang];
+const twin = (await getCollection('namen')).find((e) => entryLang(e) === other && entryKey(e) === entryKey(entry));
+const alternates: Partial<Record<Lang, string>> = { [lang]: sectionPath(lang, 'names', entrySlug(entry))! };
+if (twin) alternates[other] = sectionPath(other, 'names', entrySlug(twin))!;
+const dtf = dateFormat(lang);
+---
+
+<Layout {lang} {alternates} title={entry.data.title} description={entry.data.description} type="article">
+  <ArticleHero crumbs={[{ label: UI[lang].home, href: path(lang) }, { label: COPY.crumb, href: sectionPath(lang, 'names')! }, { label: entry.data.title }]}>
+    <h1 class="font-display text-display-sm sm:text-display-md lg:text-display-lg text-balance break-words text-white">{entry.data.title}</h1>
+    {entry.data.bedeutung && <p class="mt-4 font-display text-2xl font-bold text-limone">{entry.data.bedeutung}</p>}
+
+    <dl class="mt-7 flex flex-wrap gap-2">
+      {typLabel && <div><dt class="sr-only">{COPY.gender}</dt><dd class="chip-topic">{typLabel}</dd></div>}
+      {entry.data.herkunft && <div><dt class="sr-only">{COPY.origin}</dt><dd class="chip-neutral">{entry.data.herkunft}</dd></div>}
+      {entry.data.popularitaet && <div><dt class="sr-only">{COPY.popularity}</dt><dd class="chip-highlight">{entry.data.popularitaet}</dd></div>}
+      <div>
+        <dt class="sr-only">{COPY.asOf}</dt>
+        <dd class="chip-neutral"><time datetime={entry.data.date.toISOString()}>{COPY.asOf} {dtf.format(entry.data.date)}</time></dd>
+      </div>
+    </dl>
+  </ArticleHero>
+
+  <article class="shell measure py-12 sm:py-16">
+    <div class="prose">
+      <Content />
+    </div>
+    <footer class="mt-14 rounded-ds-lg bg-fog p-6 text-sm leading-relaxed text-night-500">
+      <p>{COPY.footer(entry.data.author)}</p>
+    </footer>
+  </article>
+</Layout>

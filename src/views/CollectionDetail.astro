@@ -1,0 +1,57 @@
+---
+// CollectionDetail.astro — one checklist, guide or finance page.
+import type { CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Base.astro';
+import ArticleHero from '../components/ArticleHero.astro';
+import { getCollection, render } from 'astro:content';
+import { UI, OTHER, path, sectionPath, entryLang, entrySlug, entryKey, dateFormat, type Lang } from '../i18n';
+import { COLLECTIONS, type ArticleCollection } from './collections';
+
+export interface Props {
+  lang: Lang;
+  collection: ArticleCollection;
+  entry: CollectionEntry<ArticleCollection>;
+}
+const { lang, collection, entry } = Astro.props;
+const { Content } = await render(entry);
+const c = COLLECTIONS[collection][lang]!;
+
+const other = OTHER[lang];
+const otherCopy = COLLECTIONS[collection][other];
+const twin = otherCopy
+  ? (await getCollection(collection)).find((e) => entryLang(e) === other && entryKey(e) === entryKey(entry))
+  : undefined;
+const alternates: Partial<Record<Lang, string>> = { [lang]: sectionPath(lang, c.section, entrySlug(entry))! };
+if (twin && otherCopy) alternates[other] = sectionPath(other, otherCopy.section, entrySlug(twin))!;
+
+const dtf = dateFormat(lang);
+const asOf = lang === 'de' ? 'Stand' : 'Updated';
+const tone = {
+  limone: { box: 'bg-limone text-night', h: '', p: '' },
+  night: { box: 'bg-night text-white', h: 'text-limone', p: 'text-fog-100' },
+  fog: { box: 'bg-fog text-night', h: '', p: 'text-night-700' },
+}[c.aside.tone];
+---
+
+<Layout {lang} {alternates} title={entry.data.title} description={entry.data.description} type="article">
+  <ArticleHero crumbs={[{ label: UI[lang].home, href: path(lang) }, { label: c.title, href: sectionPath(lang, c.section)! }, { label: entry.data.title }]}>
+    <span class={c.chipClass}>{c.chip}</span>
+    <h1 class="display-2 mt-4 text-balance">{entry.data.title}</h1>
+    <p class="lede mt-5 text-pretty">{entry.data.description}</p>
+    <p class="mt-5 text-xs font-bold uppercase tracking-wider text-night-500">
+      <time datetime={entry.data.date.toISOString()}>{asOf} {dtf.format(entry.data.date)}</time>
+      {' · '}{entry.data.author}
+    </p>
+  </ArticleHero>
+
+  <article class="shell measure py-12 sm:py-16">
+    <div class="prose">
+      <Content />
+    </div>
+
+    <aside class:list={['mt-14 rounded-ds-lg p-6 sm:p-8', tone.box]}>
+      <h2 class:list={['font-display text-xl font-bold tracking-tight', tone.h]}>{c.aside.title}</h2>
+      <p class:list={['mt-2 text-base leading-relaxed', tone.p]}>{c.aside.text}</p>
+    </aside>
+  </article>
+</Layout>

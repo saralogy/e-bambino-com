@@ -1,29 +1,42 @@
 ---
-// Header.astro — sticky site header with primary nav + language switch
+// Header.astro — notice bar, sticky site header with primary nav and the EN/DE language switch.
+import { UI, LANGS, path, sectionPath, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+  alternates?: Partial<Record<Lang, string>>;
+}
+
+const { lang, alternates = {} } = Astro.props;
+const t = UI[lang];
+
 const navItems = [
-  { label: 'Fragen', href: '/fragen/' },
-  { label: 'Namen', href: '/namen/' },
-  { label: 'Checklisten', href: '/checklisten/' },
-  { label: 'Finanzielle Hilfen', href: '/finanz/' },
-  { label: 'Ratgeber', href: '/ratgeber/' },
-  { label: 'Über uns', href: '/ueber-uns/' },
-];
+  { label: t.nav.questions, href: sectionPath(lang, 'questions') },
+  { label: t.nav.names, href: sectionPath(lang, 'names') },
+  { label: t.nav.checklists, href: sectionPath(lang, 'checklists') },
+  lang === 'de' ? { label: UI.de.nav.finance, href: sectionPath('de', 'finance') } : null,
+  { label: t.nav.guides, href: sectionPath(lang, 'guides') },
+  { label: t.nav.about, href: sectionPath(lang, 'about') },
+].filter((i): i is { label: string; href: string } => Boolean(i && i.href));
 
 const current = Astro.url.pathname;
-const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
+const isActive = (href: string) => current === href || current.startsWith(href);
+
+// Language switch: go to this page's translation when there is one, else to that language's home.
+const langLinks = LANGS.map((l) => ({ lang: l, href: alternates[l] ?? path(l), current: l === lang }));
 ---
 
 <div class="bg-night text-white">
   <p class="shell py-2 text-center text-[0.8125rem] font-semibold">
-    Von Menschen geprüft <span class="mx-1.5 text-limone" aria-hidden="true">·</span> Quellen offengelegt
-    <span class="hidden sm:inline"><span class="mx-1.5 text-limone" aria-hidden="true">·</span> Stand-Datum bei jedem Inhalt</span>
+    {t.notice[0]} <span class="mx-1.5 text-limone" aria-hidden="true">·</span> {t.notice[1]}
+    <span class="hidden sm:inline"><span class="mx-1.5 text-limone" aria-hidden="true">·</span> {t.notice[2]}</span>
   </p>
 </div>
 
 <header class="sticky top-0 z-50 border-b border-fog-100 bg-paper/85 backdrop-blur-md">
   <div class="shell">
     <div class="flex h-[4.25rem] items-center justify-between gap-4">
-      <a href="/" class="group flex min-h-tap-s items-center gap-2.5" aria-label="e-bambino Startseite">
+      <a href={path(lang)} class="group flex min-h-tap-s items-center gap-2.5" aria-label={t.homeLabel}>
         <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
           <rect x="7" y="3" width="11" height="42" rx="5.5" fill="#2438F5"></rect>
           <circle cx="29" cy="30" r="12" fill="none" stroke="#2438F5" stroke-width="10"></circle>
@@ -34,7 +47,7 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
         </span>
       </a>
 
-      <nav class="hidden items-center gap-0.5 lg:flex" aria-label="Hauptnavigation">
+      <nav class="hidden items-center gap-0.5 lg:flex" aria-label={t.mainNav}>
         {
           navItems.map((item) => (
             <a
@@ -47,24 +60,34 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
             >
               {item.label}
               {isActive(item.href) && (
-                <span
-                  class="absolute inset-x-3.5 -bottom-0.5 h-[3px] rounded-full bg-ultramarine"
-                  aria-hidden="true"
-                />
+                <span class="absolute inset-x-3.5 -bottom-0.5 h-[3px] rounded-full bg-ultramarine" aria-hidden="true" />
               )}
             </a>
           ))
         }
       </nav>
 
-      <div class="flex items-center gap-3">
-        <div
-          class="hidden items-center gap-0.5 rounded-pill bg-fog p-0.5 text-xs font-semibold lg:flex"
-          aria-label="Sprache wählen"
-        >
-          <span class="rounded-pill bg-white px-2.5 py-1 text-night shadow-soft">DE</span>
-          <span class="px-2.5 py-1 text-night-500" title="Italienische Version folgt">IT</span>
-        </div>
+      <div class="flex items-center gap-2">
+        <nav class="hidden items-center gap-0.5 rounded-pill bg-fog p-1 text-xs font-bold sm:flex" aria-label={t.langSwitch}>
+          {
+            langLinks.map((l) =>
+              l.current ? (
+                <span class="inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-pill bg-white px-2.5 text-night shadow-soft" aria-current="true">
+                  {l.lang.toUpperCase()}
+                </span>
+              ) : (
+                <a
+                  href={l.href}
+                  hreflang={l.lang}
+                  lang={l.lang}
+                  class="inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-pill px-2.5 text-night-700 transition-colors hover:text-ultramarine"
+                >
+                  {l.lang.toUpperCase()}
+                </a>
+              ),
+            )
+          }
+        </nav>
 
         <button
           id="menu-btn"
@@ -72,16 +95,11 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
           class="lg:hidden -mr-2 inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-lg p-2 text-night transition-colors hover:bg-fog"
           aria-expanded="false"
           aria-controls="mobile-menu"
-          aria-label="Menü öffnen"
+          aria-label={t.menuOpen}
+          data-open-label={t.menuOpen}
+          data-close-label={t.menuClose}
         >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="1.75"
-            aria-hidden="true"
-          >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
           </svg>
         </button>
@@ -89,13 +107,8 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
     </div>
   </div>
 
-  <div
-    id="mobile-menu"
-    class="hidden border-t border-fog-100 bg-paper lg:hidden"
-    role="dialog"
-    aria-label="Mobile Navigation"
-  >
-    <nav class="shell py-4 space-y-1" aria-label="Mobile Navigation">
+  <div id="mobile-menu" class="hidden border-t border-fog-100 bg-paper lg:hidden">
+    <nav class="shell py-4 space-y-1" aria-label={t.mainNav}>
       {
         navItems.map((item) => (
           <a
@@ -109,9 +122,16 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
           </a>
         ))
       }
-      <div class="flex items-center gap-2 px-3 pt-3 text-xs font-semibold text-night-500">
-        <span class="rounded-pill bg-night px-2.5 py-1 text-white">DE</span>
-        <span class="px-2.5 py-1 text-night-500">IT (bald)</span>
+      <div class="flex gap-2 px-3 pt-3 text-sm font-bold" aria-label={t.langSwitch}>
+        {
+          langLinks.map((l) =>
+            l.current ? (
+              <span class="inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-pill bg-night px-3 text-white" aria-current="true">{l.lang.toUpperCase()}</span>
+            ) : (
+              <a href={l.href} hreflang={l.lang} lang={l.lang} class="inline-flex min-h-tap-s min-w-tap items-center justify-center rounded-pill bg-fog px-3 text-night">{l.lang.toUpperCase()}</a>
+            ),
+          )
+        }
       </div>
     </nav>
   </div>
@@ -123,6 +143,6 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
   btn?.addEventListener('click', () => {
     const open = menu?.classList.toggle('hidden') === false;
     btn.setAttribute('aria-expanded', String(open));
-    btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    btn.setAttribute('aria-label', (open ? btn.dataset.closeLabel : btn.dataset.openLabel) ?? '');
   });
 </script>
