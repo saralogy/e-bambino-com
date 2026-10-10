@@ -86,8 +86,7 @@
     @apply relative z-10;
   }
   .page-hero .display-1,
-  .page-hero .display-2,
-  .page-hero .text-night {
+  .page-hero .display-2 {
     @apply text-white;
   }
   .page-hero .eyebrow {
@@ -101,15 +100,10 @@
   .page-hero a.text-night-500 {
     @apply text-fog-300;
   }
-  .page-hero a:hover {
+  .page-hero nav a:hover {
     @apply text-limone;
   }
-  /* The search form is a white pill inside the dark band: keep its own colors. */
-  .page-hero form.text-night,
-  .page-hero form:hover,
-  .page-hero form input.text-night {
-    color: #0c1020;
-  }
+  /* The search form is a white pill inside the dark band: keep its icon dark. */
   .page-hero form svg.text-night-500 {
     color: #5b627f;
   }
