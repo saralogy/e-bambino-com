@@ -3,39 +3,18 @@ layout: ../../layouts/ContentPage.astro
 lang: de
 alternate: /legal-notice/
 title: Impressum
-description: Impressum und Anbieterkennzeichnung für e-bambino.com gemäß § 5 DDG und § 18 Abs. 2 MStV.
+description: Impressum und Anbieterkennzeichnung für e-bambino.com gemäß § 5 DDG.
 ---
 
 # Impressum
 
-Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG) und § 18 Abs. 2 Medienstaatsvertrag (MStV).
+Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).
 
 ## Anbieter
 
-**e-bambino.com**
-Inhaber: _[Vor- und Nachname]_
-Anschrift: _[Straße, Hausnummer]_, _[PLZ Ort]_
-Land: Deutschland
-E-Mail: [kontakt@e-bambino.com](mailto:kontakt@e-bambino.com)
-Telefon: _[Telefonnummer]_
-
-> ⚠️ **Platzhalter:** Betreibername, Anschrift und Telefonnummer müssen vor dem Livegang
-> ausgefüllt werden. Eine unvollständige Anbieterkennzeichnung ist abmahnfähig.
-
-## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
-
-_**[Vor- und Nachname]**_
-_**[Straße, Hausnummer]_, _[PLZ Ort]_
-
-## Redaktionelle Verantwortung
-
-_**[Name Redaktionsleitung]** — erreichbar unter [redaktion@e-bambino.com](mailto:redaktion@e-bambino.com)
-
-## Plattform der EU-Kommission
-
-Online-Streitbeilegung: Die Europäische Kommission stellt eine Plattform zur
-Online-Streitbeilegung bereit. Wir sind nicht verpflichtet und nicht bereit, an
-Streitbeilegungsverfahren vor einem Verbraucherschlichtungsgericht teilzunehmen.
+**e-bambino**
+Hamburg, Deutschland
+E-Mail: info@e-bambino.com
 
 ## Haftung für Inhalte
 
@@ -58,11 +37,15 @@ deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Vervie
 Bearbeitung und Verbreitung außerhalb der Grenzen des Urheberrechts bedürfen der Zustimmung
 der jeweiligen Autoren bzw. Verwerter.
 
+## Verbraucherstreitbeilegung
+
+Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+Verbraucherschlichtungsstelle teilzunehmen.
+
 ## Hinweis zum Inhalt
 
 Die Inhalte dieser Website dienen der allgemeinen Information und ersetzen keine
-medizinische, rechtliche oder steuerliche Beratung. Für Entscheidungen auf Basis der hier
-veröffentlichten Angaben ist die jeweils zuständige Stelle maßgeblich.
+medizinische, rechtliche oder steuerliche Beratung.
 
 ---
 

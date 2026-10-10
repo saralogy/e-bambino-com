@@ -45,7 +45,3 @@ Wenige Gegenstände, regelmäßig ausgetauscht, wirken anregender als ein voller
 - Krabbeln: Eine freie Bodenfläche hilft mehr als jedes einzelne Zubehörteil
 - Ausprobieren: Verschiedene Texturen und Geräusche fördern die Aufmerksamkeit
 - Sicherheit: Keine Kleinteile, keine abstehenden Fäden, GS-Zeichen prüfen
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

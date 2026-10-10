@@ -19,11 +19,10 @@ const COPY = {
   en: {
     short: 'Short answer',
     author: 'Author',
-    reviewed: 'Medically reviewed by',
+    reviewed: 'Reviewed by',
     updated: 'Updated',
     sources: 'Sources',
     seeSources: 'see sources',
-    note: 'Written and checked by people, sources disclosed (EU AI Act Art. 50). Not medical advice.',
     more: (hub: string) => `More questions about ${hub}`,
     asOf: 'Updated',
     types: { was: 'Basics', wie: 'How-to', 'ist-sind': 'Options & differences', kann: 'Safety & permissions', sonstiges: 'When, why & how much' } as Record<string, string>,
@@ -31,11 +30,10 @@ const COPY = {
   de: {
     short: 'Kurzantwort',
     author: 'Autor',
-    reviewed: 'Medizinisch geprüft',
+    reviewed: 'Geprüft von',
     updated: 'Aktualisiert am',
     sources: 'Quellen',
     seeSources: 'siehe Quellen',
-    note: 'Von Menschen erstellt und geprüft, Quellen offengelegt (EU AI Act Art. 50). Keine medizinische Beratung.',
     more: (hub: string) => `Weitere Fragen zu ${hub}`,
     asOf: 'Stand',
     types: { was: 'Was / Definition & Bedarf', wie: 'Wie / Anleitung', 'ist-sind': 'Ist / Sind / Merkmale & Optionen', kann: 'Kann / Erlaubnis & Sicherheit', sonstiges: 'Sonstiges / Warum, Wann, Wo, Wie viel' } as Record<string, string>,
@@ -55,6 +53,10 @@ const twin = alle.find((e) => entryLang(e) === other && entryKey(e) === entryKey
 const alternates: Partial<Record<Lang, string>> = { [lang]: path(lang, entry.data.hub, entry.data.slug) };
 if (twin) alternates[other] = path(other, twin.data.hub, twin.data.slug);
 
+const SOURCE_NAMES: Record<string, string> = {
+  who: 'WHO', unece: 'UNECE', cpsc: 'CPSC', rki: 'RKI', awmf: 'AWMF',
+  'kindergesundheit-info': 'kindergesundheit-info.de', verbraucherzentrale: 'Verbraucherzentrale',
+};
 const typLabel = COPY.types[entry.data.frageTyp] ?? entry.data.frageTyp;
 const dtf = dateFormat(lang);
 const updated = entry.data.updatedDate ?? entry.data.date;
@@ -107,39 +109,15 @@ const jsonLd = JSON.stringify({
       <p class="mt-3 text-pretty text-lg leading-relaxed sm:text-xl">{entry.data.antwort}</p>
     </div>
 
-    <aside class="mb-12 rounded-ds-lg bg-fog p-6 text-sm">
-      <dl class="grid gap-x-10 gap-y-3 sm:grid-cols-2">
-        <div class="flex gap-2">
-          <dt class="font-semibold text-night">{COPY.author}:</dt>
-          <dd class="text-night-500">{entry.data.author}</dd>
-        </div>
-        {entry.data.ymyl && entry.data.reviewedBy && (
-          <div class="flex gap-2">
-            <dt class="font-semibold text-night">{COPY.reviewed}:</dt>
-            <dd class="text-night-500">{entry.data.reviewedBy}</dd>
-          </div>
-        )}
-        <div class="flex gap-2">
-          <dt class="font-semibold text-night">{COPY.updated}:</dt>
-          <dd class="text-night-500">{dtf.format(updated)}</dd>
-        </div>
-        <div class="flex gap-2">
-          <dt class="font-semibold text-night">{COPY.sources}:</dt>
-          <dd class="text-night-500">
-            {entry.data.quellen?.length ? (
-              entry.data.quellen.join(', ')
-            ) : (
-              <a href={sectionPath(lang, 'sources')} class="text-ultramarine-700 underline underline-offset-2">{COPY.seeSources}</a>
-            )}
-          </dd>
-        </div>
-      </dl>
-      <p class="mt-5 border-t border-fog-100 pt-4 text-xs leading-relaxed text-night-500">{COPY.note}</p>
-    </aside>
-
     <div class="prose">
       <Content />
     </div>
+
+    <p class="mt-12 border-t border-fog-100 pt-6 text-sm leading-relaxed text-night-500">
+      {COPY.updated} {dtf.format(updated)}
+      {entry.data.quellen?.length ? <> · {COPY.sources}: <a href={sectionPath(lang, 'sources')} class="text-ultramarine-700 underline underline-offset-2">{entry.data.quellen.map((k: string) => SOURCE_NAMES[k] ?? k).join(', ')}</a></> : null}
+      {entry.data.ymyl && entry.data.reviewedBy ? <> · {`${COPY.reviewed} ${entry.data.reviewedBy}`}</> : null}
+    </p>
 
     {
       siblings.length > 0 && (

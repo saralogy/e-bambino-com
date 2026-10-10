@@ -41,7 +41,3 @@ In den ersten Tagen sind die Volumina klein und steigen rasch an. Es ist in der 
 | 6 bis 12 Wochen | 90 bis 130 ml | 6 bis 7 |
 | 3 bis 6 Monate | 150 bis 200 ml | 5 bis 6 |
 | 6 bis 12 Monate | 200 bis 250 ml | 4 bis 5 |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

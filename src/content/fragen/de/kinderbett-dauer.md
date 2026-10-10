@@ -42,7 +42,3 @@ Ein ausgedientes Babybett muss nicht sofort im Müll landen. In der Regel lässt
 | ab 6 Jahre | 90 bis 120 cm | 150 cm und mehr | Matratze ab 90 x 200 cm |
 
 Die Angaben sind Empfehlungen, mit denen du die Größe eines Bettes einordnen kannst. Sie ersetzen keine individuelle Beratung im Baby- oder Möbelgeschäft.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

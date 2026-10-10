@@ -70,4 +70,4 @@ category: 'ratgeber'
 
 ---
 
-*Erstellt von der e-bambino-Redaktion • Quellen: AWMF, RKI, Deutsche Gesellschaft für Schlafforschung • Geprüft nach EU AI Act Art. 50*
+*Quellen: AWMF, RKI, Deutsche Gesellschaft für Schlafforschung*

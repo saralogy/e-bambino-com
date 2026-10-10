@@ -39,7 +39,3 @@ Mädchennamen.
 
 Sofia und Sophia werden gleich ausgesprochen; die Schreibweise mit *f* ist kürzer und in
 vielen Sprachen verbreitet. Beide Formen sind im Standesamt problemlos eintragbar.
-
----
-
-*Erstellt von der e-bambino-Redaktion • Geprüft nach EU AI Act Art. 50*

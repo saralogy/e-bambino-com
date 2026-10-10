@@ -35,7 +35,3 @@ Hochgehängte Regale über der Kommode nutzen die sonst ungenutzte Wandfläche. 
 | Unterse der Kommode | Körbe für Windeln und Pflege | Rollen für tägliches Herausnehmen |
 | Hochgehängtes Regal | schwere Gläser und Vorräte | außerhalb der Reichweite des Kindes |
 | Bodenfläche am Fenster | Spielteppich | kein Bett im Bereich des Fensterfalls |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

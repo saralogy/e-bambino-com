@@ -46,7 +46,3 @@ Bilderbücher mit Lautschrift unterstützen das Zuhören beim Vorlesen und helfe
 - Ein lieblingsbuch wirkt stärker als viele ungeliebte Titel
 - Bilder mit einer Handlung tragen mehr als dekorative Illustrationen
 - Lautschrift kann unterstützen, sollte die Geschichte aber nicht überdecken
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

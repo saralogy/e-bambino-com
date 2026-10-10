@@ -88,4 +88,4 @@ category: 'checklisten'
 
 ---
 
-*Erstellt von der e-bambino-Redaktion • Quellen: RKI, Deutsche Gesellschaft für Reisemedizin • Geprüft nach EU AI Act Art. 50*
+*Quellen: RKI, Deutsche Gesellschaft für Reisemedizin*

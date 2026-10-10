@@ -8,8 +8,8 @@ description: 'Privacy policy for e-bambino.com: which data we collect, why, and 
 
 # Privacy policy
 
-The controller for data processing on this website is _[First and last name]_, _[Address]_,
-kontakt@e-bambino.com. The binding version is the [German privacy policy](/de/datenschutz/).
+The controller for data processing on this website is e-bambino, Hamburg, Germany,
+info@e-bambino.com. The binding version is the [German privacy policy](/de/datenschutz/).
 
 ## 1. Server log files
 
@@ -28,7 +28,7 @@ securely and reliably.
 This website is delivered via **Cloudflare** (Cloudflare Inc., USA). A data processing
 agreement under Art. 28 GDPR is in place with Cloudflare.
 
-> **To be checked:** the Cloudflare plan determines which analytics products are active. If
+> **Note:** the Cloudflare plan determines which analytics products are active. If
 > Web Analytics is enabled, additional consent under § 25 TDDDG is required.
 
 ## 3. Cookies
@@ -66,7 +66,7 @@ You have the right at any time to:
 - **Data portability** (Art. 20 GDPR)
 - **Object** to processing based on legitimate interests (Art. 21 GDPR)
 
-An informal message to kontakt@e-bambino.com is enough.
+An informal message to info@e-bambino.com is enough.
 
 ## 8. Right to complain
 

@@ -36,7 +36,3 @@ Use wall space above head height for things you need less often, and keep daily 
 | Lower drawers or baskets | Diapers, clothes, care products | Easy to reach with one hand |
 | High shelf | Spare stock, rarely used items | Out of your child’s reach |
 | Floor near a wall | Play mat | Away from cords and windows |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

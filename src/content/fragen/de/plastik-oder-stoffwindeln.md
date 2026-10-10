@@ -40,7 +40,3 @@ Wegwerfwindeln sind es fast immer: schneller, kein Waschaufwand, keine Geruchsfr
 | Abfall | hoch | gering |
 | Aufwand beim Waschen | keiner | vorhanden |
 | Unterwegs | unkompliziert | aufwendiger |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

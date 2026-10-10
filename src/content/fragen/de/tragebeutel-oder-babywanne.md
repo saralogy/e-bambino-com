@@ -40,7 +40,3 @@ Tragen werden nach der Körperlänge des Kindes eingestellt, nicht nach dem Gewi
 | Hände frei | nein | ja |
 | Kopfstützung | automatisch | durch Ihre Kraft |
 | Platzbedarf | groß | klein |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

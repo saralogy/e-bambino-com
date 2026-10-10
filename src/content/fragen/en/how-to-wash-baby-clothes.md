@@ -42,7 +42,3 @@ Line drying is gentle and costs nothing. A tumble dryer on low heat keeps fleece
 | Fleece, synthetics | 30 to 40 °C | Easy-care or gentle |
 | Wool, silk | 30 °C | Wool program, wool detergent |
 | Bedding, towels, cloth diapers | 60 °C | Cotton |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

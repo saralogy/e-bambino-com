@@ -42,7 +42,3 @@ Fewer than you think. A handful of toys, swapped every week or two, keeps things
 - Crawling: free floor space helps more than any accessory
 - Exploring: different textures and sounds hold attention
 - Safety: no small parts, no long cords, CE mark
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

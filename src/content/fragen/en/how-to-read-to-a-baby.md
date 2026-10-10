@@ -39,7 +39,3 @@ Your voice, your pauses and your pace. Reading slowly gives your baby time to re
 - Repetition: the same book many days in a row is fine
 - No pressure: stop when attention fades
 - Board books, then touch-and-feel and flap books as hands get busier
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

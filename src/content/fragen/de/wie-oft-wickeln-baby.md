@@ -35,7 +35,3 @@ Zwei Dinge wirken am zuverlässigsten: häufiger Wickeln, wenn die Windel nass i
 | 3 Monate | 8 bis 10 |
 | 6 Monate | 6 bis 8 |
 | ab 12 Monaten | 4 bis 6 |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

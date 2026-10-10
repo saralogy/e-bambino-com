@@ -40,7 +40,3 @@ Bei einem Schlafsack solltest du die Raumtemperatur niedriger wählen als bei ei
 | Winter, Heizung im Nebenraum | stoßlüften, Heizkörper nicht komplett aus | 40 bis 60 Prozent |
 
 Die Werte sind Empfehlungen der üblichen Vorsorge, keine Messvorgaben.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

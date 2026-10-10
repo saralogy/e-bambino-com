@@ -40,7 +40,3 @@ Wenn die Rötung trotz der Maßnahmen nach zwei bis drei Tagen nicht besser wird
 | weiße Pusteln | möglicherweise Pilz | Praxis aufsuchen |
 | Stuhl mit Blut | Infektion möglich | Notfall, 116117 |
 | Fieber | Infektion möglich | Notfall, 116117 |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

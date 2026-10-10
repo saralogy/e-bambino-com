@@ -84,4 +84,4 @@ Das Elterngeld wird beim **Elterngeldamt** Ihrer Stadt oder Ihres Landkreises be
 
 ---
 
-*Erstellt von der e-bambino-Redaktion • Quellen: BMFSFJ, Destatis • Geprüft nach EU AI Act Art. 50*
+*Quellen: BMFSFJ, Destatis*

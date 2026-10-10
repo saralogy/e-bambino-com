@@ -46,7 +46,3 @@ Getrennt wäschst du alles mit Bettwäsche, Handtüchern und Läuferkleidung zus
 | Fleece, Microfaser | 40 Grad | Fein- oder Wollwäsche |
 | Wolle, Seide | 30 Grad | Wollwaschgang, Wollwaschmittel |
 | Nachtwäsche, Bettleinen | 60 Grad | Kochwäsche mit leerem Spülfach |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft – menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

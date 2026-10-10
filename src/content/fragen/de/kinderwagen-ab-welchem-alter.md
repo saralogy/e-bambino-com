@@ -40,7 +40,3 @@ Ein Fünf-Punkt-Gurt ist heute Standard und sollte es auch bleiben. Achten Sie d
 | ab 6 Monaten, aufrecht | Sitzeinheit im Kombimodell |
 | viel Asphalt und Kopfstein | große Räder, Sportfederung |
 | wenig Platz im Auto | Faltmaß beachten |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

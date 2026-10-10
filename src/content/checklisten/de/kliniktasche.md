@@ -87,7 +87,3 @@ category: 'checklisten'
 - [ ] Hochwertige Kosmetik (Sie haben keine Zeit dafür)
 - [ ] Zu viele Snacks (Krankenhaus bietet Verpflegung)
 - [ ] Teure Elektronik (Vorsicht vor Diebstahl)
-
----
-
-*Erstellt von der e-bambino-Redaktion • Quellen: AWMF, Deutsche Krebshilfe • Geprüft nach EU AI Act Art. 50*

@@ -17,11 +17,11 @@ const COPY = {
     description: 'Clear answers to the questions new parents ask most: baby clothing, diapers, strollers and carriers, nursery, toys and more.',
     eyebrow: 'Questions & answers',
     h1: 'The questions parents really ask',
-    lede: (h: number, q: number) => `${h} topics, ${q} questions with a direct answer. Every answer comes first in one paragraph and names its source.`,
+    lede: (h: number, q: number) => `${h} topics, ${q} questions. The short answer comes first, the details follow, so you get what you need fast.`,
     searchLabel: 'Search questions',
     searchPlaceholder: 'e.g. high chair, diapers, sleep sack',
     searchButton: 'Search',
-    stats: ['answered questions', 'topics', 'with sources'],
+    stats: ['answered questions', 'topics', 'paid placements'],
     hits: (n: number, q: string) => `${n} ${n === 1 ? 'result' : 'results'} for “${q}”`,
     none: 'No results. Try another word or browse the topics below.',
     topics: 'Topics',
@@ -35,11 +35,11 @@ const COPY = {
     description: 'Die häufigsten Fragen zu Babybekleidung, Windeln, Ernährung, Baden, Stillen, Mobilität, Spielzeug und Sicherheit, verständlich beantwortet.',
     eyebrow: 'Fragen & Antworten',
     h1: 'Die Fragen, die Eltern wirklich stellen',
-    lede: (h: number, q: number) => `${h} Themenbereiche, ${q} Fragen mit direkter Antwort. Jede Frage beantwortet sich in einem Absatz, jede Antwort nennt ihre Quelle.`,
+    lede: (h: number, q: number) => `${h} Themenbereiche, ${q} Fragen. Erst die kurze Antwort, dann die Details, damit Sie schnell finden, was Sie brauchen.`,
     searchLabel: 'Frage suchen',
     searchPlaceholder: 'z. B. Hochstuhl, Wickeln, Schlafsack',
     searchButton: 'Suchen',
-    stats: ['beantwortete Fragen', 'Themenbereiche', 'mit Quellenangabe'],
+    stats: ['beantwortete Fragen', 'Themenbereiche', 'bezahlte Platzierungen'],
     hits: (n: number, q: string) => `${n} Treffer für „${q}“`,
     none: 'Keine Treffer. Versuchen Sie ein anderes Wort oder stöbern Sie unten in den Themenbereichen.',
     topics: 'Themenbereiche',
@@ -86,7 +86,7 @@ const self = sectionPath(lang, 'questions')!;
             <dd class="text-sm text-night-500">{COPY.stats[1]}</dd>
           </div>
           <div>
-            <dt class="font-display text-2xl font-extrabold text-white">100 %</dt>
+            <dt class="font-display text-2xl font-extrabold text-white">0</dt>
             <dd class="text-sm text-night-500">{COPY.stats[2]}</dd>
           </div>
         </dl>

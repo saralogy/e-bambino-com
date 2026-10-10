@@ -40,7 +40,3 @@ Eine hohe Kante lässt sich wirksamer entschärfen als absichern: Setzen Sie das
 | Treppe | Hinabsturz | Geländer, Handlauf erreichbar |
 | Wickeltisch | Drehen und Rollen | eine Hand am Baby |
 | Fenster | Sturz aus Höhe | Fenster stoppen, Möbel wegrücken |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

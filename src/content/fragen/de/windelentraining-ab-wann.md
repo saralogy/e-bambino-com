@@ -39,7 +39,3 @@ Ohne Kommentar wechseln. Ein ruhiges, sachliches „das ist in Ordnung, wir vers
 | 18 bis 30 Monate | erste trockene Stunden | je nach Signalen beginnen |
 | 2 bis 3 Jahre | viele trockene Stunden | Fortschritt meist stabil |
 | ab 3 Jahren | überwiegend trocken | Windeln nur nachts |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

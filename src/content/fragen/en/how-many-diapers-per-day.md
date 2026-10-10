@@ -37,7 +37,3 @@ The waistband sits below the belly button without digging in, the leg cuffs clos
 | 6 months | 6 to 8 | 180 to 240 |
 | 12 months | 5 to 7 | 150 to 210 |
 | 24 months | 4 to 6 | 120 to 180 |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

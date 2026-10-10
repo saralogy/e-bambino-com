@@ -39,7 +39,3 @@ Häufig ist, nur Steckdosen in Kinderzimmern und Wohnzimmern zu sichern, nicht a
 | Zweiteilige Abdeckung | ja | ja | meist nein |
 | Steckdosensicherung in der Dose | ja | ja | je nach Modell |
 | Steckdose mit Kinderschutz ab Werk | ja | ja | nein |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

@@ -39,7 +39,3 @@ as *“bringer of light”*. Luca is a form of Luke and Lucas and is given in ma
 
 Luca is short, easy to spell and pronounced the same way in many languages. In a few countries
 it is also used as a girl’s name, but it is mainly given to boys.
-
----
-
-*Written by the e-bambino editorial team • Checked under EU AI Act Art. 50*
