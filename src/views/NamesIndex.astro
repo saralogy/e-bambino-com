@@ -1,0 +1,129 @@
+---
+// NamesIndex.astro — baby names with a girl/boy filter (client-side, ?typ= shareable).
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { getCollection } from 'astro:content';
+import { sectionPath, entryLang, entrySlug, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const COPY = {
+  en: {
+    title: 'Baby names',
+    description: 'Baby names with meaning, origin and variants in other languages, checked against reliable sources.',
+    eyebrow: 'Meaning and origin',
+    h1: 'Baby names with meaning',
+    lede: 'Every name with its meaning, language of origin and variants in other languages, checked and free of click-bait lists.',
+    filterLabel: 'Filter names',
+    all: 'All',
+    girl: 'Girls',
+    boy: 'Boys',
+    empty: 'No names here yet.',
+    values: { girl: 'girl', boy: 'boy' },
+    one: 'name',
+    many: 'names',
+  },
+  de: {
+    title: 'Baby-Namen',
+    description: 'Baby-Namen mit Bedeutung, Herkunft und Varianten in anderen Sprachen, geprüft an verlässlichen Quellen.',
+    eyebrow: 'Mit Bedeutung und Herkunft',
+    h1: 'Baby-Namen mit Bedeutung',
+    lede: 'Jeder Name mit Bedeutung, sprachlicher Herkunft und Varianten in anderen Sprachen, geprüft und ohne Klickfarmen.',
+    filterLabel: 'Namen filtern',
+    all: 'Alle',
+    girl: 'Mädchen',
+    boy: 'Jungen',
+    empty: 'Hier ist noch kein Name eingetragen.',
+    values: { girl: 'mädchen', boy: 'jungen' },
+    one: 'Name',
+    many: 'Namen',
+  },
+}[lang];
+
+const namen = (await getCollection('namen'))
+  .filter((e) => entryLang(e) === lang)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, lang));
+
+const filters = [
+  { value: 'alle', label: COPY.all },
+  { value: COPY.values.girl, label: COPY.girl },
+  { value: COPY.values.boy, label: COPY.boy },
+];
+const on = 'fbtn min-h-tap-s rounded-pill border-2 border-limone bg-limone px-5 text-sm font-bold text-night transition-all duration-tap ease-reveal';
+const off = 'fbtn min-h-tap-s rounded-pill border-2 border-white/40 bg-transparent px-5 text-sm font-bold text-white transition-all duration-tap ease-reveal hover:border-limone';
+---
+
+<Layout {lang} alternates={{ en: sectionPath('en', 'names')!, de: sectionPath('de', 'names')! }} title={COPY.title} description={COPY.description}>
+  <section class="page-hero">
+    <div class="shell py-16 sm:py-20">
+      <SectionHeader eyebrow={COPY.eyebrow} title={COPY.h1} lede={COPY.lede} />
+
+      <div class="mt-10 flex flex-wrap items-center gap-2" role="group" aria-label={COPY.filterLabel}>
+        {filters.map((f, i) => (
+          <button type="button" data-filter={f.value} class={i === 0 ? on : off} aria-pressed={i === 0 ? 'true' : 'false'}>{f.label}</button>
+        ))}
+        <p id="count" class="ml-1 text-sm text-fog-300" aria-live="polite" data-one={COPY.one} data-many={COPY.many}></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell py-16 sm:py-20">
+    <ul id="namen-list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        namen.map((n) => (
+          <li data-typ={n.data.typ ?? ''}>
+            <a href={sectionPath(lang, 'names', entrySlug(n))} class="card-link group flex h-full flex-col">
+              <h2 class="font-display text-3xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700">{n.data.title}</h2>
+              {n.data.bedeutung && <p class="mt-2 font-medium text-ultramarine-700">{n.data.bedeutung}</p>}
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{n.data.description}</p>
+              <div class="mt-5 flex flex-wrap items-center gap-2">
+                {n.data.typ && <span class="chip-topic">{n.data.typ === COPY.values.girl ? COPY.girl : COPY.boy}</span>}
+                {n.data.herkunft && <span class="chip-neutral">{n.data.herkunft}</span>}
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p id="empty" class="hidden py-8 text-night-500">{COPY.empty}</p>
+  </section>
+</Layout>
+
+<script>
+  const btns = Array.from(document.querySelectorAll<HTMLButtonElement>('.fbtn'));
+  const items = Array.from(document.querySelectorAll<HTMLLIElement>('#namen-list > li'));
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const values = btns.map((b) => b.dataset.filter ?? 'alle');
+
+  function apply(filter: string) {
+    let visible = 0;
+    for (const li of items) {
+      const match = filter === 'alle' || li.dataset.typ === filter;
+      li.classList.toggle('hidden', !match);
+      if (match) visible++;
+    }
+    if (count) count.textContent = `${visible} ${visible === 1 ? count.dataset.one : count.dataset.many}`;
+    empty?.classList.toggle('hidden', visible > 0);
+
+    for (const b of btns) {
+      const on = b.dataset.filter === filter;
+      b.classList.toggle('bg-limone', on);
+      b.classList.toggle('text-night', on);
+      b.classList.toggle('border-limone', on);
+      b.classList.toggle('bg-transparent', !on);
+      b.classList.toggle('text-white', !on);
+      b.classList.toggle('border-white/40', !on);
+      b.setAttribute('aria-pressed', String(on));
+    }
+  }
+
+  for (const b of btns) b.addEventListener('click', () => apply(b.dataset.filter ?? 'alle'));
+
+  // Read the filter from the URL so /names/?typ=girl stays a shareable link.
+  const initial = new URLSearchParams(location.search).get('typ') ?? 'alle';
+  apply(values.includes(initial) ? initial : 'alle');
+</script>

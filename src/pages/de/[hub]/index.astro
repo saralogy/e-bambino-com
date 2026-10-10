@@ -1,0 +1,17 @@
+---
+import Hub from '../../../views/Hub.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../../../lib/shipgate';
+import { hubsFor } from '../../../i18n/hubs';
+import { entryLang } from '../../../i18n';
+
+export async function getStaticPaths() {
+  // A hub with no publishable pages is not generated at all, so we never ship an empty shell.
+  const alle = (await getCollection('fragen')).filter((e) => entryLang(e) === 'de' && shipGate(e.data).ship);
+  return hubsFor('de')
+    .filter((hub) => alle.some((e) => e.data.hub === hub.slug))
+    .map((hub) => ({ params: { hub: hub.slug }, props: { hub } }));
+}
+---
+
+<Hub lang="de" hub={Astro.props.hub} />

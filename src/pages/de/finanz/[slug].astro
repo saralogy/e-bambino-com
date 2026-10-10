@@ -1,0 +1,13 @@
+---
+import CollectionDetail from '../../../views/CollectionDetail.astro';
+import { getCollection } from 'astro:content';
+import { entryLang, entrySlug } from '../../../i18n';
+
+export async function getStaticPaths() {
+  return (await getCollection('finanz'))
+    .filter((entry) => entryLang(entry) === 'de')
+    .map((entry) => ({ params: { slug: entrySlug(entry) }, props: { entry } }));
+}
+---
+
+<CollectionDetail lang="de" collection="finanz" entry={Astro.props.entry} />

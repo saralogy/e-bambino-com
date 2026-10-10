@@ -1,23 +1,22 @@
 ---
+// 404 — served for every unknown URL, so it offers both languages.
 import Layout from '../layouts/Base.astro';
+import { sectionPath } from '../i18n';
 
 const bereiche = [
-  { label: 'Alle Fragen', href: '/fragen/' },
-  { label: 'Baby-Namen', href: '/namen/' },
-  { label: 'Checklisten', href: '/checklisten/' },
-  { label: 'Finanzielle Hilfen', href: '/finanz/' },
-  { label: 'Ratgeber', href: '/ratgeber/' },
+  { label: 'All questions', href: sectionPath('en', 'questions')! },
+  { label: 'Baby names', href: sectionPath('en', 'names')! },
+  { label: 'Checklists', href: sectionPath('en', 'checklists')! },
+  { label: 'Guides', href: sectionPath('en', 'guides')! },
 ];
 ---
 
-<Layout title="404 — Seite nicht gefunden" description="Diese Seite existiert nicht (404)." noindex>
+<Layout lang="en" title="Page not found" description="This page does not exist (404)." noindex>
   <section class="page-hero">
     <div class="shell py-24 text-center sm:py-32">
       <p class="font-display text-[6rem] font-extrabold leading-none text-limone sm:text-[9rem]" aria-hidden="true">404</p>
-      <h1 class="display-2 mt-4 text-balance">Diese Seite gibt es nicht</h1>
-      <p class="lede mx-auto mt-5 max-w-xl text-pretty">
-        Möglicherweise wurde sie verschoben oder entfernt. Diese Bereiche gibt es:
-      </p>
+      <h1 class="display-2 mt-4 text-balance">This page doesn’t exist</h1>
+      <p class="lede mx-auto mt-5 max-w-xl text-pretty">It may have moved or been removed. These sections do exist:</p>
 
       <div class="mt-10 flex flex-wrap justify-center gap-3">
         {
@@ -28,6 +27,10 @@ const bereiche = [
           ))
         }
       </div>
+
+      <p class="mt-12 text-sm text-fog-300" lang="de">
+        Seite nicht gefunden. <a href="/de/" class="font-bold text-white underline underline-offset-4">Zur deutschen Startseite</a>
+      </p>
     </div>
   </section>
 </Layout>

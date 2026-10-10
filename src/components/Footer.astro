@@ -1,20 +1,30 @@
 ---
-// Footer.astro — dark brand footer with gradient, categories, legal and the AI Act note
+// Footer.astro — dark brand footer with sections, legal links and the AI Act note.
+import { UI, sectionPath, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = UI[lang];
 const year = new Date().getFullYear();
 
-const kategorien = [
-  { label: 'Fragen & Antworten', href: '/fragen/' },
-  { label: 'Baby-Namen', href: '/namen/' },
-  { label: 'Checklisten', href: '/checklisten/' },
-  { label: 'Finanzielle Hilfen', href: '/finanz/' },
-  { label: 'Ratgeber', href: '/ratgeber/' },
-];
+const bereiche = [
+  { label: t.questionsAll, href: sectionPath(lang, 'questions') },
+  { label: t.nav.names, href: sectionPath(lang, 'names') },
+  { label: t.nav.checklists, href: sectionPath(lang, 'checklists') },
+  lang === 'de' ? { label: UI.de.nav.finance, href: sectionPath('de', 'finance') } : null,
+  { label: t.nav.guides, href: sectionPath(lang, 'guides') },
+].filter((i): i is { label: string; href: string } => Boolean(i && i.href));
 
 const rechtliches = [
-  { label: 'Impressum', href: '/impressum/' },
-  { label: 'Datenschutz', href: '/datenschutz/' },
-  { label: 'Quellen', href: '/quellen/' },
+  { label: t.legal, href: sectionPath(lang, 'legal')! },
+  { label: t.privacy, href: sectionPath(lang, 'privacy')! },
+  { label: t.sources, href: sectionPath(lang, 'sources')! },
 ];
+
+const linkClass = 'inline-flex min-h-tap-s items-center text-sm text-fog-100 transition-colors duration-300 hover:text-limone';
 ---
 
 <footer class="mt-auto bg-deep text-white">
@@ -24,78 +34,36 @@ const rechtliches = [
         <p class="font-display text-2xl font-extrabold tracking-tight">
           e<span class="text-mandarin">-</span>bambino<span class="text-limone">.</span>com
         </p>
-        <p class="mt-4 max-w-xs text-sm leading-relaxed text-fog-300">
-          Der italienische Familienratgeber für DACH und die EU. Namen, Checklisten und finanzielle
-          Hilfen — verständlich, geprüft, auf Deutsch.
-        </p>
+        <p class="mt-4 max-w-xs text-sm leading-relaxed text-fog-300">{t.footerTagline}</p>
         <div class="rule-gradient mt-8 w-24" aria-hidden="true"></div>
       </div>
 
       <div class="lg:col-span-3">
-        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Bereiche</h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{t.footerSections}</h2>
         <ul class="mt-4 space-y-0.5">
-          {
-            kategorien.map((k) => (
-              <li>
-                <a
-                  href={k.href}
-                  class="inline-flex min-h-tap-s items-center text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
-                >
-                  {k.label}
-                </a>
-              </li>
-            ))
-          }
+          {bereiche.map((k) => <li><a href={k.href} class={linkClass}>{k.label}</a></li>)}
         </ul>
       </div>
 
       <div class="lg:col-span-2">
-        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Rechtliches</h2>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{t.footerLegal}</h2>
         <ul class="mt-4 space-y-0.5">
-          {
-            rechtliches.map((k) => (
-              <li>
-                <a
-                  href={k.href}
-                  class="inline-flex min-h-tap-s items-center text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
-                >
-                  {k.label}
-                </a>
-              </li>
-            ))
-          }
+          {rechtliches.map((k) => <li><a href={k.href} class={linkClass}>{k.label}</a></li>)}
         </ul>
       </div>
 
       <div class="lg:col-span-3">
-        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Kontakt</h2>
-        <ul class="mt-4 space-y-0.5 text-sm">
-          <li>
-            <a
-              href="mailto:kontakt@e-bambino.com"
-              class="inline-flex min-h-tap-s items-center text-fog-100 transition-colors duration-300 hover:text-limone"
-            >
-              kontakt@e-bambino.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="/ueber-uns/"
-              class="inline-flex min-h-tap-s items-center text-fog-100 transition-colors duration-300 hover:text-limone"
-            >
-              Redaktion &amp; Arbeitsweise
-            </a>
-          </li>
+        <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{t.footerContact}</h2>
+        <ul class="mt-4 space-y-0.5">
+          <li><a href="mailto:kontakt@e-bambino.com" class={linkClass}>kontakt@e-bambino.com</a></li>
+          <li><a href={sectionPath(lang, 'about')} class={linkClass}>{t.footerTeam}</a></li>
         </ul>
       </div>
     </div>
 
     <div class="mt-14 border-t border-white/10 pt-8 space-y-2 text-center">
-      <p class="text-sm text-fog-300">© {year} e-bambino.com. Alle Rechte vorbehalten.</p>
-      <p class="mx-auto max-w-2xl text-xs leading-relaxed text-fog-300">
-        Inhalte von menschlichen Redakteuren erstellt und geprüft — im Einklang mit EU AI Act Art. 50.
-        Keine medizinische Beratung.
-      </p>
+      <p class="text-sm text-fog-300">© {year} e-bambino.com. {t.rights}</p>
+      <p class="mx-auto max-w-2xl text-xs leading-relaxed text-fog-300">{t.aiNote}</p>
     </div>
   </div>
 </footer>

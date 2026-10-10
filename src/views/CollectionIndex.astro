@@ -1,0 +1,72 @@
+---
+// CollectionIndex.astro — listing for checklists, guides and finance.
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { getCollection } from 'astro:content';
+import { LANGS, sectionPath, entryLang, entrySlug, dateFormat, type Lang } from '../i18n';
+import { COLLECTIONS, type ArticleCollection } from './collections';
+
+export interface Props {
+  lang: Lang;
+  collection: ArticleCollection;
+}
+const { lang, collection } = Astro.props;
+const c = COLLECTIONS[collection][lang]!;
+
+const items = (await getCollection(collection)).filter((e) => entryLang(e) === lang);
+const dtf = dateFormat(lang, { month: 'long', year: 'numeric' });
+const asOf = lang === 'de' ? 'Stand' : 'Updated';
+
+const alternates = Object.fromEntries(
+  LANGS.filter((l) => COLLECTIONS[collection][l]).map((l) => [l, sectionPath(l, COLLECTIONS[collection][l]!.section)!]),
+);
+---
+
+<Layout {lang} {alternates} title={c.title} description={c.description}>
+  <section class="page-hero">
+    <div class="shell py-16 sm:py-20">
+      <SectionHeader eyebrow={c.eyebrow} title={c.title} lede={c.lede} />
+    </div>
+  </section>
+
+  <section class="shell py-16 sm:py-20">
+    {
+      items.length === 0 ? (
+        <p class="text-night-500">{c.empty}</p>
+      ) : c.layout === 'cards' ? (
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((e) => (
+            <li>
+              <a href={sectionPath(lang, c.section, entrySlug(e))} class="card-link group flex h-full flex-col">
+                <span class:list={[c.chipClass, 'self-start']}>{c.chip}</span>
+                <h2 class="mt-4 font-display text-xl font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">{e.data.title}</h2>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{e.data.description}</p>
+                <span class="mt-5 flex items-center gap-2 text-sm font-bold text-ultramarine-700">
+                  {c.open}
+                  <span class="transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul class="divide-y divide-fog-100 border-y border-fog-100">
+          {items.map((e) => (
+            <li>
+              <a href={sectionPath(lang, c.section, entrySlug(e))} class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+                <span class="flex-1">
+                  <span class="font-display text-xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700 sm:text-2xl">{e.data.title}</span>
+                  <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-night-500">{e.data.description}</span>
+                </span>
+                <span class="flex shrink-0 items-center gap-3 text-sm text-night-500">
+                  <time class="text-xs uppercase tracking-wider text-night-500" datetime={e.data.date.toISOString()}>{asOf} {dtf.format(e.data.date)}</time>
+                  <span class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</Layout>

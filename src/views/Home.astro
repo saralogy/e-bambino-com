@@ -1,0 +1,379 @@
+---
+// Home.astro — landing page view for both languages.
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../lib/shipgate';
+import { hubsFor, hubBySlug } from '../i18n/hubs';
+import { path, sectionPath, entryLang, entrySlug, dateFormat, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const COPY = {
+  en: {
+    eyebrow: 'For moms-to-be and new parents',
+    h1a: 'Everything for baby and mom.',
+    h1b: 'In one place.',
+    lede: 'Expert-checked answers, honest product comparisons and checklists that take the planning off your hands, from pregnancy to the toddler years.',
+    searchLabel: 'Search questions',
+    searchPlaceholder: 'e.g. high chair, diapers, newborn sizes',
+    searchButton: 'Search',
+    quickLabel: 'Go straight to',
+    stats: ['answered questions', 'topics', 'paid placements'],
+    current: 'Featured',
+    readAnswer: 'Read the answer →',
+    checklist: 'Checklist',
+    tickOff: 'Tick it off →',
+    trust: ['Checked by people', 'Sources disclosed', 'Updated dates on every page', 'EU AI Act Art. 50'],
+    topicsTitle: 'What do you need help with?',
+    allTopics: 'All topics →',
+    question: (n: number) => `${n} ${n === 1 ? 'question' : 'questions'}`,
+    newEyebrow: 'Recently added',
+    newTitle: 'New answers',
+    allQuestions: (n: number) => `All ${n} questions →`,
+    toolsEyebrow: 'Do it yourself',
+    toolsTitle: 'Less admin, more time with your baby',
+    toolsLede: 'Checklists, names and guides you can use right away. Free, no sign-up.',
+    open: 'Open →',
+    updated: 'Recently updated',
+    kinds: { names: 'Name', checklists: 'Checklist', guides: 'Guide', finance: 'Finance' },
+    ctaEyebrow: 'Everything in one place',
+    ctaTitle: 'From the first scan to the first steps, solved in one place.',
+    ctaLede: 'Find the answer, compare the options, tick off the list. e-bambino keeps it together, so you don’t need twenty open tabs.',
+    ctaPrimary: 'Browse all questions',
+    ctaSecondary: 'Hospital bag checklist',
+  },
+  de: {
+    eyebrow: 'Für werdende und frischgebackene Eltern',
+    h1a: 'Alles für Baby und Mama.',
+    h1b: 'An einem Ort.',
+    lede: 'Geprüfte Antworten, ehrliche Produktvergleiche und Checklisten, die Ihnen die Planung abnehmen, von der Schwangerschaft bis ins Kleinkindalter.',
+    searchLabel: 'Frage suchen',
+    searchPlaceholder: 'z. B. Hochstuhl, Wickeln, Babygrößen',
+    searchButton: 'Suchen',
+    quickLabel: 'Direkt zu',
+    stats: ['beantwortete Fragen', 'Themenbereiche', 'bezahlte Platzierungen'],
+    current: 'Aktuell',
+    readAnswer: 'Antwort lesen →',
+    checklist: 'Checkliste',
+    tickOff: 'Zum Abhaken →',
+    trust: ['Von Menschen geprüft', 'Quellen offengelegt', 'Stand-Datum bei jedem Inhalt', 'EU AI Act Art. 50'],
+    topicsTitle: 'Wobei brauchen Sie Hilfe?',
+    allTopics: 'Alle Themen →',
+    question: (n: number) => `${n} ${n === 1 ? 'Frage' : 'Fragen'}`,
+    newEyebrow: 'Zuletzt ergänzt',
+    newTitle: 'Neue Antworten',
+    allQuestions: (n: number) => `Alle ${n} Fragen →`,
+    toolsEyebrow: 'Selbst erledigen',
+    toolsTitle: 'Weniger Papierkram, mehr Zeit fürs Baby',
+    toolsLede: 'Checklisten, Namen und Hilfen zum direkten Nutzen. Kostenlos und ohne Anmeldung.',
+    open: 'Öffnen →',
+    updated: 'Zuletzt aktualisiert',
+    kinds: { names: 'Name', checklists: 'Checkliste', guides: 'Ratgeber', finance: 'Finanzen' },
+    ctaEyebrow: 'Alles an einem Ort',
+    ctaTitle: 'Vom ersten Ultraschall bis zu den ersten Schritten, an einem Ort gelöst.',
+    ctaLede: 'Antwort finden, Optionen vergleichen, Liste abhaken. e-bambino hält alles zusammen, damit Sie keine zwanzig Tabs offen haben müssen.',
+    ctaPrimary: 'Alle Fragen ansehen',
+    ctaSecondary: 'Kliniktaschen-Checkliste',
+  },
+}[lang];
+
+const ofLang = <T extends { id: string }>(xs: T[]) => xs.filter((e) => entryLang(e) === lang);
+
+const [namen, checklisten, finanz, ratgeber, alleFragen] = await Promise.all([
+  getCollection('namen').then(ofLang),
+  getCollection('checklisten').then(ofLang),
+  getCollection('finanz').then(ofLang),
+  getCollection('ratgeber').then(ofLang),
+  getCollection('fragen').then(ofLang),
+]);
+
+const fragen = alleFragen.filter((e) => shipGate(e.data).ship);
+
+const hubs = hubsFor(lang)
+  .map((h) => ({ ...h, count: fragen.filter((f) => f.data.hub === h.slug).length }))
+  .filter((h) => h.count > 0)
+  .sort((a, b) => b.count - a.count);
+
+const linkFor = (section: 'names' | 'checklists' | 'guides' | 'finance', e: { slug: string }) =>
+  sectionPath(lang, section, entrySlug(e))!;
+
+const newest = [
+  ...namen.map((e) => ({ title: e.data.title, href: linkFor('names', e), kind: COPY.kinds.names, date: e.data.date })),
+  ...checklisten.map((e) => ({ title: e.data.title, href: linkFor('checklists', e), kind: COPY.kinds.checklists, date: e.data.date })),
+  ...(lang === 'de' ? finanz : []).map((e) => ({ title: e.data.title, href: linkFor('finance', e), kind: COPY.kinds.finance, date: e.data.date })),
+  ...ratgeber.map((e) => ({ title: e.data.title, href: linkFor('guides', e), kind: COPY.kinds.guides, date: e.data.date })),
+]
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+  .slice(0, 5);
+
+const fragenNeu = [...fragen].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 6);
+const dtf = dateFormat(lang);
+const latestFrage = fragenNeu[0];
+const featureCheckliste =
+  checklisten.find((c) => entrySlug(c) === (lang === 'de' ? 'kliniktasche' : 'hospital-bag')) ?? checklisten[0];
+const hubLabel = (slug: string) => hubBySlug(lang, slug)?.label ?? slug;
+const questionsPath = sectionPath(lang, 'questions')!;
+
+const quickLinks = [
+  { label: lang === 'de' ? 'Namen' : 'Baby names', href: sectionPath(lang, 'names')! },
+  { label: lang === 'de' ? 'Checklisten' : 'Checklists', href: sectionPath(lang, 'checklists')! },
+  lang === 'de' ? { label: 'Finanzielle Hilfen', href: sectionPath('de', 'finance')! } : null,
+  { label: lang === 'de' ? 'Ratgeber' : 'Guides', href: sectionPath(lang, 'guides')! },
+].filter((x): x is { label: string; href: string } => Boolean(x));
+
+const tools =
+  lang === 'de'
+    ? [
+        { kicker: 'Checklisten', title: 'Kliniktasche und Reise', blurb: 'Zum Abhaken statt zum Nachschlagen.', href: sectionPath('de', 'checklists')! },
+        { kicker: 'Finanzen', title: 'Elterngeld und Kindergeld', blurb: 'Beträge, Fristen und Unterlagen.', href: sectionPath('de', 'finance')! },
+        { kicker: 'Baby-Namen', title: 'Namen mit Bedeutung', blurb: 'Bedeutung, Herkunft und Varianten.', href: sectionPath('de', 'names')! },
+        { kicker: 'Ratgeber', title: 'Schlaf und Entwicklung', blurb: 'Mit Quellen und Stand-Datum.', href: sectionPath('de', 'guides')! },
+      ]
+    : [
+        { kicker: 'Checklists', title: 'Hospital bag and travel', blurb: 'Tick it off instead of looking it up.', href: sectionPath('en', 'checklists')! },
+        { kicker: 'Questions', title: 'Answers by topic', blurb: 'The short answer first, details after.', href: questionsPath },
+        { kicker: 'Baby names', title: 'Names with meaning', blurb: 'Meaning, origin and variants.', href: sectionPath('en', 'names')! },
+        { kicker: 'Guides', title: 'Sleep and development', blurb: 'With sources and update dates.', href: sectionPath('en', 'guides')! },
+      ];
+
+// DS color-block tiles. Full class strings so Tailwind sees them.
+const tileStyles = ['bg-night text-white', 'bg-ultramarine text-white', 'bg-limone text-night', 'bg-fog text-night'];
+
+const trustIcons = [
+  'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z M8.5 12l2.5 2.5 5-5',
+  'M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0 M15.5 8.5l-2 5-5 2 2-5z',
+  'M3 12V4h8l10 10-8 8L3 12z M7 8.2a1 1 0 1 0 2 0a1 1 0 1 0 -2 0',
+  'M5 12.5l4.5 4.5L19 7.5',
+];
+---
+
+<Layout {lang} alternates={{ en: '/', de: '/de/' }}>
+  <!-- ============ Hero ============ -->
+  <section class="relative overflow-hidden bg-ultramarine text-white">
+    <div class="pointer-events-none absolute -right-24 -top-32 h-[28rem] w-[28rem] rounded-full bg-ultramarine-700 sm:h-[38rem] sm:w-[38rem]" aria-hidden="true"></div>
+    <div class="shell relative py-16 sm:py-24 lg:py-28">
+      <div class="flex flex-wrap items-center gap-x-16 gap-y-14">
+        <div class="min-w-0 flex-[1_1_30rem]">
+          <p class="eyebrow !text-limone rise">
+            <span class="inline-block h-0.5 w-8 bg-limone" aria-hidden="true"></span>
+            {COPY.eyebrow}
+          </p>
+
+          <h1 class="display-1 mt-6 !text-white text-balance rise rise-delay-1">
+            {COPY.h1a} <span class="text-limone">{COPY.h1b}</span>
+          </h1>
+
+          <p class="lede measure mt-7 !text-ultramarine-100 text-pretty rise rise-delay-2">{COPY.lede}</p>
+
+          <form action={questionsPath} method="get" role="search" class="mt-9 flex max-w-xl items-center gap-2 rounded-pill bg-white p-1.5 pl-5 text-night shadow-lift focus-within:ring-[3px] focus-within:ring-limone rise rise-delay-3">
+            <svg class="h-5 w-5 shrink-0 text-night-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a7 7 0 1 0 14 0a7 7 0 1 0 -14 0 M16.5 16.5L21 21"></path></svg>
+            <label for="hero-q" class="sr-only">{COPY.searchLabel}</label>
+            <input id="hero-q" name="q" type="search" autocomplete="off" placeholder={COPY.searchPlaceholder} class="min-h-tap-s min-w-0 flex-1 bg-transparent text-base text-night outline-none placeholder:text-night-500" />
+            <button type="submit" class="btn-primary !min-h-tap-s !rounded-pill !px-6">{COPY.searchButton}</button>
+          </form>
+
+          <ul class="mt-6 flex flex-wrap gap-2.5 rise rise-delay-3" aria-label={COPY.quickLabel}>
+            {
+              quickLinks.map((q) => (
+                <li>
+                  <a href={q.href} class="inline-flex min-h-tap-s items-center rounded-pill border-2 border-white/60 px-5 text-sm font-bold text-white transition-colors duration-tap hover:border-limone hover:text-limone">
+                    {q.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+
+          <dl class="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/25 pt-8">
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">{fragen.length}</dt>
+              <dd class="text-sm text-ultramarine-100">{COPY.stats[0]}</dd>
+            </div>
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">{hubs.length}</dt>
+              <dd class="text-sm text-ultramarine-100">{COPY.stats[1]}</dd>
+            </div>
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">0</dt>
+              <dd class="text-sm text-ultramarine-100">{COPY.stats[2]}</dd>
+            </div>
+          </dl>
+        </div>
+
+        {
+          (latestFrage || featureCheckliste) && (
+            <div class="relative mx-auto flex w-full max-w-sm flex-[1_1_18rem] flex-col gap-5 sm:max-w-md lg:mx-0" aria-label={COPY.current}>
+              <div class="pointer-events-none absolute -right-4 -top-6 hidden h-14 w-40 rounded-pill bg-limone lg:block" aria-hidden="true" />
+              <div class="pointer-events-none absolute -bottom-6 left-2 hidden h-20 w-20 rounded-full bg-mandarin lg:block" aria-hidden="true" />
+              {latestFrage && (
+                <a href={path(lang, latestFrage.data.hub, latestFrage.data.slug)} class="relative block rounded-ds-lg bg-white p-6 text-night shadow-lift transition-transform duration-lift ease-reveal hover:-translate-y-1 lg:-rotate-2">
+                  <span class="chip-topic">{hubLabel(latestFrage.data.hub)}</span>
+                  <span class="mt-4 block font-display text-xl font-bold leading-snug tracking-tight text-pretty">{latestFrage.data.frage}</span>
+                  <span class="mt-4 block text-sm font-bold text-ultramarine-700">{COPY.readAnswer}</span>
+                </a>
+              )}
+              {featureCheckliste && (
+                <a href={linkFor('checklists', featureCheckliste)} class="relative block rounded-ds-lg bg-night p-6 text-white shadow-lift transition-transform duration-lift ease-reveal hover:-translate-y-1 lg:ml-10 lg:rotate-2">
+                  <span class="text-xs font-bold uppercase tracking-[0.08em] text-limone">{COPY.checklist}</span>
+                  <span class="mt-3 block font-display text-xl font-bold leading-snug tracking-tight text-pretty">{featureCheckliste.data.title}</span>
+                  <span class="mt-4 block text-sm font-bold text-limone">{COPY.tickOff}</span>
+                </a>
+              )}
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Trust strip ============ -->
+  <section class="border-b border-fog-100 bg-white">
+    <div class="shell py-7">
+      <ul class="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          COPY.trust.map((t, i) => (
+            <li class="flex items-center gap-3 text-base font-semibold text-night">
+              <svg class="h-7 w-7 shrink-0 text-ultramarine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={trustIcons[i]} /></svg>
+              {t}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Topics (color-block tiles) ============ -->
+  <section class="shell py-20 sm:py-24">
+    <div class="flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
+      <h2 class="display-2 text-balance">{COPY.topicsTitle}</h2>
+      <a href={questionsPath} class="inline-flex min-h-tap-s items-center text-base font-bold text-ultramarine-700 hover:text-ultramarine">{COPY.allTopics}</a>
+    </div>
+    <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        hubs.map((h, i) => (
+          <li>
+            <a
+              href={path(lang, h.slug)}
+              class:list={[
+                'group flex h-full min-h-[12rem] flex-col justify-between gap-8 rounded-ds-lg p-6 transition-transform duration-lift ease-reveal hover:-translate-y-1',
+                tileStyles[i % tileStyles.length],
+              ]}
+            >
+              <span class="font-display text-2xl font-bold leading-tight tracking-tight text-pretty">{h.label}</span>
+              <span class="flex items-center justify-between text-sm font-bold">
+                <span>{COPY.question(h.count)}</span>
+                <span class="text-xl transition-transform duration-lift ease-reveal group-hover:translate-x-1" aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- ============ New answers ============ -->
+  {
+    fragenNeu.length > 0 && (
+      <section class="bg-fog py-20 sm:py-24">
+        <div class="shell">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p class="eyebrow">{COPY.newEyebrow}</p>
+              <h2 class="display-2 mt-3">{COPY.newTitle}</h2>
+            </div>
+            <a href={questionsPath} class="inline-flex min-h-tap-s items-center text-base font-bold text-ultramarine-700 hover:text-ultramarine">
+              {COPY.allQuestions(fragen.length)}
+            </a>
+          </div>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {fragenNeu.map((e) => (
+              <a href={path(lang, e.data.hub, e.data.slug)} class="card-link group flex flex-col">
+                <span class="chip-topic self-start">{hubLabel(e.data.hub)}</span>
+                <h3 class="mt-4 font-display text-lg font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
+                  {e.data.frage}
+                </h3>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500 line-clamp-3">{e.data.antwort.slice(0, 130)}…</p>
+                <time datetime={e.data.date.toISOString()} class="mt-5 text-xs uppercase tracking-wider text-night-500">
+                  {dtf.format(e.data.date)}
+                </time>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ============ Do it yourself ============ -->
+  <section class="shell py-20 sm:py-24">
+    <div class="rounded-[1.75rem] bg-night p-8 text-white sm:p-12">
+      <div class="flex flex-wrap gap-x-14 gap-y-10">
+        <div class="flex-[1_1_20rem]">
+          <p class="eyebrow !text-limone">
+            <span class="inline-block h-0.5 w-8 bg-limone" aria-hidden="true"></span>
+            {COPY.toolsEyebrow}
+          </p>
+          <h2 class="display-2 mt-4 !text-white text-balance">{COPY.toolsTitle}</h2>
+          <p class="mt-5 text-lg leading-relaxed text-fog-300 text-pretty">{COPY.toolsLede}</p>
+        </div>
+        <ul class="grid flex-[2_1_26rem] gap-4 sm:grid-cols-2">
+          {
+            tools.map((p) => (
+              <li>
+                <a href={p.href} class="group flex h-full flex-col rounded-ds-md bg-white p-5 text-night transition-transform duration-lift ease-reveal hover:-translate-y-1">
+                  <span class="text-xs font-bold uppercase tracking-[0.08em] text-ultramarine">{p.kicker}</span>
+                  <span class="mt-2 font-display text-xl font-bold leading-snug tracking-tight">{p.title}</span>
+                  <span class="mt-1 flex-1 text-sm leading-relaxed text-night-500">{p.blurb}</span>
+                  <span class="mt-4 text-sm font-bold text-ultramarine-700">{COPY.open}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    {
+      newest.length > 0 && (
+        <div class="mt-14">
+          <h3 class="text-xs font-bold uppercase tracking-[0.08em] text-night-500">{COPY.updated}</h3>
+          <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
+            {newest.map((n) => (
+              <li>
+                <a href={n.href} class="group flex min-h-tap-m flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4 transition-colors duration-300">
+                  <span class="font-medium text-night transition-colors duration-300 group-hover:text-ultramarine-700">{n.title}</span>
+                  <span class="text-xs uppercase tracking-wider text-night-500">
+                    {n.kind} · <time datetime={n.date.toISOString()}>{dtf.format(n.date)}</time>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="bg-ultra-deep text-white">
+    <div class="shell py-20 sm:py-24">
+      <div class="max-w-2xl">
+        <p class="eyebrow !text-limone">{COPY.ctaEyebrow}</p>
+        <h2 class="font-display mt-4 text-3xl leading-tight sm:text-4xl text-balance">{COPY.ctaTitle}</h2>
+        <p class="mt-5 text-lg leading-relaxed text-fog-100 text-pretty">{COPY.ctaLede}</p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href={questionsPath} class="btn bg-limone text-night hover:bg-limone-300">{COPY.ctaPrimary}</a>
+          {featureCheckliste && (
+            <a href={linkFor('checklists', featureCheckliste)} class="btn border-2 border-white/40 text-white hover:bg-white/10">
+              {COPY.ctaSecondary}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,150 @@
+---
+// Sources.astro — the whitelist of sources the editorial team checks content against.
+import Layout from '../layouts/Layout.astro';
+import { sectionPath, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const QUELLEN = [
+  {
+    org: 'WHO',
+    url: 'https://www.who.int',
+    voll: { en: 'World Health Organization', de: 'Weltgesundheitsorganisation' },
+    fuer: { en: 'Global health guidance, child growth standards, infant feeding', de: 'Internationale Gesundheitsempfehlungen, Wachstumsstandards, Säuglingsernährung' },
+  },
+  {
+    org: 'AWMF',
+    url: 'https://register.awmf.org',
+    voll: { en: 'Association of the Scientific Medical Societies in Germany', de: 'Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften' },
+    fuer: { en: 'Medical guidelines on pregnancy, infant care and nutrition', de: 'Medizinische Leitlinien, Schwangerschaft, Säuglingspflege, Ernährung' },
+  },
+  {
+    org: 'RKI',
+    url: 'https://www.rki.de',
+    voll: { en: 'Robert Koch Institute (Germany’s public health institute)', de: 'Robert Koch-Institut' },
+    fuer: { en: 'Infectious diseases, vaccination recommendations, health reporting', de: 'Infektionskrankheiten, Impfempfehlungen, Gesundheitsberichterstattung' },
+  },
+  {
+    org: 'kindergesundheit-info.de',
+    url: 'https://www.kindergesundheit-info.de',
+    voll: { en: 'German federal health information portal for parents', de: 'Elternportal der Bundesbehörde für gesundheitliche Aufklärung' },
+    fuer: { en: 'Child development, sleep, everyday care', de: 'Entwicklung, Schlaf, Alltag mit Kind' },
+  },
+  {
+    org: 'Verbraucherzentrale',
+    url: 'https://www.verbraucherzentrale.de',
+    voll: { en: 'German consumer advice centres', de: 'Verbraucherzentrale Bundesverband und Landesverbände' },
+    fuer: { en: 'Product safety, household products, consumer rights', de: 'Produktsicherheit, Haushaltsprodukte, Verbraucherrechte' },
+  },
+  {
+    org: 'CPSC',
+    url: 'https://www.cpsc.gov',
+    voll: { en: 'U.S. Consumer Product Safety Commission', de: 'US-Behörde für Produktsicherheit' },
+    fuer: { en: 'Safety rules for cribs, toys and other children’s products', de: 'Sicherheitsregeln für Babybetten, Spielzeug und Kinderprodukte' },
+  },
+  {
+    org: 'BMFSFJ',
+    url: 'https://www.bmfsfj.de',
+    voll: { en: 'German Federal Ministry for Family Affairs', de: 'Bundesministerium für Familie, Senioren, Frauen und Jugend' },
+    fuer: { en: 'German parental allowance, child benefit, family law', de: 'Elterngeld, Kindergeld, Familienleistungen, gesetzliche Grundlagen' },
+  },
+  {
+    org: 'Destatis',
+    url: 'https://www.destatis.de',
+    voll: { en: 'Federal Statistical Office of Germany', de: 'Statistisches Bundesamt' },
+    fuer: { en: 'Births and population data', de: 'Geburten, Bevölkerungsentwicklung' },
+  },
+  {
+    org: 'Statistik Austria',
+    url: 'https://www.statistik.at',
+    voll: { en: 'Statistics Austria', de: 'Statistik Austria, Bundesanstalt für Statistik' },
+    fuer: { en: 'Population data for Austria', de: 'Bevölkerungsstatistik Österreich' },
+  },
+  {
+    org: 'BFS',
+    url: 'https://www.bfs.admin.ch',
+    voll: { en: 'Swiss Federal Statistical Office', de: 'Bundesamt für Statistik, Schweiz' },
+    fuer: { en: 'Population data for Switzerland', de: 'Bevölkerungsdaten Schweiz' },
+  },
+  {
+    org: 'Deutsche Rentenversicherung',
+    url: 'https://www.deutsche-rentenversicherung.de',
+    voll: { en: 'German Pension Insurance', de: 'Deutsche Rentenversicherung' },
+    fuer: { en: 'Social benefits in Germany', de: 'Sozialleistungen, Kinderzuschlag, Familienversicherung' },
+  },
+];
+
+const COPY = {
+  en: {
+    title: 'Sources',
+    description: 'The full list of sources e-bambino checks its content against, from the WHO to national health and statistics offices.',
+    eyebrow: (n: number) => `${n} sources`,
+    h1: 'Our sources',
+    lede: 'Every figure on this site comes from one of the sources below. Anything we cannot check against them, we leave out.',
+    usedFor: 'Used for:',
+    notTitle: 'What we do not use as a source',
+    notText: 'No affiliate networks, no unnamed blogs, no encyclopedia sections without a primary source, no figures from forums or social media. If a statement cannot be checked against a primary source, it does not go on the page.',
+    contact: 'Missing a source or found a mistake? Write to us at',
+  },
+  de: {
+    title: 'Quellen',
+    description: 'Die vollständige Liste der Quellen, gegen die e-bambino seine Inhalte prüft, von der WHO bis zu Destatis und BFS.',
+    eyebrow: (n: number) => `${n} Quellen`,
+    h1: 'Unsere Quellen',
+    lede: 'Jede Zahl auf dieser Website stammt aus einer der folgenden Quellen. Alles andere streichen wir.',
+    usedFor: 'Wofür:',
+    notTitle: 'Was wir nicht als Quelle nutzen',
+    notText: 'Kein SEO-Affiliate-Netzwerk, keine unbenannten Blogs, keine Wikipedia-Abschnitte ohne Primärquelle, keine Zahlen aus Foren oder sozialen Medien. Wenn eine Angabe sich nicht gegen eine Primärquelle prüfen lässt, kommt sie nicht auf die Seite.',
+    contact: 'Fehlt eine Quelle oder finden Sie einen Fehler? Schreiben Sie uns an',
+  },
+}[lang];
+---
+
+<Layout {lang} alternates={{ en: sectionPath('en', 'sources')!, de: sectionPath('de', 'sources')! }} title={COPY.title} description={COPY.description}>
+  <section class="page-hero">
+    <div class="shell py-16 sm:py-20">
+      <p class="eyebrow rise">
+        <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
+        {COPY.eyebrow(QUELLEN.length)}
+      </p>
+      <h1 class="display-1 mt-5 rise rise-delay-1">{COPY.h1}</h1>
+      <p class="lede measure mt-6 text-pretty rise rise-delay-2">{COPY.lede}</p>
+    </div>
+  </section>
+
+  <section class="shell py-16 sm:py-20">
+    <ul class="divide-y divide-fog-100 border-y border-fog-100">
+      {
+        QUELLEN.map((q) => (
+          <li>
+            <div class="flex flex-col gap-2 py-6 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8">
+              <div>
+                <a href={q.url} rel="noopener noreferrer external" target="_blank" class="inline-flex min-h-tap-s items-center font-display text-xl font-semibold text-night transition-colors duration-300 hover:text-ultramarine-700">
+                  {q.org}
+                </a>
+                <p class="text-sm text-night-500">{q.voll[lang]}</p>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-night-500">
+                  <span class="font-medium text-night">{COPY.usedFor}</span> {q.fuer[lang]}
+                </p>
+              </div>
+              <span class="shrink-0 text-sm text-ultramarine" aria-hidden="true">↗</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+
+    <aside class="mt-14 rounded-ds-lg bg-fog p-6 sm:p-8">
+      <h2 class="font-display text-lg font-semibold text-night">{COPY.notTitle}</h2>
+      <p class="mt-2 text-sm leading-relaxed text-night-700">{COPY.notText}</p>
+    </aside>
+
+    <p class="mt-10 text-sm text-night-500">
+      {COPY.contact}{' '}
+      <a href="mailto:kontakt@e-bambino.com" class="font-bold text-ultramarine-700 underline decoration-ultramarine-300 decoration-2 underline-offset-2">kontakt@e-bambino.com</a>.
+    </p>
+  </section>
+</Layout>

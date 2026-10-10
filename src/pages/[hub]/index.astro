@@ -1,116 +1,17 @@
 ---
-import Layout from '../../layouts/Base.astro';
+import Hub from '../../views/Hub.astro';
 import { getCollection } from 'astro:content';
-import { TAXONOMY } from '../../data/taxonomie';
 import { shipGate } from '../../lib/shipgate';
+import { hubsFor } from '../../i18n/hubs';
+import { entryLang } from '../../i18n';
 
 export async function getStaticPaths() {
-  // A hub with no publishable pages is not generated at all, so we never ship
-  // an empty category shell.
-  const alle = await getCollection('fragen');
-  return TAXONOMY.filter((hub) => alle.some((e) => e.data.hub === hub.slug && shipGate(e.data).ship)).map((hub) => ({
-    params: { hub: hub.slug },
-    props: { hub },
-  }));
+  // A hub with no publishable pages is not generated at all, so we never ship an empty shell.
+  const alle = (await getCollection('fragen')).filter((e) => entryLang(e) === 'en' && shipGate(e.data).ship);
+  return hubsFor('en')
+    .filter((hub) => alle.some((e) => e.data.hub === hub.slug))
+    .map((hub) => ({ params: { hub: hub.slug }, props: { hub } }));
 }
-
-const { hub } = Astro.props;
-const fragen = (await getCollection('fragen', (e) => e.data.hub === hub.slug))
-  .filter((e) => shipGate(e.data).ship)
-  .sort((a, b) => a.data.frage.localeCompare(b.data.frage, 'de'));
-
-const byType = fragen.reduce<Record<string, typeof fragen>>((acc, e) => {
-  (acc[e.data.frageTyp] ??= []).push(e);
-  return acc;
-}, {});
-
-const TYPE_ORDER = ['was', 'wie', 'ist-sind', 'kann', 'sonstiges'] as const;
-
-const TYPE_TITLE: Record<string, string> = {
-  was: 'Bedürfnisse & Grundlagen',
-  wie: 'Anleitung',
-  'ist-sind': 'Merkmale & Optionen',
-  kann: 'Erlaubnis & Sicherheit',
-  sonstiges: 'Warum, wann & wie viel',
-};
 ---
 
-<Layout title={hub.label} description={hub.answer.slice(0, 155)}>
-  <section class="page-hero">
-    <div class="shell py-16 sm:py-20">
-      <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Brotkrumen">
-        <a href="/" class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">Start</a>
-        <span aria-hidden="true">/</span>
-        <a href="/fragen/" class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">Fragen</a>
-      </nav>
-
-      <p class="eyebrow rise">
-        <span class="inline-block h-px w-8 bg-ultramarine" aria-hidden="true"></span>
-        {fragen.length} {fragen.length === 1 ? 'Frage' : 'Fragen'}
-      </p>
-      <h1 class="display-1 mt-5 max-w-3xl text-balance rise rise-delay-1">{hub.label}</h1>
-      <p class="lede measure mt-6 text-pretty rise rise-delay-2">{hub.answer}</p>
-    </div>
-  </section>
-
-  <section class="shell py-16 sm:py-20">
-    {
-      fragen.length === 0 ? (
-        <p class="text-night-500">Hier werden in den nächsten Tagen Fragen ergänzt.</p>
-      ) : (
-        <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
-          {/* Sidebar: question types as an index */}
-          <nav class="lg:col-span-3" aria-label="Fragentypen">
-            <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-night-500">In diesem Bereich</h2>
-            <ul class="mt-4 space-y-0.5">
-              {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
-                <li>
-                  <a
-                    href={`#typ-${t}`}
-                    class="group flex min-h-tap-s items-center justify-between gap-3 text-sm text-night-700 transition-colors duration-300 hover:text-ultramarine-700"
-                  >
-                    <span>{TYPE_TITLE[t]}</span>
-                    <span class="text-xs text-night-500 group-hover:text-ultramarine">
-                      {byType[t].length}
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {/* Question groups */}
-          <div class="lg:col-span-9">
-            {TYPE_ORDER.filter((t) => byType[t]?.length).map((t) => (
-              <section id={`typ-${t}`} class="mb-14 last:mb-0 scroll-mt-24">
-                <h2 class="font-display text-2xl font-semibold text-night sm:text-[1.75rem]">
-                  {TYPE_TITLE[t]}
-                </h2>
-                <ul class="mt-5 divide-y divide-fog-100 border-y border-fog-100">
-                  {byType[t].map((e) => (
-                    <li>
-                      <a
-                        href={`/${hub.slug}/${e.data.slug}/`}
-                        class="group flex items-start justify-between gap-5 py-4 transition-colors duration-300"
-                      >
-                        <span class="font-medium leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">
-                          {e.data.frage}
-                        </span>
-                        <span
-                          class="mt-1 shrink-0 text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1"
-                          aria-hidden="true"
-                        >
-                          →
-                        </span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
-          </div>
-        </div>
-      )
-    }
-  </section>
-</Layout>
+<Hub lang="en" hub={Astro.props.hub} />
