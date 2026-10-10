@@ -1,6 +1,6 @@
 ---
-title: "Pull-ups vs. tape diapers: what do official sources say?"
-description: "Pull-ups and tape diapers are both disposable diapers. Compare fit, changing, and price per diaper, and see which points official sources do not cover."
+title: "Pull-ups or tape diapers: which should you choose?"
+description: "Pull-ups vs. tape diapers: how they differ in putting on, changing and fit, which suits babies and which suits toddlers, and how to compare the cost per diaper."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -10,34 +10,40 @@ frage: "Are pull-ups better than tape diapers?"
 frageTyp: 'ist-sind'
 intention: 'comparative'
 slug: 'pull-ups-vs-tape-diapers'
-antwort: "Official sources we checked do not say whether pull-ups or tape diapers are better, so this page does not rank them. Both are disposable diapers that must absorb, stay leakproof, and be changed often. Compare fit, changing, and price per diaper yourself."
-quellen: []
+antwort: "Neither is better overall; they suit different stages. Tape diapers open at the sides, which makes them easiest to change while a baby lies down. Pull-ups slide on like underwear, which suits toddlers who stand during changes. Both need to absorb well, stay leakproof and be changed often, especially right after a poop."
+quellen: ["aap", "kindergesundheit-info"]
 ymyl: false
-draft: true
 reviewedBy: ''
 ---
-Pull-ups and tape diapers are both disposable diapers that need frequent changes. The sources we checked do not compare the two directly, so this page separates what is confirmed from what is still open.
+Pull-ups and tape diapers do the same job in different ways. The right choice depends mostly on how your child gets changed: lying down or standing up.
 
 ## What is the difference between pull-ups and tape diapers?
 
-Official sources we checked do not compare pull-ups and tape diapers directly. Kindergesundheit-Info describes pull-up style diapers as sealing well, so clothing usually stays dry. The table sets out what each type does and does not confirm.
+Tape diapers fasten with tabs at the sides, while pull-ups have an elastic waist and go on like underwear. Both kinds compared here are disposable, and any diaper has to absorb urine and stool, keep it from leaking and feel comfortable for your child.
 
-| Question | Pull-up | Tape diaper |
+| | Tape diaper | Pull-up |
 |---|---|---|
-| Fit | Not compared in the sources we checked | Not compared in the sources we checked |
-| Changing | Change as often as possible, and right after a bowel movement | Change as often as possible, and right after a bowel movement |
-| Leak protection | Described as sealing well | Not compared in the sources we checked |
-| Best for | Not confirmed by the sources we checked | Not confirmed by the sources we checked |
-| Cost | Divide the pack price by the number of diapers in the pack | Divide the pack price by the number of diapers in the pack |
+| Putting on | Lay the baby down and fasten the tabs | Step in and pull up, standing or lying |
+| Taking off | Open the tabs | Pull down |
+| Adjusting the fit | Tabs can be fastened tighter or looser | Fixed elastic waist |
+| Usually suits | Babies changed lying down | Toddlers who stand and move during changes |
 
-## Which one suits a crawling or very active baby?
+## Which one is easier with a wriggly toddler?
 
-The sources we checked do not say which type suits a crawling or very active baby, so this page does not recommend one. Whichever type you choose, pick the size from the weight range printed on the pack, as explained on our [diaper size page](/diapering/diaper-size-by-weight/).
+Pull-ups can go on while your toddler stands, which helps once a child resists lying still. Tape diapers need your child to lie down for the change. Whichever you use, choose the size from the weight range on the pack, as explained in our guide to [diaper size by weight](/diapering/diaper-size-by-weight/).
 
-## Are pull-ups only for potty training?
+## Are pull-ups the same as training pants?
 
-We could not confirm that pull-ups are only for potty training. The AAP says that diapers and disposable training pants send the message that a child does not need to learn to use the toilet, so these products are not a substitute for potty training. For frequent night accidents during training, the AAP suggests keeping a child in training pants or a diaper at night for as long as they are comfortable. For the signs a toddler is ready, see our [potty training readiness guide](/diapering/potty-training-readiness/).
+Disposable training pants work like pull-ups, and they do not replace potty training. The AAP points out that diapers and disposable training pants send a toddler the message that they do not need to use the toilet, and it suggests switching to big-kid underwear once training starts. Some parents use thicker cloth training pants to protect clothing during this stage.
+
+## What about nights during potty training?
+
+Night dryness usually comes later than day dryness, so a training pant or diaper at night is fine. The AAP suggests keeping a child who has frequent night accidents in training pants or a diaper at night for as long as they are comfortable in them.
+
+## How often do pull-ups and tape diapers need changing?
+
+Both need changing as often as possible, and right away after a poop, to protect the skin. Our page on [how often to change a diaper](/diapering/how-often-to-change-a-diaper/) gives the numbers by age.
 
 ## Which one costs less per diaper?
 
-This page does not quote prices. To compare, divide the price of each pack by the number of diapers in it. Prices change, so check them on the day you buy.
+Compare the price per diaper, not the pack price: divide the pack price by the number of diapers in it. Pack sizes and prices change often, so do the math on the day you buy.

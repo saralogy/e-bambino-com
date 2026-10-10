@@ -1,6 +1,6 @@
 ---
 title: "What is cradle cap, and how do you treat it?"
-description: "Cradle cap is usually harmless and often clears up by age 1. Learn gentle home care, what to avoid, and when to call the pediatrician about your baby's scalp."
+description: "Cradle cap is usually harmless and most often clears up by age 1. How to loosen the scales gently at home, what to avoid and when to call the pediatrician."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -10,36 +10,39 @@ frage: "What is cradle cap, and how do you treat it?"
 frageTyp: 'was'
 intention: 'informational'
 slug: 'what-is-cradle-cap-and-how-to-treat-it'
-antwort: "Cradle cap is scaling on a baby's scalp that is usually harmless. In most cases, cradle cap clears up by age 1 year, often without treatment. Gentle home care is the usual start: wash the baby's hair about every other day with a mild baby shampoo. See a pediatrician if the scalp becomes crusted, weepy, or has pus bumps."
+antwort: "Cradle cap is scaling on a baby's scalp. It is usually harmless, often needs no treatment, and in most cases clears up by age 1. Wash your baby's hair about every other day with a mild baby shampoo and loosen the scales with a soft brush. Call the pediatrician if it becomes crusted, weepy or shows pus bumps."
 quellen: ["aap"]
 ymyl: true
-draft: true
 reviewedBy: ''
 ---
-Cradle cap is scaling on a baby's scalp that is usually harmless. Gentle home care is the usual starting point, and a few signs mean a pediatrician should check the scalp.
+Cradle cap looks worse than it is. Gentle washing and brushing usually keep it under control until it fades on its own.
 
 ## What does cradle cap look like?
 
-Cradle cap shows up as scales on the baby's scalp. The sources we checked describe the scales but do not give a fuller visual description. Cradle cap that becomes crusted, weepy, or has pus bumps needs a pediatrician visit.
+Cradle cap shows up as flaky, white or yellowish scales on a baby's scalp. It can look alarming, but it is usually harmless. Scales that turn crusted or weepy, or bumps with pus, are a different picture and need a doctor's look.
 
-## Does cradle cap need treatment, or does it go away on its own?
+## Does cradle cap go away on its own?
 
-Cradle cap is usually harmless, and it often does not need treatment. In most cases, cradle cap has cleared up by age 1 year.
+Yes, in most cases. Cradle cap often needs no treatment at all and has usually cleared up by age 1. Home care simply helps loosen the scales in the meantime.
 
-## What home care is gentle for cradle cap?
+## How do you treat cradle cap at home?
 
-Wash the baby's hair about every other day with a mild baby shampoo. Gentle massage, a soft brush or a baby comb can loosen scales. For tougher scales, a small amount of mineral oil, coconut oil or petroleum jelly can be applied and left on overnight. Do not use olive oil, because it may increase yeast growth. Do not pick at the scales, because that raises the risk of infection. For general bathing frequency, see [how often to bathe a baby](/bath-and-care/how-often-to-bathe-a-baby/).
+Wash your baby's hair about every other day with a mild baby shampoo. While the hair is wet, gently massage the scalp, or loosen the scales with a soft brush or a baby comb. For stubborn scales, rub in a small amount of mineral oil, coconut oil or petroleum jelly, leave it on overnight and wash it out in the morning. Wash all the oil off, because oil left on the scalp can make cradle cap worse.
 
-## When should a doctor check a baby's scalp?
+## What should you avoid with cradle cap?
 
-See the pediatrician if the cradle cap becomes crusted, weepy, or has pus bumps. Check with the pediatrician before using a medicated shampoo on a baby, because it may irritate the skin. Medicated options differ across the guidance we reviewed, so this page does not give a product regimen. For choosing shampoo in general, see [do babies need baby shampoo and body wash](/bath-and-care/do-babies-need-baby-shampoo/).
+Do not pick at the scales, because that raises the risk of infection. Skip olive oil, which may increase yeast growth on the skin. Check with your pediatrician before using any medicated shampoo, because it may irritate a baby's skin.
 
-### Home care and doctor checklist
+## When should you call the pediatrician?
+
+Call if the cradle cap becomes crusted or weepy, or develops bumps with pus. Also ask before trying any medicated product. For bath routines in general, more answers are on the [questions page](/questions/).
+
+### Cradle cap care checklist
 
 - [ ] Wash the hair about every other day with a mild baby shampoo.
-- [ ] Gently massage the scalp, or loosen scales with a soft brush or baby comb.
-- [ ] For tougher scales, apply a small amount of mineral oil, coconut oil or petroleum jelly and leave it on overnight.
-- [ ] Do not use olive oil on the scalp, because it may increase yeast growth.
+- [ ] Gently massage the scalp, or use a soft brush or baby comb to loosen scales.
+- [ ] For stubborn scales, apply a little mineral oil, coconut oil or petroleum jelly overnight, then wash all of it out.
+- [ ] Do not use olive oil.
 - [ ] Do not pick at the scales.
-- [ ] Call the pediatrician if the cradle cap is crusted, weepy, or has pus bumps.
-- [ ] Check with the pediatrician before using a medicated shampoo.
+- [ ] Ask the pediatrician before using a medicated shampoo.
+- [ ] Call the pediatrician if the scalp is crusted, weepy or has pus bumps.

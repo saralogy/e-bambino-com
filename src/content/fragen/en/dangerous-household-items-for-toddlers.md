@@ -1,6 +1,6 @@
 ---
 title: "Dangerous Household Items for Toddlers: A Checklist"
-description: "Medicines, cleaning products, button batteries, small toy parts and hot drinks: a checklist of toddler household dangers, storage fixes and swallow first aid."
+description: "The household items most dangerous for toddlers: medicines, cleaners, detergent packets, button batteries, small parts and hot drinks, with a fix for each."
 author: "e-bambino editorial team"
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,37 +11,43 @@ frageTyp: "was"
 intention: "informational"
 slug: "dangerous-household-items-for-toddlers"
 translationOf: "gefaehrliche-hausgegenstaende-kleinkind"
-antwort: "Dangerous household items for toddlers include medicines, cleaning products, laundry detergent packets, button batteries, small toy parts and hot liquids. Store medicines, cleaning products and similar items in their original packaging, locked and out of sight and reach. If a child swallows something, call Poison Help at 1-800-222-1222 right away."
+antwort: "The most dangerous household items for toddlers are medicines, cleaning products, laundry detergent packets, button batteries, small parts and hot drinks. Store medicines and chemicals in their original packaging in a locked cabinet, out of sight and reach. If your child swallows something harmful, or you only suspect it, call Poison Help at 1-800-222-1222 right away."
 quellen: ["cpsc", "aap", "kindergesundheit-info"]
 ymyl: true
-draft: true
 reviewedBy: ""
 ---
+Toddlers explore with their mouths and their hands, and once they walk they pull down whatever they can reach. A walk through your home at your child's eye level, with the checklist below, catches most of the dangers in one afternoon.
 
-Toddlers explore by putting things in their mouths and pulling objects down, so everyday household items can become hazards. Use the table below as a starting checklist, then read the answers for the risks that need extra steps. For outlets and cords, see [Childproof Electrical Outlets](/safety/childproof-electrical-outlets/).
+## How should I store medicines and cleaning products?
 
-## What size toy part is a choking hazard for a toddler?
+Lock them away in their original packaging, out of sight and out of reach. That goes for medicines, cleaning and laundry products, paints and varnishes, and pesticides. Child-resistant caps slow a child down, but they are not fully childproof, so they are no substitute for a locked cabinet.
 
-A small part is any piece that fits fully into CPSC's test cylinder, which is 2.25 inches long and 1.25 inches wide and approximates the expanded throat of a child under three. CPSC's small parts rule bans toys and children's products for children under 3 that contain or break into small parts. In February 2026, CPSC warned consumers to stop using 5-IN-1 Toddler Musical Instruments because they violated the small parts and small ball bans, so check recalls for toys you already own.
+## Are laundry detergent packets really that dangerous?
 
-## How should I store medicines, batteries and cleaning products?
+Yes. Even a small amount from a packet can cause serious breathing or stomach problems or eye irritation. The AAP recommends using liquid or powder detergent instead until every child who lives in or visits your home is at least 6 years old.
 
-Keep medicines, cleaning and laundry products, paints and pesticides in their original packaging, in a locked cabinet or container, out of sight and reach. Child-resistant caps slow a child down but are not fully childproof. Use liquid or powder laundry detergent instead of packets until every child who lives in or visits the home is at least 6, and keep button batteries out of reach. Tape battery compartments that do not have a screw closure.
+## Why are button batteries so dangerous?
 
-## How do I prevent burns from hot drinks and food?
+A swallowed button battery can cause severe injury or death, and serious tissue damage can start in as little as 2 hours. Keep remote controls, key fobs, toys and other products with button batteries out of reach, and tape shut any battery compartment that does not close with a screw. If you think your child swallowed one, go to the emergency department immediately and call the National Battery Ingestion Hotline at 800-498-8666.
 
-Keep cups, mugs and bowls far from the table edge, and never hold a child while you eat or drink something hot. About three quarters of thermal injuries in children under 5 are scalds from hot liquids or from touching hot objects, most often in the second year of life. Set the hottest tap water at the faucet to 120 degrees Fahrenheit or less, because 140 degrees can cause a serious burn in about 3 seconds. Stir microwaved food well and check its temperature before feeding.
+## What size toy part is a choking hazard?
 
-## What should I do if a toddler swallows a household product?
+Anything that fits completely inside a test cylinder 2.25 inches long and 1.25 inches wide, which is about the size of a young child's expanded throat. Toys for children under 3 are not allowed to contain or break into such small parts, but older siblings' toys can. Check recalls for toys you already own, and see these [toys for the first year](/play/toys-for-motor-skills-first-year/) for age-appropriate ideas.
 
-Call Poison Help at 1-800-222-1222 right away, even if you only suspect that a child swallowed something. The AAP advises against making a child vomit and against using syrup of ipecac, and says to call 911 first if the child is unconscious, not breathing or having seizures. A swallowed button battery needs emergency treatment at once, because serious tissue damage can occur in as little as 2 hours; CPSC lists the National Battery Ingestion Hotline at 800-498-8666.
+## How do I prevent burns from hot drinks and water?
 
-| Room | Item | Why it matters | Fix |
-|---|---|---|---|
-| Kitchen | Laundry detergent packets | Can cause serious breathing or stomach problems and eye irritation | Use liquid or powder detergent until every child in the home is at least 6 |
-| Kitchen | Cleaning products | Poisoning risk | Keep in original packaging, in a locked cabinet, out of sight |
-| Kitchen | Hot cups, mugs and bowls | Scald risk; 27% to 60% of scald burns in children under 5 come from hot liquids in cups, mugs and tableware | Keep them far from the table edge |
-| Living room | Small toy parts | Choking hazard | Remove toys with parts that fit the small parts test cylinder |
-| Living room | Products with button batteries | Severe injury or death if swallowed | Keep out of reach; tape battery compartments without a screw closure |
-| Bathroom | Medicines | Poisoning risk | Store in original packaging, in a locked cabinet, out of sight |
-| Bathroom | Hot tap water | Scald risk | Set the hottest tap water to 120 degrees Fahrenheit or less |
+Hot liquids such as coffee are the most common cause of burns in young children. Keep cups, mugs and bowls well away from table edges, skip tablecloths a toddler can pull and never hold your child while you eat or drink something hot. Set your water heater so the hottest tap water is no more than 120 degrees Fahrenheit; according to CPSC, water at 140 degrees can burn in about 6 seconds.
+
+## What should I do if my toddler swallows something dangerous?
+
+Call Poison Help at 1-800-222-1222 right away, even if you are not sure; the call is free, confidential and answered by experts at your local poison center. Do not make your child vomit. If your child is unconscious, not breathing or having seizures, call 911 first.
+
+| Item | Why it is dangerous | What to do |
+|---|---|---|
+| Medicines | Poisoning | Original packaging, locked cabinet, out of sight |
+| Cleaning and laundry products, paints, pesticides | Poisoning | Original packaging, locked cabinet, out of sight |
+| Laundry detergent packets | Breathing and stomach problems, eye irritation | Use liquid or powder until every child in the home is 6 or older |
+| Button batteries | Serious tissue damage within 2 hours if swallowed | Keep devices out of reach; tape compartments without a screw |
+| Small parts and older siblings' toys | Choking | Remove anything that fits the 1.25-inch test cylinder |
+| Hot drinks, soup and food | Scalds | Keep away from table edges; no hot drinks while holding your child |
+| Hot tap water | Scalds | Set the water heater so tap water stays at or below 120 F |

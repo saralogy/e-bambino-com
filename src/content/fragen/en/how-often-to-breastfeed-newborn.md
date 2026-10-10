@@ -1,6 +1,6 @@
 ---
 title: "How often should a newborn breastfeed in 24 hours?"
-description: "Most newborns breastfeed 8 to 12 times in 24 hours. Learn typical gaps between feeds, how long feeds last, signs of enough milk, and when feeding changes."
+description: "Most newborns breastfeed 8 to 12 times in 24 hours. Learn the early hunger cues, how long feeds last, signs of enough milk and how the rhythm changes."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,28 +11,31 @@ frageTyp: 'wie'
 intention: 'informational'
 slug: 'how-often-to-breastfeed-newborn'
 translationOf: 'stillen-haeufigkeit'
-antwort: "Most newborns need to breastfeed 8 to 12 times in 24 hours, and WHO recommends feeding on demand whenever your baby is hungry. Expect 1 to 3 hours between feeds in the first weeks. Good signs include at least six wet diapers a day after your milk comes in and steady weight gain."
-quellen: ["who", "nichd", "aap", "kindergesundheit-info", "cdc"]
+antwort: "Most newborns breastfeed 8 to 12 times in 24 hours, often every 1 to 3 hours. Feed on demand, whenever your baby shows hunger cues, and do not let more than about 2 to 3 hours pass during the day or 4 hours at night. Steady weight gain shows your baby is getting enough."
+quellen: ["who", "nichd", "aap", "cdc", "kindergesundheit-info"]
 ymyl: true
-draft: true
 reviewedBy: ''
 ---
-Newborns feed often, and frequent feeding is normal. This page explains typical feeding frequency, how to tell your baby is getting enough milk, and how the pattern changes over the first months.
+Newborns feed often, day and night, and that is normal. Feeding on demand, guided by your baby's hunger cues rather than the clock, is what WHO and pediatricians recommend.
 
-## How do I know my baby is getting enough milk?
-Weight gain is the most reliable check, and a breastfed baby should be back to birth weight by about day 10 to 14. Also look for frequent feeds, at least 6 wet diapers a day once your milk comes in, and pale, thin urine. Your pediatrician can weigh your baby if you are unsure.
+## How do I know when my baby is hungry?
+Watch for early hunger cues such as rooting (turning the head and opening the mouth toward the breast) and lip-smacking. Crying is a late sign of hunger. Offer the breast as soon as you see the early signs rather than waiting for a set time.
+
+## How long should I let my newborn go between feeds?
+In the first weeks, gaps of 1 to 3 hours between feeds are typical. Do not let more than about 2 to 3 hours pass during the day or about 4 hours at night without a feed, even if that means gently waking your baby. Most newborns also want to nurse several times a night, which is normal; the [baby sleep guide](/guides/baby-sleep/) covers what nights look like in the early months.
 
 ## How long does a newborn feeding last?
-A newborn feed usually lasts 10 to 45 minutes in the first weeks. Gaps between feeds can be 1 to 3 hours. WHO advises feeding on demand, which means responding to hunger rather than the clock. If feeding hurts, see [Is breastfeeding pain normal? When to get help](/breastfeeding/is-breastfeeding-pain-normal/).
+A feed usually lasts anywhere from 10 to 45 minutes in the first weeks. Length varies from baby to baby and from feed to feed, so let your baby set the pace.
 
 ## Is it normal for my baby to feed every hour?
-Yes, in the first weeks. Gaps of 1 to 3 hours are typical then, so feeding about an hour apart is at the frequent end of that range. Many newborns also want to nurse several times at night. If your baby still seems hungry after most feedings, call your pediatrician to be seen and weighed. If you pump between feeds, see [How long does breast milk last in the fridge and freezer?](/breastfeeding/how-long-is-breast-milk-good-for/).
+Yes, at times. Gaps of 1 to 3 hours are typical in the first weeks, so a feed about an hour after the last one is within the normal range. Around six weeks, many babies go through a growth spurt and want to feed more often for a few days.
 
-## When does feeding frequency change?
-Feeding frequency changes over the first months. Around six weeks, many infants go through a growth spurt, which brings more hunger. Later, most exclusively breastfed babies feed every 2 to 4 hours.
+## How do I know my baby is getting enough milk?
+Weight gain is the most reliable sign: a breastfed baby should be back to birth weight by about day 10 to 14. Once your milk comes in, also look for at least 6 wet diapers a day with pale, thin urine (see [how many diapers a baby uses per day](/diapering/how-many-diapers-per-day/)). If your baby still seems hungry after most feedings, call your pediatrician to have your baby seen and weighed.
 
-| Stage | Typical feeding pattern | Signs your baby is getting enough |
+| Stage | Typical feeding pattern | What to watch |
 |---|---|---|
-| First weeks | 8 to 12 feeds in 24 hours, with gaps of 1 to 3 hours | At least 6 wet diapers a day after your milk comes in; steady weight gain |
-| Around six weeks | Growth spurt, with more hunger and more frequent feeds | Same signs as above |
-| Later, exclusively breastfed | Every 2 to 4 hours | Same signs as above |
+| First weeks | 8 to 12 feeds in 24 hours, every 1 to 3 hours; several feeds at night | No more than about 2 to 3 hours by day or 4 hours at night without a feed |
+| Days 10 to 14 | Same frequent rhythm | Back to birth weight |
+| Around six weeks | Growth spurt: more hunger and extra feeds for a few days | Follow your baby's cues |
+| Later, exclusively breastfed | Usually every 2 to 4 hours | Steady weight gain, at least 6 wet diapers a day |

@@ -1,43 +1,45 @@
 ---
-title: "Best fabric for baby clothes: cotton, bamboo or merino?"
-description: "The sources we checked do not rank cotton, bamboo or merino baby clothes. Learn the sourced sleepwear safety checks and what to look for on labels."
+title: "Cotton, bamboo or merino: which fabric for baby clothes?"
+description: "Cotton, bamboo or merino for baby clothes: what each fabric is, how to care for it, and why fit matters more than the fiber for safe sleepwear."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
 hub: 'clothing'
 category: 'clothing'
-frage: "What is the best fabric for baby clothes: cotton, bamboo or merino?"
+frage: "Which fabric is right for baby clothes: cotton, bamboo or merino?"
 frageTyp: 'was'
 intention: 'comparative'
 slug: 'cotton-bamboo-or-merino-baby-clothes'
-antwort: "The sources we checked do not rank cotton, bamboo or merino for baby clothes. For sleepwear, the CPSC warns that loose-fitting cotton garments can catch fire easily, so choose snug-fitting or flame-resistant sleepwear. Wash new baby clothes before use, and check the label for flame-resistant sleepwear and care instructions."
-quellen: ["cpsc", "aap"]
-ymyl: false
-draft: true
+antwort: "All three work for baby clothes, and cotton is the easiest everyday choice because it is soft and simple to wash. Bamboo fabric is usually rayon, and merino is a fine wool for cooler days. For sleepwear, fit matters more than fiber: choose snug-fitting or flame-resistant pajamas, never loose cotton T-shirts."
+quellen: ["cpsc", "aap", "nichd"]
+ymyl: true
 reviewedBy: ''
 ---
-Cotton, bamboo and merino are all used in baby clothes, but the sources we checked do not rank them against each other. This guide covers the sourced safety and care facts for sleepwear, and what to check on the label.
+Cotton, bamboo and merino all end up in good baby wardrobes. The choice comes down to care, warmth and how you use each piece, with one firm rule for anything your baby sleeps in.
 
-## Is cotton safe for baby sleepwear?
+## Is cotton a good choice for baby clothes?
 
-Loose-fitting cotton can catch fire easily when worn as sleepwear, so the CPSC recommends snug-fitting or flame-resistant sleepwear for sleep. Oversized cotton T-shirts are one example of loose-fitting cotton garments. Wash new baby clothes before use, since newborns tend to have sensitive skin (AAP). For washing details, see [how to wash baby clothes](/clothing/how-to-wash-baby-clothes/).
+Yes, cotton is the everyday workhorse. It is soft, handles frequent washing well and is easy to find in every size. The one exception is sleepwear: loose-fitting cotton, such as an oversized T-shirt, can catch fire easily, so the CPSC recommends snug-fitting or flame-resistant sleepwear for children.
 
-## How does bamboo viscose compare with cotton?
+## What is bamboo fabric, really?
 
-No source we checked compares bamboo viscose with cotton for baby clothes, so this page does not rank them. Children's sleepwear flammability rules cover sizes 0 to 6X and 7 to 14, so check the label rather than relying on the fabric name. For sleepwear options, see [sleeper or bodysuit](/clothing/sleeper-or-bodysuit/).
+Most soft "bamboo" baby clothes are rayon (viscose) made from bamboo pulp, not raw bamboo fiber, so the fiber content on the label usually reads rayon or viscose. Treat it like any rayon and follow the care label, which often calls for a gentler wash than cotton.
 
-## Is merino wool suitable for baby clothes?
+## Is merino wool suitable for babies?
 
-No official source we checked says whether merino wool is suitable for babies, so this page makes no claim about it. Whatever the fabric, the AAP advises checking labels for flame-resistant sleepwear and washing instructions, and avoiding soap flakes, which can strip flame-retardant properties.
+Merino is a fine wool, useful as a warm layer on cold days and outdoors. It needs gentle care, usually a wool program at a low temperature, so check the care label before it goes in with the rest of the laundry. See [how to wash baby clothes](/clothing/how-to-wash-baby-clothes/) for temperatures by fabric.
 
-## Do GOTS or OEKO-TEX certifications matter?
+## What matters most for baby sleepwear?
 
-No official source we checked explains GOTS or OEKO-TEX, so this page does not say whether they matter. The sleepwear label checks below are the ones we can source.
+Fit and the label matter more than the fiber. In the US, sleepwear above 9 months must be either flame-resistant or snug-fitting; snug-fitting pieces carry a "Wear snug-fitting, not flame resistant" label and should be bought true to size. Sizes 9 months and under are exempt from these sleepwear rules, because the CPSC considers babies that small not mobile enough to reach an open flame; they still have to meet the general clothing flammability standard. Whatever the fabric, dress your baby in no more than one layer more than you would wear in the same room, since overheating is linked to SIDS.
 
-Use this checklist on any sleepwear label:
+## How do you care for each fabric?
 
-- [ ] Sleepwear is snug-fitting, or labeled flame-resistant (CPSC)
-- [ ] For tight-fitting sleepwear, sizes are in months or numbers, not letters such as S or M (CPSC)
-- [ ] Snug-fitting garments that are not flame-resistant carry the label WEAR SNUG-FITTING, NOT FLAME RESISTANT (CPSC)
-- [ ] Washing instructions are followed, and soap flakes are avoided on flame-resistant sleepwear (AAP)
-- [ ] New clothes are washed before first use (AAP)
+Wash all new clothes once before the first wear, because newborns tend to have sensitive skin. Then follow each care label, and wash flame-resistant sleepwear with regular laundry detergent, not soap flakes, since soap can strip its flame-retardant properties.
+
+| | Cotton | Bamboo (rayon) | Merino wool |
+|---|---|---|---|
+| What it is | Natural plant fiber | Manufactured fiber made from bamboo | Fine sheep's wool |
+| Best use | Everyday bodysuits, sleepers, bedding | Soft everyday basics | Warm layers on cold days |
+| Washing | Follow the care label; cotton usually takes a normal wash | Follow the care label; often a gentler program | Wool or gentle program, as the care label says |
+| As sleepwear | Snug-fitting or flame-resistant only, never loose | Check the snug-fit or flame-resistant label | Check the snug-fit or flame-resistant label |

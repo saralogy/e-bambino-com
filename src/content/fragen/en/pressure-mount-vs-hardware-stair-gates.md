@@ -1,6 +1,6 @@
 ---
-title: "Pressure-Mounted vs. Hardware Stair Gates: Which Is Safer?"
-description: "Which stair gate is safer at the top of the stairs? Compare pressure-mounted and hardware-mounted gates, wall cups, first-step distance and buying checks."
+title: "Pressure vs. Hardware Stair Gates: Which Is Safer?"
+description: "Hardware-mounted gates belong at the top of the stairs; pressure gates suit doorways. How the two compare, what to check before buying and after installing."
 author: "e-bambino editorial team"
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -10,41 +10,38 @@ frage: "Which stair gate is safer: pressure-mounted or hardware-mounted?"
 frageTyp: "ist-sind"
 intention: "comparative"
 slug: "pressure-mount-vs-hardware-stair-gates"
-antwort: "Hardware-mounted stair gates, which screw into the wall, are the type CPSC guidance says to use at the top of stairs. Pressure-mounted gates suit parents who want to move the gate or avoid marking walls, but CPSC does not recommend them at the top of stairs. Check the packaging for the minimum distance to the first step."
+antwort: "Hardware-mounted gates are safer at the top of the stairs, and CPSC advises using only gates that screw into the wall there, because a gate that gives way means a fall. Pressure-mounted gates are held in place by pressure against the walls, so they suit doorways and other spots where you want to move the gate or avoid drilling holes."
 quellen: ["cpsc", "aap"]
 ymyl: true
-draft: true
 reviewedBy: ""
 ---
+Stairs are a leading cause of injury for small children, and the AAP recommends gates at both the top and the bottom of the stairs once your baby starts to crawl and walk. Which gate goes where comes down to one question: what happens if your child pushes hard against it?
 
-The mounting type matters most at the top of the stairs, where a gate that fails can cause a fall. Read the answers below before you buy, and check the packaging for the minimum distance to the first step. For other home hazards, see [Dangerous Household Items for Toddlers](/safety/dangerous-household-items-for-toddlers/).
+## Why shouldn't a pressure gate go at the top of the stairs?
 
-## Can a pressure-mounted gate go at the top of the stairs?
+Because pressure against the walls is all that holds it, and CPSC notes there is no objective way for parents to confirm that a pressure gate is installed correctly. If it gives way at the top of the stairs, that means a fall. A hardware-mounted gate screws into the wall and generally cannot be removed without tools, which is why it is the type to use there.
 
-CPSC guidance says only gates that screw into the wall should be used at the top of stairs, so a pressure-mounted gate is not the recommended choice there. Pressure-mounted gates that rely on wall cups must carry a separate warning about installing those cups along the top rail. CPSC also notes that buyers may not realize wall cups are needed in other locations too.
+## Where does a pressure-mounted gate make sense?
 
-## How do I know if a gate is rated for the top of the stairs?
+In doorways, between rooms and in other places where a gate that shifts would not lead to a fall. It is the practical choice if you want to move the gate around or do not want to mark your walls. If the gate comes with wall cups, install them wherever the instructions say, which can include locations other than stairs.
 
-Gates for use at the top of stairs must state the minimum distance to the first step on the packaging. Check that number before you buy, and compare it with the stairs in your home.
+## What should I look for when buying a stair gate?
 
-## Which gate fits a wide or irregular doorway?
+A gate at least 22 inches tall, the minimum in the federal safety standard, so a child cannot lean over and tumble across the top. If you need a gate for the top of the stairs, the packaging must state the minimum distance to the first step, so check it against your stairs. Avoid accordion-style gates and older gates with V-shaped openings, which can trap a child's head, neck or arm, and do not use a pet gate as a child gate.
 
-Our sources do not say which gate fits a wide or irregular opening, so check the width range the manufacturer prints before you buy. Replace older gates with V-shaped openings, which can trap a child's head, and do not use pet gates as child safety gates.
+## How should a stair gate be installed?
 
-## How do I measure a doorway before I buy a gate?
+Firmly mounted into the wall studs, following the manufacturer's instructions exactly. Check that the opening falls within the width range printed on the packaging before you start. Once it is up, push and pull hard on the gate and test the latch a few times.
 
-Our sources do not describe an official measuring method, so measure the width of the opening and compare it with the range printed by the manufacturer.
+## What should I check after the gate is up?
 
-## How tall should a stair gate be?
+Look over the hinges and mounting hardware regularly, because gate recalls have involved hardware that cracked and hinges that broke, leading to falls down stairs. Check CPSC recalls for the gate you own. A gate is one layer of protection, so also keep stairs clear and well lit, install railings and supervise your child on the stairs; as your baby starts to [crawl and pull up](/play/toys-for-motor-skills-first-year/), new spots will need a gate.
 
-The federal gate standard sets a minimum height of 22 inches from the floor, which is meant to stop children from leaning over and tumbling over the top.
-
-## What should I check after installing a gate?
-
-Our sources do not give a specific post-installation test. Recalls have involved mounting hardware that broke or cracked and hinges that could break, so inspect the hardware and hinges after installation. The AAP advises railings at the top and bottom of stairs, keeping stairs clear and well lit, and supervising children on them, since stairs are a leading cause of injury for small children.
-
-| Gate type | Top of stairs | Wall impact | Wide openings | What to check before buying |
-|---|---|---|---|---|
-| Pressure-mounted | Not the type CPSC guidance recommends | Intended for parents who do not want to mark walls | Not confirmed by our sources | First-step distance on the packaging; wall cup warning if the gate uses cups |
-| Hardware-mounted | Yes, the type CPSC guidance says to use | Screws into the wall and generally cannot be removed without tools | Not confirmed by our sources | First-step distance on the packaging; hinges and mounting hardware |
-| Retractable | Not confirmed by our sources | Not confirmed by our sources | Not confirmed by our sources | No safety facts found; ask the manufacturer |
+| | Pressure-mounted gate | Hardware-mounted gate |
+|---|---|---|
+| How it stays in place | Pressure against both sides of the opening | Screws into the wall |
+| Top of the stairs | Not recommended | The type CPSC says to use |
+| Bottom of the stairs, doorways | Yes | Yes |
+| Moving it | Easy to move | Generally cannot be removed without tools |
+| Walls | No drilling; follow the instructions on wall cups | Leaves screw holes |
+| Before you buy | At least 22 inches tall; fits your opening | At least 22 inches tall; first-step distance on the packaging |

@@ -1,6 +1,6 @@
 ---
-title: "Which formula stage does my baby need at each age?"
-description: "Starter vs follow-on formula by age, from Verbraucherzentrale and German allergy guidance: the iron difference, when to switch, and when to ask a clinician."
+title: "Which formula stage does my baby need by age?"
+description: "Starter formula covers the whole first year, follow-on formula is optional and toddler formula is not needed. What each stage means and when to ask a doctor."
 author: "e-bambino editorial team"
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,28 +11,36 @@ frageTyp: "ist-sind"
 intention: "comparative"
 slug: "formula-stage-by-age"
 translationOf: "saeuglingsnahrung-nach-alter"
-antwort: "Starter formula, labeled pre or 1 in Germany, suits the whole first year, including after solid foods start. Follow-on formula, labeled 2 or higher, is largely similar but has more iron, and the Verbraucherzentrale says it can be introduced from the seventh month at the earliest. Specialty formulas are used under medical direction."
-quellen: ["awmf", "verbraucherzentrale", "kindergesundheit-info"]
+antwort: "A standard starter infant formula is all your baby needs for the whole first year, even after solid foods begin. Follow-on formula, labeled 2 or higher in Europe, mainly adds iron and is optional, not a required next step. After the first birthday, whole cow's milk takes over and toddler formula is not needed."
+quellen: ["who", "aap", "cdc", "fda", "verbraucherzentrale"]
 ymyl: true
-draft: true
 reviewedBy: ""
 ---
-Infant formula comes in stages, and the right one depends on your baby's age and whether solid foods have started. This page explains the German guidance on each stage and when a switch is worth discussing.
+Breast milk is the recommended first food, and the WHO advises exclusive breastfeeding for about the first six months. When you use formula, either alone or alongside breastfeeding, the numbers on the pack can make it look as if your baby must move up a stage every few months. In practice, one standard formula covers the whole first year.
 
 ## What is the difference between starter and follow-on formula?
-The main difference is iron: follow-on formula, labeled 2 or higher, is largely similar to starter formula but has a higher iron content. Starter formula, labeled pre or 1 in Germany, suits the whole first year, including after solid foods start. Pre-formulas use only lactose as their carbohydrate, like breast milk, while some 1-formulas also contain starch.
 
-## Should I switch from starter to follow-on formula?
-Switching from starter formula to follow-on formula is not necessary from an expert perspective, according to the Verbraucherzentrale. If you do introduce follow-on formula, the Verbraucherzentrale says it can start at the earliest from the seventh month, together with complementary foods. German guidance starts complementary foods no earlier than after the completed fourth month and no later than the start of the seventh month. See [when to start solid food](/feeding/when-to-start-solid-food/) for the readiness signs.
+The main difference is iron. Follow-on formula, labeled 2 or higher in Europe, is largely the same as starter formula but contains more iron. Starter formula, labeled pre or 1 in Europe and simply called infant formula in the US, is made to be a baby's only food and suits the whole first year. Pre formulas use only lactose as their carbohydrate, like breast milk, while some stage 1 formulas also contain starch.
 
-## Do I need a specialty formula?
-You need a specialty formula only when a clinician recommends one for a specific medical need, since specialty formulas are used under medical direction. To help prevent allergies, the German S3 guideline recommends exclusive breastfeeding for the first four to six months where possible. If formula is needed before complementary feeding starts, the guideline suggests considering an infant formula with a study-proven allergy-prevention effect.
+## Does my baby need to switch to follow-on formula?
 
-## Who should I ask before changing formula?
-Ask your pediatrician before changing formula type or stage, especially if allergy is a concern or you are unsure whether a switch is needed. A pediatrician can check your baby's growth and tell you whether a specialty formula is appropriate. For how much to feed at each age, see [how much should a baby drink in the first year](/feeding/how-much-should-baby-drink-first-year/). This page can help you prepare questions, but it cannot replace that advice.
+No. German consumer guidance says switching from starter to follow-on formula is not necessary, and the AAP says a standard iron-fortified infant formula, together with iron-rich solid foods, meets a baby's iron needs in the first year. If you choose a follow-on formula anyway, use it only from the seventh month, once your baby also eats solid food. Babies usually start solids around 6 months; see [when a baby can sit in a high chair](/feeding/high-chair-age/) for the readiness signs.
 
-| Stage | Carbohydrate or type | Usual age | Purpose |
+## What should my baby drink after the first birthday?
+
+After 12 months, whole cow's milk can replace formula as the main milk drink. The AAP recommends no more than about 16 to 24 oz (2 to 3 cups) a day until age 2, because more can crowd out iron-rich foods. Before 12 months, cow's milk is not a suitable main drink. The AAP says toddler formulas, also sold as growing-up milks, are not needed for most children, and the FDA notes they do not go through the review that infant formula does.
+
+## Is all infant formula held to the same standard?
+
+In the US, every infant formula must meet FDA rules: minimum levels for 30 nutrients, maximum levels for 10 of them, approved ingredients and testing for Salmonella and Cronobacter. Specialty formulas for medical conditions may differ from these nutrient standards, which is why they are used only under medical direction. The FDA advises parents not to make homemade infant formula, and the FDA and CDC warn never to add extra water to formula, because both can leave a baby short of nutrients.
+
+| Stage | What it is | Age | Do you need it? |
 |---|---|---|---|
-| Starter formula (pre or 1) | Pre-formulas: lactose only. Some 1-formulas also contain starch | Suits the whole first year | Main formula for the first year |
-| Follow-on formula (2 or higher) | Largely similar to starter, with higher iron | From the seventh month at the earliest, with complementary foods | Optional; switching is not necessary from an expert view |
-| Specialty formula | Varies by product | Only when a clinician recommends one | Used for specific medical needs, under medical direction |
+| Starter formula (infant formula; pre or 1 in Europe) | Complete food for babies; pre uses only lactose | Birth to 12 months | Yes, if you use formula: it covers the whole first year |
+| Follow-on formula (2 or higher in Europe) | Similar to starter formula, with more iron | From the seventh month, alongside solids | No, switching is optional |
+| Specialty formula | Made for specific medical needs | Any age, on medical advice | Only when your pediatrician recommends it |
+| Toddler formula or growing-up milk | Not regulated as infant formula | Marketed from 12 months | No, whole cow's milk is suitable for most children |
+
+## When should I talk to my pediatrician about formula?
+
+Ask your pediatrician before you change formula type, and whenever your baby seems unwell with feeds, does not gain weight as expected, or always wants much more or much less than usual. Talk to them early if allergies run in your family or your baby has eczema, because the right formula then depends on your baby's risk. Your pediatrician can also tell you if a specialty formula is needed.

@@ -1,6 +1,6 @@
 ---
-title: "Crib bedding for a baby's first year: what to use"
-description: "In the first year, a crib needs only a fitted sheet. Learn why blankets, pillows, duvets and bumpers stay out, and how a crib sheet should fit."
+title: "What bedding does a baby need in the first year?"
+description: "In the first year, a crib needs just a fitted sheet on a firm mattress. What to use, what stays out of the crib, and how a safe crib sheet should fit."
 author: "e-bambino editorial team"
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,32 +11,39 @@ frageTyp: "ist-sind"
 intention: "informational"
 slug: "bedding-for-baby-first-year"
 translationOf: "bettwaesche-baby-erstes-jahr"
-antwort: "A crib needs only a fitted sheet in the first year. Blankets, pillows, duvets, comforters and bumpers stay out of the sleep space, and padded crib bumpers are banned under federal law. Crib sheets should fit snugly and be designed for crib mattresses."
-quellen: ["cpsc", "aap", "awmf", "nichd"]
+antwort: "In the first year, a baby needs only a fitted crib sheet on a firm, flat mattress. Blankets, pillows, comforters, bumpers and soft toys stay out of the crib because they raise the risk of suffocation. To keep your baby warm, use a wearable blanket or sleep sack instead of loose bedding."
+quellen: ["cpsc", "aap", "nichd", "awmf", "kindergesundheit-info"]
 ymyl: true
-draft: true
 reviewedBy: ""
 ---
-Crib bedding follows a few firm rules for safe sleep. Here is what to use, what to leave out and why. For the full first-weeks list, see [newborn essentials for the first weeks at home](/nursery/newborn-essentials-first-weeks/).
+Safe crib bedding is refreshingly simple: a firm mattress, a fitted sheet, and nothing else. Your baby's warmth comes from what they wear, not from what is in the crib.
 
-## Is a fitted sheet enough for the crib?
-Yes, a fitted sheet is enough. The U.S. Consumer Product Safety Commission (CPSC) says to keep the sleep space bare with only a fitted sheet, and the American Academy of Pediatrics (AAP) recommends a firm, flat mattress with a fitted sheet. Nothing should go between the mattress and the fitted sheet, including mattress toppers, non-fitted sheets and blankets. This applies to any crib, bassinet or play yard; see [bassinet, bedside crib or crib](/nursery/bassinet-bedside-crib-or-crib/) for how those options compare.
+## Is a fitted sheet really all a crib needs?
 
-| Item | Needed (yes/no) | Notes |
+Yes. Both the U.S. Consumer Product Safety Commission (CPSC) and the American Academy of Pediatrics (AAP) say a baby's sleep space should hold a firm, flat mattress with a fitted sheet and nothing else. Blankets, pillows, toppers and extra padding never go between the mattress and the sheet.
+
+| Item | Use it? | Why |
 |---|---|---|
-| Fitted sheet | Yes | Made for a crib mattress and snug enough that a corner cannot pull loose |
-| Waterproof mattress protector | No | We could not confirm one is safe; the AAP advises nothing between the mattress and the fitted sheet |
-| Loose blanket | No | Use a sleep sack instead |
-| Pillow | No | The AWMF guideline advises no pillows in the first year |
-| Bumper | No | Padded crib bumpers are banned under federal law |
-| Duvet | No | Use a sleep bag of suitable size instead |
-| Sleep sack | Yes | A wearable layer that replaces blankets; the AAP advises a wearable blanket over loose blankets |
+| Fitted crib sheet | Yes | Made for crib mattresses and snug enough that a corner cannot pull loose |
+| Sleep sack or wearable blanket | Yes | Keeps your baby warm without loose bedding |
+| Waterproof mattress pad | Optional | Only a thin one made for crib mattresses that fits tightly; never a soft topper |
+| Loose blanket, quilt or comforter | No | Can cover your baby's face |
+| Pillow | No | Suffocation risk; not needed in the first year |
+| Crib bumper | No | Padded bumpers are banned under federal law |
+| Sheepskin or soft toys | No | Soft items do not belong in the sleep space |
 
-## Why are blankets, pillows, duvets and bumpers not recommended in the crib?
-Soft items raise the risk of suffocation and entrapment. The CPSC says blankets, pillows, comforters, bumpers and extra padding must not be used in the sleep area, and federal law bans padded crib bumpers. The National Institute of Child Health and Human Development (NICHD) also says evidence does not support crib bumpers to prevent injuries, and that bumpers can cause serious injury and death. For duvets, the German AWMF guideline recommends a sleep bag of suitable size instead. It also advises omitting pillows, fur pads, bed nests and padded bed rails in the first year, because they carry overheating and suffocation risks.
+## Why do blankets, pillows and bumpers stay out of the crib?
 
-## What fit should a crib sheet have?
-A crib sheet should fit snugly and overlap the mattress, so a corner cannot pull loose. The mattress itself should also fit the crib tightly, because a loose fit can leave gaps where a baby can become trapped. Use only sheets designed for crib mattresses, because adult sheets can come loose and create an entanglement hazard. Official guidance we reviewed does not specify a fabric, so this guide does not recommend a particular material.
+Soft bedding can cover a baby's face or trap them, which raises the risk of suffocation and sudden infant death. The National Institute of Child Health and Human Development (NICHD) notes that bumpers do not prevent injuries and have caused serious injuries and deaths, and federal law now bans padded crib bumpers. German safe-sleep guidelines agree, advising no pillows, fur pads or padded bed rails in the first year.
 
-## How often should crib sheets be changed?
-No official guidance we found sets a schedule for changing crib sheets, so this guide gives none. Check the fit each time you make up the crib, and replace a sheet that no longer fits snugly over the mattress.
+## How should a crib sheet fit?
+
+A crib sheet should fit snugly and wrap well around the mattress, so your baby cannot pull a corner loose. Use only sheets made for crib mattresses, because an adult sheet can come loose and tangle around a baby. The mattress itself should fit the crib tightly, with no gaps at the sides where a baby could get trapped.
+
+## How do I keep my baby warm without a blanket?
+
+Dress your baby in a sleep sack or wearable blanket over their regular sleep clothes. The AAP recommends this over loose blankets because it keeps the head and face uncovered. A sleep sack should fit well, with a neck opening that your baby's head cannot slip through. For how to choose one, see [sleep sack or blanket](/clothing/sleep-sack-or-blanket/).
+
+## How many crib sheets do I need?
+
+Plan on having at least one spare, because leaks and spit-up often mean a change in the middle of the night. Keep a clean sheet within reach of the crib so a nighttime change is quick. Each time you make up the crib, check that the sheet still fits snugly, and replace any sheet that has shrunk or stretched out.
