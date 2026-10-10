@@ -18,6 +18,7 @@ const SECTIONS = {
   names: { en: 'names', de: 'namen' },
   checklists: { en: 'checklists', de: 'checklisten' },
   guides: { en: 'guides', de: 'ratgeber' },
+  buyingGuides: { en: 'buying-guides', de: 'kaufberatung' },
   finance: { en: null, de: 'finanz' },
   about: { en: 'about', de: 'ueber-uns' },
   sources: { en: 'sources', de: 'quellen' },

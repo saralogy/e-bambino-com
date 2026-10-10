@@ -1,0 +1,70 @@
+---
+// BuyingGuideIndex.astro — list of published buying guides in one language, with an empty state.
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { getCollection } from 'astro:content';
+import { shipGate } from '../lib/shipgate';
+import { LANGS, sectionPath, entryLang, entrySlug, type Lang } from '../i18n';
+
+export interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const COPY = {
+  en: {
+    eyebrow: 'Before you buy',
+    title: 'Buying guides',
+    lede: 'How to choose the big-ticket baby gear: what to look for, which types exist and what to ask in the store. Independent, with no paid placements.',
+    empty: 'First buying guides are on the way.',
+    open: 'Read the guide',
+    chip: 'Buying guide',
+  },
+  de: {
+    eyebrow: 'Vor dem Kauf',
+    title: 'Kaufberatung',
+    lede: 'So wählen Sie die großen Anschaffungen für Baby und Mama: worauf Sie achten sollten, welche Arten es gibt und was Sie im Laden fragen sollten. Unabhängig, ohne bezahlte Platzierungen.',
+    empty: 'Die ersten Kaufberatungen folgen in Kürze.',
+    open: 'Zur Kaufberatung',
+    chip: 'Kaufberatung',
+  },
+}[lang];
+
+const items = (await getCollection('kaufberatung'))
+  .filter((e) => entryLang(e) === lang && shipGate({ slug: e.id, ...e.data }).ship)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const alternates = Object.fromEntries(LANGS.map((l) => [l, sectionPath(l, 'buyingGuides')!]));
+---
+
+<Layout {lang} {alternates} title={COPY.title} description={COPY.lede}>
+  <section class="page-hero">
+    <div class="shell py-16 sm:py-20">
+      <SectionHeader eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} />
+    </div>
+  </section>
+
+  <section class="shell py-16 sm:py-20">
+    {
+      items.length === 0 ? (
+        <p class="text-night-500">{COPY.empty}</p>
+      ) : (
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((e) => (
+            <li>
+              <a href={sectionPath(lang, 'buyingGuides', entrySlug(e))} class="card-link group flex h-full flex-col">
+                <span class="chip-highlight self-start">{COPY.chip}</span>
+                <h2 class="mt-4 font-display text-xl font-semibold leading-snug text-night transition-colors duration-300 group-hover:text-ultramarine-700 text-pretty">{e.data.title}</h2>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-night-500">{e.data.description}</p>
+                <span class="mt-5 flex items-center gap-2 text-sm font-bold text-ultramarine-700">
+                  {COPY.open}
+                  <span class="transition-transform duration-300 ease-smooth group-hover:translate-x-1" aria-hidden="true">→</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</Layout>

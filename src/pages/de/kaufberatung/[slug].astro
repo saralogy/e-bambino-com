@@ -1,0 +1,14 @@
+---
+import BuyingGuide from '../../../views/BuyingGuide.astro';
+import { getCollection } from 'astro:content';
+import { entryLang, entrySlug } from '../../../i18n';
+import { shipGate } from '../../../lib/shipgate';
+
+export async function getStaticPaths() {
+  return (await getCollection('kaufberatung'))
+    .filter((entry) => entryLang(entry) === 'de' && shipGate({ slug: entry.id, ...entry.data }).ship)
+    .map((entry) => ({ params: { slug: entrySlug(entry) }, props: { entry } }));
+}
+---
+
+<BuyingGuide lang="de" entry={Astro.props.entry} />
