@@ -39,7 +39,3 @@ Bücher, Bewegungsangebote im Freien, Kreisspiele und gemeinsames Bauen füllen 
 | 1 bis 2 Jahre | Bildschirmmedien vermeiden | Erste Wörter, gemeinsames Spiel |
 | 2 bis 3 Jahre | Bildschirmmedien vermeiden | Rollenspiel, Bilderbücher |
 | ab 3 Jahren | begleitete Nutzung möglich | Ablauf verstehen, alleine aufhören |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

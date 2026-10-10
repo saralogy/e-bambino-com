@@ -42,7 +42,3 @@ Try several books together at a library or bookshop. Children often pick somethi
 - Rhyme gives a rhythm children can continue themselves
 - A favorite book read often beats many unloved ones
 - Pictures that show the action help more than decorative illustrations
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

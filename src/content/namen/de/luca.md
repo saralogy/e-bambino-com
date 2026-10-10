@@ -40,7 +40,3 @@ Lukas und wird in vielen europäischen Ländern vergeben.
 Luca ist kurz, international verständlich und in vielen Sprachen gleich ausgesprochen. In
 einigen Ländern wird Luca auch als Mädchenname vergeben; in Deutschland ist er überwiegend
 ein Jungenname.
-
----
-
-*Erstellt von der e-bambino-Redaktion • Geprüft nach EU AI Act Art. 50*

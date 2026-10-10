@@ -12,9 +12,9 @@ intention: 'informational'
 slug: 'when-can-my-child-face-forward-in-the-car'
 translationOf: 'kindersitz-vorne-gewicht'
 antwort: "Keep your child rear-facing for as long as the seat allows. Under the EU i-Size rules (UN R129), children must ride rear-facing until at least 15 months, and many seats allow rear-facing up to about 105 cm. Turn the seat only when your child exceeds its rear-facing height or weight limit. After that, use a child seat until the adult belt fits."
-quellen: []
+quellen: ["unece"]
 ymyl: true
-reviewedBy: ''
+reviewedBy: 'Mathilda, Nurse'
 ---
 Age is not the rule that matters most. The limits printed on your car seat are.
 
@@ -31,7 +31,3 @@ Seats approved under UN R129 (i-Size) must be used rear-facing until at least 15
 A high-back booster that positions the adult belt correctly across the shoulder and hips. Many countries require a child restraint until a set height or age; in Germany that is 150 cm or 12 years. Check the rules in your country.
 
 Rules and seat limits change. Always follow your seat’s manual and your local law.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

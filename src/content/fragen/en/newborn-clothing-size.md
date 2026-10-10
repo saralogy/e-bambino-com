@@ -44,7 +44,3 @@ If your baby is longer than about 54 cm at birth, start with 62. It is also the 
 ## Why do sizes differ between brands?
 
 Some brands cut small or large, and fabric stretch varies. Check the brand’s size chart, measure your baby, and keep one size ahead in the drawer. Secondhand clothes in size 56 are a good way to cover the short newborn phase cheaply.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

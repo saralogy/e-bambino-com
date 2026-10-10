@@ -19,13 +19,15 @@ verteilt ist: eine verständliche Antwort, die passende Entscheidungshilfe und d
 
 ## Womit wir uns unterscheiden
 
+- **Alles an einem Ort.** Fragen, Produktvergleiche, Checklisten und Namen, damit Sie keine zwanzig Tabs brauchen.
 - **Antwort zuerst.** Jede Frage beantworten wir in einem Absatz, bevor wir ins Detail gehen.
 - **Checklisten zum Abhaken.** Die Kliniktasche ist kein Artikel, sondern eine Liste, die
   Sie ausdrucken und abarbeiten.
 - **Finanzhilfen mit Fristen.** Elterngeld, Kindergeld, Kinderzuschlag: mit Beträgen,
   Voraussetzungen und den konkreten Unterlagen für den Antrag.
-- **Ehrliche Vergleiche.** Wir sagen, wofür ein Produkt passt und wofür nicht. Platzierungen
-  sind nicht käuflich.
+- **Ehrliche, unabhängige Empfehlungen.** Wir sagen, wofür ein Produkt passt und wofür nicht.
+  Platzierungen sind nicht käuflich.
+- **Kostenlos, ohne Anmeldung.** Alles auf der Seite ist frei nutzbar.
 
 ## Wie wir arbeiten
 
@@ -58,7 +60,7 @@ Wir verkaufen keine Daten, wir zeigen keine Werbung ohne Kennzeichnung, und wir 
 nicht für Beiträge bezahlen. Wenn eine Seite veraltet ist, sagen Sie uns Bescheid, wir
 korrigieren sie.
 
-**Kontakt:** kontakt@e-bambino.com, für Korrekturen, Quellenangaben und Presseanfragen.
+**Kontakt:** info@e-bambino.com, für Korrekturen, Quellenangaben und Presseanfragen.
 
 ---
 

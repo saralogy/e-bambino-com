@@ -37,7 +37,3 @@ Many cribs convert into a toddler bed by removing one side. Otherwise, a low tod
 | Climbing or about 89 cm tall | Toddler bed or bed with rail | Low height, soft landing area |
 
 These are guidelines to help you judge a crib. Always follow the manufacturer’s limits for your model.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

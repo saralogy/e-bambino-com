@@ -43,7 +43,3 @@ Ab einer Körperlänge von etwa 56 cm passt Größe 62, weil eine zu enge Stramp
 ## Was bedeutet die Lieblingsgröße?
 
 Manche Marken empfehlen in ihren Angaben eine Lieblingsgröße, weil ihre Strampler zwei bis drei Zentimeter kleiner ausfallen. Marke für Marke ist das unterschiedlich, beim Wachsen lohnt sich also ein schneller Blick in die Größenangabe. Bei Zweifel gilt derselbe Weg wie beim Messen: Länge prüfen, Windel einkalkulieren, zwei Größen im Schrank haben. Ausgetragene Second-Hand-Kleidung in 56 ist für Neugeborene meistens eine brauchbare Reserve.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft – menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

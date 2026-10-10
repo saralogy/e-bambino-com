@@ -85,4 +85,4 @@ Neben Kindergeld können Sie auch den **Kinderfreibetrag** in der Steuererkläru
 
 ---
 
-*Erstellt von der e-bambino-Redaktion • Quellen: Bundesagentur für Arbeit, BMFSFJ • Geprüft nach EU AI Act Art. 50*
+*Quellen: Bundesagentur für Arbeit, BMFSFJ*

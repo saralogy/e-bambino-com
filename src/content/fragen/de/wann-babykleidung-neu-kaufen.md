@@ -42,7 +42,3 @@ Pro Größe kaufen lohnt sich im ersten Jahr, weil 56, 62, 68, 74 und 80 jeweils
 ## Was kann man weitergeben statt wegwerfen?
 
 Ausgeschlagene Größen wandern in die nächste Größenkiste oder an Familien mit größeren Kindern. Löse mit einem scharfen Messer vorsichtig Etiketten und Klebeverschlüsse, damit kein Stoffrest zurückbleibt. Achte bei Second-Hand-Kleidung auf Flecken, ausgeleierte Bündchen und von Motten befallene Wollteile. Nicht weitergeben lässt sich alles, was im Rücken gestaut hat oder löcherig ist.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft – menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

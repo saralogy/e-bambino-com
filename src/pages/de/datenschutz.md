@@ -8,8 +8,8 @@ description: Datenschutzerklärung für e-bambino.com — welche Daten wir erheb
 
 # Datenschutzerklärung
 
-Verantwortlicher für die Datenverarbeitung auf dieser Website ist
-_**[Vor- und Nachname]**, _[Anschrift]_, [kontakt@e-bambino.com](mailto:kontakt@e-bambino.com).
+Verantwortlicher für die Datenverarbeitung auf dieser Website ist e-bambino, Hamburg,
+Deutschland, [info@e-bambino.com](mailto:info@e-bambino.com).
 
 ## 1. Server-Logfiles
 
@@ -28,7 +28,7 @@ stabilen Betrieb der Website.
 Diese Website wird über **Cloudflare** ausgeliefert (Cloudflare Inc., USA). Mit Cloudflare
 besteht ein Auftragsverarbeitungsvertrag (Data Processing Addendum) nach Art. 28 DSGVO.
 
-> ⚠️ **Zu prüfen:** Der konkrete Cloudflare-Plan (Free/Pro/Business) bestimmt, welche
+> **Hinweis:** Der konkrete Cloudflare-Plan (Free/Pro/Business) bestimmt, welche
 > Analytics-Produkte aktiviert sind. Bei aktivem Web Analytics ist eine zusätzliche
 > Einwilligung nach § 25 TDDDG erforderlich.
 
@@ -70,7 +70,7 @@ Sie haben jederzeit das Recht auf:
 - **Widerspruch** gegen Verarbeitungen, die auf berechtigten Interessen beruhen (Art. 21 DSGVO)
 
 Zur Ausübung genügt eine formlose Nachricht an
-[kontakt@e-bambino.com](mailto:kontakt@e-bambino.com).
+[info@e-bambino.com](mailto:info@e-bambino.com).
 
 ## 8. Beschwerderecht
 

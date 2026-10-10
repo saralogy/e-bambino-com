@@ -39,7 +39,3 @@ Alle abnehmbaren Teile lassen sich meist in der Spülmaschine waschen. Der Sitzb
 | 6 bis 18 Monate | Hochstuhl mit Fünf-Punkt-Gurt |
 | 18 Monate bis 3 Jahre | mitwachsender Hochstuhl |
 | ab 3 Jahren | niedriger Kinderstuhl am Tisch |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

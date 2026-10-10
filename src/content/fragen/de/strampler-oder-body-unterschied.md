@@ -43,7 +43,3 @@ Beim Wachsen läuft der Body mit, weil er am Bauch und an den Beinen elastisch i
 | Wickeln | Rumpf bleibt bedeckt | Bauch bleibt frei |
 | Beweglichkeit | Beine sind im Schlauch gebunden | Beine bleiben frei |
 | Anziehen | ein Teil, über den Kopf | zwei Teile, dafür langlebig |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft – menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

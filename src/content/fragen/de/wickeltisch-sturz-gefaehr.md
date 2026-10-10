@@ -44,7 +44,3 @@ Das Baby kurz beobachten. Bei Bewusstlosigkeit, Erbrechen, unklarer Wachheit ode
 | Decke ohne Anti-Rutsch | Auflage mit Rutschschutz |
 | Wickeln am Esstisch auf einer Decke | Boden, Stehen oder Ablage |
 | Ablage auf Fensterbank | Box neben dem Tisch |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

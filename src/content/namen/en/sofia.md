@@ -39,7 +39,3 @@ across Europe and beyond, and has been among the popular girls’ names in many 
 
 Sofia and Sophia are pronounced the same way; the spelling with *f* is shorter and common in
 many languages.
-
----
-
-*Written by the e-bambino editorial team • Checked under EU AI Act Art. 50*

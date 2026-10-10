@@ -40,7 +40,3 @@ Ersetze zuerst die Nachtflasche durch Wasser in einem Becher und gib tagsüber e
 | 12 bis 15 Monate | erste Mahlzeiten auf Becher oder Glas umstellen |
 | 15 bis 18 Monate | Nachtflasche weglassen, Becher beibehalten |
 | ab 18 Monaten | Trinken in der Regel aus dem Becher |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

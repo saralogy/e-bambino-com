@@ -41,7 +41,3 @@ Bodysuits stretch and often fit for longer. Sleepers get too short in the feet f
 | Changing | Snaps or zip on the legs | Snaps at the crotch |
 | Use | Nights, cold days | Base layer all year |
 | Fit over time | Feet get tight first | Stretches, often lasts longer |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

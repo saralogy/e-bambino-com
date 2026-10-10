@@ -35,19 +35,19 @@ const HUB_EN: Record<string, Omit<HubInfo, 'key'>> = {
     slug: 'feeding',
     label: 'Feeding & mealtimes',
     answer:
-      'From the first bottle to the high chair: practical answers on feeding gear and mealtime routines, with the age at which each step usually makes sense. Questions about nutrition and health are published only after review by a named expert.',
+      'From the first bottle to the high chair: practical answers on feeding gear and mealtime routines, with the age at which each step usually makes sense.',
   },
   'baden-pflege': {
     slug: 'bath-and-care',
     label: 'Bath & care',
     answer:
-      'Bathing, skin care and everyday hygiene for babies: how often, with what, and which products are worth buying. Health-related questions are published only after review by a named expert.',
+      'Bathing, skin care and everyday hygiene for babies: how often, with what, and which products are worth buying.',
   },
   stillen: {
     slug: 'breastfeeding',
     label: 'Breastfeeding & pumping',
     answer:
-      'Breastfeeding, pumping and storing milk: practical answers and the gear that helps. Health-related questions are published only after review by a named expert.',
+      'Breastfeeding, pumping and storing milk: practical answers and the gear that helps.',
   },
   babyzimmer: {
     slug: 'nursery',
@@ -65,7 +65,7 @@ const HUB_EN: Record<string, Omit<HubInfo, 'key'>> = {
     slug: 'safety',
     label: 'Safety at home',
     answer:
-      'Babyproofing step by step: sockets, stairs, changing tables and everyday hazards, sorted by the age at which they matter. Safety pages are published only after review by a named expert.',
+      'Babyproofing step by step: sockets, stairs, changing tables and everyday hazards, sorted by the age at which they matter.',
   },
 };
 

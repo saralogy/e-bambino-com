@@ -40,7 +40,3 @@ Auf die Angabe des Herstellers zur Körperlänge im Rückwärtsmodus und auf das
 | 12 Monate | 75 cm | Rückwärtsgerichteter Sitz |
 | ca. 3 Jahre | 95 cm | je nach Gurtführung |
 | ab 4 Jahren | 100 cm und mehr | kindergerechter Gurt |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

@@ -40,7 +40,3 @@ Am Herstellungsdatum auf der Unterseite des Sitzes und am Ablaufdatum des Prüfs
 | Gurtposition | straff, nicht verdreht |
 | Prüfsiegel | vorhanden und gültig |
 | Herstellungsdatum | nicht zu alt |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

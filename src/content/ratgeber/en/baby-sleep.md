@@ -72,4 +72,4 @@ the first months.
 
 ---
 
-*Written by the e-bambino editorial team • Sources: WHO, AWMF, kindergesundheit-info.de • Checked under EU AI Act Art. 50*
+*Sources: WHO, AWMF, kindergesundheit-info.de*

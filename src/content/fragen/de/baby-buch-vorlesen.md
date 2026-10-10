@@ -38,7 +38,3 @@ Achte auf deine Stimme, deine Pausen und dein Tempo. Beschleunigtes Vorlesen nim
 - Wiederholung: das gleiche Buch viele Tage hintereinander ist empfohlen
 - Drucklose Atmosphäre, kein Weiterlesen, wenn die Aufmerksamkeit nachlässt
 - Bilderbücher mit Klappen und Fühlmaterial für kleine Hände
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

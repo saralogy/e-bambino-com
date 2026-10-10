@@ -41,7 +41,3 @@ Spezialstufen mit aufbereiteten Eiweißen oder stark reduziertem Laktosegehalt e
 | Ziegenmilchbasis | Ziege | nach Beratung | bestimmte Verträglichkeitsfälle |
 | Sojabasis | Soja | meist ab etwa 6 Monaten | Kuhmilchprotein nicht vertragen |
 | Spezialstufe | aufbereitet | nach Beratung | bestätigte Allergie oder Laktoseintoleranz |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

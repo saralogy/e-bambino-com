@@ -40,7 +40,3 @@ Kitas, Autowerkstätten und viele Schwimmbäder bieten kostenlose Einbauprüfung
 | Kleinkind mit aktivem Halt | rückwärts bis Gurt passt |
 | ab ca. 4 Jahren, Gurt passt | kindergerechter Gurt, vorwärts |
 | Erwachsener | normale Gurte |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

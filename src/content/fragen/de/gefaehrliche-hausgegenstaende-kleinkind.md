@@ -44,7 +44,3 @@ Der wirksamste Schutz ist räumlich: heiße Tassen nie auf Tischkanten, Fensterb
 ## Wann muss ich in die Kinderarztpraxis?
 
 Bei Verschlucken unverzüglich, auch wenn das Kind zunächst symptomfrei wirkt — besonders bei Knopfbatterien, weil Schäden auch ohne Beschwerden auftreten können. Bei Verbrennungen ab einer Größe von etwa zwei Quadratzentimetern, bei Blasenbildung, an Gesicht, Händen oder Gelenken sowie bei jeder Verbrühung mit heißem Wasser. Im Zweifel die Notrufnummer 116117 wählen.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

@@ -38,7 +38,3 @@ Der Schlafsack und ein Schlafanzug reichen in der Regel, wenn die Raumtemperatur
 | Babybett | Matratze, eng anliegender Schlafsack, eng anliegender Schlafanzug | Decke, Kissen, Kopfkeilkissen, Bettvorhang, Spielzeug |
 | Wickelplatz | weiche Unterlage, Wickeltasche | Spielzeug in Griffweite |
 | Schlafzimmer | Thermometer, Vorhänge zum Verdunkeln | Heizkörper direkt neben dem Bett |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

@@ -34,7 +34,3 @@ On hard or cold floors, in apartments where noise travels, and to protect wooden
 ## What matters more than a mat?
 
 Space and time on the floor. Clear an area where your baby can lie, roll and later crawl without obstacles, and offer short sessions of tummy time while awake and supervised.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

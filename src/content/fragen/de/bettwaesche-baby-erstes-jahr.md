@@ -33,7 +33,3 @@ Gewechselt wird, wenn die Bettwäsche feucht oder verschmutzt ist, in der Regel 
 |---|---|---|---|
 | 0 bis 6 Monate | Matratzenbezug, Babysachen, Schlafsack | Decke, Kissen, Bettvorhang, Spielzeug | täglich |
 | 6 bis 12 Monate | Matratzenbezug, Babysachen, Schlafsack | Decke, Kissen, Nestchen, Nestlecke | täglich |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

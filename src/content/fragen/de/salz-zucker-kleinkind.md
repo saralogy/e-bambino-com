@@ -47,7 +47,3 @@ Trinken unter einem Jahr kommt aus der Flasche oder dem Becher, Wasser ersetzt g
 | 1 bis 3 Jahre | sparsam | selten | keine |
 | 3 bis 6 Jahre | sparsam | gelegentlich | keine |
 | ab 6 Jahren | wie Erwachsene | wie Erwachsene | gelegentlich |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

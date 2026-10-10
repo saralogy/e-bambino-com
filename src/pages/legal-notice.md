@@ -3,38 +3,19 @@ layout: ../layouts/ContentPage.astro
 lang: en
 alternate: /de/impressum/
 title: Legal notice
-description: Provider information for e-bambino.com under § 5 DDG and § 18 (2) MStV (German law).
+description: Provider information for e-bambino.com under § 5 DDG (German law).
 ---
 
 # Legal notice
 
-Information pursuant to § 5 of the German Digital Services Act (DDG) and § 18 (2) of the
-German Interstate Media Treaty (MStV). The binding version is the [German legal notice](/de/impressum/).
+Information pursuant to § 5 of the German Digital Services Act (DDG). The binding version is the
+[German legal notice](/de/impressum/).
 
 ## Provider
 
-**e-bambino.com**
-Owner: _[First and last name]_
-Address: _[Street, number]_, _[Postcode, city]_
-Country: Germany
-Email: kontakt@e-bambino.com
-Phone: _[Phone number]_
-
-> **Placeholder:** the operator's name, address and phone number must be filled in before
-> launch. An incomplete legal notice can lead to formal warnings under German law.
-
-## Responsible for content under § 18 (2) MStV
-
-_[First and last name]_, _[Street, number]_, _[Postcode, city]_
-
-## Editorial responsibility
-
-_[Name of editor-in-chief]_, reachable at redaktion@e-bambino.com
-
-## EU online dispute resolution
-
-We are neither obliged nor willing to take part in dispute resolution proceedings before a
-consumer arbitration board.
+**e-bambino**
+Hamburg, Germany
+Email: info@e-bambino.com
 
 ## Liability for content
 
@@ -54,11 +35,15 @@ Content and works created by the site operator are subject to German copyright l
 Contributions by third parties are marked as such. Copying, editing or distributing them beyond
 the limits of copyright law requires the consent of the respective author or rights holder.
 
+## Consumer dispute resolution
+
+We are neither obliged nor willing to take part in dispute resolution proceedings before a
+consumer arbitration board.
+
 ## Note on content
 
 The content of this website is general information and does not replace medical, legal or tax
-advice. For decisions based on the information published here, the responsible authority or
-professional is decisive.
+advice.
 
 ---
 

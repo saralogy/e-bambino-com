@@ -36,7 +36,3 @@ Wenn am Ende des Monats mehr als ein Drittel des Vorrats übrig ist, war die Pac
 | 6 Monate | 6 bis 8 | rund 240 |
 | 12 Monate | 5 bis 7 | rund 200 |
 | ab 24 Monaten | 4 bis 6 | rund 150 |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

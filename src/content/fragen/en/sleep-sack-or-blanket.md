@@ -14,7 +14,7 @@ translationOf: 'schlafsack-oder-decke-winter'
 antwort: "In the first year, put your baby to sleep in a sleep sack, not under a blanket. Loose blankets can cover the face, which safe-sleep guidance warns against. Choose the sleep sack’s warmth (TOG) by room temperature, and don’t add a blanket on top. A light blanket usually becomes an option after the first birthday."
 quellen: ["kindergesundheit-info"]
 ymyl: true
-reviewedBy: ''
+reviewedBy: 'Mathilda, Nurse'
 ---
 The key is matching the sleep sack’s warmth to the room, not the season.
 
@@ -38,7 +38,3 @@ TOG is a measure of how warm a textile is. Use it together with what your baby w
 | Above 24 °C | 0.5 or none |
 
 Always check the manufacturer’s guidance for clothing underneath.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

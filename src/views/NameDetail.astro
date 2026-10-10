@@ -14,8 +14,8 @@ const { lang, entry } = Astro.props;
 const { Content } = await render(entry);
 
 const COPY = {
-  en: { crumb: 'Baby names', gender: 'Gender', origin: 'Origin', popularity: 'Popularity', asOf: 'Updated', girl: 'girl', boy: 'boy', footer: (a: string) => `Written by ${a}. Checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).` },
-  de: { crumb: 'Baby-Namen', gender: 'Geschlecht', origin: 'Herkunft', popularity: 'Beliebtheit', asOf: 'Stand', girl: 'Mädchen', boy: 'Jungen', footer: (a: string) => `Erstellt von ${a}. Geprüft nach den Regeln der e-bambino-Redaktion: menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).` },
+  en: { crumb: 'Baby names', gender: 'Gender', origin: 'Origin', popularity: 'Popularity', asOf: 'Updated', girl: 'girl', boy: 'boy' },
+  de: { crumb: 'Baby-Namen', gender: 'Geschlecht', origin: 'Herkunft', popularity: 'Beliebtheit', asOf: 'Stand', girl: 'Mädchen', boy: 'Jungen' },
 }[lang];
 
 const typLabel = { mädchen: COPY.girl, jungen: COPY.boy, girl: COPY.girl, boy: COPY.boy }[entry.data.typ ?? ''] ?? entry.data.typ;
@@ -46,8 +46,5 @@ const dtf = dateFormat(lang);
     <div class="prose">
       <Content />
     </div>
-    <footer class="mt-14 rounded-ds-lg bg-fog p-6 text-sm leading-relaxed text-night-500">
-      <p>{COPY.footer(entry.data.author)}</p>
-    </footer>
   </article>
 </Layout>

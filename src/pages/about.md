@@ -19,10 +19,11 @@ browser tabs: a clear answer, help with the decision, and a list you can tick of
 
 ## What makes us different
 
+- **Everything in one place.** Questions, product comparisons, checklists and names, so you don’t need twenty open tabs.
 - **The answer comes first.** Every question is answered in one paragraph before we go into detail.
+- **Honest, independent picks.** We say what a product suits and what it does not. Placements are not for sale.
 - **Checklists you can tick off.** The hospital bag is not an article, it is a list you print and work through.
-- **Honest comparisons.** We say what a product suits and what it does not. Placements are not for sale.
-- **Checked by people.** Health and safety topics are published only after review by a named expert.
+- **Free, no sign-up.** Everything on the site is free to use.
 
 ## How we work
 
@@ -53,7 +54,7 @@ The full list is on the [Sources](/sources/) page.
 We do not sell data, we do not show advertising without labeling it, and we do not accept
 payment for articles. If a page is out of date, tell us and we will correct it.
 
-**Contact:** kontakt@e-bambino.com, for corrections, sources and press inquiries.
+**Contact:** info@e-bambino.com, for corrections, sources and press inquiries.
 
 ---
 

@@ -40,7 +40,3 @@ Always use the harness, even for a short meal. Place the chair away from walls, 
 | 6 to 18 months | High chair with five-point harness and footrest |
 | 18 months to 3 years | Adjustable high chair or booster seat |
 | From about 3 years | Regular chair or booster at the table |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

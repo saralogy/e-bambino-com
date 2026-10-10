@@ -40,7 +40,3 @@ A five-point harness, brakes that are easy to reach and engage, and a canopy for
 | About 6 months, sitting with support | Upright stroller seat |
 | Rough paths and cobblestones | Larger wheels, suspension |
 | Small car or many stairs | Light frame, compact fold |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

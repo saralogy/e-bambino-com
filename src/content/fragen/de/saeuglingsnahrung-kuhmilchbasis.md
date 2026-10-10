@@ -40,7 +40,3 @@ Fett wird in Säuglingsnahrung fast vollständig ersetzt, weil Kuhmilchfett für
 | Ziege | entrahmte Ziegenmilch | bestimmte Fälle nach Beratung |
 | Soja | Sojaprotein | wenn Kuhmilchprotein nicht passt |
 | aufbereitet | abgeleitete Eiweiße | bestätigte Allergie nach Diagnose |
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

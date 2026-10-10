@@ -180,6 +180,14 @@
     @apply hidden;
   }
 
+  /* Long German compounds must wrap on small phones. */
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
   .prose > * + * {
     @apply mt-5;
   }

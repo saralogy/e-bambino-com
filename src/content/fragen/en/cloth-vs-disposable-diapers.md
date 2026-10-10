@@ -41,7 +41,3 @@ Disposables, almost always: no washing, quick changes and easy on the go. Cloth 
 | Waste | High | Low |
 | Washing | None | Several loads a week |
 | On the go | Easy | More planning |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

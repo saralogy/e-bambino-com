@@ -41,7 +41,3 @@ Freie Bewegungsfläche wirkt stärker als jede Matte. Plane im Kinderzimmer eine
 - Kuschelmatten gehören ans Liege- und Lesereck, nicht unters Krabbelbrett
 - Unterseite und Kanten entscheiden über die Rutschsicherheit
 - Eine offene Bewegungsfläche bleibt die wichtigere Voraussetzung
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft — menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

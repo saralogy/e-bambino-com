@@ -42,7 +42,3 @@ Bei 18 Grad Raumtemperatur passt meistens ein Schlafsack mit einer Wärmezahl vo
 ## Ab welchem Alter reicht eine Decke im Bett?
 
 Ab etwa zwölf Monaten, wenn dein Baby Namen versteht und sich beim Hochziehen wieder hinlegt, ist eine leichte Decke eine gute Wahl. Bei manchen Kindern klappt das schon mit zehn Monaten, andere brauchen deutlich länger. Entscheidend ist die Fähigkeit, den Kopf frei zu drehen und nicht unter die Decke zu rollen. Danach empfiehlt sich ein Überzug oder eine Decke mit kurzer Trägheit.
-
----
-
-*Stand: Oktober 2026. Von der e-bambino-Redaktion erstellt und geprüft – menschliche Prüfung, Quellen offengelegt (EU AI Act Art. 50).*

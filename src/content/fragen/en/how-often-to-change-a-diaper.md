@@ -36,7 +36,3 @@ Change often, clean gently and keep the skin dry. A thin layer of barrier cream 
 | 3 months | 7 to 10 |
 | 6 months | 6 to 8 |
 | From 12 months | 5 to 7 |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

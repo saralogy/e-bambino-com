@@ -41,7 +41,3 @@ Your baby should sit high enough to kiss the top of their head, with the face vi
 | Hands free | No | Yes |
 | Head support | Built in | Carrier and your hold |
 | Space needed | Large | Small |
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*

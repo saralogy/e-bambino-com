@@ -42,7 +42,3 @@ In the first year, buy by size, because each size lasts only a few months. From 
 ## What can I pass on?
 
 Clothes in good condition can go to friends, family or secondhand shops. Check for stains, stretched cuffs and loose snaps first.
-
----
-
-*Updated: October 2026. Written and checked by the e-bambino editorial team: human review, sources disclosed (EU AI Act Art. 50).*
