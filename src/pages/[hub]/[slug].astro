@@ -60,10 +60,10 @@ const jsonLd = JSON.stringify({
   <script type="application/ld+json" set:html={jsonLd} />
 
   <article class="shell measure py-12 sm:py-16">
-    <nav class="mb-8 flex items-center gap-2 text-sm text-night-500" aria-label="Brotkrumen">
-      <a href="/" class="transition-colors hover:text-ultramarine-700">Start</a>
+    <nav class="mb-4 flex items-center gap-x-2 text-sm text-night-500" aria-label="Brotkrumen">
+      <a href="/" class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">Start</a>
       <span aria-hidden="true">/</span>
-      <a href={`/${entry.data.hub}/`} class="transition-colors hover:text-ultramarine-700">
+      <a href={`/${entry.data.hub}/`} class="inline-flex min-h-tap-s items-center transition-colors hover:text-ultramarine-700">
         {hub?.label ?? entry.data.hub}
       </a>
     </nav>

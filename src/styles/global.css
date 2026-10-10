@@ -73,6 +73,50 @@
     @apply text-lg sm:text-xl leading-relaxed text-night-500;
   }
 
+  /* ---------- Page hero (index pages) ---------- */
+  /* Night band with an ultramarine disc, the DS color-block header. */
+  .page-hero {
+    @apply relative overflow-hidden bg-night text-white;
+  }
+  .page-hero::after {
+    content: '';
+    @apply pointer-events-none absolute -right-24 -top-40 h-[26rem] w-[26rem] rounded-full bg-ultramarine sm:h-[34rem] sm:w-[34rem];
+  }
+  .page-hero > * {
+    @apply relative z-10;
+  }
+  .page-hero .display-1,
+  .page-hero .display-2,
+  .page-hero .text-night {
+    @apply text-white;
+  }
+  .page-hero .eyebrow {
+    @apply text-limone;
+  }
+  .page-hero .eyebrow > span {
+    @apply bg-limone;
+  }
+  .page-hero .lede,
+  .page-hero .text-night-500,
+  .page-hero a.text-night-500 {
+    @apply text-fog-300;
+  }
+  .page-hero a:hover {
+    @apply text-limone;
+  }
+  /* The search form is a white pill inside the dark band: keep its own colors. */
+  .page-hero form.text-night,
+  .page-hero form:hover,
+  .page-hero form input.text-night {
+    color: #0c1020;
+  }
+  .page-hero form svg.text-night-500 {
+    color: #5b627f;
+  }
+  .page-hero .border-fog-100 {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
   /* ---------- Buttons ---------- */
   .btn {
     @apply inline-flex min-h-tap-m items-center justify-center gap-2 rounded-ds-md px-6 py-3

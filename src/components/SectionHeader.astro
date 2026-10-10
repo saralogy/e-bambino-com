@@ -19,6 +19,6 @@ const { eyebrow, title, lede, count } = Astro.props;
       </p>
     )
   }
-  <h1 class:list={['display-1', 'rise', 'rise-delay-1', !eyebrow && 'mt-0']}>{title}</h1>
+  <h1 class:list={['display-1', 'rise', 'rise-delay-1', eyebrow ? 'mt-5' : 'mt-0']}>{title}</h1>
   {lede && <p class="lede measure mt-6 text-pretty rise rise-delay-2">{lede}</p>}
 </header>

@@ -33,13 +33,13 @@ const rechtliches = [
 
       <div class="lg:col-span-3">
         <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Bereiche</h2>
-        <ul class="mt-5 space-y-3">
+        <ul class="mt-4 space-y-0.5">
           {
             kategorien.map((k) => (
               <li>
                 <a
                   href={k.href}
-                  class="text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
+                  class="inline-flex min-h-tap-s items-center text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
                 >
                   {k.label}
                 </a>
@@ -51,13 +51,13 @@ const rechtliches = [
 
       <div class="lg:col-span-2">
         <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Rechtliches</h2>
-        <ul class="mt-5 space-y-3">
+        <ul class="mt-4 space-y-0.5">
           {
             rechtliches.map((k) => (
               <li>
                 <a
                   href={k.href}
-                  class="text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
+                  class="inline-flex min-h-tap-s items-center text-sm text-fog-100 transition-colors duration-300 hover:text-limone"
                 >
                   {k.label}
                 </a>
@@ -69,11 +69,11 @@ const rechtliches = [
 
       <div class="lg:col-span-3">
         <h2 class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Kontakt</h2>
-        <ul class="mt-5 space-y-3 text-sm">
+        <ul class="mt-4 space-y-0.5 text-sm">
           <li>
             <a
               href="mailto:kontakt@e-bambino.com"
-              class="text-fog-100 transition-colors duration-300 hover:text-limone"
+              class="inline-flex min-h-tap-s items-center text-fog-100 transition-colors duration-300 hover:text-limone"
             >
               kontakt@e-bambino.com
             </a>
@@ -81,7 +81,7 @@ const rechtliches = [
           <li>
             <a
               href="/ueber-uns/"
-              class="text-fog-100 transition-colors duration-300 hover:text-limone"
+              class="inline-flex min-h-tap-s items-center text-fog-100 transition-colors duration-300 hover:text-limone"
             >
               Redaktion &amp; Arbeitsweise
             </a>

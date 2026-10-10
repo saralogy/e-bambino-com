@@ -12,7 +12,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
   title="Baby-Namen"
   description="Italienische Baby-Namen mit Bedeutung, Herkunft, Varianten und Beliebtheit in Deutschland, Österreich und der Schweiz."
 >
-  <section class="bg-wash">
+  <section class="page-hero">
     <div class="shell py-16 sm:py-20">
       <SectionHeader
         eyebrow="Mit Bedeutung und Herkunft"
@@ -25,7 +25,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="alle"
-          class="fbtn rounded-pill border border-night bg-night px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 ease-smooth"
+          class="fbtn min-h-tap-s rounded-pill border-2 border-limone bg-limone px-5 text-sm font-bold text-night transition-all duration-tap ease-reveal"
           aria-pressed="true"
         >
           Alle
@@ -33,7 +33,7 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="mädchen"
-          class="fbtn rounded-pill border border-fog-300 bg-white px-5 py-2.5 text-sm font-medium text-night-700 transition-all duration-300 ease-smooth hover:border-ultramarine"
+          class="fbtn min-h-tap-s rounded-pill border-2 border-white/40 bg-transparent px-5 text-sm font-bold text-white transition-all duration-tap ease-reveal hover:border-limone"
           aria-pressed="false"
         >
           Mädchen
@@ -41,12 +41,12 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
         <button
           type="button"
           data-filter="jungen"
-          class="fbtn rounded-pill border border-fog-300 bg-white px-5 py-2.5 text-sm font-medium text-night-700 transition-all duration-300 ease-smooth hover:border-ultramarine"
+          class="fbtn min-h-tap-s rounded-pill border-2 border-white/40 bg-transparent px-5 text-sm font-bold text-white transition-all duration-tap ease-reveal hover:border-limone"
           aria-pressed="false"
         >
           Jungen
         </button>
-        <p id="count" class="ml-1 text-sm text-night-500" aria-live="polite"></p>
+        <p id="count" class="ml-1 text-sm text-fog-300" aria-live="polite"></p>
       </div>
     </div>
   </section>
@@ -96,12 +96,12 @@ const namen = (await getCollection('namen')).sort((a, b) => a.data.title.localeC
 
     for (const b of btns) {
       const on = b.dataset.filter === filter;
-      b.classList.toggle('bg-night', on);
-      b.classList.toggle('text-white', on);
-      b.classList.toggle('border-night', on);
-      b.classList.toggle('bg-white', !on);
-      b.classList.toggle('text-night-700', !on);
-      b.classList.toggle('border-fog-300', !on);
+      b.classList.toggle('bg-limone', on);
+      b.classList.toggle('text-night', on);
+      b.classList.toggle('border-limone', on);
+      b.classList.toggle('bg-transparent', !on);
+      b.classList.toggle('text-white', !on);
+      b.classList.toggle('border-white/40', !on);
       b.setAttribute('aria-pressed', String(on));
     }
   }

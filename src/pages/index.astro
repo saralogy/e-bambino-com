@@ -37,123 +37,145 @@ const fragenNeu = [...fragen]
 const dtf = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
 
 const gesamtFragen = fragen.length;
+
+const latestFrage = fragenNeu[0];
+const featureCheckliste = [...checklisten].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())[0];
+const hubLabel = (slug: string) => TAXONOMY.find((t) => t.slug === slug)?.label ?? slug;
+
+// DS color-block tiles. Full class strings so Tailwind sees them.
+const tileStyles = [
+  'bg-night text-white',
+  'bg-ultramarine text-white',
+  'bg-limone text-night',
+  'bg-fog text-night',
+];
 ---
 
 <Layout>
   <!-- ============ Hero ============ -->
   <section class="relative overflow-hidden bg-ultramarine text-white">
-    <div class="pointer-events-none absolute -right-24 -top-32 h-[28rem] w-[28rem] rounded-full bg-ultramarine-700 sm:h-[36rem] sm:w-[36rem]" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute bottom-12 right-10 hidden h-14 w-44 rounded-pill bg-limone lg:block" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute bottom-40 right-56 hidden h-24 w-24 rounded-full bg-mandarin lg:block" aria-hidden="true"></div>
-    <div class="shell relative py-20 sm:py-28 lg:py-32">
-      <div class="max-w-3xl">
-        <p class="eyebrow !text-limone rise">
-          <span class="inline-block h-0.5 w-8 bg-limone" aria-hidden="true"></span>
-          Italienisch · Deutsch · DACH
-        </p>
+    <div class="pointer-events-none absolute -right-24 -top-32 h-[28rem] w-[28rem] rounded-full bg-ultramarine-700 sm:h-[38rem] sm:w-[38rem]" aria-hidden="true"></div>
+    <div class="shell relative py-16 sm:py-24 lg:py-28">
+      <div class="flex flex-wrap items-center gap-x-16 gap-y-14">
+        <div class="min-w-0 flex-[1_1_30rem]">
+          <p class="eyebrow !text-limone rise">
+            <span class="inline-block h-0.5 w-8 bg-limone" aria-hidden="true"></span>
+            Italienisch · Deutsch · DACH
+          </p>
 
-        <h1 class="display-1 mt-6 !text-white text-balance rise rise-delay-1">
-          Der italienische<br class="hidden sm:block" />
-          Familienratgeber für <span class="whitespace-nowrap text-limone">DACH &amp; EU</span>
-        </h1>
+          <h1 class="display-1 mt-6 !text-white text-balance rise rise-delay-1">
+            Der italienische Familienratgeber für <span class="whitespace-nowrap text-limone">DACH &amp; EU</span>
+          </h1>
 
-        <p class="lede measure mt-7 !text-ultramarine-100 text-pretty rise rise-delay-2">
-          Namen, Checklisten und finanzielle Hilfen für die ersten Jahre mit einem Kind —
-          verständlich erklärt, von Menschen geprüft, ohne Werbung und ohne Fachchinesisch.
-        </p>
+          <p class="lede measure mt-7 !text-ultramarine-100 text-pretty rise rise-delay-2">
+            Namen, Checklisten und finanzielle Hilfen für die ersten Jahre mit einem Kind —
+            verständlich erklärt, von Menschen geprüft, ohne Werbung und ohne Fachchinesisch.
+          </p>
 
-        <div class="mt-9 flex flex-col gap-3 sm:flex-row rise rise-delay-3">
-          <a href="/fragen/" class="btn bg-white text-night hover:bg-limone">Fragen durchsuchen</a>
-          <a href="/namen/" class="btn border-2 border-white text-white hover:bg-white/10">Namen entdecken</a>
+          <form action="/fragen/" method="get" role="search" class="mt-9 flex max-w-xl items-center gap-2 rounded-pill bg-white p-1.5 pl-5 text-night shadow-lift focus-within:ring-[3px] focus-within:ring-limone rise rise-delay-3">
+            <svg class="h-5 w-5 shrink-0 text-night-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a7 7 0 1 0 14 0a7 7 0 1 0 -14 0 M16.5 16.5L21 21"></path></svg>
+            <label for="hero-q" class="sr-only">Frage suchen</label>
+            <input id="hero-q" name="q" type="search" autocomplete="off" placeholder="z. B. Hochstuhl, Wickeln, Elterngeld" class="min-h-tap-s min-w-0 flex-1 bg-transparent text-base text-night outline-none placeholder:text-night-500" />
+            <button type="submit" class="btn-primary !min-h-tap-s !rounded-pill !px-6">Suchen</button>
+          </form>
+
+          <ul class="mt-6 flex flex-wrap gap-2.5 rise rise-delay-3" aria-label="Direkt zu">
+            <li><a href="/namen/" class="inline-flex min-h-tap-s items-center rounded-pill border-2 border-white/60 px-5 text-sm font-bold text-white transition-colors duration-tap hover:border-limone hover:text-limone">Namen</a></li>
+            <li><a href="/checklisten/" class="inline-flex min-h-tap-s items-center rounded-pill border-2 border-white/60 px-5 text-sm font-bold text-white transition-colors duration-tap hover:border-limone hover:text-limone">Checklisten</a></li>
+            <li><a href="/finanz/" class="inline-flex min-h-tap-s items-center rounded-pill border-2 border-white/60 px-5 text-sm font-bold text-white transition-colors duration-tap hover:border-limone hover:text-limone">Finanzielle Hilfen</a></li>
+            <li><a href="/ratgeber/" class="inline-flex min-h-tap-s items-center rounded-pill border-2 border-white/60 px-5 text-sm font-bold text-white transition-colors duration-tap hover:border-limone hover:text-limone">Ratgeber</a></li>
+          </ul>
+
+          <dl class="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/25 pt-8">
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">{gesamtFragen}</dt>
+              <dd class="text-sm text-ultramarine-100">beantwortete Fragen</dd>
+            </div>
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">{hubs.length}</dt>
+              <dd class="text-sm text-ultramarine-100">Themenbereiche</dd>
+            </div>
+            <div>
+              <dt class="font-display text-2xl font-extrabold text-white">0</dt>
+              <dd class="text-sm text-ultramarine-100">Werbeanzeigen</dd>
+            </div>
+          </dl>
         </div>
 
-        <dl class="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/25 pt-8">
-          <div>
-            <dt class="font-display text-2xl font-semibold text-white">{gesamtFragen}</dt>
-            <dd class="text-sm text-ultramarine-100">beantwortete Fragen</dd>
-          </div>
-          <div>
-            <dt class="font-display text-2xl font-semibold text-white">{hubs.length}</dt>
-            <dd class="text-sm text-ultramarine-100">Themenbereiche</dd>
-          </div>
-          <div>
-            <dt class="font-display text-2xl font-semibold text-white">0</dt>
-            <dd class="text-sm text-ultramarine-100">Werbeanzeigen</dd>
-          </div>
-        </dl>
+        {
+          (latestFrage || featureCheckliste) && (
+            <div class="relative mx-auto flex w-full max-w-sm flex-[1_1_18rem] flex-col gap-5 sm:max-w-md lg:mx-0" aria-label="Aktuell">
+              <div class="pointer-events-none absolute -right-4 -top-6 hidden h-14 w-40 rounded-pill bg-limone lg:block" aria-hidden="true"></div>
+              <div class="pointer-events-none absolute -bottom-6 left-2 hidden h-20 w-20 rounded-full bg-mandarin lg:block" aria-hidden="true"></div>
+              {latestFrage && (
+                <a href={`/${latestFrage.data.hub}/${latestFrage.data.slug}/`} class="relative block rounded-ds-lg bg-white p-6 text-night shadow-lift transition-transform duration-lift ease-reveal hover:-translate-y-1 lg:-rotate-2">
+                  <span class="chip-blush">{hubLabel(latestFrage.data.hub)}</span>
+                  <span class="mt-4 block font-display text-xl font-bold leading-snug tracking-tight text-pretty">{latestFrage.data.frage}</span>
+                  <span class="mt-4 block text-sm font-bold text-ultramarine-700">Antwort lesen →</span>
+                </a>
+              )}
+              {featureCheckliste && (
+                <a href={`/checklisten/${featureCheckliste.slug}/`} class="relative block rounded-ds-lg bg-night p-6 text-white shadow-lift transition-transform duration-lift ease-reveal hover:-translate-y-1 lg:ml-10 lg:rotate-2">
+                  <span class="text-xs font-bold uppercase tracking-[0.08em] text-limone">Checkliste</span>
+                  <span class="mt-3 block font-display text-xl font-bold leading-snug tracking-tight text-pretty">{featureCheckliste.data.title}</span>
+                  <span class="mt-4 block text-sm font-bold text-limone">Zum Abhaken →</span>
+                </a>
+              )}
+            </div>
+          )
+        }
       </div>
     </div>
   </section>
 
   <!-- ============ Trust strip ============ -->
-  <section class="border-y border-fog-100 bg-white">
-    <div class="shell py-6">
-      <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-night-500">
-        <li class="flex items-center gap-2">
-          <span class="h-1.5 w-1.5 rounded-full bg-ultramarine" aria-hidden="true"></span>
-          Von Menschen geprüft
-        </li>
-        <li class="flex items-center gap-2">
-          <span class="h-1.5 w-1.5 rounded-full bg-ultramarine-700" aria-hidden="true"></span>
-          Quellen offengelegt
-        </li>
-        <li class="flex items-center gap-2">
-          <span class="h-1.5 w-1.5 rounded-full bg-fog-300" aria-hidden="true"></span>
-          Mit Stand-Datum
-        </li>
-        <li class="flex items-center gap-2">
-          <span class="h-1.5 w-1.5 rounded-full bg-night" aria-hidden="true"></span>
-          EU AI Act Art. 50
-        </li>
+  <section class="border-b border-fog-100 bg-white">
+    <div class="shell py-7">
+      <ul class="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          [
+            { t: 'Von Menschen geprüft', d: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z M8.5 12l2.5 2.5 5-5' },
+            { t: 'Quellen offengelegt', d: 'M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0 M15.5 8.5l-2 5-5 2 2-5z' },
+            { t: 'Mit Stand-Datum', d: 'M3 12V4h8l10 10-8 8L3 12z M7 8.2a1 1 0 1 0 2 0a1 1 0 1 0 -2 0' },
+            { t: 'EU AI Act Art. 50', d: 'M5 12.5l4.5 4.5L19 7.5' },
+          ].map((x) => (
+            <li class="flex items-center gap-3 text-base font-semibold text-night">
+              <svg class="h-7 w-7 shrink-0 text-ultramarine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={x.d}></path></svg>
+              {x.t}
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>
 
-  <!-- ============ Themenbereiche (editorial list, not boxes) ============ -->
+  <!-- ============ Themenbereiche (color-block tiles) ============ -->
   <section class="shell py-20 sm:py-24">
-    <div class="grid gap-12 lg:grid-cols-12 lg:gap-16">
-      <div class="lg:col-span-4">
-        <h2 class="display-2 text-balance">Themen&shy;bereiche</h2>
-        <p class="lede mt-5 text-pretty">
-          Keine Definitionssammlung, sondern Antworten auf die Fragen, die Eltern tatsächlich
-          stellen — gruppiert nach dem, was Sie gerade beschäftigt.
-        </p>
-        <div class="rule-gradient mt-8 w-32" aria-hidden="true"></div>
-      </div>
-
-      <div class="lg:col-span-8">
-        <ul class="divide-y divide-fog-100 border-y border-fog-100">
-          {
-            hubs.map((h) => (
-              <li>
-                <a
-                  href={`/${h.slug}/`}
-                  class="group flex flex-col gap-2 py-6 transition-colors duration-300 sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
-                >
-                  <span class="flex-1">
-                    <span class="font-display text-xl font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700 sm:text-2xl">
-                      {h.label}
-                    </span>
-                    <span class="mt-2 block max-w-xl text-pretty text-sm leading-relaxed text-night-500">
-                      {h.answer.slice(0, 120)}…
-                    </span>
-                  </span>
-                  <span class="flex shrink-0 items-center gap-3 text-sm text-night-500">
-                    <span class="chip-mist">{h.count} Fragen</span>
-                    <span
-                      class="text-ultramarine transition-transform duration-300 ease-smooth group-hover:translate-x-1"
-                      aria-hidden="true"
-                    >
-                      →
-                    </span>
-                  </span>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+    <div class="flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
+      <h2 class="display-2 text-balance">Wonach suchst du?</h2>
+      <a href="/fragen/" class="inline-flex min-h-tap-s items-center text-base font-bold text-ultramarine-700 hover:text-ultramarine">Alle Themen →</a>
     </div>
+    <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        hubs.map((h, i) => (
+          <li>
+            <a
+              href={`/${h.slug}/`}
+              class:list={[
+                'group flex h-full min-h-[12rem] flex-col justify-between gap-8 rounded-ds-lg p-6 transition-transform duration-lift ease-reveal hover:-translate-y-1',
+                tileStyles[i % tileStyles.length],
+              ]}
+            >
+              <span class="font-display text-2xl font-bold leading-tight tracking-tight text-pretty">{h.label}</span>
+              <span class="flex items-center justify-between text-sm font-bold">
+                <span>{h.count} {h.count === 1 ? 'Frage' : 'Fragen'}</span>
+                <span class="text-xl transition-transform duration-lift ease-reveal group-hover:translate-x-1" aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
   <!-- ============ Zuletzt beantwortet ============ -->
@@ -195,29 +217,40 @@ const gesamtFragen = fragen.length;
     )
   }
 
-  <!-- ============ Weitere Bereiche ============ -->
+  <!-- ============ Selbst erledigen ============ -->
   <section class="shell py-20 sm:py-24">
-    <h2 class="display-2">Weitere Bereiche</h2>
-    <p class="lede measure mt-4 text-pretty">
-      Neben den Fragen gibt es Werkzeuge, die Sie im Alltag brauchen.
-    </p>
-
-    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {
-        [
-          { title: 'Baby-Namen', href: '/namen/', blurb: 'Italienische Namen mit Bedeutung und Herkunft.' },
-          { title: 'Checklisten', href: '/checklisten/', blurb: 'Kliniktasche und Reise — zum Abhaken.' },
-          { title: 'Finanzielle Hilfen', href: '/finanz/', blurb: 'Elterngeld und Kindergeld mit Fristen.' },
-          { title: 'Ratgeber', href: '/ratgeber/', blurb: 'Schlaf und Entwicklung mit Quellen.' },
-        ].map((p) => (
-          <a href={p.href} class="card-link group">
-            <h3 class="font-display text-lg font-semibold text-night transition-colors duration-300 group-hover:text-ultramarine-700">
-              {p.title}
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-night-500">{p.blurb}</p>
-          </a>
-        ))
-      }
+    <div class="rounded-[1.75rem] bg-night p-8 text-white sm:p-12">
+      <div class="flex flex-wrap gap-x-14 gap-y-10">
+        <div class="flex-[1_1_20rem]">
+          <p class="eyebrow !text-limone">
+            <span class="inline-block h-0.5 w-8 bg-limone" aria-hidden="true"></span>
+            Selbst erledigen
+          </p>
+          <h2 class="display-2 mt-4 !text-white text-balance">Weniger Papierkram, mehr Zeit fürs Baby</h2>
+          <p class="mt-5 text-lg leading-relaxed text-fog-300 text-pretty">
+            Checklisten, Namen und Hilfen zum direkten Nutzen. Kostenlos und ohne Anmeldung.
+          </p>
+        </div>
+        <ul class="grid flex-[2_1_26rem] gap-4 sm:grid-cols-2">
+          {
+            [
+              { kicker: 'Checklisten', title: 'Kliniktasche und Reise', blurb: 'Zum Abhaken statt zum Nachschlagen.', href: '/checklisten/' },
+              { kicker: 'Finanzen', title: 'Elterngeld und Kindergeld', blurb: 'Beträge, Fristen und Unterlagen.', href: '/finanz/' },
+              { kicker: 'Baby-Namen', title: 'Italienische Namen', blurb: 'Mit Bedeutung und Herkunft.', href: '/namen/' },
+              { kicker: 'Ratgeber', title: 'Schlaf und Entwicklung', blurb: 'Mit Quellen und Stand-Datum.', href: '/ratgeber/' },
+            ].map((p) => (
+              <li>
+                <a href={p.href} class="group flex h-full flex-col rounded-ds-md bg-white p-5 text-night transition-transform duration-lift ease-reveal hover:-translate-y-1">
+                  <span class="text-xs font-bold uppercase tracking-[0.08em] text-ultramarine">{p.kicker}</span>
+                  <span class="mt-2 font-display text-xl font-bold leading-snug tracking-tight">{p.title}</span>
+                  <span class="mt-1 flex-1 text-sm leading-relaxed text-night-500">{p.blurb}</span>
+                  <span class="mt-4 text-sm font-bold text-ultramarine-700">Öffnen →</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
 
     {
