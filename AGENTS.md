@@ -209,16 +209,17 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 
 ## 7. Current status (October 2026)
 
-- English live: home, 18 question pages across 6 hubs, 2 names, 2 checklists, 1 sleep guide,
+- English live: home, 24 question pages across 7 hubs, 2 names, 2 checklists, 1 sleep guide,
   About, Legal notice, Privacy, Sources.
 - German live under `/de/`: 16 question pages, names, checklists, finance (Elterngeld, Kindergeld),
   sleep guide, legal pages.
 - German pages held by the gate (`ymyl: true`, no reviewer): 19, including
   `kindersitz-vorne-gewicht` and `schlafsack-oder-decke-winter`, whose German text contains
   **unsafe advice** and must be rewritten (use the English versions as the reference) before release.
-- **38 English drafts** (`draft: true`) written by the per-category teams, listed with their
-  briefs, buying-guide ideas, roadmaps and hub UI ideas in `docs/category-plans.md`. Research with
-  source URLs is in `docs/research/`. They need an editorial pass before release (see that file).
+- 38 English pages from the per-category teams (`docs/category-plans.md`, research in `docs/research/`)
+  went through an Opus editorial pass and an adversarial fact-check (2026-10-10). 6 are live; the other
+  **32 are YMYL and wait for a named reviewer** (no longer drafts: adding `reviewedBy` releases them).
+  This includes every page in Bath & care and Safety, so those hubs stay 404 until one is reviewed.
 - Buying-guide template is live at `/buying-guides/` (empty state); the stroller guide is a held draft.
 - SEO/GEO foundation: robots.txt allows AI search crawlers; Organization + WebSite (SearchAction)
   JSON-LD on every page; Article/Breadcrumb/ItemList/QAPage data on views; `/llms.txt`.
@@ -237,9 +238,8 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
       (car seats, sleep sack).
 - [ ] **German unsafe pages:** rewrite `kindersitz-vorne-gewicht` and `schlafsack-oder-decke-winter`
       from the corrected English versions, then send for review.
-- [ ] **Editorial pass on the 38 drafts** in `docs/category-plans.md`: rewrite the hedged lines,
-      verify facts, fix links, then release non-YMYL pages and send YMYL pages to Mathilda.
-      Bath & care, Breastfeeding and Safety hubs stay 404 until one of their pages is released.
+- [ ] **Reviewer queue: 32 English YMYL pages** (list: `npm run audit`, entries tagged HELD). A real
+      reviewer reads each page, then sets `reviewedBy`. Start with Safety and Bath & care (empty hubs).
 - [ ] **Source check:** an editor should confirm the sources on newborn sizes, sleeper vs bodysuit,
       diapers per day, books for beginning readers and crib duration.
 

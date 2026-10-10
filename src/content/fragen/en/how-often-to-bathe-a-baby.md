@@ -1,6 +1,6 @@
 ---
 title: "How often should you bathe a baby?"
-description: "Newborns do not need daily baths. Learn how often to bathe a baby in the first year, how warm the water should be, and when a quick wash is enough."
+description: "Babies don't need a daily bath. How many baths a week are enough in the first year, how long each bath should last and how warm to make the water."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,36 +11,44 @@ frageTyp: 'wie'
 intention: 'informational'
 slug: 'how-often-to-bathe-a-baby'
 translationOf: 'wie-oft-baden-baby'
-antwort: "Babies in the first year may need only about one to three baths a week, not a daily bath. Keep each bath to about 5 to 10 minutes, keep the water body-warm at 36 to 37 degrees Celsius, and clean the diaper area well at each change."
+antwort: "In the first year, one to three baths a week is enough; babies do not need a daily bath, and bathing too often can dry out their skin. Keep each bath to about 5 to 10 minutes in body-warm water of 97 to 99°F (36 to 37°C), and clean the diaper area well at every change in between."
 quellen: ["aap", "kindergesundheit-info", "cpsc"]
 ymyl: true
-draft: true
 reviewedBy: ''
 ---
-This page covers the first year. The guidance we found suggests a few short baths a week, with careful diaper-area cleaning in between.
+A baby who is cleaned well at every diaper change stays clean with just a few short baths a week. Fewer, shorter baths are also kinder to delicate skin.
 
-## How often should a newborn be bathed?
+## Does a baby need a bath every day?
 
-Newborns do not need daily baths. The American Academy of Pediatrics (AAP) says about three baths a week during the first year may be enough, and kindergesundheit-info recommends one or two a week, each lasting about 5 to 10 minutes. If a baby is bathed more often, kindergesundheit-info says each bath should be limited to about 5 minutes. Frequent bathing can dry out the skin.
+No. The American Academy of Pediatrics (AAP) says about three baths a week during the first year may be enough, and German child health guidance suggests one or two. Frequent bathing, especially with soap, can dry out a baby's skin. If you bathe your baby more often, keep each bath short and use soap sparingly.
 
-## What water temperature is safe for a baby bath?
+## How long should a baby bath last?
 
-The water should be body-warm, at 36 to 37 degrees Celsius, and on the cooler side rather than too hot. Check it with a bath thermometer, and also test it with your forearm. If you are choosing a tub, see [baby bathtub or bath seat: what to check before buying](/bath-and-care/baby-bathtub-or-bath-seat/).
+About 5 to 10 minutes is enough. If you bathe your baby more often than a few times a week, keep each bath to about 5 minutes. Most of your baby's body stays above the water, so the AAP advises pouring warm water over the body often to keep them warm.
 
-## Is it harmful to wash a baby every day?
+## How warm should the bath water be?
 
-Frequent bathing with soap, or repeated loss of moisture from the skin, can dry the skin out, and that is the main concern in the guidance we reviewed. The guidance does not describe harm beyond dryness, so this page does not claim more. Because newborns do not need daily baths, a daily full bath goes beyond what the AAP describes.
+Body-warm, around 97 to 99°F (36 to 37°C), and better a little cool than too hot. A bath thermometer gives you the number; also test the water with the inside of your wrist or elbow, where it should feel warm, not hot. To prevent scalds, the AAP recommends hot water at the faucet of no more than 120°F, which you can often set on the water heater.
 
-## Can a quick diaper-area wash replace a full bath?
+## How much water goes in the tub?
 
-Thorough cleaning of the diaper area at each diaper change reduces how often a full bath is needed. On the days between baths, keeping the diaper area clean at every change is the main step, and full baths stay at the one-to-three-a-week rhythm described above. For the first weeks, see [how to bathe a newborn before the cord falls off](/bath-and-care/how-to-bathe-a-newborn-before-cord-falls-off/).
+About 2 inches of water is enough for an infant tub, according to the AAP. Still, a baby can drown in 1 or 2 inches of water, so the water level never replaces your hands. Keep your baby within arm's reach for the whole bath, and take the baby with you if you have to leave the room.
 
-### Bath safety checklist
+## What keeps a baby clean between baths?
 
-- [ ] Plan about one to three baths a week in the first year, rather than a daily full bath.
-- [ ] Keep each bath to about 5 to 10 minutes; if baths are more frequent, keep each one to about 5 minutes.
-- [ ] Check the water: body-warm, 36 to 37 degrees Celsius, and cooler rather than hot. Test it with a bath thermometer and your forearm.
-- [ ] Never leave your baby alone in the bath, even for a moment. Stay within arm's reach at all times.
-- [ ] Clean the diaper area thoroughly at each change to reduce how often full baths are needed.
+Careful cleaning of the diaper area at every change does most of the work, which is why full baths can stay at a few a week. For how often changes come up at each age, see [how often to change a diaper](/diapering/how-often-to-change-a-diaper/).
+
+## How often should you wash a baby's hair?
+
+Two or three times a week is enough. Use a mild shampoo or body wash, and use soap sparingly on the body, rinsing it off promptly.
+
+### Bath-time checklist
+
+- [ ] Plan one to three baths a week in the first year, not a daily bath.
+- [ ] Gather towel, washcloth, clean diaper and clothes before you start.
+- [ ] Fill about 2 inches of water and check it: 97 to 99°F (36 to 37°C), warm but not hot on your wrist or elbow.
+- [ ] Keep the bath to about 5 to 10 minutes.
+- [ ] Keep one hand on your baby and never leave them alone in the bath, not even for a moment.
 - [ ] Wash hair two or three times a week with a mild shampoo or body wash.
-- [ ] Use soap sparingly, since soap and frequent bathing can dry the skin.
+- [ ] Use soap sparingly and rinse it off promptly.
+- [ ] Between baths, clean the diaper area thoroughly at every change.

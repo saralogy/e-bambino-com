@@ -1,6 +1,6 @@
 ---
 title: "Manual or electric breast pump: which one to choose?"
-description: "Compare manual and electric breast pumps on speed, power and back-up plans, per FDA, CDC and AAP guidance. Learn why single-user pumps must never be rented."
+description: "Electric pumps are faster; manual pumps are portable and need no power. How to choose, how often to pump, how to clean the parts and when renting is safe."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -10,29 +10,31 @@ frage: "Manual or electric breast pump: which one do you need?"
 frageTyp: 'was'
 intention: 'comparative'
 slug: 'manual-or-electric-breast-pump'
-antwort: "Electric breast pumps are usually faster, while manual breast pumps are easier to carry and need no outlet. A double electric pump can reduce pumping time, since it pumps both breasts at once. Rent a pump only if it is designed for multiple users, since single-user pumps should never be rented or shared."
+antwort: "Choose an electric pump if you will pump often, for example when returning to work, because electric pumps are usually faster and a double pump expresses both breasts at once. A manual pump suits occasional pumping, is easy to carry and needs no outlet, which also makes it a good back-up."
 quellen: ["fda", "cdc", "aap"]
 ymyl: true
-draft: true
 reviewedBy: ''
 ---
-Choosing a breast pump depends on how often you will pump and whether you need to pump away from home. This page compares the main types using FDA guidance, with a section on rentals, which come with specific safety rules.
+The right pump depends on how often you will pump and where. If you will be away from your baby every day, speed matters most; if you only need the odd bottle, a simple hand pump is often enough.
 
-## How do manual and electric breast pumps work?
-A manual pump is operated by hand and needs no outlet, which makes it easier to carry. Electric pumps run on electricity or batteries and are usually faster. The FDA warns that powered pumps depend on power, so have a back-up method, such as a manual pump, for emergencies.
+## What is the difference between a manual and an electric pump?
+A manual pump is worked by hand, needs no outlet or batteries and is easy to carry. An electric pump runs on mains power or batteries and is usually faster. A double electric pump expresses both breasts at the same time, which cuts pumping time further.
 
-| Type | Power | Speed | Notes |
+| | Manual | Single electric | Double electric |
 |---|---|---|---|
-| Manual | Hand-operated; no outlet needed | Usually slower than electric | Easier to carry; a back-up if power fails |
-| Single electric | Electricity or batteries | Usually faster than manual | Pumps one breast at a time |
-| Double electric | Electricity or batteries | Can reduce pumping time | Pumps both breasts at once |
-| Rental (multiple-user pump only) | Depends on the pump | Not rated on this page | New accessories kit (breast shields and tubing) for each renter |
+| Power | By hand; no outlet needed | Mains or batteries | Mains or batteries |
+| Speed | Usually slowest | Usually faster than manual | Fastest; both breasts at once |
+| Portability | Easiest to carry | Needs power or charged batteries | Needs power or charged batteries |
+| Good for | Occasional pumping, travel, a back-up | Regular pumping, one side at a time | Daily pumping, for example at work |
 
-## How often should you pump?
-Pump about as often as your baby would normally feed, according to CDC guidance. The CDC also advises an extra session when your baby needs more milk while you are away. The AAP suggests about 15 minutes of pumping for each 4 hours you are apart from your baby. Electric pumps save time when you pump often, while a manual pump is handy when you cannot count on an outlet. For how to store the milk you pump, see [How long does breast milk last in the fridge and freezer?](/breastfeeding/how-long-is-breast-milk-good-for/).
+## Do you need a back-up pump?
+It is a good idea if you rely on an electric pump. Powered pumps depend on electricity or batteries, and the FDA advises having a back-up method, such as a manual pump, so you can keep to your pumping schedule during a power outage. Pack it for trips too; the [family travel checklist](/checklists/family-travel/) is a good place to note it.
 
-## Is a double electric pump worth it?
-A double electric pump can reduce pumping time because it pumps both breasts at once. Whether it is worth the cost depends on your budget and how often you will pump. This page does not compare prices, so check details with the manufacturer before you buy.
+## How often and how long should you pump?
+Pump about as often as your baby would normally feed, and add an extra session if your baby needs more milk while you are apart. As a rough guide, plan on about 15 minutes of pumping for every 4 hours away from your baby. A session usually takes about 10 to 15 minutes per breast; stop when it is no longer comfortable or milk has stopped flowing.
 
-## Can you rent a hospital-grade breast pump safely?
-Only a pump designed as a multiple-user pump can be rented safely. Hospitals, lactation consultants and medical supply stores rent them, and each renter needs a new accessories kit of breast shields and tubing. The FDA notes that "hospital-grade" is not a recognized term and has no consistent definition, so ask what the pump is designed for. Single-user pumps should never be rented or shared.
+## How do you clean breast pump parts?
+Clean every part that touches milk after each use. Rinse the parts under running water, then wash them in a basin used only for infant feeding items with hot water and soap, or in the dishwasher if the manufacturer says they are dishwasher-safe, and let them air-dry thoroughly on a clean, unused towel or paper towel. Do not rub or pat them dry with a dish towel, which can transfer germs. For babies under 2 months, born prematurely or with a weakened immune system, also sanitize the parts at least once a day, for example by boiling or steaming.
+
+## Can you rent or share a breast pump?
+Only if the pump is designed for multiple users. Most pumps are single-user devices that cannot be fully cleaned and disinfected between users, so a used or borrowed single-user pump can pass on infections to you and your baby. Multiple-user pumps can be rented from hospitals, lactation consultants and medical supply stores, and every renter needs a new accessory kit with breast shields and tubing. "Hospital-grade" is not an official term, so ask whether a pump is designed for multiple users.

@@ -1,6 +1,6 @@
 ---
-title: "What diaper size does my baby need, by weight?"
-description: "No official chart sets diaper sizes by weight, so the weight range printed on your pack is the reference. Check fit at the tabs and hips after every change."
+title: "What diaper size does my baby need?"
+description: "Diaper sizes go by weight, and every brand sets its own ranges. How to pick the right size from the pack, check the fit and know when to move up a size."
 author: 'e-bambino editorial team'
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -10,35 +10,35 @@ frage: "What diaper size does my baby need, by weight?"
 frageTyp: 'was'
 intention: 'transactional'
 slug: 'diaper-size-by-weight'
-antwort: "The right diaper size is the one whose printed weight range includes your baby's weight, because no official chart sets diaper sizes by weight. Each brand sets its own ranges, so check the pack you are buying. Confirm fit after each change: the tabs should be even in front, with no gaps at the hips."
+antwort: "Choose the diaper size whose printed weight range includes your baby's current weight. Each brand sets its own ranges, so the same size number can fit differently from one brand to the next. After every change, check the fit: tabs fastened evenly in front and no gaps around the hips."
 quellen: ["aap", "cdc"]
 ymyl: false
-draft: true
 reviewedBy: ''
 ---
-Choosing a diaper size is simpler when you know which number to trust. Each brand sets its own sizes, so the weight range printed on the diaper pack you are buying matters more than any general chart.
+Diaper sizes are sold by weight, not age. Your baby's current weight and a quick fit check after each change are what to go by.
 
-## Is there an official diaper size chart by weight?
+## Is there a standard diaper size chart?
 
-No. We found no official diaper size chart by weight from the AAP, CDC, WHO, or NIH, so each manufacturer sets its own ranges. Use the weight range printed on your pack. The table shows what to check.
+No. Each manufacturer sets its own weight range for each size, so "size 1" or "size 3" means something slightly different from brand to brand. The weight range printed on the pack you are buying is the one to go by.
 
-| What to check | Where to look |
+## How do I find out my baby's weight?
+
+Your pediatrician weighs your baby at every checkup and tracks the result on a growth chart, so the latest number is in your baby's records. Between visits, you can use a baby scale: zero it with a clean diaper on it first, then weigh your baby in a clean diaper. Compare that number with the range on the pack.
+
+## How should a diaper fit?
+
+Check these points after a change:
+
+| Check | What a good fit looks like |
 |---|---|
-| Diaper size | The weight range printed on the pack you are buying |
-| Brand | Each brand sets its own ranges, so sizes can differ |
-| Fit after changing | Tabs evenly secured in front, with no gaps around the hips |
-| Baby's weight over time | CDC growth charts, which track weight and length percentiles |
-
-To follow your baby's weight over time, the CDC growth charts are the official reference for whether weight gain is on track.
-
-## Do diaper sizes differ between brands?
-
-Yes. Each brand sets its own ranges, so the same size name can cover different weights from one brand to another. Read the weight range on the pack you are buying rather than assuming a size from one brand matches another. When you compare diaper types, see [pull-ups vs. tape diapers](/diapering/pull-ups-vs-tape-diapers/).
-
-## How do I tell if a diaper fits?
-
-Check the fit after every change. The AAP advises that the tabs should be evenly secured in front, with no gaps around the hips. If the tabs do not sit evenly or there are gaps at the hips, the diaper does not pass that check.
+| Weight | Your baby's current weight is inside the range printed on the pack |
+| Tabs | Fastened evenly in front |
+| Hips and legs | No gaps around the hips |
 
 ## When should I move up to the next size?
 
-No official source we checked lists signs for moving up, such as leaks or red marks, so this guide gives no set rule. Compare your baby's weight with the range printed on the pack, and check how the current size fits. If your baby is near the top of the printed range or the fit is off, try the next size.
+Move up when your baby's weight passes the range printed on the pack, or when the current size no longer passes the fit check above. To plan how many diapers to buy in each size, see our guide to [how many diapers a baby uses per day](/diapering/how-many-diapers-per-day/).
+
+## Do diaper sizes differ between brands?
+
+Yes. The same size number can cover different weights from one brand to another. When you switch brands, read the weight range on the new pack rather than buying the same size number out of habit.

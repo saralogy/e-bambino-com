@@ -1,6 +1,6 @@
 ---
-title: "When should a baby stop using a bottle? Cup timing"
-description: "When to stop the bottle and move to a cup: AAP timing of 12 to 18 months, German guidance, why a bedtime bottle affects teeth, and a step-by-step checklist."
+title: "When should a baby stop using a bottle?"
+description: "Start offering a cup around 6 months and finish the switch from bottle to cup between 12 and 18 months. Why the bedtime bottle goes first and how to switch."
 author: "e-bambino editorial team"
 date: 2026-10-10
 updatedDate: 2026-10-10
@@ -11,27 +11,36 @@ frageTyp: "kann"
 intention: "informational"
 slug: "when-to-stop-bottle-feeding"
 translationOf: "flasche-trinken-beenden"
-antwort: "The AAP recommends completing the bottle-to-cup transition between 12 and 18 months. German guidance gives no fixed age, but advises a cup from the first year where possible, and a normal cup from the second year. A bottle at sleep raises tooth decay risk, even with plain water, so change the bedtime bottle first."
-quellen: ["kindergesundheit-info", "verbraucherzentrale", "aap"]
+antwort: "Most babies should finish moving from bottle to cup between 12 and 18 months, the window the AAP recommends. Start around 6 months by offering a cup at meals, then drop bottle feeds one by one. By about age 2, your child should drink from an open cup. Never let your child fall asleep with a bottle."
+quellen: ["aap", "cdc", "kindergesundheit-info", "verbraucherzentrale"]
 ymyl: true
-draft: true
 reviewedBy: ""
 ---
-Moving from bottle to cup is a gradual change, not a single day. This page sets out what the AAP and German guidance say about timing, cups and bedtime habits.
+Moving from bottle to cup is a gradual change over several months, not a single day. Starting early with a cup makes it easier, because the longer a bottle stays part of the routine, the harder the habit is to break.
 
 ## At what age should a baby stop using a bottle?
-The AAP recommends starting the bottle-to-cup transition around 6 months by offering a first cup and reducing bottle feeds slowly, and completing the transition between 12 and 18 months. German guidance gives no fixed age. It says a child should drink from a cup or glass where possible from the first year, and from the second year should learn to drink from a normal cup, with nipple bottles, spouted cups and valve bottles avoided at the latest from then on. The AAP says it is healthiest for a child to drink from an open cup by about age 2. Sippy cups are a temporary step, and children with chronic illness, physical differences or motor delays may need a schedule set with the pediatrician. For how much milk fits the first year, see [how much should a baby drink in the first year](/feeding/how-much-should-baby-drink-first-year/).
 
-## What does a bottle at bedtime do to teeth?
-A bottle at bedtime raises the risk of tooth decay, even when it holds plain water, according to the Verbraucherzentrale. The Verbraucherzentrale says constant sucking and a bottle at sleep raise that risk, and that bottle use makes it harder for a child to learn to drink from a cup. The AAP's symptom guidance says falling asleep with a bottle of milk or juice can cause severe tooth decay.
+Aim to finish the switch between 12 and 18 months. The AAP recommends offering a first cup around 6 months, cutting bottle feeds slowly and completing the change within that window. By about age 2, it is healthiest for a child to drink from an open cup. Children with chronic illness, physical differences or motor delays may need a different plan, so set the timing with your pediatrician.
+
+## Why does the bedtime bottle matter for teeth?
+
+Falling asleep with a bottle of milk or juice can cause severe tooth decay. Constant sucking from a bottle at sleep also raises the risk with plain water, and a propped bottle adds a risk of choking and ear infections. That is why the bedtime bottle is the first one to drop. For a calm routine without it, see our [guide to baby sleep](/guides/baby-sleep/).
 
 ## Do I need a special training cup?
-No. German guidance says special learning cups or spoons are not necessary, and a normal cup or glass is enough for learning to drink. The Verbraucherzentrale advises offering extra drinks from a cup, mug or glass from the start.
 
-## How do I plan the switch over several weeks?
-The sources we checked do not set out a step-by-step plan or a fixed timeline, so the checklist below is a practical approach, not sourced guidance. Change one habit at a time, starting with the bottle at sleep, and check how your child is doing before the next step.
+No, a regular small cup works fine for learning to drink, and special training cups are not necessary. Sippy cups and spouted or valve cups are only a temporary step, and by the second year it is best to leave them behind along with the bottle. Expect some spills at first: drinking from an open cup is a skill your child builds with practice.
 
-- [ ] Take the bottle out of bed: no bottle at sleep, not even with water.
-- [ ] Offer drinks from a cup, mug or glass at meals.
-- [ ] Choose a normal cup rather than a spouted cup or valve bottle.
-- [ ] Change one habit at a time, and watch how it goes before the next step.
+## What should my child drink from the cup?
+
+Before 12 months, offer breast milk or formula as the main drink, plus small sips of water from a cup once solids start. After the first birthday, whole cow's milk can be served in a cup; the AAP advises no more than about 16 to 24 oz (2 to 3 cups) a day until age 2. Give no juice before 12 months, and serve milk at meals and snacks rather than for sipping all day, since constant sipping and sucking is hard on teeth.
+
+## How do I make the switch?
+
+Change one habit at a time and give your child a little while to adjust before the next step. Keeping each change small makes it easier for your child to go along with it.
+
+- [ ] From about 6 months, offer water in a small cup at meals.
+- [ ] Take the bottle out of bed first: no bottle at sleep, not even with water.
+- [ ] Drop one daytime bottle feed at a time and offer the cup instead.
+- [ ] After 12 months, serve milk in a cup at meals and snacks.
+- [ ] Move from sippy or spouted cups to an open cup by about age 2.
+- [ ] Never prop a bottle or leave it in your child's mouth.
