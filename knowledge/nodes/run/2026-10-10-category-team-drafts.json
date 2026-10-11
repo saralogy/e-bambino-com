@@ -7,7 +7,7 @@
   "inputs": [
     "docs/category-plans.md"
   ],
-  "model": "unrecorded (project lead reports Haiku drafts; commit trailers in #10 name several models)",
+  "model": "claude-haiku (workflow agents ran with model haiku; commit trailers name the session model)",
   "notes": "Drafts hedged heavily (\"no source we checked ...\") and needed a full editorial pass.",
   "outputs": [
     "docs/research/*.json",

@@ -37,7 +37,7 @@ write({
 });
 write({
   id: RUN_TEAMS, type: 'run', agent: 'per-category teams (PM, researcher, writer, SEO/GEO, UX/UI, publisher)',
-  model: 'unrecorded (project lead reports Haiku drafts; commit trailers in #10 name several models)',
+  model: 'claude-haiku (workflow agents ran with model haiku; commit trailers name the session model)',
   started: D, finished: D, status: 'succeeded',
   inputs: ['docs/category-plans.md'],
   outputs: ['docs/research/*.json', '38 English draft question pages (draft: true)'],
@@ -45,7 +45,7 @@ write({
   notes: 'Drafts hedged heavily ("no source we checked ...") and needed a full editorial pass.',
 });
 write({
-  id: RUN_EDIT, type: 'run', agent: 'editor + adversarial fact-checker, one pair per category', model: 'Opus (exact id unrecorded)',
+  id: RUN_EDIT, type: 'run', agent: 'editor + adversarial fact-checker, one pair per category', model: 'claude-opus-5-5 (session model, inherited by workflow agents)',
   started: D, finished: D, status: 'succeeded',
   inputs: ['38 English drafts', 'docs/research/*.json'],
   outputs: ['6 English pages released', '32 YMYL pages held for a named reviewer'],

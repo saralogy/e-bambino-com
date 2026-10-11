@@ -8,7 +8,7 @@
     "38 English drafts",
     "docs/research/*.json"
   ],
-  "model": "Opus (exact id unrecorded)",
+  "model": "claude-opus-5-5 (session model, inherited by workflow agents)",
   "outputs": [
     "6 English pages released",
     "32 YMYL pages held for a named reviewer"
