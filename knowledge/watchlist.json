@@ -1,0 +1,1999 @@
+{
+  "about": "Allowlist for scripts/watch/fetch.mjs. Regenerate with node scripts/watch/build-watchlist.mjs; `last` is fetch state (hash, title, last-modified, status only, never page text).",
+  "entries": [
+    {
+      "category": "diapering",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:ab3ad20771bb",
+        "evidence:c2920dc2e570"
+      ],
+      "url": "https://aap.org/en/patient-care/newborn-and-infant-nutrition/newborn-and-infant-nutrition-assessment-tools/anthropometric-measurements"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:eda75b4f2318"
+      ],
+      "url": "https://cacmap.fda.gov/medical-devices/breast-pumps/using-breast-pump"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/inbox/2026-10-10-safety-room-by-room-checklist.md"
+      ],
+      "url": "https://checklist.com/baby-proofing-checklist"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:291d200f259a",
+        "evidence:2d9d6ec7ac54",
+        "evidence:379cf2712641",
+        "evidence:812bf6852902",
+        "evidence:d072b5f6ac7b"
+      ],
+      "url": "https://cpsc.gov/s3fs-public/Final%20Rule%20-%20Safety%20Standard%20for%20Gates%20and%20Enclosures.pdf?lHExt6trsEuD56jiQTi7Ab0TjzdVQ_HH="
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:43039b88fa51"
+      ],
+      "url": "https://healthychildren.org/English/ages-stages/baby/pages/How-Active-is-Your-Baby.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:27a8e9f41b4b"
+      ],
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/operational-guidance/are-ch-38-03-operationalguidance-2018-eng-cpg-complementary-feeding-protocol.pdf"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:bb5a948295fe"
+      ],
+      "url": "https://publications.aap.org/aapnews/article/33/9/36/10271/Safety-pitfalls-Stairs-are-a-leading-cause-of"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:77317970c997"
+      ],
+      "url": "https://publications.aap.org/aapnews/news/13463/Safety-tips-help-protect-children-from-stroller"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1cd1f8a5c98e",
+        "evidence:569dc29f9009"
+      ],
+      "url": "https://publications.aap.org/patiented/article/doi/10.1542/peo_document088/79989/Safe-Sleep-and-Your-Baby-How-Parents-Can-Reduce"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:cdcab02ed1ab",
+        "evidence:fb52873aea01",
+        "evidence:fd3c58c09929"
+      ],
+      "url": "https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:35a55aaf4438",
+        "evidence:6301f2dce2b2",
+        "evidence:a83a24c787b5",
+        "evidence:e4c9e843fc80"
+      ],
+      "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:82a5640f0b50"
+      ],
+      "url": "https://publications.aap.org/pediatrics/article/142/5/e20182460/38530/Child-Passenger-Safety"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:64ab515960a9",
+        "evidence:67c7a8423fe9",
+        "evidence:dd49ac187106"
+      ],
+      "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1a9986372882"
+      ],
+      "url": "https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:awmf"
+      ],
+      "url": "https://register.awmf.org/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:a78a7a897211"
+      ],
+      "url": "https://register.awmf.org/assets/guidelines/006-128l_S2K_Behandlung-thermische-Verletzungen-Kinder-Verbrennung-Verbruehung_2024-08_1.pdf"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1cb932989413"
+      ],
+      "url": "https://register.awmf.org/assets/guidelines/027_D_Ges_fuer_Kinderheilkunde_und_Jugendmedizin/027-075eltern_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2024-11.pdf"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5e84e092afbb",
+        "evidence:9693ddeabe0a"
+      ],
+      "url": "https://register.awmf.org/assets/guidelines/027-075l_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2023-09.pdf"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:403e094c0a06"
+      ],
+      "url": "https://register.awmf.org/assets/guidelines/061-016l_S3_Allergiepraevention_2022-11.pdf"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:578243f9c153",
+        "evidence:5c61df9d0da7"
+      ],
+      "url": "https://register.awmf.org/assets/guidelines/063-002l_S1_Praevention-des-Ploetzlichen-Sauuglingstods_2022-12_01.pdf"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:nichd"
+      ],
+      "url": "https://safetosleep.nichd.nih.gov/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:ea22aad610dc"
+      ],
+      "url": "https://safetosleep.nichd.nih.gov/reduce-risk/safe-sleep-environment/room/room_txt_alternative"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:09a0d7f693b1",
+        "evidence:485e16f3b853"
+      ],
+      "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:unece"
+      ],
+      "url": "https://unece.org/"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:866a0855b75f",
+        "evidence:b471918dd4ce"
+      ],
+      "url": "https://unece.org/fileadmin/DAM/trans/publications/WP29/CHILD_RESTRAINT_SYSTEMS_brochure.pdf"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-diapering-total-cost-calculator.md"
+      ],
+      "url": "https://usefulhq.com/cloth-vs-disposable-diapers/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:9f12c2622744"
+      ],
+      "url": "https://www.aap.org/en/patient-care/breastfeeding/frequently-asked-questions/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/inbox/2026-10-10-nursery-crib-mattress-checklist.md",
+        "evidence:a2825fd05572"
+      ],
+      "url": "https://www.aap.org/en/patient-care/safe-sleep/"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-on-the-go-stroller-buying-guide.md"
+      ],
+      "url": "https://www.babygearlab.com/topics/getting-around/best-stroller"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:bfs"
+      ],
+      "url": "https://www.bfs.admin.ch/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:bmfsfj"
+      ],
+      "url": "https://www.bmfsfj.de/"
+    },
+    {
+      "category": "clothing",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-clothing-size-wardrobe-planner.md"
+      ],
+      "url": "https://www.c-and-a.com/eu/en/shop/baby-clothes-sizes"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:cdc"
+      ],
+      "url": "https://www.cdc.gov/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-breastfeeding-pumping-storage-workflow.md",
+        "evidence:003bb9bcbd84",
+        "evidence:30480686ce70",
+        "evidence:72ef00b20077",
+        "evidence:7ab5602c6618",
+        "evidence:7d20d51b0a05",
+        "evidence:d570db3efbac",
+        "evidence:f0c4822bfcce",
+        "evidence:fc542759fa3c"
+      ],
+      "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:b840a6c0457d"
+      ],
+      "url": "https://www.cdc.gov/child-passenger-safety/prevention/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0a30cec3cd08"
+      ],
+      "url": "https://www.cdc.gov/child-passenger-safety/prevention/index.html"
+    },
+    {
+      "category": "diapering",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:c033a2669e79"
+      ],
+      "url": "https://www.cdc.gov/growthcharts/index.htm"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-breastfeeding-pumping-storage-workflow.md"
+      ],
+      "url": "https://www.cdc.gov/hygiene/about/about-breast-pump-hygiene.html"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:e56c72b54e54"
+      ],
+      "url": "https://www.cdc.gov/hygiene/about/clean-sanitize-store-infant-feeding-items.html"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:887ec60f796f"
+      ],
+      "url": "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0c630cf32ed7"
+      ],
+      "url": "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/special-considerations.html"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:cec160f53dc9"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/bottle-feeding/index.html"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:8d8aeaadf5f8"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/how-much-and-how-often.html"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:36ad8c2fc7f1"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/newborn-basics.html"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:3424aa44d486"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/pumping-breast-milk.html"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:62943f22f594"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/what-to-expect-while-breastfeeding.html"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:dc04c0c21254"
+      ],
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c072bc9736ed"
+      ],
+      "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:191406688f21"
+      ],
+      "url": "https://www.cdc.gov/reproductive-health/features/babies-sleep.html"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-feeding-high-chair-buying-guide.md"
+      ],
+      "url": "https://www.consumerreports.org/babies-kids/high-chairs/buying-guide/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-safety-room-by-room-checklist.md"
+      ],
+      "url": "https://www.consumerreports.org/babyproofing/babyproofing-checklist-baby-safety-guide-a3304634900/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:cpsc"
+      ],
+      "url": "https://www.cpsc.gov/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:4fc032384b7a",
+        "evidence:f46a531b664e"
+      ],
+      "url": "https://www.cpsc.gov/About-CPSC/Commissioner/Marietta-S-Robinson/Blog/THE-ROBINSON-REPORT-26-Bare-is-Best-%E2%80%93-Do-Not-Use-Padded-Crib-Bumpers"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:8b99e339f2f1",
+        "evidence:cc7cc0b001c0"
+      ],
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Small-Parts-for-Toys-and-Childrens-Products"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:405bbfb3797e",
+        "evidence:995b47d94115"
+      ],
+      "url": "https://www.cpsc.gov/CPSC-Approves-New-Federal-Safety-Standard-for-Infant-Bath-Tubs"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:f91878c02956",
+        "evidence:fe31a5183a05"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Carriages-and-Strollers"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-nursery-crib-mattress-checklist.md"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Crib-Mattresses"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:b93553f3b89b"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Gates-and-Enclosures"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:2f315f1bd726",
+        "evidence:52b17d3775e9",
+        "evidence:52c1ad180216",
+        "evidence:e8fa47b72927"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:28c24df9511a"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Lead-in-Paint"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:e6980209d6b6"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Mattresses-Mattress-Pads-Mattress-Sets"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c75c360edec9"
+      ],
+      "url": "https://www.cpsc.gov/FAQ/Phthalates"
+    },
+    {
+      "category": "clothing",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:752ac3b9bd94"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/CPSC-Alerts-Shoppers-to-Dangers-of-Using-Loose-Fitting-Cotton-Garments-as-Sleepwear-for-Kids"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:63ba5c8d82a7"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2006/Federal-Government-Warns-of-Hidden-Hazard-to-Young-Children-Old-Window-Coverings-Pose-Strangulation-Risk"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:d13859e94085",
+        "evidence:ef3618ab4137",
+        "evidence:f7dbb5e53a67"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2010/CPSC-Issues-Final-Mandatory-Rule-on-Infant-Baby-Walkers"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1fdffecbcd4e"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2011/CPSC-Window-Covering-Industry-Announce-Recall-to-Repair-Window-Blinds-New-Investigation-of-Childrens-Deaths-Leads-to-Redesigned-Window-Blinds"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:764e72f8d320"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2014/CPSC-Approves-New-Federal-Safety-Standard-for-Carriages-and-Strollers"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:7379f58fe1ea"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2020/CPSC-Cautions-Consumers-Not-to-Use-Inclined-Infant-Sleep-Products"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:38c309348a54"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2021/CPSC-Approves-Major-New-Federal-Safety-Standard-for-Infant-Sleep-Products"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:d73e0627b5cf"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-to-Consumers-The-Safest-Window-Coverings-When-Young-Children-Are-Present-Are-Cordless"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:751c9e14ee75"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-Urges-Parents-Caregivers-to-Use-Products-that-Are-Safe-for-Sleep-Check-Babys-Sleep-Space-for-Suffocation-Hazards-Most-Nursery-Product-Related-Infant-Deaths-Can-Be-Prevented"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:ab76b0d97f16"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/CPSC-Urges-Parents-and-Caregivers-to-Check-Babys-Sleep-Space-During-Baby-Safety-Month-Shares-Dos-and-Donts-for-Infant-Sleep-Safety"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:05677129c6d6",
+        "evidence:a83dac202b92",
+        "evidence:ae7d65114811",
+        "evidence:b34924c36578"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c95ad6ab5c99"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Whether-At-Home-or-Traveling-for-the-Holidays-CPSC-Reminds-Parents-to-Keep-Babies-Sleep-Space-Safe"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2daa3d57e80c"
+      ],
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-Consumers-to-Immediately-Stop-Using-Infant-Self-Feeding-Pillows-Due-to-Risk-of-Serious-Injury-or-Death-from-Aspiration-and-Suffocation"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:03f2798b75fa",
+        "evidence:37066b75f7ad",
+        "evidence:6bcca1f6c158"
+      ],
+      "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:0c0be526bed2",
+        "evidence:606284a80768"
+      ],
+      "url": "https://www.cpsc.gov/recall-products/strollers"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:bf9929da7d54"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2001/cpsc-evenflo-announce-recall-to-repair-home-decor-swing-wooden-baby-gates"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:75c0e3b1629e"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2009/dorel-juvenile-group-recalls-safety-1st-stair-gates-due-to-fall-hazard"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:5e02649fbf73"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2014/philandteds-Recalls-Infant-Car-Seat-Adaptors-for-Strollers"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:1a856e44ff13",
+        "evidence:f33020942bad"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2017/Combi-USA-Recalls-Stroller-and-Car-Seat-Combos"
+    },
+    {
+      "category": "clothing",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:894b1d415553"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2024/Childrens-Blanket-Sleepers-and-Robes-Recalled-by-International-Intimates-Due-to-Burn-Hazard-and-Violation-of-Federal-Flammability-Standards"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c1d12a475104"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2026/AirClub-Convertible-Bassinets-Recalled-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard-Violates-Mandatory-Standard-for-Bedside-Sleepers"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:7ca56eedd45c"
+      ],
+      "url": "https://www.cpsc.gov/Recalls/2026/Joolz-Recalls-Aer2-Car-Seat-Adapters-for-Strollers-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:3b3e1733efff"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/09-07-2023-ASTM-F15-18-Bassinet-Height-Letter.pdf"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-play-toy-rotation-planner.md"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/2_0.pdf"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:0b7e95914201",
+        "evidence:2b4bd7e75f98",
+        "evidence:819debb1b2fb",
+        "evidence:b59be612cb82"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/5096.pdf"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0283593a82b5",
+        "evidence:c0516c7e7496"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/513.pdf"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5f6908d4e0eb"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/5137.pdf"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1637077e013c",
+        "evidence:996dddf9791c"
+      ],
+      "url": "https://www.cpsc.gov/s3fs-public/NSN07_032023_PoisonPrevention_Social_v2.pdf?VersionId=KinIOpoc9jml_wuX.ktUDWkJJPRnkx_m"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-nursery-crib-mattress-checklist.md",
+        "evidence:bef794da07a9"
+      ],
+      "url": "https://www.cpsc.gov/SafeSleep"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:3de925206ae0"
+      ],
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Button-Cell-Coin-Battery-Information-Center"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:036b3aa7886f"
+      ],
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Poison-Prevention-Information-Center"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:38a4058d4192"
+      ],
+      "url": "https://www.cpsc.gov/safety-education/safety-guides/cribs/crib-safety-tips"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-safety-room-by-room-checklist.md"
+      ],
+      "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/baby-safety-checklist"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0944b0c0578e",
+        "evidence:6d3ced3d6dd4",
+        "evidence:909d39a01566",
+        "evidence:9b9bfb40d72e",
+        "evidence:d3fca21a0b36"
+      ],
+      "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:bfb85cd1b26e"
+      ],
+      "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Immediately-Stop-Using-Tuyedoqe-Travel-Bassinets-Due-to-Risk-of-Serious-Injury-or-Death-from-Strangulation-and-Fall-Hazards-Violates-Mandatory-Standard-for-Infant-Sleep-Products"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:9c7d535e2653"
+      ],
+      "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-5-IN-1-Toddler-Musical-Instruments-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Choking-Violates-Small-Parts-and-Ball-Bans"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:6f60fe66b154"
+      ],
+      "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-YCXXKJ-Baby-Bath-Seats-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Drowning-Violates-Mandatory-Standard-for-Infant-Bath-Seats"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:destatis"
+      ],
+      "url": "https://www.destatis.de/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:deutsche-rentenversicherung"
+      ],
+      "url": "https://www.deutsche-rentenversicherung.de/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:7cb9ed63f1f8",
+        "evidence:9c83666477ff"
+      ],
+      "url": "https://www.emro.who.int/nutrition/breastfeeding/exclusively-breastfeed-for-6-months.html"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:fda"
+      ],
+      "url": "https://www.fda.gov/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c9103edee456"
+      ],
+      "url": "https://www.fda.gov/consumers/consumer-updates/what-know-when-buying-or-using-breast-pump"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2509eb62ec71",
+        "evidence:c70c439d96c3"
+      ],
+      "url": "https://www.fda.gov/food/resources-you-food/infant-formula-homepage"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:67d604f06909",
+        "evidence:6ce221170bf9",
+        "evidence:a8531907e581"
+      ],
+      "url": "https://www.fda.gov/medical-devices/breast-pumps/buying-and-renting-breast-pump"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:9c0c1328bd94",
+        "evidence:cfe267aea223"
+      ],
+      "url": "https://www.fda.gov/medical-devices/breast-pumps/types-breast-pumps"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:aap"
+      ],
+      "url": "https://www.healthychildren.org/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:353d4fc17fea",
+        "evidence:4a8ad72b5c6a",
+        "evidence:633adb185d43",
+        "evidence:6912db55cf0d",
+        "evidence:bc58cb164726",
+        "evidence:d45aa8d01b66",
+        "evidence:e761dbda4b33",
+        "evidence:fbc5379749c7"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Bathing-Your-Newborn.aspx"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:8515fa08afe0",
+        "evidence:988ad413f131",
+        "evidence:bfbed94d41c2",
+        "evidence:c914fcd8f6f1"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Cradle-Cap.aspx"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:06ae25c8c82e",
+        "evidence:3697d10e6b31",
+        "evidence:3d9876022207"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/default.aspx"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:839f0b0822a8",
+        "evidence:8a3d0eeebd06",
+        "evidence:d6ac72925065"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/bathing-skin-care/Pages/Umbilical-Cord-Care.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:643dcf7271da"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/ensuring-proper-latch-on.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5166275a95f8",
+        "evidence:e9837b7f435e"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/How-to-Tell-if-Baby-is-Getting-Enough-Milk.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:44e505164914"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Mastitis.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:6db1a5d772c6",
+        "evidence:90c8ebdbbd5e"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/pages/Nursing-Supplies.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:1eccee5953a4"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Storing-and-Preparing-Expressed-Breast-Milk.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:cb485e91ffbc",
+        "evidence:f02d6de1f441"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/Warning-Signs-of-Breastfeeding-Problems.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:f3c33f2518fe"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Changing-Diapers.aspx"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:122437b9d040",
+        "evidence:c207d761df3e"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Cleaning-Baby-Clothes.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2845795ccd4c",
+        "evidence:64b396f59bc3",
+        "evidence:95d212819571"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Diaper-Rash.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:40f58aeddc0b"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Bottle-Feeding-How-Its-Done.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:a08727b83aa0",
+        "evidence:f5afaf8a1c39"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Discontinuing-the-Bottle.aspx"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2dacd42fd353",
+        "evidence:56b8e1314079",
+        "evidence:7779553dd00e",
+        "evidence:90cd73dcd7d4",
+        "evidence:bd1a9c231408"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/how-often-and-how-much-should-your-baby-eat.aspx"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:be527e0e6d8d"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Physical-Appearance-and-Growth-1-To-3-Months.aspx"
+    },
+    {
+      "category": "nursery",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:28baf57332c4",
+        "evidence:4f774cc84c1f",
+        "evidence:723b0a6c6aad",
+        "evidence:af240f216cd8",
+        "evidence:daaf2cf35a63",
+        "evidence:f744257cfaa9"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-clothing-size-wardrobe-planner.md",
+        "evidence:8ecfd8e5654f",
+        "evidence:95ba8a9066cd"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/prenatal/decisions-to-make/Pages/Choosing-a-Layette.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:790b84b2bf2e"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Cognitive-and-Verbal-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:987ec6c28071",
+        "evidence:b4823b862f93"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:45b65f99b283",
+        "evidence:4edcd47337a6",
+        "evidence:7ea89d6e3773",
+        "evidence:cb611679c17a"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Psychological-Readiness-and-Motor-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:70f184634d27"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Stages-of-Toilet-Training-Different-Skills-Different-Schedules.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:b1b6ec24d1d7"
+      ],
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:e8bc526c7d00"
+      ],
+      "url": "https://www.healthychildren.org/English/health-issues/conditions/abdominal/Pages/constipation.aspx"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:29d3c8d58c96"
+      ],
+      "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/pages/Electric-Shock.aspx"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:85ecd67ca111",
+        "evidence:db775e682017"
+      ],
+      "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Treating-and-Preventing-Burns.aspx"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:20e7b3cc2291"
+      ],
+      "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/How-to-Choose-Safer-Personal-Care-Products.aspx"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:107d05e17e53",
+        "evidence:11ca0ea49b3b",
+        "evidence:dd0930caf6c0"
+      ],
+      "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Poison-Prevention.aspx"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0a82a857ff15",
+        "evidence:fa83874df07f"
+      ],
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/baby-walkers-a-dangerous-choice.aspx"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:015fcdd4b79f",
+        "evidence:11b7369cff4b",
+        "evidence:1643ad47cd37",
+        "evidence:8476db691bd0",
+        "evidence:8d930392d885",
+        "evidence:a3a0f899366c",
+        "evidence:d3f24d420500",
+        "evidence:e5a113e0199a"
+      ],
+      "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Flying-with-Baby.aspx"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:4a38a6dfaee8"
+      ],
+      "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Rear-Facing-Car-Seats-for-Infants-Toddlers.aspx"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:002de0a06681",
+        "evidence:3063d2bd0f72"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/how-can-i-protect-my-child-from-the-dangers-of-lithium-coin-and-button-batteries.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:b80b7372bfdf",
+        "evidence:f03210204e0e"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-much-formula-does-my-baby-need.aspx"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:57e02ebeeed6"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Bottle-Feeding+%28Formula%29+Questions"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2c0f6c3c7f05"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Breast-Feeding+Questions"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:471654323557",
+        "evidence:d167680d3dbf",
+        "evidence:e6c968a8b4fb"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Cradle+Cap"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:00f232b39278",
+        "evidence:0bb2cbe22748",
+        "evidence:38f6de795b3f",
+        "evidence:998cb1684ef4",
+        "evidence:d83d58cd678e"
+      ],
+      "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Diaper+Rash"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:kindergesundheit-info"
+      ],
+      "url": "https://www.kindergesundheit-info.de/"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:7209e759968d"
+      ],
+      "url": "https://www.kindergesundheit-info.de/index.php?id=8023"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:ef6d844a97f6"
+      ],
+      "url": "https://www.kindergesundheit-info.de/infomaterial-service/nachrichten/artikel/artikel/wie-gelingt-das-gemeinsame-essen-mit-kleinkindern-am-familientisch/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:60a18fe826d9",
+        "evidence:937a3596d27f"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/baden/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:73b5afd97457"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/nabelpflege/"
+    },
+    {
+      "category": "diapering",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:0dea2548c211",
+        "evidence:44b5b01fd2de",
+        "evidence:528f158d8f04",
+        "evidence:57fc89f60e01"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/wickeln/"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:6fae06e1f618"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/entwicklung/entwicklungsschritte/trocken-und-sauberwerden/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:025bf2113b44",
+        "evidence:0c875c0d46d0",
+        "evidence:c1a614a1efea"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/beikosteinfuehrung/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:d7db4fa8bb06"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/0-12-monate/getraenke/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:81fb3b8d05e5"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/erster-brei/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:8be2f772dac4",
+        "evidence:a6c2850df0e6"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/0-12-monate/flaschenfuetterung/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:e2e869fc16bd"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/hygiene-bei-muttermilch/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:4fe183789a72",
+        "evidence:6e633dfe7393",
+        "evidence:c7bff7b97474"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/ernaehrung/alltagstipps/stillen/stillalltag/"
+    },
+    {
+      "category": "clothing",
+      "frequency": "weekly",
+      "kind": "source",
+      "refs": [
+        "evidence:51738c874a93",
+        "evidence:ff97ddeee845"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/faq/was-kann-ich-meinem-baby-zum-schlafen-anziehen/"
+    },
+    {
+      "category": "diapering",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c97ce2350f1c"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/krankes-kind/alltagstipps/im-krankheitsfall/hausapotheke/"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2da932a42bb7"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/medien/alltagstipps/mediennutzung/hoechstdauer/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:999d5cc383b0"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/risiken-vorbeugen/alltagstipps/zahngesundheit/empfehlungen/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:531e25cd2b56"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlaftipps/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:500d12e24f6e",
+        "evidence:7d47f0c14e51"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0e23ddfac795",
+        "evidence:84283c324dcf"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/sicher-schlafen/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:a02725b40958",
+        "evidence:a857f8096e06"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-badespass/"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:84e65e7252c5",
+        "evidence:b17f29f10d31"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/babys-ausstattung/ein-sicherer-schlafplatz/"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:a84d2ca2a6d2",
+        "evidence:c12184ca10e0"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/0-12-monate/spielzeug/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:911ed80d511e"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/1-3-jahre/unfallschwerpunkte/sicherheitsregeln/"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:ebf611ce8731"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/auto-kindersitze/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:0588ff369664",
+        "evidence:ab9d6f78bb8a"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/im-vergiftungsfall/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:60c34ff127e0",
+        "evidence:94c94b8a088d"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/alltagstipps/sicher-im-alltag/thermische-verletzungen/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:4107a1657562"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/entwicklungsaspekte/unfallschwerpunkte/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:43784dc07e2e"
+      ],
+      "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/sicherheit-im-alltag/vorsicht-heiss/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-bath-care-first-bath-checklist.md"
+      ],
+      "url": "https://www.nhs.uk/baby/caring-for-a-newborn/washing-and-bathing-your-baby/"
+    },
+    {
+      "category": "bath-and-care",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "docs/content-intelligence/inbox/2026-10-10-bath-care-first-bath-checklist.md"
+      ],
+      "url": "https://www.nhs.uk/best-start-in-life/baby/baby-basics/caring-for-your-baby/bathing-your-baby/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:nhtsa"
+      ],
+      "url": "https://www.nhtsa.gov/"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:410ad3d8fcf5"
+      ],
+      "url": "https://www.nhtsa.gov/campaign/right-seat"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:dcd5bd92ffbb",
+        "evidence:e11b33c92b5b"
+      ],
+      "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-installation-tips"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5c5fd1a7df51"
+      ],
+      "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/car-seat-use-after-crash"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:12b6767594ef"
+      ],
+      "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-forward-facing-car-seats"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:423962a376ad",
+        "evidence:54b9c628cd62",
+        "evidence:9d50701188d3",
+        "evidence:be8fe07cc4a1",
+        "evidence:ca27a9692e56"
+      ],
+      "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/how-install-rear-facing-car-seats"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5c411052370d"
+      ],
+      "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/keep-kids-safe-road"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:129759eb592c",
+        "evidence:6f1b87e09415",
+        "evidence:eaef38748961"
+      ],
+      "url": "https://www.nhtsa.gov/how-install-rear-facing-only-infant-car-seat"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c23e664d139a"
+      ],
+      "url": "https://www.nhtsa.gov/press-releases/national-car-seat-check-saturday-2024"
+    },
+    {
+      "category": "safety",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:2aa19da14117"
+      ],
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/811234.pdf"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:e5e6fa63d4c9"
+      ],
+      "url": "https://www.nichd.nih.gov/health/topics/factsheets/breastfeeding"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:070f3a06e7f1"
+      ],
+      "url": "https://www.nichd.nih.gov/health/topics/sids/more_information/other-faqs"
+    },
+    {
+      "category": "nursery",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:f45b467a7925"
+      ],
+      "url": "https://www.nichd.nih.gov/sites/default/files/publications/pubs/documents/safe_sleep_environment_rev.pdf"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-play-toy-rotation-planner.md"
+      ],
+      "url": "https://www.parents.com/parents-best-toys-awards-2026-baby-12124605"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:rki"
+      ],
+      "url": "https://www.rki.de/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:statistik-austria"
+      ],
+      "url": "https://www.statistik.at/"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:verbraucherzentrale"
+      ],
+      "url": "https://www.verbraucherzentrale.de/"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:33e183e054f7",
+        "evidence:3f9b89fb3043",
+        "evidence:afeb5a5a0a56"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/babynahrung-wenn-nicht-oder-nur-teilweise-gestillt-wird-62023"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:8b20538f5155"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/beikost-fuer-ihr-baby-bereit-fuer-den-brei-62024"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c24686a5ea42"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/trinkwasser-das-beste-getraenk-fuers-baby-62027"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:d57c3c27cc5f"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/kennzeichnung-und-inhaltsstoffe/lebensmittelverpackungen-geben-sie-schadstoffe-ab-52294"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:5210210c672a",
+        "evidence:93aa4bcc3223"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/glas-7059"
+    },
+    {
+      "category": "play",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:c36c5d4a5b98",
+        "evidence:df4293a14c43",
+        "evidence:e97df847db03",
+        "evidence:eb77aa58bc6f"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/spielzeug/spielzeug-ohne-schadstoffe-das-sollten-sie-beim-spielzeugkauf-beachten-6911"
+    },
+    {
+      "category": "feeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:df3fad755d27"
+      ],
+      "url": "https://www.verbraucherzentrale.de/wissen/umwelt-haushalt/wohnen/auswirkungen-von-plastik-auf-die-gesundheit-7010"
+    },
+    {
+      "category": "on-the-go",
+      "frequency": "monthly",
+      "kind": "competitor",
+      "refs": [
+        "docs/content-intelligence/SPRINT-001-2026-10-10.md",
+        "docs/content-intelligence/inbox/2026-10-10-on-the-go-stroller-buying-guide.md"
+      ],
+      "url": "https://www.which.co.uk/reviews/pushchairs/article/most-popular-pushchairs-to-buy-a37Yk9K2bU3z"
+    },
+    {
+      "category": "all",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "source:who"
+      ],
+      "url": "https://www.who.int/"
+    },
+    {
+      "category": "breastfeeding",
+      "frequency": "monthly",
+      "kind": "source",
+      "refs": [
+        "evidence:485d5ac6b8ac"
+      ],
+      "url": "https://www.who.int/news-room/questions-and-answers/item/breastfeeding"
+    }
+  ],
+  "userAgent": "e-bambino-watch/1.0 (+https://e-bambino.com/about/)"
+}

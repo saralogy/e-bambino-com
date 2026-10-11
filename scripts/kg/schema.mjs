@@ -121,6 +121,7 @@ export const TYPES = {
     confidence: r('string', { enum: ['high', 'medium', 'low'] }),
     status: r('string', { enum: ['supported', 'contested', 'unsupported', 'expired'] }),
     topics: { t: 'array' }, // research slugs the claim was gathered for
+    revalidate: s(), // change:<id> that put this claim in the re-check queue; the fact-checker removes it
   },
   evidence: {
     url: r('string'),
@@ -211,7 +212,7 @@ export const RELATIONS = {
   LEARNED_FROM: { lesson: ['run', 'decision'] },
   LINKS_TO: { page: ['page'] }, // derived from markdown links in the body
   TRANSLATION_OF: { page: ['page'] }, // derived: EN page -> German original
-  AFFECTS: { change: ['evidence', 'source', 'page'] },
+  AFFECTS: { change: ['evidence', 'source', 'page', 'observation'] },
   SUPERSEDES: { decision: ['decision'], lesson: ['lesson'], brief: ['brief'] },
 };
 
