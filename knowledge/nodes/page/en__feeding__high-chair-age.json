@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/mobilitaet/hochstuhl-welches-alter"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/high-chair-age",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "high-chair-age",
+  "status": "published",
+  "title": "From what age can a baby use a high chair?",
+  "translationOf": "hochstuhl-welches-alter",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/high-chair-age/",
+  "ymyl": false
+}

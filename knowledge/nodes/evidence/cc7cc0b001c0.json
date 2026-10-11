@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:cc7cc0b001c0",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Small-Parts-for-Toys-and-Childrens-Products"
+}

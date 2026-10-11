@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:dff448784b99",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Installation tools needed for each type, and renter-friendly status: not confirmed.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

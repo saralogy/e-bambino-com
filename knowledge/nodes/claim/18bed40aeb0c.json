@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:18bed40aeb0c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Conflict in sources on chest clip height: NHTSA says armpit level; a HealthyChildren.org snippet says center of the chest, even with the armpits. The editor should confirm which wording to use.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

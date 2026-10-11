@@ -1,0 +1,74 @@
+{
+  "action": "create",
+  "category": "breastfeeding",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "TARGETS",
+      "to": "need:breastfeeding-pumping-storage-workflow"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "overlapCheck": "clear",
+    "ymyl": true
+  },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 18 (penalty 2); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
+  "id": "opp:breastfeeding-pumping-storage-workflow",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-breastfeeding-pumping-storage-workflow.md. Decision line: \"Build a practical workflow/checklist; English hub is currently empty\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
+  "reviewBy": "2027-01-08",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/breastfeeding/manual-or-electric-breast-pump at 0.103 | differentiation: formats: checklist, planner or worksheet, decision tree or chooser | links: 5 en page(s) in hub breastfeeding; 0 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: YMYL review burden +1; no named reviewer lined up +1",
+    "differentiation": 4,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 5,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)",
+        "ymyl: no named human reviewer lined up (gates.reviewer); approval is a human transition"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "pass",
+      "ymyl": "fail"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 4,
+        "evidence": 0,
+        "need": 4,
+        "strategic": 4
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3.43,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 2,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 18,
+    "penalty": 2,
+    "utility": 4
+  },
+  "state": "scored",
+  "title": "Pumping and milk-storage workflow for work or daycare",
+  "type": "opportunity"
+}

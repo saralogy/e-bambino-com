@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3f69a116986b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Sleep sack counts by age band and any guidance for 12-24 months.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

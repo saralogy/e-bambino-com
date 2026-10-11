@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e8bc526c7d00"
+    }
+  ],
+  "id": "claim:7f2c8096c726",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP warns that constipation can start a withholding cycle during training. The child should keep trying and keep any prescribed medicine until training is complete, and a child with constipation should be checked by a pediatrician rather than stopping training on their own.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

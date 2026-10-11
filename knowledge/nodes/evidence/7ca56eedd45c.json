@@ -1,0 +1,21 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:7ca56eedd45c",
+  "notes": "quote added from a search-snippet accessed 2026-10-11 (bundle \"sprint-001\")",
+  "quote": "Consumers should stop using the Joolz Aer2 Car Seat Adapters immediately, detach them from the stroller and go to the firm's site to register for a full refund.",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Recalls/2026/Joolz-Recalls-Aer2-Car-Seat-Adapters-for-Strollers-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard"
+}

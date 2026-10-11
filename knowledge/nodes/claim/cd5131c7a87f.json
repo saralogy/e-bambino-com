@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:cd5131c7a87f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Reconciling AAP (18 to 24 months: co-viewed high-quality media allowed) with AWMF (under 3: screen-free) is an editorial decision. The English page must not claim the two agree.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

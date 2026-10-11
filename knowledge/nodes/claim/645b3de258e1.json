@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:645b3de258e1",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Price per diaper: no official source. It must be calculated from real retailer prices on the publication date and must not be estimated.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

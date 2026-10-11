@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ca27a9692e56"
+    }
+  ],
+  "id": "claim:9fe478bc62e5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Route the seat belt through the correct belt path, check for twists, buckle and lock it, then press down firmly on the seat while tightening; for rear-facing seats, the belt goes through the rear-facing belt path.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

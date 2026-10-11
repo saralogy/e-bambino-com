@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ef4ab783fa28",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Conflicting German figures for the second half of the first year: one source gives 0.4 L per day in addition to solids, another gives about 600 to 700 mL per day total once family food is reached. Needs an editor decision.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

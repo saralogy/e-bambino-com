@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:998cb1684ef4"
+    }
+  ],
+  "id": "claim:4d68dfd04849",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Contact the doctor during office hours if the rash spreads outside the diaper area or is not better after 3 days of anti-yeast cream.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ef6d844a97f6"
+    }
+  ],
+  "id": "claim:26d6257bb0d9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance says special learning cups or spoons are not necessary. A normal cup is enough for learning to drink.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

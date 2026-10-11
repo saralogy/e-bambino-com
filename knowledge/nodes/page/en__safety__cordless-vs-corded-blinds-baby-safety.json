@@ -1,0 +1,59 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:03adc6de557d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:270cd5742b3f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6c5852c9e3f4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a2f60f3ce394"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a491da8efc06"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a7cfe74415a2"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e7bbdde27142"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/guides/baby-sleep"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/nursery/nursery-in-a-small-apartment"
+    }
+  ],
+  "gated": true,
+  "hub": "safety",
+  "id": "page:en/safety/cordless-vs-corded-blinds-baby-safety",
+  "internalLinks": [
+    "/guides/baby-sleep/",
+    "/nursery/nursery-in-a-small-apartment/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc"
+  ],
+  "slug": "cordless-vs-corded-blinds-baby-safety",
+  "status": "held-ymyl",
+  "title": "Are Corded Blinds Dangerous for Babies?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/safety/cordless-vs-corded-blinds-baby-safety/",
+  "ymyl": true
+}

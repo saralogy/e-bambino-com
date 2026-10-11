@@ -1,0 +1,21 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "ernaehrung",
+  "id": "page:de/ernaehrung/salz-zucker-kleinkind",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki",
+    "who",
+    "awmf"
+  ],
+  "slug": "salz-zucker-kleinkind",
+  "status": "held-ymyl",
+  "title": "Wie viel Salz und Zucker verträgt ein Kleinkind?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/ernaehrung/salz-zucker-kleinkind/",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:627ef7a5255e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Age and weight ranges for each option (tub, bath seat, sink insert) were not confirmed from an official source. Manufacturer labels must be checked, and the page must not state limits as fact.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

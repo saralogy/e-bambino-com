@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f38f1dc59a5d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a bath seat or tub is a safe supervision substitute beyond CPSC's statement was not confirmed for the German context. Verbraucherzentrale search returned no results.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

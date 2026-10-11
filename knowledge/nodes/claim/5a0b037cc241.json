@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5a0b037cc241",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The AAP starting-solids page exists but its text was not retrieved, so AAP readiness wording is unconfirmed. Link to high-chair-age only once published.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

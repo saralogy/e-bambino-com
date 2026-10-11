@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c1a614a1efea"
+    }
+  ],
+  "id": "claim:a455659b41d1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance gives a start window of no earlier than the completed 4th month and no later than the start of the 7th month. Many babies can learn to eat from a spoon by the start of the 5th month, and nearly all by the end of the 6th month.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

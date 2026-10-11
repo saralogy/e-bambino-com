@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9b99ce80cd7e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The AWMF guideline's figure of at most 30 minutes on individual days for children from age 3, and only with a parent present, came from a secondary summary. Confirm it in the guideline text before publishing.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

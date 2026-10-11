@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/mobilitaet/kinderwagen-ab-welchem-alter"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/when-can-a-baby-use-a-stroller",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "when-can-a-baby-use-a-stroller",
+  "status": "published",
+  "title": "From what age can a baby use a stroller?",
+  "translationOf": "kinderwagen-ab-welchem-alter",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/when-can-a-baby-use-a-stroller/",
+  "ymyl": false
+}

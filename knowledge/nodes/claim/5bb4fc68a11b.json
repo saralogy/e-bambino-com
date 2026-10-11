@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5bb4fc68a11b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "How long potty training takes in days or weeks: no official figure was confirmed. The one number found (a few hours in one small study) is not from an official source and must not be used.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

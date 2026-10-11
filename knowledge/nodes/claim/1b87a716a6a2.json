@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:1b87a716a6a2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Specific WHO diaper-count criteria (6 single-use or 8 washable wet nappies) were reported via a secondary summary; confirm on a WHO page before quoting.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

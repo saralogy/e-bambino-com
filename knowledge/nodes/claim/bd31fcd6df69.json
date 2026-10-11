@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ef3618ab4137"
+    }
+  ],
+  "id": "claim:bd31fcd6df69",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC voted in May 2010 to replace the old design-based federal rules with a mandatory standard (adopting ASTM F977-07 with added requirements). The standard requires walkers either to be too wide for a standard doorway or to stop at the edge of a step, so this is a standard rather than a ban.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

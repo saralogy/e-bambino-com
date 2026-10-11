@@ -1,0 +1,9 @@
+{
+  "audience": "expecting and new parents",
+  "edges": [],
+  "id": "need:nursery-crib-mattress-checklist",
+  "intent": "unknown",
+  "lang": "en",
+  "question": "How do you check that a crib mattress fits the crib?",
+  "type": "need"
+}

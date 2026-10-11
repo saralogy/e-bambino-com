@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/mobilitaet/tragebeutel-oder-babywanne"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/baby-carrier-or-bassinet",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "baby-carrier-or-bassinet",
+  "status": "published",
+  "title": "Baby carrier or bassinet: which is better on the go?",
+  "translationOf": "tragebeutel-oder-babywanne",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/baby-carrier-or-bassinet/",
+  "ymyl": false
+}

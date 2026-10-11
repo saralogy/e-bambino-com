@@ -1,0 +1,51 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:015eaed5b3be"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:867cf4e2d18d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8c186432782c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d56dcb97d2f5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e951b016b21e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ea8086c5faa2"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/breastfeeding/reusable-or-disposable-nursing-pads"
+    }
+  ],
+  "gated": true,
+  "hub": "breastfeeding",
+  "id": "page:en/breastfeeding/is-breastfeeding-pain-normal",
+  "internalLinks": [
+    "/breastfeeding/reusable-or-disposable-nursing-pads/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "cdc"
+  ],
+  "slug": "is-breastfeeding-pain-normal",
+  "status": "held-ymyl",
+  "title": "Is breastfeeding pain normal? When to get help",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/breastfeeding/is-breastfeeding-pain-normal/",
+  "ymyl": true
+}

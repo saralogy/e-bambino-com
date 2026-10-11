@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:790b84b2bf2e"
+    }
+  ],
+  "id": "claim:c4becff1f997",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A ready child can follow simple instructions and tell an adult they need help getting to the toilet.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

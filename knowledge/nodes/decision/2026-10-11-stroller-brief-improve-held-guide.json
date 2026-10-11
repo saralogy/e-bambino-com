@@ -1,0 +1,19 @@
+{
+  "about": "Action for opp:on-the-go-stroller-buying-guide: stroller brief vs the held buying guide how-to-choose-a-stroller",
+  "by": "agent:gap-scoring",
+  "date": "2026-10-11",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    },
+    {
+      "rel": "ABOUT",
+      "to": "page:en/buying-guides/how-to-choose-a-stroller"
+    }
+  ],
+  "id": "decision:2026-10-11-stroller-brief-improve-held-guide",
+  "outcome": "Action create -> improve. Implement the brief by finishing the held buying guide /buying-guides/how-to-choose-a-stroller (add the constraint-first chooser and the fill-in comparison matrix, and registered sources so it clears the gate) instead of writing a second stroller guide.",
+  "reason": "kg:dedupe ranks the held guide first (0.30, at the check threshold; same hub on-the-go, same buying-guide format; suggestion improve, needs human check). The guide already covers stroller types, newborn seating, fold, weight, wheels, harness, brakes, storage and car-seat compatibility; it is held only for missing sources (held-nosource). Recorded as duplicate incident 2 in docs/system/EVALUATION.md. Classification only: approval stays with the lead.",
+  "type": "decision"
+}

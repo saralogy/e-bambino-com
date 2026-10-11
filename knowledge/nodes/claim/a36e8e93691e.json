@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:df3fad755d27"
+    }
+  ],
+  "id": "claim:a36e8e93691e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The Verbraucherzentrale does not recommend specific plastic types, because the same plastic can be harmless or release substances depending on its additives.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

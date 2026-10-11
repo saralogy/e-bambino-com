@@ -6,8 +6,6 @@ title: About us
 description: Who is behind e-bambino.com, how we work and which sources we use. The premium guide for baby and mom, all in one place.
 ---
 
-# About e-bambino.com
-
 **e-bambino.com** is the premium guide for baby and mom: clear answers, honest product
 comparisons and checklists for pregnancy and the first years, all in one place.
 

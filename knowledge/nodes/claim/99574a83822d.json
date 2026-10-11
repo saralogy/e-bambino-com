@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:11b7369cff4b"
+    }
+  ],
+  "id": "claim:99574a83822d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "If a ticket cannot be bought for a small child, choose a flight likely to have empty seats so the child can ride buckled in the car seat.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:df4293a14c43"
+    }
+  ],
+  "id": "claim:138fdbeb18f9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The GS mark indicates voluntary, independent third-party testing commissioned by the manufacturer. The additional wording 'Sicherheit und Schadstoffe' (safety and pollutants) matters for chemical safety.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

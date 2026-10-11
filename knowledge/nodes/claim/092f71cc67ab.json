@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:092f71cc67ab",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Any specific checklist for toys with loose parts beyond the small parts rule and the 2026 recall.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

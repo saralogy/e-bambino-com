@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0dea2548c211"
+    }
+  ],
+  "id": "claim:23c0dd5f481d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Any diaper must absorb urine and stool, be leakproof, and feel comfortable for the child.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

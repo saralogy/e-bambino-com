@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:6954cb7f066c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Weight, folded size, wheel and suspension specifications, price and the age range each manufacturer states. Manufacturer-specific; must come from manufacturer data with a date.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

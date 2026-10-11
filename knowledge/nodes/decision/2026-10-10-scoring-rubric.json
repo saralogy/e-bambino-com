@@ -1,0 +1,10 @@
+{
+  "about": "Two competing opportunity scoring rubrics",
+  "by": "project lead",
+  "date": "2026-10-10",
+  "edges": [],
+  "id": "decision:2026-10-10-scoring-rubric",
+  "outcome": "PLAYBOOK 0–5 rubric minus a 0–5 risk/duplication penalty is canonical. The external weighting (need 25, differentiation 20, demand 20, strategic 15, evidence 10, commercial 10) is a calibration hypothesis only.",
+  "reason": "Demand is unknown until Search Console is connected; weights cannot be calibrated without Outcome data. Hard gates (evidence, YMYL reviewer, duplication) override any score.",
+  "type": "decision"
+}

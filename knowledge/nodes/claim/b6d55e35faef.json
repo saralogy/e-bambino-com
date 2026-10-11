@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:291d200f259a"
+    }
+  ],
+  "id": "claim:b6d55e35faef",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Manufacturers of pressure gates often say wall cups are required at the top of stairs, but CPSC notes that buyers may not realize wall cups are needed in other locations too.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

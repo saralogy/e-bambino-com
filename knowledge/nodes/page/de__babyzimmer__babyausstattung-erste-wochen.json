@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "babyzimmer",
+  "id": "page:de/babyzimmer/babyausstattung-erste-wochen",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "babyausstattung-erste-wochen",
+  "status": "held-ymyl",
+  "title": "Was gehört in die Babyausstattung für die ersten Wochen zu Hause?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/babyzimmer/babyausstattung-erste-wochen/",
+  "ymyl": true
+}

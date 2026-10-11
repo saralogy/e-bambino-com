@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:57e02ebeeed6"
+    }
+  ],
+  "id": "claim:4bca12c30542",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP's symptom guidance says falling asleep with a bottle of milk or juice can cause severe tooth decay.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

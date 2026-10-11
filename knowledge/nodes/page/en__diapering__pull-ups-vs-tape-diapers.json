@@ -1,0 +1,52 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:23c0dd5f481d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:34523ec62073"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:75aab3284946"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8e541476a670"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d61d019dd47a"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/diaper-size-by-weight"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/pull-ups-vs-tape-diapers",
+  "internalLinks": [
+    "/diapering/diaper-size-by-weight/",
+    "/diapering/how-often-to-change-a-diaper/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "kindergesundheit-info"
+  ],
+  "slug": "pull-ups-vs-tape-diapers",
+  "status": "published",
+  "title": "Pull-ups or tape diapers: which should you choose?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/pull-ups-vs-tape-diapers/",
+  "ymyl": false
+}

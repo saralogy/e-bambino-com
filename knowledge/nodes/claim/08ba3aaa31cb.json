@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:003bb9bcbd84"
+    }
+  ],
+  "id": "claim:08ba3aaa31cb",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In a freezer at 0 F or below, breast milk is best used within about 6 months and is acceptable up to 12 months.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

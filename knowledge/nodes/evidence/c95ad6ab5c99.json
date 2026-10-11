@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:c95ad6ab5c99",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Whether-At-Home-or-Traveling-for-the-Holidays-CPSC-Reminds-Parents-to-Keep-Babies-Sleep-Space-Safe"
+}

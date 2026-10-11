@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:85f12cb131af",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "How to measure a doorway opening: no official measuring procedure was found; the manufacturer's stated range is the only confirmed guide.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

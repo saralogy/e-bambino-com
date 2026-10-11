@@ -1,0 +1,15 @@
+{
+  "about": "Where long-term memory lives",
+  "by": "project lead",
+  "date": "2026-10-10",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "run:2026-10-10-knowledge-graph-core"
+    }
+  ],
+  "id": "decision:2026-10-10-knowledge-graph-in-repo",
+  "outcome": "Knowledge graph as git-tracked JSON in knowledge/nodes/, compiled to a gitignored knowledge/graph.json.",
+  "reason": "No backend, GDPR, and git already gives history, review and an audit trail. No external database.",
+  "type": "decision"
+}

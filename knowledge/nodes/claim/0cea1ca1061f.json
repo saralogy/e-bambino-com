@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0cea1ca1061f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Tamper-resistant outlets being required by the National Electrical Code: only patent background text mentions this; verify against the NEC before use.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

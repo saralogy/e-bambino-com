@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:95d212819571"
+    }
+  ],
+  "id": "claim:4601ed5756c5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For a simple irritant rash the AAP advises rinsing the area gently with water, letting the skin air-dry, and applying a thick barrier cream.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

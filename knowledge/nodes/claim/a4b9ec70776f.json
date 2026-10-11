@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a4b9ec70776f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source found for how many bodysuits, sleep sacks or sheets a newborn needs. Quantities must not be stated.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

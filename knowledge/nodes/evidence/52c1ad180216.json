@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:52c1ad180216",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/FAQ/Infant-Tightfitting-Garments"
+}

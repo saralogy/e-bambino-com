@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5c5fd1a7df51"
+    }
+  ],
+  "id": "claim:315847b93376",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NHTSA recommends replacing a car seat after a moderate or severe crash, and says a seat from such a crash should never be used again; a crash is minor only if all of these are true: the vehicle could be driven away, the door nearest the seat was undamaged, no occupant was injured, airbags did not deploy, and the seat shows no visible damage.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

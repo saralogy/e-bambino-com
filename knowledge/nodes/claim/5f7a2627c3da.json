@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0588ff369664"
+    }
+  ],
+  "id": "claim:5f7a2627c3da",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info advises not inducing vomiting in a poisoned child and not giving milk, which can speed absorption of the poison.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

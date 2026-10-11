@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d643a66b3327",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Recalls of 2025 walkers that fail the stair-fall requirement exist (CPSC Boyro notice), but no official count for recent years was confirmed.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

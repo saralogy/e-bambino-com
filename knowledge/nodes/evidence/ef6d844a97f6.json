@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:ef6d844a97f6",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/infomaterial-service/nachrichten/artikel/artikel/wie-gelingt-das-gemeinsame-essen-mit-kleinkindern-am-familientisch/"
+}

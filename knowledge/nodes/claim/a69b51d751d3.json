@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:988ad413f131"
+    }
+  ],
+  "id": "claim:a69b51d751d3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Basic home care is to wash the baby's hair about every other day with a mild baby shampoo. Gentle massage, a soft brush or a baby comb can loosen scales.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

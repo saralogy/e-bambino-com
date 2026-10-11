@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b17f29f10d31"
+    }
+  ],
+  "id": "claim:47e50b34e7d6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance: no hot-water bottles or heating pads in the baby's bed. Do not wrap the baby tightly before sleep. Keep powder away from the changing table, because inhaling it risks suffocation.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

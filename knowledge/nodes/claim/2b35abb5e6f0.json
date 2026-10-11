@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:2b35abb5e6f0",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The 'pinch test' for harness snugness (if you can pinch the strap at the shoulder, it is too loose). Source page not confirmed.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

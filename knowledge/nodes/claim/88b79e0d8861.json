@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:88b79e0d8861",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Tongue-tie (ankyloglossia) assessment and frenotomy as a fix for pain despite good latch come from a family-physician review (PMC), not an official domain; not usable until confirmed on an official source.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

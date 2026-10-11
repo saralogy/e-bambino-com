@@ -1,0 +1,71 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:1cdda6d26bae"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:38a4e95d56b1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7ea0234ee7d4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:81f454952a27"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:82ac6e0d6401"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b400c949faf9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bde18f52c5d7"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c786c4bb01e9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:cb591619ee54"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e4749d069aea"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/newborn-clothing-size"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/sleep-sack-or-blanket"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/how-many-baby-clothes-do-you-need",
+  "internalLinks": [
+    "/clothing/newborn-clothing-size/",
+    "/clothing/sleep-sack-or-blanket/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "how-many-baby-clothes-do-you-need",
+  "status": "published",
+  "title": "How many baby clothes do you need?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/how-many-baby-clothes-do-you-need/",
+  "ymyl": false
+}

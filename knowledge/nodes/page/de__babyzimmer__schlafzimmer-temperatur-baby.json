@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "babyzimmer",
+  "id": "page:de/babyzimmer/schlafzimmer-temperatur-baby",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "schlafzimmer-temperatur-baby",
+  "status": "held-ymyl",
+  "title": "Welche Temperatur und Belüftung braucht ein Schlafzimmer mit Baby?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/babyzimmer/schlafzimmer-temperatur-baby/",
+  "ymyl": true
+}

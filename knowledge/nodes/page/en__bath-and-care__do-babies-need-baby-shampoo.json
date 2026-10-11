@@ -1,0 +1,46 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0685c946d4ee"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3abf172b1372"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:52db75defed6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:79b4606f3f4c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ab2fc953bc9e"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    }
+  ],
+  "gated": true,
+  "hub": "bath-and-care",
+  "id": "page:en/bath-and-care/do-babies-need-baby-shampoo",
+  "internalLinks": [
+    "/diapering/how-often-to-change-a-diaper/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "do-babies-need-baby-shampoo",
+  "status": "held-ymyl",
+  "title": "Do babies need baby shampoo and body wash?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/bath-and-care/do-babies-need-baby-shampoo/",
+  "ymyl": true
+}

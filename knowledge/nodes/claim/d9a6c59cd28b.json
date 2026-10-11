@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d9a6c59cd28b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source was found for the age range each option is usable from (for example, 'from the first night') or until (the size or age cutoff for each option). These must be checked against CPSC and AAP guidance and manufacturer limits before publication.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

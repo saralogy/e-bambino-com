@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "Statistics Austria",
+  "id": "source:statistik-austria",
+  "jurisdiction": "AT",
+  "key": "statistik-austria",
+  "name": "Statistik Austria",
+  "registered": false,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.statistik.at"
+}

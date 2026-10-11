@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b4823b862f93"
+    }
+  ],
+  "id": "claim:75aab3284946",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For frequent night accidents during training, the AAP suggests keeping the child in training pants or even a diaper at night for as long as they are comfortable in them.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

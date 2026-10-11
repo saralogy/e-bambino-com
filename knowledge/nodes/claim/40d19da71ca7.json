@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:40d19da71ca7",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "A 1997 randomized trial comparing a PVC milk-leakage device with disposable pads (PubMed, nih.gov domain) found no evidence that either caused more problems. It is not mapped to a listed source key, so it is not usable as a fact until a key is added.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

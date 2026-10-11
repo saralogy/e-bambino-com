@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:887ec60f796f",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/checklist.html"
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0fca328e394f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Official guidance on stationary activity centers beyond the AAP alternative statement (age limits, tip-over and stair risks) was not found.",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

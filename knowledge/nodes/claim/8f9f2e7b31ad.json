@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f744257cfaa9"
+    }
+  ],
+  "id": "claim:8f9f2e7b31ad",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP: nothing should be placed between the mattress and the fitted sheet. Mattress toppers, non-fitted sheets, blankets, toys and bumper pads raise the risk of entrapment and suffocation.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

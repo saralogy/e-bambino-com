@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:c033a2669e79",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/growthcharts/index.htm"
+}

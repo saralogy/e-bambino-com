@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:894b1d415553",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Recalls/2024/Childrens-Blanket-Sleepers-and-Robes-Recalled-by-International-Intimates-Due-to-Burn-Hazard-and-Violation-of-Federal-Flammability-Standards"
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a34426356e37",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a pressure-mounted gate is acceptable at the top of stairs in every case: the sources say it needs wall cups or a side-pressure indicator, but the exact approval rule was not confirmed.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:bbb74009644e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Which outlets parents usually forget (floor-level, kitchen, outdoor): only the German outdoor-outlet point is sourced; floor-level and kitchen were not confirmed.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

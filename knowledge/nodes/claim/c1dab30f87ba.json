@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c1dab30f87ba",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the cord strangulation rule for children 8 and under has been finalized: not confirmed.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:who"
+    }
+  ],
+  "id": "evidence:27a8e9f41b4b",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "who",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "evidence",
+  "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/operational-guidance/are-ch-38-03-operationalguidance-2018-eng-cpg-complementary-feeding-protocol.pdf"
+}

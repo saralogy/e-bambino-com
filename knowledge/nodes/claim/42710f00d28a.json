@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:42710f00d28a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The criteria used in the method box are editorial and must be stated by the editor. No official source sets a scoring method for bottles.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

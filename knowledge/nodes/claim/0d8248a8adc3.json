@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5166275a95f8"
+    }
+  ],
+  "id": "claim:0d8248a8adc3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In the first days after birth a baby may lose up to about 8 to 10 percent of birth weight. Not gaining about 5 to 7 oz per week after the milk comes in is a warning sign to raise with a clinician.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

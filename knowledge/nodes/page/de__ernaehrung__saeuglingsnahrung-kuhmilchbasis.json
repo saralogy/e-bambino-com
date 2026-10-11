@@ -1,0 +1,20 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "ernaehrung",
+  "id": "page:de/ernaehrung/saeuglingsnahrung-kuhmilchbasis",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki",
+    "awmf"
+  ],
+  "slug": "saeuglingsnahrung-kuhmilchbasis",
+  "status": "held-ymyl",
+  "title": "Was bedeutet Säuglingsnahrung auf Basis von Kuhmilch?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/ernaehrung/saeuglingsnahrung-kuhmilchbasis/",
+  "ymyl": true
+}

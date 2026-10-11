@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:32b7bfb274ce",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "A clinical review found in search (PMC) says salicylic acid 10% is contraindicated in infants. It is not an official-domain source, so it is listed here only as a caution to verify, not as a fact.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

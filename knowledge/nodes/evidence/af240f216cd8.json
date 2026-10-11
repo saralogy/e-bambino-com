@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:af240f216cd8",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+}

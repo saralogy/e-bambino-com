@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:0488f8d23585",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Note: the 2003 CPSC release is dated; confirm the current wording before quoting it.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:004251527a21",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Specific airline policies on car seats and gate checks, and whether the stroller can be taken to the gate. No airline-specific source was found; the rules differ by airline and country.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,17 @@
+{
+  "category": "on-the-go",
+  "decisionLine": "Build; explicitly listed as a roadmap gap in AGENTS.md",
+  "edges": [
+    {
+      "rel": "SPECIFIES",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    }
+  ],
+  "id": "brief:2026-10-10-on-the-go-stroller-buying-guide",
+  "path": "docs/content-intelligence/inbox/2026-10-10-on-the-go-stroller-buying-guide.md",
+  "priority": "P1",
+  "researchDate": "2026-10-10",
+  "status": "inbox",
+  "title": "Constraint-first stroller buying guide",
+  "type": "brief"
+}

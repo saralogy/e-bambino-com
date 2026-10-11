@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c0516c7e7496"
+    }
+  ],
+  "id": "claim:c98df92c6ee6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC's home electrical checklist advises buying safety covers for unused outlets when children are present.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

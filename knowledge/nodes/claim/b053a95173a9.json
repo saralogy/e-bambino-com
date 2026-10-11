@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7cb9ed63f1f8"
+    }
+  ],
+  "id": "claim:b053a95173a9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Exclusive breastfeeding is recommended for about the first six months. After that, complementary foods should be added while breastfeeding continues, up to two years or beyond, because the baby's energy and nutrient needs begin to exceed what breast milk provides at about 6 months.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

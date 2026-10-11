@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ab3ad20771bb"
+    }
+  ],
+  "id": "claim:9ea6d5c5d95e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "No official (AAP, CDC, WHO, NIH) diaper size chart by weight was found. Size ranges are set by each manufacturer and differ by brand, so the pack's printed weight range is the reference.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

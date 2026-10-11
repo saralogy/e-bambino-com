@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:015fcdd4b79f"
+    }
+  ],
+  "id": "claim:bbdd9fd8f0dd",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Most rear-facing, convertible and forward-facing car seats can be used on airplanes; booster seats and travel vests cannot.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

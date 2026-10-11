@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:75c0e3b1629e",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Recalls/2009/dorel-juvenile-group-recalls-safety-1st-stair-gates-due-to-fall-hazard"
+}

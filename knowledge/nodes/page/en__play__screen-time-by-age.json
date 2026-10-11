@@ -1,0 +1,69 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0fd4fd160e5d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2bda4a6af70f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:59d566e6b720"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:72ef200717c1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e21e6a442380"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e9166d0db769"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f5347299b411"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fafe9eceadc1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fb9e9243a5cf"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/play/how-to-read-to-a-baby"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/spielzeug/bildschirmzeit-ab-welchem-alter"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/screen-time-by-age",
+  "internalLinks": [
+    "/play/how-to-read-to-a-baby/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "awmf",
+    "kindergesundheit-info"
+  ],
+  "slug": "screen-time-by-age",
+  "status": "held-ymyl",
+  "title": "At what age can a child have screen time?",
+  "translationOf": "bildschirmzeit-ab-welchem-alter",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/screen-time-by-age/",
+  "ymyl": true
+}

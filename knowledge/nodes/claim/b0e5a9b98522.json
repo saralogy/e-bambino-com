@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:b0e5a9b98522",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The Verbraucherzentrale statement that parents of babies at allergy risk are free to choose any formula and need not use HA formula conflicts with the AWMF wording. Needs an editor check before publication.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,17 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:2326648d42b1",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Snippets came from search summaries, not fetched pages. Re-check each URL against the live page before publishing.",
+  "topics": [
+    "baby-bathtub-or-bath-seat",
+    "do-babies-need-baby-shampoo",
+    "how-often-to-bathe-a-baby",
+    "how-to-bathe-a-newborn-before-cord-falls-off",
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

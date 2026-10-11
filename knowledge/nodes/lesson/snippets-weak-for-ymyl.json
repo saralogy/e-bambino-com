@@ -1,0 +1,21 @@
+{
+  "appliesTo": [
+    "category-researcher",
+    "fact-checker"
+  ],
+  "created": "2026-10-10",
+  "edges": [
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-category-team-drafts"
+    },
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-opus-editorial-pass"
+    }
+  ],
+  "evidence": "docs/research/*.json was gathered from search snippets only; every migrated claim is confidence \"medium\" and needs revalidation.",
+  "id": "lesson:snippets-weak-for-ymyl",
+  "type": "lesson",
+  "what": "Search snippets alone are weak evidence for YMYL claims; fetch or manually confirm the primary page before a YMYL claim is supported with high confidence."
+}

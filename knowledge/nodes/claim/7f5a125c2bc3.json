@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ebf611ce8731"
+    }
+  ],
+  "id": "claim:7f5a125c2bc3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "i-Size (ECE R129) seats are fixed with the three-point seat belt or, where available, the ISOFIX points; follow the seat's instruction manual exactly.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

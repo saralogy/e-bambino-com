@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c93df8994076",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "NICHD's room illustration shows a thermostat set to 68 to 72 °F. This is an illustrative graphic, not a formal guideline, so it must not be used as a target range.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

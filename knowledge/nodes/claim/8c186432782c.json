@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:44e505164914"
+    }
+  ],
+  "id": "claim:8c186432782c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Mastitis symptoms that continue for more than 24 hours or get worse should be reported to a doctor.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

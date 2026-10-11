@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:781c77f91867",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Silicone teats having a smooth surface that resists milk residue and germs better than rubber: only a non-official medical source was found. Not confirmed.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e2e869fc16bd"
+    }
+  ],
+  "id": "claim:ef780b0913a8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info (German parent portal) gives: refrigerate at about 4 to 6 C for up to 4 days, store in the coldest part of the fridge rather than the door, and freezer compartments of a fridge (about -15 C) only for up to 2 weeks.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

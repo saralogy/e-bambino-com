@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:8121cf82942e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German sources for the brief were searched once; the German (translationOf) version should be checked against the Kindergesundheit-info checklist for electricity before release.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

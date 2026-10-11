@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:937a3596d27f",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/entwicklung/0-12-monate/babys-pflege/baden/"
+}

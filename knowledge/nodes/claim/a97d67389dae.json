@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a97d67389dae",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Teething suitability by material was not confirmed by an official source. The CPSC teether results concern choking from pull strings and loose parts, not material choice.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:cec160f53dc9"
+    }
+  ],
+  "id": "claim:a27ce2c69dca",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC says propping a bottle or leaving it in the baby's mouth can raise the risk of choking, ear infections and tooth decay. A parent should not force a baby to finish a bottle when showing signs of fullness.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

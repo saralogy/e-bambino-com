@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:aae0a2e19d5d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The 1 to 2 oz first-days figure and the 3 to 4 oz end-of-month figure come from search summaries, not from direct page text. Confirm against the AAP page before publishing.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

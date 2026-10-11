@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ab76b0d97f16"
+    }
+  ],
+  "id": "claim:211a5ee2a2f3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Federal law (the Safe Sleep for Babies Act, as described in a 2023 CPSC release) bans padded crib bumpers and inclined sleep products, regardless of manufacture date.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

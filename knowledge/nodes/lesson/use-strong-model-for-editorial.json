@@ -1,0 +1,21 @@
+{
+  "appliesTo": [
+    "writer-editor",
+    "lead"
+  ],
+  "created": "2026-10-10",
+  "edges": [
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-category-team-drafts"
+    },
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-opus-editorial-pass"
+    }
+  ],
+  "evidence": "Category-team drafts of 2026-10-10 had to be rewritten in an Opus editorial pass.",
+  "id": "lesson:use-strong-model-for-editorial",
+  "type": "lesson",
+  "what": "Small-model drafts hedge heavily (\"no source we checked ...\") and need rewriting; use a stronger model for editorial passes."
+}

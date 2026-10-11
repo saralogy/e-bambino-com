@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:43d643570925",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Prematurity and corrected age for starting solids: no source found.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

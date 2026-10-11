@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9c83666477ff"
+    }
+  ],
+  "id": "claim:96305ba9d345",
+  "kind": "fact",
+  "status": "supported",
+  "text": "WHO recommends exclusive breastfeeding for about the first six months. At about 6 months, the baby's energy and nutrient needs exceed what breast milk provides, so safe complementary foods should be introduced while breastfeeding continues up to two years or beyond.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

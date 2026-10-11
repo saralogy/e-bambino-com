@@ -1,0 +1,77 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:03b7f0a41e61"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:0b085a6d7001"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:458ec1dabc2f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:486f2f90db06"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4f89c5a1fce6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:56acc6652ab4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:647bd6208efe"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7f2c8096c726"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:926da3cb9bef"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c4becff1f997"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d96a9c322f98"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/pull-ups-vs-tape-diapers"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/windeln/windelentraining-ab-wann"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/potty-training-readiness",
+  "internalLinks": [
+    "/diapering/pull-ups-vs-tape-diapers/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "cdc",
+    "kindergesundheit-info"
+  ],
+  "slug": "potty-training-readiness",
+  "status": "held-ymyl",
+  "title": "When to start potty training: readiness signs",
+  "translationOf": "windelentraining-ab-wann",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/potty-training-readiness/",
+  "ymyl": true
+}

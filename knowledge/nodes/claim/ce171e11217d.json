@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ce171e11217d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "How much to buy is not covered by any official source.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

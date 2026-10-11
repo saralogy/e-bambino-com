@@ -6,8 +6,6 @@ title: Über uns
 description: Wer hinter e-bambino.com steht, wie wir arbeiten und welche Quellen wir nutzen. Der Premium-Ratgeber für Baby und Mama, alles an einem Ort.
 ---
 
-# Über e-bambino.com
-
 **e-bambino.com** ist der Premium-Ratgeber für Baby und Mama: klare Antworten, ehrliche
 Produktvergleiche und Checklisten für Schwangerschaft und die ersten Jahre, an einem Ort.
 

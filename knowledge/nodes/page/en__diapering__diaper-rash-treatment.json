@@ -1,0 +1,72 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:2c24039301da"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:41056069f3cb"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4601ed5756c5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4d68dfd04849"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5e61163b3d2b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7a45a36adb99"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:90266fc5fb6b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b0ef503294bf"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b8a239e786d2"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fe62dc07a381"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-often-to-change-a-diaper"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/windeln/windeldermatitis-hilfe"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/diaper-rash-treatment",
+  "internalLinks": [
+    "/diapering/how-often-to-change-a-diaper/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "kindergesundheit-info"
+  ],
+  "slug": "diaper-rash-treatment",
+  "status": "held-ymyl",
+  "title": "Diaper rash: home care and when to call the doctor",
+  "translationOf": "windeldermatitis-hilfe",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/diaper-rash-treatment/",
+  "ymyl": true
+}

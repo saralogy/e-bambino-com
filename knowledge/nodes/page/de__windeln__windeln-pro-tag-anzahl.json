@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "windeln",
+  "id": "page:de/windeln/windeln-pro-tag-anzahl",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "windeln-pro-tag-anzahl",
+  "status": "published",
+  "title": "Wie viele Windeln braucht ein Baby pro Tag?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/windeln/windeln-pro-tag-anzahl/",
+  "ymyl": false
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:57e02ebeeed6",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/symptomviewer.aspx?symptom=Bottle-Feeding+%28Formula%29+Questions"
+}

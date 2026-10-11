@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:b1b6ec24d1d7",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx"
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/windeln/windeln-pro-tag-anzahl"
+    }
+  ],
+  "gated": true,
+  "hub": "diapering",
+  "id": "page:en/diapering/how-many-diapers-per-day",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "how-many-diapers-per-day",
+  "status": "published",
+  "title": "How many diapers does a baby use per day?",
+  "translationOf": "windeln-pro-tag-anzahl",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/diapering/how-many-diapers-per-day/",
+  "ymyl": false
+}

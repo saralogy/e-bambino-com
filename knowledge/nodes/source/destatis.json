@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "Federal Statistical Office of Germany",
+  "id": "source:destatis",
+  "jurisdiction": "DE",
+  "key": "destatis",
+  "name": "Destatis",
+  "registered": false,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.destatis.de"
+}

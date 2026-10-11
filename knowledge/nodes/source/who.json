@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "World Health Organization",
+  "id": "source:who",
+  "jurisdiction": "intl",
+  "key": "who",
+  "name": "WHO",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.who.int"
+}

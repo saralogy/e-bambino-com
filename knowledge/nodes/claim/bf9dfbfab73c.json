@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:82a5640f0b50"
+    }
+  ],
+  "id": "claim:bf9dfbfab73c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends keeping infants and toddlers rear-facing as long as possible, until they reach the highest weight or height allowed by the car seat's manufacturer, not until a set age; the AAP's 2018 policy dropped the earlier two-year minimum.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

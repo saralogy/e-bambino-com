@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:c2920dc2e570",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "evidence",
+  "url": "https://aap.org/en/patient-care/newborn-and-infant-nutrition/newborn-and-infant-nutrition-assessment-tools/anthropometric-measurements"
+}

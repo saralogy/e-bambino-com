@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:752ac3b9bd94",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/CPSC-Alerts-Shoppers-to-Dangers-of-Using-Loose-Fitting-Cotton-Garments-as-Sleepwear-for-Kids"
+}

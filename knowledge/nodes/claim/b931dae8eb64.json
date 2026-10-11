@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a84d2ca2a6d2"
+    }
+  ],
+  "id": "claim:b931dae8eb64",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info advises choosing PVC-free or phthalate-free plastic toys, with PP or PE preferred, because PVC often contains harmful plasticizers.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

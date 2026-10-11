@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e4c9e843fc80"
+    }
+  ],
+  "id": "claim:72ef200717c1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP (Media and Young Minds, 2016): for children under 18 months, pediatricians should discourage screen media other than video chatting.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:736c3ec3a539",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German room-temperature figure (about 6 to 8 hours at 15 to 25 C) from kindergesundheit-info was truncated in the search snippet; unit and exact value are not confirmed.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

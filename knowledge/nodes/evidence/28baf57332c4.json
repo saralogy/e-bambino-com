@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:28baf57332c4",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+}

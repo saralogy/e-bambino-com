@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5c61df9d0da7"
+    }
+  ],
+  "id": "claim:09a5bc0f7b19",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The German AWMF S1 guideline on prevention of sudden infant death (AWMF 063-002, updated December 2022) recommends a night-time room temperature of 18 °C as optimal, and recommends a baby sleeping bag of suitable size instead of a duvet to avoid overheating.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,104 @@
+# CI quality gates (docs/system/RELEASE.md).
+# Technical checks only: a green run never authorizes publishing held content,
+# and merging to main stays a human decision.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # Bot PRs opened with GITHUB_TOKEN do not trigger CI: run it by hand on the
+  # bot branch (Actions -> CI -> Run workflow), see docs/system/OPERATIONS.md.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the release report diffs against the base branch
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Each check records its outcome and the job continues, so the release
+      # report can show every result. The last step fails the job.
+      - name: Build
+        id: build
+        continue-on-error: true
+        run: npm run build
+
+      - name: Content audit
+        id: audit
+        continue-on-error: true
+        run: npm run audit
+
+      - name: Knowledge graph check
+        id: kg
+        continue-on-error: true
+        run: npm run kg:check
+
+      - name: Backlog up to date
+        id: backlog
+        continue-on-error: true
+        run: node scripts/kg/backlog.mjs --check
+
+      - name: Internal links
+        id: links
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: node scripts/checks/links.mjs
+
+      - name: Technical SEO
+        id: seo
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: node scripts/checks/seo.mjs
+
+      # Exit 2 = editorial gate: a YMYL page newly published without a human
+      # approving Review node (scripts/checks/release-report.mjs).
+      - name: Release report
+        id: report
+        if: always()
+        continue-on-error: true
+        env:
+          CHECK_BUILD: ${{ steps.build.outcome }}
+          CHECK_AUDIT: ${{ steps.audit.outcome }}
+          CHECK_KG: ${{ steps.kg.outcome }}
+          CHECK_BACKLOG: ${{ steps.backlog.outcome }}
+          CHECK_LINKS: ${{ steps.links.outcome }}
+          CHECK_SEO: ${{ steps.seo.outcome }}
+          RELEASE_BASE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || github.event.before }}
+        run: node scripts/checks/release-report.mjs
+
+      - name: Technical gate
+        if: always()
+        env:
+          OUTCOMES: >-
+            build=${{ steps.build.outcome }}
+            audit=${{ steps.audit.outcome }}
+            backlog=${{ steps.backlog.outcome }}
+            kg=${{ steps.kg.outcome }}
+            links=${{ steps.links.outcome }}
+            seo=${{ steps.seo.outcome }}
+            editorial=${{ steps.report.outcome }}
+        run: |
+          failed=0
+          for pair in $OUTCOMES; do
+            if [ "${pair#*=}" != "success" ]; then echo "::error::${pair%%=*} did not pass (outcome: ${pair#*=})"; failed=1; fi
+          done
+          exit $failed

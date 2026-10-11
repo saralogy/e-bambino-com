@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:751c9e14ee75",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-Urges-Parents-Caregivers-to-Use-Products-that-Are-Safe-for-Sleep-Check-Babys-Sleep-Space-for-Suffocation-Hazards-Most-Nursery-Product-Related-Infant-Deaths-Can-Be-Prevented"
+}

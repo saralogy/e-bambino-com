@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:verbraucherzentrale"
+    }
+  ],
+  "id": "evidence:8b20538f5155",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "verbraucherzentrale",
+  "sourceQuality": "secondary",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "evidence",
+  "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/gesund-ernaehren/beikost-fuer-ihr-baby-bereit-fuer-den-brei-62024"
+}

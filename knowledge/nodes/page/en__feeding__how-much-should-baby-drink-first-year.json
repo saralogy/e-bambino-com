@@ -1,0 +1,69 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0d8248a8adc3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:1cd423652ca9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:493285ae5cec"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4a22379a75bc"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5643f2ee9305"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:85c8bbd7ce56"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b053a95173a9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b5f80ef9d3e5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f3a11e8fee31"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-many-diapers-per-day"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/feeding/high-chair-age"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/how-much-should-baby-drink-first-year",
+  "internalLinks": [
+    "/diapering/how-many-diapers-per-day/",
+    "/feeding/high-chair-age/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "who",
+    "aap",
+    "cdc"
+  ],
+  "slug": "how-much-should-baby-drink-first-year",
+  "status": "held-ymyl",
+  "title": "How much should a baby drink in the first year?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/how-much-should-baby-drink-first-year/",
+  "ymyl": true
+}

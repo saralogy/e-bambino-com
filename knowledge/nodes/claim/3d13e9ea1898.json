@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3d13e9ea1898",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "WHO feeding frequency of 8 to 12 feeds per 24 hours in the first weeks: only secondary sources (a preprint) were found. WHO itself did not confirm this figure. Do not attribute it to WHO.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,59 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:05fb96bc01f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:39fc23df32b0"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6c9b4fb76f63"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8ab13dfdf7cc"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8c3808120d11"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c49929b0a27e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f8477c032ab4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fc208426b184"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/on-the-go/when-can-a-baby-use-a-stroller"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/travel-system-or-separate-stroller",
+  "internalLinks": [
+    "/on-the-go/when-can-a-baby-use-a-stroller/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "nhtsa"
+  ],
+  "slug": "travel-system-or-separate-stroller",
+  "status": "published",
+  "title": "Travel system or separate stroller and car seat?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/travel-system-or-separate-stroller/",
+  "ymyl": false
+}

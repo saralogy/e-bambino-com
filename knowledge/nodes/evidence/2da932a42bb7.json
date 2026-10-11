@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:2da932a42bb7",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/medien/alltagstipps/mediennutzung/hoechstdauer/"
+}

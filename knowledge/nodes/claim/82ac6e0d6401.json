@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:485e16f3b853"
+    }
+  ],
+  "id": "claim:82ac6e0d6401",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Babies need no more than one layer beyond what a comfortable adult would wear in the same room; a one-piece sleeper or sleep sack can serve as sleep clothing.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

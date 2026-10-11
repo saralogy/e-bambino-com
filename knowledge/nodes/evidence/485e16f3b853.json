@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nichd"
+    }
+  ],
+  "id": "evidence:485e16f3b853",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nichd",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "evidence",
+  "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative"
+}

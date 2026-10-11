@@ -8,7 +8,28 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "audit": "npx -y tsx scripts/run-audit.ts"
+    "audit": "tsx scripts/run-audit.ts",
+    "kg:sync": "node scripts/kg/sync.mjs",
+    "kg:build": "node scripts/kg/build.mjs",
+    "kg:check": "node scripts/kg/check.mjs",
+    "kg": "node scripts/kg/cli.mjs",
+    "kg:dedupe": "node scripts/kg/dedupe.mjs",
+    "kg:score": "node scripts/kg/score.mjs",
+    "kg:propose": "node scripts/kg/propose.mjs",
+    "kg:backlog": "node scripts/kg/backlog.mjs",
+    "kg:issues": "node scripts/kg/issues.mjs",
+    "kg:ingest": "node scripts/kg/ingest.mjs",
+    "kg:update": "node scripts/kg/sync.mjs && node scripts/kg/propose.mjs --refresh-all && node scripts/kg/score.mjs --write && node scripts/kg/backlog.mjs && node scripts/kg/check.mjs",
+    "check:links": "node scripts/checks/links.mjs",
+    "check:seo": "node scripts/checks/seo.mjs",
+    "release:report": "node scripts/checks/release-report.mjs",
+    "watch:list": "node scripts/watch/build-watchlist.mjs",
+    "watch:fetch": "node scripts/watch/fetch.mjs",
+    "watch:revalidate": "node scripts/watch/revalidate.mjs",
+    "watch:test": "node scripts/watch/selftest.mjs",
+    "outcomes:import": "node scripts/outcomes/import-gsc.mjs",
+    "outcomes:report": "node scripts/outcomes/report.mjs",
+    "outcomes:calibrate": "node scripts/outcomes/calibrate.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.0",
@@ -19,6 +40,7 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "tsx": "^4.19.2"
   }
 }

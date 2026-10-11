@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:ef3618ab4137",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "baby-walker-or-push-toy"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2010/CPSC-Issues-Final-Mandatory-Rule-on-Infant-Baby-Walkers"
+}

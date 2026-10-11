@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:dc65ea8b0ba8",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a double electric pump is worth the cost was not sourced; only the time-saving claim is supported.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

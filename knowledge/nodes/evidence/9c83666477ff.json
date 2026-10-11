@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:who"
+    }
+  ],
+  "id": "evidence:9c83666477ff",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "who",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "evidence",
+  "url": "https://www.emro.who.int/nutrition/breastfeeding/exclusively-breastfeed-for-6-months.html"
+}

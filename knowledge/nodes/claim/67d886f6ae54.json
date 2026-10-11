@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:67d886f6ae54",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "PMC studies on natural baby products were not used because they are not official-domain sources.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

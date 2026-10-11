@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:57fc89f60e01"
+    }
+  ],
+  "id": "claim:8e541476a670",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-Info describes pull-up style diapers (Höschenwindeln) as sealing well, so clothing usually stays dry. The source discusses them as disposable diapers and does not directly compare them with tape diapers.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

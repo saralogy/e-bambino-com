@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:353d4fc17fea"
+    }
+  ],
+  "id": "claim:ab2fc953bc9e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Soaps can dry out a baby's skin. Use soap sparingly and rinse it off promptly. For heavily soiled areas, use only mild, neutral-pH soaps without additives.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,43 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:9d5ff27f2e94"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ab967034112a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c1d71b4bb5a3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f6547af24ea0"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/newborn-clothing-size"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/us-vs-eu-baby-clothing-sizes",
+  "internalLinks": [
+    "/clothing/newborn-clothing-size/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap"
+  ],
+  "slug": "us-vs-eu-baby-clothing-sizes",
+  "status": "published",
+  "title": "US vs EU baby clothing sizes: do they match?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/us-vs-eu-baby-clothing-sizes/",
+  "ymyl": false
+}

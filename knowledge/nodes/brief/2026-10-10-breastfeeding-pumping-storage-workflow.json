@@ -1,0 +1,17 @@
+{
+  "category": "breastfeeding",
+  "decisionLine": "Build a practical workflow/checklist; English hub is currently empty",
+  "edges": [
+    {
+      "rel": "SPECIFIES",
+      "to": "opp:breastfeeding-pumping-storage-workflow"
+    }
+  ],
+  "id": "brief:2026-10-10-breastfeeding-pumping-storage-workflow",
+  "path": "docs/content-intelligence/inbox/2026-10-10-breastfeeding-pumping-storage-workflow.md",
+  "priority": "P1",
+  "researchDate": "2026-10-10",
+  "status": "inbox",
+  "title": "Pumping and milk-storage workflow for work or daycare",
+  "type": "brief"
+}

@@ -1,0 +1,20 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:c207d761df3e",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes",
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Cleaning-Baby-Clothes.aspx"
+}

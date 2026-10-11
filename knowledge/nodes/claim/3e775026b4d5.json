@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:819debb1b2fb"
+    }
+  ],
+  "id": "claim:3e775026b4d5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Stroller safety basics from the CPSC: use the harness every time, keep the brake set when parked, and never leave a child unattended.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

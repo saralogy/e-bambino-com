@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:528f158d8f04"
+    }
+  ],
+  "id": "claim:fe62dc07a381",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-Info: to prevent skin inflammation, change diapers as often as possible and immediately after each bowel movement.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:77317970c997"
+    }
+  ],
+  "id": "claim:4e8401f5fe86",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP says do not put children to sleep in strollers, especially infants younger than 4 months old.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

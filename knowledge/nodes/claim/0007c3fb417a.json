@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:866a0855b75f"
+    }
+  ],
+  "id": "claim:0007c3fb417a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "ISOFIX reduces the risk of incorrect installation because it has only two standardized anchor points; incorrect use can greatly reduce the protective effect of the seat.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

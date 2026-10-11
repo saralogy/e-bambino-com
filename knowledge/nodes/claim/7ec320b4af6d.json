@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:812bf6852902"
+    }
+  ],
+  "id": "claim:7ec320b4af6d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Gates for use at the top of stairs must state on the packaging the minimum distance to the first step.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

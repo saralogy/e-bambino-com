@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:b96021086d06",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Exact home-care window before calling for a non-yeast rash: the AAP sources give 3 days for the yeast case only. The brief's 2-3 day window for an irritant rash is not confirmed as a single official number.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

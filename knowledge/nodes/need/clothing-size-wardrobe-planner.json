@@ -1,0 +1,9 @@
+{
+  "audience": "expecting and new parents",
+  "edges": [],
+  "id": "need:clothing-size-wardrobe-planner",
+  "intent": "unknown",
+  "lang": "en",
+  "question": "How do you choose baby clothes sizes and what do you need first?",
+  "type": "need"
+}

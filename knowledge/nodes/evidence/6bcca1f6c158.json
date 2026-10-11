@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:6bcca1f6c158",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/recall-products/baby-bathtub-seats-and-rings"
+}

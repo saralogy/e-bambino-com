@@ -1,0 +1,21 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "ernaehrung",
+  "id": "page:de/ernaehrung/trinkmenge-baby-erstes-jahr",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki",
+    "awmf",
+    "who"
+  ],
+  "slug": "trinkmenge-baby-erstes-jahr",
+  "status": "held-ymyl",
+  "title": "Wie viel und wie oft muss ein Baby im ersten Jahr trinken?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/ernaehrung/trinkmenge-baby-erstes-jahr/",
+  "ymyl": true
+}

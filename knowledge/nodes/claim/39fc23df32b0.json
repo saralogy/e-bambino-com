@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1a856e44ff13"
+    }
+  ],
+  "id": "claim:39fc23df32b0",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Model numbers printed on the stroller leg and the car seat base are the way to confirm a specific stroller and car seat pairing; check the manufacturer's compatibility list for those models.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:569dc29f9009"
+    }
+  ],
+  "id": "claim:db49d2b9fea2",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Weighted blankets, weighted sleepers, weighted swaddles and other weighted objects should not be placed on or near a sleeping infant (AAP).",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

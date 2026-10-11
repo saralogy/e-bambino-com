@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:578243f9c153"
+    }
+  ],
+  "id": "claim:1d78fc137489",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance (AWMF 063-002): in the first year, do not use a pillow. Omit pillows, fur pads, bed nests (Nestchen) and padded bed rails, because they carry overheating and suffocation risks.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

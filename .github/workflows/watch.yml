@@ -1,0 +1,145 @@
+# Weekly change detection on watched source and competitor URLs.
+# Fetches due URLs from knowledge/watchlist.json (scripts/watch/fetch.mjs),
+# validates the graph, and, if knowledge/ changed, commits to bot/watch-<ISO week>
+# and opens or updates ONE pull request for that branch. Merging stays human.
+# See docs/system/OPERATIONS.md.
+name: watch
+
+on:
+  schedule:
+    - cron: '17 5 * * 1' # Mondays 05:17 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Max URLs this run (cap 200)'
+        required: false
+        default: '60'
+      dry_run:
+        description: 'List due URLs only: no network, no commit'
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BASE: ${{ github.event.repository.default_branch }}
+      LIMIT: ${{ github.event.inputs.limit || '60' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Stop switch
+        id: stop
+        run: |
+          if [ -f knowledge/STOP ]; then
+            echo "knowledge/STOP is present; skipping the watch job. Reason:"
+            cat knowledge/STOP
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipped: knowledge/STOP is present." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.stop.outputs.skip != 'true'
+        with:
+          node-version: 22
+
+      - name: Check out this week's branch
+        id: branch
+        if: steps.stop.outputs.skip != 'true'
+        run: |
+          week="$(date -u +%G-W%V)"
+          branch="bot/watch-$week"
+          echo "week=$week" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            # Re-run in the same week: continue from the branch, bring in the base branch.
+            git fetch origin "$branch"
+            git checkout -B "$branch" "origin/$branch"
+            if ! git merge --no-edit "origin/$BASE"; then
+              git merge --abort
+              echo "::error::$branch conflicts with $BASE. Nothing was reset or force-pushed. Resolve the conflict on $branch (or merge or close its PR and delete the branch), then re-run this workflow."
+              exit 1
+            fi
+          else
+            git checkout -B "$branch" "origin/$BASE"
+          fi
+          # The base branch may have gained a STOP file since checkout.
+          if [ -f knowledge/STOP ]; then echo "knowledge/STOP present after merge; stopping."; exit 1; fi
+
+      - name: Refresh the watchlist
+        if: steps.stop.outputs.skip != 'true'
+        run: node scripts/watch/build-watchlist.mjs
+
+      - name: Fetch due URLs
+        if: steps.stop.outputs.skip != 'true'
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            node scripts/watch/fetch.mjs --dry-run --limit "$LIMIT"
+          else
+            node scripts/watch/fetch.mjs --limit "$LIMIT" --summary "$RUNNER_TEMP/summary.md"
+          fi
+
+      - name: Validate the graph
+        if: steps.stop.outputs.skip != 'true'
+        run: npm run kg:check
+
+      - name: Revalidation work list
+        if: steps.stop.outputs.skip != 'true'
+        run: |
+          node scripts/watch/revalidate.mjs > "$RUNNER_TEMP/revalidate.md"
+          { cat "$RUNNER_TEMP/summary.md" 2>/dev/null; echo; cat "$RUNNER_TEMP/revalidate.md"; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and open or update the pull request
+        if: steps.stop.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        env:
+          BRANCH: ${{ steps.branch.outputs.branch }}
+          WEEK: ${{ steps.branch.outputs.week }}
+        run: |
+          if [ -z "$(git status --porcelain -- knowledge/)" ]; then
+            echo "knowledge/ unchanged; nothing to commit."
+            exit 0
+          fi
+          # Keep scores and BACKLOG.md in step with the graph, so CI's backlog check passes on the bot PR.
+          # One command per line: under bash -e a failure inside an && chain would not stop the step.
+          node scripts/kg/score.mjs --write
+          node scripts/kg/backlog.mjs
+          node scripts/kg/check.mjs
+          git add knowledge/ docs/content-intelligence/BACKLOG.md
+          git commit -m "watch: change detection $WEEK" -m "Run by .github/workflows/watch.yml (run ${{ github.run_id }})."
+          git push origin "HEAD:refs/heads/$BRANCH"
+
+          body="$RUNNER_TEMP/pr-body.md"
+          {
+            echo "Automated change detection for $WEEK. Only hashes, titles, Last-Modified headers and fetch status are stored; no page text."
+            echo "A person reviews and merges this PR. Merging carries the fetch state forward to next week's run."
+            echo
+            cat "$RUNNER_TEMP/summary.md" 2>/dev/null
+            echo
+            cat "$RUNNER_TEMP/revalidate.md"
+          } | head -c 60000 > "$body"
+
+          pr="$(gh pr list --head "$BRANCH" --base "$BASE" --state open --json number --jq '.[0].number')"
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --body-file "$body"
+            echo "Updated PR #$pr"
+          else
+            gh pr create --base "$BASE" --head "$BRANCH" --title "Watch: source changes $WEEK" --body-file "$body"
+          fi

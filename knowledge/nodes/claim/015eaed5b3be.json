@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:cb485e91ffbc"
+    }
+  ],
+  "id": "claim:015eaed5b3be",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Breastfeeding pain together with a fever should be discussed with a doctor or nurse.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:546b9a55b3f4",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Advice not to put a baby to bed with a bottle appeared in CDC/FDA search summaries, but the exact page was not confirmed. The AAP tooth-decay point is confirmed.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

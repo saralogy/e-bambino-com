@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:awmf"
+    }
+  ],
+  "id": "evidence:403e094c0a06",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "awmf",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://register.awmf.org/assets/guidelines/061-016l_S3_Allergiepraevention_2022-11.pdf"
+}

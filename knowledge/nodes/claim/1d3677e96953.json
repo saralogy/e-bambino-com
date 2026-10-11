@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:839f0b0822a8"
+    }
+  ],
+  "id": "claim:1d3677e96953",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Call the baby's doctor if there is yellow or white pus, or swelling or redness around the belly button. Call immediately if the cord actively bleeds. A few drops of blood on the diaper around the time the stump falls off are normal.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

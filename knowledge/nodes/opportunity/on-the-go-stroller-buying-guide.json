@@ -1,0 +1,103 @@
+{
+  "action": "improve",
+  "category": "on-the-go",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:02dbed3a89ac"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:05fb96bc01f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ea541bedc08a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f8477c032ab4"
+    },
+    {
+      "note": "dedupe 0.3; needs human check",
+      "rel": "OVERLAPS",
+      "to": "page:en/buying-guides/how-to-choose-a-stroller"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/on-the-go/baby-carrier-or-bassinet"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/on-the-go/when-can-a-baby-use-a-stroller"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:on-the-go-stroller-buying-guide"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [
+      "page:en/buying-guides/how-to-choose-a-stroller"
+    ],
+    "evidence": true,
+    "overlapCheck": "resolved:decision:2026-10-11-stroller-brief-improve-held-guide",
+    "ymyl": false
+  },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 17 (penalty 1); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
+  "id": "opp:on-the-go-stroller-buying-guide",
+  "notes": "2026-10-11 agent:gap-scoring: action create -> improve by decision:2026-10-11-stroller-brief-improve-held-guide.",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-on-the-go-stroller-buying-guide.md. Decision line: \"Build; explicitly listed as a roadmap gap in AGENTS.md\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
+  "reviewBy": "2027-01-08",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/buying-guides/how-to-choose-a-stroller at 0.3; duplicateOf page:en/buying-guides/how-to-choose-a-stroller | differentiation: formats: comparison table or matrix, decision tree or chooser | links: 8 en page(s) in hub on-the-go; 2 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: work on an existing duplicate page +1",
+    "differentiation": 3,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 1,
+    "hardGates": {
+      "blocking": [],
+      "duplicate": "pass",
+      "evidence": "pass",
+      "overlap": "pass",
+      "ymyl": "pass"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 3,
+        "evidence": 0,
+        "need": 4,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3.36,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 5,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 17,
+    "penalty": 1,
+    "utility": 4
+  },
+  "state": "scored",
+  "title": "Constraint-first stroller buying guide",
+  "type": "opportunity"
+}

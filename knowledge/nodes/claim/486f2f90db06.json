@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:45b65f99b283"
+    }
+  ],
+  "id": "claim:486f2f90db06",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Readiness includes being aware of their own bladder and bowel signals, such as grunting, squatting, or freezing when they need a bowel movement.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

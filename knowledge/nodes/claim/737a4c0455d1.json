@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:737a4c0455d1",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Table band 6 to 12 months (per-feed amount): only the 6 month AAP figure was confirmed. No official per-feed figure for 6 to 12 months was found.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

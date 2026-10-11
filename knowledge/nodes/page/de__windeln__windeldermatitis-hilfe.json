@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "windeln",
+  "id": "page:de/windeln/windeldermatitis-hilfe",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "windeldermatitis-hilfe",
+  "status": "held-ymyl",
+  "title": "Was hilft gegen Windeldermatitis?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/windeln/windeldermatitis-hilfe/",
+  "ymyl": true
+}

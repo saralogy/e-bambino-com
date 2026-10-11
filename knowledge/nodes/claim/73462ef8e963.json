@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:dd49ac187106"
+    }
+  ],
+  "id": "claim:73462ef8e963",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends room sharing without bed sharing, ideally for at least the first six months, because it can lower the risk of SIDS by as much as 50 percent. The crib or bassinet should sit near the parents' bed, not in it.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

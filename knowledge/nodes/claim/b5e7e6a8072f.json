@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c70c439d96c3"
+    }
+  ],
+  "id": "claim:b5e7e6a8072f",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FDA does not approve infant formulas. Manufacturers must notify the FDA before marketing a new formula. Formulas must meet minimum levels for 30 nutrients and maximum levels for 10 of them, use approved or GRAS ingredients, and be tested for Salmonella and Cronobacter.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

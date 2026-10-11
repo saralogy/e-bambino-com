@@ -1,0 +1,71 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0960e9f11e0c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:1d78fc137489"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:211a5ee2a2f3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4ec951f1dc55"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:795a95f624f7"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8f9f2e7b31ad"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d5aaa33a4880"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d9d981d33570"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ee65233a3831"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/sleep-sack-or-blanket"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/babyzimmer/bettwaesche-baby-erstes-jahr"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/bedding-for-baby-first-year",
+  "internalLinks": [
+    "/clothing/sleep-sack-or-blanket/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "nichd",
+    "awmf",
+    "kindergesundheit-info"
+  ],
+  "slug": "bedding-for-baby-first-year",
+  "status": "held-ymyl",
+  "title": "What bedding does a baby need in the first year?",
+  "translationOf": "bettwaesche-baby-erstes-jahr",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/bedding-for-baby-first-year/",
+  "ymyl": true
+}

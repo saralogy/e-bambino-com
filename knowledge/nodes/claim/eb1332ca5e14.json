@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:eb1332ca5e14",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Typical feeding counts by age band for 1 to 3 months and 4 to 6 months (the table) were not confirmed from an official source; only the first-weeks range and the later 2 to 4 hour interval are sourced.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

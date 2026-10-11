@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b80b7372bfdf"
+    }
+  ],
+  "id": "claim:70cf66ef7370",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises discussing formula amounts with the pediatrician if a baby always seems to want more or less than usual.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:df2f3445912b",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The Safe Sleep for Babies Act effective date (described as November 12 in a CPSC 2023 release) must be confirmed before it is quoted, because the year was not confirmed.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

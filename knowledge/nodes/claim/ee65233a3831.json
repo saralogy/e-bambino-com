@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f46a531b664e"
+    }
+  ],
+  "id": "claim:ee65233a3831",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC: keep the baby's sleep space bare, with only a fitted sheet. Blankets, pillows, comforters, bumpers and extra padding must not be used in the sleep area.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

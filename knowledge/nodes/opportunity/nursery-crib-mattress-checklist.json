@@ -1,0 +1,86 @@
+{
+  "action": "create",
+  "category": "nursery",
+  "demand": "unknown",
+  "edges": [
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/sleep-sack-or-blanket"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/guides/baby-sleep"
+    },
+    {
+      "rel": "OVERLAPS",
+      "to": "page:en/nursery/how-long-does-a-crib-last"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:nursery-crib-mattress-checklist"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "overlapCheck": "clear",
+    "ymyl": true
+  },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 19 (penalty 2); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
+  "id": "opp:nursery-crib-mattress-checklist",
+  "owner": "content-intelligence-lead",
+  "priority": "P2",
+  "rationale": "From brief 2026-10-10-nursery-crib-mattress-checklist.md. Decision line: \"Build a narrow safety checklist rather than another general nursery guide\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
+  "reviewBy": "2027-01-08",
+  "scores": {
+    "assumptions": "utility: priority P2 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/nursery/how-long-does-a-crib-last at 0.137 | differentiation: formats: checklist, planner or worksheet, measurement guide | links: 6 en page(s) in hub nursery; 3 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: YMYL review burden +1; no named reviewer lined up +1",
+    "differentiation": 4,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 5,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)",
+        "ymyl: no named human reviewer lined up (gates.reviewer); approval is a human transition"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "pass",
+      "ymyl": "fail"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 4,
+        "evidence": 0,
+        "need": 3,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3.29,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 4,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 19,
+    "penalty": 2,
+    "utility": 3
+  },
+  "state": "scored",
+  "title": "Crib mattress fit and second-hand crib inspection checklist",
+  "type": "opportunity"
+}

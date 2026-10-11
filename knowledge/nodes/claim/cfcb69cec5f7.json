@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:cfcb69cec5f7",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German Spannbettlaken (fitted sheet) material and changing guidance was not found on any German official source.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,168 @@
+# Monthly Search Console outcome import (the learning loop).
+# Runs only when the GSC_SERVICE_ACCOUNT_JSON secret is set and knowledge/STOP is absent.
+# Imports page-level performance for the latest complete 28-day windows
+# (scripts/outcomes/import-gsc.mjs), validates the graph, writes the outcome
+# report and the calibration result into the PR body, and, if knowledge/
+# changed, commits to bot/outcomes-<YYYY-MM> and opens or updates ONE pull
+# request for that branch. Merging stays human. See docs/system/MEASUREMENT.md.
+name: outcomes
+
+on:
+  schedule:
+    - cron: '41 4 4 * *' # 4th of each month, 04:41 UTC (Search Console data is final after ~3 days)
+  workflow_dispatch:
+    inputs:
+      period:
+        description: 'Optional period YYYY-MM-DD..YYYY-MM-DD (default: latest complete 28-day windows)'
+        required: false
+        default: ''
+
+concurrency:
+  group: outcomes
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  outcomes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BASE: ${{ github.event.repository.default_branch }}
+      # Only whether the secret is set; the secret itself reaches the import step alone.
+      HAS_GSC: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON != '' }}
+      PERIOD: ${{ github.event.inputs.period || '' }}
+    steps:
+      - name: Credentials present?
+        id: secret
+        run: |
+          if [ "$HAS_GSC" != "true" ]; then
+            echo "GSC_SERVICE_ACCOUNT_JSON is not set; skipping. See docs/system/MEASUREMENT.md."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipped: the GSC_SERVICE_ACCOUNT_JSON secret is not set." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.secret.outputs.skip != 'true'
+        with:
+          fetch-depth: 0
+
+      - name: Stop switch
+        id: stop
+        if: steps.secret.outputs.skip != 'true'
+        run: |
+          if [ -f knowledge/STOP ]; then
+            echo "knowledge/STOP is present; skipping the outcomes job. Reason:"
+            cat knowledge/STOP
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skipped: knowledge/STOP is present." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        with:
+          node-version: 22
+
+      - name: Check out this month's branch
+        id: branch
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        run: |
+          month="$(date -u +%Y-%m)"
+          branch="bot/outcomes-$month"
+          echo "month=$month" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            # Re-run in the same month: continue from the branch, bring in the base branch.
+            git fetch origin "$branch"
+            git checkout -B "$branch" "origin/$branch"
+            if ! git merge --no-edit "origin/$BASE"; then
+              git merge --abort
+              echo "::error::$branch conflicts with $BASE. Nothing was reset or force-pushed. Resolve the conflict on $branch (or merge or close its PR and delete the branch), then re-run this workflow."
+              exit 1
+            fi
+          else
+            git checkout -B "$branch" "origin/$BASE"
+          fi
+          # The base branch may have gained a STOP file since checkout.
+          if [ -f knowledge/STOP ]; then echo "knowledge/STOP present after merge; stopping."; exit 1; fi
+
+      - name: Sync page inventory
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        run: npm run kg:sync
+
+      - name: Import Search Console data
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE: ${{ vars.GSC_SITE || 'sc-domain:e-bambino.com' }}
+        run: |
+          if [ -n "$PERIOD" ]; then
+            node scripts/outcomes/import-gsc.mjs --api --period "$PERIOD" --unmapped-out "$RUNNER_TEMP/unmapped.md"
+          else
+            node scripts/outcomes/import-gsc.mjs --api --windows 2 --unmapped-out "$RUNNER_TEMP/unmapped.md"
+          fi
+
+      - name: Validate the graph
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        run: npm run kg:check
+
+      - name: Report and calibration
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        run: |
+          node scripts/outcomes/report.mjs --out "$RUNNER_TEMP/report.md"
+          node scripts/outcomes/calibrate.mjs > "$RUNNER_TEMP/calibrate.txt"
+          npm run kg:check
+          { cat "$RUNNER_TEMP/report.md"; echo; echo '## Calibration'; echo; echo '```'; cat "$RUNNER_TEMP/calibrate.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and open or update the pull request
+        if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        env:
+          BRANCH: ${{ steps.branch.outputs.branch }}
+          MONTH: ${{ steps.branch.outputs.month }}
+        run: |
+          if [ -z "$(git status --porcelain -- knowledge/)" ]; then
+            echo "knowledge/ unchanged; nothing to commit."
+            exit 0
+          fi
+          # Keep scores and BACKLOG.md in step with the graph, so CI's backlog check passes on the bot PR.
+          # One command per line: under bash -e a failure inside an && chain would not stop the step.
+          node scripts/kg/score.mjs --write
+          node scripts/kg/backlog.mjs
+          node scripts/kg/check.mjs
+          git add knowledge/ docs/content-intelligence/BACKLOG.md
+          git commit -m "outcomes: Search Console import $MONTH" -m "Run by .github/workflows/outcomes.yml (run ${{ github.run_id }})."
+          git push origin "HEAD:refs/heads/$BRANCH"
+
+          body="$RUNNER_TEMP/pr-body.md"
+          {
+            echo "Automated Search Console import for $MONTH: aggregate page-level clicks, impressions, CTR and position only."
+            echo "No personal data. The report shows associations, not causes. Any rubric change in the calibration is a proposal for a human to approve."
+            echo "A person reviews and merges this PR."
+            echo
+            cat "$RUNNER_TEMP/report.md"
+            echo
+            echo '## Calibration'
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/calibrate.txt"
+            echo '```'
+            echo
+            cat "$RUNNER_TEMP/unmapped.md" 2>/dev/null
+          } | head -c 60000 > "$body"
+
+          pr="$(gh pr list --head "$BRANCH" --base "$BASE" --state open --json number --jq '.[0].number')"
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --body-file "$body"
+            echo "Updated PR #$pr"
+          else
+            gh pr create --base "$BASE" --head "$BRANCH" --title "Outcomes: Search Console $MONTH" --body-file "$body"
+          fi

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:1637077e013c"
+    }
+  ],
+  "id": "claim:3f12643a370d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Child-resistant safety caps are designed to slow children down but are not fully childproof.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

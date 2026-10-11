@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5210210c672a"
+    }
+  ],
+  "id": "claim:53a6ee33cc34",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Glass is heavier and more fragile than plastic. There is no single legal rule specific to glass, so manufacturers usually follow lead and cadmium limits.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

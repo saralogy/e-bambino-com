@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c914fcd8f6f1"
+    }
+  ],
+  "id": "claim:aba59f168743",
+  "kind": "fact",
+  "status": "supported",
+  "text": "In most cases, cradle cap has cleared up by age 1 year.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

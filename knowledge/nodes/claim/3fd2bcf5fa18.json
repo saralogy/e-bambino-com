@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3fd2bcf5fa18",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Typical base and typical age per stage in the comparison table: no official source gives these as a table. Only the basic age ranges above were confirmed.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

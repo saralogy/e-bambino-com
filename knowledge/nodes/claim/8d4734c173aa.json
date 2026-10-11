@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a3a0f899366c"
+    }
+  ],
+  "id": "claim:8d4734c173aa",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A car seat is usable on a plane only if it has a label reading 'This restraint is certified for use in motor vehicles and aircraft.'",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

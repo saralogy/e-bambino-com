@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:fd351b7b4478",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Specific recline angle numbers for each seat type: only the general need for semi-reclined position is sourced.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

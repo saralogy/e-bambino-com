@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cdc"
+    }
+  ],
+  "id": "evidence:72ef00b20077",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cdc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "evidence",
+  "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+}

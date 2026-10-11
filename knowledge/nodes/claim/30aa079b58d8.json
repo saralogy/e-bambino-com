@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:379cf2712641"
+    }
+  ],
+  "id": "claim:30aa079b58d8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The federal standard sets a minimum gate height of 22 inches from the floor, intended to stop children from leaning over and tumbling over the top.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

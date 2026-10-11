@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:be527e0e6d8d"
+    }
+  ],
+  "id": "claim:c1d71b4bb5a3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Babies typically gain about 1 to 1.5 inches (2.5 to 4 cm) in length each month between one and four months, so a '0-3 months' label can run out on length before weight.",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

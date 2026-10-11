@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:fda"
+    }
+  ],
+  "id": "evidence:c9103edee456",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "fda",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "evidence",
+  "url": "https://www.fda.gov/consumers/consumer-updates/what-know-when-buying-or-using-breast-pump"
+}

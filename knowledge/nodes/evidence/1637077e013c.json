@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:1637077e013c",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/s3fs-public/NSN07_032023_PoisonPrevention_Social_v2.pdf?VersionId=KinIOpoc9jml_wuX.ktUDWkJJPRnkx_m"
+}

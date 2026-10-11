@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:fbc5379749c7"
+    }
+  ],
+  "id": "claim:2975be63fd7c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Sponge bath steps: gather supplies first and lay the baby on a padded, flat surface. Use a safety strap or keep one hand on the baby. Wash the face first, keeping water out of the eyes and mouth, then the body, and finish with the diaper area. Keep the baby wrapped in a dry towel and expose only the part being washed.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

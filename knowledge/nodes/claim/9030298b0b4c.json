@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4107a1657562"
+    }
+  ],
+  "id": "claim:9030298b0b4c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Electrical accidents at outlets are listed by Kindergesundheit-info as a typical accident type from about 7 months to 4 years of age.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

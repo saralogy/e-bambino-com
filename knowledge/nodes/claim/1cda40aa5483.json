@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:1cda40aa5483",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Brand size-chart variation (based on reasoning, not a sourced fact).",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

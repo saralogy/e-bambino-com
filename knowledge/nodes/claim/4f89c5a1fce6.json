@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c072bc9736ed"
+    }
+  ],
+  "id": "claim:4f89c5a1fce6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC says starting toilet training too early can cause stress and setbacks, which can make training take longer.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

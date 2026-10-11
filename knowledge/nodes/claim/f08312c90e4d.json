@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f08312c90e4d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The older AmSafe CARES airplane-only device. Source is dated (around 2008), and the claim that no US airlines provide it has not been confirmed for 2026.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

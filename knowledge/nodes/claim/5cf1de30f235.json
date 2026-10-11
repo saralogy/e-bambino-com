@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5cf1de30f235",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Sleep sack size rules for the 6-12 and 12-24 month range; the AAP text covers fit and the rolling stop only.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

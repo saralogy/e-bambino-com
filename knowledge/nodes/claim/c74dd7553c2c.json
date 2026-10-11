@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c74dd7553c2c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Medicine and cleaner specifics (for example, which products are most dangerous): not sourced.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

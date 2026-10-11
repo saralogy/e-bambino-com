@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:f59fc610f0d0",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Any skin-health, allergy or irritation claims by fabric: none sourced. These would make the page ymyl and require a named reviewer, so keep them out unless a medical source is found.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

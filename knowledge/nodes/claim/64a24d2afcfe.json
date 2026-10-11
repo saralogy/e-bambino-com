@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:64a24d2afcfe",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Space needed and storage are not confirmed by any official source.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

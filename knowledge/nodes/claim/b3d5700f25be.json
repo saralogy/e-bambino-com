@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:33e183e054f7"
+    }
+  ],
+  "id": "claim:b3d5700f25be",
+  "kind": "fact",
+  "status": "supported",
+  "text": "From an expert perspective, switching from starter formula to follow-on formula is not necessary, according to the Verbraucherzentrale.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

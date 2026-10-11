@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:1ce81aa05752",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German car seat sources (for the translationOf German version): not searched; check Kindergesundheit-info or ADAC-free official sources before release.",
+  "topics": [
+    "car-seat-installation-check"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/spielzeug/spielmatte-baby"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/does-a-baby-need-a-play-mat",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "does-a-baby-need-a-play-mat",
+  "status": "published",
+  "title": "Does a baby need a play mat?",
+  "translationOf": "spielmatte-baby",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/does-a-baby-need-a-play-mat/",
+  "ymyl": false
+}

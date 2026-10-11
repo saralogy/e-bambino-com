@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:633adb185d43"
+    }
+  ],
+  "id": "claim:3abf172b1372",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises washing a baby's hair two or three times a week with a mild shampoo or body wash.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

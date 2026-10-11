@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:3b3e1733efff",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/s3fs-public/09-07-2023-ASTM-F15-18-Bassinet-Height-Letter.pdf"
+}

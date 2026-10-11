@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:64ab515960a9"
+    }
+  ],
+  "id": "claim:6402e9ad30f6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends that the crib or bassinet sit near the parents' bed, not in it, so the baby is within view and arm's reach for feeding, comforting and monitoring.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:60c34ff127e0"
+    }
+  ],
+  "id": "claim:405d9b7c8dc4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "About three quarters of thermal injuries in children under 5 are scalds from hot liquids or from touching hot objects, and most happen in the second year of life when children begin to walk and pull objects down.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

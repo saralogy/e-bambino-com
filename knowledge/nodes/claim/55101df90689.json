@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:55101df90689",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Which items can wait until after the birth, beyond shoes; no official source found.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

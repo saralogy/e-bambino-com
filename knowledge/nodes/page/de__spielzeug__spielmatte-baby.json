@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "spielzeug",
+  "id": "page:de/spielzeug/spielmatte-baby",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "spielmatte-baby",
+  "status": "published",
+  "title": "Braucht ein Baby eine Spielmatte?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/spielzeug/spielmatte-baby/",
+  "ymyl": false
+}

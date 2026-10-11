@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:6bfc250ee8db",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Retractable gates: no safety or mounting facts were found in official sources.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:764e72f8d320"
+    }
+  ],
+  "id": "claim:6c9b4fb76f63",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC approved a new federal safety standard for carriages and strollers in 2014.",
+  "topics": [
+    "travel-system-or-separate-stroller",
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

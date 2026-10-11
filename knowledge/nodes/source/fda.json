@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "U.S. Food and Drug Administration",
+  "id": "source:fda",
+  "jurisdiction": "US",
+  "key": "fda",
+  "name": "FDA",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.fda.gov"
+}

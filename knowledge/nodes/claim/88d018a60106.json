@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:88d018a60106",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Breathability, warmth and drying comparisons of cotton, bamboo viscose and merino wool: no official source found in the allowed domains.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

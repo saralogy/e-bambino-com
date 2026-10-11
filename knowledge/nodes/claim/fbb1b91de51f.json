@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:fbb1b91de51f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "When to move up to the next size (leaks, red marks, tight waistband): no official source found for these signs.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

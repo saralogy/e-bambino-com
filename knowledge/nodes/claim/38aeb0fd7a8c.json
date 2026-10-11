@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:38aeb0fd7a8c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Glass being easier and safer to clean than plastic: the source is an NIH-hosted German review, not an allowed domain. Only the CDC cleaning guidance is confirmed.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

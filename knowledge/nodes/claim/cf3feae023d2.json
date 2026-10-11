@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:cf3feae023d2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German version's 16 to 18 °C range: the lower bound of 16 °C was not found on any searched official source. Every confirmed source gives 18 °C. An editor must confirm the range or change the German text to 18 °C before the English version is written, and fix the German newborn page at the same time.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

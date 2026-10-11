@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:95432ad6c24c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "WHO wording that starting before 4 months shows no benefit and may stress immature kidneys, gut and immune system: only a secondary summary was found. Confirm on who.int before publishing.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

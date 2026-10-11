@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:122d10b01ddf",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German kindergesundheit-info snippet says a stump that has not fallen off by the third month needs a doctor visit. The official AAP snippet gives 1 to 3 weeks for falling off and does not confirm this, so it is not used as a fact.",
+  "topics": [
+    "how-to-bathe-a-newborn-before-cord-falls-off"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

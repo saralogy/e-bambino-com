@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c97ce2350f1c"
+    }
+  ],
+  "id": "claim:5e61163b3d2b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-Info lists zinc oxide ointment for a sore bottom as part of the basic home first-aid kit for children.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

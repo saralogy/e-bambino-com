@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7d47f0c14e51"
+    }
+  ],
+  "id": "claim:af9377eff464",
+  "kind": "fact",
+  "status": "supported",
+  "text": "German guidance: for the first year, put the baby to sleep in a sleeping bag instead of a blanket, and do not use a pillow. Neck opening should be no larger than the baby's head.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

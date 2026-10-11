@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:643dcf7271da"
+    }
+  ],
+  "id": "claim:867cf4e2d18d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Pain that continues beyond the first minute or so of nursing is a sign of improper latch and should be corrected right away; to fix it, break the suction with a finger in the corner of the baby's mouth and latch the baby on again, covering as much of the areola as possible.",
+  "topics": [
+    "is-breastfeeding-pain-normal"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a1fbd17fe5ec",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Breastfeeding frequency (8 to 12 feeds in 24 hours) and the vitamin D dose (400 IU daily) appeared in search results but were not tied to a confirmed official URL. Do not use them unless an editor confirms the source.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

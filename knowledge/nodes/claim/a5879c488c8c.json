@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a5879c488c8c",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "What GOTS and OEKO-TEX certifications mean and whether they matter: not from an allowed official domain; must not be claimed without a source.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

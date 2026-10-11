@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "sicherheit",
+  "id": "page:de/sicherheit/steckdosen-sichern-baby",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "steckdosen-sichern-baby",
+  "status": "held-ymyl",
+  "title": "Wie sichert man Steckdosen für ein Baby?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/sicherheit/steckdosen-sichern-baby/",
+  "ymyl": true
+}

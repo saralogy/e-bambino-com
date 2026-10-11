@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:738027b66d29",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "EU rules on advertising and price comparison for infant formula were not searched and are not confirmed here.",
+  "topics": [
+    "formula-stage-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

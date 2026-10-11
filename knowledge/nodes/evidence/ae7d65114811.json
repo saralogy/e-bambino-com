@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:ae7d65114811",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2023/Nearly-Half-of-Incidents-with-Kids-and-Corded-Window-Coverings-Resulted-in-Death-GoCordless-to-Save-Lives"
+}

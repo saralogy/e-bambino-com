@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a857f8096e06"
+    }
+  ],
+  "id": "claim:f7184cc220b3",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info says a baby tub should be filled only halfway with water. A child can drown in as little as 10 cm of water if the head goes under, even if the child can already sit.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

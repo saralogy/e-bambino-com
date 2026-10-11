@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/babyzimmer/babyzimmer-kleine-wohnung"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/nursery-in-a-small-apartment",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "nursery-in-a-small-apartment",
+  "status": "published",
+  "title": "How do you set up a nursery in a small apartment?",
+  "translationOf": "babyzimmer-kleine-wohnung",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/nursery-in-a-small-apartment/",
+  "ymyl": false
+}

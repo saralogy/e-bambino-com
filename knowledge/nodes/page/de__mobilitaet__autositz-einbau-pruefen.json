@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "mobilitaet",
+  "id": "page:de/mobilitaet/autositz-einbau-pruefen",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "autositz-einbau-pruefen",
+  "status": "held-ymyl",
+  "title": "Wie wird ein Autositz richtig eingebaut und geprüft?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/mobilitaet/autositz-einbau-pruefen/",
+  "ymyl": true
+}

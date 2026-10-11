@@ -6,8 +6,6 @@ title: Datenschutz
 description: Datenschutzerklärung für e-bambino.com — welche Daten wir erheben, warum, und welche Rechte Sie haben.
 ---
 
-# Datenschutzerklärung
-
 Verantwortlicher für die Datenverarbeitung auf dieser Website ist e-bambino, Hamburg,
 Deutschland, [info@e-bambino.com](mailto:info@e-bambino.com).
 

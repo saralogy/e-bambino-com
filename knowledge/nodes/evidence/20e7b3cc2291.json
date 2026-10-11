@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:20e7b3cc2291",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/How-to-Choose-Safer-Personal-Care-Products.aspx"
+}

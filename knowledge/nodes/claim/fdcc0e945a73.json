@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:fdcc0e945a73",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Lead in teethers was not found; the CPSC search returned no teether lead warning.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

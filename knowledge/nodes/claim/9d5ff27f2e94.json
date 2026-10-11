@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:52c1ad180216"
+    }
+  ],
+  "id": "claim:9d5ff27f2e94",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For infant garments in the nine-months-and-under range, a one-piece garment cannot exceed 64.8 cm (25.75 in) in length, and no piece of a two-piece garment can exceed 40 cm (15.75 in); this is a regulatory eligibility limit, not a size chart.",
+  "topics": [
+    "us-vs-eu-baby-clothing-sizes"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

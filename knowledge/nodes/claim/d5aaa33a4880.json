@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:070f3a06e7f1"
+    }
+  ],
+  "id": "claim:d5aaa33a4880",
+  "kind": "fact",
+  "status": "supported",
+  "text": "NICHD: evidence does not support using crib bumpers to prevent injuries, and evidence shows bumpers can cause serious injury and death.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

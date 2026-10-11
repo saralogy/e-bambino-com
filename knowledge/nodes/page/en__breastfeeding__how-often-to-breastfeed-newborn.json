@@ -1,0 +1,72 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:0b099adbb80f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:241a72240242"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:32911ddd3ab9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5cae667710bf"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7ae924fe366b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9fef2a728940"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b61242a33583"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:cb58f8b10967"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ea2cece4d1bc"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/diapering/how-many-diapers-per-day"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/guides/baby-sleep"
+    }
+  ],
+  "gated": true,
+  "hub": "breastfeeding",
+  "id": "page:en/breastfeeding/how-often-to-breastfeed-newborn",
+  "internalLinks": [
+    "/diapering/how-many-diapers-per-day/",
+    "/guides/baby-sleep/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "who",
+    "nichd",
+    "aap",
+    "cdc",
+    "kindergesundheit-info"
+  ],
+  "slug": "how-often-to-breastfeed-newborn",
+  "status": "held-ymyl",
+  "title": "How often should a newborn breastfeed in 24 hours?",
+  "translationOf": "stillen-haeufigkeit",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/breastfeeding/how-often-to-breastfeed-newborn/",
+  "ymyl": true
+}

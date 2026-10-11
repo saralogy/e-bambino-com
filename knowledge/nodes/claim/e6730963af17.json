@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e6730963af17",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The Verbraucherzentrale page referenced in the brief as a source was not found in any search result, so it cannot be cited.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

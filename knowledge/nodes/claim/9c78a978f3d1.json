@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d3f24d420500"
+    }
+  ],
+  "id": "claim:9c78a978f3d1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FAA does not require children aged 2 years and younger to sit in their own seat with a separate safety belt; the AAP recommends each child have their own seat anyway.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

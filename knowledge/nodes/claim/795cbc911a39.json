@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:795cbc911a39",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "RKI: no RKI page with per-feed or per-age volumes was found. The RKI breastfeeding page surfaced in search but did not give amounts. Do not attribute any amount to RKI.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

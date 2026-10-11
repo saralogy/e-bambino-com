@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3b6347bd411e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Recommended first foods: no official source was retrieved for this question.",
+  "topics": [
+    "when-to-start-solid-food"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

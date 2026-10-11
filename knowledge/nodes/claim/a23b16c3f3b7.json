@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c75c360edec9"
+    }
+  ],
+  "id": "claim:a23b16c3f3b7",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC limits phthalates in children's toys and child care articles to 0.1% (1,000 ppm) per regulated phthalate in accessible component parts; untreated or unfinished wood and natural fibers are exempt from phthalate testing if not treated with a substance that may contain phthalates.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

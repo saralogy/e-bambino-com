@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:315ccc873115",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Cost tiers (low, mid, high): no official source; keep without invented prices.",
+  "topics": [
+    "cordless-vs-corded-blinds-baby-safety"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

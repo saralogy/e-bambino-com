@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:107d05e17e53"
+    }
+  ],
+  "id": "claim:c83b2de8557a",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises against making a child vomit and against using syrup of ipecac; if a child is unconscious, not breathing, or having seizures, call 911 or the local emergency number first.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

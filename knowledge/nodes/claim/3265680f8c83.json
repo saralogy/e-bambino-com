@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:3265680f8c83",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a top tether or support leg is required or recommended for German i-Size seats in a given vehicle. Not confirmed.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

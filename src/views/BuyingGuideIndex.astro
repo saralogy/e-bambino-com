@@ -15,6 +15,7 @@ const COPY = {
   en: {
     eyebrow: 'Before you buy',
     title: 'Buying guides',
+    description: 'How to choose big-ticket baby gear: what to look for, which types exist and what to ask in the store. Independent, no paid placements.',
     lede: 'How to choose the big-ticket baby gear: what to look for, which types exist and what to ask in the store. Independent, with no paid placements.',
     empty: 'First buying guides are on the way.',
     open: 'Read the guide',
@@ -23,6 +24,7 @@ const COPY = {
   de: {
     eyebrow: 'Vor dem Kauf',
     title: 'Kaufberatung',
+    description: 'So wählen Sie die großen Anschaffungen für Baby und Mama: worauf es ankommt, welche Arten es gibt, was Sie fragen sollten.',
     lede: 'So wählen Sie die großen Anschaffungen für Baby und Mama: worauf Sie achten sollten, welche Arten es gibt und was Sie im Laden fragen sollten. Unabhängig, ohne bezahlte Platzierungen.',
     empty: 'Die ersten Kaufberatungen folgen in Kürze.',
     open: 'Zur Kaufberatung',
@@ -37,7 +39,7 @@ const items = (await getCollection('kaufberatung'))
 const alternates = Object.fromEntries(LANGS.map((l) => [l, sectionPath(l, 'buyingGuides')!]));
 ---
 
-<Layout {lang} {alternates} title={COPY.title} description={COPY.lede}>
+<Layout {lang} {alternates} title={COPY.title} description={COPY.description}>
   <section class="page-hero">
     <div class="shell py-16 sm:py-20">
       <SectionHeader eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} />

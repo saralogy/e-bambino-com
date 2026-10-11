@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:fda"
+    }
+  ],
+  "id": "evidence:eda75b4f2318",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "fda",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "evidence",
+  "url": "https://cacmap.fda.gov/medical-devices/breast-pumps/using-breast-pump"
+}

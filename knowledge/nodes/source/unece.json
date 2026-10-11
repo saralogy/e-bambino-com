@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "United Nations Economic Commission for Europe",
+  "id": "source:unece",
+  "jurisdiction": "intl",
+  "key": "unece",
+  "name": "UNECE",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://unece.org"
+}

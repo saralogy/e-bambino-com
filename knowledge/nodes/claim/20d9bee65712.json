@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:bb5a948295fe"
+    }
+  ],
+  "id": "claim:20d9bee65712",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AAP guidance advises installing railings at the top and bottom of stairs, keeping stairs clear and well lit, and supervising children on stairs; stairs are a leading cause of injury for small children.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e8fa47b72927"
+    }
+  ],
+  "id": "claim:7d0d2de25e73",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Children's sleepwear flammability rules (16 CFR parts 1615 and 1616) cover sizes 0 to 6X and 7 to 14; tight-fitting garments that meet the snug-fit sizing and labeling rules are exempt from the flammability testing but must carry the label 'WEAR SNUG-FITTING, NOT FLAME RESISTANT'.",
+  "topics": [
+    "cotton-bamboo-or-merino-baby-clothes"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

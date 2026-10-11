@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/kleidung/wann-babykleidung-neu-kaufen"
+    }
+  ],
+  "gated": true,
+  "hub": "clothing",
+  "id": "page:en/clothing/when-to-buy-the-next-size",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "who"
+  ],
+  "slug": "when-to-buy-the-next-size",
+  "status": "published",
+  "title": "When does a baby need the next clothing size?",
+  "translationOf": "wann-babykleidung-neu-kaufen",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/clothing/when-to-buy-the-next-size/",
+  "ymyl": false
+}

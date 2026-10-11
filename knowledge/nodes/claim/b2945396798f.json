@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:b2945396798f",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Bottle weight, breakage and heat-tolerance comparisons for polypropylene and silicone liners: no official source found beyond glass and the polycarbonate ban.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

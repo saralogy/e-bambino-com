@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4a38a6dfaee8"
+    }
+  ],
+  "id": "claim:2882fcb8fe7c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The rear-facing weight and height limits of a seat are printed in its instruction manual and on a label on the side of the seat.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

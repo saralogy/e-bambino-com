@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:bfb85cd1b26e",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Immediately-Stop-Using-Tuyedoqe-Travel-Bassinets-Due-to-Risk-of-Serious-Injury-or-Death-from-Strangulation-and-Fall-Hazards-Violates-Mandatory-Standard-for-Infant-Sleep-Products"
+}

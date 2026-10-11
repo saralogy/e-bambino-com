@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9d50701188d3"
+    }
+  ],
+  "id": "claim:2ad5bb227006",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For rear-facing seats, the harness straps lie flat and run through the slots at or below the child's shoulders.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

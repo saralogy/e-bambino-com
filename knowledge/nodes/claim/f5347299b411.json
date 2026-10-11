@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:5e84e092afbb"
+    }
+  ],
+  "id": "claim:f5347299b411",
+  "kind": "fact",
+  "status": "supported",
+  "text": "AWMF S2k guideline on prevention of dysregulated screen media use in children and adolescents (version 2023-09, AWMF register no. 027-075) recommends keeping children under 3 years away from all passive and active use of screen media; the recommendation is a consensus statement (no. 25).",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

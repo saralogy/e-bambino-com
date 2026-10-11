@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:0283593a82b5"
+    }
+  ],
+  "id": "claim:bb5ccc6e90f8",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC notes that a GFCI (ground fault circuit interrupter) prevents many electrocutions, and its checklist recommends testing each GFCI monthly per the manufacturer's instructions.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

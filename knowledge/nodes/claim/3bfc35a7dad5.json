@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f0c4822bfcce"
+    }
+  ],
+  "id": "claim:3bfc35a7dad5",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Freshly expressed breast milk can stay at room temperature (77 F or colder) for up to 4 hours.",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

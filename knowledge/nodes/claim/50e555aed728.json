@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:9b9bfb40d72e"
+    }
+  ],
+  "id": "claim:50e555aed728",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC says outlet covers must be hard for a child to remove and large enough that a child cannot choke on them.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

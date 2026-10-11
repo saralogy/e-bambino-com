@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:eeed2810cbcb",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a child should be taken to the emergency department after swallowing a non-battery product: not confirmed.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

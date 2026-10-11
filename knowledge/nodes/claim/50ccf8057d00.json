@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:50ccf8057d00",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The 1 3/8 inch (3.5 cm) gap rule appears in a CPSC draft crib mattress warning and was not confirmed in a final rule. Do not use it unless an editor confirms the current standard.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

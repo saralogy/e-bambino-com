@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ac7c3fddecc7",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Performance on rough ground and long walks. Not covered by an official source.",
+  "topics": [
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

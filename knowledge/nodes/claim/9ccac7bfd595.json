@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6db1a5d772c6"
+    }
+  ],
+  "id": "claim:9ccac7bfd595",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Pads with plastic liners that block air flow around the nipples should be avoided because they can irritate the nipples.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

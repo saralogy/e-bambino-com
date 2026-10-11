@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a08727b83aa0"
+    }
+  ],
+  "id": "claim:fe60dfb946b4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP says it is healthiest for a child to drink from an open cup by about age 2. Sippy cups are a temporary step, and children with chronic illness, physical differences or motor delays may need a schedule set with the pediatrician.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

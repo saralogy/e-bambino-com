@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:26f24e263c35",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Prevalence figures (diaper dermatitis as the most common skin condition in the first two years, 7 to 35 percent) came from a non-official review and are not used.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

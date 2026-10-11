@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8be2f772dac4"
+    }
+  ],
+  "id": "claim:f03b317146bc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The hole in a teat should let about one drop per second fall from an inverted bottle. A hole that is too large makes babies drink fast and swallow air. Thicker formulas suit a medium hole.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

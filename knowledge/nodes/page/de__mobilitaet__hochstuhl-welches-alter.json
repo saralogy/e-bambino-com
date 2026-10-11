@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "mobilitaet",
+  "id": "page:de/mobilitaet/hochstuhl-welches-alter",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "hochstuhl-welches-alter",
+  "status": "published",
+  "title": "Welcher Hochstuhl ist ab welchem Alter geeignet?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/mobilitaet/hochstuhl-welches-alter/",
+  "ymyl": false
+}

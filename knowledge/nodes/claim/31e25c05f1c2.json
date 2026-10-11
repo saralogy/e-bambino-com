@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:31e25c05f1c2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German taxonomie.ts claim of 8 to 12 feeds a day is consistent with the sources above, but the AWMF guideline was not located in search.",
+  "topics": [
+    "how-often-to-breastfeed-newborn"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

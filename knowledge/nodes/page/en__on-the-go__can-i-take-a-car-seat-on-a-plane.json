@@ -1,0 +1,58 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:6f662de46e16"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8d4734c173aa"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8f9aedf49e6a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:91628dff8f58"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:99574a83822d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9c78a978f3d1"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a62be54471eb"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:bbdd9fd8f0dd"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/family-travel"
+    }
+  ],
+  "gated": true,
+  "hub": "on-the-go",
+  "id": "page:en/on-the-go/can-i-take-a-car-seat-on-a-plane",
+  "internalLinks": [
+    "/checklists/family-travel/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "can-i-take-a-car-seat-on-a-plane",
+  "status": "held-ymyl",
+  "title": "Can I take a car seat on a plane?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/on-the-go/can-i-take-a-car-seat-on-a-plane/",
+  "ymyl": true
+}

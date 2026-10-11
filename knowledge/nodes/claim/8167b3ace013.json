@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:8167b3ace013",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Age-by-age bath frequency beyond the first year is not confirmed by any official source found.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:a0da1f47a30e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source was found for how often crib sheets should be changed.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

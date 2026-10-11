@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8515fa08afe0"
+    }
+  ],
+  "id": "claim:03c514cfbfef",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Check with the pediatrician before using a medicated shampoo on a baby, because it may irritate the skin.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

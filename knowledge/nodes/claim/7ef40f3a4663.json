@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8b99e339f2f1"
+    }
+  ],
+  "id": "claim:7ef40f3a4663",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC's small parts rule bans toys and children's products intended for children under 3 that contain or break into small parts; a small part fits fully into a test cylinder 2.25 inches long and 1.25 inches wide that approximates the expanded throat of a child under three.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

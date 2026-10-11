@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4fc032384b7a"
+    }
+  ],
+  "id": "claim:6084be0a7d62",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CPSC's 'Bare is Best' rule: keep the baby's sleep space bare, with only a fitted sheet, to prevent suffocation. Padded crib bumpers should not be used.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

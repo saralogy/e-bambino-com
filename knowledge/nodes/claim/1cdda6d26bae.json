@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:af240f216cd8"
+    }
+  ],
+  "id": "claim:1cdda6d26bae",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Soft objects, loose bedding, pillows, quilts, comforters and bumper pads should stay out of the crib; these recommendations are for healthy babies up to 1 year of age.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

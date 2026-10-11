@@ -1,0 +1,22 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:4aae5a50c496"
+    },
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:fe31a5183a05"
+    }
+  ],
+  "id": "claim:05fb96bc01f9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC defines a carriage as a wheeled vehicle generally used to transport an infant lying down, while strollers hold children in a sitting up or semi-reclined position.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

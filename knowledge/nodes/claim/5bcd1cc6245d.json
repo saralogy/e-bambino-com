@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5bcd1cc6245d",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source found for how to ventilate a room without a draft on the crib.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

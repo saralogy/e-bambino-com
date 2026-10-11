@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9974dd683aef",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "No official source was found for specific clothing combinations by temperature (for example, tog ratings or layers at 18 °C). Hot-weather clothing advice was seen in search snippets but not tied to a confirmed page.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

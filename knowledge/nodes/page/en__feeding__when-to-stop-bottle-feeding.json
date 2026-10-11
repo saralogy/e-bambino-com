@@ -1,0 +1,62 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:26d6257bb0d9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4bca12c30542"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6b23ac7cfbaf"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:82b181eb9847"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:a27ce2c69dca"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:de14c1dc00d6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:fe60dfb946b4"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/guides/baby-sleep"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/ernaehrung/flasche-trinken-beenden"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/when-to-stop-bottle-feeding",
+  "internalLinks": [
+    "/guides/baby-sleep/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap",
+    "cdc",
+    "kindergesundheit-info",
+    "verbraucherzentrale"
+  ],
+  "slug": "when-to-stop-bottle-feeding",
+  "status": "held-ymyl",
+  "title": "When should a baby stop using a bottle?",
+  "translationOf": "flasche-trinken-beenden",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/when-to-stop-bottle-feeding/",
+  "ymyl": true
+}

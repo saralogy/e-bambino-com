@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:971d8cf443c2",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether a reviewer should be named: not a research question, and the page stays held until a named reviewer has read it.",
+  "topics": [
+    "diaper-rash-treatment"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nhtsa"
+    }
+  ],
+  "id": "evidence:c23e664d139a",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nhtsa",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.nhtsa.gov/press-releases/national-car-seat-check-saturday-2024"
+}

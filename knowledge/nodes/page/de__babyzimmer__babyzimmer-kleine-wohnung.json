@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "babyzimmer",
+  "id": "page:de/babyzimmer/babyzimmer-kleine-wohnung",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "babyzimmer-kleine-wohnung",
+  "status": "published",
+  "title": "Wie richte ich ein Babyzimmer in einer kleinen Wohnung ein?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/babyzimmer/babyzimmer-kleine-wohnung/",
+  "ymyl": false
+}

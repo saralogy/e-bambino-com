@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:191406688f21"
+    }
+  ],
+  "id": "claim:38a4e95d56b1",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Weighted sleepers, swaddles, sleep sacks and blankets are not safe for infants.",
+  "topics": [
+    "how-many-baby-clothes-do-you-need"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

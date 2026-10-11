@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:9b4cd4403bbb",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The CPSC staff tested sheet shrinkage with 100 percent cotton sheets. This is a test method, not a material requirement for parents.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

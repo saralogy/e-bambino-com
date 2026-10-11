@@ -1,0 +1,9 @@
+{
+  "audience": "expecting and new parents",
+  "edges": [],
+  "id": "need:bath-care-first-bath-checklist",
+  "intent": "unknown",
+  "lang": "en",
+  "question": "What do you need for a baby’s first bath?",
+  "type": "need"
+}

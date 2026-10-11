@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:5f49ab4dcff8",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Which one suits a crawling or very active baby: no official source found.",
+  "topics": [
+    "pull-ups-vs-tape-diapers"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

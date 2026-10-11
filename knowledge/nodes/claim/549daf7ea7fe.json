@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a8531907e581"
+    }
+  ],
+  "id": "claim:549daf7ea7fe",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FDA considers most breast pumps single-user devices, because they cannot be guaranteed to be cleaned and disinfected between users.",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

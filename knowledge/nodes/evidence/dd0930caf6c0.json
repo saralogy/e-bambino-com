@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:dd0930caf6c0",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "evidence",
+  "url": "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Poison-Prevention.aspx"
+}

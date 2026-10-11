@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:18beacd379da",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Claims that wood is more durable or easier to clean than plastic, or that silicone is safer, were not found in the official sources. Do not state them as facts.",
+  "topics": [
+    "wooden-vs-plastic-toys-for-babies"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

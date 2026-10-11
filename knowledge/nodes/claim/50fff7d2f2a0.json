@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:50fff7d2f2a0",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Marketing claims on bottles: no official source confirms or rejects specific claims.",
+  "topics": [
+    "do-babies-need-baby-shampoo"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

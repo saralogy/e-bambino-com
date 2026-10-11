@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/babyzimmer/kinderbett-dauer"
+    }
+  ],
+  "gated": true,
+  "hub": "nursery",
+  "id": "page:en/nursery/how-long-does-a-crib-last",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "cpsc"
+  ],
+  "slug": "how-long-does-a-crib-last",
+  "status": "published",
+  "title": "How long does a baby use a crib?",
+  "translationOf": "kinderbett-dauer",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/nursery/how-long-does-a-crib-last/",
+  "ymyl": false
+}

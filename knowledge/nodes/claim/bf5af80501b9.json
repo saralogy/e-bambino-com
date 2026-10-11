@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:6bcca1f6c158"
+    }
+  ],
+  "id": "claim:bf5af80501b9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "A baby should never be left alone in the bath, even for a moment, and should stay within arm's reach at all times.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

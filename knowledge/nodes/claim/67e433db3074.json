@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:67e433db3074",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "NHTSA study finding that LATCH gives less lateral movement than seat belt installation, and a sled-test finding that LATCH gave higher HIC15 values than the lap/shoulder belt. These come from PubMed and were not confirmed on an allowed domain. Do not state either as a safety ranking.",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

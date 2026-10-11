@@ -1,0 +1,39 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:9ccac7bfd595"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:dd28b0ed0435"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/hospital-bag"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/clothing/how-to-wash-baby-clothes"
+    }
+  ],
+  "gated": true,
+  "hub": "breastfeeding",
+  "id": "page:en/breastfeeding/reusable-or-disposable-nursing-pads",
+  "internalLinks": [
+    "/checklists/hospital-bag/",
+    "/clothing/how-to-wash-baby-clothes/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "aap"
+  ],
+  "slug": "reusable-or-disposable-nursing-pads",
+  "status": "published",
+  "title": "Reusable or disposable nursing pads: how to choose",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/breastfeeding/reusable-or-disposable-nursing-pads/",
+  "ymyl": false
+}

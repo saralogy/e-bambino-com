@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "U.S. National Highway Traffic Safety Administration",
+  "id": "source:nhtsa",
+  "jurisdiction": "US",
+  "key": "nhtsa",
+  "name": "NHTSA",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.nhtsa.gov"
+}

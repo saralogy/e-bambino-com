@@ -1,0 +1,80 @@
+{
+  "action": "create",
+  "category": "feeding",
+  "demand": "unknown",
+  "edges": [
+    {
+      "note": "dedupe 0.484; needs human check",
+      "rel": "OVERLAPS",
+      "to": "page:en/feeding/high-chair-age"
+    },
+    {
+      "rel": "TARGETS",
+      "to": "need:feeding-high-chair-buying-guide"
+    }
+  ],
+  "gates": {
+    "duplicateOf": [],
+    "evidence": false,
+    "overlapCheck": "needs-human",
+    "ymyl": true
+  },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 15 (penalty 3); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
+  "id": "opp:feeding-high-chair-buying-guide",
+  "owner": "content-intelligence-lead",
+  "priority": "P1",
+  "rationale": "From brief 2026-10-10-feeding-high-chair-buying-guide.md. Decision line: \"Build a buying guide; link to existing age/readiness answer\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
+  "reviewBy": "2027-01-08",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/feeding/high-chair-age at 0.484 | differentiation: formats: checklist, comparison table or matrix, measurement guide | links: 6 en page(s) in hub feeding; 1 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: unconfirmed high overlap +1; YMYL review burden +1; no named reviewer lined up +1",
+    "differentiation": 4,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 1,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)",
+        "ymyl: no named human reviewer lined up (gates.reviewer); approval is a human transition",
+        "overlap: page:en/feeding/high-chair-age (0.484) needs a human check (record a Decision, then set gates.overlapCheck)"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "fail",
+      "ymyl": "fail"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 4,
+        "evidence": 0,
+        "need": 4,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3.64,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 4,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 15,
+    "penalty": 3,
+    "utility": 4
+  },
+  "state": "scored",
+  "title": "How to choose a high chair",
+  "type": "opportunity"
+}

@@ -1,0 +1,105 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:1ba7ca9e4c44"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2ea1cd241de6"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:3f12643a370d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:405d9b7c8dc4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5137d8505123"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:5f7a2627c3da"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:77e4ef824a08"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7ef40f3a4663"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:8605299fbf33"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ab7e3702ca9a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ad83d93c88cb"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ba916d95fa4b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:c83b2de8557a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:cc601abeb1f5"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d406755eb8c2"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:d91dce21776f"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e21feb57aec0"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f9bd2f3b683c"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/play/toys-for-motor-skills-first-year"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/sicherheit/gefaehrliche-hausgegenstaende-kleinkind"
+    }
+  ],
+  "gated": true,
+  "hub": "safety",
+  "id": "page:en/safety/dangerous-household-items-for-toddlers",
+  "internalLinks": [
+    "/play/toys-for-motor-skills-first-year/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap",
+    "kindergesundheit-info"
+  ],
+  "slug": "dangerous-household-items-for-toddlers",
+  "status": "held-ymyl",
+  "title": "Dangerous Household Items for Toddlers: A Checklist",
+  "translationOf": "gefaehrliche-hausgegenstaende-kleinkind",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/safety/dangerous-household-items-for-toddlers/",
+  "ymyl": true
+}

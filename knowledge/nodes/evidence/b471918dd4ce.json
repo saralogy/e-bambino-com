@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:unece"
+    }
+  ],
+  "id": "evidence:b471918dd4ce",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "unece",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "evidence",
+  "url": "https://unece.org/fileadmin/DAM/trans/publications/WP29/CHILD_RESTRAINT_SYSTEMS_brochure.pdf"
+}

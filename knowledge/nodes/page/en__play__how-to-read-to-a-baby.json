@@ -1,0 +1,25 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/spielzeug/baby-buch-vorlesen"
+    }
+  ],
+  "gated": true,
+  "hub": "play",
+  "id": "page:en/play/how-to-read-to-a-baby",
+  "internalLinks": [],
+  "lang": "en",
+  "quellen": [
+    "kindergesundheit-info"
+  ],
+  "slug": "how-to-read-to-a-baby",
+  "status": "published",
+  "title": "How do you read to a baby?",
+  "translationOf": "baby-buch-vorlesen",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/play/how-to-read-to-a-baby/",
+  "ymyl": false
+}

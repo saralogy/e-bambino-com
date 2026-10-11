@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:a2825fd05572"
+    }
+  ],
+  "id": "claim:3a32e20b11f4",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP advises checking the CPSC website to confirm that a crib has not been recalled.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

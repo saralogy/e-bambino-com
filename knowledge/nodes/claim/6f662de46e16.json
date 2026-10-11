@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:8476db691bd0"
+    }
+  ],
+  "id": "claim:6f662de46e16",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The FAA and AAP recommend that children under 40 pounds be securely fastened in certified child restraints when flying.",
+  "topics": [
+    "can-i-take-a-car-seat-on-a-plane"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

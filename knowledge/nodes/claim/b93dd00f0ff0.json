@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b93553f3b89b"
+    }
+  ],
+  "id": "claim:b93dd00f0ff0",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Pet gates should not be used as child safety gates, and older gates with V-shaped openings that can trap a child's head should be replaced.",
+  "topics": [
+    "pressure-mount-vs-hardware-stair-gates"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

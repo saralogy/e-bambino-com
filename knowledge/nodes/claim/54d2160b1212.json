@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:54d2160b1212",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German guidance does not give a fixed age for stopping the bottle. The only German timing is 'at the latest from the second year'.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

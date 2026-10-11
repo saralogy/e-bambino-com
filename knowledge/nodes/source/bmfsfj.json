@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "German Federal Ministry for Family Affairs",
+  "id": "source:bmfsfj",
+  "jurisdiction": "DE",
+  "key": "bmfsfj",
+  "name": "BMFSFJ",
+  "registered": false,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.bmfsfj.de"
+}

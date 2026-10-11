@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "Robert Koch Institute (Germany’s public health institute)",
+  "id": "source:rki",
+  "jurisdiction": "DE",
+  "key": "rki",
+  "name": "RKI",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.rki.de"
+}

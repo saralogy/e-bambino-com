@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e6980209d6b6"
+    }
+  ],
+  "id": "claim:4ec951f1dc55",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC warning language reproduced for consumers: use only sheets and mattress pads designed specifically for crib mattresses.",
+  "topics": [
+    "bedding-for-baby-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,9 @@
+# Changes to content, the publication gate, review records, workflows and the
+# workflow contract need the owner's review. Enforced only when branch
+# protection on main has "Require review from Code Owners" turned on
+# (docs/system/RELEASE.md).
+/src/content/**             @saralogy
+/src/lib/shipgate.ts        @saralogy
+/knowledge/nodes/review/**  @saralogy
+/.github/**                 @saralogy
+/docs/system/CONTRACT.md    @saralogy

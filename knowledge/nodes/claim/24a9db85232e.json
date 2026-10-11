@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d57c3c27cc5f"
+    }
+  ],
+  "id": "claim:24a9db85232e",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Polycarbonate has been banned in the EU for baby bottles and training cups since 2011.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:262d7973d2ce",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Whether the scales will go away by a specific age in every case is not confirmed beyond the AAP general statement.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c23cf6c31a11",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Specific storage heights or the exact fix for each item beyond 'out of reach' and 'locked'.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

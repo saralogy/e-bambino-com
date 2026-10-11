@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c0778f0663bf",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Pediatric first-visit timing (about days 3 to 5) is not needed for this page and is unconfirmed as a product-list fact.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

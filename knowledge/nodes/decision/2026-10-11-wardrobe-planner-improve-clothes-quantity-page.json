@@ -1,0 +1,19 @@
+{
+  "about": "Action for opp:clothing-size-wardrobe-planner: wardrobe-planner brief vs the published page how-many-baby-clothes-do-you-need",
+  "by": "agent:gap-scoring",
+  "date": "2026-10-11",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "opp:clothing-size-wardrobe-planner"
+    },
+    {
+      "rel": "ABOUT",
+      "to": "page:en/clothing/how-many-baby-clothes-do-you-need"
+    }
+  ],
+  "id": "decision:2026-10-11-wardrobe-planner-improve-clothes-quantity-page",
+  "outcome": "Action create -> improve. Add the starter-set planner (editable quantity ranges, buy now / wait / borrow checklist) to /clothing/how-many-baby-clothes-do-you-need and link it to newborn-clothing-size, us-vs-eu-baby-clothing-sizes and when-to-buy-the-next-size instead of creating a new page.",
+  "reason": "kg:dedupe puts four published clothing pages in the check band (newborn-clothing-size, us-vs-eu-baby-clothing-sizes, when-to-buy-the-next-size, how-many-baby-clothes-do-you-need, 0.30-0.34) and suggests a narrowed create; it needs a human check. Reading the brief against them: its size sections repeat the three size pages, and its \"what to buy before birth / what can wait\" and \"how many items for laundry frequency\" sections are what how-many-baby-clothes-do-you-need already answers. The brief's overlap list missed that page (duplicate incident 3 in docs/system/EVALUATION.md). The only unique value left, the planner and checklist, belongs on the quantity page. Classification only: approval stays with the lead.",
+  "type": "decision"
+}

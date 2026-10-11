@@ -1,0 +1,58 @@
+{
+  "agent": "agent:propose",
+  "cost": "local computation only",
+  "edges": [
+    {
+      "rel": "PRODUCED",
+      "to": "opp:bath-care-first-bath-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:breastfeeding-pumping-storage-workflow"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:clothing-size-wardrobe-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:consolidate-car-seat-installation"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:diapering-total-cost-calculator"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:feeding-high-chair-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:nursery-crib-mattress-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:play-toy-rotation-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:safety-room-by-room-checklist"
+    }
+  ],
+  "finished": "2026-10-11",
+  "id": "run:2026-10-11-propose",
+  "inputs": [
+    "kg:dedupe inventory"
+  ],
+  "model": "none (deterministic script)",
+  "outputs": [
+    "opportunity nodes with OVERLAPS edges"
+  ],
+  "started": "2026-10-11",
+  "status": "succeeded",
+  "type": "run"
+}

@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:aap"
+    }
+  ],
+  "id": "evidence:6301f2dce2b2",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "aap",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "evidence",
+  "url": "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+}

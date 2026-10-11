@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:036b3aa7886f",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Poison-Prevention-Information-Center"
+}

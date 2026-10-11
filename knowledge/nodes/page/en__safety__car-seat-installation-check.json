@@ -1,0 +1,68 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:05b5f411990d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:09ef1efc6f4d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:0bba66b53596"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:315847b93376"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:69f75e577082"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:70ae427f0e7c"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7b37a6571212"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:86379602bedd"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:9fe478bc62e5"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/family-travel"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/on-the-go/when-can-my-child-face-forward-in-the-car"
+    }
+  ],
+  "gated": true,
+  "hub": "safety",
+  "id": "page:en/safety/car-seat-installation-check",
+  "internalLinks": [
+    "/checklists/family-travel/",
+    "/on-the-go/when-can-my-child-face-forward-in-the-car/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "nhtsa",
+    "cdc"
+  ],
+  "slug": "car-seat-installation-check",
+  "status": "held-ymyl",
+  "title": "Is My Car Seat Installed Correctly? Quick Check",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/safety/car-seat-installation-check/",
+  "ymyl": true
+}

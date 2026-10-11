@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:e6c968a8b4fb"
+    }
+  ],
+  "id": "claim:32501a021c12",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Do not pick at the scales, because that raises the risk of infection.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

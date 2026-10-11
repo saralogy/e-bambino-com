@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:93aa4bcc3223"
+    }
+  ],
+  "id": "claim:bda1007fdfeb",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The Verbraucherzentrale rates glass as the most suitable material for avoiding substances passing into food. Glass holds up to 200 °C and tolerates hot cleaning.",
+  "topics": [
+    "which-baby-bottle-to-buy"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:471654323557"
+    }
+  ],
+  "id": "claim:f4a2371efe1b",
+  "kind": "fact",
+  "status": "supported",
+  "text": "For tougher scales, a small amount of mineral oil, coconut oil or petroleum jelly can be applied and left on overnight. Do not use olive oil, because it may increase yeast growth.",
+  "topics": [
+    "what-is-cradle-cap-and-how-to-treat-it"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

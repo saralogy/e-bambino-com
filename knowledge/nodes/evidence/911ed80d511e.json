@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:kindergesundheit-info"
+    }
+  ],
+  "id": "evidence:911ed80d511e",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "kindergesundheit-info",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "evidence",
+  "url": "https://www.kindergesundheit-info.de/themen/sicher-aufwachsen/1-3-jahre/unfallschwerpunkte/sicherheitsregeln/"
+}

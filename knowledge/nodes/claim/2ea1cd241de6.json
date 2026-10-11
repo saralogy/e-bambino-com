@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:db775e682017"
+    }
+  ],
+  "id": "claim:2ea1cd241de6",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The AAP recommends the hottest tap water at the faucet be no more than 120 degrees Fahrenheit, and CPSC gives the same figure for the water heater thermostat; a 140 F setting can cause a serious burn within about 3 seconds.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

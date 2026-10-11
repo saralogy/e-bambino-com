@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:9c7d535e2653",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-5-IN-1-Toddler-Musical-Instruments-Immediately-Due-to-Risk-of-Serious-Injury-or-Death-from-Choking-Violates-Small-Parts-and-Ball-Bans"
+}

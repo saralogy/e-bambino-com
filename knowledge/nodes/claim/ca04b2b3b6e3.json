@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ca04b2b3b6e3",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The RKI was not found as a source for the 18 °C figure. The confirmed sources are AWMF and kindergesundheit-info.",
+  "topics": [
+    "room-temperature-for-baby-sleep"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:b59be612cb82"
+    }
+  ],
+  "id": "claim:8c3808120d11",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Stroller guidance from the CPSC: use the harness every time, keep the brake set when parked, and never leave a child unattended.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

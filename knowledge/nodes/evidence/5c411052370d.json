@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:nhtsa"
+    }
+  ],
+  "id": "evidence:5c411052370d",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "nhtsa",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "how-to-install-a-car-seat"
+  ],
+  "type": "evidence",
+  "url": "https://www.nhtsa.gov/car-seats-and-booster-seats/keep-kids-safe-road"
+}

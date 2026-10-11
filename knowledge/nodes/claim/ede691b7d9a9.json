@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:c1d12a475104"
+    }
+  ],
+  "id": "claim:ede691b7d9a9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "CPSC recalled convertible bedside bassinets in 2026 because the attachment mechanism to the adult bed left an opening between the sleeper and the mattress, creating a fall hazard that can cause death.",
+  "topics": [
+    "bassinet-bedside-crib-or-crib"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

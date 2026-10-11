@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:58c239821bea",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Patent documents claim that a wet pad against the nipple can lead to dryness and cracking; these are not medical guidance and are excluded.",
+  "topics": [
+    "reusable-or-disposable-nursing-pads"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

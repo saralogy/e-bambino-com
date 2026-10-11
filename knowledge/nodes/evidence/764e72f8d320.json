@@ -1,0 +1,20 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:764e72f8d320",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "travel-system-or-separate-stroller",
+    "umbrella-stroller-or-full-size"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Newsroom/News-Releases/2014/CPSC-Approves-New-Federal-Safety-Standard-for-Carriages-and-Strollers"
+}

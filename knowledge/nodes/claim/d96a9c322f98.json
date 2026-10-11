@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:7ea89d6e3773"
+    }
+  ],
+  "id": "claim:d96a9c322f98",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Physical readiness includes walking to and from the bathroom, helping to undress, sitting or standing comfortably, and pulling pants up and down.",
+  "topics": [
+    "potty-training-readiness"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

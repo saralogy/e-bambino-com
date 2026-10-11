@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:911ed80d511e"
+    }
+  ],
+  "id": "claim:7cea6d915624",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info recommends installing child-safe outlets or retrofitting existing outlets, including power strips, with child locks, and securing outdoor outlets too; child-safe outlets open only when a plug is inserted.",
+  "topics": [
+    "childproof-electrical-outlets"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

@@ -1,0 +1,17 @@
+{
+  "category": "safety",
+  "decisionLine": "Build after confirming DE/EU authority sources and reviewer",
+  "edges": [
+    {
+      "rel": "SPECIFIES",
+      "to": "opp:safety-room-by-room-checklist"
+    }
+  ],
+  "id": "brief:2026-10-10-safety-room-by-room-checklist",
+  "path": "docs/content-intelligence/inbox/2026-10-10-safety-room-by-room-checklist.md",
+  "priority": "P1",
+  "researchDate": "2026-10-10",
+  "status": "inbox",
+  "title": "Room-by-room babyproofing checklist with stage-based re-checks",
+  "type": "brief"
+}

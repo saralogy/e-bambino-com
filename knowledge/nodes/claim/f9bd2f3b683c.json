@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:11ca0ea49b3b"
+    }
+  ],
+  "id": "claim:f9bd2f3b683c",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Call the poison center even when you suspect but are not sure that a child has swallowed a hazardous product; the AAP notes the line is free, expert and confidential.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

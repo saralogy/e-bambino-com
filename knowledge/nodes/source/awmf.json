@@ -1,0 +1,13 @@
+{
+  "authority": "professional",
+  "edges": [],
+  "fullName": "Association of the Scientific Medical Societies in Germany",
+  "id": "source:awmf",
+  "jurisdiction": "DE",
+  "key": "awmf",
+  "name": "AWMF",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://register.awmf.org"
+}

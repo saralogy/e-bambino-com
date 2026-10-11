@@ -1,0 +1,67 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:09e3ca12c247"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:2395b65e450e"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:339d3eb93e55"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:66e373999780"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:70cf66ef7370"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:93989cfb19c3"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b3d5700f25be"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b5e7e6a8072f"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/feeding/high-chair-age"
+    },
+    {
+      "rel": "TRANSLATION_OF",
+      "to": "page:de/ernaehrung/saeuglingsnahrung-nach-alter"
+    }
+  ],
+  "gated": true,
+  "hub": "feeding",
+  "id": "page:en/feeding/formula-stage-by-age",
+  "internalLinks": [
+    "/feeding/high-chair-age/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "who",
+    "aap",
+    "cdc",
+    "fda",
+    "verbraucherzentrale"
+  ],
+  "slug": "formula-stage-by-age",
+  "status": "held-ymyl",
+  "title": "Which formula stage does my baby need by age?",
+  "translationOf": "saeuglingsnahrung-nach-alter",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/feeding/formula-stage-by-age/",
+  "ymyl": true
+}

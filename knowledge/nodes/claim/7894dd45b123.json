@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:7894dd45b123",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The German planning file windelgroesse-nach-gewicht: no German official source (kindergesundheit-info or verbraucherzentrale) on diaper sizing was found, so the German page needs its own sourcing or translationOf should be dropped.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

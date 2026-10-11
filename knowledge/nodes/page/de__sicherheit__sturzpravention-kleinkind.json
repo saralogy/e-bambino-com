@@ -1,0 +1,19 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "sicherheit",
+  "id": "page:de/sicherheit/sturzprävention-kleinkind",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki"
+  ],
+  "slug": "sturzprävention-kleinkind",
+  "status": "held-ymyl",
+  "title": "Wie verhindert man Stürze vom Wickeltisch und Sofa?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/sicherheit/sturzprävention-kleinkind/",
+  "ymyl": true
+}

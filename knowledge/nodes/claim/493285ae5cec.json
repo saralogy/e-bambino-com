@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:f03210204e0e"
+    }
+  ],
+  "id": "claim:493285ae5cec",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Most babies do not need more than about 32 oz (950 mL) of formula a day. If a baby always wants more or less than this, the pediatrician should be consulted.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

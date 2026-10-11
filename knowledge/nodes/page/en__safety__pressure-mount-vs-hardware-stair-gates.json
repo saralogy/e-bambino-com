@@ -1,0 +1,67 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:20d9bee65712"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:30aa079b58d8"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:4e2010a0a92b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7ec320b4af6d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:988185333d7d"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b37267841b72"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b6d55e35faef"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:b93dd00f0ff0"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:cc695d7cef0b"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e08b3bbc0e3f"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/play/toys-for-motor-skills-first-year"
+    }
+  ],
+  "gated": true,
+  "hub": "safety",
+  "id": "page:en/safety/pressure-mount-vs-hardware-stair-gates",
+  "internalLinks": [
+    "/play/toys-for-motor-skills-first-year/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "cpsc",
+    "aap"
+  ],
+  "slug": "pressure-mount-vs-hardware-stair-gates",
+  "status": "held-ymyl",
+  "title": "Pressure vs. Hardware Stair Gates: Which Is Safer?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/safety/pressure-mount-vs-hardware-stair-gates/",
+  "ymyl": true
+}

@@ -1,0 +1,20 @@
+{
+  "collection": "fragen",
+  "edges": [],
+  "gated": true,
+  "hub": "kleidung",
+  "id": "page:de/kleidung/groesse-strampler-baby",
+  "internalLinks": [],
+  "lang": "de",
+  "quellen": [
+    "rki",
+    "kindergesundheit-info"
+  ],
+  "slug": "groesse-strampler-baby",
+  "status": "published",
+  "title": "Welche Größe braucht ein Neugeborenes an Stramplern und Bodys?",
+  "type": "page",
+  "updated": "2026-10-04",
+  "url": "/de/kleidung/groesse-strampler-baby/",
+  "ymyl": false
+}

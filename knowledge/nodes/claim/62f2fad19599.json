@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:d570db3efbac"
+    }
+  ],
+  "id": "claim:62f2fad19599",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Thawed breast milk must never be refrozen once it has fully thawed (CDC).",
+  "topics": [
+    "how-long-is-breast-milk-good-for"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

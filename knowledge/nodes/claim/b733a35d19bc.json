@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:405bbfb3797e"
+    }
+  ],
+  "id": "claim:b733a35d19bc",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Infant bath tubs have a mandatory federal safety standard that took effect on October 2, 2017. Sellers cannot legally sell non-compliant tubs made on or after that date. The standard covers latching and locking, static load testing, and drowning and fall warnings.",
+  "topics": [
+    "baby-bathtub-or-bath-seat"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

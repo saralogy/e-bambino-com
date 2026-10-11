@@ -1,0 +1,21 @@
+{
+  "appliesTo": [
+    "writer-editor",
+    "fact-checker"
+  ],
+  "created": "2026-10-10",
+  "edges": [
+    {
+      "rel": "LEARNED_FROM",
+      "to": "decision:2026-10-10-editorial-pass-before-release"
+    },
+    {
+      "rel": "LEARNED_FROM",
+      "to": "run:2026-10-10-opus-editorial-pass"
+    }
+  ],
+  "evidence": "The 2026-10-10 editorial pass released 6 non-YMYL English pages that passed the gate and the audit.",
+  "id": "lesson:editor-plus-adversarial-checker",
+  "type": "lesson",
+  "what": "An Opus editor paired with an adversarial fact-checker produced publishable non-YMYL pages; keep the pairing for every release."
+}

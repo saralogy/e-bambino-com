@@ -176,9 +176,6 @@
   }
 
   /* Markdown pages: the hero already shows the title, so drop the duplicate H1. */
-  .prose-page > h1:first-child {
-    @apply hidden;
-  }
 
   /* Long German compounds must wrap on small phones. */
   .prose h1,

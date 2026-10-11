@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:4518e5802251",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Exact age to drop the bottle: the AAP gives a 12 to 18 month window. A separate AAP/AAPD summary says a transition from bottle to lidless cup by 12 months is recommended to prevent caries, but the original guidance was not confirmed. The two need to be reconciled.",
+  "topics": [
+    "when-to-stop-bottle-feeding"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

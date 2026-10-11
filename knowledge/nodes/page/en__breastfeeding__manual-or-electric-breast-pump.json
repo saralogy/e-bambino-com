@@ -1,0 +1,64 @@
+{
+  "collection": "fragen",
+  "edges": [
+    {
+      "rel": "CITES",
+      "to": "claim:2868b280b233"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:34c8bdf76651"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:549daf7ea7fe"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:6810bb16d267"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:760ef7673240"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:7e89a6dc5b73"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:966819c56de7"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e24a50b8d8a4"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:e4171169de54"
+    },
+    {
+      "rel": "LINKS_TO",
+      "to": "page:en/checklists/family-travel"
+    }
+  ],
+  "gated": true,
+  "hub": "breastfeeding",
+  "id": "page:en/breastfeeding/manual-or-electric-breast-pump",
+  "internalLinks": [
+    "/checklists/family-travel/"
+  ],
+  "lang": "en",
+  "quellen": [
+    "fda",
+    "cdc",
+    "aap"
+  ],
+  "slug": "manual-or-electric-breast-pump",
+  "status": "held-ymyl",
+  "title": "Manual or electric breast pump: which one to choose?",
+  "type": "page",
+  "updated": "2026-10-10",
+  "url": "/breastfeeding/manual-or-electric-breast-pump/",
+  "ymyl": true
+}

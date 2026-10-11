@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:ab9d6f78bb8a"
+    }
+  ],
+  "id": "claim:1ba7ca9e4c44",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info says the poison information centres (Giftnotrufzentralen) are reachable 24 hours a day for acute poisonings; for an unremarkable child call the centre of your federal state first, and for unconsciousness call 112 immediately.",
+  "topics": [
+    "dangerous-household-items-for-toddlers"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

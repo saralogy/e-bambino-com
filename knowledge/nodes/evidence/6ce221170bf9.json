@@ -1,0 +1,19 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:fda"
+    }
+  ],
+  "id": "evidence:6ce221170bf9",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-10",
+  "sourceKey": "fda",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "manual-or-electric-breast-pump"
+  ],
+  "type": "evidence",
+  "url": "https://www.fda.gov/medical-devices/breast-pumps/buying-and-renting-breast-pump"
+}

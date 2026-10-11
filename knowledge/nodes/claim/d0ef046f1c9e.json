@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:d0ef046f1c9e",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "German volume figures of about 0.7 L per day under 4 months and 0.4 L per day from 4 to under 12 months (plus solids) come from an NIH-hosted German review (pmc.ncbi.nlm.nih.gov), not an allowed official source. They are not confirmed.",
+  "topics": [
+    "how-much-should-baby-drink-first-year"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

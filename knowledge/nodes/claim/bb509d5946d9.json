@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:887ec60f796f"
+    }
+  ],
+  "id": "claim:bb509d5946d9",
+  "kind": "fact",
+  "status": "supported",
+  "text": "The CDC emergency checklist for families with infants lists a portable crib, baby blankets, extra baby clothes, diapers, wipes, diaper rash cream, bottles and a baby carrier. The list is for emergency preparedness, not a general shopping guide.",
+  "topics": [
+    "newborn-essentials-first-weeks"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

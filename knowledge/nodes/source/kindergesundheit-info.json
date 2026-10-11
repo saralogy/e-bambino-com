@@ -1,0 +1,13 @@
+{
+  "authority": "official",
+  "edges": [],
+  "fullName": "German federal health information portal for parents",
+  "id": "source:kindergesundheit-info",
+  "jurisdiction": "DE",
+  "key": "kindergesundheit-info",
+  "name": "kindergesundheit-info.de",
+  "registered": true,
+  "status": "active",
+  "type": "source",
+  "url": "https://www.kindergesundheit-info.de"
+}

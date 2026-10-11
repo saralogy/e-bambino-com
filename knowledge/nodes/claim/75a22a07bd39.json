@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:75a22a07bd39",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "Circumstances in which a separate stroller and car seat is the better choice. Editorial judgment, not sourced.",
+  "topics": [
+    "travel-system-or-separate-stroller"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

@@ -1,0 +1,18 @@
+{
+  "confidence": "medium",
+  "edges": [
+    {
+      "rel": "SUPPORTED_BY",
+      "to": "evidence:2da932a42bb7"
+    }
+  ],
+  "id": "claim:0fd4fd160e5d",
+  "kind": "fact",
+  "status": "supported",
+  "text": "Kindergesundheit-info (BZgA-linked) advises that babies and toddlers under three should not watch television yet, and its age table recommends no screen media for this group.",
+  "topics": [
+    "screen-time-by-age"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

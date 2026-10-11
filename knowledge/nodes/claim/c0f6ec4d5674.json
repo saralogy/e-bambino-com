@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:c0f6ec4d5674",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "The RKI or AWMF rule set 'Sicher baden - acht Regeln' was not found in official-domain search results. Every bath-safety rule still needs checking against RKI or AWMF before publication.",
+  "topics": [
+    "how-often-to-bathe-a-baby"
+  ],
+  "type": "claim",
+  "ymyl": true
+}

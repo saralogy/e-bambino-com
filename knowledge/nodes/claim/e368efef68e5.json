@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:e368efef68e5",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "What to do when a baby sits between two sizes: no official guidance found.",
+  "topics": [
+    "diaper-size-by-weight"
+  ],
+  "type": "claim",
+  "ymyl": false
+}
