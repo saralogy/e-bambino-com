@@ -199,7 +199,7 @@ export const TYPES = {
  */
 export const RELATIONS = {
   ANSWERS: { page: ['need'] },
-  CITES: { page: ['claim'] },
+  CITES: { page: ['claim'], opportunity: ['claim'] }, // opportunity: the claims a proposal rests on (kg:ingest)
   SUPPORTED_BY: { claim: ['evidence'] },
   CONTRADICTED_BY: { claim: ['evidence'] },
   FROM: { evidence: ['source'] },

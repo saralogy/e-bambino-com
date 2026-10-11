@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:ea541bedc08a",
+  "kind": "hypothesis",
+  "status": "unsupported",
+  "text": "A stroller chooser built on the family's own constraints (daily routes, storage, folded size, public transport, car trunk) helps parents more than a ranked list of best strollers.",
+  "topics": [
+    "on-the-go"
+  ],
+  "type": "claim",
+  "ymyl": false
+}

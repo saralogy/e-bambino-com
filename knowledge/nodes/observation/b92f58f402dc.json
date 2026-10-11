@@ -1,0 +1,14 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    }
+  ],
+  "id": "obs:b92f58f402dc",
+  "kind": "competitor",
+  "observed": "Which? 2026 pushchair advice is structured around tested products, pushchair categories, price and newborn buying advice.",
+  "type": "observation",
+  "url": "https://www.which.co.uk/reviews/pushchairs/article/most-popular-pushchairs-to-buy-a37Yk9K2bU3z"
+}

@@ -1,0 +1,13 @@
+{
+  "confidence": "low",
+  "edges": [],
+  "id": "claim:02dbed3a89ac",
+  "kind": "recommendation",
+  "status": "unsupported",
+  "text": "Before buying a travel system, confirm that the exact stroller and car seat models are listed as compatible in the manufacturers' instructions.",
+  "topics": [
+    "on-the-go"
+  ],
+  "type": "claim",
+  "ymyl": true
+}
