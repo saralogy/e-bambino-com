@@ -152,6 +152,8 @@ export const TYPES = {
     reason: r('string'),
     by: r('string'),
     date: r('date'),
+    state: s({ enum: ['proposed', 'approved', 'rejected', 'superseded'] }), // optional; agent proposals wait for a human
+    proposal: { t: 'object' }, // optional machine-readable proposal, e.g. rubric weights (never applied automatically)
   },
   review: {
     page: r('string'),
@@ -208,7 +210,7 @@ export const RELATIONS = {
   MEASURES: { outcome: ['page'] },
   PRODUCED: { run: '*' },
   ABOUT: { decision: '*', observation: ['need', 'opportunity'] },
-  LEARNED_FROM: { lesson: ['run', 'decision'] },
+  LEARNED_FROM: { lesson: ['run', 'decision', 'outcome', 'opportunity'] }, // outcome/opportunity: evidence for a measured pattern
   LINKS_TO: { page: ['page'] }, // derived from markdown links in the body
   TRANSLATION_OF: { page: ['page'] }, // derived: EN page -> German original
   AFFECTS: { change: ['evidence', 'source', 'page'] },
