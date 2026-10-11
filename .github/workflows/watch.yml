@@ -105,7 +105,7 @@ jobs:
         if: steps.stop.outputs.skip != 'true'
         run: |
           node scripts/watch/revalidate.mjs > "$RUNNER_TEMP/revalidate.md"
-          { cat "$RUNNER_TEMP/summary.md" 2>/dev/null; echo; cat "$RUNNER_TEMP/revalidate.md"; } >> "$GITHUB_STEP_SUMMARY"
+          { cat "$RUNNER_TEMP/summary.md" 2>/dev/null || true; echo; cat "$RUNNER_TEMP/revalidate.md"; } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit and open or update the pull request
         if: steps.stop.outputs.skip != 'true' && env.DRY_RUN != 'true'
@@ -131,7 +131,7 @@ jobs:
             echo "Automated change detection for $WEEK. Only hashes, titles, Last-Modified headers and fetch status are stored; no page text."
             echo "A person reviews and merges this PR. Merging carries the fetch state forward to next week's run."
             echo
-            cat "$RUNNER_TEMP/summary.md" 2>/dev/null
+            cat "$RUNNER_TEMP/summary.md" 2>/dev/null || true
             echo
             cat "$RUNNER_TEMP/revalidate.md"
           } | head -c 60000 > "$body"

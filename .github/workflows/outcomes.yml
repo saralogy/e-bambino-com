@@ -156,7 +156,7 @@ jobs:
             cat "$RUNNER_TEMP/calibrate.txt"
             echo '```'
             echo
-            cat "$RUNNER_TEMP/unmapped.md" 2>/dev/null
+            cat "$RUNNER_TEMP/unmapped.md" 2>/dev/null || true
           } | head -c 60000 > "$body"
 
           pr="$(gh pr list --head "$BRANCH" --base "$BASE" --state open --json number --jq '.[0].number')"
