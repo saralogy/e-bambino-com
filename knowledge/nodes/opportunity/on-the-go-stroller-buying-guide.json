@@ -4,6 +4,22 @@
   "demand": "unknown",
   "edges": [
     {
+      "rel": "CITES",
+      "to": "claim:02dbed3a89ac"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:05fb96bc01f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ea541bedc08a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f8477c032ab4"
+    },
+    {
       "rel": "OVERLAPS",
       "to": "page:en/buying-guides/how-to-choose-a-stroller"
     },
@@ -24,7 +40,7 @@
     "duplicateOf": [
       "page:en/buying-guides/how-to-choose-a-stroller"
     ],
-    "evidence": false,
+    "evidence": true,
     "ymyl": false
   },
   "id": "opp:on-the-go-stroller-buying-guide",

@@ -1,0 +1,14 @@
+{
+  "accessed": "2026-10-10",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    }
+  ],
+  "id": "obs:0fdc51f9ccce",
+  "kind": "competitor",
+  "observed": "BabyGearLab organizes stroller recommendations by use case, describes a product-testing methodology and discloses affiliate commission.",
+  "type": "observation",
+  "url": "https://www.babygearlab.com/topics/getting-around/best-stroller"
+}

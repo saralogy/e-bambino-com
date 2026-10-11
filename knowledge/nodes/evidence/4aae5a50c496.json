@@ -1,0 +1,20 @@
+{
+  "accessed": "2026-10-11",
+  "edges": [
+    {
+      "rel": "FROM",
+      "to": "source:cpsc"
+    }
+  ],
+  "id": "evidence:4aae5a50c496",
+  "quote": "Thus, the principal difference between strollers and carriages is the position of the occupant.",
+  "retrievalMethod": "search-snippet",
+  "revalidateBy": "2027-04-11",
+  "sourceKey": "cpsc",
+  "sourceQuality": "primary-authority",
+  "topics": [
+    "on-the-go"
+  ],
+  "type": "evidence",
+  "url": "https://www.cpsc.gov/Regulations-Laws--Standards/Rulemaking/Final-and-Proposed-Rules/Strollers-and-Carriages"
+}
