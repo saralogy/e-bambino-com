@@ -6,8 +6,6 @@ title: Impressum
 description: Impressum und Anbieterkennzeichnung für e-bambino.com gemäß § 5 DDG.
 ---
 
-# Impressum
-
 Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).
 
 ## Anbieter

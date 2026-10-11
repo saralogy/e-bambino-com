@@ -4,6 +4,22 @@
   "demand": "unknown",
   "edges": [
     {
+      "rel": "CITES",
+      "to": "claim:02dbed3a89ac"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:05fb96bc01f9"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:ea541bedc08a"
+    },
+    {
+      "rel": "CITES",
+      "to": "claim:f8477c032ab4"
+    },
+    {
       "note": "dedupe 0.3; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/buying-guides/how-to-choose-a-stroller"
@@ -25,7 +41,7 @@
     "duplicateOf": [
       "page:en/buying-guides/how-to-choose-a-stroller"
     ],
-    "evidence": false,
+    "evidence": true,
     "overlapCheck": "resolved:decision:2026-10-11-stroller-brief-improve-held-guide",
     "ymyl": false
   },
@@ -52,11 +68,9 @@
     "fit": 5,
     "gap": 1,
     "hardGates": {
-      "blocking": [
-        "evidence: no source evidence linked to the opportunity (gates.evidence is false)"
-      ],
+      "blocking": [],
       "duplicate": "pass",
-      "evidence": "fail",
+      "evidence": "pass",
       "overlap": "pass",
       "ymyl": "pass"
     },

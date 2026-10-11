@@ -80,7 +80,7 @@ const jsonLd = JSON.stringify({
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
 <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
-<link rel="canonical" href={canonical} />
+{!noindex && <link rel="canonical" href={canonical} />}
 {alts.length > 1 && alts.map(([l, p]) => <link rel="alternate" hreflang={l} href={`${SITE}${p}`} />)}
 {alts.length > 1 && xDefault && <link rel="alternate" hreflang="x-default" href={`${SITE}${xDefault}`} />}
 

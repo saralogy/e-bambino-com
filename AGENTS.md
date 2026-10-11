@@ -56,6 +56,11 @@ node scripts/make-og.mjs       # regenerate public/og-default.png and logo.png (
 npm run kg:sync   # derive knowledge-graph nodes from content, sources, briefs, research (idempotent)
 npm run kg:check  # validate the graph (exit 1 only on structural errors); kg:build compiles graph.json
 npm run kg -- stats | search <text> | show <id> | neighbors <id> [rel] | pages --status <s>
+npm run kg:update # sync + propose + score + backlog + check (run after content or research changes)
+npm run kg:dedupe -- "<topic>"   # overlap check against pages, drafts, briefs, opportunities
+npm run kg:propose / kg:ingest -- <bundle.json>   # the only ways to add opportunities and research findings
+npm run check:links && npm run check:seo          # same gates CI runs (after npm run build)
+npm run outcomes:import -- --csv <gsc-export.csv> --period YYYY-MM-DD..YYYY-MM-DD
 ```
 
 Deployment: merging to `main` is the release. Work on a branch, open a PR, merge when checks pass.
@@ -85,8 +90,13 @@ src/
   styles/global.css    Component classes (.btn-*, .card, .chip-*, .prose, .page-hero …)
 tailwind.config.js     Design tokens
 knowledge/             Knowledge graph: one JSON file per node (see knowledge/README.md)
-scripts/kg/            Graph schema, lib, sync, check, CLI
-docs/system/           CONTRACT.md (workflow contract, binding for agents) and EVALUATION.md
+scripts/kg/            Graph schema, lib, sync, check, CLI, dedupe, score, propose, ingest, backlog, issues
+scripts/checks/        CI gates: internal links, technical SEO, release report
+scripts/watch/         Change detection for source and competitor URLs (runs in GitHub Actions)
+scripts/outcomes/      Search Console import, outcome report, score calibration
+.github/workflows/     ci.yml (every PR), watch.yml (weekly), outcomes.yml (monthly, needs GSC secret)
+docs/content-intelligence/  BACKLOG.md (generated ranked queue), inbox/ briefs, bundles/ research findings
+docs/system/           CONTRACT.md (binding for agents), EVALUATION.md, RELEASE.md, OPERATIONS.md, MEASUREMENT.md
 astro.config.mjs       Redirects from old German root URLs to /de/, markdown table wrapper, sitemap
 ```
 
@@ -229,6 +239,10 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 - Buying-guide template is live at `/buying-guides/` (empty state); the stroller guide is a held draft.
 - SEO/GEO foundation: robots.txt allows AI search crawlers; Organization + WebSite (SearchAction)
   JSON-LD on every page; Article/Breadcrumb/ItemList/QAPage data on views; `/llms.txt`.
+- Intelligence system (2026-10-11): knowledge graph (~1,000 nodes), duplicate checks, scoring and a ranked backlog
+  (`docs/content-intelligence/BACKLOG.md`), CI gates on every PR, weekly change detection, Search Console import
+  (waiting for credentials), research agents return findings bundles. All 10 current opportunities are blocked by
+  hard gates (missing evidence, missing reviewer or an overlap waiting for a human decision).
 - Reviewer on file: **Mathilda, Nurse** — currently named on the English car-seat and sleep-sack pages.
 - Growth strategy (SEO, templates, lead generation, roadmap):
   https://claude.ai/artifact/JfvtzXZXiBM3oZ311zq97N
@@ -248,6 +262,12 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
       reviewer reads each page, then sets `reviewedBy`. Start with Safety and Bath & care (empty hubs).
 - [ ] **Source check:** an editor should confirm the sources on newborn sizes, sleeper vs bodysuit,
       diapers per day, books for beginning readers and crib duration.
+- [ ] **Search Console:** verify e-bambino.com in Google Search Console, create a read-only service account,
+      add it as a user, then add the repository secrets `GSC_SERVICE_ACCOUNT_JSON` and `GSC_SITE`
+      (see `docs/system/MEASUREMENT.md`). Until then, import CSV exports monthly.
+- [ ] **Decide two flagged overlaps** in BACKLOG.md: diapering cost calculator vs cloth-vs-disposable,
+      high-chair buying guide vs high-chair-age (record a Decision, then `npm run kg:update`).
+- [ ] **First watch run:** trigger `watch.yml` manually with dry_run, then for real; review the bot PR.
 
 ### Next (content and SEO)
 - [ ] Review and release the other held German health/safety pages, and write English versions.
@@ -280,4 +300,5 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
 | 2026-10-10 | Legal entity on the site: e-bambino, Hamburg, Germany, info@e-bambino.com. |
 | 2026-10-10 | Content is produced by per-category teams (PM, researcher, writer, SEO/GEO, UX/UI, publisher). Facts come only from official sources found by the researcher. Team output lands as `draft: true` and needs an editorial pass before release. |
 | 2026-10-10 | AI answer engines are a target channel (GEO): allow their crawlers, publish `/llms.txt`, keep a quotable 40–60 word short answer on every page. |
+| 2026-10-11 | ChatGPT's 8-layer proposal evaluated (`docs/system/EVALUATION.md`) and built: inventory + dedupe + scoring before more autonomy; CI gates separate technical from editorial approval; change detection runs in Actions only; outcome data feeds calibration only after 20 measured releases, and weight changes need human approval. |
 | 2026-10-10 | Long-term memory is a knowledge graph of git-tracked JSON in `knowledge/` (no external database). Agents follow `docs/system/CONTRACT.md`; check the inventory (`npm run kg -- search`) before proposing a topic. PLAYBOOK scoring is canonical. |

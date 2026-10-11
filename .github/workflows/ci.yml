@@ -49,6 +49,11 @@ jobs:
         continue-on-error: true
         run: npm run kg:check
 
+      - name: Backlog up to date
+        id: backlog
+        continue-on-error: true
+        run: node scripts/kg/backlog.mjs --check
+
       - name: Internal links
         id: links
         if: steps.build.outcome == 'success'
@@ -67,6 +72,7 @@ jobs:
           CHECK_BUILD: ${{ steps.build.outcome }}
           CHECK_AUDIT: ${{ steps.audit.outcome }}
           CHECK_KG: ${{ steps.kg.outcome }}
+          CHECK_BACKLOG: ${{ steps.backlog.outcome }}
           CHECK_LINKS: ${{ steps.links.outcome }}
           CHECK_SEO: ${{ steps.seo.outcome }}
           RELEASE_BASE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || github.event.before }}
@@ -78,6 +84,7 @@ jobs:
           OUTCOMES: >-
             build=${{ steps.build.outcome }}
             audit=${{ steps.audit.outcome }}
+            backlog=${{ steps.backlog.outcome }}
             kg=${{ steps.kg.outcome }}
             links=${{ steps.links.outcome }}
             seo=${{ steps.seo.outcome }}

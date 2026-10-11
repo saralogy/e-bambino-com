@@ -94,7 +94,7 @@ export const UI = {
   de: {
     siteTitle: 'e-bambino | Baby & Mama, alles an einem Ort',
     siteDescription:
-      'e-bambino ist der Premium-Ratgeber für Baby und Mama: klare Antworten, ehrliche Produktvergleiche und Checklisten für Schwangerschaft und die ersten Jahre, an einem Ort.',
+      'Der Premium-Ratgeber für Baby und Mama: klare Antworten, ehrliche Produktvergleiche und Checklisten für Schwangerschaft und die ersten Jahre.',
     ogLocale: 'de_DE',
     skip: 'Zum Inhalt springen',
     homeLabel: 'e-bambino Startseite',

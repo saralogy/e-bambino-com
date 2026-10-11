@@ -6,8 +6,6 @@ title: Privacy policy
 description: 'Privacy policy for e-bambino.com: which data we collect, why, and what rights you have.'
 ---
 
-# Privacy policy
-
 The controller for data processing on this website is e-bambino, Hamburg, Germany,
 info@e-bambino.com. The binding version is the [German privacy policy](/de/datenschutz/).
 

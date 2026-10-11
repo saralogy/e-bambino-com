@@ -6,8 +6,6 @@ title: Legal notice
 description: Provider information for e-bambino.com under § 5 DDG (German law).
 ---
 
-# Legal notice
-
 Information pursuant to § 5 of the German Digital Services Act (DDG). The binding version is the
 [German legal notice](/de/impressum/).
 

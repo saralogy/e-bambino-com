@@ -1,6 +1,6 @@
 {
   "agent": "agent:gap-scoring",
-  "cost": "one session; local computation only, no fetches or searches",
+  "cost": "local computation only; no fetches, no searches",
   "edges": [
     {
       "rel": "PRODUCED",
@@ -58,12 +58,14 @@
   "finished": "2026-10-11",
   "id": "run:2026-10-11-gap-scoring",
   "inputs": [
-    "kg:dedupe --all",
-    "kg:score"
+    "knowledge/nodes/opportunity",
+    "docs/content-intelligence/inbox",
+    "src/content"
   ],
   "model": "claude-opus-5-5",
   "outputs": [
-    "3 Decisions on duplicate warnings"
+    "scores on opportunities",
+    "proposed -> scored transitions"
   ],
   "started": "2026-10-11",
   "status": "succeeded",

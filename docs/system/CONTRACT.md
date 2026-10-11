@@ -20,13 +20,13 @@ validation. If this file and the code disagree, fix this file in the same PR.
 | page | **derived** (`kg:sync`) | lang, collection, hub, slug, url, title, status (published, held-ymyl, held-nosource, draft, removed), gated, ymyl, reviewedBy, quellen, translationOf, updated, internalLinks |
 | source | **derived** | key, name, url, jurisdiction, authority, registered, status |
 | need | lead | question, intent, audience, lang |
-| opportunity | lead | title, category, action, state, scores, gates, demand, rationale, owner, reviewBy, history |
+| opportunity | lead (created only through `kg:propose` / `kg:ingest`) | title, category, action, state, scores, gates (evidence, ymyl, duplicateOf, overlapCheck: clear, needs-human or resolved:&lt;decision id&gt;, reviewer), demand, rationale, owner, reviewBy, history |
 | brief | category researcher (created by sync from the inbox) | path, status |
-| claim | researcher, fact-checker | text, kind (fact, hypothesis, recommendation), ymyl, confidence, status (supported, contested, unsupported, expired) |
+| claim | researcher, fact-checker | text, kind (fact, hypothesis, recommendation), ymyl, confidence, status (supported, contested, unsupported, expired), revalidate (change id that queued it; the fact-checker clears it) |
 | evidence | researcher, fact-checker, change job | url, sourceKey, accessed, retrievalMethod, quote (300 chars max), contentHash, sourceQuality, revalidateBy |
 | observation | researcher | url, accessed, observed, kind (competitor, serp, format). **Never evidence that a claim is true.** |
 | change | change-detection job | url, detected, oldHash, newHash, summary |
-| decision | lead, human | about, outcome, reason, by, date |
+| decision | lead, human | about, outcome, reason, by, date, state (proposed, approved, rejected, superseded), proposal (machine-readable, never auto-applied) |
 | review | **human only** for approve | page, reviewer, reviewerKind, by, byKind, date, result |
 | run | every agent and job | agent, model, started, finished, status, inputs, outputs, cost |
 | outcome | measurement | page, period, impressions, clicks, ctr, position, source (gsc, analytics), baseline |
@@ -34,13 +34,13 @@ validation. If this file and the code disagree, fix this file in the same PR.
 
 Allowed relations (`RELATIONS` in the schema):
 
-- page ANSWERS need; page CITES claim; page IMPLEMENTS opportunity
+- page ANSWERS need; page CITES claim; opportunity CITES claim; page IMPLEMENTS opportunity
 - page LINKS_TO page; page TRANSLATION_OF page (both derived)
 - claim SUPPORTED_BY evidence; claim CONTRADICTED_BY evidence; evidence FROM source
 - opportunity TARGETS need; opportunity OVERLAPS page or opportunity; brief SPECIFIES opportunity
-- review OF page; outcome MEASURES page; change AFFECTS evidence, source or page
+- review OF page; outcome MEASURES page; change AFFECTS evidence, source, page or observation
 - run PRODUCED any node; decision ABOUT any node; observation ABOUT need or opportunity
-- lesson LEARNED_FROM run or decision; SUPERSEDES between decisions, lessons or briefs
+- lesson LEARNED_FROM run, decision, outcome or opportunity; SUPERSEDES between decisions, lessons or briefs
 
 Any other edge fails `kg:check`.
 
@@ -85,6 +85,10 @@ and `create` on a duplicate after approval.
 
 ## 5. Scoring
 
+Implemented in `scripts/kg/score.mjs`; duplicates are found by `scripts/kg/dedupe.mjs` (lexical similarity plus hub,
+language and intent; anything above the threshold needs a human check). `npm run kg:update` re-runs sync, propose,
+score, backlog and check; `docs/content-intelligence/BACKLOG.md` is the ranked queue.
+
 - **Canonical:** the PLAYBOOK rubric. Rate utility, evidence, gap, differentiation, links and fit from 0 to 5 each, then
   subtract a 0–5 penalty for duplication, YMYL burden, legal risk or no unique value. Store the result in
   `scores: { utility, evidence, gap, differentiation, links, fit, penalty, net, assumptions }`.
@@ -101,7 +105,7 @@ links it with PRODUCED to the nodes it created or changed.
 
 | Role | Reads | Writes | Must not |
 |---|---|---|---|
-| **Category researcher** (`intel-*`) | `npm run kg -- search <topic>`, pages and opportunities in its hub | Brief (inbox file), Observation nodes, Claim and Evidence (retrievalMethod honest, quote 300 chars max), Opportunity in state proposed with OVERLAPS edges | Edit pages, score its own briefs, use a competitor as evidence, research outside its hub |
+| **Category researcher** (`intel-*`) | `npm run kg -- search <topic>`, pages and opportunities in its hub | A **findings bundle** (JSON in its response, format in BRIEF-TEMPLATE.md) that the session saves to `docs/content-intelligence/bundles/` and loads with `npm run kg:ingest`; plus the brief file. Researchers have read-only tools and never write nodes directly | Edit pages, score its own briefs, use a competitor as evidence, research outside its hub |
 | **Lead** | All opportunities, check warnings, Outcomes, Lessons | Scores, transitions up to approved (non-YMYL), Needs, Decisions, Lessons, priorities | Approve YMYL, approve without evidence, approve `create` on a duplicate |
 | **SEO/GEO technical** | Templates, rendered `dist/`, Page nodes | Observations of kind format, Decisions about templates, technical PRs | Add external scripts, fonts or trackers; promise rankings |
 | **Writer/editor** | Approved opportunity, its brief, cited Claims | Page content on a branch, IMPLEMENTS and ANSWERS edges on the Page node (`writeNode({id, type, edges})`; sync keeps them), new Claims it relies on | Credit a reviewer, set `reviewedBy`, cite a claim without SUPPORTED_BY evidence |
@@ -146,8 +150,8 @@ Merging to `main` is the release and stays a human action.
 - **Claude cloud sessions** can't fetch most external sites (proxy) but WebSearch works. Evidence gathered there is
   `search-snippet`. Treat it as a discovery clue; it is too weak on its own for YMYL.
 - **GitHub Actions** runners can fetch. Change detection runs there: allowlisted URLs only (Source and Evidence nodes),
-  robots.txt respected, at most 1 request per host every 5 seconds, a 200-URL cap per run, and only hashes plus a short
-  excerpt stored. Never store full copyrighted text.
+  robots.txt respected, at most 1 request per host every 5 seconds, 60 URLs per run by default, and only the content
+  hash, title, Last-Modified and fetch status stored (no excerpt). Never store full copyrighted text.
 - **Search Console** needs credentials the owner provides. Until then, outcome data comes in from a CSV export.
 - Per run: one category, at most 10 briefs or 50 new claims, at most 30 searches. A larger job is split into several runs.
   Every Run records rough cost notes. Use the strongest available model for editorial and fact-check passes (`lesson:use-strong-model-for-editorial`).
@@ -167,3 +171,10 @@ We measure quality and outcomes, never output volume. Pages or briefs per week i
 - **Duplication:** 0 opportunities approved as `create` on an existing topic; inventory query recorded on every brief.
 - **Outcomes** (once Search Console is connected): impressions, clicks, CTR and position against each page's baseline, measured at 28 and 90 days.
 - **Learning:** every measured opportunity ends in a Decision or Lesson; weights are recalibrated against Outcome data, not opinion.
+
+## 13. Related documents
+
+- `docs/system/RELEASE.md`: CI gates and how technical and editorial approval differ.
+- `docs/system/OPERATIONS.md`: scheduled jobs, retries, logs, recovery.
+- `docs/system/MEASUREMENT.md`: Search Console import, report and calibration.
+- `docs/content-intelligence/README.md`: the end-to-end loop with commands.

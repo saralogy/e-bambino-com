@@ -11,7 +11,7 @@
  * when set. Read-only; always exits 0 (the CI gate step decides pass/fail).
  *
  * Check results come from the environment (GitHub step outcomes):
- *   CHECK_BUILD, CHECK_AUDIT, CHECK_KG, CHECK_LINKS, CHECK_SEO
+ *   CHECK_BUILD, CHECK_AUDIT, CHECK_KG, CHECK_BACKLOG, CHECK_LINKS, CHECK_SEO
  *   = success | failure | cancelled | skipped
  * or, locally, from running the checks: --run
  * Base for the diff: --base <ref> or RELEASE_BASE (default origin/main).
@@ -32,6 +32,7 @@ const CHECKS = [
   { key: 'build', env: 'CHECK_BUILD', label: 'Build (`npm run build`)', cmd: ['npm', ['run', 'build']] },
   { key: 'audit', env: 'CHECK_AUDIT', label: 'Content audit (`npm run audit`)', cmd: ['npm', ['run', 'audit']] },
   { key: 'kg', env: 'CHECK_KG', label: 'Knowledge graph (`npm run kg:check`)', cmd: ['npm', ['run', 'kg:check']] },
+  { key: 'backlog', env: 'CHECK_BACKLOG', label: 'Backlog up to date (`kg:backlog --check`)', cmd: ['node', ['scripts/kg/backlog.mjs', '--check']] },
   { key: 'links', env: 'CHECK_LINKS', label: 'Internal links (`scripts/checks/links.mjs`)', cmd: ['node', ['scripts/checks/links.mjs']], needsBuild: true },
   { key: 'seo', env: 'CHECK_SEO', label: 'Technical SEO (`scripts/checks/seo.mjs`)', cmd: ['node', ['scripts/checks/seo.mjs']], needsBuild: true },
 ];

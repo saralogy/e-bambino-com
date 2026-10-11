@@ -260,8 +260,9 @@ for (const f of ls(join(ROOT, 'docs/research'), '.json')) {
 for (const p of pages.values()) count(writeNode(p, { replaceRels: SYNC_OWNED_RELS.page }));
 for (const s of sources.values()) count(writeNode(s));
 for (const [node, preserve] of authored) count(writeNode(node, { preserve }));
-for (const c of claims.values()) count(writeNode(c));
-for (const e of evidence.values()) count(writeNode(e));
+// Claims and evidence are seeded from research once; later verdicts (contested, revalidate) win.
+for (const c of claims.values()) count(writeNode(c, { preserve: true }));
+for (const e of evidence.values()) count(writeNode(e, { preserve: true }));
 
 for (const node of loadNodes().values()) {
   const gone = (node.type === 'page' && !pages.has(node.id)) || (node.type === 'source' && !sources.has(node.key));
