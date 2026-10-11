@@ -1,0 +1,71 @@
+{
+  "agent": "agent:gap-scoring",
+  "cost": "one session; local computation only, no fetches or searches",
+  "edges": [
+    {
+      "rel": "PRODUCED",
+      "to": "decision:2026-10-11-car-seat-installation-consolidate-confirmed"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "decision:2026-10-11-stroller-brief-improve-held-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "decision:2026-10-11-wardrobe-planner-improve-clothes-quantity-page"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:bath-care-first-bath-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:breastfeeding-pumping-storage-workflow"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:clothing-size-wardrobe-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:consolidate-car-seat-installation"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:diapering-total-cost-calculator"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:feeding-high-chair-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:nursery-crib-mattress-checklist"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:on-the-go-stroller-buying-guide"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:play-toy-rotation-planner"
+    },
+    {
+      "rel": "PRODUCED",
+      "to": "opp:safety-room-by-room-checklist"
+    }
+  ],
+  "finished": "2026-10-11",
+  "id": "run:2026-10-11-gap-scoring",
+  "inputs": [
+    "kg:dedupe --all",
+    "kg:score"
+  ],
+  "model": "claude-opus-5-5",
+  "outputs": [
+    "3 Decisions on duplicate warnings"
+  ],
+  "started": "2026-10-11",
+  "status": "succeeded",
+  "type": "run"
+}

@@ -1,17 +1,20 @@
 {
-  "action": "create",
+  "action": "improve",
   "category": "clothing",
   "demand": "unknown",
   "edges": [
     {
+      "note": "dedupe 0.305; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/clothing/how-many-baby-clothes-do-you-need"
     },
     {
+      "note": "dedupe 0.305; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/clothing/how-to-wash-baby-clothes"
     },
     {
+      "note": "dedupe 0.34; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/clothing/newborn-clothing-size"
     },
@@ -20,6 +23,12 @@
       "to": "page:en/clothing/sleeper-or-bodysuit"
     },
     {
+      "note": "dedupe 0.331; needs human check",
+      "rel": "OVERLAPS",
+      "to": "page:en/clothing/us-vs-eu-baby-clothing-sizes"
+    },
+    {
+      "note": "dedupe 0.314; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/clothing/when-to-buy-the-next-size"
     },
@@ -33,14 +42,64 @@
       "page:en/clothing/how-many-baby-clothes-do-you-need"
     ],
     "evidence": false,
+    "overlapCheck": "resolved:decision:2026-10-11-wardrobe-planner-improve-clothes-quantity-page",
     "ymyl": false
   },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 22 (penalty 1); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
   "id": "opp:clothing-size-wardrobe-planner",
+  "notes": "2026-10-11 agent:gap-scoring: action create -> improve by decision:2026-10-11-wardrobe-planner-improve-clothes-quantity-page.",
   "owner": "content-intelligence-lead",
   "priority": "P1",
-  "rationale": "From brief 2026-10-10-clothing-size-wardrobe-planner.md. Decision line: \"Build a useful planning guide/tool after page-agent overlap check\". Not yet scored against the PLAYBOOK rubric.",
+  "rationale": "From brief 2026-10-10-clothing-size-wardrobe-planner.md. Decision line: \"Build a useful planning guide/tool after page-agent overlap check\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
   "reviewBy": "2027-01-08",
-  "state": "proposed",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: 14 related supported claim(s) on overlapping pages, 14 with primary-authority evidence; snippet-only, capped at 3 (lesson:snippets-weak-for-ymyl) | gap: closest page page:en/clothing/newborn-clothing-size at 0.34; duplicateOf page:en/clothing/how-many-baby-clothes-do-you-need | differentiation: formats: checklist, comparison table or matrix, planner or worksheet, measurement guide | links: 8 en page(s) in hub clothing; 6 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: work on an existing duplicate page +1",
+    "differentiation": 5,
+    "evidence": 3,
+    "fit": 5,
+    "gap": 1,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "pass",
+      "ymyl": "pass"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 5,
+        "evidence": 3,
+        "need": 4,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 4.36,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 5,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 22,
+    "penalty": 1,
+    "utility": 4
+  },
+  "state": "scored",
   "title": "Baby clothing size and starter-wardrobe planner",
   "type": "opportunity"
 }

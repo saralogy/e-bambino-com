@@ -1,0 +1,23 @@
+{
+  "about": "Check of opp:consolidate-car-seat-installation: the two held car-seat installation pages",
+  "by": "agent:gap-scoring",
+  "date": "2026-10-11",
+  "edges": [
+    {
+      "rel": "ABOUT",
+      "to": "opp:consolidate-car-seat-installation"
+    },
+    {
+      "rel": "ABOUT",
+      "to": "page:en/on-the-go/how-to-install-a-car-seat"
+    },
+    {
+      "rel": "ABOUT",
+      "to": "page:en/safety/car-seat-installation-check"
+    }
+  ],
+  "id": "decision:2026-10-11-car-seat-installation-consolidate-confirmed",
+  "outcome": "Action consolidate confirmed. The canonical page (one page, or a clear install-vs-check split, and which hub keeps it) is left to the lead and the human reviewer; both pages stay held until one named human reviewer has read the result.",
+  "reason": "kg:dedupe scores the two held YMYL pages against each other at 0.435 (check band, across two hubs: safety and on-the-go) and suggests consolidate; both cover the 1-inch test, harness and chest clip (duplicate incident 1 in docs/system/EVALUATION.md). A reviewer should not spend time on both. Classification only: approval stays with a human (YMYL).",
+  "type": "decision"
+}

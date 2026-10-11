@@ -27,14 +27,63 @@
   "gates": {
     "duplicateOf": [],
     "evidence": false,
+    "overlapCheck": "clear",
     "ymyl": false
   },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 20 (penalty 0); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
   "id": "opp:play-toy-rotation-planner",
   "owner": "content-intelligence-lead",
   "priority": "P2",
-  "rationale": "From brief 2026-10-10-play-toy-rotation-planner.md. Decision line: \"Build a practical planner or checklist; no product-ranking page\". Not yet scored against the PLAYBOOK rubric.",
+  "rationale": "From brief 2026-10-10-play-toy-rotation-planner.md. Decision line: \"Build a practical planner or checklist; no product-ranking page\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
   "reviewBy": "2027-01-08",
-  "state": "proposed",
+  "scores": {
+    "assumptions": "utility: priority P2 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/play/toys-for-motor-skills-first-year at 0.137 | differentiation: formats: checklist, planner or worksheet | links: 7 en page(s) in hub play; 4 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: none",
+    "differentiation": 3,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 5,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "pass",
+      "ymyl": "pass"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 3,
+        "evidence": 0,
+        "need": 3,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 4,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 20,
+    "penalty": 0,
+    "utility": 3
+  },
+  "state": "scored",
   "title": "Toy rotation and borrow/buy/skip planner for the first year",
   "type": "opportunity"
 }

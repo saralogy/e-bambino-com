@@ -4,10 +4,12 @@
   "demand": "unknown",
   "edges": [
     {
+      "note": "dedupe 0.321; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/on-the-go/how-to-install-a-car-seat"
     },
     {
+      "note": "dedupe 0.364; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/safety/car-seat-installation-check"
     }
@@ -18,14 +20,64 @@
       "page:en/on-the-go/how-to-install-a-car-seat"
     ],
     "evidence": true,
+    "overlapCheck": "resolved:decision:2026-10-11-car-seat-installation-consolidate-confirmed",
     "ymyl": true
   },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 10 (penalty 4); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
   "id": "opp:consolidate-car-seat-installation",
+  "notes": "2026-10-11 agent:gap-scoring: action kept as consolidate by decision:2026-10-11-car-seat-installation-consolidate-confirmed.",
   "owner": "content-intelligence-lead",
   "priority": "P1",
   "rationale": "Both held YMYL pages cover the 1-inch test, harness and chest clip. Decide one canonical page (or install vs check split) before a reviewer spends time on both.",
   "reviewBy": "2026-11-10",
-  "state": "proposed",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: 23 related supported claim(s) on overlapping pages, 23 with primary-authority evidence; snippet-only, capped at 2 (lesson:snippets-weak-for-ymyl) | gap: closest page page:en/safety/car-seat-installation-check at 0.364; duplicateOf page:en/safety/car-seat-installation-check, page:en/on-the-go/how-to-install-a-car-seat | differentiation: no original-utility format named | links: 5 en page(s) in hub safety; 0 published overlapping page(s) | fit: plain answer format | penalty: work on an existing duplicate page +1; YMYL review burden +1; no named reviewer lined up +1; no unique value identified +1",
+    "differentiation": 1,
+    "evidence": 2,
+    "fit": 4,
+    "gap": 1,
+    "hardGates": {
+      "blocking": [
+        "ymyl: no named human reviewer lined up (gates.reviewer); approval is a human transition"
+      ],
+      "duplicate": "pass",
+      "evidence": "pass",
+      "overlap": "pass",
+      "ymyl": "fail"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 1,
+        "evidence": 2,
+        "need": 4,
+        "strategic": 3
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 2.64,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 2,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 10,
+    "penalty": 4,
+    "utility": 4
+  },
+  "state": "scored",
   "title": "Consolidate or clearly separate the two car-seat installation pages",
   "type": "opportunity"
 }

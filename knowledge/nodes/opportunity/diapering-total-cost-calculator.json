@@ -4,6 +4,7 @@
   "demand": "unknown",
   "edges": [
     {
+      "note": "dedupe 0.355; needs human check",
       "rel": "OVERLAPS",
       "to": "page:en/diapering/cloth-vs-disposable-diapers"
     },
@@ -23,14 +24,64 @@
   "gates": {
     "duplicateOf": [],
     "evidence": false,
+    "overlapCheck": "needs-human",
     "ymyl": false
   },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 17 (penalty 0); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
   "id": "opp:diapering-total-cost-calculator",
   "owner": "content-intelligence-lead",
   "priority": "P2",
-  "rationale": "From brief 2026-10-10-diapering-total-cost-calculator.md. Decision line: \"Extend the existing comparison with an interactive or transparent calculation\". Not yet scored against the PLAYBOOK rubric.",
+  "rationale": "From brief 2026-10-10-diapering-total-cost-calculator.md. Decision line: \"Extend the existing comparison with an interactive or transparent calculation\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
   "reviewBy": "2027-01-08",
-  "state": "proposed",
+  "scores": {
+    "assumptions": "utility: priority P2 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/diapering/cloth-vs-disposable-diapers at 0.355 | differentiation: formats: comparison table or matrix, calculator | links: 7 en page(s) in hub diapering; 3 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: none",
+    "differentiation": 3,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 2,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)",
+        "overlap: page:en/diapering/cloth-vs-disposable-diapers (0.355) needs a human check (record a Decision, then set gates.overlapCheck)"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "fail",
+      "ymyl": "pass"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 3,
+        "evidence": 0,
+        "need": 3,
+        "strategic": 5
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 4,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 17,
+    "penalty": 0,
+    "utility": 3
+  },
+  "state": "scored",
   "title": "Cloth vs disposable diaper total-cost calculator",
   "type": "opportunity"
 }

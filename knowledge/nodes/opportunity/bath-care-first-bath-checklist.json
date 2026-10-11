@@ -11,14 +11,64 @@
   "gates": {
     "duplicateOf": [],
     "evidence": false,
+    "overlapCheck": "clear",
     "ymyl": true
   },
+  "history": [
+    {
+      "by": "agent:gap-scoring",
+      "date": "2026-10-11",
+      "from": "proposed",
+      "reason": "PLAYBOOK net 16 (penalty 2); demand unknown",
+      "role": "lead",
+      "to": "scored"
+    }
+  ],
   "id": "opp:bath-care-first-bath-checklist",
   "owner": "content-intelligence-lead",
   "priority": "P1",
-  "rationale": "From brief 2026-10-10-bath-care-first-bath-checklist.md. Decision line: \"Build an answer-first checklist page; English hub is currently empty\". Not yet scored against the PLAYBOOK rubric.",
+  "rationale": "From brief 2026-10-10-bath-care-first-bath-checklist.md. Decision line: \"Build an answer-first checklist page; English hub is currently empty\". Scored against the PLAYBOOK rubric by kg:score (see scores.assumptions).",
   "reviewBy": "2027-01-08",
-  "state": "proposed",
+  "scores": {
+    "assumptions": "utility: priority P1 from the brief (researcher judgement, not measured demand) | evidence: no supported claim with current evidence on overlapping or implementing pages | gap: closest page page:en/bath-and-care/baby-bathtub-or-bath-seat at 0.186 | differentiation: formats: checklist, comparison table or matrix | links: 5 en page(s) in hub bath-and-care; 0 published overlapping page(s) | fit: tool/checklist/buying-guide format (+1) | penalty: YMYL review burden +1; no named reviewer lined up +1",
+    "differentiation": 3,
+    "evidence": 0,
+    "fit": 5,
+    "gap": 5,
+    "hardGates": {
+      "blocking": [
+        "evidence: no source evidence linked to the opportunity (gates.evidence is false)",
+        "ymyl: no named human reviewer lined up (gates.reviewer); approval is a human transition"
+      ],
+      "duplicate": "pass",
+      "evidence": "fail",
+      "overlap": "pass",
+      "ymyl": "fail"
+    },
+    "hypothesis": {
+      "components": {
+        "commercial": "unknown",
+        "demand": "unknown",
+        "differentiation": 3,
+        "evidence": 0,
+        "need": 4,
+        "strategic": 4
+      },
+      "coverage": 0.7,
+      "label": "hypothesis only: CALIBRATION_HYPOTHESIS weights over known components; not used for ranking",
+      "score": 3.14,
+      "unknown": [
+        "demand",
+        "commercial"
+      ]
+    },
+    "links": 2,
+    "method": "playbook-v1 (derived from graph and brief signals)",
+    "net": 17,
+    "penalty": 2,
+    "utility": 4
+  },
+  "state": "scored",
   "title": "First-bath setup and minimum kit",
   "type": "opportunity"
 }
