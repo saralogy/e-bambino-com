@@ -2,15 +2,14 @@
  * check.mjs — validate the knowledge graph (npm run kg:check).
  *
  * Errors (exit 1): schema violations, dangling edges, disallowed relations,
- * invalid enums, illegal opportunity states. See validateGraph in lib.mjs.
+ * invalid enums, illegal opportunity states and history, approving reviews
+ * that are not clearly human (review-not-human). See validateGraph in lib.mjs.
  * Warnings (exit 0): freshness, evidence gaps and review-rule risks that need
  * a person or an agent to act, not a code fix.
  *
  * Usage: npm run kg:check [-- --json]
  */
-import { readdirSync } from 'node:fs';
-import { join } from 'node:path';
-import { byType, get, indexGraph, loadNodes, neighbors, ROOT, stopped, today, validateGraph } from './lib.mjs';
+import { byType, get, indexGraph, loadNodes, neighbors, stopped, today, validateGraph } from './lib.mjs';
 import { APPROVED_OR_LATER } from './schema.mjs';
 
 const nodes = loadNodes();
@@ -50,15 +49,11 @@ for (const opp of byType(g, 'opportunity')) {
   if (opp.reviewBy < now && !['rejected', 'retire'].includes(opp.state)) warn('opp-review-due', opp.id, `reviewBy ${opp.reviewBy} has passed`);
 }
 
-// Approving reviews must come from humans. validateGraph rejects agent-kind
-// approvals; this also catches agent names entered as if they were people.
-const agentNames = readdirSync(join(ROOT, '.claude/agents')).map((f) => f.replace(/\.md$/, ''));
-const looksAgent = (name = '') => /\b(claude|agent|bot|gpt|llm|model|opus|sonnet|haiku)\b/i.test(name) || agentNames.includes(name);
+// Approving reviews must come from humans. validateNode (lib.mjs) makes an
+// agent-kind approval or an agent-looking reviewer/by name (model words,
+// "agent:" ids, .claude/agents file names) a structural error: review-not-human.
 for (const rv of byType(g, 'review')) {
   if (rv.result !== 'approve') continue;
-  if (rv.byKind !== 'human' || looksAgent(rv.by) || looksAgent(rv.reviewer)) {
-    warn('review-not-human', rv.id, `approving review recorded by "${rv.by}" for reviewer "${rv.reviewer}" is not clearly human`);
-  }
   const page = get(g, rv.page);
   if (page && page.reviewedBy && page.reviewedBy !== rv.reviewer) warn('review-name-mismatch', rv.id, `page credits "${page.reviewedBy}", review names "${rv.reviewer}"`);
 }

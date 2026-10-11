@@ -19,7 +19,7 @@
  */
 import { fileURLToPath } from 'node:url';
 import { buildInventory, dedupe, queryForText } from './dedupe.mjs';
-import { addDays, byType, get, idFor, loadGraph, slugify, stopped, today, writeNode } from './lib.mjs';
+import { addDays, byType, forcedYmyl, get, idFor, loadGraph, slugify, stopped, today, writeNode } from './lib.mjs';
 import { INTENTS, LANGS, TYPES } from './schema.mjs';
 
 export const AGENT = 'agent:propose';
@@ -78,9 +78,11 @@ export function propose(input, { dryRun = false, g = loadGraph(), inv = buildInv
 
   // 3. The opportunity: new in state proposed, or updated with new overlaps.
   const oldGates = existing?.gates ?? { evidence: false, ymyl: !!input.ymyl, duplicateOf: [] };
+  // YMYL by declaration: YMYL hubs and sleep/car-seat/medicine/... topics are always YMYL; never downgraded.
+  const ymyl = oldGates.ymyl === true || forcedYmyl(existing?.category ?? input.category, existing?.title ?? input.title, input.question, existing ? '' : input.rationale);
   const overlapCheck = added.length || (!existing && overlaps.length) ? 'needs-human'
     : oldGates.overlapCheck ?? (overlaps.length ? 'needs-human' : 'clear');
-  const node = { id, type: 'opportunity', edges, gates: { ...oldGates, overlapCheck } };
+  const node = { id, type: 'opportunity', edges, gates: { ...oldGates, ymyl, overlapCheck } };
   if (!existing) {
     Object.assign(node, {
       title: input.title, category: input.category ?? 'unknown', action: input.action ?? 'create', state: 'proposed',

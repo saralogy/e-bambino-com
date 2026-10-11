@@ -188,6 +188,7 @@ export function report(results: AuditResult[]) {
 
 export interface EnglishFrontmatter {
   slug?: string;
+  hub?: string;
   antwort?: string;
   quellen?: string[];
   ymyl?: boolean;
@@ -198,6 +199,9 @@ export interface EnglishFrontmatter {
 export interface EnglishResult extends AuditResult {
   held: boolean;
 }
+
+/** Hubs that are YMYL by declaration (same list as YMYL_CATEGORIES in scripts/kg/schema.mjs). */
+const YMYL_HUBS = ['safety', 'bath-and-care', 'breastfeeding', 'feeding'];
 
 const BRITISH = /\b(nappy|nappies|pram|prams|pushchair|pushchairs|colour|colours|favourite|favourites|paediatrician|paediatricians|paediatric|cot|cots)\b/gi;
 
@@ -227,6 +231,12 @@ export function auditEnglish(body: string, fm: EnglishFrontmatter): EnglishResul
   // Sources.
   if (!quellen.length) {
     issues.push(held ? warn('no-source', 'No sources listed (page is held)') : err('no-source', 'No sources listed (quellen is empty)'));
+  }
+
+  // A page in a YMYL hub that says ymyl: false skips the reviewer gate. Never
+  // decided here: a human checks the topic and sets ymyl (warning only).
+  if (fm.hub && YMYL_HUBS.includes(fm.hub) && !fm.ymyl) {
+    issues.push(warn('ymyl-hub-not-ymyl', `Hub "${fm.hub}" is YMYL by declaration but the page has ymyl: false; a human decides whether it needs a reviewer`));
   }
 
   // YMYL without reviewer: held, not published.

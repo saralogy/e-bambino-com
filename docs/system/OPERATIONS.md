@@ -13,21 +13,25 @@ person always does it.
 |---|---|---|---|---|
 | **ci** | `.github/workflows/ci.yml` | Every pull request, every push to `main` | Runs `npm run build`, `npm run audit`, `npm run kg:check`, plus link and SEO checks on `dist/`. Technical gate only (see `RELEASE.md`). | Nothing. The job only reports. |
 | **watch** | `.github/workflows/watch.yml` | Weekly (Mondays 05:17 UTC) plus manual `workflow_dispatch` (inputs `limit`, `dry_run`) | Refreshes `knowledge/watchlist.json`, fetches the URLs that are due, writes ChangeEvent and Run nodes, flags affected claims, runs `kg:check` and builds the revalidation list. | One branch per ISO week (`bot/watch-2026-W42`) and **one** PR for it. |
-| **outcomes** | Manual for now | When the owner exports Search Console data | Imports a Search Console CSV into Outcome nodes (baseline first). Deferred until credentials exist (EVALUATION item 7); no schedule, no invented numbers. | Outcome nodes, through a PR. |
+| **outcomes** | `.github/workflows/outcomes.yml` | Monthly (4th, 04:41 UTC) plus manual; skipped until the `GSC_SERVICE_ACCOUNT_JSON` secret exists. CSV imports stay manual. | Imports Search Console data into Outcome nodes (baseline first), runs `kg:check`, the outcome report and calibration. The secret is passed only to the import step; API calls time out after 30 s. Branch handling, re-scoring and the backlog are as in the watch job. | One branch per month (`bot/outcomes-2026-11`) and one PR for it. |
 | **Claude research routine** (optional) | A Claude Code Routine or session, started by a person | On demand, or a schedule the owner sets | One category per run: an inventory query, then a brief, Observations, Claims and Evidence (`search-snippet`), and an Opportunity in state `proposed`. It follows the role contract for category researchers. | A branch and a PR. It never publishes, scores its own work or approves anything. |
 
 ### The watch job, step by step
 
 1. **Stop switch.** If `knowledge/STOP` exists, the job logs the reason and skips every later step.
 2. **This week's branch.** `bot/watch-<ISO week>`. If the branch already exists (a re-run in the same week), the job
-   continues from it and merges `main` in. If that merge conflicts, it starts again fresh from `main`.
+   continues from it and merges `main` in. If that merge conflicts, the job fails with an `::error::` message and
+   changes nothing: it never resets or force-pushes the branch. Resolve the conflict on the branch (or merge or close
+   its PR and delete the branch), then re-run.
 3. `node scripts/watch/build-watchlist.mjs` regenerates the allowlist from Evidence and Source node URLs and the URLs
    cited in `docs/content-intelligence/**`. It keeps each URL's `last` fetch state.
 4. `node scripts/watch/fetch.mjs --limit <n> --summary <file>` fetches what is due (section 2).
 5. `npm run kg:check`. Structural errors fail the job before anything is committed.
 6. `node scripts/watch/revalidate.mjs` writes the researchers' work list. The job summary shows it, and so does the PR body.
-7. If `knowledge/` changed, the job commits, pushes the branch and opens the PR. If an open PR for that branch
-   already exists, it updates that PR's body instead of opening a new one.
+7. If `knowledge/` changed, the job re-scores (`node scripts/kg/score.mjs --write`), regenerates
+   `docs/content-intelligence/BACKLOG.md` (`node scripts/kg/backlog.mjs`) and runs `kg:check`, so the backlog check in
+   CI passes on the bot PR. It then commits `knowledge/` and `BACKLOG.md`, pushes the branch (no force) and opens the
+   PR. If an open PR for that branch already exists, it updates that PR's body instead of opening a new one.
 
 **State carries forward only through merges.** Each URL's last hash lives in `knowledge/watchlist.json`, and the next
 week's run starts from `main`. If a weekly PR is not merged, the following week re-baselines those URLs. That produces
@@ -35,16 +39,22 @@ no false change events, but it can miss a change that happened between the two r
 within the week.
 
 PRs that the job opens with the default `GITHUB_TOKEN` do not trigger other workflows, so **ci** will not run on
-them automatically. Before merging, re-run CI by hand or push an empty commit to the branch.
+them automatically. Before merging, run CI on the bot branch by hand: **Actions → CI → Run workflow**, choose the
+`bot/...` branch (`ci.yml` has `workflow_dispatch`). The run's checks then show on the PR. To have CI start by itself,
+let the bot jobs push with a GitHub App installation token (or a fine-grained token) stored as a secret instead of
+`GITHUB_TOKEN`. The same applies to the outcomes job.
 
 ## 2. What fetch.mjs does with each URL
 
 - **Allowlist only.** It requests only URLs listed in `knowledge/watchlist.json`, and that list is built from the
   graph and the content-intelligence docs, never from page links. Only `http`/`https`. Redirects are followed only
-  on the same host (at most 3 hops). Anything else is recorded as `redirect-offsite`.
+  on the same site (at most 3 hops); `www.` and the apex domain count as one site, and a hop to the other one is
+  checked against that origin's robots.txt. Anything else is recorded as `redirect-offsite`.
 - **robots.txt.** Fetched once per host per run. The job uses the group for `e-bambino-watch`, falling back to `*`,
-  and applies Allow and Disallow with longest-match precedence and `*`/`$` wildcards (RFC 9309). A 4xx response for
-  robots.txt means no restrictions. A 5xx or a network error means everything is disallowed (`robots-unavailable`).
+  and applies Allow and Disallow with longest-match precedence and `*`/`$` wildcards (RFC 9309). A redirect for
+  robots.txt is followed up to 5 hops on the same site (www and apex included); a redirect off the site or a sixth hop
+  counts as unavailable. A 4xx response, or an unavailable robots.txt, means no restrictions. A 5xx or a network error
+  means everything is disallowed (`robots-unavailable`). A redirect is never treated as disallow-all.
 - **User agent:** `e-bambino-watch/1.0 (+https://e-bambino.com/about/)`.
 - **Stored per URL** (`last` in the watchlist): `checked`, `status`, `httpStatus`, `attempts`, `contentHash`
   (`sha256:` of the main text), `title`, `lastModified`, `okAt` and `changedAt`. **Page text is never stored**:
@@ -121,12 +131,12 @@ Only a person removes the file.
 | A bad commit on the bot branch | Close the PR and delete the `bot/watch-<week>` branch. The next run starts fresh from `main`. |
 | A corrupted `knowledge/watchlist.json` | Restore it from `main` (`git checkout main -- knowledge/watchlist.json`), then run `node scripts/watch/build-watchlist.mjs`. Lost `last` state only causes a re-baseline. |
 | `kg:check` fails in the watch job | Nothing is committed. Fix the structural error on a normal branch first, then re-run the job. |
-| Merge conflict between two weekly PRs | Merge the older one first. The newer branch merges `main` on its next run, or delete it and re-run. |
+| Merge conflict between two weekly PRs | Merge the older one first. The newer branch merges `main` on its next run; if that conflicts the job fails with `::error::` and changes nothing. Resolve the conflict on the branch, or close its PR, delete the branch and re-run. |
 
 ## 8. Testing the watch scripts
 
 `node scripts/watch/selftest.mjs` copies the scripts into a temporary root, starts a local HTTP server on 127.0.0.1
-that serves robots.txt, a page in two versions, a blocked page, a 404 and a 503, and then runs the real scripts end
+that serves robots.txt behind a 301 redirect, a page in two versions, a blocked page, a 404 and a 503, and then runs the real scripts end
 to end: a dry run, the baseline, a same-day re-run, a noise-only re-fetch, a real change, revalidation, `kg:check`
 and STOP. It never touches the repository's `knowledge/`. The 5-second host delay can be shortened only for
 loopback hosts, through `WATCH_TEST_HOST_DELAY_MS`.

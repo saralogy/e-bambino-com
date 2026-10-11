@@ -79,9 +79,13 @@ rejected: reachable from any state (lead or human)
 | released → measured | measurement | At least one Outcome node; the first one has `baseline: true` |
 | measured → improve, consolidate or retire | lead (retire: lead or human) | Based on Outcome data and lessons, never on a guess |
 
-Every transition appends `{from, to, by, date, reason}` to `history`. `validateGraph` rejects illegal transitions, a state that
-doesn't match the last history entry, scores missing after `proposed`, a released YMYL opportunity without a human approval,
-and `create` on a duplicate after approval.
+Every transition appends `{from, to, by, role, byKind?, date, reason}` to `history`. `role` is one of the roles in the table
+(`TRANSITIONS` in `schema.mjs`); `by` names who did it; a person also sets `byKind: "human"` (the Review convention).
+`validateGraph` rejects illegal transitions, a role not allowed for the transition, a broken chain (the first entry starts at
+`proposed`, each `from` equals the previous `to`, the last `to` equals `state`), an entry marked human whose `by` looks like an
+agent, a YMYL `scored → approved` that is not role `human` with `byKind: "human"`, a YMYL move into `released` not recorded by a
+human, scores missing after `proposed`, a released YMYL opportunity without a human approval, and `create` on a duplicate
+after approval.
 
 ## 5. Scoring
 
@@ -96,6 +100,10 @@ score, backlog and check; `docs/content-intelligence/BACKLOG.md` is the ranked q
   commercial 10%) are kept in `CALIBRATION_HYPOTHESIS`. Revisit them once 3 months of Outcome data exist.
 - **Hard gates override any score.** No evidence means no approval. YMYL means a named human reviewer is required.
   A duplicate means improve or consolidate.
+- **YMYL by declaration** (`YMYL_CATEGORIES`, `YMYL_TEXT` in `schema.mjs`): `kg:ingest` and `kg:propose` set `ymyl: true`
+  on opportunities and claims in safety, bath-and-care, breastfeeding and feeding, and on any whose text mentions sleep,
+  SIDS, car seats, medicine, fever, formula or allergies. A bundle can raise ymyl, never lower it. `npm run audit` warns
+  (`ymyl-hub-not-ymyl`) on English pages in those hubs with `ymyl: false`; a human decides.
 - Never invent search volumes, rankings, CTR or AI citation counts. If a number is unknown, write "unknown".
 
 ## 6. Role contracts
@@ -119,7 +127,8 @@ links it with PRODUCED to the nodes it created or changed.
 1. **Technical:** `npm run build`, `npm run audit` and `npm run kg:check` pass, with no structural errors. An agent may confirm this.
 2. **Editorial:** editor plus adversarial fact-checker, with every claim SUPPORTED_BY current evidence. Agents may do this. It is enough for **non-YMYL** release.
 3. **Human review:** required for every YMYL page and every YMYL opportunity approval. Only a human creates a Review with
-   `result: approve`. `validateNode` rejects an agent approval, and `kg:check` warns when the reviewer looks like an agent.
+   `result: approve`. `validateNode` rejects an agent approval, and an approving Review whose `reviewer` or `by` looks like an
+   agent (model or agent words, an `agent:` id, a `.claude/agents` file name) is a structural `kg:check` error (`review-not-human`).
    The reviewer's name goes on a page only after they read that page (AGENTS.md §5.1).
 
 Merging to `main` is the release and stays a human action.

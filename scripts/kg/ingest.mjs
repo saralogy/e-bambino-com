@@ -20,7 +20,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { addDays, get, idFor, loadGraph, ROOT, slugify, stopped, today, writeNode } from './lib.mjs';
+import { addDays, forcedYmyl, get, idFor, loadGraph, ROOT, slugify, stopped, today, writeNode } from './lib.mjs';
 import { INTENTS, LANGS, TYPES } from './schema.mjs';
 
 export const FORMAT = 'e-bambino-findings/1';
@@ -232,8 +232,13 @@ export async function ingest(b, { path = 'bundle', dryRun = false } = {}) {
 
   // Claims and evidence. Evidence IDs hash url + claim text, so one bundle
   // entry that supports two claims becomes two Evidence nodes.
+  // YMYL by declaration: a bundle may raise ymyl but never keep it false for a
+  // YMYL hub or a sleep/car-seat/medicine/fever/formula/allergy topic.
   const claimText = new Map();
-  for (const c of b.claims ?? []) { refId.set(c.ref, idFor.claim(c.text)); claimText.set(refId.get(c.ref), c); }
+  for (const c of b.claims ?? []) {
+    refId.set(c.ref, idFor.claim(c.text));
+    claimText.set(refId.get(c.ref), { ...c, ymyl: c.ymyl || forcedYmyl(b.category, c.text) });
+  }
   const resolveClaim = (r) => refId.get(r) ?? r;
   const textOf = (id) => claimText.get(id)?.text ?? get(g, id).text;
   const ymylOf = (id) => claimText.get(id)?.ymyl || get(g, id)?.ymyl === true;
@@ -297,11 +302,12 @@ export async function ingest(b, { path = 'bundle', dryRun = false } = {}) {
     const claimIds = (p.claims ?? []).map(resolveClaim);
     const evidenceIds = claimIds.flatMap((cid) => (claimEdges.get(cid) ?? []).filter((x) => x.rel === 'SUPPORTED_BY').map((x) => x.to));
     const question = p.question ?? (p.needs ?? []).map((r) => (b.needs ?? []).find((n) => n.ref === r)?.question).find(Boolean);
+    const ymyl = p.ymyl || forcedYmyl(b.category, p.title, p.rationale, question);
     refId.set(p.ref, id);
     if (propose) {
       const r = await propose({
         title: p.title, question, category: b.category, lang, intent: p.intent ?? 'unknown', rationale: p.rationale, evidenceIds,
-        slug, ymyl: p.ymyl, priority: p.priority, action: p.action,
+        slug, ymyl, priority: p.priority, action: p.action,
       });
       const action = r.action ?? (r.created ? 'created' : 'updated');
       const matches = r.matches ?? r.dedupe?.matches ?? [];
@@ -311,7 +317,7 @@ export async function ingest(b, { path = 'bundle', dryRun = false } = {}) {
     } else if (!dryRun && !get(g, id)) {
       write({
         id, type: 'opportunity', title: p.title.trim(), category: b.category, action: p.action ?? 'create', state: 'proposed',
-        priority: p.priority, demand: 'unknown', gates: { evidence: false, ymyl: p.ymyl, duplicateOf: [] },
+        priority: p.priority, demand: 'unknown', gates: { evidence: false, ymyl, duplicateOf: [] },
         rationale: p.rationale.trim(), owner: 'content-intelligence-lead', reviewBy: addDays(b.date, 90),
         notes: 'Created by kg:ingest without dedupe (propose.mjs missing). Run kg:propose --refresh on it before scoring.', edges: [],
       }, { preserve: true });

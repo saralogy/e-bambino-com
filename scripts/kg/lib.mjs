@@ -13,7 +13,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  APPROVED_OR_LATER, COMMON_FIELDS, PREFIX, REJECT_ROLES, RELATIONS, TRANSITIONS, TYPES, TYPE_BY_PREFIX,
+  APPROVED_OR_LATER, COMMON_FIELDS, PREFIX, REJECT_ROLES, RELATIONS, TRANSITIONS, TYPES, TYPE_BY_PREFIX, YMYL_CATEGORIES, YMYL_TEXT,
 } from './schema.mjs';
 
 export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
@@ -29,8 +29,15 @@ export const STOP_FILE = join(KG_DIR, 'STOP');
 /** True when knowledge/STOP exists: every automated job must halt. */
 export const stopped = () => existsSync(STOP_FILE);
 
-/** Today as YYYY-MM-DD (UTC). */
-export const today = () => new Date().toISOString().slice(0, 10);
+/** Today as YYYY-MM-DD (UTC). KG_TODAY=YYYY-MM-DD overrides it (tests, reproducing a past run). */
+export function today() {
+  const fixed = process.env.KG_TODAY;
+  if (fixed) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(fixed)) throw new Error(`KG_TODAY must be YYYY-MM-DD, got "${fixed}"`);
+    return fixed;
+  }
+  return new Date().toISOString().slice(0, 10);
+}
 
 /** Add days to a YYYY-MM-DD date. */
 export function addDays(date, days) {
@@ -44,6 +51,31 @@ export const hash12 = (s) => sha1(s).slice(0, 12);
 
 /** Normalize claim text for hashing: lowercase, single spaces, trimmed. */
 export const normalizeText = (s) => String(s).toLowerCase().replace(/\s+/g, ' ').trim();
+
+/** Names of the agent definitions in .claude/agents (file names without .md). */
+let agentNames;
+const loadAgentNames = () => {
+  const dir = join(ROOT, '.claude/agents');
+  agentNames ??= existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, '')) : [];
+  return agentNames;
+};
+
+/**
+ * True when a reviewer or `by` name looks like an agent rather than a person:
+ * model or agent words, an "agent:" id, or the name of an agent in .claude/agents.
+ */
+export function looksAgent(name = '') {
+  const n = String(name ?? '').trim();
+  return /\b(claude|agent|bot|gpt|llm|model|opus|sonnet|haiku)\b/i.test(n)
+    || loadAgentNames().includes(n) || loadAgentNames().includes(slugify(n));
+}
+
+/**
+ * YMYL by declaration (schema.mjs): true when the category is a YMYL hub or any
+ * text mentions sleep, SIDS, car seats, medicine, fever, formula or allergies.
+ * Callers OR it with the declared value, so it never downgrades.
+ */
+export const forcedYmyl = (category, ...texts) => YMYL_CATEGORIES.includes(category) || texts.some((t) => YMYL_TEXT.test(String(t ?? '')));
 
 export function slugify(s) {
   return String(s)
@@ -210,18 +242,60 @@ export function validateNode(node) {
   if (node.__file && node.__file !== nodePath(node)) errs.push(`${at}: stored at ${node.__file}, expected ${nodePath(node)}`);
 
   // Type-specific invariants that need no other node.
-  if (node.type === 'review' && node.result === 'approve' && (node.reviewerKind !== 'human' || node.byKind !== 'human')) {
-    errs.push(`${at}: an approving Review must be by a human reviewer and recorded by a human (agents may never approve)`);
-  }
-  if (node.type === 'opportunity') {
-    for (const h of node.history ?? []) {
-      const allowed = h.to === 'rejected' ? REJECT_ROLES : TRANSITIONS[h.from]?.[h.to];
-      if (!allowed) errs.push(`${at}: illegal transition ${h.from} -> ${h.to}`);
+  if (node.type === 'review' && node.result === 'approve') {
+    if (node.reviewerKind !== 'human' || node.byKind !== 'human') {
+      errs.push(`${at}: an approving Review must be by a human reviewer and recorded by a human (agents may never approve)`);
     }
-    const last = node.history?.at(-1);
-    if (last && last.to !== node.state) errs.push(`${at}: state "${node.state}" does not match last history entry "${last.to}"`);
-    if (node.state !== 'proposed' && node.state !== 'rejected' && !node.scores) errs.push(`${at}: state "${node.state}" requires scores`);
+    if (looksAgent(node.by) || looksAgent(node.reviewer)) {
+      errs.push(`${at}: review-not-human: approving review recorded by "${node.by}" for reviewer "${node.reviewer}" looks like an agent`);
+    }
   }
+  if (node.type === 'opportunity') errs.push(...validateHistory(node));
+  return errs;
+}
+
+/** A history entry recorded by a person: byKind human and a name that does not look like an agent. */
+const humanEntry = (h) => h.byKind === 'human' && !looksAgent(h.by);
+
+/**
+ * Opportunity history (CONTRACT §4). Every entry is a legal transition made by
+ * a role allowed to make it; the entries form one unbroken chain from
+ * "proposed" to the current state. Entries: { from, to, by, role, byKind?, date, reason? }.
+ * For YMYL, scored -> approved must be a human (role "human", byKind "human"),
+ * and anything into "released" must be recorded by a human (byKind "human").
+ */
+function validateHistory(node) {
+  const errs = [];
+  const at = node.id;
+  const history = node.history ?? [];
+  const ymyl = node.gates?.ymyl === true;
+  let prev = 'proposed';
+  for (const [i, h] of history.entries()) {
+    const where = `${at}: history[${i}] ${h?.from} -> ${h?.to}`;
+    if (!h || typeof h !== 'object') { errs.push(`${at}: history[${i}] is not an object`); continue; }
+    if (h.from !== prev) errs.push(`${where}: breaks the chain (expected from "${prev}")`);
+    prev = h.to;
+    const allowed = h.to === 'rejected' ? REJECT_ROLES : TRANSITIONS[h.from]?.[h.to];
+    if (!allowed) { errs.push(`${where}: illegal transition`); continue; }
+    if (typeof h.by !== 'string' || !h.by.trim()) errs.push(`${where}: "by" is required`);
+    if (!allowed.includes(h.role)) errs.push(`${where}: role "${h.role}" may not make this transition (allowed: ${allowed.join(', ')})`);
+    if (h.byKind !== undefined && !['human', 'agent'].includes(h.byKind)) errs.push(`${where}: byKind must be human or agent`);
+    if ((h.role === 'human' || h.byKind === 'human') && !humanEntry(h)) {
+      errs.push(`${where}: recorded as human but by "${h.by}" ${h.byKind === 'human' ? 'looks like an agent' : 'has no byKind "human"'}`);
+    }
+    if (ymyl && h.from === 'scored' && h.to === 'approved' && !(h.role === 'human' && humanEntry(h))) {
+      errs.push(`${where}: approving a YMYL opportunity is a human transition (role "human", byKind "human"), got by "${h.by}"`);
+    }
+    if (ymyl && h.to === 'released' && !humanEntry(h)) {
+      errs.push(`${where}: releasing a YMYL opportunity must be recorded by a human (byKind "human"), got by "${h.by}"`);
+    }
+  }
+  if (prev !== node.state) {
+    errs.push(history.length
+      ? `${at}: state "${node.state}" does not match last history entry "${prev}"`
+      : `${at}: state "${node.state}" without history (a new opportunity starts as "proposed")`);
+  }
+  if (node.state !== 'proposed' && node.state !== 'rejected' && !node.scores) errs.push(`${at}: state "${node.state}" requires scores`);
   return errs;
 }
 

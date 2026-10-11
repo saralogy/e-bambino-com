@@ -24,7 +24,7 @@ import { writeFileSync } from 'node:fs';
 import { idFor, loadGraph, neighbors, stopped, writeNode } from '../kg/lib.mjs';
 import {
   canonicalUrl, daysBetween, flag, FREQUENCY_DAYS, hasFlag, hostOf, loadWatchlist, md, nodesForUrl, runDate,
-  saveWatchlist, UA_TOKEN, USER_AGENT,
+  sameSite, saveWatchlist, UA_TOKEN, USER_AGENT,
 } from './common.mjs';
 
 if (stopped()) {
@@ -33,7 +33,7 @@ if (stopped()) {
 }
 
 const DRY = hasFlag('dry-run');
-const LIMIT = Math.min(Number(flag('limit', 60)), 200); // CONTRACT §10 caps a run at 200 URLs
+const LIMIT = Math.max(0, Math.min(Math.trunc(Number(flag('limit', 60))) || 0, 200)); // CONTRACT §10 caps a run at 200 URLs
 const MAX_MS = Number(flag('max-minutes', 20)) * 60000;
 const TIMEOUT_MS = 20000;
 const MAX_BYTES = 5 * 1024 * 1024;
@@ -174,15 +174,35 @@ function robotsAllows(rules, url) {
   return best ? best.allow : true;
 }
 
+const REDIRECT = [301, 302, 303, 307, 308];
+const MAX_ROBOTS_REDIRECTS = 5;
+
+/**
+ * robots.txt for the URL's origin. Redirects are followed up to 5 hops on the
+ * same site (www and apex count as one site), as RFC 9309 §2.3.1.2 asks. A
+ * redirect off the site or a sixth hop means robots.txt is unavailable, which
+ * like a 4xx means no restrictions. Only 5xx and network errors disallow all.
+ */
 async function robotsFor(url) {
   const origin = new URL(url).origin;
   if (robotsCache.has(origin)) return robotsCache.get(origin);
   let entry;
   try {
-    const res = await politeGet(`${origin}/robots.txt`, { accept: 'text/plain' });
-    if (res.status >= 200 && res.status < 300) entry = { rules: parseRobots(res.body.toString('utf8')) };
-    else if (res.status >= 400 && res.status < 500) entry = { allowAll: true }; // RFC 9309: unavailable means no restrictions
-    else entry = { disallowAll: true }; // 5xx or an unfollowed redirect: assume complete disallow
+    let target = `${origin}/robots.txt`;
+    for (let hop = 0; ; hop++) {
+      const res = await politeGet(target, { accept: 'text/plain' });
+      if (REDIRECT.includes(res.status)) {
+        const loc = res.headers.get('location');
+        const next = loc && canonicalUrl(new URL(loc, target).toString());
+        if (!next || !sameSite(next, url) || hop >= MAX_ROBOTS_REDIRECTS) { entry = { allowAll: true }; break; }
+        target = next;
+        continue;
+      }
+      if (res.status >= 200 && res.status < 300) entry = { rules: parseRobots(res.body.toString('utf8')) };
+      else if (res.status >= 400 && res.status < 500) entry = { allowAll: true }; // RFC 9309: unavailable means no restrictions
+      else entry = { disallowAll: true }; // 5xx (or any other status): assume complete disallow
+      break;
+    }
   } catch {
     entry = { disallowAll: true }; // unreachable: assume complete disallow
   }
@@ -232,11 +252,14 @@ async function attempt(url, prev) {
     } catch (e) {
       return { status: e.code === 'too-large' ? 'too-large' : e.name === 'AbortError' ? 'error-timeout' : 'error-network', error: !e.code };
     }
-    if ([301, 302, 303, 307, 308].includes(res.status)) {
+    if (REDIRECT.includes(res.status)) {
       const loc = res.headers.get('location');
       const next = loc && canonicalUrl(new URL(loc, target).toString());
-      if (!next || hostOf(next) !== hostOf(url)) return { status: 'redirect-offsite', httpStatus: res.status };
-      if (robots.rules && !robotsAllows(robots.rules, next)) return { status: 'robots-disallowed' };
+      if (!next || !sameSite(next, url)) return { status: 'redirect-offsite', httpStatus: res.status };
+      // www <-> apex is the same site but may be another origin: apply that origin's robots.txt (cached).
+      const nextRobots = await robotsFor(next);
+      if (nextRobots.disallowAll) return { status: 'robots-unavailable' };
+      if (nextRobots.rules && !robotsAllows(nextRobots.rules, next)) return { status: 'robots-disallowed' };
       target = next;
       continue;
     }

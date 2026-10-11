@@ -19,14 +19,17 @@ internally consistent. It says nothing about whether a held page may go live. Th
 
 ## 2. Technical gate (CI)
 
-The workflow runs on every pull request and on every push to `main`. Each check records its outcome, the release
-report is written, and the final step fails the job if any check did not pass.
+The workflow runs on every pull request, on every push to `main`, and by hand (`workflow_dispatch`, used for bot PRs;
+see OPERATIONS.md). Each check records its outcome, the release report is written, and the final step fails the job if
+any check, or the release report's editorial gate, did not pass.
 
 | Check | Command | Fails on | Blocks |
 |---|---|---|---|
 | Build | `npm run build` | Astro build error | Merge; links and SEO are then **blocked** (not run) |
 | Content audit | `npm run audit` | Hard errors: a live page without sources, Italian references, emojis, broken frontmatter | Merge |
-| Knowledge graph | `npm run kg:check` | Structural errors: schema, dangling edges, illegal states, agent approvals. Warnings never fail. | Merge |
+| Knowledge graph | `npm run kg:check` | Structural errors: schema, dangling edges, illegal states and opportunity history (role, chain, human YMYL approval), agent approvals, and an approving Review whose reviewer or recorder looks like an agent (`review-not-human`: model or agent words, an `agent:` id, a `.claude/agents` name). Warnings never fail. | Merge |
+| Backlog up to date | `node scripts/kg/backlog.mjs --check` | `BACKLOG.md` differs from a re-render as of its own `As of:` date (so the result does not depend on the day CI runs) | Merge |
+| Editorial gate | `node scripts/checks/release-report.mjs` (exit 2) | The change turns a gated YMYL page from not published on the base into published on the head, and no human approving Review node for it exists in `knowledge/nodes/review/` on the head. Pages already published on the base are not affected. | Merge |
 | Internal links | `node scripts/checks/links.mjs` | A broken internal href/src (HTML, CSS, `llms.txt`), two files serving one route, a redirect to a missing page, a redirect loop | Merge |
 | Technical SEO | `node scripts/checks/seo.mjs` | See below | Merge |
 
@@ -78,6 +81,15 @@ What blocks the editorial release:
 2. **YMYL page:** additionally a **human** review (level 3). Until then the page stays `held-ymyl`.
 3. **`src/lib/shipgate.ts` changed:** the report flags it. A human must approve that change explicitly.
 4. **A page newly published by the merge** is listed by name. The person who merges confirms each one.
+5. **A YMYL page newly published without a human approving Review node** fails CI (editorial gate, exit 2). The
+   report parses frontmatter with the shipgate rules (trailing `# comments` and `quellen:` block lists included).
+   A page whose `ymyl` is turned off in the same change still counts as YMYL.
+
+### Code owners
+
+`.github/CODEOWNERS` assigns `@saralogy` to `src/content/**`, `src/lib/shipgate.ts`, `knowledge/nodes/review/**`,
+`.github/**` and `docs/system/CONTRACT.md`. **It is enforced only after the owner enables branch protection on `main`
+with "Require review from Code Owners"** (Settings → Branches). Until then it only requests a review.
 
 ## 4. How a human reviewer releases a YMYL page
 

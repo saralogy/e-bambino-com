@@ -8,7 +8,13 @@
  *
  * Passing technical checks never authorizes publishing held content; the report
  * says so in every run. Writes to stdout and appends to $GITHUB_STEP_SUMMARY
- * when set. Read-only; always exits 0 (the CI gate step decides pass/fail).
+ * when set. Read-only.
+ *
+ * Exit codes: 0 report written; 2 editorial gate failed: the change publishes a
+ * gated YMYL page (not published on the base, published on the head) and no
+ * human approving Review node for it exists in knowledge/nodes/review/, or the
+ * changed pages could not be listed. Technical results are reported, not
+ * enforced here (the CI gate step does that).
  *
  * Check results come from the environment (GitHub step outcomes):
  *   CHECK_BUILD, CHECK_AUDIT, CHECK_KG, CHECK_BACKLOG, CHECK_LINKS, CHECK_SEO
@@ -19,7 +25,7 @@
 import { spawnSync } from 'node:child_process';
 import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { idFor, get, loadGraph, neighbors, ROOT, stopped } from '../kg/lib.mjs';
+import { byType, idFor, get, loadGraph, looksAgent, ROOT, stopped } from '../kg/lib.mjs';
 
 const args = process.argv.slice(2);
 const argValue = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : undefined; };
@@ -85,17 +91,53 @@ const SECTION = {
 };
 const GATED = ['fragen', 'kaufberatung']; // collections whose routes apply src/lib/shipgate.ts
 
+/**
+ * Strip a trailing `# comment`. A quote opens only at the start of a token, so
+ * an apostrophe inside plain text ("baby's") never hides a comment.
+ */
+function stripComment(v) {
+  let q = null;
+  for (let i = 0; i < v.length; i++) {
+    const c = v[i];
+    const prev = i ? v[i - 1] : ' ';
+    if (q) { if (c === q) q = null; } else if ((c === '"' || c === "'") && /[\s[,]/.test(prev)) q = c;
+    else if (c === '#' && /\s/.test(prev)) return v.slice(0, i).trim();
+  }
+  return v.trim();
+}
+
+/** One YAML scalar: true/false, a quoted string or plain text. */
+function scalar(raw) {
+  const v = stripComment(raw);
+  if (v === 'true' || v === 'false') return v === 'true';
+  return v.replace(/^(['"])(.*)\1$/, '$2');
+}
+
+/**
+ * Top-level frontmatter keys. Enough YAML for the gate fields: scalars with
+ * trailing comments, flow lists (`quellen: ["a", 'b']`) and block lists
+ * (`quellen:` followed by `  - a` lines).
+ */
 function frontmatter(txt) {
   const m = txt?.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!m) return null;
   const fm = {};
-  for (const line of m[1].split(/\r?\n/)) {
-    const kv = line.match(/^([A-Za-z_]\w*):(.*)$/);
+  const lines = m[1].split(/\r?\n/);
+  for (let i = 0; i < lines.length; i++) {
+    const kv = lines[i].match(/^([A-Za-z_]\w*):(.*)$/);
     if (!kv) continue;
-    const v = kv[2].trim();
-    if (v === 'true' || v === 'false') fm[kv[1]] = v === 'true';
-    else if (v.startsWith('[')) fm[kv[1]] = [...v.matchAll(/"([^"]*)"|'([^']*)'|([^,[\]\s][^,[\]]*)/g)].map((x) => (x[1] ?? x[2] ?? x[3]).trim()).filter(Boolean);
-    else fm[kv[1]] = v.replace(/^(['"])(.*)\1$/, '$2');
+    const v = stripComment(kv[2]);
+    if (v === '') {
+      // Block list or nested block: take the indented lines that follow.
+      const items = [];
+      while (i + 1 < lines.length && /^(\s+|\s*-\s)/.test(lines[i + 1])) {
+        const item = lines[++i].match(/^\s*-\s*(.*)$/);
+        if (item && stripComment(item[1]) !== '') items.push(String(scalar(item[1])));
+      }
+      fm[kv[1]] = items.length ? items : '';
+    } else if (v.startsWith('[')) {
+      fm[kv[1]] = [...v.matchAll(/"([^"]*)"|'([^']*)'|([^,[\]\s][^,[\]]*)/g)].map((x) => (x[1] ?? x[2] ?? x[3]).trim()).filter(Boolean);
+    } else fm[kv[1]] = scalar(v);
   }
   return fm;
 }
@@ -106,8 +148,14 @@ function gateStatus(fm, collection) {
   if (!GATED.includes(collection)) return fm.draft === true ? 'draft' : 'published';
   if (fm.draft === true) return 'draft';
   if (fm.ymyl === true && !String(fm.reviewedBy ?? '').trim()) return 'held-ymyl';
-  if (!(fm.quellen ?? []).length) return 'held-nosource';
+  if (!(Array.isArray(fm.quellen) ? fm.quellen : []).length) return 'held-nosource';
   return 'published';
+}
+
+/** A human approving Review of this page among the Review nodes on disk (the head). */
+function humanApproved(g, pageId) {
+  return byType(g, 'review').some((rv) => (rv.page === pageId || (rv.edges ?? []).some((e) => e.rel === 'OF' && e.to === pageId))
+    && rv.result === 'approve' && rv.reviewerKind === 'human' && rv.byKind === 'human' && !looksAgent(rv.by) && !looksAgent(rv.reviewer));
 }
 
 function urlFor(collection, lang, file, fm) {
@@ -139,21 +187,30 @@ function editorial() {
     const after = s === 'D' || !existsSync(abs) ? null : frontmatter(readFileSync(abs, 'utf8'));
     const fm = after ?? before;
     const url = urlFor(collection, lang, file, fm);
-    const node = get(g, idFor.page(lang, url));
-    const reviews = node ? neighbors(g, node.id, 'OF', 'in') : [];
+    const pageId = idFor.page(lang, url);
     pages.push({
       path, url, collection, gated: GATED.includes(collection),
       before: s === 'A' ? 'new' : gateStatus(before, collection),
-      after: s === 'D' ? 'removed' : gateStatus(after, collection),      ymyl: fm?.ymyl === true,
+      after: s === 'D' ? 'removed' : gateStatus(after, collection),
+      // YMYL on either side: turning ymyl off in the same change does not skip the review.
+      ymyl: after?.ymyl === true || before?.ymyl === true,
       reviewer: String(after?.reviewedBy ?? '').trim(),
-      humanApproval: reviews.some((r) => r.result === 'approve' && r.reviewerKind === 'human' && r.byKind === 'human'),
-      graphStatus: node?.status,
+      humanApproval: humanApproved(g, pageId),
+      graphStatus: get(g, pageId)?.status,
     });
   }
   const gateChanged = diff.files.some((f) => f.path === 'src/lib/shipgate.ts');
   const reviewNodes = diff.files.filter((f) => f.path.startsWith('knowledge/nodes/review/')).map((f) => f.path);
   return { base: BASE, mb: diff.mb, pages, gateChanged, reviewNodes };
 }
+
+/**
+ * Editorial gate: a gated YMYL page that this change turns from not published
+ * (on the base) into published (on the head) needs a human approving Review
+ * node for that page on the head. Pages already published on the base are
+ * not affected.
+ */
+const blocksRelease = (p) => p.gated && p.ymyl && p.after === 'published' && p.before !== 'published' && !p.humanApproval;
 
 /** One-line editorial verdict for a page. */
 function verdict(p) {
@@ -163,6 +220,7 @@ function verdict(p) {
   if (p.after === 'draft') return 'Held as draft until the editorial pass is done.';
   if (p.after === 'held-ymyl') return 'YMYL: **waiting for a named human reviewer**. Stays unpublished.';
   if (p.after === 'held-nosource') return 'Held: no source in `quellen`.';
+  if (blocksRelease(p)) return `**BLOCKED:** YMYL page newly published without a human approving Review node in \`knowledge/nodes/review/\` (credited: "${p.reviewer || 'nobody'}").`;
   if (p.ymyl && !p.humanApproval) return `YMYL credited to "${p.reviewer}", **no human Review node recorded**. Confirm the reviewer read this page before merge.`;
   if (p.ymyl) return `YMYL reviewed by "${p.reviewer}" (human Review recorded).`;
   return 'Publishes on merge (editorial approval: editor + fact-check).';
@@ -211,6 +269,14 @@ function render(tech, ed) {
     if (ed.reviewNodes.length) L.push(`> Review nodes changed: ${ed.reviewNodes.map((f) => `\`${f}\``).join(', ')}. Only a human may record an approving Review.`, '');
   }
 
+  const blocked = ed.error ? [] : ed.pages.filter(blocksRelease);
+  L.push('### Editorial gate', '');
+  if (ed.error) L.push('**Editorial gate: FAIL.** The changed pages could not be listed, so a newly published YMYL page cannot be ruled out.', '');
+  else if (blocked.length) {
+    L.push(`**Editorial gate: FAIL.** ${blocked.length} YMYL page(s) would be published without a human approving Review node: ${blocked.map((p) => `\`${p.url}\``).join(', ')}.`);
+    L.push('A human reviewer reads the page and a human records the Review node (RELEASE.md §4) before this can merge.', '');
+  } else L.push('**Editorial gate: PASS.** No YMYL page is newly published without a human approving Review.', '');
+
   L.push('## 3. What this report authorizes', '');
   L.push('- **Passing technical checks never authorizes publishing held content.** A held page (draft, YMYL without a named reviewer, no source) stays held whatever this report says.');
   L.push('- A YMYL page is released only when a named human reviewer has read that page, `reviewedBy` is set, and a human Review with `result: approve` is recorded (see `docs/system/RELEASE.md`).');
@@ -218,6 +284,12 @@ function render(tech, ed) {
   return L.join('\n');
 }
 
-const md = render(technical(), editorial());
+const ed = editorial();
+const md = render(technical(), ed);
 console.log(md);
 if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${md}\n`);
+// Exit 2 = editorial-gate failure (distinct from a crash). Technical results never change the exit code.
+if (ed.error || ed.pages.some(blocksRelease)) {
+  console.log('::error::Editorial gate failed: a YMYL page would be published without a human approving Review node (see the release report).');
+  process.exit(2);
+}

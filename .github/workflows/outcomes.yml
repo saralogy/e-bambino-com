@@ -32,14 +32,14 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       BASE: ${{ github.event.repository.default_branch }}
-      GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
-      GSC_SITE: ${{ vars.GSC_SITE || 'sc-domain:e-bambino.com' }}
+      # Only whether the secret is set; the secret itself reaches the import step alone.
+      HAS_GSC: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON != '' }}
       PERIOD: ${{ github.event.inputs.period || '' }}
     steps:
       - name: Credentials present?
         id: secret
         run: |
-          if [ -z "$GSC_SERVICE_ACCOUNT_JSON" ]; then
+          if [ "$HAS_GSC" != "true" ]; then
             echo "GSC_SERVICE_ACCOUNT_JSON is not set; skipping. See docs/system/MEASUREMENT.md."
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "Skipped: the GSC_SERVICE_ACCOUNT_JSON secret is not set." >> "$GITHUB_STEP_SUMMARY"
@@ -86,8 +86,8 @@ jobs:
             git checkout -B "$branch" "origin/$branch"
             if ! git merge --no-edit "origin/$BASE"; then
               git merge --abort
-              echo "Merge with $BASE conflicted; starting this month's branch fresh from $BASE."
-              git checkout -B "$branch" "origin/$BASE"
+              echo "::error::$branch conflicts with $BASE. Nothing was reset or force-pushed. Resolve the conflict on $branch (or merge or close its PR and delete the branch), then re-run this workflow."
+              exit 1
             fi
           else
             git checkout -B "$branch" "origin/$BASE"
@@ -101,6 +101,9 @@ jobs:
 
       - name: Import Search Console data
         if: steps.secret.outputs.skip != 'true' && steps.stop.outputs.skip != 'true'
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE: ${{ vars.GSC_SITE || 'sc-domain:e-bambino.com' }}
         run: |
           if [ -n "$PERIOD" ]; then
             node scripts/outcomes/import-gsc.mjs --api --period "$PERIOD" --unmapped-out "$RUNNER_TEMP/unmapped.md"
@@ -130,9 +133,14 @@ jobs:
             echo "knowledge/ unchanged; nothing to commit."
             exit 0
           fi
-          git add knowledge/
+          # Keep scores and BACKLOG.md in step with the graph, so CI's backlog check passes on the bot PR.
+          # One command per line: under bash -e a failure inside an && chain would not stop the step.
+          node scripts/kg/score.mjs --write
+          node scripts/kg/backlog.mjs
+          node scripts/kg/check.mjs
+          git add knowledge/ docs/content-intelligence/BACKLOG.md
           git commit -m "outcomes: Search Console import $MONTH" -m "Run by .github/workflows/outcomes.yml (run ${{ github.run_id }})."
-          git push --force-with-lease origin "HEAD:refs/heads/$BRANCH"
+          git push origin "HEAD:refs/heads/$BRANCH"
 
           body="$RUNNER_TEMP/pr-body.md"
           {

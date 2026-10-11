@@ -24,7 +24,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CHECK_THRESHOLD, HIGH_THRESHOLD, buildInventory, dedupe, formatOf } from './dedupe.mjs';
-import { byType, get, idFor, loadGraph, neighbors, ROOT, stopped, today, writeNode } from './lib.mjs';
+import { byType, get, idFor, loadGraph, looksAgent, neighbors, ROOT, stopped, today, writeNode } from './lib.mjs';
 import { CALIBRATION_HYPOTHESIS, SCORE_DIMENSIONS } from './schema.mjs';
 
 export const AGENT = 'agent:gap-scoring';
@@ -61,7 +61,6 @@ const FORMATS = {
 /** Infant-formula marketing is restricted in the EU (AGENTS.md §5.3). */
 const LEGAL_RISK = /infant formula|formula (stage|milk|feeding)|s[äa]uglings(anfangs)?nahrung|pre-?nahrung/i;
 const RANKING_WORDS = /\b(best|top \d+|ranking|testsieger|deals?)\b/i;
-const looksAgent = (name = '') => /\b(claude|agent|bot|gpt|llm|model|opus|sonnet|haiku)\b/i.test(name);
 
 /** Claims with current supporting evidence. Returns { claim, evidence[] } or null. */
 function supportedClaim(g, claim, now) {
@@ -249,10 +248,13 @@ export function hardGates(opp, dd, { ymyl, reviewer, dupOf }) {
   return { evidence: pass(evidence), ymyl: pass(reviewerOk), duplicate: pass(duplicateOk), overlap: pass(overlapOk), blocking };
 }
 
-/** Score every opportunity (or the given ids). Returns [{ opp, result }]. */
-export function scoreAll(g = loadGraph(), ids = null) {
+/**
+ * Score every opportunity (or the given ids) as of a date (evidence currency).
+ * Returns [{ opp, result }].
+ */
+export function scoreAll(g = loadGraph(), ids = null, asOf = today()) {
   const inv = buildInventory(g);
-  const now = today();
+  const now = asOf;
   return byType(g, 'opportunity')
     .filter((o) => !ids || ids.includes(o.id))
     .sort((a, b) => a.id.localeCompare(b.id))

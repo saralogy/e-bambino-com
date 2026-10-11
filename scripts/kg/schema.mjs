@@ -103,7 +103,7 @@ export const TYPES = {
     rationale: r('string'),
     owner: r('string'),
     reviewBy: r('date'),
-    history: { t: 'array' }, // [{ from, to, by, date, reason? }]
+    history: { t: 'array' }, // [{ from, to, by, role, byKind?, date, reason? }]; validated in lib.mjs validateHistory
   },
   brief: {
     path: r('string'),
@@ -224,7 +224,11 @@ export const SYNC_OWNED_RELS = { page: ['LINKS_TO', 'TRANSLATION_OF'] };
 /**
  * Opportunity transitions: from -> { to: [roles allowed] }.
  * 'human' means the site owner or a named human editor/reviewer. 'rejected'
- * is reachable from every state by the lead or a human.
+ * is reachable from every state by the lead or a human. Each history entry
+ * names its `role` (must be listed here) and `by` (who did it). A human entry
+ * also sets `byKind: 'human'`, as Review nodes do. For a YMYL opportunity,
+ * scored -> approved needs role 'human', and any move into 'released' must be
+ * recorded by a human (byKind 'human'), whatever the role (CONTRACT §4).
  */
 export const TRANSITIONS = {
   proposed: { scored: ['lead'] },
@@ -241,6 +245,14 @@ export const TRANSITIONS = {
   rejected: {},
 };
 export const REJECT_ROLES = ['lead', 'human'];
+
+/**
+ * YMYL by declaration: opportunities and claims in these categories, or whose
+ * text matches YMYL_TEXT, are always YMYL whatever a bundle or proposal says
+ * (forcedYmyl in lib.mjs). A declaration can only raise ymyl, never lower it.
+ */
+export const YMYL_CATEGORIES = ['safety', 'bath-and-care', 'breastfeeding', 'feeding'];
+export const YMYL_TEXT = /\b(sleep|sids|car[- ]?seat|medicine|medication|fever|formula|allerg|schlaf|kindstod|kindersitz|medikament|arznei|fieber|s[äa]uglingsnahrung)/i;
 
 /** Agent roles named in the contract. */
 export const ROLES = ['category-researcher', 'lead', 'seo-geo-technical', 'writer-editor', 'fact-checker', 'publisher', 'measurement', 'human'];

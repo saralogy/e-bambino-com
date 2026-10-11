@@ -82,10 +82,10 @@ export function signJwt(sa, now = Math.floor(Date.now() / 1000)) {
   return `${head}.${claims}.${sig}`;
 }
 
-/** fetch with up to 3 attempts and exponential backoff on 429 and 5xx. */
+/** fetch with up to 3 attempts, a 30 s timeout each, and exponential backoff on 429 and 5xx. */
 async function fetchRetry(url, init) {
   for (let attempt = 1; ; attempt++) {
-    const res = await fetch(url, init);
+    const res = await fetch(url, { ...init, signal: AbortSignal.timeout(30000) });
     if (res.ok || attempt === 3 || (res.status !== 429 && res.status < 500)) return res;
     await new Promise((r) => setTimeout(r, 2000 * 2 ** attempt));
   }

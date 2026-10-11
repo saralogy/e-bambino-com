@@ -75,8 +75,8 @@ jobs:
             git checkout -B "$branch" "origin/$branch"
             if ! git merge --no-edit "origin/$BASE"; then
               git merge --abort
-              echo "Merge with $BASE conflicted; starting this week's branch fresh from $BASE."
-              git checkout -B "$branch" "origin/$BASE"
+              echo "::error::$branch conflicts with $BASE. Nothing was reset or force-pushed. Resolve the conflict on $branch (or merge or close its PR and delete the branch), then re-run this workflow."
+              exit 1
             fi
           else
             git checkout -B "$branch" "origin/$BASE"
@@ -117,9 +117,14 @@ jobs:
             echo "knowledge/ unchanged; nothing to commit."
             exit 0
           fi
-          git add knowledge/
+          # Keep scores and BACKLOG.md in step with the graph, so CI's backlog check passes on the bot PR.
+          # One command per line: under bash -e a failure inside an && chain would not stop the step.
+          node scripts/kg/score.mjs --write
+          node scripts/kg/backlog.mjs
+          node scripts/kg/check.mjs
+          git add knowledge/ docs/content-intelligence/BACKLOG.md
           git commit -m "watch: change detection $WEEK" -m "Run by .github/workflows/watch.yml (run ${{ github.run_id }})."
-          git push --force-with-lease origin "HEAD:refs/heads/$BRANCH"
+          git push origin "HEAD:refs/heads/$BRANCH"
 
           body="$RUNNER_TEMP/pr-body.md"
           {

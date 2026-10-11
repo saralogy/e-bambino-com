@@ -47,6 +47,10 @@ export function canonicalUrl(u) {
 }
 export const hostOf = (u) => new URL(u).host;
 
+/** Site of a URL: its host without a leading "www.", so www and apex count as one site. */
+export const siteOf = (u) => hostOf(u).toLowerCase().replace(/^www\./, '');
+export const sameSite = (a, b) => siteOf(a) === siteOf(b);
+
 /** Load the watchlist ({ entries: [] } when missing). */
 export function loadWatchlist(file = WATCHLIST_FILE) {
   if (!existsSync(file)) return { entries: [] };

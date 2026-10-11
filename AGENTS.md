@@ -267,6 +267,8 @@ Tokens live in `tailwind.config.js`; component classes in `src/styles/global.css
       (see `docs/system/MEASUREMENT.md`). Until then, import CSV exports monthly.
 - [ ] **Decide two flagged overlaps** in BACKLOG.md: diapering cost calculator vs cloth-vs-disposable,
       high-chair buying guide vs high-chair-age (record a Decision, then `npm run kg:update`).
+- [ ] **Branch protection:** enable it on `main` with "Require review from Code Owners" so `.github/CODEOWNERS`
+      is enforced (see `docs/system/RELEASE.md`).
 - [ ] **First watch run:** trigger `watch.yml` manually with dry_run, then for real; review the bot PR.
 
 ### Next (content and SEO)

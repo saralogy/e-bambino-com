@@ -59,7 +59,13 @@ export function normalizeUrl(raw) {
   }
   const host = u.hostname.toLowerCase();
   if (!SITE_HOSTS.includes(host)) return { error: `foreign host ${host}` };
-  let path = decodeURIComponent(u.pathname).replace(/\/index\.html?$/, '/').replace(/\/{2,}/g, '/');
+  let decoded;
+  try {
+    decoded = decodeURIComponent(u.pathname);
+  } catch {
+    return { error: 'malformed percent-encoding' }; // listed as an unmapped row
+  }
+  let path = decoded.replace(/\/index\.html?$/, '/').replace(/\/{2,}/g, '/');
   if (!path.endsWith('/') && !/\.[a-z0-9]+$/i.test(path)) path += '/';
   return { path: path.toLowerCase() };
 }

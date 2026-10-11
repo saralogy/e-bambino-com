@@ -16,18 +16,20 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { promisify } from 'node:util';
 import { ROOT } from '../kg/lib.mjs';
+import { sameSite } from './common.mjs';
 
 const tmp = mkdtempSync(join(process.env.TMPDIR || tmpdir(), 'watch-selftest-'));
 let version = 1;
 let hits = [];
 
-// --- Local server: robots.txt, one page in two versions, a blocked page, a 404.
+// --- Local server: robots.txt (behind a same-site redirect), one page in two versions, a blocked page, a 404.
 const page = (v) => `<!doctype html><html><head><title>Bath guide v${v}</title><script>var t=${Date.now()}</script></head>
 <body><nav>Menu ${Math.random()}</nav><main><h1>Bathing</h1><p>${v === 1 ? 'Keep water warm.' : 'Keep water warm, about 37 &deg;C.'}</p></main>
 <footer>Rendered ${new Date().toISOString()}</footer></body></html>`;
 const server = createServer((req, res) => {
   hits.push({ path: req.url, ua: req.headers['user-agent'] });
-  if (req.url === '/robots.txt') return res.end('User-agent: *\nDisallow: /private/\n');
+  if (req.url === '/robots.txt') { res.statusCode = 301; res.setHeader('location', '/site/robots.txt'); return res.end(); }
+  if (req.url === '/site/robots.txt') return res.end('User-agent: *\nDisallow: /private/\n');
   if (req.url === '/guide') { res.setHeader('content-type', 'text/html'); return res.end(page(version)); }
   if (req.url === '/private/page') return res.end('secret');
   if (req.url === '/flaky') { res.statusCode = 503; return res.end('busy'); }
@@ -71,6 +73,7 @@ const ok = (cond, msg) => { console.log(`${cond ? 'PASS' : 'FAIL'}  ${msg}`); if
 const D1 = '2026-10-12';
 
 try {
+  ok(sameSite('https://www.cdc.gov/x', 'https://cdc.gov/robots.txt') && !sameSite('https://cdc.gov/', 'https://example.org/'), 'www and apex count as one site');
   await run('watch/build-watchlist.mjs');
   const urls = watch().map((e) => e.url);
   ok(urls.length === 5 && urls.every((u) => u.startsWith(base)), `watchlist has 5 local URLs (${urls.length})`);
@@ -85,7 +88,8 @@ try {
   const s1 = Object.fromEntries(watch().map((e) => [e.url.slice(base.length), e.last]));
   ok(s1['/guide']?.status === 'ok' && /^sha256:[0-9a-f]{64}$/.test(s1['/guide'].contentHash), 'baseline: /guide ok with sha256 hash');
   ok(s1['/guide']?.title === 'Bath guide v1', 'title stored');
-  ok(s1['/private/page']?.status === 'robots-disallowed', 'robots.txt Disallow honored');
+  ok(s1['/private/page']?.status === 'robots-disallowed', 'robots.txt Disallow honored (robots.txt reached through a 301)');
+  ok(hits.filter((h) => h.path === '/site/robots.txt').length === 1, 'redirected robots.txt followed once, not treated as disallow-all');
   ok(s1['/missing']?.status === 'http-404' && !s1['/missing'].contentHash, '404 recorded, no hash, not current');
   ok(s1['/flaky']?.status === 'http-503' && s1['/flaky'].attempts === 3, '503 retried with backoff, 3 attempts, recorded as not current');
   ok(!hits.some((h) => h.path === '/private/page'), 'blocked URL was never requested');

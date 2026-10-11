@@ -108,6 +108,7 @@ const enResults: (EnglishResult | AuditResult)[] = mdFiles(EN_DIR).map((f) => {
   const { data, body } = p;
   return auditEnglish(body, {
     slug: data.slug || f.replace('.md', ''),
+    hub: data.hub || '',
     antwort: data.antwort || '',
     quellen: sources(data.quellen),
     ymyl: data.ymyl === 'true',
