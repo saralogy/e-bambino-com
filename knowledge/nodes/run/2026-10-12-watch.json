@@ -1,0 +1,23 @@
+{
+  "agent": "watch (scripts/watch/fetch.mjs)",
+  "cost": "87 HTTP request(s) in the latest invocation (robots.txt included); limit 60",
+  "edges": [],
+  "finished": "2026-10-12T13:18:03Z",
+  "id": "run:2026-10-12-watch",
+  "inputs": [
+    "knowledge/watchlist.json"
+  ],
+  "model": "none (deterministic script)",
+  "notes": "Not current: http-403 https://cacmap.fda.gov/medical-devices/breast-pumps/using-breast-pump; http-429 https://checklist.com/baby-proofing-checklist; http-403 https://publications.aap.org/aapnews/article/33/9/36/10271/Safety-pitfalls-Stairs-are-a-leading-cause-of; http-403 https://publications.aap.org/aapnews/news/13463/Safety-tips-help-protect-children-from-stroller; http-403 https://publications.aap.org/patiented/article/doi/10.1542/peo_document088/79989/Safe-Sleep-and-Your-Baby-How-Parents-Can-Reduce; http-403 https://publications.aap.org/pediatrics/article/108/3/790/66541/Injuries-Associated-With-Infant-Walkers; http-403 https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds; http-403 https://publications.aap.org/pediatrics/article/142/5/e20182460/38530/Child-Passenger-Safety; http-403 https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022; http-403 https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy; robots-disallowed https://register.awmf.org/; robots-disallowed https://register.awmf.org/assets/guidelines/006-128l_S2K_Behandlung-thermische-Verletzungen-Kinder-Verbrennung-Verbruehung_2024-08_1.pdf; robots-disallowed https://register.awmf.org/assets/guidelines/027_D_Ges_fuer_Kinderheilkunde_und_Jugendmedizin/027-075eltern_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2024-11.pdf; robots-disallowed https://register.awmf.org/assets/guidelines/027-075l_S2k_Praevention-dysregulierten-Bildschirmmediengebrauchs-Kinder-Jugendliche_2023-09.pdf; robots-disallowed https://register.awmf.org/assets/guidelines/061-016l_S3_Allergiepraevention_2022-11.pdf; robots-disallowed https://register.awmf.org/assets/guidelines/063-002l_S1_Praevention-des-Ploetzlichen-Sauuglingstods_2022-12_01.pdf; http-403 https://safetosleep.nichd.nih.gov/safesleepbasics/environment/room/text_alternative; http-403 https://unece.org/; http-403 https://unece.org/fileadmin/DAM/trans/publications/WP29/CHILD_RESTRAINT_SYSTEMS_brochure.pdf; redirect-offsite https://www.bmfsfj.de/",
+  "outputs": [
+    "checked: 60",
+    "ok: 40",
+    "changed: 0",
+    "failed: 20",
+    "robotsBlocked: 6",
+    "stillDue: 145"
+  ],
+  "started": "2026-10-12T13:14:41Z",
+  "status": "succeeded",
+  "type": "run"
+}
